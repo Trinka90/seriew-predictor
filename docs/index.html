@@ -9,132 +9,164 @@
 :root{--bg:#0f1720;--card:#17212c;--card2:#1e2a37;--tx:#e8eef4;--mut:#8b9bab;--line:#263444;
 --g:#2fbf71;--y:#e8b931;--r:#e5534b;--acc:#4da3ff;--h:#4da3ff;--d:#8b9bab;--a:#f08a4b}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.45 system-ui,-apple-system,Roboto,sans-serif;padding-bottom:76px}
-header{position:sticky;top:0;z-index:5;background:var(--bg);padding:12px 16px 8px;border-bottom:1px solid var(--line)}
-h1{font-size:18px;margin:0}
-h2{font-size:16px;margin:4px 0 8px}
-.sub{color:var(--mut);font-size:12px}
+html,body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.45 system-ui,-apple-system,Roboto,sans-serif}
+body{padding-bottom:76px}
+button{background:var(--card2);color:var(--tx);border:1px solid var(--line);border-radius:8px;padding:7px 12px;font:inherit;font-size:13px;cursor:pointer}
+select{background:var(--card2);color:var(--tx);border:1px solid var(--line);border-radius:8px;padding:7px;font:inherit;font-size:14px;max-width:100%}
+a{color:var(--acc)}
+.mut{color:var(--mut)} .small{font-size:12px} .sp{flex:1}
 .row{display:flex;align-items:center;gap:8px}
-.sp{flex:1}
-button{background:var(--card2);color:var(--tx);border:1px solid var(--line);border-radius:8px;padding:7px 12px;font:inherit;font-size:13px}
-nav{position:fixed;bottom:0;left:0;right:0;display:flex;background:var(--card);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom)}
-nav button{flex:1;border:0;border-radius:0;background:none;padding:10px 0;color:var(--mut);font-size:12px;display:flex;flex-direction:column;align-items:center;gap:2px}
-nav button span{font-size:18px}
+
+/* testata */
+header{position:sticky;top:0;z-index:5;background:var(--bg);padding:10px 16px 8px;border-bottom:1px solid var(--line)}
+h1{font-size:19px;margin:0}
+.upd{font-size:11px;color:var(--mut)}
+.bar-s{display:flex;gap:6px;overflow-x:auto;padding-top:8px;scrollbar-width:none}
+.bar-s::-webkit-scrollbar{display:none}
+.bar-s button{flex:none;border-radius:999px;padding:6px 12px}
+.bar-s button.on{background:var(--acc);color:#0b1118;border-color:var(--acc);font-weight:600}
+.bar-s button small{opacity:.7;margin-left:4px}
+
+/* navigazione */
+nav{position:fixed;bottom:0;left:0;right:0;display:flex;background:var(--card);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom);z-index:6}
+nav button{flex:1;border:0;border-radius:0;background:none;padding:9px 0;color:var(--mut);font-size:11px;display:flex;flex-direction:column;align-items:center;gap:1px}
+nav button span{font-size:19px}
 nav button.on{color:var(--acc);font-weight:600}
+
 main{padding:12px 16px}
-.day{color:var(--mut);font-size:12px;text-transform:uppercase;letter-spacing:.06em;margin:16px 0 6px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;margin-bottom:10px}
-.teams{display:flex;align-items:center;gap:8px}
-.teams b{font-size:16px}
-.vs{color:var(--mut)}
-.meta{color:var(--mut);font-size:12px;margin-top:2px}
-.bar{display:flex;height:24px;border-radius:6px;overflow:hidden;margin:10px 0 2px;font-size:12px;font-weight:600}
+h2{font-size:16px;margin:0 0 8px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin-bottom:12px}
+.hint{font-size:12px;color:var(--mut);margin:-4px 0 8px}
+.empty{text-align:center;color:var(--mut);padding:30px 10px}
+
+/* righe pronostico */
+.pk{display:flex;align-items:center;gap:10px;padding:10px 0;border-top:1px solid var(--line);cursor:pointer}
+.pk:first-of-type{border-top:0}
+.pk .n{width:20px;flex:none;color:var(--mut);font-size:12px;text-align:center}
+.pk .main{min-width:0;flex:1}
+.pk .what{font-weight:600}
+.pk .who{font-size:13px;color:var(--mut);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pk .num{text-align:right;flex:none}
+.pk .num b{font-size:18px;display:block;line-height:1.1}
+.pk .num span{font-size:11px;color:var(--mut)}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px;vertical-align:middle}
+.d3{background:var(--g)} .d2{background:var(--y)} .d1{background:var(--r)}
+
+/* schedina riassunto */
+.big{font-size:30px;font-weight:700;line-height:1.1}
+.sum{display:flex;align-items:flex-end;gap:10px}
+.sum .r{margin-left:auto;text-align:right}
+.verdict{font-size:13px;margin-top:4px}
+
+/* partite per campionato */
+.lgh{display:flex;align-items:center;gap:8px;padding:12px 14px;cursor:pointer;font-weight:600}
+.lgh .c{color:var(--mut);font-weight:400;font-size:13px}
+.lgh .ar{margin-left:auto;color:var(--mut)}
+.grp{padding:0;overflow:hidden}
+.mr{display:flex;align-items:center;gap:10px;padding:10px 14px;border-top:1px solid var(--line);cursor:pointer}
+.mr .t{width:40px;flex:none;color:var(--mut);font-size:12px}
+.mr .tm{flex:1;min-width:0}
+.mr .tm div{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mr .pb{font-size:11px;color:var(--mut)}
+.mr .bp{flex:none;text-align:right;font-size:12px;max-width:42%}
+.mr .bp b{font-size:14px}
+
+/* dettaglio partita */
+#det{position:fixed;inset:0;background:var(--bg);z-index:10;overflow-y:auto;display:none;padding-bottom:30px}
+#det.on{display:block}
+.dh{position:sticky;top:0;background:var(--bg);padding:10px 16px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:10px;z-index:2}
+.teams{font-size:18px;font-weight:700;text-align:center;margin:6px 0 2px}
+.sub{text-align:center;color:var(--mut);font-size:12px}
+.bar{display:flex;height:26px;border-radius:7px;overflow:hidden;margin:12px 0 3px;font-size:12px;font-weight:600}
 .bar div{display:flex;align-items:center;justify-content:center;color:#0b1118;min-width:30px;white-space:nowrap}
 .barlab{display:flex;justify-content:space-between;font-size:11px;color:var(--mut)}
-.pick{display:flex;align-items:center;gap:10px;background:var(--card2);border-radius:10px;padding:10px;margin-top:10px}
-.pick .t{font-weight:600}
-.pick .p{margin-left:auto;text-align:right;font-variant-numeric:tabular-nums}
-.pick .p b{font-size:18px;display:block}
-.conf{font-size:11px;padding:2px 7px;border-radius:999px;font-weight:600;white-space:nowrap}
-.c3{background:#123a24;color:var(--g)}.c2{background:#3a3212;color:var(--y)}.c1{background:#3a1a18;color:var(--r)}
-.says{font-size:13px;margin-top:8px;color:var(--tx)}
-.says li{margin:2px 0}
-ul{margin:4px 0;padding-left:18px}
+.pick{display:flex;align-items:center;gap:10px;background:var(--card2);border-radius:10px;padding:10px 12px;margin-top:12px}
+.pick .p{margin-left:auto;text-align:right}
+.pick .p b{font-size:20px;display:block}
+.says{margin:10px 0 0;padding-left:18px;font-size:14px}
+.says li{margin:3px 0}
+details.acc{border-top:1px solid var(--line);padding:2px 0}
+details.acc>summary{padding:10px 0;font-weight:600;cursor:pointer;list-style:none}
+details.acc>summary::after{content:"▾";float:right;color:var(--mut)}
+details.acc[open]>summary::after{content:"▴"}
+.sec{margin:10px 0 2px;font-size:11px;color:var(--mut);text-transform:uppercase;letter-spacing:.05em}
+.mk{display:flex;justify-content:space-between;gap:8px;padding:6px 0;border-bottom:1px solid var(--line);font-size:13px}
+.mk span:last-child{white-space:nowrap;font-variant-numeric:tabular-nums}
+.news a{color:var(--tx);text-decoration:none;display:block;padding:6px 0;border-bottom:1px solid var(--line);font-size:13px}
+.tag{font-size:10px;padding:1px 5px;border-radius:4px;background:var(--card2);color:var(--y);margin-right:4px}
 .form{display:inline-flex;gap:2px;vertical-align:middle}
 .form i{width:14px;height:14px;border-radius:3px;font-size:9px;font-style:normal;display:flex;align-items:center;justify-content:center;color:#0b1118;font-weight:700}
 .V{background:var(--g)}.N{background:var(--y)}.P{background:var(--r)}
-.more{width:100%;margin-top:10px;background:none;color:var(--acc);border-color:var(--line)}
-.det{display:none;margin-top:6px}
-.card.open .det{display:block}
-.sec{margin:12px 0 4px;font-size:12px;color:var(--mut);text-transform:uppercase;letter-spacing:.05em}
-.mk{display:flex;justify-content:space-between;gap:8px;padding:6px 0;border-bottom:1px solid var(--line);font-size:13px}
-.mk span:last-child{font-variant-numeric:tabular-nums;white-space:nowrap}
-.mut{color:var(--mut)}
-.small{font-size:12px}
-.news a{color:var(--tx);text-decoration:none;display:block;padding:5px 0;border-bottom:1px solid var(--line);font-size:13px}
-.tag{font-size:10px;padding:1px 5px;border-radius:4px;background:var(--card2);color:var(--y);margin-right:4px}
+.conf{font-size:11px;padding:2px 7px;border-radius:999px;font-weight:600;white-space:nowrap}
+.c3{background:#123a24;color:var(--g)}.c2{background:#3a3212;color:var(--y)}.c1{background:#3a1a18;color:var(--r)}
+
+/* controlli schedina */
+.ctl{display:flex;align-items:center;gap:10px;padding:8px 0}
+.ctl .l{flex:1;font-size:14px}
+.step{display:flex;align-items:center;gap:10px}
+.step button{width:36px;padding:6px 0;font-size:16px}
+.seg{display:flex;gap:6px}
+.seg button{flex:1}
+.seg button.on,.chips button.on{background:var(--acc);color:#0b1118;border-color:var(--acc);font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 8px}
+.chips button{border-radius:999px;padding:5px 10px;font-size:12px}
+input[type=range]{width:100%;accent-color:var(--acc)}
+.x{background:none;border:0;color:var(--mut);font-size:18px;padding:4px 8px}
+.add{padding:4px 10px}
+
 table{width:100%;border-collapse:collapse;font-size:13px}
 th,td{padding:7px 4px;border-bottom:1px solid var(--line);text-align:right}
 th{color:var(--mut);font-weight:500;font-size:11px}
 td:nth-child(2),th:nth-child(2){text-align:left}
 .fz{display:inline-block;height:6px;background:var(--acc);border-radius:3px;vertical-align:middle}
-.banner{background:#123a24;border:1px solid var(--g);border-radius:10px;padding:10px;margin-bottom:10px}
-.banner a{color:var(--g);font-weight:600}
-.empty{text-align:center;color:var(--mut);padding:40px 10px}
+.banner{background:#123a24;border:1px solid var(--g);border-radius:10px;padding:10px;margin-bottom:10px;font-size:13px}
 .kv{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid var(--line);font-size:14px}
-.sel{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}
-.sel input{width:20px;height:20px;accent-color:var(--acc)}
-.sel .p{margin-left:auto;text-align:right;font-variant-numeric:tabular-nums}
-.big{font-size:30px;font-weight:700}
-.tot{}
-.seg{display:flex;gap:6px;margin:8px 0}
-.seg button.on{background:var(--acc);color:#0b1118;border-color:var(--acc);font-weight:600}
 .gl dt{font-weight:600;margin-top:8px}
 .gl dd{margin:0;color:var(--mut);font-size:13px}
-.leagues{display:flex;gap:6px;overflow-x:auto;padding:8px 0 2px;scrollbar-width:none}
-.leagues::-webkit-scrollbar{display:none}
-.leagues button{white-space:nowrap;border-radius:999px;padding:5px 11px;flex:none}
-.leagues button.on{background:var(--acc);color:#0b1118;border-color:var(--acc);font-weight:600}
-.leagues button small{opacity:.7;margin-left:3px}
-.lg{font-size:11px;color:var(--mut);margin-bottom:4px}
-.filters{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin-bottom:10px}
-.filters summary{cursor:pointer;font-weight:600;font-size:14px}
-.fl{margin-top:10px}
-.fl>div:first-child{font-size:12px;color:var(--mut);margin-bottom:5px}
-.chips{display:flex;flex-wrap:wrap;gap:6px}
-.chips button{border-radius:999px;padding:5px 10px;font-size:12px}
-.chips button.on{background:var(--acc);color:#0b1118;border-color:var(--acc);font-weight:600}
-input[type=range]{width:100%;accent-color:var(--acc)}
-select{background:var(--card2);color:var(--tx);border:1px solid var(--line);border-radius:8px;padding:6px;font:inherit;font-size:13px}
-.prow{display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid var(--line)}
-.prow .p{margin-left:auto;text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
-.prow .p b{font-size:17px;display:block}
-.rank{width:22px;color:var(--mut);font-size:12px;text-align:center;flex:none}
-.day-s{display:flex;align-items:center;gap:10px}
-.step{display:flex;align-items:center;gap:8px}
-.step button{width:34px;padding:6px 0}
-.addbtn{padding:4px 9px;font-size:12px}
-.tagq{font-size:10px;color:var(--mut)}
 </style>
 </head>
 <body>
 <header>
-  <div class="row"><h1>Pronostici</h1><span class="sp"></span><button id="reload">↻</button></div>
-  <div class="sub" id="upd">caricamento…</div>
-  <div class="leagues" id="leagues"></div>
+  <div class="row"><h1>Pronostici</h1><span class="sp"></span><span class="upd" id="upd"></span><button id="reload" title="Aggiorna">↻</button></div>
+  <div class="bar-s" id="sports"></div>
+  <div class="bar-s" id="days"></div>
 </header>
 <main id="main"></main>
+<div id="det"></div>
 <nav>
-  <button data-v="partite" class="on"><span>⚽</span>Partite</button>
-  <button data-v="migliori"><span>⭐</span>Migliori</button>
+  <button data-v="oggi" class="on"><span>🏠</span>Oggi</button>
   <button data-v="schedina"><span>🎫</span>Schedina</button>
-  <button data-v="classifica"><span>📊</span>Classifica</button>
+  <button data-v="classifica"><span>📊</span>Classifiche</button>
   <button data-v="info"><span>ℹ️</span>Guida</button>
 </nav>
 <script>
 const REPO = "Trinka90/seriew-predictor";
-const S = {view: "partite", pred: null, stand: null, meta: null, err: null, appUpdate: null, sel: null, mode: "corta",
-           lega: (() => { try { return localStorage.getItem("lega") || "ALL"; } catch (e) { return "ALL"; } })()};
-const LEGHE = () => S.pred?.leghe || {};
-const lgName = c => LEGHE()[c] ? `${LEGHE()[c].flag} ${LEGHE()[c].nome}` : c;
-const matches = () => (S.pred?.partite || []).filter(m => S.lega === "ALL" || (m.lega || "I1") === S.lega);
-function setLega(c) { S.lega = c; S.sel = null; try { localStorage.setItem("lega", c); } catch (e) {} render(); window.scrollTo(0, 0); }
-function leagueBar() {
-  const all = S.pred?.partite || [];
-  const cnt = c => all.filter(m => (m.lega || "I1") === c).length;
-  const codes = Object.keys(LEGHE());
-  if (S.view === "classifica") {
-    const cur = S.lega === "ALL" ? "I1" : S.lega;
-    return codes.filter(c => S.stand?.leghe?.[c]).map(c => `<button class="${c === cur ? "on" : ""}" onclick="setLega('${c}')">${lgName(c)}</button>`).join("");
-  }
-  return `<button class="${S.lega === "ALL" ? "on" : ""}" onclick="setLega('ALL')">Tutti<small>${all.length}</small></button>` +
-    codes.map(c => `<button class="${c === S.lega ? "on" : ""}" onclick="setLega('${c}')">${lgName(c)}<small>${cnt(c)}</small></button>`).join("");
-}
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const pc = p => p == null ? "–" : Math.round(p * 100) + "%";
 const fair = p => p > 0 ? (1 / p).toFixed(2) : "–";
 const GIORNI = ["domenica","lunedì","martedì","mercoledì","giovedì","venerdì","sabato"];
+const store = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} };
+const restore = (k, d) => { try { const v = JSON.parse(localStorage.getItem(k)); return v ?? d; } catch (e) { return d; } };
+
+const F0 = {pmin: 0.65, qmin: 1.2, cats: ["esito", "doppia", "gol", "ggng", "multigol", "set", "punti", "handicap"],
+            leghe: [], soloQuote: false, n: 4, obiettivo: "prob", target: 3};
+const S = {view: "oggi", pred: null, stand: null, meta: null, err: null, appUpdate: null,
+           sport: restore("sport", "tutti"), day: null, allDays: false, f: {...F0, ...restore("filtri2", {})},
+           sel: null, open: {}, showAll: false, lgClass: null};
+S.lega = "ALL";   // usato da alcune funzioni condivise
+const LEGHE = () => S.pred?.leghe || {};
+const lgName = c => LEGHE()[c] ? `${LEGHE()[c].flag} ${LEGHE()[c].nome}` : c;
+const sportOf = m => m.sport || "calcio";
+const SPORTS = {calcio: "⚽ Calcio", tennis: "🎾 Tennis", basket: "🏀 Basket"};
+const form = f => `<span class="form">${[...(f || "")].map(c => `<i class="${c}">${c}</i>`).join("")}</span>`;
+const pos = c => c ? `${c.pos}° in classifica` : "neopromossa";
+const todayStr = () => new Date().toISOString().slice(0, 10);
+function dayShort(d) {
+  const dd = new Date(d + "T12:00"), tm = new Date(Date.now() + 864e5).toISOString().slice(0, 10);
+  return d === todayStr() ? "Oggi" : d === tm ? "Domani" : `${GIORNI[dd.getDay()].slice(0, 3)} ${dd.getDate()}`;
+}
+const dayLabel = s => { const d = new Date(s + "T12:00"); return `${GIORNI[d.getDay()]} ${d.toLocaleDateString("it-IT", {day: "numeric", month: "long"})}`; };
 
 /* ---------- traduzione dei mercati in parole semplici ---------- */
 function label(k, m) {
@@ -234,24 +266,6 @@ function storySport(m) {
   if (m.value.length) out.push(`💰 Quota conveniente: <b>${esc(label(m.value[0].mercato, m))}</b> pagata ${m.value[0].quota.toFixed(2)} (giusta ${fair(m.value[0].prob)}).`);
   return out;
 }
-function sportCard(m, i) {
-  const M = m.mercati, bp = bestPick(m), [cc, ct] = conf(bp.p);
-  const keys = Object.keys(M);
-  return `<div class="card" id="c${i}">
-  ${S.lega === "ALL" ? `<div class="lg">${lgName(m.lega)}</div>` : ""}
-  <div class="teams"><b>${esc(m.casa)}</b><span class="vs">–</span><b>${esc(m.ospite)}</b><span class="sp"></span><span class="mut small">${esc(m.ora || "")}</span></div>
-  <div class="meta">${form(m.forma_casa)} &nbsp;·&nbsp; ${form(m.forma_ospite)}</div>
-  <div class="bar">
-    <div style="width:${M["1"] * 100}%;background:var(--h)">${pc(M["1"])}</div>
-    <div style="width:${M["2"] * 100}%;background:var(--a)">${pc(M["2"])}</div>
-  </div>
-  <div class="barlab"><span>vince ${esc(m.casa)}</span><span>vince ${esc(m.ospite)}</span></div>
-  <div class="pick"><div><div class="mut small">Il pronostico più probabile</div><div class="t">${esc(label(bp.k, m))}</div><span class="conf ${cc}">${ct}</span></div>
-    <div class="p"><b>${pc(bp.p)}</b><span class="mut small">${bp.q ? "paga " + bp.q.toFixed(2) : "quota giusta " + fair(bp.p)}</span></div></div>
-  <ul class="says">${storySport(m).map(x => `<li>${x}</li>`).join("")}</ul>
-  <button class="more" onclick="toggle(${i})">Tutti i pronostici ▾</button>
-  <div class="det">${rows(m, keys)}</div></div>`;
-}
 
 function story(m) {
   const M = m.mercati, out = [];
@@ -284,31 +298,6 @@ function story(m) {
   return out;
 }
 
-async function getJSON(name) {
-  const r = await fetch(`data/${name}?t=${Date.now()}`, {cache: "no-store"});
-  if (!r.ok) throw new Error(`${name}: HTTP ${r.status}`);
-  return r.json();
-}
-async function load() {
-  $("#upd").textContent = "caricamento…";
-  try {
-    [S.pred, S.stand, S.meta] = await Promise.all(["predictions.json", "standings.json", "meta.json"].map(getJSON));
-    S.err = null;
-    try { localStorage.setItem("cache", JSON.stringify([S.pred, S.stand, S.meta])); } catch (e) {}
-  } catch (e) {
-    S.err = e.message;
-    try { [S.pred, S.stand, S.meta] = JSON.parse(localStorage.getItem("cache")) || []; } catch (_) {}
-  }
-  S.sel = null;
-  const d = S.meta?.aggiornato ? new Date(S.meta.aggiornato) : null;
-  $("#upd").textContent = d ? `Aggiornato ${d.toLocaleString("it-IT", {weekday: "short", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit"})}` + (S.err ? " · offline" : "") : (S.err || "");
-  render();
-  checkApp();
-}
-
-const form = f => `<span class="form">${[...(f || "")].map(c => `<i class="${c}">${c}</i>`).join("")}</span>`;
-const pos = c => c ? `${c.pos}° in classifica` : "neopromossa";
-const dayLabel = s => { const d = new Date(s + "T12:00"); return `${GIORNI[d.getDay()]} ${d.toLocaleDateString("it-IT", {day: "numeric", month: "long"})}`; };
 
 function rows(m, keys) {
   return keys.filter(k => m.mercati[k] != null).map(k => {
@@ -322,126 +311,7 @@ function newsList(arr) {
 const IMP = {stella: "⭐ chiave", titolare: "titolare", riserva: "riserva"};
 const abs = arr => arr.length ? arr.map(a => `<div class="mk"><span><b>${esc(a.nome)}</b> <span class="mut">${esc([a.ruolo, IMP[a.importanza] || a.importanza, a.motivo, a.certezza].filter(Boolean).join(" · "))}</span>${a.titolo ? `<br><span class="mut small">“${esc(a.titolo)}”</span>` : ""}</span><span>${a.effetto ? "−" + Math.round(a.effetto * 100) + "%" : ""}</span></div>`).join("") : `<span class="mut small">nessuno segnalato</span>`;
 
-function card(m, i) {
-  if (m.sport && m.sport !== "calcio") return sportCard(m, i);
-  const M = m.mercati, bp = bestPick(m), [cc, ct] = conf(bp.p);
-  const pf = Object.keys(M).filter(k => k.startsWith("PF ")).sort((a, b) => M[b] - M[a]).slice(0, 4);
-  return `<div class="card" id="c${i}">
-  ${S.lega === "ALL" ? `<div class="lg">${lgName(m.lega || "I1")}</div>` : ""}
-  <div class="teams"><b>${esc(m.casa)}</b><span class="vs">–</span><b>${esc(m.ospite)}</b><span class="sp"></span><span class="mut small">${esc(m.ora || "")}</span></div>
-  <div class="meta">${pos(m.classifica_casa)} ${form(m.forma_casa)} &nbsp;·&nbsp; ${pos(m.classifica_ospite)} ${form(m.forma_ospite)}</div>
-  <div class="bar">
-    <div style="width:${M["1"] * 100}%;background:var(--h)">${pc(M["1"])}</div>
-    <div style="width:${M["X"] * 100}%;background:var(--d)">${pc(M["X"])}</div>
-    <div style="width:${M["2"] * 100}%;background:var(--a)">${pc(M["2"])}</div>
-  </div>
-  <div class="barlab"><span>vince ${esc(m.casa)}</span><span>pareggio</span><span>vince ${esc(m.ospite)}</span></div>
-  <div class="pick"><div><div class="mut small">Il pronostico più probabile</div><div class="t">${esc(label(bp.k, m))}</div><span class="conf ${cc}">${ct}</span></div>
-    <div class="p"><b>${pc(bp.p)}</b><span class="mut small">${bp.q ? "paga " + bp.q.toFixed(2) : "quota giusta " + fair(bp.p)}</span></div></div>
-  <ul class="says">${story(m).map(s => `<li>${s}</li>`).join("")}</ul>
-  <button class="more" onclick="toggle(${i})">Tutti i pronostici e le notizie ▾</button>
-  <div class="det">
-    <div class="sec">Chi vince</div>${rows(m, ["1", "X", "2", "1X", "X2", "12", "Handicap 1 (-1)", "Handicap 2 (-1)"])}
-    <div class="sec">Quanti gol</div>${rows(m, ["Over 1.5", "Over 2.5", "Over 3.5", "Under 2.5", "Under 3.5", "Multigol 1-3", "Multigol 2-4", "Multigol 3-5"])}
-    <div class="sec">Chi segna</div>${rows(m, ["GG", "NG", "Casa Over 0.5", "Ospite Over 0.5", "Casa Over 1.5", "Ospite Over 1.5"])}
-    <div class="sec">Combinati</div>${rows(m, ["1 + Over 1.5", "2 + Over 1.5", "1 + GG", "2 + GG", "GG + Over 2.5", "1X + Under 3.5", "X2 + Under 3.5"])}
-    <div class="sec">Primo tempo</div>${rows(m, ["1T 1", "1T X", "1T 2", "1T Over 0.5", "1T Over 1.5"])}${rows(m, pf)}
-    <div class="sec">Risultato esatto</div>${m.risultati.map(r => `<div class="mk"><span>${esc(r.r)}</span><span>${pc(r.p)}</span></div>`).join("")}
-    <div class="sec">Angoli (attesi ${M["Angoli attesi"].toFixed(1)}) e cartellini (attesi ${M["Cartellini attesi"].toFixed(1)})</div>
-    ${rows(m, ["Angoli Over 8.5", "Angoli Over 9.5", "Angoli Over 10.5", "Cartellini Over 3.5", "Cartellini Over 4.5"])}
-    <div class="sec">Assenti ${esc(m.casa)}</div>${abs(m.assenti_casa)}
-    <div class="sec">Assenti ${esc(m.ospite)}</div>${abs(m.assenti_ospite)}
-    ${m.eventi?.n_titoli ? `<div class="mut small" style="margin-top:4px">Analisi IA di ${m.eventi.n_titoli} titoli recenti. ${esc([m.eventi.note, m.eventi.casa?.note, m.eventi.ospite?.note].filter(Boolean).join(" · "))}</div>` : ""}
-    ${(m.note_casa.length || m.note_ospite.length) ? `<div class="sec">Note</div><div class="small">${m.note_casa.map(x => esc(m.casa + ": " + x)).concat(m.note_ospite.map(x => esc(m.ospite + ": " + x))).join("<br>")}</div>` : ""}
-    <div class="sec">Notizie ${esc(m.casa)}</div><div class="news">${newsList(m.news_casa)}</div>
-    <div class="sec">Notizie ${esc(m.ospite)}</div><div class="news">${newsList(m.news_ospite)}</div>
-  </div></div>`;
-}
-function toggle(i) {
-  const c = document.getElementById("c" + i); c.classList.toggle("open");
-  c.querySelector(".more").textContent = c.classList.contains("open") ? "Chiudi ▴" : "Tutti i pronostici ▾";
-}
 
-function viewPartite() {
-  const list = matches();
-  let h = updBanner();
-  if (!list.length) return h + `<div class="empty">Nessuna partita nei prossimi 10 giorni${S.lega === "ALL" ? "" : " per questo campionato"}.<br><br><span class="small">Il calendario di alcuni campionati compare solo a metà settimana.</span></div>`;
-  let last = "";
-  list.forEach((m, i) => {
-    if (m.data !== last) { h += `<div class="day">${dayLabel(m.data)}</div>`; last = m.data; }
-    h += card(m, i);
-  });
-  return h;
-}
-
-/* ---------- filtri condivisi (Migliori + Schedina) ---------- */
-const F0 = {giorno: "tutti", leghe: [], pmin: 0.65, qmin: 1.2, cats: ["esito", "doppia", "gol", "ggng", "multigol", "set", "punti", "handicap"],
-            soloQuote: false, n: 4, obiettivo: "prob", target: 3, perPartita: false};
-S.f = (() => { try { return {...F0, ...JSON.parse(localStorage.getItem("filtri") || "{}")}; } catch (e) { return {...F0}; } })();
-function setF(k, v) { S.f[k] = v; S.sel = null; try { localStorage.setItem("filtri", JSON.stringify(S.f)); } catch (e) {} render(); }
-function togF(k, v) { const a = new Set(S.f[k]); a.has(v) ? a.delete(v) : a.add(v); setF(k, [...a]); }
-const today = () => new Date().toISOString().slice(0, 10);
-function days() { return [...new Set((S.pred?.partite || []).map(m => m.data))].sort(); }
-function dayShort(d) { const t = today(), dd = new Date(d + "T12:00");
-  const tm = new Date(Date.now() + 864e5).toISOString().slice(0, 10);
-  return d === t ? "Oggi" : d === tm ? "Domani" : `${GIORNI[dd.getDay()].slice(0, 3)} ${dd.getDate()}`; }
-
-/* tutti i pronostici che passano i filtri (ignora "giorno" se skipDay) */
-function candidates(skipDay) {
-  const f = S.f, out = [];
-  (S.pred?.partite || []).forEach((m, mi) => {
-    if (!skipDay && f.giorno !== "tutti" && m.data !== f.giorno) return;
-    if (f.leghe.length && !f.leghe.includes(m.lega || "I1")) return;
-    for (const x of picksFor(m, mi)) {
-      if (x.p < f.pmin || x.odd < f.qmin || !f.cats.includes(x.cat)) continue;
-      if (f.soloQuote && !x.q) continue;
-      out.push(x);
-    }
-  });
-  return out.sort((a, b) => b.p - a.p);
-}
-function bestPerMatch(list) { const seen = new Set(); return list.filter(x => !seen.has(x.mi) && seen.add(x.mi)); }
-
-function filtersPanel(withBuilder) {
-  const f = S.f, L = LEGHE();
-  const chip = (on, txt, js) => `<button class="${on ? "on" : ""}" onclick="${js}">${txt}</button>`;
-  const ds = days().slice(0, 8);
-  const nCats = Object.keys(CATS).filter(c => f.cats.includes(c)).length;
-  return `<details class="filters" ${S.openF ? "open" : ""} ontoggle="S.openF=this.open">
-  <summary>🔎 Filtri · ${f.giorno === "tutti" ? "tutti i giorni" : dayShort(f.giorno)} · ${f.leghe.length ? f.leghe.length + " campionati" : "tutti i campionati"} · prob ≥ ${pc(f.pmin)}${f.qmin > 1 ? " · quota ≥ " + f.qmin.toFixed(2) : ""}</summary>
-  <div class="fl"><div>Giorno</div><div class="chips">${chip(f.giorno === "tutti", "Tutti", "setF('giorno','tutti')")}${ds.map(d => chip(f.giorno === d, dayShort(d), `setF('giorno','${d}')`)).join("")}</div></div>
-  <div class="fl"><div>Sport e campionati ${f.leghe.length ? `· <a href="#" onclick="setF('leghe',[]);return false" style="color:var(--acc)">tutti</a>` : ""}</div><div class="chips">${Object.keys(L).map(c => chip(f.leghe.includes(c), `${L[c].flag} ${L[c].nome}`, `togF('leghe','${c}')`)).join("")}</div></div>
-  <div class="fl"><div>Probabilità minima di ogni pronostico: <b>${pc(f.pmin)}</b></div><input type="range" min="50" max="95" step="5" value="${Math.round(f.pmin * 100)}" onchange="setF('pmin', this.value/100)"></div>
-  <div class="fl"><div>Quota minima di ogni pronostico (scarta quelli che pagano troppo poco)</div>
-    <select onchange="setF('qmin', +this.value)">${[1, 1.15, 1.2, 1.25, 1.3, 1.4, 1.5, 1.7, 2].map(q => `<option value="${q}" ${f.qmin === q ? "selected" : ""}>${q === 1 ? "nessuna" : "≥ " + q.toFixed(2)}</option>`).join("")}</select></div>
-  <div class="fl"><div>Tipi di pronostico (${nCats}/${Object.keys(CATS).length})</div><div class="chips">${Object.entries(CATS).map(([c, t]) => chip(f.cats.includes(c), t, `togF('cats','${c}')`)).join("")}</div></div>
-  <div class="fl"><label class="small"><input type="checkbox" ${f.soloQuote ? "checked" : ""} onchange="setF('soloQuote', this.checked)"> Solo pronostici con quota reale del bookmaker</label></div>
-  ${withBuilder ? "" : `<div class="fl"><label class="small"><input type="checkbox" ${f.perPartita ? "checked" : ""} onchange="setF('perPartita', this.checked)"> Mostra più pronostici per la stessa partita</label></div>`}
-  </details>`;
-}
-
-function pickRow(x, i, extra) {
-  const [cc, ct] = conf(x.p);
-  return `<div class="prow">${i != null ? `<span class="rank">${i + 1}</span>` : ""}${extra || ""}
-    <div style="min-width:0"><div class="lg">${lgName(x.m.lega || "I1")} · ${dayShort(x.m.data)} ${esc(x.m.ora || "")}</div>
-    <div><b>${esc(x.m.casa)} – ${esc(x.m.ospite)}</b></div>
-    <div class="small">${esc(label(x.k, x.m))} <span class="mut">(${esc(x.k)})</span></div><span class="conf ${cc}">${ct}</span></div>
-    <div class="p"><b>${pc(x.p)}</b><span class="tagq">${x.q ? "quota " + x.q.toFixed(2) : "q. giusta " + fair(x.p)}</span></div></div>`;
-}
-
-/* ---------- Migliori: classifica di tutti i pronostici ---------- */
-function viewMigliori() {
-  let list = candidates(false);
-  if (!S.f.perPartita) list = bestPerMatch(list);
-  const tot = list.length;
-  list = list.slice(0, 80);
-  return updBanner() + filtersPanel(false) +
-    (tot ? `<div class="mut small" style="margin:4px 0 6px">${tot} pronostici trovati, dal più probabile. Tocca la scheda 🎫 per farne una schedina.</div>
-     <div class="card">${list.map((x, i) => pickRow(x, i)).join("")}</div>`
-    : `<div class="empty">Nessun pronostico con questi filtri. Prova ad abbassare la probabilità minima o la quota minima.</div>`);
-}
-
-/* ---------- Schedina: costruzione automatica + modifica ---------- */
 function autoBuild(cands, f) {
   const best = bestPerMatch(cands);
   if (f.obiettivo === "prob") return best.slice(0, f.n);
@@ -465,66 +335,6 @@ function verdict(p, n) {
     p >= .25 ? `Possibile: esce circa 1 volta su ${Math.round(1 / p)}.` :
     p >= .1 ? `Difficile: esce circa 1 volta su ${Math.round(1 / p)}.` :
     `Molto difficile, quasi una lotteria: 1 volta su ${Math.round(1 / p)}.`;
-}
-function viewSchedina() {
-  const f = S.f;
-  const cands = candidates(false);
-  if (!S.sel) { const a = autoBuild(cands, f); S.sel = a ? a.map(x => x.id) : []; S.autoFail = !a; }
-  const byId = Object.fromEntries(cands.map(x => [x.id, x]));
-  const chosen = S.sel.map(id => byId[id]).filter(Boolean);
-  const used = new Set(chosen.map(x => x.mi));
-  const others = bestPerMatch(cands.filter(x => !used.has(x.mi))).slice(0, 12);
-  const p = chosen.reduce((a, x) => a * x.p, 1), n = chosen.length;
-  const allReal = n && chosen.every(x => x.q);
-  const odd = chosen.reduce((a, x) => a * x.odd, 1);
-  const leagues = new Set(chosen.map(x => x.m.lega)).size;
-
-  // schedine suggerite giorno per giorno (stessi filtri, giorno per giorno)
-  const perDay = days().slice(0, 5).map(d => {
-    const c = candidates(true).filter(x => x.m.data === d);
-    const a = bestPerMatch(c).slice(0, Math.min(f.n, 4));
-    return {d, a, p: a.reduce((s, x) => s * x.p, 1)};
-  }).filter(x => x.a.length >= 2);
-
-  return updBanner() + filtersPanel(true) + `
-  <div class="card">
-    <div class="fl" style="margin-top:0"><div>Come costruirla</div>
-      <div class="seg"><button class="${f.obiettivo === "prob" ? "on" : ""}" onclick="setF('obiettivo','prob')">Massima probabilità</button>
-      <button class="${f.obiettivo === "quota" ? "on" : ""}" onclick="setF('obiettivo','quota')">Raggiungi una quota</button></div></div>
-    <div class="row" style="gap:16px;flex-wrap:wrap">
-      <div class="step"><span class="small mut">${f.obiettivo === "prob" ? "Partite" : "Max partite"}</span>
-        <button onclick="setF('n', Math.max(1, S.f.n - 1))">−</button><b>${f.n}</b><button onclick="setF('n', Math.min(12, S.f.n + 1))">+</button></div>
-      ${f.obiettivo === "quota" ? `<div class="step"><span class="small mut">Quota totale</span>
-        <select onchange="setF('target', +this.value)">${[1.5, 2, 2.5, 3, 4, 5, 7, 10, 15, 20].map(q => `<option value="${q}" ${f.target === q ? "selected" : ""}>${q}</option>`).join("")}</select></div>` : ""}
-      <button onclick="S.sel=null;render()">↻ Ricalcola</button>
-    </div>
-  </div>
-  ${S.autoFail && f.obiettivo === "quota" ? `<div class="banner" style="background:#3a3212;border-color:var(--y)">Con questi filtri non si arriva a quota ${f.target} con ${f.n} partite: aumenta le partite o abbassa la probabilità minima.</div>` : ""}
-  <div class="card">
-    <div class="row"><div><div class="mut small">Probabilità che esca tutta</div><div class="big">${n ? pc(p) : "–"}</div></div>
-    <span class="sp"></span><div style="text-align:right"><div class="mut small">${n} pronostici · ${allReal ? "quota reale" : "quota giusta"}</div><div class="big">${n ? odd.toFixed(2) : "–"}</div></div></div>
-    <div class="small">${verdict(p, n)}${leagues > 1 ? ` Mescola ${leagues} campionati/sport.` : ""}</div>
-    ${chosen.map((x, i) => pickRow(x, null, `<input type="checkbox" checked onchange="S.sel=S.sel.filter(id=>id!=='${x.id}');render()" style="width:20px;height:20px;accent-color:var(--acc)">`)).join("")}
-  </div>
-  ${others.length ? `<div class="card"><div class="sec" style="margin-top:0">Altri pronostici che puoi aggiungere</div>
-    ${others.map(x => pickRow(x, null, `<button class="addbtn" onclick="S.sel.push('${x.id}');render()">＋</button>`)).join("")}</div>` : ""}
-  ${perDay.length ? `<div class="card"><div class="sec" style="margin-top:0">Schedine suggerite giorno per giorno</div>
-    ${perDay.map(x => `<div class="prow"><div><b>${dayLabel(x.d)}</b><div class="small mut">${x.a.length} pronostici: ${x.a.map(y => esc(y.m.casa.split(" ").slice(-1)[0] + "–" + y.m.ospite.split(" ").slice(-1)[0])).join(", ")}</div></div>
-      <div class="p"><b>${pc(x.p)}</b><button class="addbtn" onclick="setF('giorno','${x.d}')">Apri</button></div></div>`).join("")}</div>` : ""}
-  <div class="card small"><b>Come leggerla.</b> Le probabilità si moltiplicano: 4 pronostici all'80% danno insieme il 41%, 10 danno l'11%.
-  "Quota giusta" = quella senza guadagno del banco; se il bookmaker paga meno, la giocata non conviene. Ogni pronostico in più aggiunge il margine del bookmaker (circa 5%): per arrivare a una quota conviene usare meno partite. Gioca solo cifre che puoi permetterti di perdere.</div>`;
-}
-
-function viewClassifica() {
-  const cur = S.lega === "ALL" ? "I1" : S.lega;
-  const r = S.stand?.leghe?.[cur] || S.stand?.righe || [];
-  if (!r.length) return `<div class="empty">Classifica non disponibile</div>`;
-  const mx = Math.max(...r.map(x => x.forza ?? 0)), mn = Math.min(...r.map(x => x.forza ?? 0));
-  const sp = LEGHE()[cur]?.sport && LEGHE()[cur].sport !== "calcio";
-  return `<table><tr><th>#</th><th>${sp ? (LEGHE()[cur].sport === "tennis" ? "Giocatore" : "Squadra") : "Squadra"}</th><th>${sp ? "Elo" : "Punti"}</th><th>${sp ? "Partite" : "Gioc."}</th><th>Ultime 5</th><th>Forza reale</th></tr>${r.map(x =>
-    `<tr><td>${x.pos}</td><td>${esc(x.squadra)}</td><td><b>${x.pt}</b></td><td>${x.pg}</td><td>${form(x.forma)}</td>
-     <td><span class="fz" style="width:${x.forza == null ? 0 : 6 + 50 * (x.forza - mn) / ((mx - mn) || 1)}px"></span></td></tr>`).join("")}</table>
-    <p class="mut small">V vittoria · N pareggio · P sconfitta. "Forza reale" è come il modello valuta la squadra guardando i gol fatti e subiti contro avversari di ogni livello, dando più peso alle partite recenti: una squadra può avere pochi punti ma essere forte (o il contrario).</p>`;
 }
 
 function viewInfo() {
@@ -581,17 +391,243 @@ async function checkApp() {
   } catch (e) {}
 }
 
-function render() {
-  $("#main").innerHTML = {partite: viewPartite, migliori: viewMigliori, schedina: viewSchedina, classifica: viewClassifica, info: viewInfo}[S.view]();
-  document.querySelectorAll("nav button").forEach(b => b.classList.toggle("on", b.dataset.v === S.view));
-  const lb = $("#leagues");
-  lb.style.display = ["info", "migliori", "schedina"].includes(S.view) ? "none" : "flex";
-  lb.innerHTML = leagueBar();
+
+
+/* ---------- dati filtrati ---------- */
+function allMatches() { return (S.pred?.partite || []).map((m, mi) => ({...m, _mi: mi})); }
+function matchesNow(anyDay) {
+  return allMatches().filter(m => (S.sport === "tutti" || sportOf(m) === S.sport) && (anyDay || S.allDays || m.data === S.day));
 }
-document.querySelectorAll("nav button").forEach(b => b.onclick = () => { S.view = b.dataset.v; render(); window.scrollTo(0, 0); });
-// ↻ ricarica anche l'interfaccia, non solo i dati
+function daysAvail() {
+  return [...new Set(allMatches().filter(m => S.sport === "tutti" || sportOf(m) === S.sport).map(m => m.data))]
+    .filter(d => d >= todayStr()).sort();
+}
+function picks(list, f) {
+  const out = [];
+  for (const m of list) {
+    if (f.leghe.length && !f.leghe.includes(m.lega || "I1")) continue;
+    for (const x of picksFor(m, m._mi)) {
+      if (x.p < f.pmin || x.odd < f.qmin || !f.cats.includes(x.cat) || (f.soloQuote && !x.q)) continue;
+      out.push(x);
+    }
+  }
+  return out.sort((a, b) => b.p - a.p);
+}
+const bestPerMatch = l => { const s = new Set(); return l.filter(x => !s.has(x.mi) && s.add(x.mi)); };
+const dotc = p => p >= .8 ? "d3" : p >= .7 ? "d2" : "d1";
+
+function pkRow(x, i, right) {
+  return `<div class="pk" onclick="openMatch(${x.mi})">
+    ${i != null ? `<span class="n">${i + 1}</span>` : ""}
+    <div class="main"><div class="what"><span class="dot ${dotc(x.p)}"></span>${esc(label(x.k, x.m))}</div>
+      <div class="who">${LEGHE()[x.m.lega]?.flag || ""} ${esc(x.m.casa)} – ${esc(x.m.ospite)} · ${S.allDays ? dayShort(x.m.data) + " " : ""}${esc(x.m.ora || "")}</div></div>
+    <div class="num"><b>${pc(x.p)}</b><span>${x.q ? "quota " + x.q.toFixed(2) : "giusta " + fair(x.p)}</span></div>
+    ${right || ""}</div>`;
+}
+
+/* ---------- barre in alto ---------- */
+function topBars() {
+  const show = ["oggi", "schedina"].includes(S.view);
+  const present = new Set(allMatches().map(sportOf));
+  const sp = ["tutti", ...Object.keys(SPORTS).filter(s => present.has(s))];
+  $("#sports").style.display = ["oggi", "schedina", "classifica"].includes(S.view) ? "flex" : "none";
+  $("#sports").innerHTML = sp.map(s => `<button class="${S.sport === s ? "on" : ""}" onclick="setSport('${s}')">${s === "tutti" ? "Tutti gli sport" : SPORTS[s]}</button>`).join("");
+  const ds = daysAvail();
+  if (!S.day || !ds.includes(S.day)) S.day = ds[0] || todayStr();
+  $("#days").style.display = show ? "flex" : "none";
+  $("#days").innerHTML = (S.view === "schedina" ? `<button class="${S.allDays ? "on" : ""}" onclick="setDay('tutti')">Tutti i giorni</button>` : "") +
+    ds.slice(0, 8).map(d => `<button class="${!S.allDays && S.day === d ? "on" : ""}" onclick="setDay('${d}')">${dayShort(d)}<small>${matchesNow(true).filter(m => m.data === d).length}</small></button>`).join("");
+}
+function setSport(s) { S.sport = s; S.sel = null; store("sport", s); render(); }
+function setDay(d) { if (d === "tutti") S.allDays = true; else { S.allDays = false; S.day = d; } S.sel = null; render(); }
+function setF(k, v) { S.f[k] = v; S.sel = null; store("filtri2", S.f); render(); }
+function togF(k, v) { const a = new Set(S.f[k]); a.has(v) ? a.delete(v) : a.add(v); setF(k, [...a]); }
+
+/* ---------- 🏠 OGGI ---------- */
+function viewOggi() {
+  if (S.view === "oggi") S.allDays = false;
+  const list = matchesNow();
+  if (!list.length) return updBanner() + `<div class="empty">Nessuna partita ${S.sport === "tutti" ? "" : "di questo sport "}in questo giorno.</div>`;
+  const best = bestPerMatch(picks(list, S.f));
+  const top = best.slice(0, S.showAll ? 30 : 5);
+  const slip = bestPerMatch(picks(list, S.f)).slice(0, 4);
+  const sp = slip.reduce((a, x) => a * x.p, 1), so = slip.reduce((a, x) => a * x.odd, 1);
+
+  // partite raggruppate per campionato
+  const groups = {};
+  for (const m of list) (groups[m.lega || "I1"] ||= []).push(m);
+  const order = Object.keys(LEGHE());
+  const keys = Object.keys(groups).sort((a, b) => order.indexOf(a) - order.indexOf(b));
+
+  return updBanner() + `
+  <div class="card"><h2>🎯 I pronostici più sicuri · ${dayShort(S.day)}</h2>
+    <div class="hint">Uno per partita, dal più probabile. Tocca per vedere la partita.</div>
+    ${top.length ? top.map((x, i) => pkRow(x, i)).join("") : `<div class="empty">Nessun pronostico sopra il ${pc(S.f.pmin)}.</div>`}
+    ${best.length > 5 ? `<button style="width:100%;margin-top:8px" onclick="S.showAll=!S.showAll;render()">${S.showAll ? "Mostra meno" : `Mostra tutti (${best.length})`}</button>` : ""}
+  </div>
+  ${slip.length >= 2 ? `<div class="card"><h2>🎫 Schedina consigliata</h2>
+    <div class="sum"><div><div class="small mut">Probabilità che esca</div><div class="big">${pc(sp)}</div></div>
+      <div class="r"><div class="small mut">${slip.length} pronostici · quota</div><div class="big">${so.toFixed(2)}</div></div></div>
+    <div class="verdict">${verdict(sp, slip.length)}</div>
+    ${slip.map(x => pkRow(x)).join("")}
+    <button style="width:100%;margin-top:8px" onclick="go('schedina')">Modificala o costruiscine un'altra →</button></div>` : ""}
+  <h2 style="margin:16px 0 8px">Tutte le partite · ${list.length}</h2>
+  ${keys.map(k => {
+    const ms = groups[k].sort((a, b) => (a.ora || "").localeCompare(b.ora || ""));
+    const open = S.open[k] ?? keys.length <= 2;
+    return `<div class="card grp"><div class="lgh" onclick="S.open['${k}']=!${open};render()">${lgName(k)} <span class="c">${ms.length}</span><span class="ar">${open ? "▴" : "▾"}</span></div>
+      ${open ? ms.map(matchRow).join("") : ""}</div>`;
+  }).join("")}`;
+}
+function matchRow(m) {
+  const M = m.mercati, bp = bestPick(m);
+  const pr = M.X != null ? `${pc(M["1"])} · ${pc(M.X)} · ${pc(M["2"])}` : `${pc(M["1"])} · ${pc(M["2"])}`;
+  return `<div class="mr" onclick="openMatch(${m._mi})"><div class="t">${esc(m.ora || "")}</div>
+    <div class="tm"><div>${esc(m.casa)}</div><div>${esc(m.ospite)}</div><div class="pb">${pr}</div></div>
+    <div class="bp"><b>${pc(bp.p)}</b><div class="mut">${esc(label(bp.k, m))}</div></div></div>`;
+}
+
+/* ---------- dettaglio partita (pagina a parte) ---------- */
+function openMatch(mi) {
+  const m = {...S.pred.partite[mi], _mi: mi};
+  $("#det").innerHTML = detail(m);
+  $("#det").classList.add("on");
+  $("#det").scrollTop = 0;
+  history.pushState({det: 1}, "");
+}
+function closeMatch() { if ($("#det").classList.contains("on")) history.back(); }
+window.addEventListener("popstate", () => $("#det").classList.remove("on"));
+
+function detail(m) {
+  const M = m.mercati, bp = bestPick(m), [cc, ct] = conf(bp.p), calcio = sportOf(m) === "calcio";
+  const says = calcio ? story(m) : storySport(m);
+  const bar = calcio
+    ? `<div style="width:${M["1"] * 100}%;background:var(--h)">${pc(M["1"])}</div><div style="width:${M.X * 100}%;background:var(--d)">${pc(M.X)}</div><div style="width:${M["2"] * 100}%;background:var(--a)">${pc(M["2"])}</div>`
+    : `<div style="width:${M["1"] * 100}%;background:var(--h)">${pc(M["1"])}</div><div style="width:${M["2"] * 100}%;background:var(--a)">${pc(M["2"])}</div>`;
+  const sec = (t, keys) => { const r = rows(m, keys); return r ? `<div class="sec">${t}</div>${r}` : ""; };
+  const pf = Object.keys(M).filter(k => k.startsWith("PF ")).sort((a, b) => M[b] - M[a]).slice(0, 4);
+  const altri = calcio ? `
+      ${sec("Chi vince", ["1", "X", "2", "1X", "X2", "12", "Handicap 1 (-1)", "Handicap 2 (-1)"])}
+      ${sec("Quanti gol", ["Over 1.5", "Over 2.5", "Over 3.5", "Under 2.5", "Under 3.5", "Multigol 1-3", "Multigol 2-4", "Multigol 3-5"])}
+      ${sec("Chi segna", ["GG", "NG", "Casa Over 0.5", "Ospite Over 0.5", "Casa Over 1.5", "Ospite Over 1.5"])}
+      ${sec("Combinati", ["1 + Over 1.5", "2 + Over 1.5", "1 + GG", "2 + GG", "GG + Over 2.5", "1X + Under 3.5", "X2 + Under 3.5"])}
+      ${sec("Primo tempo", ["1T 1", "1T X", "1T 2", "1T Over 0.5", "1T Over 1.5", ...pf])}
+      <div class="sec">Risultato esatto</div>${(m.risultati || []).map(r => `<div class="mk"><span>${esc(r.r)}</span><span>${pc(r.p)}</span></div>`).join("")}
+      ${M["Angoli attesi"] != null ? sec(`Angoli (attesi ${M["Angoli attesi"].toFixed(1)}) e cartellini (attesi ${M["Cartellini attesi"].toFixed(1)})`, ["Angoli Over 8.5", "Angoli Over 9.5", "Angoli Over 10.5", "Cartellini Over 3.5", "Cartellini Over 4.5"]) : ""}`
+    : rows(m, Object.keys(M));
+  return `<div class="dh"><button onclick="closeMatch()">← Indietro</button><span class="small mut">${lgName(m.lega)} · ${dayShort(m.data)} ${esc(m.ora || "")}</span></div>
+  <main>
+    <div class="teams">${esc(m.casa)} – ${esc(m.ospite)}</div>
+    <div class="sub">${calcio ? `${pos(m.classifica_casa)} ${form(m.forma_casa)} · ${pos(m.classifica_ospite)} ${form(m.forma_ospite)}` : `${form(m.forma_casa)} · ${form(m.forma_ospite)}`}</div>
+    <div class="bar">${bar}</div>
+    <div class="barlab"><span>vince ${esc(m.casa)}</span>${calcio ? "<span>pareggio</span>" : ""}<span>vince ${esc(m.ospite)}</span></div>
+    <div class="pick"><div><div class="small mut">Il pronostico più probabile</div><div style="font-weight:600">${esc(label(bp.k, m))}</div><span class="conf ${cc}">${ct}</span></div>
+      <div class="p"><b>${pc(bp.p)}</b><span class="small mut">${bp.q ? "quota " + bp.q.toFixed(2) : "quota giusta " + fair(bp.p)}</span></div></div>
+    <ul class="says">${says.map(x => `<li>${x}</li>`).join("")}</ul>
+    <div class="card" style="margin-top:14px;padding-top:2px;padding-bottom:2px">
+      <details class="acc"><summary>Tutti i pronostici</summary>${altri}</details>
+      ${calcio ? `<details class="acc"><summary>Assenti e notizie</summary>
+        <div class="sec">Assenti ${esc(m.casa)}</div>${abs(m.assenti_casa || [])}
+        <div class="sec">Assenti ${esc(m.ospite)}</div>${abs(m.assenti_ospite || [])}
+        <div class="sec">Notizie ${esc(m.casa)}</div><div class="news">${newsList(m.news_casa)}</div>
+        <div class="sec">Notizie ${esc(m.ospite)}</div><div class="news">${newsList(m.news_ospite)}</div></details>` : ""}
+    </div>
+  </main>`;
+}
+
+/* ---------- 🎫 SCHEDINA ---------- */
+function viewSchedina() {
+  const f = S.f, list = matchesNow();
+  const cands = picks(list, f);
+  if (!S.sel) { const a = autoBuild(cands, f); S.sel = a ? a.map(x => x.id) : []; S.autoFail = !a; }
+  const byId = Object.fromEntries(cands.map(x => [x.id, x]));
+  const chosen = S.sel.map(id => byId[id]).filter(Boolean);
+  const used = new Set(chosen.map(x => x.mi));
+  const others = bestPerMatch(cands.filter(x => !used.has(x.mi))).slice(0, 15);
+  const p = chosen.reduce((a, x) => a * x.p, 1), n = chosen.length;
+  const odd = chosen.reduce((a, x) => a * x.odd, 1), allReal = n && chosen.every(x => x.q);
+  const L = LEGHE();
+  const lgs = Object.keys(L).filter(c => S.sport === "tutti" || L[c].sport === S.sport);
+  return updBanner() + `
+  <div class="card">
+    <div class="seg"><button class="${f.obiettivo === "prob" ? "on" : ""}" onclick="setF('obiettivo','prob')">La più sicura</button>
+      <button class="${f.obiettivo === "quota" ? "on" : ""}" onclick="setF('obiettivo','quota')">Voglio una quota</button></div>
+    <div class="ctl"><span class="l">${f.obiettivo === "prob" ? "Quante partite" : "Massimo partite"}</span>
+      <div class="step"><button onclick="setF('n', Math.max(1, S.f.n - 1))">−</button><b>${f.n}</b><button onclick="setF('n', Math.min(12, S.f.n + 1))">+</button></div></div>
+    ${f.obiettivo === "quota" ? `<div class="ctl"><span class="l">Quota da raggiungere</span>
+      <select onchange="setF('target', +this.value)">${[1.5, 2, 2.5, 3, 4, 5, 7, 10, 15, 20].map(q => `<option value="${q}" ${f.target === q ? "selected" : ""}>${q}</option>`).join("")}</select></div>` : ""}
+    <div class="ctl" style="display:block"><div class="row"><span class="l">Sicurezza minima di ogni pronostico</span><b>${pc(f.pmin)}</b></div>
+      <input type="range" min="50" max="95" step="5" value="${Math.round(f.pmin * 100)}" onchange="setF('pmin', this.value/100)"></div>
+    <details class="acc"><summary>Filtri avanzati</summary>
+      <div class="small mut">Quota minima di ogni pronostico (scarta quelli che pagano troppo poco)</div>
+      <div class="chips">${[1, 1.15, 1.2, 1.3, 1.5, 1.7, 2].map(q => `<button class="${f.qmin === q ? "on" : ""}" onclick="setF('qmin',${q})">${q === 1 ? "nessuna" : q.toFixed(2)}</button>`).join("")}</div>
+      <div class="small mut">Tipi di pronostico</div>
+      <div class="chips">${Object.entries(CATS).filter(([c]) => S.sport === "tutti" || {calcio: ["esito", "doppia", "gol", "ggng", "multigol", "combo"], tennis: ["esito", "set"], basket: ["esito", "punti", "handicap"]}[S.sport].includes(c))
+        .map(([c, t]) => `<button class="${f.cats.includes(c) ? "on" : ""}" onclick="togF('cats','${c}')">${t}</button>`).join("")}</div>
+      <div class="small mut">Campionati ${f.leghe.length ? `· <a href="#" onclick="setF('leghe',[]);return false">tutti</a>` : "(tutti)"}</div>
+      <div class="chips">${lgs.map(c => `<button class="${f.leghe.includes(c) ? "on" : ""}" onclick="togF('leghe','${c}')">${lgName(c)}</button>`).join("")}</div>
+      <label class="small"><input type="checkbox" ${f.soloQuote ? "checked" : ""} onchange="setF('soloQuote', this.checked)"> Solo pronostici con quota reale del bookmaker</label>
+      <div style="margin:10px 0"><button onclick="S.f={...F0};store('filtri2',S.f);S.sel=null;render()">Ripristina impostazioni</button></div>
+    </details>
+  </div>
+  ${S.autoFail && f.obiettivo === "quota" ? `<div class="banner" style="background:#3a3212;border-color:var(--y)">Non si arriva a quota ${f.target} con ${f.n} partite e questi filtri: aumenta le partite o abbassa la sicurezza minima.</div>` : ""}
+  <div class="card">
+    <div class="sum"><div><div class="small mut">Probabilità che esca</div><div class="big">${n ? pc(p) : "–"}</div></div>
+      <div class="r"><div class="small mut">${n} pronostici · ${allReal ? "quota reale" : "quota giusta"}</div><div class="big">${n ? odd.toFixed(2) : "–"}</div></div></div>
+    <div class="verdict">${verdict(p, n)}</div>
+    ${chosen.map(x => pkRow(x, null, `<button class="x" onclick="event.stopPropagation();S.sel=S.sel.filter(i=>i!=='${x.id}');render()" title="Togli">✕</button>`)).join("")}
+  </div>
+  ${others.length ? `<div class="card"><details class="acc" style="border:0"><summary>➕ Aggiungi altri pronostici (${others.length})</summary>
+    ${others.map(x => pkRow(x, null, `<button class="add" onclick="event.stopPropagation();S.sel.push('${x.id}');render()">＋</button>`)).join("")}</details></div>` : ""}
+  <p class="small mut">Le probabilità si moltiplicano: 4 pronostici all'80% danno insieme il 41%. "Quota giusta" = senza guadagno del banco. Ogni pronostico in più aggiunge il margine del bookmaker (circa 5%). Gioca solo cifre che puoi permetterti di perdere.</p>`;
+}
+
+/* ---------- 📊 CLASSIFICHE ---------- */
+function viewClassifica() {
+  const L = LEGHE();
+  const lgs = Object.keys(L).filter(c => S.stand?.leghe?.[c] && (S.sport === "tutti" || L[c].sport === S.sport));
+  if (!lgs.length) return `<div class="empty">Classifiche non disponibili</div>`;
+  if (!lgs.includes(S.lgClass)) S.lgClass = lgs[0];
+  const cur = S.lgClass, r = S.stand.leghe[cur], sp = L[cur].sport !== "calcio";
+  const mx = Math.max(...r.map(x => x.forza ?? 0)), mn = Math.min(...r.map(x => x.forza ?? 0));
+  return `<div class="card"><select onchange="S.lgClass=this.value;render()" style="width:100%">${lgs.map(c => `<option value="${c}" ${c === cur ? "selected" : ""}>${lgName(c)}</option>`).join("")}</select></div>
+  <div class="card"><table><tr><th>#</th><th>${L[cur].sport === "tennis" ? "Giocatore" : "Squadra"}</th><th>${sp ? "Elo" : "Punti"}</th><th>${sp ? "Partite" : "Gioc."}</th><th>Ultime 5</th><th>Forza</th></tr>${r.map(x =>
+    `<tr><td>${x.pos}</td><td>${esc(x.squadra)}</td><td><b>${x.pt}</b></td><td>${x.pg}</td><td>${form(x.forma)}</td>
+     <td><span class="fz" style="width:${x.forza == null ? 0 : 6 + 44 * (x.forza - mn) / ((mx - mn) || 1)}px"></span></td></tr>`).join("")}</table></div>
+  <p class="mut small">V vittoria · N pareggio · P sconfitta. "Forza" è la valutazione del modello: tiene conto di contro chi si è giocato e dà più peso alle partite recenti.</p>`;
+}
+
+/* ---------- avvio ---------- */
+async function getJSON(name) {
+  const r = await fetch(`data/${name}?t=${Date.now()}`, {cache: "no-store"});
+  if (!r.ok) throw new Error(`${name}: HTTP ${r.status}`);
+  return r.json();
+}
+async function load() {
+  $("#upd").textContent = "…";
+  try {
+    [S.pred, S.stand, S.meta] = await Promise.all(["predictions.json", "standings.json", "meta.json"].map(getJSON));
+    S.err = null;
+    store("cache", [S.pred, S.stand, S.meta]);
+  } catch (e) {
+    S.err = e.message;
+    [S.pred, S.stand, S.meta] = restore("cache", []) || [];
+  }
+  S.sel = null;
+  const d = S.meta?.aggiornato ? new Date(S.meta.aggiornato) : null;
+  $("#upd").textContent = d ? `agg. ${d.toLocaleTimeString("it-IT", {hour: "2-digit", minute: "2-digit"})}${S.err ? " · offline" : ""}` : "";
+  render();
+  checkApp();
+}
+function go(v) { S.view = v; render(); window.scrollTo(0, 0); }
+function render() {
+  topBars();
+  $("#main").innerHTML = {oggi: viewOggi, schedina: viewSchedina, classifica: viewClassifica, info: viewInfo}[S.view]();
+  document.querySelectorAll("nav button").forEach(b => b.classList.toggle("on", b.dataset.v === S.view));
+}
+document.querySelectorAll("nav button").forEach(b => b.onclick = () => go(b.dataset.v));
 $("#reload").onclick = () => location.replace(location.pathname + "?t=" + Date.now());
-document.addEventListener("visibilitychange", () => { if (!document.hidden) load(); });
+document.addEventListener("visibilitychange", () => { if (!document.hidden && !$("#det").classList.contains("on")) load(); });
 load();
 </script>
 </body>
