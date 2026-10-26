@@ -30,7 +30,8 @@ public class MainActivity extends Activity {
         WebSettings s = web.getSettings();
         s.setJavaScriptEnabled(true);
         s.setDomStorageEnabled(true);   // cache offline dei pronostici (localStorage)
-        s.setCacheMode(isOnline() ? WebSettings.LOAD_DEFAULT : WebSettings.LOAD_CACHE_ELSE_NETWORK);
+        // online: sempre la versione più recente; offline: l'ultima salvata
+        s.setCacheMode(isOnline() ? WebSettings.LOAD_NO_CACHE : WebSettings.LOAD_CACHE_ELSE_NETWORK);
 
         web.addJavascriptInterface(new Bridge(), "Android");
         web.setWebViewClient(new WebViewClient() {
@@ -44,7 +45,31 @@ public class MainActivity extends Activity {
         });
 
         if (savedInstanceState != null) web.restoreState(savedInstanceState);
-        else web.loadUrl(BuildConfig.APP_URL);
+        else loadFresh();
+    }
+
+    private long pausedAt = 0;
+
+    private void loadFresh() {
+        String url = BuildConfig.APP_URL;
+        if (isOnline()) url += "?t=" + System.currentTimeMillis();   // salta la cache di GitHub Pages
+        web.loadUrl(url);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        pausedAt = System.currentTimeMillis();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        // se l'app è rimasta in background più di 15 minuti, ricarica tutto
+        if (pausedAt > 0 && System.currentTimeMillis() - pausedAt > 15 * 60 * 1000 && isOnline()) {
+            web.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
+            loadFresh();
+        }
     }
 
     private boolean isOnline() {

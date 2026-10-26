@@ -342,7 +342,8 @@ function render() {
   document.querySelectorAll("nav button").forEach(b => b.classList.toggle("on", b.dataset.v === S.view));
 }
 document.querySelectorAll("nav button").forEach(b => b.onclick = () => { S.view = b.dataset.v; render(); window.scrollTo(0, 0); });
-$("#reload").onclick = load;
+// ↻ ricarica anche l'interfaccia, non solo i dati
+$("#reload").onclick = () => location.replace(location.pathname + "?t=" + Date.now());
 document.addEventListener("visibilitychange", () => { if (!document.hidden) load(); });
 load();
 </script>
