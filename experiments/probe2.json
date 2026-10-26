@@ -1,0 +1,3048 @@
+{
+ "atp_oggi": {
+  "status": 200,
+  "n_events": 2,
+  "n_competitions": 122,
+  "event0": {
+   "id": "10-2026",
+   "uid": "s:850~l:851~e:10-2026",
+   "date": "2026-10-24T04:00Z",
+   "endDate": "2026-11-02T04:59Z",
+   "major": false,
+   "name": "Erste Bank Open",
+   "shortName": "Erste Bank Open",
+   "season": {
+    "year": 2026,
+    "type": 2
+   },
+   "groupings": [
+    {
+     "grouping": {
+      "id": "1",
+      "slug": "mens-singles",
+      "displayName": "Men's Singles"
+     },
+     "competitions": [
+      {
+       "id": "187149",
+       "uid": "s:850~l:851~e:10-2026~c:187149",
+       "date": "2026-10-24T09:00Z",
+       "startDate": "2026-10-24T09:00Z",
+       "timeValid": true,
+       "recent": false,
+       "status": {
+        "period": 3,
+        "type": {
+         "id": "3",
+         "name": "STATUS_FINAL",
+         "state": "post",
+         "completed": true,
+         "description": "Final",
+         "detail": "Final",
+         "shortDetail": "Final"
+        }
+       },
+       "venue": {
+        "fullName": "Vienna, Austria",
+        "court": "Glaubandich Court"
+       },
+       "format": {
+        "regulation": {
+         "periods": 5
+        }
+       },
+       "notes": [
+        {
+         "text": "Jacob Fearnley (GBR) bt Pablo Carreno Busta (ESP) 6-4 3-6 6-3",
+         "type": "event"
+        }
+       ],
+       "geoBroadcasts": [],
+       "broadcasts": [],
+       "broadcast": "",
+       "competitors": [
+        {
+         "id": "1590",
+         "uid": "s:850~l:851~a:1590",
+         "type": "athlete",
+         "order": 2,
+         "homeAway": "away",
+         "winner": false,
+         "linescores": [
+          {
+           "value": 4.0,
+           "winner": false
+          },
+          {
+           "value": 6.0,
+           "winner": true
+          },
+          "... +1"
+         ],
+         "athlete": {
+          "guid": "7ba77580-4f3a-73fd-66f7-7354306769dd",
+          "displayName": "Pablo Carreno Busta",
+          "shortName": "P. Carreno Busta",
+          "fullName": "Pablo Carreno Busta"
+         },
+         "statistics": []
+        },
+        {
+         "id": "11685",
+         "uid": "s:850~l:851~a:11685",
+         "type": "athlete",
+         "order": 1,
+         "homeAway": "home",
+         "winner": true,
+         "linescores": [
+          {
+           "value": 6.0,
+           "winner": true
+          },
+          {
+           "value": 3.0,
+           "winner": false
+          },
+          "... +1"
+         ],
+         "athlete": {
+          "guid": "dbf5766d-f283-30f0-8b52-778dd47c684d",
+          "displayName": "Jacob Fearnley",
+          "shortName": "J. Fearnley",
+          "fullName": "Jacob Fearnley"
+         },
+         "statistics": []
+        }
+       ],
+       "tournamentId": 10,
+       "type": {
+        "id": "1",
+        "text": "Men's Singles",
+        "slug": "mens-singles"
+       },
+       "round": {
+        "id": "11",
+        "displayName": "Qualifying 1st Round"
+       },
+       "wasSuspended": false
+      },
+      {
+       "id": "187148",
+       "uid": "s:850~l:851~e:10-2026~c:187148",
+       "date": "2026-10-24T09:30Z",
+       "startDate": "2026-10-24T09:30Z",
+       "timeValid": true,
+       "recent": false,
+       "status": {
+        "period": 2,
+        "type": {
+         "id": "3",
+         "name": "STATUS_FINAL",
+         "state": "post",
+         "completed": true,
+         "description": "Final",
+         "detail": "Final",
+         "shortDetail": "Final"
+        }
+       },
+       "venue": {
+        "fullName": "Vienna, Austria",
+        "court": "Centre Court"
+       },
+       "format": {
+        "regulation": {
+         "periods": 5
+        }
+       },
+       "notes": [
+        {
+         "text": "Lukas Neumayer (AUT) bt Vit Kopriva (CZE) 6-4 6-3",
+         "type": "event"
+        }
+       ],
+       "geoBroadcasts": [],
+       "broadcasts": [],
+       "broadcast": "",
+       "competitors": [
+        {
+         "id": "7794",
+         "uid": "s:850~l:851~a:7794",
+         "type": "athlete",
+         "order": 2,
+         "homeAway": "away",
+         "winner": true,
+         "linescores": [
+          {
+           "value": 6.0,
+           "winner": true
+          },
+          {
+           "value": 6.0,
+           "winner": true
+          }
+         ],
+         "athlete": {
+          "guid": "c6dfe82e-62f7-3bb5-ba68-f59753dc8808",
+          "displayName": "Lukas Neumayer",
+          "shortName": "L. Neumayer",
+          "fullName": "Lukas Neumayer"
+         },
+         "statistics": []
+        },
+        {
+         "id": "3809",
+         "uid": "s:850~l:851~a:3809",
+         "type": "athlete",
+         "order": 1,
+         "homeAway": "home",
+         "winner": false,
+         "linescores": [
+          {
+           "value": 4.0,
+           "winner": false
+          },
+          {
+           "value": 3.0,
+           "winner": false
+          }
+         ],
+         "athlete": {
+          "guid": "010a9540-4ccc-f338-8e5d-49734a69e29f",
+          "displayName": "Vit Kopriva",
+          "shortName": "V. Kopriva",
+          "fullName": "Vit Kopriva"
+         },
+         "statistics": []
+        }
+       ],
+       "tournamentId": 10,
+       "type": {
+        "id": "1",
+        "text": "Men's Singles",
+        "slug": "mens-singles"
+       },
+       "round": {
+        "id": "11",
+        "displayName": "Qualifying 1st Round"
+       },
+       "wasSuspended": false
+      },
+      "... +41"
+     ]
+    },
+    {
+     "grouping": {
+      "id": "3",
+      "slug": "mens-doubles",
+      "displayName": "Men's Doubles"
+     },
+     "competitions": [
+      {
+       "id": "187264",
+       "uid": "s:850~l:851~e:10-2026~c:187264",
+       "date": "2026-10-27T04:00Z",
+       "startDate": "2026-10-27T04:00Z",
+       "timeValid": false,
+       "recent": false,
+       "status": {
+        "period": 1,
+        "type": {
+         "id": "1",
+         "name": "STATUS_SCHEDULED",
+         "state": "pre",
+         "completed": false,
+         "description": "Scheduled",
+         "detail": "M/d - 'TBD'",
+         "shortDetail": "TBD"
+        }
+       },
+       "venue": {
+        "fullName": "Vienna, Austria",
+        "court": "Glaubandich Court"
+       },
+       "format": {
+        "regulation": {
+         "periods": 5
+        }
+       },
+       "notes": [],
+       "geoBroadcasts": [],
+       "broadcasts": [],
+       "broadcast": "",
+       "competitors": [
+        {
+         "id": "1045-2152",
+         "uid": "s:850~l:851~t:1045-2152",
+         "type": "team",
+         "order": 2,
+         "homeAway": "away",
+         "roster": {
+          "displayName": "Maximo Gonzalez / Andres Molteni",
+          "shortDisplayName": "M. Gonzalez / A. Molteni",
+          "athletes": [
+           {
+            "guid": "c8ae038b-dd77-3b1a-601d-a1d2ce8561a9",
+            "displayName": "Maximo Gonzalez",
+            "shortName": "M. Gonzalez",
+            "fullName": "Maximo Gonzalez"
+           },
+           {
+            "guid": "f18a6157-556a-7aff-0f7e-00e69e54512b",
+            "displayName": "Andres Molteni",
+            "shortName": "A. Molteni",
+            "fullName": "Andres Molteni"
+           }
+          ]
+         },
+         "statistics": []
+        },
+        {
+         "id": "666-3162",
+         "uid": "s:850~l:851~t:666-3162",
+         "type": "team",
+         "order": 1,
+         "homeAway": "home",
+         "roster": {
+          "displayName": "Santiago Gonzalez / Bart Stevens",
+          "shortDisplayName": "S. Gonzalez / B. Stevens",
+          "athletes": [
+           {
+            "guid": "81b993ef-f76e-ce51-4cc8-50daf9273b7d",
+            "displayName": "Santiago Gonzalez",
+            "shortName": "S. Gonzalez",
+            "fullName": "Santiago Gonzalez"
+           },
+           {
+            "guid": "0d4bb041-7f83-86ab-ad50-222df421c851",
+            "displayName": "Bart Stevens",
+            "shortName": "B. Stevens",
+            "fullName": "Bart Stevens"
+           }
+          ]
+         },
+         "statistics": []
+        }
+       ],
+       "tournamentId": 10,
+       "type": {
+        "id": "3",
+        "text": "Men's Doubles",
+        "slug": "mens-doubles"
+       },
+       "round": {
+        "id": "11",
+        "displayName": "Qualifying 1st Round"
+       },
+       "wasSuspended": false
+      },
+      {
+       "id": "187265",
+       "uid": "s:850~l:851~e:10-2026~c:187265",
+       "date": "2026-10-27T04:00Z",
+       "startDate": "2026-10-27T04:00Z",
+       "timeValid": false,
+       "recent": false,
+       "status": {
+        "period": 1,
+        "type": {
+         "id": "1",
+         "name": "STATUS_SCHEDULED",
+         "state": "pre",
+         "completed": false,
+         "description": "Scheduled",
+         "detail": "M/d - 'TBD'",
+         "shortDetail": "TBD"
+        }
+       },
+       "venue": {
+        "fullName": "Vienna, Austria",
+        "court": ""
+       },
+       "format": {
+        "regulation": {
+         "periods": 5
+        }
+       },
+       "notes": [],
+       "geoBroadcasts": [],
+       "broadcasts": [],
+       "broadcast": "",
+       "competitors": [
+        {
+         "id": "-4",
+         "uid": "s:850~l:851~a:-4",
+         "type": "athlete",
+         "order": 2,
+         "homeAway": "away",
+         "athlete": {
+          "displayName": "TBD",
+          "shortName": "TBD",
+          "fullName": "TBD"
+         },
+         "statistics": []
+        },
+        {
+         "id": "-3",
+         "uid": "s:850~l:851~a:-3",
+         "type": "athlete",
+         "order": 1,
+         "homeAway": "home",
+         "athlete": {
+          "displayName": "TBD",
+          "shortName": "TBD",
+          "fullName": "TBD"
+         },
+         "statistics": []
+        }
+       ],
+       "tournamentId": 10,
+       "type": {
+        "id": "3",
+        "text": "Men's Doubles",
+        "slug": "mens-doubles"
+       },
+       "round": {
+        "id": "14",
+        "displayName": "Qualifying Final"
+       },
+       "wasSuspended": false
+      },
+      "... +16"
+     ]
+    }
+   ],
+   "status": {
+    "period": 3,
+    "type": {
+     "id": "3",
+     "name": "STATUS_FINAL",
+     "state": "post",
+     "completed": true,
+     "description": "Final",
+     "detail": "Final",
+     "shortDetail": "Final"
+    }
+   },
+   "venue": {
+    "displayName": "Vienna, Austria"
+   },
+   "previousWinners": [
+    {
+     "displayName": "Jannik Sinner",
+     "shortDisplayName": "J. Sinner",
+     "type": {
+      "id": "1",
+      "text": "Men's Singles",
+      "slug": "mens-singles"
+     }
+    },
+    {
+     "displayName": "Julian Cash / Lloyd Glasspool",
+     "shortDisplayName": "J. Cash / L. Glasspool",
+     "type": {
+      "id": "3",
+      "text": "Men's Doubles",
+      "slug": "mens-doubles"
+     },
+     "athletes": [
+      {
+       "displayName": "Julian Cash",
+       "shortDisplayName": "J. Cash"
+      },
+      {
+       "displayName": "Lloyd Glasspool",
+       "shortDisplayName": "L. Glasspool"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "atp_passato": {
+  "status": 200,
+  "n_events": 1,
+  "n_competitions": 635,
+  "event0": {
+   "id": "188-2026",
+   "uid": "s:850~l:851~e:188-2026",
+   "date": "2026-06-22T04:00Z",
+   "endDate": "2026-07-13T03:59Z",
+   "major": true,
+   "name": "Wimbledon",
+   "shortName": "Wimbledon",
+   "season": {
+    "year": 2026,
+    "type": 2
+   },
+   "groupings": [
+    {
+     "grouping": {
+      "id": "1",
+      "slug": "mens-singles",
+      "displayName": "Men's Singles"
+     },
+     "competitions": [
+      {
+       "id": "179877",
+       "uid": "s:850~l:851~e:188-2026~c:179877",
+       "date": "2026-06-22T10:05Z",
+       "startDate": "2026-06-22T10:05Z",
+       "timeValid": true,
+       "recent": false,
+       "status": {
+        "period": 2,
+        "type": {
+         "id": "3",
+         "name": "STATUS_FINAL",
+         "state": "post",
+         "completed": true,
+         "description": "Final",
+         "detail": "Final",
+         "shortDetail": "Final"
+        }
+       },
+       "venue": {
+        "fullName": "London, Great Britain",
+        "court": "Court 17 Roehampton"
+       },
+       "format": {
+        "regulation": {
+         "periods": 5
+        }
+       },
+       "notes": [
+        {
+         "text": "Zsombor Piros (HUN) bt Ivan Ivanov (BUL) 6-2 6-2",
+         "type": "event"
+        }
+       ],
+       "geoBroadcasts": [],
+       "broadcasts": [],
+       "broadcast": "",
+       "competitors": [
+        {
+         "id": "13489",
+         "uid": "s:850~l:851~a:13489",
+         "type": "athlete",
+         "order": 2,
+         "homeAway": "away",
+         "winner": false,
+         "linescores": [
+          {
+           "value": 2.0,
+           "winner": false
+          },
+          {
+           "value": 2.0,
+           "winner": false
+          }
+         ],
+         "athlete": {
+          "guid": "cd67cd0b-6477-3e61-acc4-588190ee1889",
+          "displayName": "Ivan Ivanov",
+          "shortName": "I. Ivanov",
+          "fullName": "Ivan Ivanov"
+         },
+         "statistics": []
+        },
+        {
+         "id": "3110",
+         "uid": "s:850~l:851~a:3110",
+         "type": "athlete",
+         "order": 1,
+         "homeAway": "home",
+         "winner": true,
+         "linescores": [
+          {
+           "value": 6.0,
+           "winner": true
+          },
+          {
+           "value": 6.0,
+           "winner": true
+          }
+         ],
+         "athlete": {
+          "guid": "3eff3339-614b-4a5c-0b43-50c8b15d63cf",
+          "displayName": "Zsombor Piros",
+          "shortName": "Z. Piros",
+          "fullName": "Zsombor Piros"
+         },
+         "statistics": []
+        }
+       ],
+       "tournamentId": 188,
+       "type": {
+        "id": "1",
+        "text": "Men's Singles",
+        "slug": "mens-singles"
+       },
+       "round": {
+        "id": "11",
+        "displayName": "Qualifying 1st Round"
+       },
+       "wasSuspended": false
+      },
+      {
+       "id": "179880",
+       "uid": "s:850~l:851~e:188-2026~c:179880",
+       "date": "2026-06-22T10:05Z",
+       "startDate": "2026-06-22T10:05Z",
+       "timeValid": true,
+       "recent": false,
+       "status": {
+        "period": 2,
+        "type": {
+         "id": "3",
+         "name": "STATUS_FINAL",
+         "state": "post",
+         "completed": true,
+         "description": "Final",
+         "detail": "Final",
+         "shortDetail": "Final"
+        }
+       },
+       "venue": {
+        "fullName": "London, Great Britain",
+        "court": "Court 6 Roehampton"
+       },
+       "format": {
+        "regulation": {
+         "periods": 5
+        }
+       },
+       "notes": [
+        {
+         "text": "Billy Harris (GBR) bt Stefano Napolitano (ITA) 6-2 6-2",
+         "type": "event"
+        }
+       ],
+       "geoBroadcasts": [],
+       "broadcasts": [],
+       "broadcast": "",
+       "competitors": [
+        {
+         "id": "2361",
+         "uid": "s:850~l:851~a:2361",
+         "type": "athlete",
+         "order": 2,
+         "homeAway": "away",
+         "winner": true,
+         "linescores": [
+          {
+           "value": 6.0,
+           "winner": true
+          },
+          {
+           "value": 6.0,
+           "winner": true
+          }
+         ],
+         "athlete": {
+          "guid": "52d1ae34-4ba4-d405-5f68-5943b478caab",
+          "displayName": "Billy Harris",
+          "shortName": "B. Harris",
+          "fullName": "Billy Harris"
+         },
+         "statistics": []
+        },
+        {
+         "id": "2242",
+         "uid": "s:850~l:851~a:2242",
+         "type": "athlete",
+         "order": 1,
+         "homeAway": "home",
+         "winner": false,
+         "linescores": [
+          {
+           "value": 2.0,
+           "winner": false
+          },
+          {
+           "value": 2.0,
+           "winner": false
+          }
+         ],
+         "athlete": {
+          "guid": "e0ba0d29-d40c-1e2a-5f04-bedcfba37a25",
+          "displayName": "Stefano Napolitano",
+          "shortName": "S. Napolitano",
+          "fullName": "Stefano Napolitano"
+         },
+         "statistics": []
+        }
+       ],
+       "tournamentId": 188,
+       "type": {
+        "id": "1",
+        "text": "Men's Singles",
+        "slug": "mens-singles"
+       },
+       "round": {
+        "id": "11",
+        "displayName": "Qualifying 1st Round"
+       },
+       "wasSuspended": false
+      },
+      "... +237"
+     ]
+    },
+    {
+     "grouping": {
+      "id": "2",
+      "slug": "womens-singles",
+      "displayName": "Women's Singles"
+     },
+     "competitions": [
+      {
+       "id": "180003",
+       "uid": "s:850~l:851~e:188-2026~c:180003",
+       "date": "2026-06-23T10:05Z",
+       "startDate": "2026-06-23T10:05Z",
+       "timeValid": true,
+       "recent": false,
+       "status": {
+        "period": 2,
+        "type": {
+         "id": "3",
+         "name": "STATUS_FINAL",
+         "state": "post",
+         "completed": true,
+         "description": "Final",
+         "detail": "Final",
+         "shortDetail": "Final"
+        }
+       },
+       "venue": {
+        "fullName": "London, Great Britain",
+        "court": "Court 8 Roehampton"
+       },
+       "format": {
+        "regulation": {
+         "periods": 5
+        }
+       },
+       "notes": [
+        {
+         "text": "Andrea Lazaro Garcia (ESP) bt Nuria Brancaccio (ITA) 6-3 6-4",
+         "type": "event"
+        }
+       ],
+       "geoBroadcasts": [],
+       "broadcasts": [],
+       "broadcast": "",
+       "competitors": [
+        {
+         "id": "4291",
+         "uid": "s:850~l:851~a:4291",
+         "type": "athlete",
+         "order": 2,
+         "homeAway": "away",
+         "winner": true,
+         "linescores": [
+          {
+           "value": 6.0,
+           "winner": true
+          },
+          {
+           "value": 6.0,
+           "winner": true
+          }
+         ],
+         "athlete": {
+          "guid": "b335644a-7bee-3665-824a-c61bddbddcc7",
+          "displayName": "Andrea Lazaro Garcia",
+          "shortName": "A. Lazaro Garcia",
+          "fullName": "Andrea Lazaro Garcia"
+         },
+         "statistics": []
+        },
+        {
+         "id": "5168",
+         "uid": "s:850~l:851~a:5168",
+         "type": "athlete",
+         "order": 1,
+         "homeAway": "home",
+         "winner": false,
+         "linescores": [
+          {
+           "value": 3.0,
+           "winner": false
+          },
+          {
+           "value": 4.0,
+           "winner": false
+          }
+         ],
+         "athlete": {
+          "guid": "e3f277f8-68b4-3312-b720-4be8ebe45e0c",
+          "displayName": "Nuria Brancaccio",
+          "shortName": "N. Brancaccio",
+          "fullName": "Nuria Brancaccio"
+         },
+         "statistics": []
+        }
+       ],
+       "tournamentId": 188,
+       "type": {
+        "id": "2",
+        "text": "Women's Singles",
+        "slug": "womens-singles"
+       },
+       "round": {
+        "id": "11",
+        "displayName": "Qualifying 1st Round"
+       },
+       "wasSuspended": false
+      },
+      {
+       "id": "180004",
+       "uid": "s:850~l:851~e:188-2026~c:180004",
+       "date": "2026-06-23T10:05Z",
+       "startDate": "2026-06-23T10:05Z",
+       "timeValid": true,
+       "recent": false,
+       "status": {
+        "period": 3,
+        "type": {
+         "id": "3",
+         "name": "STATUS_FINAL",
+         "state": "post",
+         "completed": true,
+         "description": "Final",
+         "detail": "Final",
+         "shortDetail": "Final"
+        }
+       },
+       "venue": {
+        "fullName": "London, Great Britain",
+        "court": "Court 2 Roehampton"
+       },
+       "format": {
+        "regulation": {
+         "periods": 5
+        }
+       },
+       "notes": [
+        {
+         "text": "Alina Korneeva (RUS) bt Alexandra Shubladze (RUS) 2-6 7-6 (7-2) 6-3",
+         "type": "event"
+        }
+       ],
+       "geoBroadcasts": [],
+       "broadcasts": [],
+       "broadcast": "",
+       "competitors": [
+        {
+         "id": "10858",
+         "uid": "s:850~l:851~a:10858",
+         "type": "athlete",
+         "order": 2,
+         "homeAway": "away",
+         "winner": false,
+         "linescores": [
+          {
+           "value": 6.0,
+           "winner": true
+          },
+          {
+           "value": 6.0,
+           "tiebreak": 2,
+           "winner": false
+          },
+          "... +1"
+         ],
+         "athlete": {
+          "guid": "3aac91c6-eb93-31e4-9854-95db62382893",
+          "displayName": "Alexandra Shubladze",
+          "shortName": "A. Shubladze",
+          "fullName": "Alexandra Shubladze"
+         },
+         "statistics": []
+        },
+        {
+         "id": "9169",
+         "uid": "s:850~l:851~a:9169",
+         "type": "athlete",
+         "order": 1,
+         "homeAway": "home",
+         "winner": true,
+         "linescores": [
+          {
+           "value": 2.0,
+           "winner": false
+          },
+          {
+           "value": 7.0,
+           "tiebreak": 7,
+           "winner": true
+          },
+          "... +1"
+         ],
+         "athlete": {
+          "guid": "8ccf9280-ab6f-3660-9539-49154706eac1",
+          "displayName": "Alina Korneeva",
+          "shortName": "A. Korneeva",
+          "fullName": "Alina Korneeva"
+         },
+         "statistics": []
+        }
+       ],
+       "tournamentId": 188,
+       "type": {
+        "id": "2",
+        "text": "Women's Singles",
+        "slug": "womens-singles"
+       },
+       "round": {
+        "id": "11",
+        "displayName": "Qualifying 1st Round"
+       },
+       "wasSuspended": false
+      },
+      "... +237"
+     ]
+    },
+    "... +3"
+   ],
+   "status": {
+    "period": 2,
+    "type": {
+     "id": "3",
+     "name": "STATUS_FINAL",
+     "state": "post",
+     "completed": true,
+     "description": "Final",
+     "detail": "Final",
+     "shortDetail": "Final"
+    }
+   },
+   "venue": {
+    "displayName": "London, Great Britain"
+   },
+   "previousWinners": [
+    {
+     "displayName": "Jannik Sinner",
+     "shortDisplayName": "J. Sinner",
+     "type": {
+      "id": "1",
+      "text": "Men's Singles",
+      "slug": "mens-singles"
+     }
+    },
+    {
+     "displayName": "Iga Swiatek",
+     "shortDisplayName": "I. Swiatek",
+     "type": {
+      "id": "2",
+      "text": "Women's Singles",
+      "slug": "womens-singles"
+     }
+    },
+    "... +3"
+   ]
+  }
+ },
+ "atp_range": {
+  "status": 200,
+  "n_events": 2,
+  "n_competitions": 164,
+  "event0": {
+   "id": "49-2026",
+   "uid": "s:850~l:851~e:49-2026",
+   "date": "2026-06-06T04:00Z",
+   "endDate": "2026-06-15T03:59Z",
+   "major": false,
+   "name": "Boss Open",
+   "shortName": "Boss Open",
+   "season": {
+    "year": 2026,
+    "type": 2
+   },
+   "groupings": [
+    {
+     "grouping": {
+      "id": "1",
+      "slug": "mens-singles",
+      "displayName": "Men's Singles"
+     },
+     "competitions": [
+      {
+       "id": "179649",
+       "uid": "s:850~l:851~e:49-2026~c:179649",
+       "date": "2026-06-06T09:00Z",
+       "startDate": "2026-06-06T09:00Z",
+       "timeValid": true,
+       "recent": false,
+       "status": {
+        "period": 2,
+        "type": {
+         "id": "3",
+         "name": "STATUS_FINAL",
+         "state": "post",
+         "completed": true,
+         "description": "Final",
+         "detail": "Final",
+         "shortDetail": "Final"
+        }
+       },
+       "venue": {
+        "fullName": "Stuttgart, Germany",
+        "court": "Match Court 2"
+       },
+       "format": {
+        "regulation": {
+         "periods": 5
+        }
+       },
+       "notes": [
+        {
+         "text": "Marc-Andrea Huesler (SUI) bt Nikoloz Basilashvili (GEO) 6-1 7-5",
+         "type": "event"
+        }
+       ],
+       "geoBroadcasts": [],
+       "broadcasts": [],
+       "broadcast": "",
+       "competitors": [
+        {
+         "id": "3481",
+         "uid": "s:850~l:851~a:3481",
+         "type": "athlete",
+         "order": 2,
+         "homeAway": "away",
+         "winner": true,
+         "linescores": [
+          {
+           "value": 6.0,
+           "winner": true
+          },
+          {
+           "value": 7.0,
+           "winner": true
+          }
+         ],
+         "athlete": {
+          "guid": "8dc9e788-e08f-4993-b8cc-32013b4e5687",
+          "displayName": "Marc-Andrea Huesler",
+          "shortName": "M. Huesler",
+          "fullName": "Marc-Andrea Huesler"
+         },
+         "statistics": []
+        },
+        {
+         "id": "2498",
+         "uid": "s:850~l:851~a:2498",
+         "type": "athlete",
+         "order": 1,
+         "homeAway": "home",
+         "winner": false,
+         "linescores": [
+          {
+           "value": 1.0,
+           "winner": false
+          },
+          {
+           "value": 5.0,
+           "winner": false
+          }
+         ],
+         "athlete": {
+          "guid": "5dc21899-ba8c-2090-ba30-c0169a979977",
+          "displayName": "Nikoloz Basilashvili",
+          "shortName": "N. Basilashvili",
+          "fullName": "Nikoloz Basilashvili"
+         },
+         "statistics": []
+        }
+       ],
+       "tournamentId": 49,
+       "type": {
+        "id": "1",
+        "text": "Men's Singles",
+        "slug": "mens-singles"
+       },
+       "round": {
+        "id": "11",
+        "displayName": "Qualifying 1st Round"
+       },
+       "wasSuspended": false
+      },
+      {
+       "id": "179651",
+       "uid": "s:850~l:851~e:49-2026~c:179651",
+       "date": "2026-06-06T09:00Z",
+       "startDate": "2026-06-06T09:00Z",
+       "timeValid": true,
+       "recent": false,
+       "status": {
+        "period": 2,
+        "type": {
+         "id": "3",
+         "name": "STATUS_FINAL",
+         "state": "post",
+         "completed": true,
+         "description": "Final",
+         "detail": "Final",
+         "shortDetail": "Final"
+        }
+       },
+       "venue": {
+        "fullName": "Stuttgart, Germany",
+        "court": "Colosseum"
+       },
+       "format": {
+        "regulation": {
+         "periods": 5
+        }
+       },
+       "notes": [
+        {
+         "text": "Gauthier Onclin (BEL) bt Orlando Luz (BRA) 6-1 6-3",
+         "type": "event"
+        }
+       ],
+       "geoBroadcasts": [],
+       "broadcasts": [],
+       "broadcast": "",
+       "competitors": [
+        {
+         "id": "10954",
+         "uid": "s:850~l:851~a:10954",
+         "type": "athlete",
+         "order": 2,
+         "homeAway": "away",
+         "winner": true,
+         "linescores": [
+          {
+           "value": 6.0,
+           "winner": true
+          },
+          {
+           "value": 6.0,
+           "winner": true
+          }
+         ],
+         "athlete": {
+          "guid": "6052207b-7f8a-3bc0-b7e0-ee5fd30a5ae1",
+          "displayName": "Gauthier Onclin",
+          "shortName": "G. Onclin",
+          "fullName": "Gauthier Onclin"
+         },
+         "statistics": []
+        },
+        {
+         "id": "2725",
+         "uid": "s:850~l:851~a:2725",
+         "type": "athlete",
+         "order": 1,
+         "homeAway": "home",
+         "winner": false,
+         "linescores": [
+          {
+           "value": 1.0,
+           "winner": false
+          },
+          {
+           "value": 3.0,
+           "winner": false
+          }
+         ],
+         "athlete": {
+          "guid": "16241e81-65bf-080b-d56c-4e0c305ad128",
+          "displayName": "Orlando Luz",
+          "shortName": "O. Luz",
+          "fullName": "Orlando Luz"
+         },
+         "statistics": []
+        }
+       ],
+       "tournamentId": 49,
+       "type": {
+        "id": "1",
+        "text": "Men's Singles",
+        "slug": "mens-singles"
+       },
+       "round": {
+        "id": "11",
+        "displayName": "Qualifying 1st Round"
+       },
+       "wasSuspended": false
+      },
+      "... +37"
+     ]
+    },
+    {
+     "grouping": {
+      "id": "3",
+      "slug": "mens-doubles",
+      "displayName": "Men's Doubles"
+     },
+     "competitions": [
+      {
+       "id": "177065",
+       "uid": "s:850~l:851~e:49-2026~c:177065",
+       "date": "2026-06-08T10:10Z",
+       "startDate": "2026-06-08T10:10Z",
+       "timeValid": true,
+       "recent": false,
+       "status": {
+        "period": 2,
+        "type": {
+         "id": "3",
+         "name": "STATUS_FINAL",
+         "state": "post",
+         "completed": true,
+         "description": "Final",
+         "detail": "Final",
+         "shortDetail": "Final"
+        }
+       },
+       "venue": {
+        "fullName": "Stuttgart, Germany",
+        "court": "Colosseum"
+       },
+       "format": {
+        "regulation": {
+         "periods": 5
+        }
+       },
+       "notes": [
+        {
+         "text": "Jiri Lehecka (CZE) & Corentin Moutet (FRA) bt Constantin Frantzén (GER) & Robin Haase (NED) 6-3 6-3",
+         "type": "event"
+        }
+       ],
+       "geoBroadcasts": [],
+       "broadcasts": [],
+       "broadcast": "",
+       "competitors": [
+        {
+         "id": "3754-2886",
+         "uid": "s:850~l:851~t:3754-2886",
+         "type": "team",
+         "order": 2,
+         "homeAway": "away",
+         "winner": true,
+         "linescores": [
+          {
+           "value": 6.0,
+           "winner": true
+          },
+          {
+           "value": 6.0,
+           "winner": true
+          }
+         ],
+         "roster": {
+          "displayName": "Jiri Lehecka / Corentin Moutet",
+          "shortDisplayName": "J. Lehecka / C. Moutet",
+          "athletes": [
+           {
+            "guid": "959c133c-1c3d-1a03-182c-588ba5225a3b",
+            "displayName": "Jiri Lehecka",
+            "shortName": "J. Lehecka",
+            "fullName": "Jiri Lehecka"
+           },
+           {
+            "guid": "e1e9551c-c350-ef8f-ce97-d8407b0be41d",
+            "displayName": "Corentin Moutet",
+            "shortName": "C. Moutet",
+            "fullName": "Corentin Moutet"
+           }
+          ]
+         },
+         "statistics": []
+        },
+        {
+         "id": "11568-650",
+         "uid": "s:850~l:851~t:11568-650",
+         "type": "team",
+         "order": 1,
+         "homeAway": "home",
+         "winner": false,
+         "linescores": [
+          {
+           "value": 3.0,
+           "winner": false
+          },
+          {
+           "value": 3.0,
+           "winner": false
+          }
+         ],
+         "roster": {
+          "displayName": "Constantin Frantzén / Robin Haase",
+          "shortDisplayName": "C. Frantzén / R. Haase",
+          "athletes": [
+           {
+            "guid": "bd458045-04a6-3216-b265-59ed63ec3dd5",
+            "displayName": "Constantin Frantzén",
+            "shortName": "C. Frantzén",
+            "fullName": "Constantin Frantzén"
+           },
+           {
+            "guid": "3b139233-dc7f-74b2-5f40-d08adca5acd3",
+            "displayName": "Robin Haase",
+            "shortName": "R. Haase",
+            "fullName": "Robin Haase"
+           }
+          ]
+         },
+         "statistics": []
+        }
+       ],
+       "tournamentId": 49,
+       "type": {
+        "id": "3",
+        "text": "Men's Doubles",
+        "slug": "mens-doubles"
+       },
+       "round": {
+        "id": "1",
+        "displayName": "Round 1"
+       },
+       "wasSuspended": false
+      },
+      {
+       "id": "177067",
+       "uid": "s:850~l:851~e:49-2026~c:177067",
+       "date": "2026-06-08T12:10Z",
+       "startDate": "2026-06-08T12:10Z",
+       "timeValid": true,
+       "recent": false,
+       "status": {
+        "period": 2,
+        "type": {
+         "id": "3",
+         "name": "STATUS_FINAL",
+         "state": "post",
+         "completed": true,
+         "description": "Final",
+         "detail": "Final",
+         "shortDetail": "Final"
+        }
+       },
+       "venue": {
+        "fullName": "Stuttgart, Germany",
+        "court": "Colosseum"
+       },
+       "format": {
+        "regulation": {
+         "periods": 5
+        }
+       },
+       "notes": [
+        {
+         "text": "Yannick Hanfmann (GER) & Jan-Lennard Struff (GER) bt (4) Sadio Doumbia (FRA) & Santiago Gonzalez (MEX) 6-4 7-6 (7-1)",
+         "type": "event"
+        }
+       ],
+       "geoBroadcasts": [],
+       "broadcasts": [],
+       "broadcast": "",
+       "competitors": [
+        {
+         "id": "3601-666",
+         "uid": "s:850~l:851~t:3601-666",
+         "type": "team",
+         "order": 2,
+         "homeAway": "away",
+         "winner": false,
+         "curatedRank": {
+          "current": 4
+         },
+         "linescores": [
+          {
+           "value": 4.0,
+           "winner": false
+          },
+          {
+           "value": 6.0,
+           "tiebreak": 1,
+           "winner": false
+          }
+         ],
+         "roster": {
+          "displayName": "Sadio Doumbia / Santiago Gonzalez",
+          "shortDisplayName": "S. Doumbia / S. Gonzalez",
+          "athletes": [
+           {
+            "guid": "a7a77a96-490b-1f89-9d05-6b867d6cd27f",
+            "displayName": "Sadio Doumbia",
+            "shortName": "S. Doumbia",
+            "fullName": "Sadio Doumbia"
+           },
+           {
+            "guid": "81b993ef-f76e-ce51-4cc8-50daf9273b7d",
+            "displayName": "Santiago Gonzalez",
+            "shortName": "S. Gonzalez",
+            "fullName": "Santiago Gonzalez"
+           }
+          ]
+         },
+         "statistics": []
+        },
+        {
+         "id": "3322-2337",
+         "uid": "s:850~l:851~t:3322-2337",
+         "type": "team",
+         "order": 1,
+         "homeAway": "home",
+         "winner": true,
+         "linescores": [
+          {
+           "value": 6.0,
+           "winner": true
+          },
+          {
+           "value": 7.0,
+           "tiebreak": 7,
+           "winner": true
+          }
+         ],
+         "roster": {
+          "displayName": "Yannick Hanfmann / Jan-Lennard Struff",
+          "shortDisplayName": "Y. Hanfmann / J. Struff",
+          "athletes": [
+           {
+            "guid": "1b1186f6-c6f0-417c-26af-5280cf749499",
+            "displayName": "Yannick Hanfmann",
+            "shortName": "Y. Hanfmann",
+            "fullName": "Yannick Hanfmann"
+           },
+           {
+            "guid": "45266525-bbb6-988a-7671-e5e46567d682",
+            "displayName": "Jan-Lennard Struff",
+            "shortName": "J. Struff",
+            "fullName": "Jan-Lennard Struff"
+           }
+          ]
+         },
+         "statistics": []
+        }
+       ],
+       "tournamentId": 49,
+       "type": {
+        "id": "3",
+        "text": "Men's Doubles",
+        "slug": "mens-doubles"
+       },
+       "round": {
+        "id": "1",
+        "displayName": "Round 1"
+       },
+       "wasSuspended": false
+      },
+      "... +13"
+     ]
+    }
+   ],
+   "status": {
+    "period": 2,
+    "type": {
+     "id": "3",
+     "name": "STATUS_FINAL",
+     "state": "post",
+     "completed": true,
+     "description": "Final",
+     "detail": "Final",
+     "shortDetail": "Final"
+    }
+   },
+   "venue": {
+    "displayName": "Stuttgart, Germany"
+   },
+   "previousWinners": [
+    {
+     "displayName": "Taylor Fritz",
+     "shortDisplayName": "T. Fritz",
+     "type": {
+      "id": "1",
+      "text": "Men's Singles",
+      "slug": "mens-singles"
+     }
+    },
+    {
+     "displayName": "Santiago Gonzalez / Austin Krajicek",
+     "shortDisplayName": "S. Gonzalez / A. Krajicek",
+     "type": {
+      "id": "3",
+      "text": "Men's Doubles",
+      "slug": "mens-doubles"
+     },
+     "athletes": [
+      {
+       "displayName": "Santiago Gonzalez",
+       "shortDisplayName": "S. Gonzalez"
+      },
+      {
+       "displayName": "Austin Krajicek",
+       "shortDisplayName": "A. Krajicek"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "wta_oggi": {
+  "status": 200,
+  "n_events": 5,
+  "n_competitions": 262,
+  "event0": {
+   "id": "232-2026",
+   "uid": "s:850~l:900~e:232-2026",
+   "date": "2026-10-23T04:00Z",
+   "endDate": "2026-11-02T04:59Z",
+   "major": false,
+   "name": "Guangzhou Open",
+   "shortName": "Guangzhou Open",
+   "season": {
+    "year": 2026,
+    "type": 2
+   },
+   "groupings": [
+    {
+     "grouping": {
+      "id": "2",
+      "slug": "womens-singles",
+      "displayName": "Women's Singles"
+     },
+     "competitions": [
+      {
+       "id": "187132",
+       "uid": "s:850~l:900~e:232-2026~c:187132",
+       "date": "2026-10-24T03:05Z",
+       "startDate": "2026-10-24T03:05Z",
+       "timeValid": true,
+       "recent": false,
+       "status": {
+        "period": 3,
+        "type": {
+         "id": "3",
+         "name": "STATUS_FINAL",
+         "state": "post",
+         "completed": true,
+         "description": "Final",
+         "detail": "Final",
+         "shortDetail": "Final"
+        }
+       },
+       "venue": {
+        "fullName": "Guangzhou, China PR",
+        "court": "Court 2"
+       },
+       "format": {
+        "regulation": {
+         "periods": 3
+        }
+       },
+       "notes": [
+        {
+         "text": "Alevtina Ibragimova (RUS) bt Rina Saigo (JPN) 3-6 6-2 6-4",
+         "type": "event"
+        }
+       ],
+       "geoBroadcasts": [],
+       "broadcasts": [],
+       "broadcast": "",
+       "competitors": [
+        {
+         "id": "14955",
+         "uid": "s:850~l:900~a:14955",
+         "type": "athlete",
+         "order": 2,
+         "homeAway": "away",
+         "winner": true,
+         "linescores": [
+          {
+           "value": 3.0,
+           "winner": false
+          },
+          {
+           "value": 6.0,
+           "winner": true
+          },
+          "... +1"
+         ],
+         "athlete": {
+          "guid": "8347bdc9-d3fc-3f75-b7df-7b2a1a57f4b2",
+          "displayName": "Alevtina Ibragimova",
+          "shortName": "A. Ibragimova",
+          "fullName": "Alevtina Ibragimova"
+         },
+         "statistics": []
+        },
+        {
+         "id": "11553",
+         "uid": "s:850~l:900~a:11553",
+         "type": "athlete",
+         "order": 1,
+         "homeAway": "home",
+         "winner": false,
+         "linescores": [
+          {
+           "value": 6.0,
+           "winner": true
+          },
+          {
+           "value": 2.0,
+           "winner": false
+          },
+          "... +1"
+         ],
+         "athlete": {
+          "guid": "dfe42cb4-4c51-393b-a3b2-d54a465ed35e",
+          "displayName": "Rina Saigo",
+          "shortName": "R. Saigo",
+          "fullName": "Rina Saigo"
+         },
+         "statistics": []
+        }
+       ],
+       "tournamentId": 232,
+       "type": {
+        "id": "2",
+        "text": "Women's Singles",
+        "slug": "womens-singles"
+       },
+       "round": {
+        "id": "11",
+        "displayName": "Qualifying 1st Round"
+       },
+       "wasSuspended": false
+      },
+      {
+       "id": "187136",
+       "uid": "s:850~l:900~e:232-2026~c:187136",
+       "date": "2026-10-24T03:05Z",
+       "startDate": "2026-10-24T03:05Z",
+       "timeValid": true,
+       "recent": false,
+       "status": {
+        "period": 3,
+        "type": {
+         "id": "3",
+         "name": "STATUS_FINAL",
+         "state": "post",
+         "completed": true,
+         "description": "Final",
+         "detail": "Final",
+         "shortDetail": "Final"
+        }
+       },
+       "venue": {
+        "fullName": "Guangzhou, China PR",
+        "court": "Court 6"
+       },
+       "format": {
+        "regulation": {
+         "periods": 3
+        }
+       },
+       "notes": [
+        {
+         "text": "Polina Iatcenko (RUS) bt Alexandra Shubladze (RUS) 6-3 2-6 6-4",
+         "type": "event"
+        }
+       ],
+       "geoBroadcasts": [],
+       "broadcasts": [],
+       "broadcast": "",
+       "competitors": [
+        {
+         "id": "10858",
+         "uid": "s:850~l:900~a:10858",
+         "type": "athlete",
+         "order": 2,
+         "homeAway": "away",
+         "winner": false,
+         "linescores": [
+          {
+           "value": 3.0,
+           "winner": false
+          },
+          {
+           "value": 6.0,
+           "winner": true
+          },
+          "... +1"
+         ],
+         "athlete": {
+          "guid": "3aac91c6-eb93-31e4-9854-95db62382893",
+          "displayName": "Alexandra Shubladze",
+          "shortName": "A. Shubladze",
+          "fullName": "Alexandra Shubladze"
+         },
+         "statistics": []
+        },
+        {
+         "id": "17104",
+         "uid": "s:850~l:900~a:17104",
+         "type": "athlete",
+         "order": 1,
+         "homeAway": "home",
+         "winner": true,
+         "linescores": [
+          {
+           "value": 6.0,
+           "winner": true
+          },
+          {
+           "value": 2.0,
+           "winner": false
+          },
+          "... +1"
+         ],
+         "athlete": {
+          "guid": "ce0bceff-65f4-3fa5-b7be-8a37ca765955",
+          "displayName": "Polina Iatcenko",
+          "shortName": "P. Iatcenko",
+          "fullName": "Polina Iatcenko"
+         },
+         "statistics": []
+        }
+       ],
+       "tournamentId": 232,
+       "type": {
+        "id": "2",
+        "text": "Women's Singles",
+        "slug": "womens-singles"
+       },
+       "round": {
+        "id": "11",
+        "displayName": "Qualifying 1st Round"
+       },
+       "wasSuspended": false
+      },
+      "... +47"
+     ]
+    },
+    {
+     "grouping": {
+      "id": "4",
+      "slug": "womens-doubles",
+      "displayName": "Women's Doubles"
+     },
+     "competitions": [
+      {
+       "id": "185744",
+       "uid": "s:850~l:900~e:232-2026~c:185744",
+       "date": "2026-10-26T04:30Z",
+       "startDate": "2026-10-26T04:30Z",
+       "timeValid": true,
+       "recent": false,
+       "status": {
+        "period": 2,
+        "type": {
+         "id": "3",
+         "name": "STATUS_FINAL",
+         "state": "post",
+         "completed": true,
+         "description": "Final",
+         "detail": "Final",
+         "shortDetail": "Final"
+        }
+       },
+       "venue": {
+        "fullName": "Guangzhou, China PR",
+        "court": "Court 2"
+       },
+       "format": {
+        "regulation": {
+         "periods": 3
+        }
+       },
+       "notes": [
+        {
+         "text": "(1) Mariia Kozyreva (RUS) & Maia Lumsden (GBR) bt Rutuja Bhosale (IND) & Peangtarn Plipuech (THA) 6-3 6-3",
+         "type": "event"
+        }
+       ],
+       "geoBroadcasts": [],
+       "broadcasts": [],
+       "broadcast": "",
+       "competitors": [
+        {
+         "id": "3688-2660",
+         "uid": "s:850~l:900~t:3688-2660",
+         "type": "team",
+         "order": 2,
+         "homeAway": "away",
+         "winner": false,
+         "linescores": [
+          {
+           "value": 3.0,
+           "winner": false
+          },
+          {
+           "value": 3.0,
+           "winner": false
+          }
+         ],
+         "roster": {
+          "displayName": "Rutuja Bhosale / Peangtarn Plipuech",
+          "shortDisplayName": "R. Bhosale / P. Plipuech",
+          "athletes": [
+           {
+            "guid": "dc91035e-a780-be71-dd2c-c7efd599ce52",
+            "displayName": "Rutuja Bhosale",
+            "shortName": "R. Bhosale",
+            "fullName": "Rutuja Bhosale"
+           },
+           {
+            "guid": "44b48d49-eb69-7012-b89b-e419436479ea",
+            "displayName": "Peangtarn Plipuech",
+            "shortName": "P. Plipuech",
+            "fullName": "Peangtarn Plipuech"
+           }
+          ]
+         },
+         "statistics": []
+        },
+        {
+         "id": "15341-2397",
+         "uid": "s:850~l:900~t:15341-2397",
+         "type": "team",
+         "order": 1,
+         "homeAway": "home",
+         "winner": true,
+         "curatedRank": {
+          "current": 1
+         },
+         "linescores": [
+          {
+           "value": 6.0,
+           "winner": true
+          },
+          {
+           "value": 6.0,
+           "winner": true
+          }
+         ],
+         "roster": {
+          "displayName": "Mariia Kozyreva / Maia Lumsden",
+          "shortDisplayName": "M. Kozyreva / M. Lumsden",
+          "athletes": [
+           {
+            "guid": "418099e1-e1f7-331f-aa1f-604b035cfbd6",
+            "displayName": "Mariia Kozyreva",
+            "shortName": "M. Kozyreva",
+            "fullName": "Mariia Kozyreva"
+           },
+           {
+            "guid": "2a2b7e82-f0e4-635a-eef7-e6f32efd6c06",
+            "displayName": "Maia Lumsden",
+            "shortName": "M. Lumsden",
+            "fullName": "Maia Lumsden"
+           }
+          ]
+         },
+         "statistics": []
+        }
+       ],
+       "tournamentId": 232,
+       "type": {
+        "id": "4",
+        "text": "Women's Doubles",
+        "slug": "womens-doubles"
+       },
+       "round": {
+        "id": "1",
+        "displayName": "Round 1"
+       },
+       "wasSuspended": false
+      },
+      {
+       "id": "185736",
+       "uid": "s:850~l:900~e:232-2026~c:185736",
+       "date": "2026-10-26T05:50Z",
+       "startDate": "2026-10-26T05:50Z",
+       "timeValid": true,
+       "recent": false,
+       "status": {
+        "period": 3,
+        "type": {
+         "id": "3",
+         "name": "STATUS_FINAL",
+         "state": "post",
+         "completed": true,
+         "description": "Final",
+         "detail": "Final",
+         "shortDetail": "Final"
+        }
+       },
+       "venue": {
+        "fullName": "Guangzhou, China PR",
+        "court": "Court 2"
+       },
+       "format": {
+        "regulation": {
+         "periods": 3
+        }
+       },
+       "notes": [
+        {
+         "text": "Isabelle Haverlag (NED) & Zhibek Kulambayeva (KAZ) bt Yihan Qu (CHN) & Ruien Zhang (CHN) 6-3 4-6 1-0 (10-5)",
+         "type": "event"
+        }
+       ],
+       "geoBroadcasts": [],
+       "broadcasts": [],
+       "broadcast": "",
+       "competitors": [
+        {
+         "id": "15421-15423",
+         "uid": "s:850~l:900~t:15421-15423",
+         "type": "team",
+         "order": 2,
+         "homeAway": "away",
+         "winner": false,
+         "linescores": [
+          {
+           "value": 3.0,
+           "winner": false
+          },
+          {
+           "value": 6.0,
+           "winner": true
+          },
+          "... +1"
+         ],
+         "roster": {
+          "displayName": "Qu Yihan / Zhang Ruien",
+          "shortDisplayName": "Y. Qu / R. Zhang",
+          "athletes": [
+           {
+            "guid": "9ac9b399-7b01-3abb-b4d7-57bdc9d85f61",
+            "displayName": "Qu Yihan",
+            "shortName": "Y. Qu",
+            "fullName": "Qu Yihan"
+           },
+           {
+            "guid": "c171b510-c7d9-3fd5-8369-26a5a705093f",
+            "displayName": "Zhang Ruien",
+            "shortName": "R. Zhang",
+            "fullName": "Zhang Ruien"
+           }
+          ]
+         },
+         "statistics": []
+        },
+        {
+         "id": "6124-4926",
+         "uid": "s:850~l:900~t:6124-4926",
+         "type": "team",
+         "order": 1,
+         "homeAway": "home",
+         "winner": true,
+         "linescores": [
+          {
+           "value": 6.0,
+           "winner": true
+          },
+          {
+           "value": 4.0,
+           "winner": false
+          },
+          "... +1"
+         ],
+         "roster": {
+          "displayName": "Isabelle Haverlag / Zhibek Kulambayeva",
+          "shortDisplayName": "I. Haverlag / Z. Kulambayeva",
+          "athletes": [
+           {
+            "guid": "f9496b8f-7478-3c05-a029-5649931c5a14",
+            "displayName": "Isabelle Haverlag",
+            "shortName": "I. Haverlag",
+            "fullName": "Isabelle Haverlag"
+           },
+           {
+            "guid": "b607541d-4036-3b31-893b-b7521d6e3d01",
+            "displayName": "Zhibek Kulambayeva",
+            "shortName": "Z. Kulambayeva",
+            "fullName": "Zhibek Kulambayeva"
+           }
+          ]
+         },
+         "statistics": []
+        }
+       ],
+       "tournamentId": 232,
+       "type": {
+        "id": "4",
+        "text": "Women's Doubles",
+        "slug": "womens-doubles"
+       },
+       "round": {
+        "id": "1",
+        "displayName": "Round 1"
+       },
+       "wasSuspended": false
+      },
+      "... +13"
+     ]
+    }
+   ],
+   "status": {
+    "period": 3,
+    "type": {
+     "id": "3",
+     "name": "STATUS_FINAL",
+     "state": "post",
+     "completed": true,
+     "description": "Final",
+     "detail": "Final",
+     "shortDetail": "Final"
+    }
+   },
+   "venue": {
+    "displayName": "Guangzhou, China PR"
+   },
+   "previousWinners": [
+    {
+     "displayName": "Ann Li",
+     "shortDisplayName": "A. Li",
+     "type": {
+      "id": "2",
+      "text": "Women's Singles",
+      "slug": "womens-singles"
+     }
+    },
+    {
+     "displayName": "Katarzyna Piter / Janice Tjen",
+     "shortDisplayName": "K. Piter / J. Tjen",
+     "type": {
+      "id": "4",
+      "text": "Women's Doubles",
+      "slug": "womens-doubles"
+     },
+     "athletes": [
+      {
+       "displayName": "Katarzyna Piter",
+       "shortDisplayName": "K. Piter"
+      },
+      {
+       "displayName": "Janice Tjen",
+       "shortDisplayName": "J. Tjen"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "nba_oggi": {
+  "status": 200,
+  "n_events": 9,
+  "n_competitions": 9,
+  "event0": {
+   "id": "401909868",
+   "uid": "s:40~l:46~e:401909868",
+   "date": "2026-10-26T23:00Z",
+   "name": "Washington Wizards at Charlotte Hornets",
+   "shortName": "WSH @ CHA",
+   "season": {
+    "year": 2027,
+    "type": 2,
+    "slug": "regular-season"
+   },
+   "competitions": [
+    {
+     "id": "401909868",
+     "uid": "s:40~l:46~e:401909868~c:401909868",
+     "date": "2026-10-26T23:00Z",
+     "attendance": 0,
+     "type": {
+      "id": "1",
+      "abbreviation": "STD"
+     },
+     "timeValid": true,
+     "neutralSite": false,
+     "conferenceCompetition": false,
+     "playByPlayAvailable": false,
+     "recent": false,
+     "venue": {
+      "id": "1893",
+      "fullName": "Spectrum Center",
+      "address": {
+       "city": "Charlotte",
+       "state": "NC"
+      },
+      "indoor": true
+     },
+     "competitors": [
+      {
+       "id": "30",
+       "uid": "s:40~l:46~t:30",
+       "type": "team",
+       "order": 0,
+       "homeAway": "home",
+       "team": {
+        "id": "30",
+        "uid": "s:40~l:46~t:30",
+        "location": "Charlotte",
+        "name": "Hornets",
+        "abbreviation": "CHA",
+        "displayName": "Charlotte Hornets",
+        "shortDisplayName": "Hornets",
+        "color": "008ca8",
+        "alternateColor": "1d1060",
+        "isActive": true,
+        "venue": {
+         "id": "1893"
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cha.png",
+        "logoDark": "https://a.espncdn.com/i/teamlogos/nba/500-dark/scoreboard/cha.png"
+       },
+       "score": "0",
+       "statistics": [
+        {
+         "name": "rebounds",
+         "abbreviation": "REB",
+         "displayValue": "138"
+        },
+        {
+         "name": "avgRebounds",
+         "abbreviation": "REB",
+         "displayValue": "46.0"
+        },
+        "... +14"
+       ],
+       "records": [
+        {
+         "name": "overall",
+         "abbreviation": "Total",
+         "type": "total",
+         "summary": "2-1"
+        },
+        {
+         "name": "Home",
+         "type": "home",
+         "summary": "1-1"
+        },
+        "... +1"
+       ],
+       "leaders": [
+        {
+         "name": "pointsPerGame",
+         "displayName": "Points Per Game",
+         "shortDisplayName": "PPG",
+         "abbreviation": "PTS",
+         "leaders": [
+          {
+           "displayValue": "20.0",
+           "value": 20.0,
+           "athlete": {
+            "id": "4396971",
+            "fullName": "Naz Reid",
+            "displayName": "Naz Reid",
+            "shortName": "N. Reid",
+            "jersey": "0",
+            "position": {
+             "abbreviation": "C"
+            },
+            "team": {
+             "id": "30"
+            },
+            "active": true
+           },
+           "team": {
+            "id": "30"
+           }
+          }
+         ]
+        },
+        {
+         "name": "reboundsPerGame",
+         "displayName": "Rebounds Per Game",
+         "shortDisplayName": "RPG",
+         "abbreviation": "REB",
+         "leaders": [
+          {
+           "displayValue": "8.7",
+           "value": 8.666666984558105,
+           "athlete": {
+            "id": "4396971",
+            "fullName": "Naz Reid",
+            "displayName": "Naz Reid",
+            "shortName": "N. Reid",
+            "jersey": "0",
+            "position": {
+             "abbreviation": "C"
+            },
+            "team": {
+             "id": "30"
+            },
+            "active": true
+           },
+           "team": {
+            "id": "30"
+           }
+          }
+         ]
+        },
+        "... +2"
+       ]
+      },
+      {
+       "id": "27",
+       "uid": "s:40~l:46~t:27",
+       "type": "team",
+       "order": 1,
+       "homeAway": "away",
+       "team": {
+        "id": "27",
+        "uid": "s:40~l:46~t:27",
+        "location": "Washington",
+        "name": "Wizards",
+        "abbreviation": "WSH",
+        "displayName": "Washington Wizards",
+        "shortDisplayName": "Wizards",
+        "color": "e31837",
+        "alternateColor": "002b5c",
+        "isActive": true,
+        "venue": {
+         "id": "1823"
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
+        "logoDark": "https://a.espncdn.com/i/teamlogos/nba/500-dark/scoreboard/wsh.png"
+       },
+       "score": "0",
+       "statistics": [
+        {
+         "name": "rebounds",
+         "abbreviation": "REB",
+         "displayValue": "132"
+        },
+        {
+         "name": "avgRebounds",
+         "abbreviation": "REB",
+         "displayValue": "44.0"
+        },
+        "... +14"
+       ],
+       "records": [
+        {
+         "name": "overall",
+         "abbreviation": "Total",
+         "type": "total",
+         "summary": "2-1"
+        },
+        {
+         "name": "Home",
+         "type": "home",
+         "summary": "1-1"
+        },
+        "... +1"
+       ],
+       "leaders": [
+        {
+         "name": "pointsPerGame",
+         "displayName": "Points Per Game",
+         "shortDisplayName": "PPG",
+         "abbreviation": "PTS",
+         "leaders": [
+          {
+           "displayValue": "22.3",
+           "value": 22.33333396911621,
+           "athlete": {
+            "id": "4277905",
+            "fullName": "Trae Young",
+            "displayName": "Trae Young",
+            "shortName": "T. Young",
+            "jersey": "3",
+            "position": {
+             "abbreviation": "G"
+            },
+            "team": {
+             "id": "27"
+            },
+            "active": true
+           },
+           "team": {
+            "id": "27"
+           }
+          }
+         ]
+        },
+        {
+         "name": "reboundsPerGame",
+         "displayName": "Rebounds Per Game",
+         "shortDisplayName": "RPG",
+         "abbreviation": "REB",
+         "leaders": [
+          {
+           "displayValue": "9.3",
+           "value": 9.333333015441895,
+           "athlete": {
+            "id": "4432907",
+            "fullName": "Justin Champagnie",
+            "displayName": "Justin Champagnie",
+            "shortName": "J. Champagnie",
+            "jersey": "9",
+            "position": {
+             "abbreviation": "F"
+            },
+            "team": {
+             "id": "27"
+            },
+            "active": true
+           },
+           "team": {
+            "id": "27"
+           }
+          }
+         ]
+        },
+        "... +2"
+       ]
+      }
+     ],
+     "notes": [],
+     "status": {
+      "clock": 0.0,
+      "displayClock": "0.0",
+      "period": 0,
+      "type": {
+       "id": "1",
+       "name": "STATUS_SCHEDULED",
+       "state": "pre",
+       "completed": false,
+       "description": "Scheduled",
+       "detail": "Mon, October 26th at 7:00 PM EDT",
+       "shortDetail": "10/26 - 7:00 PM EDT"
+      }
+     },
+     "broadcasts": [
+      {
+       "market": "away",
+       "names": [
+        "MNMT",
+        "NBA League Pass"
+       ]
+      }
+     ],
+     "format": {
+      "regulation": {
+       "periods": 4
+      }
+     },
+     "tickets": [
+      {
+       "summary": "Tickets as low as $7",
+       "numberAvailable": 2889
+      }
+     ],
+     "startDate": "2026-10-26T23:00Z",
+     "broadcast": "",
+     "geoBroadcasts": [
+      {
+       "type": {
+        "id": "1",
+        "shortName": "TV"
+       },
+       "market": {
+        "id": "3",
+        "type": "Away"
+       },
+       "media": {
+        "shortName": "MNMT"
+       },
+       "lang": "en",
+       "region": "us"
+      }
+     ],
+     "odds": [
+      {
+       "provider": {
+        "id": "100",
+        "name": "DraftKings",
+        "priority": 1,
+        "displayName": "DraftKings"
+       },
+       "details": "CHA -2.5",
+       "overUnder": 227.5,
+       "spread": -2.5,
+       "awayTeamOdds": {
+        "favorite": false,
+        "underdog": true,
+        "team": {
+         "id": "27",
+         "uid": "s:40~l:46~t:27",
+         "abbreviation": "WSH",
+         "name": "Wizards",
+         "displayName": "Washington Wizards",
+         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png"
+        },
+        "favoriteAtOpen": false
+       },
+       "homeTeamOdds": {
+        "favorite": true,
+        "underdog": false,
+        "team": {
+         "id": "30",
+         "uid": "s:40~l:46~t:30",
+         "abbreviation": "CHA",
+         "name": "Hornets",
+         "displayName": "Charlotte Hornets",
+         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cha.png"
+        },
+        "favoriteAtOpen": true
+       },
+       "moneyline": {
+        "displayName": "Moneyline",
+        "shortDisplayName": "ML",
+        "home": {
+         "close": {
+          "odds": "-135",
+          "link": {
+           "language": "en-US",
+           "rel": [
+            "home",
+            "desktop",
+            "... +2"
+           ],
+           "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34900869%3Foutcomes%3D0ML86930225_1",
+           "text": "Home Bet",
+           "shortText": "Home Bet",
+           "isExternal": true,
+           "isPremium": false,
+           "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+             "league": "nba",
+             "sport": "basketball",
+             "gameId": 401909868,
+             "betSide": "home",
+             "betType": "straight"
+            }
+           }
+          }
+         },
+         "open": {
+          "odds": "-142"
+         }
+        },
+        "away": {
+         "close": {
+          "odds": "+114",
+          "link": {
+           "language": "en-US",
+           "rel": [
+            "away",
+            "desktop",
+            "... +2"
+           ],
+           "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34900869%3Foutcomes%3D0ML86930225_3",
+           "text": "Away Bet",
+           "shortText": "Away Bet",
+           "isExternal": true,
+           "isPremium": false,
+           "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+             "league": "nba",
+             "sport": "basketball",
+             "gameId": 401909868,
+             "betSide": "away",
+             "betType": "straight"
+            }
+           }
+          }
+         },
+         "open": {
+          "odds": "+120"
+         }
+        }
+       },
+       "pointSpread": {
+        "displayName": "Spread",
+        "shortDisplayName": "Spread",
+        "home": {
+         "close": {
+          "line": "-2.5",
+          "odds": "-105",
+          "link": {
+           "language": "en-US",
+           "rel": [
+            "homeSpread",
+            "desktop",
+            "... +1"
+           ],
+           "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34900869%3Foutcomes%3D0HC86930225N250_1",
+           "text": "Home Point Spread",
+           "shortText": "Home Point Spread",
+           "isExternal": true,
+           "isPremium": false,
+           "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+             "league": "nba",
+             "sport": "basketball",
+             "gameId": 401909868,
+             "betSide": "none",
+             "betType": "straight",
+             "betDetails": "Spread:CHA-2.5"
+            }
+           }
+          }
+         },
+         "open": {
+          "line": "-2.5",
+          "odds": "-115"
+         }
+        },
+        "away": {
+         "close": {
+          "line": "+2.5",
+          "odds": "-115",
+          "link": {
+           "language": "en-US",
+           "rel": [
+            "awaySpread",
+            "desktop",
+            "... +1"
+           ],
+           "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34900869%3Foutcomes%3D0HC86930225P250_3",
+           "text": "Away Point Spread",
+           "shortText": "Away Point Spread",
+           "isExternal": true,
+           "isPremium": false,
+           "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+             "league": "nba",
+             "sport": "basketball",
+             "gameId": 401909868,
+             "betSide": "none",
+             "betType": "straight",
+             "betDetails": "Spread:WSH+2.5"
+            }
+           }
+          }
+         },
+         "open": {
+          "line": "+2.5",
+          "odds": "-105"
+         }
+        }
+       },
+       "total": {
+        "displayName": "Total",
+        "shortDisplayName": "Total",
+        "over": {
+         "close": {
+          "line": "o227.5",
+          "odds": "-110",
+          "link": {
+           "language": "en-US",
+           "rel": [
+            "over",
+            "desktop",
+            "... +1"
+           ],
+           "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34900869%3Foutcomes%3D0OU86930225O22750_1",
+           "text": "Over Odds",
+           "shortText": "Over Odds",
+           "isExternal": true,
+           "isPremium": false,
+           "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+             "league": "nba",
+             "sport": "basketball",
+             "gameId": 401909868,
+             "betSide": "over",
+             "betType": "straight",
+             "betDetails": "Over:227.5"
+            }
+           }
+          }
+         },
+         "open": {
+          "line": "o228.5",
+          "odds": "-110"
+         }
+        },
+        "under": {
+         "close": {
+          "line": "u227.5",
+          "odds": "-110",
+          "link": {
+           "language": "en-US",
+           "rel": [
+            "under",
+            "desktop",
+            "... +1"
+           ],
+           "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34900869%3Foutcomes%3D0OU86930225U22750_3",
+           "text": "Under Odds",
+           "shortText": "Under Odds",
+           "isExternal": true,
+           "isPremium": false,
+           "tracking": {
+            "campaign": "betting-integrations",
+            "tags": {
+             "league": "nba",
+             "sport": "basketball",
+             "gameId": 401909868,
+             "betSide": "under",
+             "betType": "straight",
+             "betDetails": "Under:227.5"
+            }
+           }
+          }
+         },
+         "open": {
+          "line": "u228.5",
+          "odds": "-110"
+         }
+        }
+       },
+       "link": {
+        "language": "en-US",
+        "rel": [
+         "game",
+         "desktop",
+         "... +1"
+        ],
+        "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34900869",
+        "text": "See More Odds",
+        "shortText": "Game",
+        "isExternal": true,
+        "isPremium": false,
+        "tracking": {
+         "campaign": "betting-integrations",
+         "tags": {
+          "league": "nba",
+          "sport": "basketball",
+          "gameId": 401909868,
+          "betSide": "none",
+          "betType": "straight"
+         }
+        }
+       },
+       "header": {
+        "logo": {
+         "dark": "https://a.espncdn.com/i/espnbet/dark/espn-bet-square-off.svg",
+         "light": "https://a.espncdn.com/i/espnbet/espn-bet-square-off.svg",
+         "exclusivesLogoDark": "https://a.espncdn.com/i/espnbet/espn-bet-square-mint.svg",
+         "exclusivesLogoLight": "https://a.espncdn.com/i/espnbet/espn-bet-square-mint.svg"
+        },
+        "text": "Game Odds"
+       },
+       "footer": {
+        "disclaimer": "GAMBLING PROBLEM? CALL 1-800-GAMBLER or 1-800-MY-RESET, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY). Call 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD), 1-800-981-0023 (PR). 21+ and present in most states. (18+ DC/KY/NH/PR/WY). Void in ONT. Eligibility restrictions apply. Terms: draftkings.com/sportsbook. On behalf of Boot Hill Casino (KS). Pass-thru of per wager tax may apply in IL."
+       }
+      }
+     ],
+     "highlights": []
+    }
+   ],
+   "status": {
+    "clock": 0.0,
+    "displayClock": "0.0",
+    "period": 0,
+    "type": {
+     "id": "1",
+     "name": "STATUS_SCHEDULED",
+     "state": "pre",
+     "completed": false,
+     "description": "Scheduled",
+     "detail": "Mon, October 26th at 7:00 PM EDT",
+     "shortDetail": "10/26 - 7:00 PM EDT"
+    }
+   }
+  }
+ },
+ "nba_passato": {
+  "status": 200,
+  "n_events": 11,
+  "n_competitions": 11,
+  "event0": {
+   "id": "401810791",
+   "uid": "s:40~l:46~e:401810791",
+   "date": "2026-03-10T23:00Z",
+   "name": "Memphis Grizzlies at Philadelphia 76ers",
+   "shortName": "MEM @ PHI",
+   "season": {
+    "year": 2026,
+    "type": 2,
+    "slug": "regular-season"
+   },
+   "competitions": [
+    {
+     "id": "401810791",
+     "uid": "s:40~l:46~e:401810791~c:401810791",
+     "date": "2026-03-10T23:00Z",
+     "attendance": 17897,
+     "type": {
+      "id": "1",
+      "abbreviation": "STD"
+     },
+     "timeValid": true,
+     "neutralSite": false,
+     "conferenceCompetition": false,
+     "playByPlayAvailable": true,
+     "recent": false,
+     "venue": {
+      "id": "1845",
+      "fullName": "Xfinity Mobile Arena",
+      "address": {
+       "city": "Philadelphia",
+       "state": "PA"
+      },
+      "indoor": true
+     },
+     "competitors": [
+      {
+       "id": "20",
+       "uid": "s:40~l:46~t:20",
+       "type": "team",
+       "order": 0,
+       "homeAway": "home",
+       "winner": true,
+       "team": {
+        "id": "20",
+        "uid": "s:40~l:46~t:20",
+        "location": "Philadelphia",
+        "name": "76ers",
+        "abbreviation": "PHI",
+        "displayName": "Philadelphia 76ers",
+        "shortDisplayName": "76ers",
+        "color": "1d428a",
+        "alternateColor": "e01234",
+        "isActive": true,
+        "venue": {
+         "id": "1845"
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+        "logoDark": "https://a.espncdn.com/i/teamlogos/nba/500-dark/scoreboard/phi.png"
+       },
+       "score": "139",
+       "linescores": [
+        {
+         "value": 32.0,
+         "displayValue": "32",
+         "period": 1
+        },
+        {
+         "value": 36.0,
+         "displayValue": "36",
+         "period": 2
+        },
+        "... +2"
+       ],
+       "statistics": [
+        {
+         "name": "rebounds",
+         "abbreviation": "REB",
+         "displayValue": "40"
+        },
+        {
+         "name": "avgRebounds",
+         "abbreviation": "REB",
+         "displayValue": "40.0"
+        },
+        "... +14"
+       ],
+       "leaders": [
+        {
+         "name": "points",
+         "displayName": "Points",
+         "shortDisplayName": "Pts",
+         "abbreviation": "Pts",
+         "leaders": [
+          {
+           "displayValue": "32",
+           "value": 32.0,
+           "athlete": {
+            "id": "3064230",
+            "fullName": "Cameron Payne",
+            "displayName": "Cameron Payne",
+            "shortName": "C. Payne",
+            "jersey": "20",
+            "position": {
+             "abbreviation": "PG"
+            },
+            "team": {
+             "id": "20"
+            },
+            "active": false
+           },
+           "team": {
+            "id": "20"
+           }
+          }
+         ]
+        },
+        {
+         "name": "rebounds",
+         "displayName": "Rebounds",
+         "shortDisplayName": "Reb",
+         "abbreviation": "Reb",
+         "leaders": [
+          {
+           "displayValue": "12",
+           "value": 12.0,
+           "athlete": {
+            "id": "3133603",
+            "fullName": "Kelly Oubre Jr.",
+            "displayName": "Kelly Oubre Jr.",
+            "shortName": "K. Oubre Jr.",
+            "jersey": "10",
+            "position": {
+             "abbreviation": "G"
+            },
+            "team": {
+             "id": "20"
+            },
+            "active": true
+           },
+           "team": {
+            "id": "20"
+           }
+          }
+         ]
+        },
+        "... +2"
+       ],
+       "records": [
+        {
+         "name": "overall",
+         "abbreviation": "Game",
+         "type": "total",
+         "summary": "35-30"
+        },
+        {
+         "name": "Home",
+         "type": "home",
+         "summary": "18-16"
+        },
+        "... +1"
+       ]
+      },
+      {
+       "id": "29",
+       "uid": "s:40~l:46~t:29",
+       "type": "team",
+       "order": 1,
+       "homeAway": "away",
+       "winner": false,
+       "team": {
+        "id": "29",
+        "uid": "s:40~l:46~t:29",
+        "location": "Memphis",
+        "name": "Grizzlies",
+        "abbreviation": "MEM",
+        "displayName": "Memphis Grizzlies",
+        "shortDisplayName": "Grizzlies",
+        "color": "5d76a9",
+        "alternateColor": "12173f",
+        "isActive": true,
+        "venue": {
+         "id": "1392"
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+        "logoDark": "https://a.espncdn.com/i/teamlogos/nba/500-dark/scoreboard/mem.png"
+       },
+       "score": "129",
+       "linescores": [
+        {
+         "value": 32.0,
+         "displayValue": "32",
+         "period": 1
+        },
+        {
+         "value": 39.0,
+         "displayValue": "39",
+         "period": 2
+        },
+        "... +2"
+       ],
+       "statistics": [
+        {
+         "name": "rebounds",
+         "abbreviation": "REB",
+         "displayValue": "44"
+        },
+        {
+         "name": "avgRebounds",
+         "abbreviation": "REB",
+         "displayValue": "44.0"
+        },
+        "... +14"
+       ],
+       "leaders": [
+        {
+         "name": "points",
+         "displayName": "Points",
+         "shortDisplayName": "Pts",
+         "abbreviation": "Pts",
+         "leaders": [
+          {
+           "displayValue": "26",
+           "value": 26.0,
+           "athlete": {
+            "id": "4065733",
+            "fullName": "Ty Jerome",
+            "displayName": "Ty Jerome",
+            "shortName": "T. Jerome",
+            "jersey": "2",
+            "position": {
+             "abbreviation": "G"
+            },
+            "team": {
+             "id": "29"
+            },
+            "active": true
+           },
+           "team": {
+            "id": "29"
+           }
+          }
+         ]
+        },
+        {
+         "name": "rebounds",
+         "displayName": "Rebounds",
+         "shortDisplayName": "Reb",
+         "abbreviation": "Reb",
+         "leaders": [
+          {
+           "displayValue": "16",
+           "value": 16.0,
+           "athlete": {
+            "id": "4903027",
+            "fullName": "Cedric Coward",
+            "displayName": "Cedric Coward",
+            "shortName": "C. Coward",
+            "jersey": "23",
+            "position": {
+             "abbreviation": "F"
+            },
+            "team": {
+             "id": "29"
+            },
+            "active": true
+           },
+           "team": {
+            "id": "29"
+           }
+          }
+         ]
+        },
+        "... +2"
+       ],
+       "records": [
+        {
+         "name": "overall",
+         "abbreviation": "Game",
+         "type": "total",
+         "summary": "23-41"
+        },
+        {
+         "name": "Home",
+         "type": "home",
+         "summary": "12-19"
+        },
+        "... +1"
+       ]
+      }
+     ],
+     "notes": [],
+     "status": {
+      "clock": 720.0,
+      "displayClock": "12:00",
+      "period": 4,
+      "type": {
+       "id": "3",
+       "name": "STATUS_FINAL",
+       "state": "post",
+       "completed": true,
+       "description": "Final",
+       "detail": "Final",
+       "shortDetail": "Final"
+      }
+     },
+     "broadcasts": [
+      {
+       "market": "away",
+       "names": [
+        "FanDuel SN SE",
+        "NBA League Pass"
+       ]
+      },
+      {
+       "market": "home",
+       "names": [
+        "NBC Sports Phil"
+       ]
+      }
+     ],
+     "format": {
+      "regulation": {
+       "periods": 4
+      }
+     },
+     "startDate": "2026-03-10T23:00Z",
+     "broadcast": "",
+     "geoBroadcasts": [
+      {
+       "type": {
+        "id": "1",
+        "shortName": "TV"
+       },
+       "market": {
+        "id": "3",
+        "type": "Away"
+       },
+       "media": {
+        "shortName": "FanDuel SN SE"
+       },
+       "lang": "en",
+       "region": "us"
+      },
+      {
+       "type": {
+        "id": "1",
+        "shortName": "TV"
+       },
+       "market": {
+        "id": "2",
+        "type": "Home"
+       },
+       "media": {
+        "shortName": "NBC Sports Phil"
+       },
+       "lang": "en",
+       "region": "us"
+      }
+     ],
+     "highlights": [],
+     "headlines": [
+      {
+       "type": "Recap",
+       "description": "— Cam Payne scored 13 of his 32 points in the fourth quarter, rookie VJ Edgecombe added 21 points in his return to the lineup and the Philadelphia 76ers rallied to beat the Memphis Grizzlies 139-129 on Tuesday night.",
+       "shortLinkText": "Payne, Edgecombe help 76ers rally to a 139-129 win over the Grizzlies"
+      }
+     ]
+    }
+   ],
+   "status": {
+    "clock": 720.0,
+    "displayClock": "12:00",
+    "period": 4,
+    "type": {
+     "id": "3",
+     "name": "STATUS_FINAL",
+     "state": "post",
+     "completed": true,
+     "description": "Final",
+     "detail": "Final",
+     "shortDetail": "Final"
+    }
+   }
+  }
+ }
+}
