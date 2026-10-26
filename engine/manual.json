@@ -1,0 +1,12 @@
+{
+  "_info": "Correzioni manuali. absences: role att|def|mix, impact = % di effetto (0.10 = -10% gol fatti per att, +10% gol subiti per def). adjust: moltiplicatori liberi (att >1 segna di più, def >1 subisce di più). Cancella gli esempi.",
+  "absences": {
+    "Esempio FC": [
+      {"player": "Centravanti titolare", "role": "att", "impact": 0.10, "reason": "lesione"},
+      {"player": "Difensore centrale", "role": "def", "impact": 0.05, "reason": "squalifica"}
+    ]
+  },
+  "adjust": {
+    "Esempio FC": {"att": 1.03, "def": 0.97, "_motivo": "nuovo allenatore, primo match"}
+  }
+}
