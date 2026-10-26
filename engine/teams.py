@@ -43,9 +43,15 @@ def _norm(s: str) -> str:
     return re.sub(r"\s+", " ", s).strip()
 
 
+SYNONYMS = {"internazionale": "inter", "inter milan": "inter", "fc internazionale milano": "inter",
+            "milano": "milan", "juve": "juventus", "verona": "verona", "spal": "spal",
+            "atalanta bergamasca": "atalanta", "acf fiorentina": "fiorentina"}
+
+
 def canonical(name: str, known: list[str]) -> str:
     """Mappa un nome di un'altra fonte sul nome usato nel DB (football-data)."""
     n = _norm(name)
+    n = SYNONYMS.get(n, n)
     normed = [_norm(k) for k in known]
     if n in normed:
         return known[normed.index(n)]

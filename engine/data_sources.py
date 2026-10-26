@@ -136,6 +136,9 @@ def update_fixtures(con=None):
 
 
 # ----------------------------------------------------------------- API-Football
+API_LOG = []   # esito chiamate API-Football, finisce in meta.json
+
+
 def _api(path, **params):
     if not C.API_FOOTBALL_KEY:
         return None
@@ -143,9 +146,14 @@ def _api(path, **params):
                      headers={"x-apisports-key": C.API_FOOTBALL_KEY})
     r.raise_for_status()
     j = r.json()
+    resp = j.get("response", [])
+    entry = {"endpoint": path, "risultati": len(resp) if isinstance(resp, list) else 1}
     if j.get("errors"):
+        entry["errore"] = j["errors"]
         print(f"  [!] API-Football {path}: {j['errors']}")
-    return j.get("response", [])
+    if path != "/coachs" or j.get("errors"):
+        API_LOG.append(entry)
+    return resp
 
 
 def update_injuries(con=None, horizon_days=10):

@@ -101,6 +101,11 @@ def export(con, days=10, status=None):
             "news_casa": _news(info["news_h"]), "news_ospite": _news(info["news_a"]),
         })
 
+    known = set(df[df.season == C.CURRENT_SEASON].home)
+    unknown = sorted({t for t in set(fx.home) | set(fx.away) if t not in known})
+    if unknown:
+        print(f"  [!] squadre non riconosciute nel calendario: {unknown}")
+
     ratings = models[0].ratings()
     rows = []
     for t, r in (table.iterrows() if not table.empty else []):
@@ -117,7 +122,8 @@ def export(con, days=10, status=None):
     meta = json.loads(meta_path.read_text(encoding="utf-8")) if meta_path.exists() else {}
     meta.update({"aggiornato": now, "partite_storico": int(len(df)),
                  "ultima_partita": df.date.max().strftime("%Y-%m-%d"),
-                 "fonti": status or {}, "api_football": bool(C.API_FOOTBALL_KEY)})
+                 "fonti": status or {}, "api_football": bool(C.API_FOOTBALL_KEY),
+                 "api_log": D.API_LOG[:10], "squadre_non_riconosciute": unknown})
     _write("meta.json", meta)
     print(f"JSON scritti: {len(matches)} partite in programma")
     return meta
