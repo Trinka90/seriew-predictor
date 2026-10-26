@@ -184,7 +184,7 @@ def update_injuries(con=None, horizon_days=10):
             continue
         team = canonical(it["team"]["name"], known)
         reason = f'{it["player"].get("type", "")}: {it["player"].get("reason", "")}'
-        con.execute("INSERT OR REPLACE INTO absences VALUES(?,?,?,?,?)",
+        con.execute("INSERT OR REPLACE INTO absences(team, player, reason, source, updated) VALUES(?,?,?,?,?)",
                     (team, it["player"]["name"], reason, "API", today.isoformat()))
         n += 1
     con.commit()

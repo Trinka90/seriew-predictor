@@ -7,7 +7,7 @@ import pandas as pd
 import config as C
 
 DEFAULT_IMPACT = 0.03   # peso di un assente "generico" (da API, ruolo ignoto)
-CAP = 0.18              # massimo effetto cumulato assenze
+CAP = 0.25              # massimo effetto cumulato assenze
 
 
 def load_matches(con):
@@ -50,29 +50,34 @@ def load_manual():
 
 
 def absences(con, team, manual):
+    """Assenti con effetto separato su gol fatti (att) e subiti (def)."""
     out = []
-    for player, reason in con.execute("SELECT player, reason FROM absences WHERE team=?", (team,)):
-        w = 0.5 if "questionable" in (reason or "").lower() else 1.0
-        out.append({"player": player, "reason": reason, "role": "mix", "impact": DEFAULT_IMPACT * w})
+    for player, reason, src, ia, idf, info in con.execute(
+            "SELECT player, reason, source, impact_att, impact_def, info FROM absences WHERE team=?", (team,)):
+        if ia is None:   # fonte senza ruolo (API): effetto generico
+            w = 0.5 if "questionable" in (reason or "").lower() else 1.0
+            ia, idf = DEFAULT_IMPACT * w / 2, DEFAULT_IMPACT * w / 2
+        out.append({"player": player, "reason": reason, "src": src, "att": ia, "def": idf,
+                    **(json.loads(info) if info else {})})
     for a in manual.get("absences", {}).get(team, []):
         out = [o for o in out if o["player"].lower() != a["player"].lower()]
-        out.append({"player": a["player"], "reason": a.get("reason", "manuale"),
-                    "role": a.get("role", "att"), "impact": float(a.get("impact", 0.08))})
+        imp, role = float(a.get("impact", 0.08)), a.get("role", "att")
+        att, de = (imp, 0) if role == "att" else (0, imp) if role == "def" else (imp / 2, imp / 2)
+        out.append({"player": a["player"], "reason": a.get("reason", "manuale"), "src": "manuale",
+                    "att": att, "def": de})
     return out
 
 
 def absence_multipliers(abs_list):
     """-> (moltiplicatore gol fatti, moltiplicatore gol subiti)"""
-    att = de = 0.0
-    for a in abs_list:
-        if a["role"] == "att":
-            att += a["impact"]
-        elif a["role"] == "def":
-            de += a["impact"]
-        else:
-            att += a["impact"] / 2
-            de += a["impact"] / 2
+    att = sum(a["att"] for a in abs_list)
+    de = sum(a["def"] for a in abs_list)
     return 1 - min(att, CAP), 1 + min(de, CAP)
+
+
+def match_event(con, home, away):
+    r = con.execute("SELECT data FROM match_events WHERE home=? AND away=?", (home, away)).fetchone()
+    return json.loads(r[0]) if r else None
 
 
 def motivation(table, team, total_rounds=38):

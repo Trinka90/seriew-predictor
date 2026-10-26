@@ -44,6 +44,12 @@ def _news(df):
             for r in df.head(5).itertuples()]
 
 
+def _abs(a):
+    return {"nome": a["player"], "motivo": a.get("motivo") or a.get("reason") or "", "fonte_dato": a.get("src"),
+            "ruolo": a.get("ruolo"), "importanza": a.get("importanza"), "certezza": a.get("certezza"),
+            "titolo": a.get("fonte"), "effetto": round(a["att"] + a["def"], 3)}
+
+
 def update_all(con):
     status = {}
     status["storico"] = D.update_history(C.SEASONS, con)
@@ -56,6 +62,12 @@ def update_all(con):
         except Exception as e:
             status["api_errore"] = str(e)
     status["notizie"] = D.update_news(con)
+    try:
+        import news_ai
+        status["ia"] = news_ai.run(con)
+    except Exception as e:
+        status["ia"] = {"attivo": False, "errore": str(e)}
+        print(f"  [!] IA notizie: {e}")
     return status
 
 
@@ -76,15 +88,17 @@ def export_league(con, lg, df_all, fx_all, manual, today):
 
     matches = []
     for f in fx.itertuples():
-        info = predict_match(con, df, models, table, manual, f.home, f.away, rounds)
+        info = predict_match(con, df, models, table, manual, f.home, f.away, rounds,
+                             odds=(f.odd_h, f.odd_d, f.odd_a, f.odd_o25, f.odd_u25))
         mk = info["markets"]
+        mm = info["model_markets"]
         odds = {"1": f.odd_h, "X": f.odd_d, "2": f.odd_a, "Over 2.5": f.odd_o25, "Under 2.5": f.odd_u25}
         value = []
         for k, o in odds.items():
             if o and not pd.isna(o):
-                edge = mk[k] * o - 1
+                edge = mm[k] * o - 1
                 if edge > C.VALUE_EDGE:
-                    value.append({"mercato": k, "prob": mk[k], "quota": o, "edge": edge})
+                    value.append({"mercato": k, "prob": mm[k], "quota": o, "edge": edge})
         matches.append({
             "lega": lg,
             "data": f.date.strftime("%Y-%m-%d"), "ora": f.time if f.time and f.time != "nan" else "",
@@ -95,8 +109,10 @@ def export_league(con, lg, df_all, fx_all, manual, today):
             "forma_casa": info["form_h"], "forma_ospite": info["form_a"],
             "quote": odds, "value": value, "mercati": mk,
             "risultati": [{"r": s, "p": p} for p, s in info["scores"]],
-            "assenti_casa": [{"nome": a["player"], "motivo": a["reason"]} for a in info["abs_h"]],
-            "assenti_ospite": [{"nome": a["player"], "motivo": a["reason"]} for a in info["abs_a"]],
+            "assenti_casa": [_abs(a) for a in info["abs_h"]],
+            "assenti_ospite": [_abs(a) for a in info["abs_a"]],
+            "gol_casa_notizie": info["lam_news"], "gol_ospite_notizie": info["mu_news"],
+            "eventi": info["eventi"], "effetti": info["effetti"], "con_mercato": info["mercato"],
             "note_casa": [x for x in info["coach_h"] + [info["mot_h"]] if x],
             "note_ospite": [x for x in info["coach_a"] + [info["mot_a"]] if x],
             "news_casa": _news(info["news_h"]), "news_ospite": _news(info["news_a"]),
@@ -149,7 +165,8 @@ def export(con, days=10, status=None):
         meta["backtest"] = {}   # vecchio formato (solo Serie A)
     meta.update({"aggiornato": now, "partite_storico": int(len(df_all)),
                  "ultima_partita": df_all.date.max().strftime("%Y-%m-%d"),
-                 "per_lega": per_lega, "fonti": status or {}, "api_football": bool(C.API_FOOTBALL_KEY),
+                 "per_lega": per_lega, "fonti": status or meta.get("fonti", {}), "api_football": bool(C.API_FOOTBALL_KEY),
+                 "modello": {"xi": C.XI, "tiri_in_porta": C.SOT_WEIGHT, "peso_mercato": C.MARKET_WEIGHT},
                  "api_log": D.API_LOG[:10], "squadre_non_riconosciute": unknown})
     _write("meta.json", meta)
     print(f"JSON scritti: {len(matches)} partite in programma")

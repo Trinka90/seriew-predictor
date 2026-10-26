@@ -168,10 +168,25 @@ function story(m) {
   else out.push(`Leggermente avanti <b>${esc(M["1"] > M["2"] ? m.casa : m.ospite)}</b>, ma il pareggio è possibile (${pc(M["X"])}).`);
   const g = m.gol_casa + m.gol_ospite;
   out.push(g < 2.3 ? `Si aspettano <b>pochi gol</b> (circa ${g.toFixed(1)}).` : g > 2.9 ? `Si aspettano <b>molti gol</b> (circa ${g.toFixed(1)}).` : `Gol nella media (circa ${g.toFixed(1)}).`);
-  const ab = m.assenti_casa.length + m.assenti_ospite.length;
-  if (ab) out.push(`${ab} assenti segnalati: il pronostico ne tiene già conto.`);
-  const hot = [...m.news_casa, ...m.news_ospite].filter(n => /infortunio|squalifica|allenatore/.test(n.tag || "")).length;
-  if (hot) out.push(`⚠️ ${hot} notizie su infortuni/squalifiche/panchina: leggile prima di giocare.`);
+  const big = [...m.assenti_casa.map(a => [a, m.casa]), ...m.assenti_ospite.map(a => [a, m.ospite])]
+    .filter(([a]) => a.importanza === "stella" || a.importanza === "titolare");
+  if (big.length) out.push(`🚑 Pesano le assenze di ${big.slice(0, 4).map(([a, t]) => `<b>${esc(a.nome)}</b> (${esc(t)}${a.importanza === "stella" ? ", giocatore chiave" : ""}${a.certezza && a.certezza !== "certo" ? ", " + esc(a.certezza) : ""})`).join(", ")}.`);
+  const ev = m.eventi || {};
+  if (ev.porte_chiuse) out.push(`🔒 Si gioca a <b>porte chiuse</b>: meno vantaggio per chi gioca in casa.`);
+  if (ev.campo_neutro) out.push(`🏟️ Si gioca in <b>campo neutro</b>: niente vantaggio casa.`);
+  for (const [k, t] of [["casa", m.casa], ["ospite", m.ospite]]) {
+    const e = ev[k] || {};
+    if (e.turnover && e.turnover !== "nessuno") out.push(`🔄 ${esc(t)}: previsto turnover ${esc(e.turnover)}.`);
+    if (e.nuovo_allenatore) out.push(`🧑‍💼 ${esc(t)}: nuovo allenatore.`);
+  }
+  const d = (m.gol_casa_notizie ?? m.gol_casa_base) + (m.gol_ospite_notizie ?? m.gol_ospite_base) - m.gol_casa_base - m.gol_ospite_base;
+  if (Math.abs((m.gol_casa_notizie ?? m.gol_casa_base) - m.gol_casa_base) > .03 || Math.abs((m.gol_ospite_notizie ?? m.gol_ospite_base) - m.gol_ospite_base) > .03)
+    out.push(`📰 Le notizie hanno cambiato i gol attesi: ${esc(m.casa)} ${m.gol_casa_base.toFixed(2)}→${m.gol_casa_notizie.toFixed(2)}, ${esc(m.ospite)} ${m.gol_ospite_base.toFixed(2)}→${m.gol_ospite_notizie.toFixed(2)}.`);
+  if (m.con_mercato) out.push(`📈 Pronostico combinato con le quote dei bookmaker.`);
+  if (!ev.n_titoli) {
+    const hot = [...m.news_casa, ...m.news_ospite].filter(n => /infortunio|squalifica|allenatore/.test(n.tag || "")).length;
+    if (hot) out.push(`⚠️ ${hot} notizie su infortuni/squalifiche/panchina non ancora analizzate: leggile prima di giocare.`);
+  }
   if (m.value.length) out.push(`💰 Quota conveniente: <b>${esc(label(m.value[0].mercato, m))}</b> pagata ${m.value[0].quota.toFixed(2)} (giusta ${fair(m.value[0].prob)}).`);
   return out;
 }
@@ -211,7 +226,8 @@ function rows(m, keys) {
 function newsList(arr) {
   return (arr || []).map(n => `<a href="${esc(n.link)}" target="_blank" rel="noopener">${(n.tag || "").split(",").filter(Boolean).map(t => `<span class="tag">${esc(t)}</span>`).join("")}${esc(n.titolo)} <span class="mut">· ${esc(n.fonte)}</span></a>`).join("") || `<div class="mut small">nessuna notizia recente</div>`;
 }
-const abs = arr => arr.length ? arr.map(a => `${esc(a.nome)} <span class="mut">(${esc(a.motivo)})</span>`).join(", ") : `<span class="mut">nessuno segnalato</span>`;
+const IMP = {stella: "⭐ chiave", titolare: "titolare", riserva: "riserva"};
+const abs = arr => arr.length ? arr.map(a => `<div class="mk"><span><b>${esc(a.nome)}</b> <span class="mut">${esc([a.ruolo, IMP[a.importanza] || a.importanza, a.motivo, a.certezza].filter(Boolean).join(" · "))}</span>${a.titolo ? `<br><span class="mut small">“${esc(a.titolo)}”</span>` : ""}</span><span>${a.effetto ? "−" + Math.round(a.effetto * 100) + "%" : ""}</span></div>`).join("") : `<span class="mut small">nessuno segnalato</span>`;
 
 function card(m, i) {
   const M = m.mercati, bp = bestPick(m), [cc, ct] = conf(bp.p);
@@ -239,8 +255,9 @@ function card(m, i) {
     <div class="sec">Risultato esatto</div>${m.risultati.map(r => `<div class="mk"><span>${esc(r.r)}</span><span>${pc(r.p)}</span></div>`).join("")}
     <div class="sec">Angoli (attesi ${M["Angoli attesi"].toFixed(1)}) e cartellini (attesi ${M["Cartellini attesi"].toFixed(1)})</div>
     ${rows(m, ["Angoli Over 8.5", "Angoli Over 9.5", "Angoli Over 10.5", "Cartellini Over 3.5", "Cartellini Over 4.5"])}
-    <div class="sec">Assenti</div>
-    <div class="small"><b>${esc(m.casa)}:</b> ${abs(m.assenti_casa)}</div><div class="small"><b>${esc(m.ospite)}:</b> ${abs(m.assenti_ospite)}</div>
+    <div class="sec">Assenti ${esc(m.casa)}</div>${abs(m.assenti_casa)}
+    <div class="sec">Assenti ${esc(m.ospite)}</div>${abs(m.assenti_ospite)}
+    ${m.eventi?.n_titoli ? `<div class="mut small" style="margin-top:4px">Analisi IA di ${m.eventi.n_titoli} titoli recenti. ${esc([m.eventi.note, m.eventi.casa?.note, m.eventi.ospite?.note].filter(Boolean).join(" · "))}</div>` : ""}
     ${(m.note_casa.length || m.note_ospite.length) ? `<div class="sec">Note</div><div class="small">${m.note_casa.map(x => esc(m.casa + ": " + x)).concat(m.note_ospite.map(x => esc(m.ospite + ": " + x))).join("<br>")}</div>` : ""}
     <div class="sec">Notizie ${esc(m.casa)}</div><div class="news">${newsList(m.news_casa)}</div>
     <div class="sec">Notizie ${esc(m.ospite)}</div><div class="news">${newsList(m.news_ospite)}</div>
@@ -328,9 +345,13 @@ function viewInfo() {
     <table><tr><th></th><th>Campionato</th><th>Indovina 1X2<br>modello</th><th>Indovina 1X2<br>bookmaker</th><th>Quote<br>convenienti</th></tr>
     ${bt.map(([c, x]) => `<tr><td>${x.logloss_modello <= x.logloss_book ? "✅" : "➖"}</td><td>${lgName(c)}</td><td>${pc(x.acc_modello)}</td><td>${pc(x.acc_book)}</td>
       <td style="color:${(x.roi ?? 0) >= 0 ? "var(--g)" : "var(--r)"}">${x.roi == null ? "–" : (x.roi >= 0 ? "+" : "") + (x.roi * 100).toFixed(1) + "%"}</td></tr>`).join("")}</table>
+    <p class="small"><b>Queste cifre sono del solo modello.</b> Quando escono le quote (di solito 2-4 giorni prima della partita) il pronostico viene combinato con il mercato: nei test su 5.214 partite la precisione sale praticamente al livello dei bookmaker. Le partite combinate hanno la scritta 📈.</p>
     <p class="small">✅ = il modello è più preciso dei bookmaker in quel campionato. ➖ = un po' meno preciso: lì usalo per capire le partite, non come garanzia. "Quote convenienti" = guadagno o perdita simulati giocando solo dove il modello vedeva una quota alta.</p></div>` : ""}
   <div class="card"><h2>Come funziona</h2>
-    <p class="small">Il modello studia le partite degli ultimi 3 anni (le recenti contano di più) e capisce quanto ogni squadra attacca e difende, e quanto pesa giocare in casa. Da qui calcola la probabilità di ogni risultato, e quindi di ogni pronostico. Poi corregge per assenti e motivazioni di fine stagione. I dati si aggiornano da soli 3 volte al giorno.</p></div>
+    <p class="small">1. Il modello studia le partite degli ultimi 3 anni (le recenti contano di più): gol e tiri in porta, per capire quanto ogni squadra attacca e difende e quanto pesa giocare in casa.<br>
+    2. Un'intelligenza artificiale legge i titoli dei giornali dei giorni prima della partita (nella lingua del campionato) e trova assenti, squalificati, turnover, porte chiuse. Ogni assente pesa in base a ruolo e importanza: un attaccante chiave vale circa −10% di gol.<br>
+    3. Quando escono le quote, il pronostico viene combinato con il mercato, che è la fonte più precisa che esista.<br>
+    Da qui si calcola la probabilità di ogni risultato e di ogni pronostico. Tutto si aggiorna da solo 3 volte al giorno.</p></div>
   <div class="card gl"><h2>Glossario</h2><dl>
     <dt>1 · X · 2</dt><dd>Vince la squadra di casa · pareggio · vince la squadra ospite</dd>
     <dt>1X · X2</dt><dd>Doppia chance: la squadra non perde (vince o pareggia)</dd>
@@ -344,7 +365,7 @@ function viewInfo() {
     <div class="kv"><span>Partite in archivio</span><b>${m.partite_storico ?? "–"}</b></div>
     <div class="kv"><span>Ultimo risultato registrato</span><b>${m.ultima_partita ?? "–"}</b></div>
     <div class="kv"><span>Notizie analizzate</span><b>${m.fonti?.notizie ?? "–"}</b></div>
-    <div class="kv"><span>Infortuni automatici</span><b>${m.fonti?.infortuni ? "attivi" : "non disponibili"}</b></div>
+    <div class="kv"><span>Lettura notizie con IA</span><b>${m.fonti?.ia?.attivo ? `attiva (${m.fonti.ia.partite ?? 0} partite)` : "non attiva"}</b></div>
     <div class="kv"><span>Versione app</span><b>${v ?? "web"}</b></div>
     ${S.err ? `<div class="kv"><span>Errore</span><b>${esc(S.err)}</b></div>` : ""}
     <p class="mut small">Fonti: football-data.co.uk (risultati, statistiche, quote), fixturedownload.com (calendario), Google News, Gazzetta, Corriere dello Sport (notizie).</p>

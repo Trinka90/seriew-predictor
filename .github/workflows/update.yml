@@ -40,6 +40,7 @@ jobs:
         working-directory: engine
         env:
           API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
           BT=""
           # backtest il lunedì e nei lanci manuali
@@ -50,8 +51,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/data
-          git diff --cached --quiet || (git commit -m "Dati aggiornati $(date +'%Y-%m-%d %H:%M')" && git push)
+          git add docs/data; if [ -d engine/cache ]; then git add engine/cache; fi
+          git diff --cached --quiet || (git commit -m "Dati aggiornati $(date +'%Y-%m-%d %H:%M')" && \
+            for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done)
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

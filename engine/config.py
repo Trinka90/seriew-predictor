@@ -42,9 +42,11 @@ API_FOOTBALL_LEAGUE = 135          # Serie A
 API_FOOTBALL_SEASON = 2026         # stagione 2026/27
 
 # --- Modello -----------------------------------------------------------------
-XI = 0.0019            # decadimento temporale (per giorno): ~ dimezza peso in 1 anno
-SOT_WEIGHT = 0.0       # quota tiri in porta nel bersaglio del modello (scelta dall'esperimento)
-MARKET_WEIGHT = 0.0    # peso delle quote di mercato nella fusione (scelto dall'esperimento)
+# Valori scelti con experiment.py (stagione 2025/26, 5214 partite, 15 campionati - vedi experiments/result.md)
+XI = 0.003             # decadimento temporale (per giorno): peso dimezzato in ~8 mesi
+SOT_WEIGHT = 0.5       # metà del bersaglio dai tiri in porta (più stabili dei gol): LogLoss 1.0187 -> 1.0148
+MARKET_WEIGHT = 0.9    # fusione con le quote quando disponibili: LogLoss -> 0.9997 (bookmaker 0.9980)
+NEWS_WITH_MARKET = 0.5 # con le quote, le notizie pesano la metà (in parte già prezzate dal mercato)
 TRAIN_DAYS = 3 * 365   # finestra di training
 MAX_GOALS = 10
 VALUE_EDGE = 0.05      # segnala "value" se prob*quota - 1 > 5%

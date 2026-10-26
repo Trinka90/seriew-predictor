@@ -18,7 +18,10 @@ CREATE TABLE IF NOT EXISTS news(
   published TEXT, tags TEXT);
 CREATE TABLE IF NOT EXISTS absences(
   team TEXT, player TEXT, reason TEXT, source TEXT, updated TEXT,
+  impact_att REAL, impact_def REAL, info TEXT,
   PRIMARY KEY(team, player));
+CREATE TABLE IF NOT EXISTS match_events(
+  home TEXT, away TEXT, data TEXT, PRIMARY KEY(home, away));
 CREATE TABLE IF NOT EXISTS coaches(
   team TEXT PRIMARY KEY, coach TEXT, since TEXT, updated TEXT);
 """
