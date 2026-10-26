@@ -8,6 +8,8 @@ import datetime as dt
 import json
 import math
 import sys
+import time
+import traceback
 
 import pandas as pd
 
@@ -50,24 +52,27 @@ def _abs(a):
             "titolo": a.get("fonte"), "effetto": round(a["att"] + a["def"], 3)}
 
 
-def update_all(con):
-    status = {}
-    status["storico"] = D.update_history(C.SEASONS, con)
-    status["calendario"] = D.update_fixtures(con)
-    if C.API_FOOTBALL_KEY:
-        try:
-            status["infortuni"] = D.update_injuries(con)
-            if dt.date.today().weekday() == 0:          # allenatori: una volta a settimana
-                status["allenatori"] = D.update_coaches(con)
-        except Exception as e:
-            status["api_errore"] = str(e)
-    status["notizie"] = D.update_news(con)
+def _step(status, name, fn, *args):
+    """Esegue un passaggio; se fallisce lo annota e prosegue con gli altri."""
+    t = time.time()
     try:
-        import news_ai
-        status["ia"] = news_ai.run(con)
+        status[name] = fn(*args)
     except Exception as e:
-        status["ia"] = {"attivo": False, "errore": str(e)}
-        print(f"  [!] IA notizie: {e}")
+        status[name] = {"errore": str(e)[:200]}
+        print(f"  [!] {name}: {e}")
+        traceback.print_exc()
+    print(f"  ({name}: {time.time() - t:.0f}s)")
+
+
+def update_all(con):
+    import news_ai
+    status = {}
+    _step(status, "storico", D.update_history, C.SEASONS, con)
+    _step(status, "calendario", D.update_fixtures, con)
+    if C.API_FOOTBALL_KEY:
+        _step(status, "infortuni", D.update_injuries, con)
+    _step(status, "notizie", D.update_news, con)
+    _step(status, "ia", news_ai.run, con)
     return status
 
 
@@ -140,8 +145,15 @@ def export(con, days=10, status=None):
     manual = X.load_manual()
 
     matches, standings, unknown, per_lega = [], {}, {}, {}
+    errori = {}
     for lg in C.LEAGUES:
-        m, rows, unk = export_league(con, lg, df_all, fx_all, manual, today)
+        try:
+            m, rows, unk = export_league(con, lg, df_all, fx_all, manual, today)
+        except Exception as e:   # un campionato con problemi non blocca gli altri
+            errori[lg] = str(e)[:200]
+            print(f"  [!] {lg}: {e}")
+            traceback.print_exc()
+            m, rows, unk = [], [], []
         matches += m
         if rows:
             standings[lg] = rows
@@ -167,7 +179,8 @@ def export(con, days=10, status=None):
                  "ultima_partita": df_all.date.max().strftime("%Y-%m-%d"),
                  "per_lega": per_lega, "fonti": status or meta.get("fonti", {}), "api_football": bool(C.API_FOOTBALL_KEY),
                  "modello": {"xi": C.XI, "tiri_in_porta": C.SOT_WEIGHT, "peso_mercato": C.MARKET_WEIGHT},
-                 "api_log": D.API_LOG[:10], "squadre_non_riconosciute": unknown})
+                 "api_log": D.API_LOG[:10], "squadre_non_riconosciute": unknown, "errori_campionati": errori,
+                 "stato": "ok"})
     _write("meta.json", meta)
     print(f"JSON scritti: {len(matches)} partite in programma")
     return meta
@@ -181,19 +194,45 @@ def main():
     a = p.parse_args()
     con = connect()
     status = None if a.no_update else update_all(con)
-    if con.execute("SELECT COUNT(*) FROM matches WHERE league='I1'").fetchone()[0] < 300:
-        print("ERRORE: storico insufficiente (download fallito?) - non sovrascrivo i JSON")
-        sys.exit(1)
-    meta = export(con, a.giorni, status)
+    n_hist = con.execute("SELECT COUNT(*) FROM matches").fetchone()[0]
+    if n_hist < 2000:
+        # download fallito: si tengono i pronostici precedenti, si segnala soltanto
+        print(f"ATTENZIONE: storico insufficiente ({n_hist} partite) - tengo i dati precedenti")
+        _mark_failed(f"download dati non riuscito ({n_hist} partite)", status)
+        return
+    try:
+        meta = export(con, a.giorni, status)
+    except Exception as e:
+        traceback.print_exc()
+        _mark_failed(f"calcolo non riuscito: {e}", status)
+        return
     if a.backtest:
         import backtest
         prev = str(int(C.CURRENT_SEASON[:2]) - 1).zfill(2) + C.CURRENT_SEASON[:2]
         for lg in C.LEAGUES:
-            r = backtest.run(prev, league=lg)
-            if r:
-                meta["backtest"][lg] = r
+            try:
+                r = backtest.run(prev, league=lg)
+                if r:
+                    meta["backtest"][lg] = r
+            except Exception as e:
+                print(f"  [!] backtest {lg}: {e}")
         _write("meta.json", meta)
 
 
+def _mark_failed(msg, status):
+    path = C.DOCS_DATA / "meta.json"
+    try:
+        meta = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
+    except Exception:
+        meta = {}
+    meta.update({"stato": "errore", "errore": msg, "tentativo": dt.datetime.now().isoformat(timespec="minutes"),
+                 "fonti_ultimo_tentativo": status or {}})
+    _write("meta.json", meta)
+
+
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception:   # mai far fallire il giro: i dati precedenti restano validi
+        traceback.print_exc()
+        _mark_failed("errore imprevisto", None)

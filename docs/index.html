@@ -373,7 +373,8 @@ function viewInfo() {
 }
 
 function updBanner() {
-  return S.appUpdate ? `<div class="banner">Nuova versione dell'app disponibile. <a href="${esc(S.appUpdate.url)}">Scarica</a></div>` : "";
+  const failed = S.meta?.stato === "errore" ? `<div class="banner" style="background:#3a3212;border-color:var(--y)">⚠️ L'ultimo aggiornamento non è riuscito (${esc(S.meta.errore || "")}). Stai vedendo i dati precedenti, che restano validi; si riprova da solo al prossimo giro.</div>` : "";
+  return failed + (S.appUpdate ? `<div class="banner">Nuova versione dell'app disponibile. <a href="${esc(S.appUpdate.url)}">Scarica</a></div>` : "");
 }
 async function checkApp() {
   if (!window.Android?.versionCode || S.appUpdate) return;

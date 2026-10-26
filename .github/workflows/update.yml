@@ -23,6 +23,7 @@ env:
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 55
     environment:
       name: github-pages
     steps:
@@ -47,7 +48,8 @@ jobs:
           BT=""
           # backtest il lunedì e nei lanci manuali
           if [ "$(date +%u)" = "1" ] || [ "${{ github.event_name }}" != "schedule" ]; then BT="--backtest"; fi
-          python export_json.py $BT
+          # tempo massimo 45 minuti; in caso di problemi restano i dati precedenti e si pubblica comunque
+          timeout 45m python export_json.py $BT || echo "::warning::aggiornamento incompleto, tengo i dati precedenti"
 
       - name: Salva i dati nel repo
         run: |

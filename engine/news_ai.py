@@ -32,9 +32,19 @@ PROVIDERS = [
     {"nome": "Anthropic", "env": "ANTHROPIC_API_KEY", "tipo": "anthropic",
      "url": "https://api.anthropic.com/v1/messages", "modelli": ["claude-haiku-5-5"]},
 ]
-PROVIDER = next((p for p in PROVIDERS if os.environ.get(p["env"])), None)
+ACTIVE = [p for p in PROVIDERS if os.environ.get(p["env"])]   # tutti quelli con chiave: catena di riserva
+PROVIDER = ACTIVE[0] if ACTIVE else None
 API_KEY = os.environ.get(PROVIDER["env"], "") if PROVIDER else ""
 MAX_CALLS = int(os.environ.get("NEWS_AI_MAX_CALLS", "70"))   # per giro: resta nei limiti gratuiti
+AI_BUDGET_MIN = float(os.environ.get("NEWS_AI_MINUTES", "15"))     # tempo massimo per l'analisi IA
+FETCH_BUDGET_MIN = 6                                              # tempo massimo per scaricare i titoli
+_deadline = [float("inf")]
+_failures = {}        # errori consecutivi per fornitore: dopo 3 il fornitore viene saltato in questo giro
+_used = {}            # fornitore -> chiamate riuscite
+
+ROLES = {"portiere", "difensore", "centrocampista", "attaccante"}
+LEVELS = {"stella", "titolare", "riserva"}
+CERTS = {"certo", "probabile", "in dubbio"}
 CACHE = Path(__file__).resolve().parent / "cache" / "news_ai.json"
 DAYS_AHEAD = 3
 MAX_TITLES = 25
@@ -83,10 +93,13 @@ def fetch_targeted(con, teams_by_league):
     """Scarica titoli mirati (infortuni/formazione) per le squadre che giocano a breve."""
     n = 0
     cutoff = dt.date.today() - dt.timedelta(days=C.NEWS_DAYS)
+    stop = time.time() + FETCH_BUDGET_MIN * 60
     for lg, teams in teams_by_league.items():
         hl, gl, ceid, queries = LANG[LEAGUE_LANG.get(lg, "en")]
         for team in teams:
             for q in queries:
+                if time.time() > stop:
+                    break
                 url = (f"https://news.google.com/rss/search?q={quote_plus(q.format(t=team))}"
                        f"&hl={hl}&gl={gl}&ceid={quote_plus(ceid)}")
                 try:
@@ -115,7 +128,9 @@ def _load_cache():
 
 def _save_cache(c):
     limit = (dt.date.today() - dt.timedelta(days=14)).isoformat()
+    last = {k: v for k, v in c.pop("_ultima", {}).items() if v.get("data", "9999") >= limit}
     c = {k: v for k, v in c.items() if v.get("data", "9999") >= limit}
+    c["_ultima"] = last
     CACHE.parent.mkdir(exist_ok=True)
     CACHE.write_text(json.dumps(c, ensure_ascii=False, indent=0), encoding="utf-8")
 
@@ -136,51 +151,139 @@ def _titles(con, team):
     return out
 
 
+def _left():
+    return _deadline[0] - time.time()
+
+
 def _post(url, headers, payload):
-    """POST con attesa automatica sui limiti di frequenza (429)."""
-    for attempt in range(5):
-        r = requests.post(url, headers=headers, json=payload, timeout=120)
+    """POST con attesa sui limiti (429) ma mai oltre il tempo disponibile."""
+    last = None
+    for attempt in range(4):
+        if _left() < 20:
+            raise TimeoutError("tempo IA esaurito")
+        r = requests.post(url, headers=headers, json=payload, timeout=min(90, max(10, _left() - 5)))
         if r.status_code == 429 or r.status_code >= 500:
-            wait = float(r.headers.get("retry-after", 0) or 0) or 10 * (attempt + 1)
-            time.sleep(min(wait, 60))
+            last = r
+            wait = float(r.headers.get("retry-after", 0) or 0) or 8 * (attempt + 1)
+            if wait > 90 or wait > _left() - 30:   # quota giornaliera finita o troppo lunga: rinuncia
+                break
+            time.sleep(wait)
             continue
         r.raise_for_status()
         return r.json()
-    r.raise_for_status()
+    raise RuntimeError(f"HTTP {last.status_code if last is not None else '?'} (limite raggiunto)")
+
+
+def _call_provider(p, prompt):
+    key = os.environ.get(p["env"], "")
+    if p["tipo"] == "anthropic":
+        j = _post(p["url"], {"x-api-key": key, "anthropic-version": "2023-06-01"},
+                  {"model": p["modelli"][0], "max_tokens": 1500, "system": SYSTEM,
+                   "messages": [{"role": "user", "content": prompt}]})
+        return "".join(b.get("text", "") for b in j.get("content", []))
+    err = None
+    for model in p["modelli"]:
+        for fmt in (True, False):   # alcuni modelli non accettano response_format
+            try:
+                body = {"model": model, "temperature": 0, "max_tokens": 1500,
+                        "messages": [{"role": "system", "content": SYSTEM}, {"role": "user", "content": prompt}]}
+                if fmt:
+                    body["response_format"] = {"type": "json_object"}
+                j = _post(p["url"], {"Authorization": f"Bearer {key}"}, body)
+                return j["choices"][0]["message"]["content"]
+            except TimeoutError:
+                raise
+            except Exception as e:
+                err = e
+                if "limite" in str(e):
+                    break
+    raise err
+
+
+def _parse(txt):
+    m = re.search(r"\{.*\}", txt or "", re.S)
+    if not m:
+        raise ValueError("risposta senza JSON")
+    return json.loads(m.group(0))
 
 
 def _call(prompt):
-    p = PROVIDER
-    if p["tipo"] == "anthropic":
-        j = _post(p["url"], {"x-api-key": API_KEY, "anthropic-version": "2023-06-01"},
-                  {"model": p["modelli"][0], "max_tokens": 1500, "system": SYSTEM,
-                   "messages": [{"role": "user", "content": prompt}]})
-        txt = "".join(b.get("text", "") for b in j.get("content", []))
-    else:
-        txt, err = None, None
-        for model in p["modelli"]:
-            try:
-                j = _post(p["url"], {"Authorization": f"Bearer {API_KEY}"},
-                          {"model": model, "temperature": 0, "max_tokens": 1500,
-                           "response_format": {"type": "json_object"},
-                           "messages": [{"role": "system", "content": SYSTEM},
-                                        {"role": "user", "content": prompt}]})
-                txt = j["choices"][0]["message"]["content"]
-                break
-            except Exception as e:   # modello non disponibile -> prova il successivo
-                err = e
-        if txt is None:
-            raise err
-    m = re.search(r"\{.*\}", txt, re.S)
-    return json.loads(m.group(0))
+    """Prova i fornitori in ordine; un fornitore che fallisce 3 volte di fila viene saltato."""
+    err = None
+    for p in ACTIVE:
+        if _failures.get(p["nome"], 0) >= 3:
+            continue
+        try:
+            res = _parse(_call_provider(p, prompt))
+            _failures[p["nome"]] = 0
+            _used[p["nome"]] = _used.get(p["nome"], 0) + 1
+            return res
+        except TimeoutError:
+            raise
+        except Exception as e:
+            _failures[p["nome"]] = _failures.get(p["nome"], 0) + 1
+            err = e
+    raise err or RuntimeError("nessun fornitore IA disponibile")
+
+
+ROLE_ALIASES = {
+    "attaccante": ["att", "punta", "ala", "esterno offensivo", "trequartista", "forward", "striker", "winger",
+                   "delantero", "stürmer", "sturmer", "attaquant", "aanvaller", "avançado", "forvet"],
+    "centrocampista": ["centrocamp", "mediano", "regista", "mezzala", "midfield", "centrocampo", "medio",
+                       "mittelfeld", "milieu", "middenvelder", "médio", "orta saha"],
+    "difensore": ["difens", "terzino", "centrale", "defender", "back", "defensa", "verteidiger", "défenseur",
+                  "verdediger", "defesa", "defans"],
+    "portiere": ["portier", "goalkeeper", "keeper", "portero", "torwart", "gardien", "doelman", "guarda-redes", "kaleci"],
+}
+
+
+def _role(v):
+    v = str(v or "").lower()
+    if v in ROLES:
+        return v
+    for r, al in ROLE_ALIASES.items():
+        if any(a in v for a in al):
+            return r
+    return "centrocampista"
+
+
+def _bool(v):
+    return v is True or str(v).strip().lower() in ("true", "si", "sì", "yes", "1")
+
+
+def _sanitize(res):
+    """Ripulisce la risposta: valori ammessi, al massimo 8 assenti per squadra, niente campi strani."""
+    def side(s):
+        s = s if isinstance(s, dict) else {}
+        out = []
+        for a in (s.get("assenti") or [])[:8]:
+            if not isinstance(a, dict) or not str(a.get("nome") or "").strip():
+                continue
+            out.append({"nome": str(a["nome"]).strip()[:40],
+                        "ruolo": _role(a.get("ruolo")),
+                        "importanza": a.get("importanza") if a.get("importanza") in LEVELS else "titolare",
+                        "motivo": str(a.get("motivo") or "")[:20],
+                        "certezza": a.get("certezza") if a.get("certezza") in CERTS else "probabile",
+                        "titoli": [i for i in (a.get("titoli") or []) if isinstance(i, int)][:3]})
+        return {"assenti": out,
+                "turnover": s.get("turnover") if s.get("turnover") in TURNOVER else "nessuno",
+                "nuovo_allenatore": _bool(s.get("nuovo_allenatore")),
+                "clima": s.get("clima") if s.get("clima") in ("positivo", "neutro", "negativo") else "neutro",
+                "note": str(s.get("note") or "")[:120]}
+    res = res if isinstance(res, dict) else {}
+    p = res.get("partita") if isinstance(res.get("partita"), dict) else {}
+    return {"casa": side(res.get("casa")), "ospite": side(res.get("ospite")),
+            "partita": {"porte_chiuse": _bool(p.get("porte_chiuse")), "campo_neutro": _bool(p.get("campo_neutro")),
+                        "note": str(p.get("note") or "")[:120]}}
 
 
 def analyze(con, fixtures):
     """fixtures: lista di (league, date, home, away). Ritorna {(home, away): analisi} e statistiche."""
-    stats = {"partite": 0, "chiamate": 0, "da_cache": 0, "errori": 0}
-    if not API_KEY:
+    stats = {"partite": 0, "chiamate": 0, "da_cache": 0, "errori": 0, "precedenti": 0, "rimandate": 0}
+    if not ACTIVE:
         return {}, {"attivo": False}
     cache = _load_cache()
+    last = cache.get("_ultima", {})   # ultima analisi riuscita per partita: riserva se oggi non si può
     results = {}
     for lg, date, home, away in fixtures:
         th, ta = _titles(con, home), _titles(con, away)
@@ -192,8 +295,13 @@ def analyze(con, fixtures):
             results[(home, away)] = cache[key]["r"]
             stats["da_cache"] += 1
             continue
-        if stats["chiamate"] >= MAX_CALLS:   # il resto al prossimo giro (resta nel piano gratuito)
-            stats["rimandate"] = stats.get("rimandate", 0) + 1
+        mkey = f"{home}|{away}|{date}"
+        dead = all(_failures.get(p["nome"], 0) >= 3 for p in ACTIVE)
+        if stats["chiamate"] >= MAX_CALLS or _left() < 30 or dead:   # il resto al prossimo giro
+            stats["rimandate"] += 1
+            if mkey in last:
+                results[(home, away)] = last[mkey]["r"]
+                stats["precedenti"] += 1
             continue
         lines = [f"Partita: {home} (casa) - {away} (ospite), {C.LEAGUES[lg]['nome']}, data {date}. Oggi è {dt.date.today()}.", ""]
         k = 1
@@ -205,7 +313,7 @@ def analyze(con, fixtures):
                 k += 1
             lines.append("")
         try:
-            res = _call("\n".join(lines))
+            res = _sanitize(_call("\n".join(lines)))
             res["n_titoli"] = len(th) + len(ta)
             for side in ("casa", "ospite"):   # collega ogni assente al titolo da cui viene
                 for a in (res.get(side) or {}).get("assenti", []) or []:
@@ -214,14 +322,19 @@ def analyze(con, fixtures):
                         a["fonte"] = allt[idx[0] - 1][1]
             results[(home, away)] = res
             cache[key] = {"data": date, "r": res}
+            last[mkey] = {"data": date, "r": res}
             stats["chiamate"] += 1
         except Exception as e:
             stats["errori"] += 1
             print(f"  [!] IA {home}-{away}: {e}")
+            if mkey in last:
+                results[(home, away)] = last[mkey]["r"]
+                stats["precedenti"] += 1
         time.sleep(0.3)
+    cache["_ultima"] = last
     _save_cache(cache)
     stats["attivo"] = True
-    stats["fornitore"] = PROVIDER["nome"]
+    stats["fornitore"] = ", ".join(f"{k} ({v})" for k, v in _used.items()) or ACTIVE[0]["nome"]
     return results, stats
 
 
@@ -269,12 +382,20 @@ def run(con):
     by_lg = {}
     for lg, _, h, a in fx:
         by_lg.setdefault(lg, set()).update((h, a))
-    if not API_KEY:
+    if not ACTIVE:
         print("  IA notizie: nessuna chiave (GROQ_API_KEY / OPENROUTER_API_KEY / ANTHROPIC_API_KEY)")
         return {"attivo": False}
-    n = fetch_targeted(con, by_lg)
+    _deadline[0] = time.time() + AI_BUDGET_MIN * 60
+    try:
+        n = fetch_targeted(con, by_lg)
+    except Exception as e:
+        print(f"  [!] titoli mirati: {e}")
+        n = 0
     results, stats = analyze(con, fx)
-    store(con, results)
+    try:
+        store(con, results)
+    except Exception as e:
+        print(f"  [!] salvataggio analisi: {e}")
     stats["titoli_mirati"] = n
     print(f"  IA notizie: {stats}")
     return stats
