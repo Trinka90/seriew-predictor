@@ -1,4 +1,4 @@
-"""Aggiorna i dati e scrive i JSON letti dall'app (docs/data/).
+"""Aggiorna i dati (dati reali, API-Football attiva) e scrive i JSON letti dall'app (docs/data/).
 
   python export_json.py                 # update completo + pronostici
   python export_json.py --backtest      # in più ricalcola l'affidabilità sulla stagione scorsa
