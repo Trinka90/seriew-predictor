@@ -25,9 +25,10 @@ from data_sources import _get, _parse_rss, _pubdate, tag_text
 PROVIDERS = [
     {"nome": "Groq", "env": "GROQ_API_KEY", "tipo": "openai",
      "url": "https://api.groq.com/openai/v1/chat/completions",
-     "modelli": [os.environ.get("GROQ_MODEL", "meta-llama/llama-4-scout-17b-16e-instruct"), "llama-3.3-70b-versatile"]},
+     "lista": "https://api.groq.com/openai/v1/models",
+     "modelli": [os.environ.get("GROQ_MODEL", "openai/gpt-oss-120b"), "qwen/qwen3.8-27b", "openai/gpt-oss-20b"]},
     {"nome": "OpenRouter", "env": "OPENROUTER_API_KEY", "tipo": "openai",
-     "url": "https://openrouter.ai/api/v1/chat/completions",
+     "url": "https://openrouter.ai/api/v1/chat/completions", "lista": "https://openrouter.ai/api/v1/models",
      "modelli": [os.environ.get("OPENROUTER_MODEL", "meta-llama/llama-3.3-70b-instruct:free")]},
     {"nome": "Anthropic", "env": "ANTHROPIC_API_KEY", "tipo": "anthropic",
      "url": "https://api.anthropic.com/v1/messages", "modelli": ["claude-haiku-5-5"]},
@@ -41,6 +42,34 @@ FETCH_BUDGET_MIN = 6                                              # tempo massim
 _deadline = [float("inf")]
 _failures = {}        # errori consecutivi per fornitore: dopo 3 il fornitore viene saltato in questo giro
 _used = {}            # fornitore -> chiamate riuscite
+_last_error = [""]
+_models_checked = set()
+
+
+def _refresh_models(p):
+    """Chiede al fornitore quali modelli esistono oggi: i ritirati vengono tolti, e se non resta nulla
+    si sceglie da solo un modello grande disponibile. Così un ritiro non blocca mai l'analisi."""
+    if p["nome"] in _models_checked or not p.get("lista"):
+        return
+    _models_checked.add(p["nome"])
+    try:
+        r = requests.get(p["lista"], headers={"Authorization": f"Bearer {os.environ.get(p['env'], '')}"}, timeout=20)
+        r.raise_for_status()
+        ids = [m.get("id", "") for m in r.json().get("data", [])]
+        if not ids:
+            return
+        keep = [m for m in p["modelli"] if m in ids]
+        if p["nome"] == "OpenRouter":
+            extra = [i for i in ids if i.endswith(":free")]
+        else:
+            bad = ("whisper", "tts", "guard", "orpheus", "safeguard", "embed", "playai", "distil")
+            extra = [i for i in ids if not any(b in i.lower() for b in bad)]
+        size = lambda i: max([int(x) for x in re.findall(r"(\d+)b", i.lower())] or [0])
+        extra = sorted((i for i in extra if i not in keep), key=size, reverse=True)
+        p["modelli"] = (keep + extra)[:4]
+        print(f"  modelli {p['nome']}: {p['modelli']}")
+    except Exception as e:
+        print(f"  [!] elenco modelli {p['nome']}: {e}")
 
 ROLES = {"portiere", "difensore", "centrocampista", "attaccante"}
 LEVELS = {"stella", "titolare", "riserva"}
@@ -169,7 +198,8 @@ def _post(url, headers, payload):
                 break
             time.sleep(wait)
             continue
-        r.raise_for_status()
+        if r.status_code >= 400:   # messaggio leggibile (es. modello ritirato), senza esporre la chiave
+            raise RuntimeError(f"HTTP {r.status_code}: {r.text[:200]}")
         return r.json()
     raise RuntimeError(f"HTTP {last.status_code if last is not None else '?'} (limite raggiunto)")
 
@@ -181,14 +211,17 @@ def _call_provider(p, prompt):
                   {"model": p["modelli"][0], "max_tokens": 1500, "system": SYSTEM,
                    "messages": [{"role": "user", "content": prompt}]})
         return "".join(b.get("text", "") for b in j.get("content", []))
+    _refresh_models(p)
     err = None
-    for model in p["modelli"]:
-        for fmt in (True, False):   # alcuni modelli non accettano response_format
+    for model in list(p["modelli"]):
+        for fmt in (True, False):   # alcuni modelli non accettano response_format / reasoning_effort
             try:
-                body = {"model": model, "temperature": 0, "max_tokens": 1500,
+                body = {"model": model, "temperature": 0, "max_tokens": 3000,
                         "messages": [{"role": "system", "content": SYSTEM}, {"role": "user", "content": prompt}]}
                 if fmt:
                     body["response_format"] = {"type": "json_object"}
+                    if "gpt-oss" in model or "qwen3" in model:
+                        body["reasoning_effort"] = "low"
                 j = _post(p["url"], {"Authorization": f"Bearer {key}"}, body)
                 return j["choices"][0]["message"]["content"]
             except TimeoutError:
@@ -197,6 +230,9 @@ def _call_provider(p, prompt):
                 err = e
                 if "limite" in str(e):
                     break
+                low = str(e).lower()
+                if "404" in low or "decommission" in low or ("model" in low and "not" in low):
+                    break   # modello inesistente: passa al prossimo senza riprovare
     raise err
 
 
@@ -222,6 +258,7 @@ def _call(prompt):
             raise
         except Exception as e:
             _failures[p["nome"]] = _failures.get(p["nome"], 0) + 1
+            _last_error[0] = f"{p['nome']}: {str(e)[:150]}"
             err = e
     raise err or RuntimeError("nessun fornitore IA disponibile")
 
@@ -335,6 +372,9 @@ def analyze(con, fixtures):
     _save_cache(cache)
     stats["attivo"] = True
     stats["fornitore"] = ", ".join(f"{k} ({v})" for k, v in _used.items()) or ACTIVE[0]["nome"]
+    stats["modelli"] = {p["nome"]: p["modelli"][:2] for p in ACTIVE}
+    if _last_error[0]:
+        stats["ultimo_errore"] = _last_error[0]
     return results, stats
 
 
