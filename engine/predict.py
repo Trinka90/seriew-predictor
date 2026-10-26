@@ -33,7 +33,8 @@ def predict_match(con, df, models, table, manual, home, away, rounds=38, odds=No
     info = {"home": home, "away": away, "lam_base": lam0, "mu_base": mu0}
     ev = X.match_event(con, home, away) or {}
 
-    ab_h, ab_a = X.absences(con, home, manual), X.absences(con, away, manual)
+    mkey = f"{home}|{away}"
+    ab_h, ab_a = X.absences(con, home, manual, mkey), X.absences(con, away, manual, mkey)
     att_h, leak_h = X.absence_multipliers(ab_h)
     att_a, leak_a = X.absence_multipliers(ab_a)
     mot_h, mot_h_txt = X.motivation(table, home, rounds)

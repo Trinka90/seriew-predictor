@@ -49,11 +49,13 @@ def load_manual():
         return {}
 
 
-def absences(con, team, manual):
-    """Assenti con effetto separato su gol fatti (att) e subiti (def)."""
+def absences(con, team, manual, match=None):
+    """Assenti con effetto separato su gol fatti (att) e subiti (def).
+    Quelli letti dall'IA valgono solo per la partita analizzata (match = 'casa|ospite')."""
     out = []
     for player, reason, src, ia, idf, info in con.execute(
-            "SELECT player, reason, source, impact_att, impact_def, info FROM absences WHERE team=?", (team,)):
+            "SELECT player, reason, source, impact_att, impact_def, info FROM absences "
+            "WHERE team=? AND (IFNULL(partita,'')='' OR partita=?)", (team, match or "")):
         if ia is None:   # fonte senza ruolo (API): effetto generico
             w = 0.5 if "questionable" in (reason or "").lower() else 1.0
             ia, idf = DEFAULT_IMPACT * w / 2, DEFAULT_IMPACT * w / 2

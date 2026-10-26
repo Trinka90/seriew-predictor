@@ -77,6 +77,7 @@ CERTS = {"certo", "probabile", "in dubbio"}
 CACHE = Path(__file__).resolve().parent / "cache" / "news_ai.json"
 DAYS_AHEAD = 3
 MAX_TITLES = 25
+PROMPT_VERSION = 2   # cambiando le regole si invalida la cache
 
 # query mirate per lingua: (hl, gl, ceid, modelli di query)
 LANG = {
@@ -107,6 +108,10 @@ Estrai SOLO le informazioni presenti nei titoli e rilevanti per QUESTA partita. 
 - Non inventare e non usare tue conoscenze su infortuni o squalifiche: possono essere vecchie. Usa le tue conoscenze SOLO per stimare ruolo e importanza di un giocatore citato nei titoli.
 - Un giocatore "recuperato", "rientra", "torna disponibile", "convocato", "back in training" NON è assente.
 - Ignora calciomercato, altre squadre, nazionali, giovanili, calcio femminile, partite già giocate e infortuni già superati.
+- Inserisci un giocatore SOLO se il titolo dice chiaramente che gioca in QUELLA squadra (es. "Napoli, ko Spinazzola"). Se il titolo parla di un giocatore di un'altra squadra (anche dell'avversario di un'altra partita), ignoralo.
+- Allenatori, dirigenti, presidenti e arbitri NON sono giocatori: mai tra gli assenti (un allenatore squalificato va solo nelle note).
+- "Diffidato" significa solo a rischio squalifica: NON è assente. Squalificato è assente solo se la squalifica vale per QUESTA partita.
+- Ogni assente deve citare in "titoli" il numero di un titolo della sezione di QUELLA squadra che lo nomina.
 - importanza: "stella" = tra i 2-3 giocatori più decisivi della squadra; "titolare" = gioca di solito dall'inizio; "riserva" = altrimenti.
 - certezza: "certo" se il titolo dice che salta la partita (out, squalificato, lesione di settimane); "probabile" se è fortemente a rischio; "in dubbio" se in forse.
 - turnover: "alto" se la squadra farà ampio turnover (es. coppa importante subito dopo, partita senza valore), "medio" se si parla di rotazioni, altrimenti "nessuno".
@@ -288,6 +293,18 @@ def _bool(v):
     return v is True or str(v).strip().lower() in ("true", "si", "sì", "yes", "1")
 
 
+def _fold(t):
+    import unicodedata
+    return unicodedata.normalize("NFKD", str(t)).encode("ascii", "ignore").decode().lower()
+
+
+def _names_in(name, title):
+    """Il titolo nomina davvero il giocatore? (almeno il cognome, senza accenti)"""
+    t = _fold(title)
+    parts = [p for p in re.split(r"[\s.'-]+", _fold(name)) if len(p) >= 3]
+    return any(p in t for p in parts)
+
+
 def _sanitize(res):
     """Ripulisce la risposta: valori ammessi, al massimo 8 assenti per squadra, niente campi strani."""
     def side(s):
@@ -327,7 +344,7 @@ def analyze(con, fixtures):
         if not th and not ta:
             continue
         stats["partite"] += 1
-        key = hashlib.sha1(json.dumps([home, away, date, th, ta]).encode()).hexdigest()
+        key = hashlib.sha1(json.dumps([PROMPT_VERSION, home, away, date, th, ta]).encode()).hexdigest()
         if key in cache:
             results[(home, away)] = cache[key]["r"]
             stats["da_cache"] += 1
@@ -352,11 +369,19 @@ def analyze(con, fixtures):
         try:
             res = _sanitize(_call("\n".join(lines)))
             res["n_titoli"] = len(th) + len(ta)
-            for side in ("casa", "ospite"):   # collega ogni assente al titolo da cui viene
-                for a in (res.get(side) or {}).get("assenti", []) or []:
-                    idx = [i for i in (a.get("titoli") or []) if isinstance(i, int) and 1 <= i <= len(allt)]
-                    if idx:
-                        a["fonte"] = allt[idx[0] - 1][1]
+            ranges = {"casa": (1, len(th)), "ospite": (len(th) + 1, len(th) + len(ta))}
+            for side in ("casa", "ospite"):   # controlli: titolo della squadra giusta che nomina il giocatore
+                ok = []
+                lo, hi = ranges[side]
+                for a in res[side]["assenti"]:
+                    idx = [i for i in a.get("titoli", []) if lo <= i <= hi]
+                    src = [allt[i - 1][1] for i in idx if _names_in(a["nome"], allt[i - 1][1])]
+                    if not src:
+                        stats["scartati"] = stats.get("scartati", 0) + 1
+                        continue
+                    a["fonte"] = src[0]
+                    ok.append(a)
+                res[side]["assenti"] = ok
             results[(home, away)] = res
             cache[key] = {"data": date, "r": res}
             last[mkey] = {"data": date, "r": res}
@@ -400,8 +425,9 @@ def store(con, results):
                 ia, idf = impact_of(a)
                 info = json.dumps({k: a.get(k) for k in ("ruolo", "importanza", "certezza", "motivo", "fonte")},
                                   ensure_ascii=False)
-                con.execute("INSERT OR REPLACE INTO absences(team, player, reason, source, updated, impact_att, impact_def, info) "
-                            "VALUES(?,?,?,?,?,?,?,?)", (team, a["nome"], a.get("motivo", ""), "IA", today, ia, idf, info))
+                con.execute("INSERT OR REPLACE INTO absences(team, player, reason, source, updated, impact_att, impact_def, "
+                            "info, partita) VALUES(?,?,?,?,?,?,?,?,?)",
+                            (team, a["nome"], a.get("motivo", ""), "IA", today, ia, idf, info, f"{home}|{away}"))
         p = r.get("partita") or {}
         ev = {"porte_chiuse": bool(p.get("porte_chiuse")), "campo_neutro": bool(p.get("campo_neutro")),
               "note": p.get("note", ""), "n_titoli": r.get("n_titoli", 0)}
