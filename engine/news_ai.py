@@ -59,6 +59,8 @@ def _refresh_models(p):
         if not ids:
             return
         keep = [m for m in p["modelli"] if m in ids]
+        if p["nome"] == "OpenRouter":   # mai modelli a pagamento
+            keep = [m for m in keep if m.endswith(":free")]
         if p["nome"] == "OpenRouter":
             extra = [i for i in ids if i.endswith(":free")]
         else:
@@ -219,6 +221,8 @@ def _call_provider(p, prompt):
     _refresh_models(p)
     err = None
     for model in list(p["modelli"]):
+        if p["nome"] == "OpenRouter" and not model.endswith(":free"):
+            continue   # sicurezza: su OpenRouter solo modelli gratuiti
         for fmt in (True, False):   # alcuni modelli non accettano response_format / reasoning_effort
             try:
                 body = {"model": model, "temperature": 0, "max_tokens": 3000,

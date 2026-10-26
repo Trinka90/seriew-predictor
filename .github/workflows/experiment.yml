@@ -3,7 +3,7 @@ name: Esperimento modello
 on:
   push:
     branches: [main]
-    paths: ["engine/experiment.py", ".github/workflows/experiment.yml"]
+    paths: ["engine/experiment.py", "engine/probe.py", ".github/workflows/experiment.yml"]
 
 permissions:
   contents: write
@@ -20,10 +20,16 @@ jobs:
           cache: pip
           cache-dependency-path: engine/requirements.txt
       - run: pip install -r engine/requirements.txt
+      - run: pip install openpyxl
+      - name: Prova fonti
+        working-directory: engine
+        run: python probe.py
       - name: Scarica storico
+        if: contains(github.event.head_commit.message, '[esperimento]')
         working-directory: engine
         run: python -c "import data_sources as D; D.update_history()"
       - name: Esperimento
+        if: contains(github.event.head_commit.message, '[esperimento]')
         working-directory: engine
         run: python experiment.py
       - name: Salva risultati
