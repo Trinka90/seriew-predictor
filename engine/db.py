@@ -3,14 +3,14 @@ from config import DB_PATH
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS matches(
-  season TEXT, date TEXT, home TEXT, away TEXT,
+  league TEXT, season TEXT, date TEXT, home TEXT, away TEXT,
   fthg INT, ftag INT, hthg INT, htag INT,
   hs INT, as_ INT, hst INT, ast INT, hc INT, ac INT,
   hy INT, ay INT, hr INT, ar INT,
   odd_h REAL, odd_d REAL, odd_a REAL, odd_o25 REAL, odd_u25 REAL,
   PRIMARY KEY(date, home, away));
 CREATE TABLE IF NOT EXISTS fixtures(
-  date TEXT, time TEXT, home TEXT, away TEXT,
+  league TEXT, date TEXT, time TEXT, home TEXT, away TEXT,
   odd_h REAL, odd_d REAL, odd_a REAL, odd_o25 REAL, odd_u25 REAL,
   PRIMARY KEY(date, home, away));
 CREATE TABLE IF NOT EXISTS news(

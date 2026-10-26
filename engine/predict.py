@@ -26,7 +26,7 @@ def build_models(df, ref):
     return dc, corners, cards, r_h, r_a
 
 
-def predict_match(con, df, models, table, manual, home, away):
+def predict_match(con, df, models, table, manual, home, away, rounds=38):
     dc, corners, cards, r_h, r_a = models
     lam0, mu0 = dc.lambdas(home, away)
     info = {"home": home, "away": away, "lam_base": lam0, "mu_base": mu0}
@@ -34,8 +34,8 @@ def predict_match(con, df, models, table, manual, home, away):
     ab_h, ab_a = X.absences(con, home, manual), X.absences(con, away, manual)
     att_h, leak_h = X.absence_multipliers(ab_h)
     att_a, leak_a = X.absence_multipliers(ab_a)
-    mot_h, mot_h_txt = X.motivation(table, home)
-    mot_a, mot_a_txt = X.motivation(table, away)
+    mot_h, mot_h_txt = X.motivation(table, home, rounds)
+    mot_a, mot_a_txt = X.motivation(table, away, rounds)
     man_att_h, man_def_h = X.manual_adjust(manual, home)
     man_att_a, man_def_a = X.manual_adjust(manual, away)
 
@@ -104,13 +104,14 @@ def print_match(fx, info, table):
     print("  Più probabili (>55%): " + ", ".join(f"{k} {p:.0%}" for p, k in best[:6]))
 
 
-def run(days=10, export=True, quiet=False, ref=None):
+def run(days=10, export=True, quiet=False, ref=None, league="I1"):
     con = connect()
     df = X.load_matches(con)
+    df = df[df.league == league].reset_index(drop=True)
     if df.empty:
         raise SystemExit("DB vuoto: lancia prima `python main.py update`")
     ref = pd.Timestamp(ref or dt.date.today())
-    fx = pd.read_sql("SELECT * FROM fixtures", con, parse_dates=["date"])
+    fx = pd.read_sql("SELECT * FROM fixtures WHERE league=?", con, params=(league,), parse_dates=["date"])
     fx = fx[(fx.date >= ref) & (fx.date <= ref + pd.Timedelta(days=days))].sort_values(["date", "time"])
     if fx.empty:
         print("Nessuna partita in programma nel periodo (fixtures.csv esce di solito a metà settimana).")
@@ -121,7 +122,7 @@ def run(days=10, export=True, quiet=False, ref=None):
     manual = X.load_manual()
     rows = []
     for f in fx.itertuples():
-        info = predict_match(con, df, models, table, manual, f.home, f.away)
+        info = predict_match(con, df, models, table, manual, f.home, f.away, C.LEAGUES[league]["giornate"])
         if not quiet:
             print_match(f, info, table)
         rows.append({"data": f.date.date(), "casa": f.home, "ospite": f.away,
@@ -130,7 +131,7 @@ def run(days=10, export=True, quiet=False, ref=None):
     out = pd.DataFrame(rows)
     if export:
         C.OUT_DIR.mkdir(exist_ok=True)
-        path = C.OUT_DIR / f"pronostici_{ref:%Y%m%d}.csv"
+        path = C.OUT_DIR / f"pronostici_{league}_{ref:%Y%m%d}.csv"
         out.to_csv(path, index=False, sep=";", decimal=",")
         print(f"\nEsportato: {path}")
     return out

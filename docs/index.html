@@ -66,17 +66,24 @@ td:nth-child(2),th:nth-child(2){text-align:left}
 .sel input{width:20px;height:20px;accent-color:var(--acc)}
 .sel .p{margin-left:auto;text-align:right;font-variant-numeric:tabular-nums}
 .big{font-size:30px;font-weight:700}
-.tot{position:sticky;top:64px;z-index:3}
+.tot{}
 .seg{display:flex;gap:6px;margin:8px 0}
 .seg button.on{background:var(--acc);color:#0b1118;border-color:var(--acc);font-weight:600}
 .gl dt{font-weight:600;margin-top:8px}
 .gl dd{margin:0;color:var(--mut);font-size:13px}
+.leagues{display:flex;gap:6px;overflow-x:auto;padding:8px 0 2px;scrollbar-width:none}
+.leagues::-webkit-scrollbar{display:none}
+.leagues button{white-space:nowrap;border-radius:999px;padding:5px 11px;flex:none}
+.leagues button.on{background:var(--acc);color:#0b1118;border-color:var(--acc);font-weight:600}
+.leagues button small{opacity:.7;margin-left:3px}
+.lg{font-size:11px;color:var(--mut);margin-bottom:4px}
 </style>
 </head>
 <body>
 <header>
   <div class="row"><h1>Pronostici Serie A</h1><span class="sp"></span><button id="reload">↻</button></div>
   <div class="sub" id="upd">caricamento…</div>
+  <div class="leagues" id="leagues"></div>
 </header>
 <main id="main"></main>
 <nav>
@@ -87,7 +94,23 @@ td:nth-child(2),th:nth-child(2){text-align:left}
 </nav>
 <script>
 const REPO = "Trinka90/seriew-predictor";
-const S = {view: "partite", pred: null, stand: null, meta: null, err: null, appUpdate: null, sel: null, mode: "corta"};
+const S = {view: "partite", pred: null, stand: null, meta: null, err: null, appUpdate: null, sel: null, mode: "corta",
+           lega: (() => { try { return localStorage.getItem("lega") || "ALL"; } catch (e) { return "ALL"; } })()};
+const LEGHE = () => S.pred?.leghe || {};
+const lgName = c => LEGHE()[c] ? `${LEGHE()[c].flag} ${LEGHE()[c].nome}` : c;
+const matches = () => (S.pred?.partite || []).filter(m => S.lega === "ALL" || (m.lega || "I1") === S.lega);
+function setLega(c) { S.lega = c; S.sel = null; try { localStorage.setItem("lega", c); } catch (e) {} render(); window.scrollTo(0, 0); }
+function leagueBar() {
+  const all = S.pred?.partite || [];
+  const cnt = c => all.filter(m => (m.lega || "I1") === c).length;
+  const codes = Object.keys(LEGHE());
+  if (S.view === "classifica") {
+    const cur = S.lega === "ALL" ? "I1" : S.lega;
+    return codes.filter(c => S.stand?.leghe?.[c]).map(c => `<button class="${c === cur ? "on" : ""}" onclick="setLega('${c}')">${lgName(c)}</button>`).join("");
+  }
+  return `<button class="${S.lega === "ALL" ? "on" : ""}" onclick="setLega('ALL')">Tutti<small>${all.length}</small></button>` +
+    codes.map(c => `<button class="${c === S.lega ? "on" : ""}" onclick="setLega('${c}')">${lgName(c)}<small>${cnt(c)}</small></button>`).join("");
+}
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const pc = p => p == null ? "–" : Math.round(p * 100) + "%";
@@ -194,6 +217,7 @@ function card(m, i) {
   const M = m.mercati, bp = bestPick(m), [cc, ct] = conf(bp.p);
   const pf = Object.keys(M).filter(k => k.startsWith("PF ")).sort((a, b) => M[b] - M[a]).slice(0, 4);
   return `<div class="card" id="c${i}">
+  ${S.lega === "ALL" ? `<div class="lg">${lgName(m.lega || "I1")}</div>` : ""}
   <div class="teams"><b>${esc(m.casa)}</b><span class="vs">–</span><b>${esc(m.ospite)}</b><span class="sp"></span><span class="mut small">${esc(m.ora || "")}</span></div>
   <div class="meta">${pos(m.classifica_casa)} ${form(m.forma_casa)} &nbsp;·&nbsp; ${pos(m.classifica_ospite)} ${form(m.forma_ospite)}</div>
   <div class="bar">
@@ -228,9 +252,9 @@ function toggle(i) {
 }
 
 function viewPartite() {
-  const list = S.pred?.partite || [];
+  const list = matches();
   let h = updBanner();
-  if (!list.length) return h + `<div class="empty">Nessuna partita nei prossimi 10 giorni.</div>`;
+  if (!list.length) return h + `<div class="empty">Nessuna partita nei prossimi 10 giorni${S.lega === "ALL" ? "" : " per questo campionato"}.<br><br><span class="small">Il calendario di alcuni campionati compare solo a metà settimana.</span></div>`;
   let last = "";
   list.forEach((m, i) => {
     if (m.data !== last) { h += `<div class="day">${dayLabel(m.data)}</div>`; last = m.data; }
@@ -241,7 +265,7 @@ function viewPartite() {
 
 /* ---------- schedina ---------- */
 function turno() {   // partite del prossimo turno: entro 4 giorni dalla prima
-  const l = S.pred?.partite || [];
+  const l = matches();
   if (!l.length) return [];
   const first = new Date(l[0].data);
   return l.filter(m => (new Date(m.data) - first) / 864e5 <= 3);
@@ -274,7 +298,7 @@ function viewSchedina() {
   <div class="card">${t.map((x, i) => {
     const [cc, ct] = conf(x.p);
     return `<label class="sel"><input type="checkbox" ${S.sel[i] ? "checked" : ""} onchange="S.sel[${i}]=this.checked;render()">
-      <div><div><b>${esc(x.m.casa)} – ${esc(x.m.ospite)}</b></div><div class="small">${esc(label(x.k, x.m))} <span class="mut">(${esc(x.k)})</span></div><span class="conf ${cc}">${ct}</span></div>
+      <div>${S.lega === "ALL" ? `<div class="lg">${lgName(x.m.lega || "I1")}</div>` : ""}<div><b>${esc(x.m.casa)} – ${esc(x.m.ospite)}</b></div><div class="small">${esc(label(x.k, x.m))} <span class="mut">(${esc(x.k)})</span></div><span class="conf ${cc}">${ct}</span></div>
       <div class="p"><b>${pc(x.p)}</b><div class="mut small">quota giusta ${fair(x.p)}</div></div></label>`;
   }).join("")}</div>
   <div class="card small"><b>Come leggerla.</b> Le probabilità si moltiplicano: 4 pronostici all'80% danno insieme il 41%, 10 danno l'11%.
@@ -283,7 +307,8 @@ function viewSchedina() {
 }
 
 function viewClassifica() {
-  const r = S.stand?.righe || [];
+  const cur = S.lega === "ALL" ? "I1" : S.lega;
+  const r = S.stand?.leghe?.[cur] || S.stand?.righe || [];
   if (!r.length) return `<div class="empty">Classifica non disponibile</div>`;
   const mx = Math.max(...r.map(x => x.forza ?? 0)), mn = Math.min(...r.map(x => x.forza ?? 0));
   return `<table><tr><th>#</th><th>Squadra</th><th>Punti</th><th>Gioc.</th><th>Ultime 5</th><th>Forza reale</th></tr>${r.map(x =>
@@ -293,15 +318,17 @@ function viewClassifica() {
 }
 
 function viewInfo() {
-  const m = S.meta || {}, b = m.backtest;
+  const m = S.meta || {};
+  const bto = m.backtest || {};
+  const bt = bto.stagione ? [["I1", bto]] : Object.entries(bto);
   const v = window.Android?.versionCode ? window.Android.versionCode() : null;
   return updBanner() + `
-  ${b ? `<div class="card"><h2>Quanto ci si può fidare</h2>
-    <p class="small">Abbiamo fatto "giocare" il modello su tutta la stagione ${esc(b.stagione.slice(0, 2))}/${esc(b.stagione.slice(2))} (${b.partite} partite), usando solo i dati disponibili prima di ogni giornata.</p>
-    <div class="kv"><span>Esito 1X2 indovinato dal modello</span><b>${pc(b.acc_modello)}</b></div>
-    <div class="kv"><span>Esito 1X2 indovinato dai bookmaker</span><b>${pc(b.acc_book)}</b></div>
-    <div class="kv"><span>Giocando le "quote convenienti"</span><b style="color:${b.roi >= 0 ? "var(--g)" : "var(--r)"}">${b.roi == null ? "–" : (b.roi >= 0 ? "+" : "") + (b.roi * 100).toFixed(1) + "% sul giocato"}</b></div>
-    <p class="small">${b.logloss_modello <= b.logloss_book ? "Il modello per ora è <b>più preciso</b> dei bookmaker." : "Il modello per ora è <b>un po' meno preciso</b> dei bookmaker: usalo per capire le partite, non come garanzia di guadagno."}</p></div>` : ""}
+  ${bt.length ? `<div class="card"><h2>Quanto ci si può fidare</h2>
+    <p class="small">Abbiamo fatto "giocare" il modello su tutta la stagione scorsa di ogni campionato, usando solo i dati disponibili prima di ogni giornata, e lo abbiamo confrontato con i bookmaker.</p>
+    <table><tr><th></th><th>Campionato</th><th>Indovina 1X2<br>modello</th><th>Indovina 1X2<br>bookmaker</th><th>Quote<br>convenienti</th></tr>
+    ${bt.map(([c, x]) => `<tr><td>${x.logloss_modello <= x.logloss_book ? "✅" : "➖"}</td><td>${lgName(c)}</td><td>${pc(x.acc_modello)}</td><td>${pc(x.acc_book)}</td>
+      <td style="color:${(x.roi ?? 0) >= 0 ? "var(--g)" : "var(--r)"}">${x.roi == null ? "–" : (x.roi >= 0 ? "+" : "") + (x.roi * 100).toFixed(1) + "%"}</td></tr>`).join("")}</table>
+    <p class="small">✅ = il modello è più preciso dei bookmaker in quel campionato. ➖ = un po' meno preciso: lì usalo per capire le partite, non come garanzia. "Quote convenienti" = guadagno o perdita simulati giocando solo dove il modello vedeva una quota alta.</p></div>` : ""}
   <div class="card"><h2>Come funziona</h2>
     <p class="small">Il modello studia le partite degli ultimi 3 anni (le recenti contano di più) e capisce quanto ogni squadra attacca e difende, e quanto pesa giocare in casa. Da qui calcola la probabilità di ogni risultato, e quindi di ogni pronostico. Poi corregge per assenti e motivazioni di fine stagione. I dati si aggiornano da soli 3 volte al giorno.</p></div>
   <div class="card gl"><h2>Glossario</h2><dl>
@@ -340,6 +367,9 @@ async function checkApp() {
 function render() {
   $("#main").innerHTML = {partite: viewPartite, schedina: viewSchedina, classifica: viewClassifica, info: viewInfo}[S.view]();
   document.querySelectorAll("nav button").forEach(b => b.classList.toggle("on", b.dataset.v === S.view));
+  const lb = $("#leagues");
+  lb.style.display = S.view === "info" ? "none" : "flex";
+  lb.innerHTML = leagueBar();
 }
 document.querySelectorAll("nav button").forEach(b => b.onclick = () => { S.view = b.dataset.v; render(); window.scrollTo(0, 0); });
 // ↻ ricarica anche l'interfaccia, non solo i dati

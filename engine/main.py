@@ -1,7 +1,7 @@
 """Pronostici Serie A.
 
   python main.py update            # scarica storico, calendario+quote, infortuni, allenatori, notizie
-  python main.py predict           # pronostici prossimi 10 giorni (+ CSV in output/)
+  python main.py predict --lega E0 # pronostici prossimi 10 giorni (codici: I1 I2 E0 E1 SP1 D1 F1 N1 P1 ...)
   python main.py classifica        # classifica + rating attacco/difesa del modello
   python main.py news Inter        # ultime notizie classificate per una squadra
   python main.py backtest --stagione 2526
@@ -38,13 +38,14 @@ def cmd_update(a):
 
 def cmd_predict(a):
     import predict
-    predict.run(days=a.giorni)
+    predict.run(days=a.giorni, league=a.lega)
 
 
 def cmd_classifica(a):
     from model import DixonColes
     con = connect()
     df = X.load_matches(con)
+    df = df[df.league == a.lega].reset_index(drop=True)
     t = X.standings(df)
     r = DixonColes().fit(df, dt.date.today()).ratings()
     t = t.join(r.round(3), how="left")
@@ -64,7 +65,7 @@ def cmd_news(a):
 
 def cmd_backtest(a):
     import backtest
-    backtest.run(a.stagione, a.edge)
+    backtest.run(a.stagione, a.edge, a.lega)
 
 
 def main():
@@ -77,14 +78,18 @@ def main():
     u.set_defaults(f=cmd_update)
     pr = s.add_parser("predict")
     pr.add_argument("--giorni", type=int, default=10)
+    pr.add_argument("--lega", default="I1", choices=list(C.LEAGUES))
     pr.set_defaults(f=cmd_predict)
-    s.add_parser("classifica").set_defaults(f=cmd_classifica)
+    cl = s.add_parser("classifica")
+    cl.add_argument("--lega", default="I1", choices=list(C.LEAGUES))
+    cl.set_defaults(f=cmd_classifica)
     n = s.add_parser("news")
     n.add_argument("squadra", nargs="?")
     n.set_defaults(f=cmd_news)
     b = s.add_parser("backtest")
     b.add_argument("--stagione", default="2526")
     b.add_argument("--edge", type=float, default=C.VALUE_EDGE)
+    b.add_argument("--lega", default="I1", choices=list(C.LEAGUES))
     b.set_defaults(f=cmd_backtest)
     a = p.parse_args()
     a.f(a)

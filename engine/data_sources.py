@@ -15,7 +15,7 @@ import config as C
 from db import connect
 from teams import canonical, news_query, teams_in_text
 
-MATCH_COLS = ["season", "date", "home", "away", "fthg", "ftag", "hthg", "htag",
+MATCH_COLS = ["league", "season", "date", "home", "away", "fthg", "ftag", "hthg", "htag",
               "hs", "as_", "hst", "ast", "hc", "ac", "hy", "ay", "hr", "ar",
               "odd_h", "odd_d", "odd_a", "odd_o25", "odd_u25"]
 STAT_MAP = {"fthg": "FTHG", "ftag": "FTAG", "hthg": "HTHG", "htag": "HTAG",
@@ -57,79 +57,90 @@ def _rows(out):
 
 
 # ----------------------------------------------------------------- storico
-def update_history(seasons=C.SEASONS, con=None):
+def update_history(seasons=C.SEASONS, con=None, leagues=None):
     con = con or connect()
     tot = 0
-    for s in seasons:
-        try:
-            df = _csv(C.HIST_URL.format(season=s))
-        except Exception as e:
-            print(f"  [!] stagione {s}: {e}")
-            continue
-        df = df.dropna(subset=["HomeTeam", "AwayTeam", "FTHG"])
-        if df.empty:
-            continue
-        out = pd.DataFrame({
-            "season": s,
-            "date": pd.to_datetime(df["Date"], dayfirst=True, errors="coerce").dt.strftime("%Y-%m-%d"),
-            "home": df["HomeTeam"].str.strip(), "away": df["AwayTeam"].str.strip(),
-            **{k: _num(df, v) for k, v in STAT_MAP.items()},
-            **{f"odd_{k}": _odds(df, k) for k in ODDS},
-        })[MATCH_COLS].dropna(subset=["date"])
-        con.executemany(f"INSERT OR REPLACE INTO matches VALUES({','.join('?' * len(MATCH_COLS))})", _rows(out))
-        tot += len(out)
-        print(f"  stagione {s}: {len(out)} partite")
+    for lg in (leagues or C.LEAGUES):
+        n_lg = 0
+        for s in seasons:
+            try:
+                df = _csv(C.HIST_URL.format(season=s, league=lg))
+            except Exception as e:
+                print(f"  [!] {lg} {s}: {e}")
+                continue
+            if "HomeTeam" not in df.columns:
+                continue
+            df = df.dropna(subset=["HomeTeam", "AwayTeam", "FTHG"])
+            if df.empty:
+                continue
+            out = pd.DataFrame({
+                "league": lg, "season": s,
+                "date": pd.to_datetime(df["Date"], dayfirst=True, errors="coerce").dt.strftime("%Y-%m-%d"),
+                "home": df["HomeTeam"].str.strip(), "away": df["AwayTeam"].str.strip(),
+                **{k: _num(df, v) for k, v in STAT_MAP.items()},
+                **{f"odd_{k}": _odds(df, k) for k in ODDS},
+            })[MATCH_COLS].dropna(subset=["date"])
+            con.executemany(f"INSERT OR REPLACE INTO matches VALUES({','.join('?' * len(MATCH_COLS))})", _rows(out))
+            n_lg += len(out)
+        tot += n_lg
+        print(f"  {C.LEAGUES[lg]['nome']}: {n_lg} partite")
     con.commit()
     return tot
 
 
 # ----------------------------------------------------------------- calendario
-def update_fixtures(con=None):
+FIX_COLS = ["league", "date", "time", "home", "away", "odd_h", "odd_d", "odd_a", "odd_o25", "odd_u25"]
+
+
+def _known(con, lg):
+    return [r[0] for r in con.execute(
+        "SELECT DISTINCT home FROM matches WHERE league=? AND season>=?", (lg, C.SEASONS[-2]))]
+
+
+def update_fixtures(con=None, leagues=None):
     con = con or connect()
-    known = [r[0] for r in con.execute("SELECT DISTINCT home FROM matches")]
+    leagues = list(leagues or C.LEAGUES)
     n = 0
     con.execute("DELETE FROM fixtures")
+    # 1) fixtures.csv: prossima settimana di tutti i campionati, con le quote
     try:
         df = _csv(C.FIXTURES_URL)
-        df = df[df["Div"].astype(str).str.strip() == "I1"]
+        df["Div"] = df["Div"].astype(str).str.strip()
+        df = df[df["Div"].isin(leagues)]
         if not df.empty:
             out = pd.DataFrame({
+                "league": df["Div"],
                 "date": pd.to_datetime(df["Date"], dayfirst=True, errors="coerce").dt.strftime("%Y-%m-%d"),
                 "time": df.get("Time", pd.Series("", index=df.index)).astype(str),
                 "home": df["HomeTeam"].str.strip(), "away": df["AwayTeam"].str.strip(),
                 **{f"odd_{k}": _odds(df, k) for k in ODDS},
-            }).dropna(subset=["date"])
-            con.executemany("INSERT OR REPLACE INTO fixtures VALUES(?,?,?,?,?,?,?,?,?)", _rows(out))
+            })[FIX_COLS].dropna(subset=["date"])
+            con.executemany(f"INSERT OR REPLACE INTO fixtures VALUES({','.join('?' * len(FIX_COLS))})", _rows(out))
             n = len(out)
     except Exception as e:
         print(f"  [!] fixtures.csv: {e}")
 
-    # Calendario completo di stagione (senza quote): copre le giornate non ancora in fixtures.csv
-    try:
-        for f in _get(C.FIXTURES_FALLBACK_URL).json():
-            if f.get("HomeTeamScore") is not None:
-                continue
-            ts = pd.Timestamp(f["DateUtc"].replace("Z", "")).tz_localize("UTC").tz_convert("Europe/Rome")
-            if ts.date() < dt.date.today():
-                continue
-            h, a = canonical(f["HomeTeam"], known), canonical(f["AwayTeam"], known)
-            dup = con.execute("SELECT 1 FROM fixtures WHERE home=? AND away=?", (h, a)).fetchone()
-            if not dup:
-                con.execute("INSERT OR IGNORE INTO fixtures(date,time,home,away) VALUES(?,?,?,?)",
-                            (ts.strftime("%Y-%m-%d"), ts.strftime("%H:%M"), h, a))
+    # 2) calendario completo di stagione (senza quote) per le giornate successive
+    for lg in leagues:
+        slug = C.LEAGUES[lg].get("fd")
+        if not slug:
+            continue
+        known = _known(con, lg)
+        try:
+            for f in _get(C.FIXTURES_FALLBACK_URL.format(slug=slug)).json():
+                if f.get("HomeTeamScore") is not None:
+                    continue
+                ts = pd.Timestamp(f["DateUtc"].replace("Z", "")).tz_localize("UTC").tz_convert("Europe/Rome")
+                if ts.date() < dt.date.today():
+                    continue
+                h, a = canonical(f["HomeTeam"], known), canonical(f["AwayTeam"], known)
+                if con.execute("SELECT 1 FROM fixtures WHERE home=? AND away=?", (h, a)).fetchone():
+                    continue
+                con.execute("INSERT OR IGNORE INTO fixtures(league,date,time,home,away) VALUES(?,?,?,?,?)",
+                            (lg, ts.strftime("%Y-%m-%d"), ts.strftime("%H:%M"), h, a))
                 n += 1
-    except Exception as e:
-        print(f"  [!] calendario di riserva: {e}")
-
-    if n == 0 and C.API_FOOTBALL_KEY:  # fallback: prossime 10 da API-Football
-        resp = _api("/fixtures", league=C.API_FOOTBALL_LEAGUE, season=C.API_FOOTBALL_SEASON, next=10) or []
-        for f in resp:
-            d = f["fixture"]["date"][:10]
-            t = f["fixture"]["date"][11:16]
-            h = canonical(f["teams"]["home"]["name"], known)
-            a = canonical(f["teams"]["away"]["name"], known)
-            con.execute("INSERT OR REPLACE INTO fixtures(date,time,home,away) VALUES(?,?,?,?)", (d, t, h, a))
-            n += 1
+        except Exception as e:
+            print(f"  [!] calendario {lg}: {e}")
     con.commit()
     print(f"  calendario: {n} partite in programma")
     return n
@@ -237,8 +248,10 @@ def _pubdate(s):
 def update_news(con=None, teams=None):
     con = con or connect()
     if teams is None:
-        teams = [r[0] for r in con.execute(
-            "SELECT DISTINCT home FROM matches WHERE season=?", (C.CURRENT_SEASON,))]
+        horizon = (dt.date.today() + dt.timedelta(days=C.NEWS_HORIZON_DAYS)).isoformat()
+        teams = sorted({r[0] for r in con.execute(
+            "SELECT DISTINCT home FROM matches WHERE league='I1' AND season=?", (C.CURRENT_SEASON,))} |
+            {t for row in con.execute("SELECT home, away FROM fixtures WHERE date<=?", (horizon,)) for t in row})
     cutoff = dt.date.today() - dt.timedelta(days=C.NEWS_DAYS)
     n = 0
 
@@ -260,7 +273,7 @@ def update_news(con=None, teams=None):
                     store(team, title, link, pub, src or "Google News")
         except Exception as e:
             print(f"  [!] news {team}: {e}")
-        time.sleep(0.4)
+        time.sleep(0.2)
 
     for feed in C.EXTRA_RSS:
         try:

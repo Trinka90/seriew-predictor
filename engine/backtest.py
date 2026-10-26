@@ -10,12 +10,14 @@ from markets import goal_markets
 from model import DixonColes, score_matrix
 
 
-def run(season="2526", edge=C.VALUE_EDGE):
+def run(season="2526", edge=C.VALUE_EDGE, league="I1", verbose=True):
     con = connect()
     df = X.load_matches(con)
+    df = df[df.league == league].reset_index(drop=True)
     test = df[df.season == season].dropna(subset=["fthg", "ftag"])
     if test.empty:
-        raise SystemExit(f"Nessuna partita per la stagione {season}")
+        print(f"  {league}: nessuna partita per la stagione {season}")
+        return None
     weeks = test.date.dt.to_period("W").unique()
     rec = []
     for i, wk in enumerate(weeks, 1):

@@ -41,7 +41,7 @@ def _write(name, obj):
 def _news(df):
     return [{"data": r.published, "tag": r.tags, "titolo": r.title, "fonte": r.source,
              "link": r.link.split("#")[0]}
-            for r in df.head(8).itertuples()]
+            for r in df.head(5).itertuples()]
 
 
 def update_all(con):
@@ -59,14 +59,14 @@ def update_all(con):
     return status
 
 
-def export(con, days=10, status=None):
-    df = X.load_matches(con)
-    today = pd.Timestamp(dt.date.today())
-    fx = pd.read_sql("SELECT * FROM fixtures", con, parse_dates=["date"])
-    fx = fx[(fx.date >= today) & (fx.date <= today + pd.Timedelta(days=days))].sort_values(["date", "time"])
+def export_league(con, lg, df_all, fx_all, manual, today):
+    df = df_all[df_all.league == lg].reset_index(drop=True)
+    if len(df) < 200:
+        return [], [], []
+    fx = fx_all[fx_all.league == lg]
     models = build_models(df, today)
     table = X.standings(df)
-    manual = X.load_manual()
+    rounds = C.LEAGUES[lg]["giornate"]
 
     def pos(t):
         if table.empty or t not in table.index:
@@ -76,7 +76,7 @@ def export(con, days=10, status=None):
 
     matches = []
     for f in fx.itertuples():
-        info = predict_match(con, df, models, table, manual, f.home, f.away)
+        info = predict_match(con, df, models, table, manual, f.home, f.away, rounds)
         mk = info["markets"]
         odds = {"1": f.odd_h, "X": f.odd_d, "2": f.odd_a, "Over 2.5": f.odd_o25, "Under 2.5": f.odd_u25}
         value = []
@@ -86,6 +86,7 @@ def export(con, days=10, status=None):
                 if edge > C.VALUE_EDGE:
                     value.append({"mercato": k, "prob": mk[k], "quota": o, "edge": edge})
         matches.append({
+            "lega": lg,
             "data": f.date.strftime("%Y-%m-%d"), "ora": f.time if f.time and f.time != "nan" else "",
             "casa": f.home, "ospite": f.away,
             "gol_casa": info["lam"], "gol_ospite": info["mu"],
@@ -104,25 +105,51 @@ def export(con, days=10, status=None):
     known = set(df[df.season == C.CURRENT_SEASON].home)
     unknown = sorted({t for t in set(fx.home) | set(fx.away) if t not in known})
     if unknown:
-        print(f"  [!] squadre non riconosciute nel calendario: {unknown}")
+        print(f"  [!] {lg} squadre non riconosciute: {unknown}")
 
     ratings = models[0].ratings()
     rows = []
     for t, r in (table.iterrows() if not table.empty else []):
         rows.append({"squadra": t, "pos": r.pos, "pg": r.pg, "pt": r.pt, "gf": r.gf, "gs": r.gs, "dr": r.dr,
-                     "forma": X.form(df, t),
-                     "attacco": ratings.attacco.get(t), "difesa": ratings.difesa.get(t),
-                     "forza": ratings.forza.get(t)})
+                     "forma": X.form(df, t), "forza": ratings.forza.get(t)})
+    return matches, rows, unknown
 
+
+def export(con, days=10, status=None):
+    df_all = X.load_matches(con)
+    today = pd.Timestamp(dt.date.today())
+    fx_all = pd.read_sql("SELECT * FROM fixtures", con, parse_dates=["date"])
+    fx_all = fx_all[(fx_all.date >= today) & (fx_all.date <= today + pd.Timedelta(days=days))] \
+        .sort_values(["date", "time"])
+    manual = X.load_manual()
+
+    matches, standings, unknown, per_lega = [], {}, {}, {}
+    for lg in C.LEAGUES:
+        m, rows, unk = export_league(con, lg, df_all, fx_all, manual, today)
+        matches += m
+        if rows:
+            standings[lg] = rows
+        if unk:
+            unknown[lg] = unk
+        sub = df_all[df_all.league == lg]
+        per_lega[lg] = {"partite_storico": int(len(sub)), "in_programma": len(m),
+                        "ultima_partita": sub.date.max().strftime("%Y-%m-%d") if len(sub) else None}
+        print(f"  {C.LEAGUES[lg]['nome']}: {len(m)} partite in programma")
+    matches.sort(key=lambda x: (x["data"], x["ora"] or "99", list(C.LEAGUES).index(x["lega"])))
+
+    leghe = {k: {"nome": v["nome"], "flag": v["flag"]} for k, v in C.LEAGUES.items()
+             if per_lega[k]["partite_storico"] >= 200}
     now = dt.datetime.now(dt.timezone.utc).astimezone().isoformat(timespec="minutes")
-    _write("predictions.json", {"aggiornato": now, "partite": matches})
-    _write("standings.json", {"aggiornato": now, "stagione": C.CURRENT_SEASON, "righe": rows})
+    _write("predictions.json", {"aggiornato": now, "leghe": leghe, "partite": matches})
+    _write("standings.json", {"aggiornato": now, "stagione": C.CURRENT_SEASON, "leghe": standings})
 
     meta_path = C.DOCS_DATA / "meta.json"
     meta = json.loads(meta_path.read_text(encoding="utf-8")) if meta_path.exists() else {}
-    meta.update({"aggiornato": now, "partite_storico": int(len(df)),
-                 "ultima_partita": df.date.max().strftime("%Y-%m-%d"),
-                 "fonti": status or {}, "api_football": bool(C.API_FOOTBALL_KEY),
+    if not isinstance(meta.get("backtest"), dict) or "stagione" in meta.get("backtest", {}):
+        meta["backtest"] = {}   # vecchio formato (solo Serie A)
+    meta.update({"aggiornato": now, "partite_storico": int(len(df_all)),
+                 "ultima_partita": df_all.date.max().strftime("%Y-%m-%d"),
+                 "per_lega": per_lega, "fonti": status or {}, "api_football": bool(C.API_FOOTBALL_KEY),
                  "api_log": D.API_LOG[:10], "squadre_non_riconosciute": unknown})
     _write("meta.json", meta)
     print(f"JSON scritti: {len(matches)} partite in programma")
@@ -137,14 +164,17 @@ def main():
     a = p.parse_args()
     con = connect()
     status = None if a.no_update else update_all(con)
-    if con.execute("SELECT COUNT(*) FROM matches").fetchone()[0] < 300:
+    if con.execute("SELECT COUNT(*) FROM matches WHERE league='I1'").fetchone()[0] < 300:
         print("ERRORE: storico insufficiente (download fallito?) - non sovrascrivo i JSON")
         sys.exit(1)
     meta = export(con, a.giorni, status)
     if a.backtest:
         import backtest
         prev = str(int(C.CURRENT_SEASON[:2]) - 1).zfill(2) + C.CURRENT_SEASON[:2]
-        meta["backtest"] = backtest.run(prev)
+        for lg in C.LEAGUES:
+            r = backtest.run(prev, league=lg)
+            if r:
+                meta["backtest"][lg] = r
         _write("meta.json", meta)
 
 
