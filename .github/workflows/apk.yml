@@ -26,13 +26,14 @@ jobs:
 
       - name: Keystore di firma
         env:
-          KS: ${{ secrets.KEYSTORE_BASE64 }}
+          PW: ${{ secrets.KEYSTORE_PASSWORD }}
         run: |
-          if [ -n "$KS" ]; then
-            echo "$KS" | base64 -d > "$RUNNER_TEMP/release.jks"
+          if [ -n "$PW" ]; then
+            openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -in android/release.jks.enc \
+              -out "$RUNNER_TEMP/release.jks" -pass env:PW
             echo "KEYSTORE_PATH=$RUNNER_TEMP/release.jks" >> "$GITHUB_ENV"
           else
-            echo "::warning::Nessun keystore: APK firmata in debug (gli aggiornamenti richiederanno disinstallazione)"
+            echo "::warning::Secret KEYSTORE_PASSWORD mancante: APK firmata in debug (gli aggiornamenti richiederanno disinstallazione)"
           fi
 
       - name: Compila
@@ -40,8 +41,8 @@ jobs:
         env:
           VERSION_CODE: ${{ github.run_number }}
           KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
-          KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
-          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+          KEY_ALIAS: seriea
+          KEY_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
         run: gradle assembleRelease --no-daemon --stacktrace
 
       - run: cp android/app/build/outputs/apk/release/app-release.apk PronosticiSerieA.apk
