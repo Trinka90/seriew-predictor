@@ -7,7 +7,7 @@ Modello statistico (Dixon-Coles con decadimento temporale) + contesto attuale (c
 GitHub Actions (3 volte al giorno)
   engine/export_json.py → scarica dati → calcola → docs/data/*.json
   → pubblica docs/ su GitHub Pages
-App Android (WebView) → apre https://trinka90.github.io/seriea-predictor/
+App Android (WebView) → apre https://trinka90.github.io/seriew-predictor/
 ```
 I pronostici e l'interfaccia si aggiornano senza reinstallare l'app. Una nuova APK si genera da sola (sezione *Releases*) solo quando si modifica `android/`.
 

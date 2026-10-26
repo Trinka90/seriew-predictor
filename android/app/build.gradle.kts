@@ -14,7 +14,7 @@ android {
         targetSdk = 34
         versionCode = (System.getenv("VERSION_CODE") ?: "1").toInt()
         versionName = "1." + (System.getenv("VERSION_CODE") ?: "0")
-        buildConfigField("String", "APP_URL", "\"https://trinka90.github.io/seriea-predictor/\"")
+        buildConfigField("String", "APP_URL", "\"https://trinka90.github.io/seriew-predictor/\"")
     }
 
     buildFeatures { buildConfig = true }
