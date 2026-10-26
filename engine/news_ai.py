@@ -77,7 +77,7 @@ CERTS = {"certo", "probabile", "in dubbio"}
 CACHE = Path(__file__).resolve().parent / "cache" / "news_ai.json"
 DAYS_AHEAD = 3
 MAX_TITLES = 25
-PROMPT_VERSION = 2   # cambiando le regole si invalida la cache
+PROMPT_VERSION = 3   # cambiando le regole si invalida la cache
 
 # query mirate per lingua: (hl, gl, ceid, modelli di query)
 LANG = {
@@ -293,6 +293,27 @@ def _bool(v):
     return v is True or str(v).strip().lower() in ("true", "si", "sì", "yes", "1")
 
 
+VERIFY_SYSTEM = """Controlli di qualità su assenti estratti da titoli di giornale.
+Per ogni voce ricevi: numero, nome, squadra, partita, titolo. Rispondi ok=true SOLO se dal titolo risulta che:
+1) è un CALCIATORE (non allenatore, dirigente, arbitro) della squadra indicata, e
+2) è infortunato o squalificato e probabilmente salterà la partita indicata (non solo diffidato, non già recuperato).
+In caso di dubbio rispondi ok=false. Rispondi SOLO con JSON: {"verifiche":[{"n":1,"ok":true}]}"""
+
+
+def _verify(items):
+    """Seconda lettura: scarta assenti attribuiti alla squadra sbagliata o che non sono giocatori."""
+    lines = [f'{i}. nome: {a["nome"]} | squadra: {team} | partita: {match} | titolo: "{a["fonte"]}"'
+             for i, (team, match, a) in enumerate(items, 1)]
+    global SYSTEM
+    old, SYSTEM = SYSTEM, VERIFY_SYSTEM
+    try:
+        res = _call("\n".join(lines))
+    finally:
+        SYSTEM = old
+    ok = {v.get("n"): _bool(v.get("ok")) for v in (res.get("verifiche") or []) if isinstance(v, dict)}
+    return [ok.get(i, False) for i in range(1, len(items) + 1)]
+
+
 def _fold(t):
     import unicodedata
     return unicodedata.normalize("NFKD", str(t)).encode("ascii", "ignore").decode().lower()
@@ -382,6 +403,23 @@ def analyze(con, fixtures):
                     a["fonte"] = src[0]
                     ok.append(a)
                 res[side]["assenti"] = ok
+            items = [(t, f"{home}-{away} del {date}", a) for side, t in (("casa", home), ("ospite", away))
+                     for a in res[side]["assenti"]]
+            if items:
+                try:
+                    verdict = _verify(items)
+                    for (t, _, a), good in zip(items, verdict):
+                        if not good:
+                            a["_scarta"] = True
+                    stats["verificati"] = stats.get("verificati", 0) + len(items)
+                except Exception as e:   # verifica non riuscita: si tengono, ma con meno fiducia
+                    print(f"  [!] verifica {home}-{away}: {e}")
+                    for _, _, a in items:
+                        a["certezza"] = {"certo": "probabile"}.get(a["certezza"], "in dubbio")
+                for side in ("casa", "ospite"):
+                    keep = [a for a in res[side]["assenti"] if not a.pop("_scarta", False)]
+                    stats["scartati"] = stats.get("scartati", 0) + len(res[side]["assenti"]) - len(keep)
+                    res[side]["assenti"] = keep
             results[(home, away)] = res
             cache[key] = {"data": date, "r": res}
             last[mkey] = {"data": date, "r": res}
