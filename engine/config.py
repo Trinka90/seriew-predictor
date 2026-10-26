@@ -43,6 +43,8 @@ API_FOOTBALL_SEASON = 2026         # stagione 2026/27
 
 # --- Modello -----------------------------------------------------------------
 XI = 0.0019            # decadimento temporale (per giorno): ~ dimezza peso in 1 anno
+SOT_WEIGHT = 0.0       # quota tiri in porta nel bersaglio del modello (scelta dall'esperimento)
+MARKET_WEIGHT = 0.0    # peso delle quote di mercato nella fusione (scelto dall'esperimento)
 TRAIN_DAYS = 3 * 365   # finestra di training
 MAX_GOALS = 10
 VALUE_EDGE = 0.05      # segnala "value" se prob*quota - 1 > 5%
