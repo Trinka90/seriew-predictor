@@ -1839,33 +1839,7 @@
 "n_titoli": 50
 }
 },
-"_ultima": {
-"Andorra|Burgos|2026-10-26": {
-"data": "2026-10-26",
-"r": {
-"casa": {
-"assenti": [],
-"turnover": "nessuno",
-"nuovo_allenatore": false,
-"clima": "neutro",
-"note": "Nessuna informazione su assenze"
-},
-"ospite": {
-"assenti": [],
-"turnover": "nessuno",
-"nuovo_allenatore": false,
-"clima": "neutro",
-"note": "Nessuna informazione su assenze"
-},
-"partita": {
-"porte_chiuse": false,
-"campo_neutro": false,
-"note": "Nessuna indicazione di partita a porte chiuse"
-},
-"n_titoli": 15
-}
-},
-"Besiktas|Buyuksehyr|2026-10-26": {
+"820a8e61c48a7d57e8989b31750385530fc89cb7": {
 "data": "2026-10-26",
 "r": {
 "casa": {
@@ -1885,62 +1859,12 @@
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "nessuna informazione sui titoli"
+"note": "nessuna informazione rilevante"
 },
 "n_titoli": 15
 }
 },
-"Boulogne|Reims|2026-10-26": {
-"data": "2026-10-26",
-"r": {
-"casa": {
-"assenti": [],
-"turnover": "nessuno",
-"nuovo_allenatore": false,
-"clima": "neutro",
-"note": "Nessuna informazione su assenze"
-},
-"ospite": {
-"assenti": [],
-"turnover": "nessuno",
-"nuovo_allenatore": false,
-"clima": "neutro",
-"note": "Nessuna informazione su assenze"
-},
-"partita": {
-"porte_chiuse": false,
-"campo_neutro": false,
-"note": "Nessuna informazione su porte chiuse"
-},
-"n_titoli": 10
-}
-},
-"Galatasaray|Fenerbahce|2026-10-26": {
-"data": "2026-10-26",
-"r": {
-"casa": {
-"assenti": [],
-"turnover": "nessuno",
-"nuovo_allenatore": false,
-"clima": "neutro",
-"note": "Nessun giocatore specificato assente"
-},
-"ospite": {
-"assenti": [],
-"turnover": "nessuno",
-"nuovo_allenatore": false,
-"clima": "neutro",
-"note": "Nessun giocatore specificato assente"
-},
-"partita": {
-"porte_chiuse": false,
-"campo_neutro": false,
-"note": "Derby, nessuna informazione su assenze"
-},
-"n_titoli": 29
-}
-},
-"Montpellier|Red Star|2026-10-26": {
+"4d5b10adc7a11be62e74e32d633d9a98b58f520f": {
 "data": "2026-10-26",
 "r": {
 "casa": {
@@ -1948,113 +1872,24 @@
 "turnover": "medio",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "assenze non specificate"
+"note": "Rotazione evidenziata"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna assenza segnalata"
+"note": ""
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "nessuna informazione aggiuntiva"
+"note": "Nessuna informazione aggiuntiva"
 },
-"n_titoli": 22
+"n_titoli": 19
 }
 },
-"Paris SG|Lyon|2026-10-26": {
-"data": "2026-10-26",
-"r": {
-"casa": {
-"assenti": [],
-"turnover": "nessuno",
-"nuovo_allenatore": false,
-"clima": "negativo",
-"note": "Molti assenti segnalati"
-},
-"ospite": {
-"assenti": [],
-"turnover": "nessuno",
-"nuovo_allenatore": false,
-"clima": "negativo",
-"note": "Numerosi forfait per Lyon"
-},
-"partita": {
-"porte_chiuse": false,
-"campo_neutro": false,
-"note": "Partita con molte assenze"
-},
-"n_titoli": 12
-}
-},
-"Rizespor|Trabzonspor|2026-10-26": {
-"data": "2026-10-26",
-"r": {
-"casa": {
-"assenti": [],
-"turnover": "nessuno",
-"nuovo_allenatore": false,
-"clima": "neutro",
-"note": "nessuna informazione su assenti"
-},
-"ospite": {
-"assenti": [
-{
-"nome": "Orkun Kökçü",
-"ruolo": "centrocampista",
-"importanza": "stella",
-"motivo": "infortunio",
-"certezza": "probabile",
-"titoli": [
-27,
-28,
-31
-],
-"fonte": "Orkun Kökçü Trabzonspor maçında neden yok, sakat mı, ne zaman dönecek? - Afyon Ana Haber"
-}
-],
-"turnover": "nessuno",
-"nuovo_allenatore": false,
-"clima": "neutro",
-"note": "assenza probabile di Kökçü"
-},
-"partita": {
-"porte_chiuse": false,
-"campo_neutro": false,
-"note": "partita regolare"
-},
-"n_titoli": 31
-}
-},
-"Santa Clara|Benfica|2026-10-26": {
-"data": "2026-10-26",
-"r": {
-"casa": {
-"assenti": [],
-"turnover": "nessuno",
-"nuovo_allenatore": false,
-"clima": "neutro",
-"note": "nessuna assenza segnalata"
-},
-"ospite": {
-"assenti": [],
-"turnover": "nessuno",
-"nuovo_allenatore": false,
-"clima": "neutro",
-"note": "nessuna assenza segnalata"
-},
-"partita": {
-"porte_chiuse": false,
-"campo_neutro": false,
-"note": "partita regolare"
-},
-"n_titoli": 27
-}
-},
-"Sevilla|Osasuna|2026-10-26": {
+"ac48b2de02c272f7bf19dbedac86cb1fb6734eac": {
 "data": "2026-10-26",
 "r": {
 "casa": {
@@ -2076,18 +1911,221 @@
 "campo_neutro": false,
 "note": "nessuna informazione su porte chiuse"
 },
-"n_titoli": 20
+"n_titoli": 12
 }
 },
-"Roma|Cagliari|2026-10-27": {
-"data": "2026-10-27",
+"0057be5220f01de1dc1d067d416f40e073cfec46": {
+"data": "2026-10-26",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna assenza segnalata"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna assenza segnalata"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "derby senza info su assenze"
+},
+"n_titoli": 28
+}
+},
+"7054236f797e6e254c6ebfae35f331dc06551422": {
+"data": "2026-10-26",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenti specifici"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenti specifici"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna informazione su porte chiuse"
+},
+"n_titoli": 14
+}
+},
+"e5bccd143bd4ea224c90fdc4de6f91a902e57dd5": {
+"data": "2026-10-26",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Molte assenze segnalate, ma senza nomi specifici"
+},
+"ospite": {
+"assenti": [],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Assenze numerose ma non specificate"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione su porte chiuse"
+},
+"n_titoli": 15
+}
+},
+"d2df1adb1b9b6c983967fcffee08792d32fcda63": {
+"data": "2026-10-26",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione rilevante"
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Orkun Kökçü",
+"ruolo": "centrocampista",
+"importanza": "stella",
+"motivo": "infortunio",
+"certezza": "in dubbio",
+"titoli": [
+27,
+28
+],
+"fonte": "Orkun Kökçü Trabzonspor maçında neden yok, sakat mı, ne zaman dönecek? - Afyon Ana Haber"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "assenza per infortunio incerta"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna informazione su porte chiuse"
+},
+"n_titoli": 28
+}
+},
+"4c10ceacbfc0dafcf25441c35572c4c60f0300c0": {
+"data": "2026-10-26",
 "r": {
 "casa": {
 "assenti": [],
 "turnover": "medio",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessun assente segnalato"
+"note": "Nessuna assenza segnalata"
+},
+"ospite": {
+"assenti": [],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "positivo",
+"note": "Squadra con sorprese ma fiduciosa"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita regolare senza restrizioni"
+},
+"n_titoli": 28
+}
+},
+"2ba3fd909d20f02b2572502fc1d24d7d418d5c30": {
+"data": "2026-10-26",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenze"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenze"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna indicazione di chiusura"
+},
+"n_titoli": 19
+}
+},
+"2ca13db3c85222f7dfdef5076ccf9c05bd06551c": {
+"data": "2026-10-27",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Dybala",
+"ruolo": "attaccante",
+"importanza": "stella",
+"motivo": "infortunio",
+"certezza": "probabile",
+"titoli": [
+5,
+11,
+18
+],
+"fonte": "Roma, le ultime sui tempi di recupero di Dybala, Koné e Svilar - La Gazzetta dello Sport"
+},
+{
+"nome": "Koné",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "probabile",
+"titoli": [
+5,
+11,
+18
+],
+"fonte": "Roma, le ultime sui tempi di recupero di Dybala, Koné e Svilar - La Gazzetta dello Sport"
+},
+{
+"nome": "Svilar",
+"ruolo": "portiere",
+"importanza": "riserva",
+"motivo": "infortunio",
+"certezza": "probabile",
+"titoli": [
+5,
+11,
+18
+],
+"fonte": "Roma, le ultime sui tempi di recupero di Dybala, Koné e Svilar - La Gazzetta dello Sport"
+}
+],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Infortuni di Dybala, Koné e Svilar"
 },
 "ospite": {
 "assenti": [
@@ -2095,24 +2133,649 @@
 "nome": "Winks",
 "ruolo": "attaccante",
 "importanza": "titolare",
-"motivo": "infortunio",
+"motivo": "altro",
 "certezza": "certo",
 "titoli": [
-46,
-44
+44,
+48
 ],
-"fonte": "Conferenza stampa Pisacane: «Winks non è convocato, ha un problema di lombalgia. Trepy ci sarà contro la Roma. Fazzini? Non esiste nessun caso» - Cagliari News 24"
+"fonte": "Roma-Cagliari, Pisacane: \"Insieme per ritrovare il sorriso. Winks out, torna Trepy\" - Cagliaripad.it"
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Winks fuori per lombalgia"
+"note": "Winks fuori, indebolisce l'attacco"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita importante, entrambe le squadre con assenze"
+},
+"n_titoli": 50
+}
+},
+"69ba169a426b6dc523a76f374e6a585504f8fe2c": {
+"data": "2026-10-27",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Idzes",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+2
+],
+"fonte": "Il Sassuolo si è spento e la difesa è in difficoltà: senza Idzes e Leysen è crisi - La Gazzetta dello Sport"
+},
+{
+"nome": "Leysen",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+2
+],
+"fonte": "Il Sassuolo si è spento e la difesa è in difficoltà: senza Idzes e Leysen è crisi - La Gazzetta dello Sport"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione su squalifiche o porte chiuse"
+},
+"n_titoli": 50
+}
+},
+"df61d8cfaa0daccf568e7622b185fc8790c63971": {
+"data": "2026-10-27",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": ""
+},
+"n_titoli": 50
+}
+},
+"efbb531b36d5cccb5fa527406c55ad19e2cbb9eb": {
+"data": "2026-10-28",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna novità rilevante"
+},
+"ospite": {
+"assenti": [],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Critiche e possibili cambi di formazione"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita senza indicazioni particolari"
+},
+"n_titoli": 50
+}
+},
+"ae276115ca7f01d2090d23806c834d32a0888074": {
+"data": "2026-10-28",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Loftus-Cheek",
+"ruolo": "attaccante",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+25
+],
+"fonte": "Milan, l'emergenza continua: nessun recupero e anche Loftus-Cheek ko - Sportmediaset"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "positivo",
+"note": ""
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione su porte chiuse"
+},
+"n_titoli": 50
+}
+},
+"20fdc718244b3ab8044bd674d9c7866cf6af2205": {
+"data": "2026-10-28",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna assenza segnalata"
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Badiashile",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+30
+],
+"fonte": "Il Napoli perde altri pezzi in difesa: Badiashile e Spinazzola ko, il comunicato, i tempi di recupero e quante partite saltano - Goal.com"
+},
+{
+"nome": "Spinazzola",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+30
+],
+"fonte": "Il Napoli perde altri pezzi in difesa: Badiashile e Spinazzola ko, il comunicato, i tempi di recupero e quante partite saltano - Goal.com"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "due difensori indisponibili"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
 "note": "partita regolare"
+},
+"n_titoli": 50
+}
+},
+"0b33ad089a8384d10897b49f071e51d5c1a5d74d": {
+"data": "2026-10-28",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "cattiva partenza, crisi da risolvere"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "fiducia a Runjaic, ma recenti sconfitte"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "sfida importante per entrambe le squadre"
+},
+"n_titoli": 50
+}
+},
+"578cc651fd7d0e7d81ee431208e2a77e1ff34a2b": {
+"data": "2026-10-28",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenti"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenti"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna informazione su porte chiuse"
+},
+"n_titoli": 50
+}
+},
+"71b92c659fbc196592174098d2f74c81dd240962": {
+"data": "2026-10-29",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Fiorentina in crisi dopo sconfitta contro Inter"
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Bellanova",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+34,
+40
+],
+"fonte": "Atalanta, risentimento al flessore per Bellanova: out con la Fiorentina. Ma possono tornare in due - SOS Fanta"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Atalanta con difesa indebolita per Bellanova"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita importante di Serie A"
+},
+"n_titoli": 50
+}
+},
+"bace4f57af7672b1b2eae8c72b55675d3572aa0d": {
+"data": "2026-10-29",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna assenza segnalata nei titoli"
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Kialonda Gaspar",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "squalifica",
+"certezza": "certo",
+"titoli": [
+30
+],
+"fonte": "Serie A: due giornate di squalifica a Gaspar del Lecce - ANSA"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Squalifica recente influisce sul morale"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita regolare senza restrizioni"
+},
+"n_titoli": 50
+}
+},
+"_ultima": {
+"Andorra|Burgos|2026-10-26": {
+"data": "2026-10-26",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione rilevante"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione rilevante"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna informazione rilevante"
+},
+"n_titoli": 15
+}
+},
+"Besiktas|Buyuksehyr|2026-10-26": {
+"data": "2026-10-26",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Rotazione evidenziata"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione aggiuntiva"
+},
+"n_titoli": 19
+}
+},
+"Boulogne|Reims|2026-10-26": {
+"data": "2026-10-26",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenti"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenti"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna informazione su porte chiuse"
+},
+"n_titoli": 12
+}
+},
+"Galatasaray|Fenerbahce|2026-10-26": {
+"data": "2026-10-26",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna assenza segnalata"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna assenza segnalata"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "derby senza info su assenze"
+},
+"n_titoli": 28
+}
+},
+"Montpellier|Red Star|2026-10-26": {
+"data": "2026-10-26",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenti specifici"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenti specifici"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna informazione su porte chiuse"
+},
+"n_titoli": 14
+}
+},
+"Paris SG|Lyon|2026-10-26": {
+"data": "2026-10-26",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Molte assenze segnalate, ma senza nomi specifici"
+},
+"ospite": {
+"assenti": [],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Assenze numerose ma non specificate"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione su porte chiuse"
+},
+"n_titoli": 15
+}
+},
+"Rizespor|Trabzonspor|2026-10-26": {
+"data": "2026-10-26",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione rilevante"
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Orkun Kökçü",
+"ruolo": "centrocampista",
+"importanza": "stella",
+"motivo": "infortunio",
+"certezza": "in dubbio",
+"titoli": [
+27,
+28
+],
+"fonte": "Orkun Kökçü Trabzonspor maçında neden yok, sakat mı, ne zaman dönecek? - Afyon Ana Haber"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "assenza per infortunio incerta"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna informazione su porte chiuse"
+},
+"n_titoli": 28
+}
+},
+"Santa Clara|Benfica|2026-10-26": {
+"data": "2026-10-26",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna assenza segnalata"
+},
+"ospite": {
+"assenti": [],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "positivo",
+"note": "Squadra con sorprese ma fiduciosa"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita regolare senza restrizioni"
+},
+"n_titoli": 28
+}
+},
+"Sevilla|Osasuna|2026-10-26": {
+"data": "2026-10-26",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenze"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenze"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna indicazione di chiusura"
+},
+"n_titoli": 19
+}
+},
+"Roma|Cagliari|2026-10-27": {
+"data": "2026-10-27",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Dybala",
+"ruolo": "attaccante",
+"importanza": "stella",
+"motivo": "infortunio",
+"certezza": "probabile",
+"titoli": [
+5,
+11,
+18
+],
+"fonte": "Roma, le ultime sui tempi di recupero di Dybala, Koné e Svilar - La Gazzetta dello Sport"
+},
+{
+"nome": "Koné",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "probabile",
+"titoli": [
+5,
+11,
+18
+],
+"fonte": "Roma, le ultime sui tempi di recupero di Dybala, Koné e Svilar - La Gazzetta dello Sport"
+},
+{
+"nome": "Svilar",
+"ruolo": "portiere",
+"importanza": "riserva",
+"motivo": "infortunio",
+"certezza": "probabile",
+"titoli": [
+5,
+11,
+18
+],
+"fonte": "Roma, le ultime sui tempi di recupero di Dybala, Koné e Svilar - La Gazzetta dello Sport"
+}
+],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Infortuni di Dybala, Koné e Svilar"
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Winks",
+"ruolo": "attaccante",
+"importanza": "titolare",
+"motivo": "altro",
+"certezza": "certo",
+"titoli": [
+44,
+48
+],
+"fonte": "Roma-Cagliari, Pisacane: \"Insieme per ritrovare il sorriso. Winks out, torna Trepy\" - Cagliaripad.it"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Winks fuori, indebolisce l'attacco"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita importante, entrambe le squadre con assenze"
 },
 "n_titoli": 50
 }
@@ -2126,10 +2789,10 @@
 "nome": "Idzes",
 "ruolo": "difensore",
 "importanza": "titolare",
-"motivo": "altro",
+"motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-1
+2
 ],
 "fonte": "Il Sassuolo si è spento e la difesa è in difficoltà: senza Idzes e Leysen è crisi - La Gazzetta dello Sport"
 },
@@ -2137,30 +2800,30 @@
 "nome": "Leysen",
 "ruolo": "difensore",
 "importanza": "titolare",
-"motivo": "altro",
+"motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-1
+2
 ],
 "fonte": "Il Sassuolo si è spento e la difesa è in difficoltà: senza Idzes e Leysen è crisi - La Gazzetta dello Sport"
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "negativo",
-"note": "difesa in crisi, recenti sconfitte"
+"clima": "neutro",
+"note": ""
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "positivo",
-"note": "ambiente positivo sotto Gattuso"
+"clima": "neutro",
+"note": ""
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "partita regolare senza restrizioni"
+"note": "Nessuna informazione su squalifiche o porte chiuse"
 },
 "n_titoli": 50
 }
@@ -2198,19 +2861,19 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione rilevante"
+"note": "Nessuna novità rilevante"
 },
 "ospite": {
 "assenti": [],
-"turnover": "nessuno",
+"turnover": "medio",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": "assenza confermata"
+"clima": "negativo",
+"note": "Critiche e possibili cambi di formazione"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "partita regolare"
+"note": "Partita senza indicazioni particolari"
 },
 "n_titoli": 50
 }
@@ -2219,23 +2882,35 @@
 "data": "2026-10-28",
 "r": {
 "casa": {
-"assenti": [],
-"turnover": "medio",
+"assenti": [
+{
+"nome": "Loftus-Cheek",
+"ruolo": "attaccante",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+25
+],
+"fonte": "Milan, l'emergenza continua: nessun recupero e anche Loftus-Cheek ko - Sportmediaset"
+}
+],
+"turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "positivo",
-"note": "Milan in buona forma, rotazioni evidenti"
+"note": ""
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Bologna senza novità evidenti"
+"note": ""
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita regolare senza restrizioni"
+"note": "Nessuna informazione su porte chiuse"
 },
 "n_titoli": 50
 }
@@ -2248,7 +2923,7 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna assenza segnalata per Monza"
+"note": "nessuna assenza segnalata"
 },
 "ospite": {
 "assenti": [
@@ -2261,7 +2936,7 @@
 "titoli": [
 30
 ],
-"fonte": "Napoli, Badiashile e Spinazzola ko: i tempi di recupero e quante partite saltano - Corriere dello Sport"
+"fonte": "Il Napoli perde altri pezzi in difesa: Badiashile e Spinazzola ko, il comunicato, i tempi di recupero e quante partite saltano - Goal.com"
 },
 {
 "nome": "Spinazzola",
@@ -2272,18 +2947,18 @@
 "titoli": [
 30
 ],
-"fonte": "Napoli, Badiashile e Spinazzola ko: i tempi di recupero e quante partite saltano - Corriere dello Sport"
+"fonte": "Il Napoli perde altri pezzi in difesa: Badiashile e Spinazzola ko, il comunicato, i tempi di recupero e quante partite saltano - Goal.com"
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "negativo",
-"note": "Due difensori chiave assenti per infortunio"
+"note": "due difensori indisponibili"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita regolare senza restrizioni"
+"note": "partita regolare"
 },
 "n_titoli": 50
 }
@@ -2296,19 +2971,19 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "negativo",
-"note": "crisi in campionato"
+"note": "cattiva partenza, crisi da risolvere"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "senza novità"
+"note": "fiducia a Runjaic, ma recenti sconfitte"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "partita regolare"
+"note": "sfida importante per entrambe le squadre"
 },
 "n_titoli": 50
 }
@@ -2346,7 +3021,7 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "negativo",
-"note": "Fiorentina stanca dopo sconfitta contro Inter"
+"note": "Fiorentina in crisi dopo sconfitta contro Inter"
 },
 "ospite": {
 "assenti": [
@@ -2357,8 +3032,8 @@
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-35,
-38
+34,
+40
 ],
 "fonte": "Atalanta, risentimento al flessore per Bellanova: out con la Fiorentina. Ma possono tornare in due - SOS Fanta"
 }
@@ -2366,12 +3041,12 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Atalanta in emergenza difensiva"
+"note": "Atalanta con difesa indebolita per Bellanova"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Nessuna informazione su porte chiuse"
+"note": "Partita importante di Serie A"
 },
 "n_titoli": 50
 }
@@ -2384,7 +3059,7 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna informazione su assenze, clima neutro"
+"note": "Nessuna assenza segnalata nei titoli"
 },
 "ospite": {
 "assenti": [
@@ -2395,21 +3070,20 @@
 "motivo": "squalifica",
 "certezza": "certo",
 "titoli": [
-26,
-32
+30
 ],
-"fonte": "Domani Serie A di nuovo in campo. Stop per Allegri: squalificato per 2 giornate - Due giornate di squalifica anche per Kialonda del Lecce - RaiNews"
+"fonte": "Serie A: due giornate di squalifica a Gaspar del Lecce - ANSA"
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "negativo",
-"note": "Squalifica di Gaspar, clima negativo"
+"note": "Squalifica recente influisce sul morale"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita regolare, senza restrizioni"
+"note": "Partita regolare senza restrizioni"
 },
 "n_titoli": 50
 }
