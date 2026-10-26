@@ -3,7 +3,7 @@ name: Esperimento modello
 on:
   push:
     branches: [main]
-    paths: ["engine/experiment.py", "engine/probe.py", ".github/workflows/experiment.yml"]
+    paths: ["engine/experiment.py", "engine/probe.py", "engine/ai_test.py", ".github/workflows/experiment.yml"]
 
 permissions:
   contents: write
@@ -24,8 +24,16 @@ jobs:
       - run: pip install -r engine/requirements.txt
       - run: pip install openpyxl
       - name: Prova fonti
+        if: contains(github.event.head_commit.message, '[fonti]')
         working-directory: engine
         run: python probe.py
+      - name: Prova fornitori IA
+        working-directory: engine
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python ai_test.py
       - name: Scarica storico
         if: contains(github.event.head_commit.message, '[esperimento]')
         working-directory: engine
