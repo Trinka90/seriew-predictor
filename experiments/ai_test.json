@@ -1,0 +1,33 @@
+{
+ "Groq": {
+  "chiave": "presente",
+  "esito": "OK",
+  "secondi": 0.8,
+  "modelli_disponibili": [
+   "openai/gpt-oss-120b",
+   "qwen/qwen3.8-27b",
+   "openai/gpt-oss-20b",
+   "allam-2-7b"
+  ],
+  "assenti_trovati": [
+   "Spinazzola"
+  ]
+ },
+ "OpenRouter": {
+  "chiave": "presente",
+  "esito": "OK",
+  "secondi": 9.5,
+  "modelli_disponibili": [
+   "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "nvidia/nemotron-3-super-120b-a12b:free",
+   "google/gemma-4-31b-it:free",
+   "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
+  ],
+  "assenti_trovati": [
+   "Spinazzola"
+  ]
+ },
+ "Anthropic": {
+  "chiave": "assente"
+ }
+}
