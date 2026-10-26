@@ -49,6 +49,9 @@ h2{font-size:16px;margin:0 0 8px}
 .pk .num{text-align:right;flex:none}
 .pk .num b{font-size:18px;display:block;line-height:1.1}
 .pk .num span{font-size:11px;color:var(--mut)}
+.code{display:inline-block;border:1.5px solid var(--acc);color:var(--acc);font-weight:800;border-radius:7px;padding:1px 8px;margin-right:8px;font-size:15px;white-space:nowrap;vertical-align:middle}
+.codebig{font-size:22px;padding:3px 12px;margin:0 0 4px}
+.expl{font-size:13px;color:var(--tx);opacity:.85}
 .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px;vertical-align:middle}
 .d3{background:var(--g)} .d2{background:var(--y)} .d1{background:var(--r)}
 
@@ -173,7 +176,7 @@ function label(k, m) {
   const c = m.casa, o = m.ospite;
   const L = {
     "1": `Vince ${c}`, "X": "Pareggio", "2": `Vince ${o}`,
-    "1X": `${c} non perde`, "X2": `${o} non perde`, "12": "Non finisce in pareggio",
+    "1X": `${c} vince o pareggia`, "X2": `${o} vince o pareggia`, "12": "Vince una delle due (niente pareggio)",
     "DNB 1": `${c} vince (rimborso se pari)`, "DNB 2": `${o} vince (rimborso se pari)`,
     "Handicap 1 (-1)": `${c} vince con 2+ gol di scarto`, "Handicap 2 (-1)": `${o} vince con 2+ gol di scarto`,
     "Over 0.5": "Almeno 1 gol", "Over 1.5": "Almeno 2 gol", "Over 2.5": "Almeno 3 gol",
@@ -242,10 +245,31 @@ function picksFor(m, mi) {
     return {id: `${mi}|${k}`, mi, m, k, p, cat: catOf(k, m), q, odd: q || 1 / p};
   });
 }
+/* il pronostico consigliato = il più probabile tra quelli che pagano almeno la quota minima */
 function bestPick(m) {
-  const all = picksFor(m, 0).filter(x => !["set", "handicap"].includes(x.cat) || m.sport !== "calcio");
-  const c = all.filter(x => x.p >= .62 && x.p <= .88).sort((a, b) => b.p - a.p);
-  return c[0] || all.sort((a, b) => b.p - a.p)[0];
+  const qmin = (typeof S !== "undefined" && S.f) ? S.f.qmin : 1.2;
+  const all = picksFor(m, 0).sort((a, b) => b.p - a.p);
+  return all.find(x => x.odd >= qmin) || all[all.length - 1];
+}
+/* codice della scommessa come sulla schedina del bookmaker */
+function codeOf(k, m) {
+  let r;
+  if (m.sport === "tennis") {
+    if (k === "1" || k === "2") return k;
+    if ((r = k.match(/^Set (\d-\d)$/))) return r[1];
+    if ((r = k.match(/^([12]) vince un set$/))) return `${r[1]} +1 set`;
+    if ((r = k.match(/^Set Over ([\d.]+)$/))) return `Over ${r[1]} set`;
+    return k;
+  }
+  if (m.sport === "basket") {
+    if ((r = k.match(/^(Over|Under) ([\d.]+) punti$/))) return `${r[1]} ${r[2]}`;
+    if ((r = k.match(/^Handicap (casa|ospite) ([+-][\d.]+)$/))) return `${r[1] === "casa" ? 1 : 2} (${r[2]})`;
+    if ((r = k.match(/^(Casa|Ospite) vince di (\d+)\+$/))) return `${r[1] === "Casa" ? 1 : 2} +${r[2]} pt`;
+    return k;
+  }
+  const C = {"Casa Over 0.5": "Casa segna", "Ospite Over 0.5": "Ospite segna", "Casa Over 1.5": "Casa Over 1.5",
+             "Ospite Over 1.5": "Ospite Over 1.5", "Handicap 1 (-1)": "1 (-1)", "Handicap 2 (-1)": "2 (-1)"};
+  return C[k] || k.replace("Multigol ", "MG ");
 }
 function conf(p) { return p >= .8 ? ["c3", "Fiducia alta"] : p >= .7 ? ["c2", "Fiducia media"] : ["c1", "Fiducia bassa"]; }
 
@@ -302,7 +326,7 @@ function story(m) {
 function rows(m, keys) {
   return keys.filter(k => m.mercati[k] != null).map(k => {
     const q = m.quote[k];
-    return `<div class="mk"><span>${esc(label(k, m))}</span><span>${pc(m.mercati[k])} <span class="mut">· ${q ? "paga " + q.toFixed(2) : "giusta " + fair(m.mercati[k])}</span></span></div>`;
+    return `<div class="mk"><span><b>${esc(codeOf(k, m))}</b> <span class="mut">${esc(label(k, m))}</span></span><span>${pc(m.mercati[k])} <span class="mut">· ${q ? "paga " + q.toFixed(2) : "giusta " + fair(m.mercati[k])}</span></span></div>`;
   }).join("");
 }
 function newsList(arr) {
@@ -419,8 +443,8 @@ const dotc = p => p >= .8 ? "d3" : p >= .7 ? "d2" : "d1";
 function pkRow(x, i, right) {
   return `<div class="pk" onclick="openMatch(${x.mi})">
     ${i != null ? `<span class="n">${i + 1}</span>` : ""}
-    <div class="main"><div class="what"><span class="dot ${dotc(x.p)}"></span>${esc(label(x.k, x.m))}</div>
-      <div class="who">${LEGHE()[x.m.lega]?.flag || ""} ${esc(x.m.casa)} – ${esc(x.m.ospite)} · ${S.allDays ? dayShort(x.m.data) + " " : ""}${esc(x.m.ora || "")}</div></div>
+    <div class="main"><div class="what"><span class="code">${esc(codeOf(x.k, x.m))}</span><span class="expl">${esc(label(x.k, x.m))}</span></div>
+      <div class="who"><span class="dot ${dotc(x.p)}"></span>${LEGHE()[x.m.lega]?.flag || ""} ${esc(x.m.casa)} – ${esc(x.m.ospite)} · ${S.allDays ? dayShort(x.m.data) + " " : ""}${esc(x.m.ora || "")}</div></div>
     <div class="num"><b>${pc(x.p)}</b><span>${x.q ? "quota " + x.q.toFixed(2) : "giusta " + fair(x.p)}</span></div>
     ${right || ""}</div>`;
 }
@@ -461,7 +485,7 @@ function viewOggi() {
 
   return updBanner() + `
   <div class="card"><h2>🎯 I pronostici più sicuri · ${dayShort(S.day)}</h2>
-    <div class="hint">Uno per partita, dal più probabile. Tocca per vedere la partita.</div>
+    <div class="hint">Per ogni partita il pronostico più probabile (che paghi almeno ${S.f.qmin.toFixed(2)}), ordinati dal più sicuro. Nel riquadro il codice da giocare.</div>
     ${top.length ? top.map((x, i) => pkRow(x, i)).join("") : `<div class="empty">Nessun pronostico sopra il ${pc(S.f.pmin)}.</div>`}
     ${best.length > 5 ? `<button style="width:100%;margin-top:8px" onclick="S.showAll=!S.showAll;render()">${S.showAll ? "Mostra meno" : `Mostra tutti (${best.length})`}</button>` : ""}
   </div>
@@ -484,7 +508,7 @@ function matchRow(m) {
   const pr = M.X != null ? `${pc(M["1"])} · ${pc(M.X)} · ${pc(M["2"])}` : `${pc(M["1"])} · ${pc(M["2"])}`;
   return `<div class="mr" onclick="openMatch(${m._mi})"><div class="t">${esc(m.ora || "")}</div>
     <div class="tm"><div>${esc(m.casa)}</div><div>${esc(m.ospite)}</div><div class="pb">${pr}</div></div>
-    <div class="bp"><b>${pc(bp.p)}</b><div class="mut">${esc(label(bp.k, m))}</div></div></div>`;
+    <div class="bp"><span class="code" style="margin:0">${esc(codeOf(bp.k, m))}</span><div><b>${pc(bp.p)}</b></div></div></div>`;
 }
 
 /* ---------- dettaglio partita (pagina a parte) ---------- */
@@ -521,7 +545,8 @@ function detail(m) {
     <div class="sub">${calcio ? `${pos(m.classifica_casa)} ${form(m.forma_casa)} · ${pos(m.classifica_ospite)} ${form(m.forma_ospite)}` : `${form(m.forma_casa)} · ${form(m.forma_ospite)}`}</div>
     <div class="bar">${bar}</div>
     <div class="barlab"><span>vince ${esc(m.casa)}</span>${calcio ? "<span>pareggio</span>" : ""}<span>vince ${esc(m.ospite)}</span></div>
-    <div class="pick"><div><div class="small mut">Il pronostico più probabile</div><div style="font-weight:600">${esc(label(bp.k, m))}</div><span class="conf ${cc}">${ct}</span></div>
+    <div class="pick"><div><div class="small mut">Pronostico consigliato (il più probabile${S.f.qmin > 1 ? " con quota ≥ " + S.f.qmin.toFixed(2) : ""})</div>
+      <span class="code codebig">${esc(codeOf(bp.k, m))}</span><div class="expl">${esc(label(bp.k, m))}</div><span class="conf ${cc}">${ct}</span></div>
       <div class="p"><b>${pc(bp.p)}</b><span class="small mut">${bp.q ? "quota " + bp.q.toFixed(2) : "quota giusta " + fair(bp.p)}</span></div></div>
     <ul class="says">${says.map(x => `<li>${x}</li>`).join("")}</ul>
     <div class="card" style="margin-top:14px;padding-top:2px;padding-bottom:2px">
