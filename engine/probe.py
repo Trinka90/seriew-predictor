@@ -1,47 +1,55 @@
-"""Verifica quali fonti dati gratuite rispondono (eseguito in GitHub Actions)."""
+"""Verifica la struttura dei dati ESPN (tennis e NBA), eseguito in GitHub Actions."""
 import json
 from pathlib import Path
 
 import requests
 
 H = {"User-Agent": "Mozilla/5.0 (SerieA-Predictor)"}
-URLS = {
-    "td_atp_2026_xlsx": "http://www.tennis-data.co.uk/2026/2026.xlsx",
-    "td_atp_2025_xlsx": "http://www.tennis-data.co.uk/2025/2025.xlsx",
-    "td_wta_2026_xlsx": "http://www.tennis-data.co.uk/2026w/2026.xlsx",
-    "td_wta_2025_xlsx": "http://www.tennis-data.co.uk/2025w/2025.xlsx",
-    "sack_atp_2026": "https://raw.githubusercontent.com/JeffSackmann/tennis_atp/master/atp_matches_2026.csv",
-    "sack_atp_2025": "https://raw.githubusercontent.com/JeffSackmann/tennis_atp/master/atp_matches_2025.csv",
-    "sack_wta_2025": "https://raw.githubusercontent.com/JeffSackmann/tennis_wta/master/wta_matches_2025.csv",
-    "espn_atp": "https://site.api.espn.com/apis/site/v2/sports/tennis/atp/scoreboard",
-    "espn_wta": "https://site.api.espn.com/apis/site/v2/sports/tennis/wta/scoreboard",
-    "espn_nba": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard",
-    "espn_atp_rank": "https://site.api.espn.com/apis/site/v2/sports/tennis/atp/rankings",
-}
-
+B = "https://site.api.espn.com/apis/site/v2/sports"
 out = {}
-for k, u in URLS.items():
-    try:
-        r = requests.get(u, headers=H, timeout=30)
-        info = {"status": r.status_code, "bytes": len(r.content), "type": r.headers.get("content-type", "")}
-        if "json" in info["type"]:
-            j = r.json()
-            info["keys"] = list(j)[:12]
-            info["sample"] = json.dumps(j)[:3000]
-        elif u.endswith(".csv"):
-            info["sample"] = r.text[:600] + "\n...\n" + r.text[-400:]
-        elif u.endswith(".xlsx") and r.status_code == 200:
-            import io
-            import pandas as pd
-            df = pd.read_excel(io.BytesIO(r.content))
-            info["cols"] = list(df.columns)
-            info["rows"] = len(df)
-            info["last"] = df.tail(3).astype(str).to_dict("records")
-        out[k] = info
-    except Exception as e:
-        out[k] = {"errore": str(e)[:300]}
 
-p = Path(__file__).resolve().parent.parent / "experiments" / "probe.json"
-p.parent.mkdir(exist_ok=True)
+
+def get(u):
+    r = requests.get(u, headers=H, timeout=30)
+    return r.status_code, (r.json() if "json" in r.headers.get("content-type", "") else r.text[:300])
+
+
+def trim(o, depth=0):
+    """Riduce liste lunghe per leggere la struttura."""
+    if isinstance(o, dict):
+        return {k: trim(v, depth + 1) for k, v in o.items() if k not in ("logos", "links", "calendar", "headshot", "flag")}
+    if isinstance(o, list):
+        return [trim(x, depth + 1) for x in o[:2]] + ([f"... +{len(o) - 2}"] if len(o) > 2 else [])
+    return o
+
+
+for name, url in {
+    "atp_oggi": f"{B}/tennis/atp/scoreboard",
+    "atp_passato": f"{B}/tennis/atp/scoreboard?dates=20260705",
+    "atp_range": f"{B}/tennis/atp/scoreboard?dates=20260601-20260607",
+    "wta_oggi": f"{B}/tennis/wta/scoreboard",
+    "nba_oggi": f"{B}/basketball/nba/scoreboard",
+    "nba_passato": f"{B}/basketball/nba/scoreboard?dates=20260310",
+}.items():
+    try:
+        st, j = get(url)
+        info = {"status": st}
+        if isinstance(j, dict):
+            ev = j.get("events", [])
+            info["n_events"] = len(ev)
+            ncomp = 0
+            for e in ev:
+                ncomp += len(e.get("competitions", []))
+                for g in e.get("groupings", []):
+                    ncomp += len(g.get("competitions", []))
+            info["n_competitions"] = ncomp
+            info["event0"] = trim(ev[0]) if ev else None
+        else:
+            info["body"] = j
+        out[name] = info
+    except Exception as e:
+        out[name] = {"errore": str(e)[:300]}
+
+p = Path(__file__).resolve().parent.parent / "experiments" / "probe2.json"
 p.write_text(json.dumps(out, indent=1, ensure_ascii=False))
-print(json.dumps({k: {kk: v for kk, v in i.items() if kk != "sample"} for k, i in out.items()}, indent=1)[:5000])
+print({k: (v.get("status"), v.get("n_events"), v.get("n_competitions")) for k, v in out.items()})
