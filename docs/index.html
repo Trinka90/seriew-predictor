@@ -365,7 +365,7 @@ function viewInfo() {
     <div class="kv"><span>Partite in archivio</span><b>${m.partite_storico ?? "–"}</b></div>
     <div class="kv"><span>Ultimo risultato registrato</span><b>${m.ultima_partita ?? "–"}</b></div>
     <div class="kv"><span>Notizie analizzate</span><b>${m.fonti?.notizie ?? "–"}</b></div>
-    <div class="kv"><span>Lettura notizie con IA</span><b>${m.fonti?.ia?.attivo ? `attiva (${m.fonti.ia.partite ?? 0} partite)` : "non attiva"}</b></div>
+    <div class="kv"><span>Lettura notizie con IA</span><b>${m.fonti?.ia?.attivo ? `attiva · ${esc(m.fonti.ia.fornitore || "")} · ${m.fonti.ia.partite ?? 0} partite` : "non attiva"}</b></div>
     <div class="kv"><span>Versione app</span><b>${v ?? "web"}</b></div>
     ${S.err ? `<div class="kv"><span>Errore</span><b>${esc(S.err)}</b></div>` : ""}
     <p class="mut small">Fonti: football-data.co.uk (risultati, statistiche, quote), fixturedownload.com (calendario), Google News, Gazzetta, Corriere dello Sport (notizie).</p>

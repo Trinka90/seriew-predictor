@@ -1,4 +1,4 @@
-"""Lettura delle notizie con IA (Claude Haiku): assenti, importanza, squalifiche, porte chiuse, turnover.
+"""Lettura delle notizie con IA (Groq gratuito, OpenRouter o Claude): assenti, importanza, squalifiche, porte chiuse, turnover.
 
 Per ogni partita dei prossimi giorni:
   1. cerca notizie mirate per le due squadre nella lingua del campionato (Google News RSS)
@@ -20,12 +20,24 @@ import requests
 import config as C
 from data_sources import _get, _parse_rss, _pubdate, tag_text
 
-API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
-MODEL = "claude-haiku-5-5"
-API_URL = "https://api.anthropic.com/v1/messages"
+# Fornitori IA in ordine di preferenza: si usa il primo con la chiave impostata.
+# Groq e OpenRouter hanno piani GRATUITI (nessuna carta di credito).
+PROVIDERS = [
+    {"nome": "Groq", "env": "GROQ_API_KEY", "tipo": "openai",
+     "url": "https://api.groq.com/openai/v1/chat/completions",
+     "modelli": [os.environ.get("GROQ_MODEL", "meta-llama/llama-4-scout-17b-16e-instruct"), "llama-3.3-70b-versatile"]},
+    {"nome": "OpenRouter", "env": "OPENROUTER_API_KEY", "tipo": "openai",
+     "url": "https://openrouter.ai/api/v1/chat/completions",
+     "modelli": [os.environ.get("OPENROUTER_MODEL", "meta-llama/llama-3.3-70b-instruct:free")]},
+    {"nome": "Anthropic", "env": "ANTHROPIC_API_KEY", "tipo": "anthropic",
+     "url": "https://api.anthropic.com/v1/messages", "modelli": ["claude-haiku-5-5"]},
+]
+PROVIDER = next((p for p in PROVIDERS if os.environ.get(p["env"])), None)
+API_KEY = os.environ.get(PROVIDER["env"], "") if PROVIDER else ""
+MAX_CALLS = int(os.environ.get("NEWS_AI_MAX_CALLS", "70"))   # per giro: resta nei limiti gratuiti
 CACHE = Path(__file__).resolve().parent / "cache" / "news_ai.json"
 DAYS_AHEAD = 3
-MAX_TITLES = 35
+MAX_TITLES = 25
 
 # query mirate per lingua: (hl, gl, ceid, modelli di query)
 LANG = {
@@ -124,13 +136,41 @@ def _titles(con, team):
     return out
 
 
-def _call(prompt):
-    r = requests.post(API_URL, timeout=90, headers={
-        "x-api-key": API_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json"},
-        json={"model": MODEL, "max_tokens": 1500, "system": SYSTEM,
-              "messages": [{"role": "user", "content": prompt}]})
+def _post(url, headers, payload):
+    """POST con attesa automatica sui limiti di frequenza (429)."""
+    for attempt in range(5):
+        r = requests.post(url, headers=headers, json=payload, timeout=120)
+        if r.status_code == 429 or r.status_code >= 500:
+            wait = float(r.headers.get("retry-after", 0) or 0) or 10 * (attempt + 1)
+            time.sleep(min(wait, 60))
+            continue
+        r.raise_for_status()
+        return r.json()
     r.raise_for_status()
-    txt = "".join(b.get("text", "") for b in r.json().get("content", []))
+
+
+def _call(prompt):
+    p = PROVIDER
+    if p["tipo"] == "anthropic":
+        j = _post(p["url"], {"x-api-key": API_KEY, "anthropic-version": "2023-06-01"},
+                  {"model": p["modelli"][0], "max_tokens": 1500, "system": SYSTEM,
+                   "messages": [{"role": "user", "content": prompt}]})
+        txt = "".join(b.get("text", "") for b in j.get("content", []))
+    else:
+        txt, err = None, None
+        for model in p["modelli"]:
+            try:
+                j = _post(p["url"], {"Authorization": f"Bearer {API_KEY}"},
+                          {"model": model, "temperature": 0, "max_tokens": 1500,
+                           "response_format": {"type": "json_object"},
+                           "messages": [{"role": "system", "content": SYSTEM},
+                                        {"role": "user", "content": prompt}]})
+                txt = j["choices"][0]["message"]["content"]
+                break
+            except Exception as e:   # modello non disponibile -> prova il successivo
+                err = e
+        if txt is None:
+            raise err
     m = re.search(r"\{.*\}", txt, re.S)
     return json.loads(m.group(0))
 
@@ -151,6 +191,9 @@ def analyze(con, fixtures):
         if key in cache:
             results[(home, away)] = cache[key]["r"]
             stats["da_cache"] += 1
+            continue
+        if stats["chiamate"] >= MAX_CALLS:   # il resto al prossimo giro (resta nel piano gratuito)
+            stats["rimandate"] = stats.get("rimandate", 0) + 1
             continue
         lines = [f"Partita: {home} (casa) - {away} (ospite), {C.LEAGUES[lg]['nome']}, data {date}. Oggi è {dt.date.today()}.", ""]
         k = 1
@@ -178,6 +221,7 @@ def analyze(con, fixtures):
         time.sleep(0.3)
     _save_cache(cache)
     stats["attivo"] = True
+    stats["fornitore"] = PROVIDER["nome"]
     return results, stats
 
 
@@ -226,7 +270,7 @@ def run(con):
     for lg, _, h, a in fx:
         by_lg.setdefault(lg, set()).update((h, a))
     if not API_KEY:
-        print("  IA notizie: ANTHROPIC_API_KEY non impostata (solo parole chiave)")
+        print("  IA notizie: nessuna chiave (GROQ_API_KEY / OPENROUTER_API_KEY / ANTHROPIC_API_KEY)")
         return {"attivo": False}
     n = fetch_targeted(con, by_lg)
     results, stats = analyze(con, fx)
