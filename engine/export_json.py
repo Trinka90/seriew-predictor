@@ -105,7 +105,7 @@ def export_league(con, lg, df_all, fx_all, manual, today):
                 if edge > C.VALUE_EDGE:
                     value.append({"mercato": k, "prob": mm[k], "quota": o, "edge": edge})
         matches.append({
-            "lega": lg,
+            "sport": "calcio", "lega": lg,
             "data": f.date.strftime("%Y-%m-%d"), "ora": f.time if f.time and f.time != "nan" else "",
             "casa": f.home, "ospite": f.away,
             "gol_casa": info["lam"], "gol_ospite": info["mu"],
@@ -163,10 +163,25 @@ def export(con, days=10, status=None):
         per_lega[lg] = {"partite_storico": int(len(sub)), "in_programma": len(m),
                         "ultima_partita": sub.date.max().strftime("%Y-%m-%d") if len(sub) else None}
         print(f"  {C.LEAGUES[lg]['nome']}: {len(m)} partite in programma")
-    matches.sort(key=lambda x: (x["data"], x["ora"] or "99", list(C.LEAGUES).index(x["lega"])))
-
-    leghe = {k: {"nome": v["nome"], "flag": v["flag"]} for k, v in C.LEAGUES.items()
+    leghe = {k: {"nome": v["nome"], "flag": v["flag"], "sport": "calcio"} for k, v in C.LEAGUES.items()
              if per_lega[k]["partite_storico"] >= 200}
+
+    # altri sport (tennis, NBA): mai bloccanti
+    sport_bt = {}
+    try:
+        import sports
+        sm, stabs, sport_bt, sstat = sports.run_all()
+        matches += [_clean(m) for m in sm]
+        standings.update(stabs)
+        for code, cfg in sports.SPORTS.items():
+            leghe[code] = {"nome": cfg["nome"], "flag": cfg["flag"], "sport": cfg["sport"]}
+        (status if status is not None else {}).update({"altri_sport": sstat})
+        print(f"  altri sport: {sstat}")
+    except Exception as e:
+        traceback.print_exc()
+        errori["altri_sport"] = str(e)[:200]
+    order = list(C.LEAGUES) + ["ATP", "WTA", "NBA"]
+    matches.sort(key=lambda x: (x["data"], x["ora"] or "99", order.index(x["lega"]) if x["lega"] in order else 99))
     now = dt.datetime.now(dt.timezone.utc).astimezone().isoformat(timespec="minutes")
     _write("predictions.json", {"aggiornato": now, "leghe": leghe, "partite": matches})
     _write("standings.json", {"aggiornato": now, "stagione": C.CURRENT_SEASON, "leghe": standings})
@@ -175,6 +190,7 @@ def export(con, days=10, status=None):
     meta = json.loads(meta_path.read_text(encoding="utf-8")) if meta_path.exists() else {}
     if not isinstance(meta.get("backtest"), dict) or "stagione" in meta.get("backtest", {}):
         meta["backtest"] = {}   # vecchio formato (solo Serie A)
+    meta["backtest"].update(sport_bt)
     meta.update({"aggiornato": now, "partite_storico": int(len(df_all)),
                  "ultima_partita": df_all.date.max().strftime("%Y-%m-%d"),
                  "per_lega": per_lega, "fonti": status or meta.get("fonti", {}), "api_football": bool(C.API_FOOTBALL_KEY),
