@@ -1,4 +1,4 @@
-"""Simulazione: "se avessi usato l'app nella stagione 2025/26 e giocato i pronostici consigliati".
+"""Simulazione (v2): "se avessi usato l'app nella stagione 2025/26 e giocato i pronostici consigliati".
 
 Stesse regole dell'app (pronostico consigliato, schedina del giorno da 4), modello rifatto ogni settimana
 con i soli dati disponibili prima delle partite, fuso con le quote reali (come fa l'app quando ci sono).
