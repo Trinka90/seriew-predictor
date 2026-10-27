@@ -1,0 +1,406 @@
+{
+ "fd_E2": {
+  "status": 200,
+  "righe": 138,
+  "B365": true,
+  "squadre": [
+   "AFC Wimbledon",
+   "Barnsley",
+   "Blackpool",
+   "Bradford",
+   "Bromley",
+   "Burton"
+  ]
+ },
+ "fd_E3": {
+  "status": 200,
+  "righe": 150,
+  "B365": true,
+  "squadre": [
+   "Accrington",
+   "Barnet",
+   "Bristol Rvs",
+   "Cheltenham",
+   "Chesterfield",
+   "Colchester"
+  ]
+ },
+ "fd_EC": {
+  "status": 200,
+  "righe": 165,
+  "B365": true,
+  "squadre": [
+   "Aldershot",
+   "Altrincham",
+   "Barrow",
+   "Boreham Wood",
+   "Boston Utd",
+   "Carlisle"
+  ]
+ },
+ "fd_SC1": {
+  "status": 200,
+  "righe": 58,
+  "B365": true,
+  "squadre": [
+   "Arbroath",
+   "Ayr",
+   "Dunfermline",
+   "Inverness C",
+   "Livingston",
+   "Morton"
+  ]
+ },
+ "fd_SC2": {
+  "status": 200,
+  "righe": 58,
+  "B365": true,
+  "squadre": [
+   "Airdrie Utd",
+   "Alloa",
+   "Cove Rangers",
+   "East Fife",
+   "East Kilbride",
+   "Hamilton"
+  ]
+ },
+ "fd_SC3": {
+  "status": 200,
+  "righe": 55,
+  "B365": true,
+  "squadre": [
+   "Annan Athletic",
+   "Clyde",
+   "Dumbarton",
+   "Edinburgh City",
+   "Elgin",
+   "Forfar"
+  ]
+ },
+ "fd_G1": {
+  "status": 200,
+  "righe": 55,
+  "B365": true,
+  "squadre": [
+   "AEK",
+   "Aris",
+   "Asteras Tripolis",
+   "Atromitos",
+   "Iraklis",
+   "Kalamata"
+  ]
+ },
+ "fixtures_cols": [
+  "B365H",
+  "B365D",
+  "B365A",
+  "MaxH",
+  "MaxD",
+  "MaxA",
+  "AvgH",
+  "AvgD",
+  "AvgA",
+  "B365>2.5",
+  "B365<2.5",
+  "Max>2.5",
+  "Max<2.5",
+  "Avg>2.5",
+  "Avg<2.5",
+  "B365AHH",
+  "B365AHA",
+  "MaxAHH",
+  "MaxAHA",
+  "AvgAHH",
+  "AvgAHA",
+  "B365CH",
+  "B365CD",
+  "B365CA",
+  "MaxCH",
+  "MaxCD",
+  "MaxCA",
+  "AvgCH",
+  "AvgCD",
+  "AvgCA",
+  "B365C>2.5",
+  "B365C<2.5",
+  "MaxC>2.5",
+  "MaxC<2.5",
+  "AvgC>2.5",
+  "AvgC<2.5",
+  "B365CAHH",
+  "B365CAHA",
+  "MaxCAHH",
+  "MaxCAHA",
+  "AvgCAHH",
+  "AvgCAHA"
+ ],
+ "fixtures_div": {
+  "E1": 12,
+  "E2": 12,
+  "E3": 12,
+  "EC": 12,
+  "SP2": 11,
+  "E0": 10,
+  "I1": 10,
+  "I2": 10,
+  "SP1": 10,
+  "B1": 9,
+  "D1": 9,
+  "D2": 9,
+  "F1": 9,
+  "F2": 9,
+  "N1": 9,
+  "P1": 9,
+  "T1": 9,
+  "G1": 7,
+  "SC0": 6,
+  "SC1": 5,
+  "SC2": 5
+ },
+ "new_AUT": {
+  "status": 200,
+  "righe": 2692,
+  "cols": [
+   "Country",
+   "League",
+   "Season",
+   "Date",
+   "Time",
+   "Home",
+   "Away",
+   "HG",
+   "AG",
+   "Res",
+   "PSCH",
+   "PSCD",
+   "PSCA",
+   "MaxCH",
+   "MaxCD",
+   "MaxCA",
+   "AvgCH",
+   "AvgCD",
+   "AvgCA",
+   "BFECH",
+   "BFECD",
+   "BFECA",
+   "B365CH",
+   "B365CD",
+   "B365CA"
+  ],
+  "stagioni": [
+   "2024/2025",
+   "2025/2026",
+   "2026/2027"
+  ]
+ },
+ "new_SWZ": {
+  "status": 200,
+  "righe": 2735,
+  "cols": [
+   "Country",
+   "League",
+   "Season",
+   "Date",
+   "Time",
+   "Home",
+   "Away",
+   "HG",
+   "AG",
+   "Res",
+   "PSCH",
+   "PSCD",
+   "PSCA",
+   "MaxCH",
+   "MaxCD",
+   "MaxCA",
+   "AvgCH",
+   "AvgCD",
+   "AvgCA",
+   "BFECH",
+   "BFECD",
+   "BFECA",
+   "B365CH",
+   "B365CD",
+   "B365CA"
+  ],
+  "stagioni": [
+   "2024/2025",
+   "2025/2026",
+   "2026/2027"
+  ]
+ },
+ "new_DNK": {
+  "status": 200,
+  "righe": 3018,
+  "cols": [
+   "Country",
+   "League",
+   "Season",
+   "Date",
+   "Time",
+   "Home",
+   "Away",
+   "HG",
+   "AG",
+   "Res",
+   "PSCH",
+   "PSCD",
+   "PSCA",
+   "MaxCH",
+   "MaxCD",
+   "MaxCA",
+   "AvgCH",
+   "AvgCD",
+   "AvgCA",
+   "BFECH",
+   "BFECD",
+   "BFECA",
+   "B365CH",
+   "B365CD",
+   "B365CA"
+  ],
+  "stagioni": [
+   "2024/2025",
+   "2025/2026",
+   "2026/2027"
+  ]
+ },
+ "new_POL": {
+  "status": 200,
+  "righe": 4179,
+  "cols": [
+   "Country",
+   "League",
+   "Season",
+   "Date",
+   "Time",
+   "Home",
+   "Away",
+   "HG",
+   "AG",
+   "Res",
+   "PSCH",
+   "PSCD",
+   "PSCA",
+   "MaxCH",
+   "MaxCD",
+   "MaxCA",
+   "AvgCH",
+   "AvgCD",
+   "AvgCA",
+   "BFECH",
+   "BFECD",
+   "BFECA",
+   "B365CH",
+   "B365CD",
+   "B365CA"
+  ],
+  "stagioni": [
+   "2024/2025",
+   "2025/2026",
+   "2026/2027"
+  ]
+ },
+ "new_fixtures": {
+  "status": 200,
+  "inizio": "ï»¿Country,League,Date,Time,Home,Away,PSH,PSD,PSA,MaxH,MaxD,MaxA,AvgH,AvgD,AvgA,BFEH,BFED,BFEA,B365H,B365D,B365A\r\nArgentina,Liga Profesional,23/10/2026,22:00,Gimnasia L.P.,Sarmiento Junin,,,,1.69,3.8,6,1.65,3.6,5.16,1.71,3.85,5.9,1.61,3.6,6\r\nArgentina,Liga Profesional,23/10/2026,22:30,Gimnasia Mendo"
+ },
+ "espn_ita.3": {
+  "status": 200,
+  "lega": "Italian Serie C1-A",
+  "eventi": 0,
+  "esempio": null,
+  "odds": false
+ },
+ "espn_ita.c": {
+  "status": 400,
+  "lega": null,
+  "eventi": 0,
+  "esempio": null,
+  "odds": false
+ },
+ "espn_ita.serie_c": {
+  "status": 400,
+  "lega": null,
+  "eventi": 0,
+  "esempio": null,
+  "odds": false
+ },
+ "espn_ita.2": {
+  "status": 200,
+  "lega": "Italian Serie B",
+  "eventi": 7,
+  "esempio": "Catanzaro at Benevento",
+  "odds": true
+ },
+ "espn_ger.3": {
+  "status": 400,
+  "lega": null,
+  "eventi": 0,
+  "esempio": null,
+  "odds": false
+ },
+ "espn_esp.3": {
+  "status": 400,
+  "lega": null,
+  "eventi": 0,
+  "esempio": null,
+  "odds": false
+ },
+ "espn_fra.3": {
+  "status": 400,
+  "lega": null,
+  "eventi": 0,
+  "esempio": null,
+  "odds": false
+ },
+ "espn_eng.3": {
+  "status": 200,
+  "lega": "English League One",
+  "eventi": 5,
+  "esempio": "Wigan Athletic at Leicester City",
+  "odds": true
+ },
+ "espn_eng.4": {
+  "status": 200,
+  "lega": "English League Two",
+  "eventi": 1,
+  "esempio": "York City at Barnet",
+  "odds": true
+ },
+ "espn_ita3_storico": {
+  "eventi": 0,
+  "esempio": []
+ },
+ "fxd_serie-c-2026": {
+  "status": 404,
+  "n": 0
+ },
+ "fxd_serie-c-girone-a-2026": {
+  "status": 404,
+  "n": 0
+ },
+ "fxd_lega-pro-2026": {
+  "status": 404,
+  "n": 0
+ },
+ "espn_leghe_ita": [
+  [
+   "ita.1",
+   "Italian Serie A"
+  ],
+  [
+   "ita.coppa_italia",
+   "Coppa Italia"
+  ],
+  [
+   "ita.super_cup",
+   "Italian Supercoppa"
+  ],
+  [
+   "ita.2",
+   "Italian Serie B"
+  ]
+ ],
+ "espn_leghe_n": 220
+}
