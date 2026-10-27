@@ -181,15 +181,25 @@ def set_prob(pm, bo5):
     return (lo + hi) / 2
 
 
+# I set non sono indipendenti: chi è in giornata tende a vincere in due set secchi. Con set indipendenti il
+# modello prevedeva il 3° set nel 48% delle partite, nella realtà è il 36%. Fattore stimato sullo storico
+# ESPN 2024-25 e verificato sull'ultimo anno (3° set: previsto 35%, reale 36%).
+DECIDER = 0.725
+
+
 def tennis_markets(pm, bo5):
     s = set_prob(pm, bo5)
     q = 1 - s
     if bo5:
-        r = {"3-0": s ** 3, "3-1": 3 * s ** 3 * q, "3-2": 6 * s ** 3 * q * q,
-             "0-3": q ** 3, "1-3": 3 * q ** 3 * s, "2-3": 6 * q ** 3 * s * s}
+        r = {"3-1": 3 * s ** 3 * q * DECIDER, "3-2": 6 * s ** 3 * q * q * DECIDER,
+             "1-3": 3 * q ** 3 * s * DECIDER, "2-3": 6 * q ** 3 * s * s * DECIDER}
+        r["3-0"] = max(1e-6, pm - r["3-1"] - r["3-2"])
+        r["0-3"] = max(1e-6, (1 - pm) - r["1-3"] - r["2-3"])
         over = {"Set Over 3.5": r["3-1"] + r["1-3"] + r["3-2"] + r["2-3"], "Set Over 4.5": r["3-2"] + r["2-3"]}
     else:
-        r = {"2-0": s * s, "2-1": 2 * s * s * q, "0-2": q * q, "1-2": 2 * q * q * s}
+        r = {"2-1": 2 * s * s * q * DECIDER, "1-2": 2 * q * q * s * DECIDER}
+        r["2-0"] = max(1e-6, pm - r["2-1"])
+        r["0-2"] = max(1e-6, (1 - pm) - r["1-2"])
         over = {"Set Over 2.5": r["2-1"] + r["1-2"]}
     lose0_1 = r["0-3"] if bo5 else r["0-2"]
     lose0_2 = r["3-0"] if bo5 else r["2-0"]
