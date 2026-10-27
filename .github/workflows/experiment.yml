@@ -3,7 +3,7 @@ name: Esperimento modello
 on:
   push:
     branches: [main]
-    paths: ["engine/experiment.py", "engine/probe.py", "engine/ai_test.py", ".github/workflows/experiment.yml"]
+    paths: ["engine/experiment.py", "engine/probe.py", "engine/ai_test.py", "experiments/*.py", ".github/workflows/experiment.yml"]
 
 permissions:
   contents: write
@@ -28,6 +28,7 @@ jobs:
         working-directory: engine
         run: python probe.py
       - name: Prova fornitori IA
+        if: contains(github.event.head_commit.message, '[ia]')
         working-directory: engine
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
@@ -35,13 +36,17 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python ai_test.py
       - name: Scarica storico
-        if: contains(github.event.head_commit.message, '[esperimento]')
+        if: contains(github.event.head_commit.message, '[esperimento]') || contains(github.event.head_commit.message, '[backtest]')
         working-directory: engine
         run: python -c "import data_sources as D; D.update_history()"
       - name: Esperimento
         if: contains(github.event.head_commit.message, '[esperimento]')
         working-directory: engine
         run: python experiment.py
+      - name: Simulazione stagione (come usare l'app)
+        if: contains(github.event.head_commit.message, '[backtest]')
+        working-directory: engine
+        run: python ../experiments/backtest_app.py
       - name: Salva risultati
         run: |
           git config user.name "github-actions[bot]"
