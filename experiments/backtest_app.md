@@ -1,5 +1,5 @@
 # Simulazione: l'app usata nella stagione 25/26
-_Generato il 2026-10-27 · 7634 partite di calcio in 22 campionati · 7798 partite di tennis (ultimi 12 mesi)_
+_Generato il 2026-10-27 · 7634 partite di calcio in 22 campionati · 7850 partite di tennis (ultimi 12 mesi)_
 
 Regole uguali all'app: pronostico consigliato = il più probabile con quota ≥ 1,20; schedina del giorno = i 4 pronostici più probabili (uno per partita, sicurezza ≥ 65%, quota ≥ 1,20). Modello rifatto ogni settimana con i soli dati precedenti e fuso con le quote reali. Notizie e infortuni NON inclusi.
 
@@ -96,13 +96,13 @@ Quante giuste su 10 a ogni giornata: 10/10: 4 · 9/10: 6 · 8/10: 9 · 7/10: 11 
 
 | Fiducia indicata | Pronostici | Media indicata | Usciti davvero |
 |---|---|---|---|
-| 0–60% | 144 | 57% | **59%** |
-| 60–70% | 1463 | 67% | **66%** |
-| 70–75% | 916 | 73% | **68%** |
-| 75–80% | 3346 | 77% | **72%** |
-| 80–85% | 1929 | 82% | **78%** |
+| 0–60% | 20 | 53% | **55%** |
+| 60–70% | 1210 | 68% | **69%** |
+| 70–75% | 2965 | 73% | **73%** |
+| 75–80% | 2428 | 77% | **78%** |
+| 80–85% | 1227 | 82% | **83%** |
 
-Schedina tennis del giorno da 4: uscita 119 volte su 323 (**37%**, attese 44%). Resa non calcolabile (mancano le quote storiche).
+Schedina tennis del giorno da 4: uscita 148 volte su 324 (**46%**, attese 42%). Resa non calcolabile (mancano le quote storiche).
 
 ## 6. Alcune schedine del giorno (da 4), con risultati
 
