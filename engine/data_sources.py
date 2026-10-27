@@ -17,13 +17,14 @@ from teams import canonical, news_query, teams_in_text
 
 MATCH_COLS = ["league", "season", "date", "home", "away", "fthg", "ftag", "hthg", "htag",
               "hs", "as_", "hst", "ast", "hc", "ac", "hy", "ay", "hr", "ar",
-              "odd_h", "odd_d", "odd_a", "odd_o25", "odd_u25"]
+              "odd_h", "odd_d", "odd_a", "odd_o25", "odd_u25", "bk_h", "bk_d", "bk_a", "bk_o25", "bk_u25"]
 STAT_MAP = {"fthg": "FTHG", "ftag": "FTAG", "hthg": "HTHG", "htag": "HTAG",
             "hs": "HS", "as_": "AS", "hst": "HST", "ast": "AST", "hc": "HC",
             "ac": "AC", "hy": "HY", "ay": "AY", "hr": "HR", "ar": "AR"}
 ODDS = {"h": ["AvgH", "B365H", "PSH"], "d": ["AvgD", "B365D", "PSD"],
         "a": ["AvgA", "B365A", "PSA"], "o25": ["Avg>2.5", "B365>2.5", "P>2.5"],
         "u25": ["Avg<2.5", "B365<2.5", "P<2.5"]}
+BK = {"h": ["B365H"], "d": ["B365D"], "a": ["B365A"], "o25": ["B365>2.5"], "u25": ["B365<2.5"]}   # un solo bookmaker
 
 
 def _get(url, **kw):
@@ -45,8 +46,8 @@ def _num(df, col):
     return pd.Series(np.nan, index=df.index)
 
 
-def _odds(df, kind):
-    for c in ODDS[kind]:
+def _odds(df, kind, table=None):
+    for c in (table or ODDS)[kind]:
         if c in df.columns:
             return pd.to_numeric(df[c], errors="coerce")
     return pd.Series(np.nan, index=df.index)
@@ -79,6 +80,7 @@ def update_history(seasons=C.SEASONS, con=None, leagues=None):
                 "home": df["HomeTeam"].str.strip(), "away": df["AwayTeam"].str.strip(),
                 **{k: _num(df, v) for k, v in STAT_MAP.items()},
                 **{f"odd_{k}": _odds(df, k) for k in ODDS},
+                **{f"bk_{k}": _odds(df, k, BK) for k in BK},
             })[MATCH_COLS].dropna(subset=["date"])
             con.executemany(f"INSERT OR REPLACE INTO matches VALUES({','.join('?' * len(MATCH_COLS))})", _rows(out))
             n_lg += len(out)
@@ -89,7 +91,8 @@ def update_history(seasons=C.SEASONS, con=None, leagues=None):
 
 
 # ----------------------------------------------------------------- calendario
-FIX_COLS = ["league", "date", "time", "home", "away", "odd_h", "odd_d", "odd_a", "odd_o25", "odd_u25"]
+FIX_COLS = ["league", "date", "time", "home", "away", "odd_h", "odd_d", "odd_a", "odd_o25", "odd_u25",
+            "bk_h", "bk_d", "bk_a", "bk_o25", "bk_u25"]
 
 
 def _known(con, lg):
@@ -114,6 +117,7 @@ def update_fixtures(con=None, leagues=None):
                 "time": df.get("Time", pd.Series("", index=df.index)).astype(str),
                 "home": df["HomeTeam"].str.strip(), "away": df["AwayTeam"].str.strip(),
                 **{f"odd_{k}": _odds(df, k) for k in ODDS},
+                **{f"bk_{k}": _odds(df, k, BK) for k in BK},
             })[FIX_COLS].dropna(subset=["date"])
             con.executemany(f"INSERT OR REPLACE INTO fixtures VALUES({','.join('?' * len(FIX_COLS))})", _rows(out))
             n = len(out)

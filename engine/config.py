@@ -30,7 +30,17 @@ LEAGUES = {
     "B1":  {"nome": "Pro League",       "flag": "🇧🇪", "giornate": 30, "fd": None},
     "T1":  {"nome": "Süper Lig",        "flag": "🇹🇷", "giornate": 38, "fd": None},
     "SC0": {"nome": "Premiership",      "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿", "giornate": 38, "fd": None},
+    "E2":  {"nome": "League One",       "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "giornate": 46, "fd": None},
+    "E3":  {"nome": "League Two",       "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "giornate": 46, "fd": None},
+    "EC":  {"nome": "National League",  "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "giornate": 46, "fd": None},
+    "SC1": {"nome": "Championship scozzese", "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿", "giornate": 36, "fd": None},
+    "SC2": {"nome": "League One scozzese",  "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿", "giornate": 36, "fd": None},
+    "SC3": {"nome": "League Two scozzese",  "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿", "giornate": 36, "fd": None},
+    "G1":  {"nome": "Super League Grecia",  "flag": "🇬🇷", "giornate": 26, "fd": None},
 }
+# Quote mostrate e usate per schedina/value: un solo bookmaker (la schedina si gioca su uno).
+# La media dei bookmaker resta solo per stimare le probabilità (è il dato più preciso).
+BOOKMAKER = "Bet365"
 NEWS_HORIZON_DAYS = 4   # notizie solo per squadre che giocano nei prossimi N giorni (Serie A sempre)
 DOCS_DATA = BASE_DIR.parent / "docs" / "data"   # JSON letti dall'app
 

@@ -241,8 +241,9 @@ const CALCIO_KEYS = ["1", "X", "2", "1X", "X2", "12", "Over 1.5", "Over 2.5", "O
 function picksFor(m, mi) {
   const keys = (!m.sport || m.sport === "calcio") ? CALCIO_KEYS : Object.keys(m.mercati);
   return keys.filter(k => m.mercati[k] != null && catOf(k, m)).map(k => {
-    const p = m.mercati[k], q = m.quote?.[k] || null;
-    return {id: `${mi}|${k}`, mi, m, k, p, cat: catOf(k, m), q, odd: q || 1 / p};
+    const p = m.mercati[k], real = m.quote?.[k] || null, est = real ? null : (m.quote_stimate?.[k] || null);
+    const q = real || est;
+    return {id: `${mi}|${k}`, mi, m, k, p, cat: catOf(k, m), q, est: !!est, bk: q ? (m.bookmaker || "Bet365") : null, odd: q || 1 / p};
   });
 }
 /* il pronostico consigliato = il più probabile tra quelli che pagano almeno la quota minima */
@@ -325,8 +326,8 @@ function story(m) {
 
 function rows(m, keys) {
   return keys.filter(k => m.mercati[k] != null).map(k => {
-    const q = m.quote[k];
-    return `<div class="mk"><span><b>${esc(codeOf(k, m))}</b> <span class="mut">${esc(label(k, m))}</span></span><span>${pc(m.mercati[k])} <span class="mut">· ${q ? "paga " + q.toFixed(2) : "giusta " + fair(m.mercati[k])}</span></span></div>`;
+    const q = m.quote[k], qe = q ? null : m.quote_stimate?.[k];
+    return `<div class="mk"><span><b>${esc(codeOf(k, m))}</b> <span class="mut">${esc(label(k, m))}</span></span><span>${pc(m.mercati[k])} <span class="mut">· ${q ? esc(bkShort(m.bookmaker)) + " " + q.toFixed(2) : qe ? "Bet365 ≈" + qe.toFixed(2) : "giusta " + fair(m.mercati[k])}</span></span></div>`;
   }).join("");
 }
 function newsList(arr) {
@@ -386,6 +387,7 @@ function viewInfo() {
     <dt>GG / NG</dt><dd>Goal-Goal: segnano entrambe / No Goal: almeno una non segna</dd>
     <dt>Multigol 2-4</dt><dd>Il totale dei gol è tra 2 e 4</dd>
     <dt>Quota giusta</dt><dd>1 diviso la probabilità. Se il bookmaker paga di più è una "quota conveniente"</dd>
+    <dt>Quote mostrate</dt><dd>Calcio: Bet365 (uno solo, perché la schedina si gioca su un bookmaker). NBA: DraftKings, solo come riferimento. Le probabilità invece usano la media di tutti i bookmaker, che è il dato più preciso.</dd>
     <dt>Tennis</dt><dd>Rating Elo per giocatore (generale e per superficie): misura la forza in base a chi hai battuto. Dalla probabilità di vittoria si calcolano anche i set.</dd>
     <dt>NBA</dt><dd>Rating Elo + punti fatti/subiti, combinati con le quote quando ci sono.</dd>
     <dt>Fiducia</dt><dd>Alta = 80% o più · Media = 70-80% · Bassa = sotto il 70%</dd>
@@ -437,6 +439,21 @@ function picks(list, f) {
   }
   return out.sort((a, b) => b.p - a.p);
 }
+const bkShort = b => (b || "").replace(/ \(.*\)$/, "");
+/* quota totale di una schedina: reale solo se tutti i pronostici hanno la quota dello stesso bookmaker */
+function slipOdds(list) {
+  const bks = new Set(list.map(x => x.bk));
+  if (list.length && list.every(x => x.q) && bks.size === 1) {
+    const b = [...bks][0], ne = list.filter(x => x.est).length;
+    return {odd: list.reduce((a, x) => a * x.q, 1), real: !ne, label: `quota ${bkShort(b)}${ne ? " (≈ stimata)" : ""}`,
+            note: ne ? `≈ = quota Bet365 stimata per ${ne} pronostic${ne === 1 ? "o" : "i"} (nei dati Bet365 ha solo 1X2 e Over/Under 2.5): calcolata con il margine che Bet365 applica a quella partita. Controlla la quota vera sul sito prima di giocare.` : ""};
+  }
+  const miss = list.filter(x => !x.q).length;
+  return {odd: list.reduce((a, x) => a * (1 / x.p), 1), real: false, label: "quota giusta (stima)",
+          note: bks.size > 2 || (bks.size === 2 && !bks.has(null))
+            ? "Le quote reali sono di bookmaker diversi (Bet365 per il calcio, DraftKings per l'NBA): mostro la quota giusta. Sul tuo bookmaker la quota sarà circa 5% più bassa per ogni pronostico."
+            : `${miss} pronostic${miss === 1 ? "o non ha" : "i non hanno"} la quota Bet365 (mercato non quotato nei dati o quote non ancora uscite): mostro la quota giusta. Sul bookmaker sarà circa 5% più bassa per ogni pronostico.`};
+}
 const bestPerMatch = l => { const s = new Set(); return l.filter(x => !s.has(x.mi) && s.add(x.mi)); };
 const dotc = p => p >= .8 ? "d3" : p >= .7 ? "d2" : "d1";
 
@@ -445,7 +462,7 @@ function pkRow(x, i, right) {
     ${i != null ? `<span class="n">${i + 1}</span>` : ""}
     <div class="main"><div class="what"><span class="code">${esc(codeOf(x.k, x.m))}</span><span class="expl">${esc(label(x.k, x.m))}</span></div>
       <div class="who"><span class="dot ${dotc(x.p)}"></span>${LEGHE()[x.m.lega]?.flag || ""} ${esc(x.m.casa)} – ${esc(x.m.ospite)} · ${S.allDays ? dayShort(x.m.data) + " " : ""}${esc(x.m.ora || "")}</div></div>
-    <div class="num"><b>${pc(x.p)}</b><span>${x.q ? "quota " + x.q.toFixed(2) : "giusta " + fair(x.p)}</span></div>
+    <div class="num"><b>${pc(x.p)}</b><span>${x.q ? esc(bkShort(x.bk)) + " " + (x.est ? "≈" : "") + x.q.toFixed(2) : "giusta " + fair(x.p)}</span></div>
     ${right || ""}</div>`;
 }
 
@@ -475,7 +492,7 @@ function viewOggi() {
   const best = bestPerMatch(picks(list, S.f));
   const top = best.slice(0, S.showAll ? 30 : 5);
   const slip = bestPerMatch(picks(list, S.f)).slice(0, 4);
-  const sp = slip.reduce((a, x) => a * x.p, 1), so = slip.reduce((a, x) => a * x.odd, 1);
+  const sp = slip.reduce((a, x) => a * x.p, 1), sq = slipOdds(slip), so = sq.odd;
 
   // partite raggruppate per campionato
   const groups = {};
@@ -491,8 +508,9 @@ function viewOggi() {
   </div>
   ${slip.length >= 2 ? `<div class="card"><h2>🎫 Schedina consigliata</h2>
     <div class="sum"><div><div class="small mut">Probabilità che esca</div><div class="big">${pc(sp)}</div></div>
-      <div class="r"><div class="small mut">${slip.length} pronostici · quota</div><div class="big">${so.toFixed(2)}</div></div></div>
+      <div class="r"><div class="small mut">${slip.length} pronostici · ${sq.label}</div><div class="big">${so.toFixed(2)}</div></div></div>
     <div class="verdict">${verdict(sp, slip.length)}</div>
+    ${sq.note ? `<div class="small mut" style="margin-top:4px">${esc(sq.note)}</div>` : ""}
     ${slip.map(x => pkRow(x)).join("")}
     <button style="width:100%;margin-top:8px" onclick="go('schedina')">Modificala o costruiscine un'altra →</button></div>` : ""}
   <h2 style="margin:16px 0 8px">Tutte le partite · ${list.length}</h2>
@@ -547,7 +565,7 @@ function detail(m) {
     <div class="barlab"><span>vince ${esc(m.casa)}</span>${calcio ? "<span>pareggio</span>" : ""}<span>vince ${esc(m.ospite)}</span></div>
     <div class="pick"><div><div class="small mut">Pronostico consigliato (il più probabile${S.f.qmin > 1 ? " con quota ≥ " + S.f.qmin.toFixed(2) : ""})</div>
       <span class="code codebig">${esc(codeOf(bp.k, m))}</span><div class="expl">${esc(label(bp.k, m))}</div><span class="conf ${cc}">${ct}</span></div>
-      <div class="p"><b>${pc(bp.p)}</b><span class="small mut">${bp.q ? "quota " + bp.q.toFixed(2) : "quota giusta " + fair(bp.p)}</span></div></div>
+      <div class="p"><b>${pc(bp.p)}</b><span class="small mut">${bp.q ? "quota " + esc(bkShort(bp.bk)) + " " + (bp.est ? "≈" : "") + bp.q.toFixed(2) : "quota giusta " + fair(bp.p)}</span></div></div>
     <ul class="says">${says.map(x => `<li>${x}</li>`).join("")}</ul>
     <div class="card" style="margin-top:14px;padding-top:2px;padding-bottom:2px">
       <details class="acc"><summary>Tutti i pronostici</summary>${altri}</details>
@@ -570,7 +588,7 @@ function viewSchedina() {
   const used = new Set(chosen.map(x => x.mi));
   const others = bestPerMatch(cands.filter(x => !used.has(x.mi))).slice(0, 15);
   const p = chosen.reduce((a, x) => a * x.p, 1), n = chosen.length;
-  const odd = chosen.reduce((a, x) => a * x.odd, 1), allReal = n && chosen.every(x => x.q);
+  const sl = slipOdds(chosen), odd = sl.odd, allReal = sl.real;
   const L = LEGHE();
   const lgs = Object.keys(L).filter(c => S.sport === "tutti" || L[c].sport === S.sport);
   return updBanner() + `
@@ -591,14 +609,15 @@ function viewSchedina() {
         .map(([c, t]) => `<button class="${f.cats.includes(c) ? "on" : ""}" onclick="togF('cats','${c}')">${t}</button>`).join("")}</div>
       <div class="small mut">Campionati ${f.leghe.length ? `· <a href="#" onclick="setF('leghe',[]);return false">tutti</a>` : "(tutti)"}</div>
       <div class="chips">${lgs.map(c => `<button class="${f.leghe.includes(c) ? "on" : ""}" onclick="togF('leghe','${c}')">${lgName(c)}</button>`).join("")}</div>
-      <label class="small"><input type="checkbox" ${f.soloQuote ? "checked" : ""} onchange="setF('soloQuote', this.checked)"> Solo pronostici con quota reale del bookmaker</label>
+      <label class="small"><input type="checkbox" ${f.soloQuote ? "checked" : ""} onchange="setF('soloQuote', this.checked)"> Solo pronostici con quota Bet365 (reale o stimata ≈)</label>
       <div style="margin:10px 0"><button onclick="S.f={...F0};store('filtri2',S.f);S.sel=null;render()">Ripristina impostazioni</button></div>
     </details>
   </div>
   ${S.autoFail && f.obiettivo === "quota" ? `<div class="banner" style="background:#3a3212;border-color:var(--y)">Non si arriva a quota ${f.target} con ${f.n} partite e questi filtri: aumenta le partite o abbassa la sicurezza minima.</div>` : ""}
   <div class="card">
     <div class="sum"><div><div class="small mut">Probabilità che esca</div><div class="big">${n ? pc(p) : "–"}</div></div>
-      <div class="r"><div class="small mut">${n} pronostici · ${allReal ? "quota reale" : "quota giusta"}</div><div class="big">${n ? odd.toFixed(2) : "–"}</div></div></div>
+      <div class="r"><div class="small mut">${n} pronostici · ${sl.label}</div><div class="big">${n ? odd.toFixed(2) : "–"}</div></div></div>
+    ${n && sl.note ? `<div class="small mut" style="margin-top:4px">${esc(sl.note)}</div>` : ""}
     <div class="verdict">${verdict(p, n)}</div>
     ${chosen.map(x => pkRow(x, null, `<button class="x" onclick="event.stopPropagation();S.sel=S.sel.filter(i=>i!=='${x.id}');render()" title="Togli">✕</button>`)).join("")}
   </div>

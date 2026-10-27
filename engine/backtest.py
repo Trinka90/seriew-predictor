@@ -29,7 +29,8 @@ def run(season="2526", edge=C.VALUE_EDGE, league="I1", verbose=True):
             res = "1" if r.fthg > r.ftag else ("X" if r.fthg == r.ftag else "2")
             rec.append({"p1": mk["1"], "px": mk["X"], "p2": mk["2"], "po": mk["Over 2.5"],
                         "res": res, "over": (r.fthg + r.ftag) > 2.5,
-                        "o1": r.odd_h, "ox": r.odd_d, "o2": r.odd_a, "oo": r.odd_o25, "ou": r.odd_u25})
+                        "o1": r.odd_h, "ox": r.odd_d, "o2": r.odd_a, "oo": r.odd_o25, "ou": r.odd_u25,
+                        "b1": r.bk_h, "bx": r.bk_d, "b2": r.bk_a, "bo": r.bk_o25, "bu": r.bk_u25})
     print(f"  {len(weeks)} settimane simulate")
     d = pd.DataFrame(rec)
 
@@ -53,8 +54,8 @@ def run(season="2526", edge=C.VALUE_EDGE, league="I1", verbose=True):
     # ROI scommettendo 1 unità dove il modello vede edge
     bets = []
     for r in d[has].itertuples():
-        for p, o, win in ((r.p1, r.o1, r.res == "1"), (r.px, r.ox, r.res == "X"), (r.p2, r.o2, r.res == "2"),
-                          (r.po, r.oo, r.over), (1 - r.po, r.ou, not r.over)):
+        for p, o, win in ((r.p1, r.b1, r.res == "1"), (r.px, r.bx, r.res == "X"), (r.p2, r.b2, r.res == "2"),
+                          (r.po, r.bo, r.over), (1 - r.po, r.bu, not r.over)):   # quote Bet365
             if o and not np.isnan(o) and p * o - 1 > edge:
                 bets.append(o - 1 if win else -1)
     metrics = {"stagione": season, "partite": int(len(d)), "logloss_modello": round(m[0], 4),

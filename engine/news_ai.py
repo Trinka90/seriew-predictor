@@ -93,7 +93,8 @@ LANG = {
     "tr": ("tr", "TR", "TR:tr", ["{t} sakat cezalı", "{t} kadro"]),
 }
 LEAGUE_LANG = {"I1": "it", "I2": "it", "E0": "en", "E1": "en", "SC0": "en", "SP1": "es", "SP2": "es",
-               "D1": "de", "D2": "de", "F1": "fr", "F2": "fr", "N1": "nl", "P1": "pt", "B1": "nl", "T1": "tr"}
+               "D1": "de", "D2": "de", "F1": "fr", "F2": "fr", "N1": "nl", "P1": "pt", "B1": "nl", "T1": "tr",
+               "E2": "en", "E3": "en", "EC": "en", "SC1": "en", "SC2": "en", "SC3": "en", "G1": "en"}
 
 # (calo gol fatti, aumento gol subiti) per assente
 IMPATTO = {

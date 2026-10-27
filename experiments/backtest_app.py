@@ -28,7 +28,7 @@ from model import DixonColes, blend, implied_lambdas, market_probs, score_matrix
 
 SEASON = "2526"
 QMIN, PMIN = 1.20, 0.65          # filtri predefiniti dell'app
-MARGIN = 0.06                    # margine bookmaker stimato per i mercati senza quota storica
+MARGIN = 0.06                    # margine di riserva se manca la quota Bet365 1X2 della partita
 N_SLIP = 4
 
 # mercati come nell'app: la schedina usa le categorie predefinite (niente combo), il consigliato tutti
@@ -75,14 +75,17 @@ def run_league(lg):
             lam, mu = blend(lm, mm, lb, mb, C.MARKET_WEIGHT)
             mk = goal_markets(score_matrix(lam, mu, dc.rho))
             book = goal_markets(score_matrix(lb, mb, dc.rho))        # mercato, per stimare le quote mancanti
-            real = {"1": r.odd_h, "X": r.odd_d, "2": r.odd_a, "Over 2.5": r.odd_o25, "Under 2.5": r.odd_u25}
+            # quote di UN SOLO bookmaker (Bet365): la schedina si gioca su uno
+            real = {"1": r.bk_h, "X": r.bk_d, "2": r.bk_a, "Over 2.5": r.bk_o25, "Under 2.5": r.bk_u25}
+            b3 = [r.bk_h, r.bk_d, r.bk_a]
+            marg = (sum(1 / x for x in b3) - 1) if all(x and x == x and x > 1 for x in b3) else MARGIN
             h, a = int(r.fthg), int(r.ftag)
 
             def pick(k):
                 q = real.get(k)
                 q = q if q and q == q else None
-                pay = q or max(1.01, 1 / (book[k] * (1 + MARGIN)))   # quota pagata (reale o stimata)
-                return {"k": k, "p": float(mk[k]), "odd": q or 1 / mk[k], "pay": float(pay),
+                pay = q or max(1.01, 1 / (book[k] * (1 + marg)))   # quota Bet365 reale o stimata col suo margine
+                return {"k": k, "p": float(mk[k]), "odd": float(pay), "pay": float(pay),   # come l'app: quota Bet365 reale o stimata
                         "reale": q is not None, "hit": hit(k, h, a)}
 
             allp = sorted((pick(k) for k in ALL_KEYS), key=lambda x: -x["p"])
@@ -110,7 +113,7 @@ def run_tennis(code):
     ms = sorted(db["matches"].values(), key=lambda m: (m["date"], m.get("ora", ""), m["id"]))
     elo = sports.TennisElo()
     cut = (dt.date.today() - dt.timedelta(days=365)).isoformat()
-    out = []
+    out, pws, a_month = [], [], {}
     for m in ms:
         if not m["done"] or m["w"] is None or m.get("wo"):
             continue
@@ -118,8 +121,12 @@ def run_tennis(code):
         s1, s2 = m["sets"]
         need = 3 if m["bo5"] else 2
         valid = max(s1, s2) == need and (s1 > s2) == (m["w"] == 0)          # niente ritiri
-        if valid and m["date"] >= cut and elo.n.get(p1, 0) >= 10 and elo.n.get(p2, 0) >= 10:
-            mk = sports.tennis_markets(elo.prob(p1, p2, sf), m["bo5"])
+        ok_n = elo.n.get(p1, 0) >= 10 and elo.n.get(p2, 0) >= 10
+        if valid and m["date"] >= cut and ok_n:
+            mo = m["date"][:7]
+            if mo not in a_month:   # calibrazione con i soli 6 mesi precedenti, come nell'app
+                a_month[mo] = sports.calib_at(pws, mo + "-01")
+            mk = sports.tennis_markets(sports.calibrate(elo.prob(p1, p2, sf), a_month[mo]), m["bo5"])
             allp = sorted(({"k": k, "p": p, "odd": 1 / p, "hit": tennis_hit(k, s1, s2)} for k, p in mk.items()),
                           key=lambda x: -x["p"])
             rec = next((x for x in allp if x["odd"] >= QMIN), allp[-1])
@@ -127,6 +134,8 @@ def run_tennis(code):
             out.append({"lega": code, "data": m["date"], "partita": f"{p1}-{p2}", "ris": f"{s1}-{s2}",
                         "rec": rec, "slip": cand[0] if cand else None})
         w, l = (p1, p2) if m["w"] == 0 else (p2, p1)
+        if ok_n:
+            pws.append((m["date"], elo.prob(w, l, sf)))
         elo.update(w, l, sf)
     return out
 
@@ -151,16 +160,16 @@ def roi(recs):
     return float(np.mean([(r["pay"] - 1) if r["hit"] else -1 for r in recs]))
 
 
-def slips(rows, n, key="data"):
+def slips(rows, n, key="data", pmin=PMIN):
     """Una schedina per giorno (o giornata) con i migliori n pronostici, come 'Schedina consigliata'."""
     by = defaultdict(list)
     for r in rows:
-        if r["slip"]:
+        if r["slip"] and r["slip"]["p"] >= pmin:
             by[r[key]].append(r["slip"] | {"partita": r["partita"], "ris": r["ris"], "lega": r["lega"]})
     res = []
     for d in sorted(by):
         best = sorted(by[d], key=lambda x: -x["p"])[:n]
-        if len(best) < min(n, 2):
+        if len(best) < n:   # si gioca solo se ci sono abbastanza pronostici sopra la soglia
             continue
         res.append({"giorno": d, "n": len(best), "prob": float(np.prod([x["p"] for x in best])),
                     "ok": all(x["hit"] for x in best), "giusti": sum(x["hit"] for x in best),
@@ -180,6 +189,10 @@ def slip_stats(sl):
             "attese": float(np.mean([s["prob"] for s in sl])), "quota_media": float(np.mean([s["quota"] for s in sl])),
             "roi": float(np.mean([(s["quota"] - 1) if s["ok"] else -1 for s in sl])),
             "serie_negativa": streak}
+
+
+def pc_(x):
+    return f"{x * 100:.0f}%"
 
 
 def pct(x):
@@ -209,8 +222,8 @@ def main():
           "Regole uguali all'app: pronostico consigliato = il più probabile con quota ≥ 1,20; schedina del giorno = "
           f"i {N_SLIP} pronostici più probabili (uno per partita, sicurezza ≥ 65%, quota ≥ 1,20). Modello rifatto ogni "
           "settimana con i soli dati precedenti e fuso con le quote reali. Notizie e infortuni NON inclusi.", "",
-          "Quote pagate: reali (media bookmaker) per 1/X/2 e Over/Under 2.5; per gli altri mercati stimate dalle "
-          f"quote reali con un margine del {int(MARGIN * 100)}%.", ""]
+          "Quote pagate: **un solo bookmaker (Bet365)**, reali per 1/X/2 e Over/Under 2.5; per gli altri mercati "
+          "stimate applicando il margine che Bet365 aveva su quella partita.", ""]
 
     # 1. calibrazione
     L += ["## 1. Il pronostico consigliato esce davvero con la probabilità indicata?", "",
@@ -246,6 +259,21 @@ def main():
         if st:
             L.append(f"| {n}{' (come l’app)' if n == N_SLIP else ''} | {st['giorni']} | {st['vinte']} | **{pct(st['perc'])}** | "
                      f"{pct(st['attese'])} | {st['quota_media']:.2f} | {sroi(st['roi'])} | {st['serie_negativa']} giorni |")
+    # soglie di sicurezza più alte
+    L += ["### Alzando la sicurezza minima di ogni pronostico", "",
+          "Si gioca solo nei giorni in cui ci sono abbastanza pronostici sopra la soglia.", "",
+          "| Sicurezza minima | Pronostici | Giorni giocati | Uscite | % | Quota media Bet365 | Resa |", "|---|---|---|---|---|---|---|"]
+    for pm in (0.65, 0.75, 0.80, 0.85):
+        for n in (2, 3, 4):
+            st = slip_stats(slips(foot, n, pmin=pm))
+            results[f"soglia_{int(pm * 100)}_{n}"] = st
+            if st:
+                L.append(f"| {pc_(pm)} | {n} | {st['giorni']} | {st['vinte']} | **{pct(st['perc'])}** | "
+                         f"{st['quota_media']:.2f} | {sroi(st['roi'])} |")
+    single = {pm: [r["slip"] for r in foot if r["slip"] and r["slip"]["p"] >= pm] for pm in (0.65, 0.75, 0.80, 0.85)}
+    L += ["", "Singoli pronostici, 1 € ciascuno: " + " · ".join(
+        f"≥{pc_(pm)}: {len(v)} giocate, usciti {pct(np.mean([x['hit'] for x in v]))}, resa {sroi(roi(v))}"
+        for pm, v in single.items() if v), ""]
     sl4 = slips(foot, N_SLIP)
     dist = defaultdict(int)
     for s in sl4:
@@ -278,7 +306,7 @@ def main():
     # 5. tennis
     if ten:
         tr = [r["rec"] for r in ten]
-        L += ["## 5. Tennis ATP + WTA (ultimi 12 mesi, senza quote reali)", "",
+        L += ["## 5. Tennis ATP + WTA (ultimi 12 mesi, calibrato mese per mese, senza quote reali)", "",
               "| Fiducia indicata | Pronostici | Media indicata | Usciti davvero |", "|---|---|---|---|"]
         L += [f"| {b} | {n} | {pct(p)} | **{pct(h)}** |" for b, n, p, h in calibration(tr)]
         st = slip_stats(slips(ten, N_SLIP))

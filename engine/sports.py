@@ -218,6 +218,35 @@ class TennisElo:
             n[key_l] = n.get(key_l, 0) + 1
 
 
+def _logit(p):
+    p = np.clip(np.asarray(p, float), 1e-6, 1 - 1e-6)
+    return np.log(p / (1 - p))
+
+
+def fit_calibration(pw):
+    """Fattore che corregge l'eccesso di fiducia: p' = sigmoide(a * logit(p)).
+    pw = probabilità che il modello aveva dato al vincitore, prima di ogni partita."""
+    from scipy.optimize import minimize_scalar
+    lg = _logit(pw)
+    if len(lg) < 200:
+        return 1.0
+    r = minimize_scalar(lambda a: np.sum(np.log1p(np.exp(-a * lg))), bounds=(0.2, 2.0), method="bounded")
+    return float(r.x)
+
+
+def calibrate(p, a):
+    return float(1 / (1 + np.exp(-a * _logit(p))))
+
+
+CALIB_DAYS = 180   # finestra della calibrazione (provata mese per mese sull'ultimo anno: la più precisa)
+
+
+def calib_at(pws, date, days=CALIB_DAYS):
+    """Fattore di calibrazione usando solo le partite dei `days` giorni prima di `date`."""
+    lo = (dt.date.fromisoformat(date[:10]) - dt.timedelta(days=days)).isoformat()
+    return fit_calibration([p for d, p in pws if lo <= d < date])
+
+
 def _form(hist, who, k=5):
     return "".join(hist.get(who, [])[-k:])
 
@@ -227,16 +256,26 @@ def tennis(code):
     ms = sorted(db["matches"].values(), key=lambda m: (m["date"], m.get("ora", ""), m["id"]))
     elo, hist = TennisElo(), {}
     bt_cut = (dt.date.today() - dt.timedelta(days=365)).isoformat()
-    bt = []
+    pws = []   # (data, probabilità data al vincitore prima della partita)
     for m in ms:
         if not m["done"] or m["w"] is None or m.get("wo"):
             continue
         w, l = (m["p1"], m["p2"]) if m["w"] == 0 else (m["p2"], m["p1"])
-        if m["date"] >= bt_cut and elo.n.get(w, 0) >= 10 and elo.n.get(l, 0) >= 10:
-            bt.append(elo.prob(w, l, m["superficie"]))   # probabilità data al vincitore prima della partita
+        if elo.n.get(w, 0) >= 10 and elo.n.get(l, 0) >= 10:
+            pws.append((m["date"], elo.prob(w, l, m["superficie"])))
         elo.update(w, l, m["superficie"])
         hist.setdefault(w, []).append("V")
         hist.setdefault(l, []).append("P")
+    # calibrazione sugli ultimi 6 mesi (il tennis Elo tende a essere troppo sicuro)
+    a_now = calib_at(pws, (dt.date.today() + dt.timedelta(days=1)).isoformat())
+    # verifica: mese per mese, ogni mese calibrato solo con i 6 mesi precedenti
+    bt, a_month = [], {}
+    for d, p in pws:
+        if d >= bt_cut:
+            mo = d[:7]
+            if mo not in a_month:
+                a_month[mo] = calib_at(pws, mo + "-01")
+            bt.append(calibrate(p, a_month[mo]))
     today = dt.date.today().isoformat()
     horizon = (dt.date.today() + dt.timedelta(days=3)).isoformat()
     out = []
@@ -245,7 +284,7 @@ def tennis(code):
             continue
         if "TBD" in (m["p1"] + m["p2"]) or "/" in m["p1"]:
             continue
-        p = elo.prob(m["p1"], m["p2"], m["superficie"])
+        p = calibrate(elo.prob(m["p1"], m["p2"], m["superficie"]), a_now)
         conf = min(elo.n.get(m["p1"], 0), elo.n.get(m["p2"], 0))
         out.append({"sport": "tennis", "lega": code, "data": m["date"], "ora": m.get("ora", ""),
                     "casa": m["p1"], "ospite": m["p2"], "torneo": m["torneo"], "turno": m["turno"],
@@ -266,7 +305,7 @@ def tennis(code):
     if len(bt) > 100:
         metrics = {"stagione": "ultimi 12 mesi", "partite": int(len(bt)),
                    "acc_modello": float((bt > 0.5).mean()), "logloss_modello": float(-np.log(bt).mean()),
-                   "acc_book": None, "logloss_book": None, "roi": None}
+                   "acc_book": None, "logloss_book": None, "roi": None, "calibrazione": round(a_now, 3)}
     return out, rows, metrics
 
 
@@ -383,7 +422,8 @@ def nba(code="NBA"):
                     "casa": m["home"], "ospite": m["away"], "punti_casa": round(diff / 2 + tot / 2, 1),
                     "punti_ospite": round(tot / 2 - diff / 2, 1),
                     "forma_casa": "".join(hist.get(m["home"], [])[-5:]), "forma_ospite": "".join(hist.get(m["away"], [])[-5:]),
-                    "mercati": mk, "quote": quote, "value": value, "risultati": [],
+                    "mercati": mk, "quote": quote, "bookmaker": "DraftKings (USA)" if quote else None,
+                    "value": value, "risultati": [],
                     "assenti_casa": [], "assenti_ospite": [], "note_casa": [], "note_ospite": [],
                     "news_casa": [], "news_ospite": [], "eventi": {}, "effetti": [], "con_mercato": con_m})
     rows = [{"squadra": t, "pos": i + 1, "pt": round(e), "pg": len(hist.get(t, [])),

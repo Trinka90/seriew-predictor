@@ -64,6 +64,21 @@ def _step(status, name, fn, *args):
     print(f"  ({name}: {time.time() - t:.0f}s)")
 
 
+EST_KEYS = ["1X", "X2", "12", "Over 1.5", "Over 3.5", "Under 1.5", "Under 3.5", "GG", "NG",
+            "Multigol 1-3", "Multigol 2-4", "Multigol 2-3", "1 + Over 1.5", "2 + Over 1.5", "1 + GG", "2 + GG",
+            "GG + Over 2.5"]
+
+
+def _estimated(info, odds, f):
+    """Quote Bet365 stimate per i mercati senza quota nei dati: probabilità del mercato + margine Bet365 della partita."""
+    bm = info.get("book_markets")
+    b3 = [f.bk_h, f.bk_d, f.bk_a]
+    if not bm or not all(x and not pd.isna(x) and x > 1 for x in b3):
+        return {}
+    marg = sum(1 / x for x in b3) - 1
+    return {k: round(max(1.01, 1 / (bm[k] * (1 + marg))), 2) for k in EST_KEYS if k in bm and k not in odds and bm[k] > 0}
+
+
 def update_all(con):
     import news_ai
     status = {}
@@ -97,7 +112,8 @@ def export_league(con, lg, df_all, fx_all, manual, today):
                              odds=(f.odd_h, f.odd_d, f.odd_a, f.odd_o25, f.odd_u25))
         mk = info["markets"]
         mm = info["model_markets"]
-        odds = {"1": f.odd_h, "X": f.odd_d, "2": f.odd_a, "Over 2.5": f.odd_o25, "Under 2.5": f.odd_u25}
+        odds = {"1": f.bk_h, "X": f.bk_d, "2": f.bk_a, "Over 2.5": f.bk_o25, "Under 2.5": f.bk_u25}   # Bet365
+        odds = {k: v for k, v in odds.items() if v and not pd.isna(v)}
         value = []
         for k, o in odds.items():
             if o and not pd.isna(o):
@@ -112,7 +128,8 @@ def export_league(con, lg, df_all, fx_all, manual, today):
             "gol_casa_base": info["lam_base"], "gol_ospite_base": info["mu_base"],
             "classifica_casa": pos(f.home), "classifica_ospite": pos(f.away),
             "forma_casa": info["form_h"], "forma_ospite": info["form_a"],
-            "quote": odds, "value": value, "mercati": mk,
+            "quote": odds, "bookmaker": C.BOOKMAKER if odds else None, "value": value, "mercati": mk,
+            "quote_stimate": _estimated(info, odds, f),
             "risultati": [{"r": s, "p": p} for p, s in info["scores"]],
             "assenti_casa": [_abs(a) for a in info["abs_h"]],
             "assenti_ospite": [_abs(a) for a in info["abs_a"]],

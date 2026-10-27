@@ -67,10 +67,12 @@ def predict_match(con, df, models, table, manual, home, away, rounds=38, odds=No
 
     # fusione con le quote di mercato (se disponibili)
     info["mercato"] = False
+    info["book_markets"] = None
     if odds is not None and C.MARKET_WEIGHT > 0:
         mp = market_probs(*odds)
         if mp:
             lb, mb = implied_lambdas(mp, dc.rho)
+            info["book_markets"] = goal_markets(score_matrix(lb, mb, dc.rho))   # probabilità del mercato
             # base: modello puro (con motivazione e correzioni manuali) fuso con il mercato
             lam_b0 = lam0 * mot_h * man_att_h * man_def_a
             mu_b0 = mu0 * mot_a * man_att_a * man_def_h

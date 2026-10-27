@@ -3,6 +3,7 @@ name: Aggiorna pronostici
 on:
   schedule:
     - cron: "17 5,10,16 * * *"     # 3 volte al giorno (~6:17, 11:17, 17:17 ora italiana)
+    - cron: "47 11,13,17,19 * * 0,6"  # sabato e domenica anche a ridosso delle partite (~12:47, 14:47, 18:47, 20:47)
   workflow_dispatch:
   push:
     branches: [main]

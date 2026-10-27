@@ -8,10 +8,12 @@ CREATE TABLE IF NOT EXISTS matches(
   hs INT, as_ INT, hst INT, ast INT, hc INT, ac INT,
   hy INT, ay INT, hr INT, ar INT,
   odd_h REAL, odd_d REAL, odd_a REAL, odd_o25 REAL, odd_u25 REAL,
+  bk_h REAL, bk_d REAL, bk_a REAL, bk_o25 REAL, bk_u25 REAL,
   PRIMARY KEY(date, home, away));
 CREATE TABLE IF NOT EXISTS fixtures(
   league TEXT, date TEXT, time TEXT, home TEXT, away TEXT,
   odd_h REAL, odd_d REAL, odd_a REAL, odd_o25 REAL, odd_u25 REAL,
+  bk_h REAL, bk_d REAL, bk_a REAL, bk_o25 REAL, bk_u25 REAL,
   PRIMARY KEY(date, home, away));
 CREATE TABLE IF NOT EXISTS news(
   link TEXT PRIMARY KEY, team TEXT, title TEXT, source TEXT,
