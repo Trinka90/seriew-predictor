@@ -8788,6 +8788,1431 @@
 "n_titoli": 27
 }
 },
+"7b277a06aa9163be2fb9d1966385569a13843f00": {
+"data": "2026-10-28",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Mats Knoester",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+1
+],
+"fonte": "Aberdeen facing centre-half injury crisis as Dons boss issues Mats Knoester update - Aberdeen Live"
+},
+{
+"nome": "Connor Ronan",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+4
+],
+"fonte": "Aberdeen FC: Update on Connor Ronan and Mats Knoester injuries - Press and Journal"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "crisi in difesa per infortuni"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna novità rilevante"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "partita regolare senza restrizioni"
+},
+"n_titoli": 16
+}
+},
+"b13c261328b780fc78dd0eefbad193ca5a773c16": {
+"data": "2026-10-28",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Anderson",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "in dubbio",
+"titoli": [
+12
+],
+"fonte": "Blues boss gives update on Anderson and Ellis injuries - News & Star"
+},
+{
+"nome": "Ellis",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "in dubbio",
+"titoli": [
+12
+],
+"fonte": "Blues boss gives update on Anderson and Ellis injuries - News & Star"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": ""
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione su porte chiuse"
+},
+"n_titoli": 17
+}
+},
+"f9655e498f538aa044f3cfd8179803b9aaea82f7": {
+"data": "2026-10-28",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "positivo",
+"note": "Carrarese cerca conferme nel derby"
+},
+"ospite": {
+"assenti": [],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "positivo",
+"note": "Arezzo vuole ripartire"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Derby di Serie B a Carrara"
+},
+"n_titoli": 50
+}
+},
+"073cf308c242b3dcb839719d288a94894b59d9b6": {
+"data": "2026-10-28",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Infortuni importanti limitano la squadra"
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Sam Cleall-Harding",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "probabile",
+"titoli": [
+27
+],
+"fonte": "Jim Goodwin reveals Dundee United recovery plan for Sam Cleall-Harding after injury woe - The Courier"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna altra novità"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita regolare senza restrizioni"
+},
+"n_titoli": 34
+}
+},
+"3e02018fd81a4facc9b304de671e6d4e7c98a69e": {
+"data": "2026-10-28",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione rilevante"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione rilevante"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna informazione su chiusura"
+},
+"n_titoli": 14
+}
+},
+"24d49c1938549ba48f786efa292eedebc6cd805a": {
+"data": "2026-10-28",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": ""
+},
+"n_titoli": 19
+}
+},
+"14a1266654410bd25209c6325d1dedbca9b4b97d": {
+"data": "2026-10-28",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna assenza segnalata"
+},
+"ospite": {
+"assenti": [],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna assenza segnalata"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "partita regolare"
+},
+"n_titoli": 50
+}
+},
+"340f4121a3f115035c0520870dd23523a56a296a": {
+"data": "2026-10-28",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Harry Milne",
+"ruolo": "attaccante",
+"importanza": "stella",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+2,
+4
+],
+"fonte": "Milne out for season as Hearts' injury woes continue - BBC"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Milne fuori per tutta la stagione"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessun giocatore confermato assente"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita senza restrizioni"
+},
+"n_titoli": 44
+}
+},
+"e9b467e42058c8977d318bcae6628ac2997a446d": {
+"data": "2026-10-28",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Magnino",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "altro",
+"certezza": "certo",
+"titoli": [
+5
+],
+"fonte": "Empoli, subito al lavoro. Con la Juve Stabia senza Magnino e Shpendi - Empoli Channel"
+},
+{
+"nome": "Shpendi",
+"ruolo": "attaccante",
+"importanza": "titolare",
+"motivo": "altro",
+"certezza": "certo",
+"titoli": [
+5
+],
+"fonte": "Empoli, subito al lavoro. Con la Juve Stabia senza Magnino e Shpendi - Empoli Channel"
+}
+],
+"turnover": "alto",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Necessario turnover, concentrazione"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna assenza segnalata"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita di Serie B senza restrizioni"
+},
+"n_titoli": 50
+}
+},
+"74b8f65ca18220046e883703517f2439e0977e43": {
+"data": "2026-10-28",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione su squalifiche o infortuni gravi"
+},
+"ospite": {
+"assenti": [],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Due big a riposo, ma non specificati"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita di Serie A senza restrizioni"
+},
+"n_titoli": 50
+}
+},
+"c10cd1631e7b5cc570ba017353dd242642436932": {
+"data": "2026-10-28",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna assenza segnalata"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna assenza segnalata"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "partita senza info su chiusura"
+},
+"n_titoli": 50
+}
+},
+"ee20c954fc2f8f34477f47fc77d277cff6fa3313": {
+"data": "2026-10-28",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna assenza segnalata"
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Solet",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "altro",
+"certezza": "certo",
+"titoli": [
+36
+],
+"fonte": "Verso Parma-Udinese, Runjaic deve uscire dalla crisi: Solet indisponibile - Messaggero Veneto"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Solet indisponibile"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "partita di salvezza"
+},
+"n_titoli": 50
+}
+},
+"f8b3556f5a20b1d38ce947578fca76ce9fdaf8d3": {
+"data": "2026-10-28",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenti"
+},
+"ospite": {
+"assenti": [],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "possibili rotazioni di squadra"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna informazione su porte chiuse"
+},
+"n_titoli": 50
+}
+},
+"41fce87c67d94c374cf60a01385e3452834b22d3": {
+"data": "2026-10-28",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "positivo",
+"note": "Nessuna assenza segnalata"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna assenza segnalata"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione su chiusura"
+},
+"n_titoli": 20
+}
+},
+"05f7ab367a713759eade1d33a97cfd5c57e1a883": {
+"data": "2026-10-28",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Jonah Ayunga",
+"ruolo": "attaccante",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+1
+],
+"fonte": "St Mirren striker Jonah Ayunga set for fresh ‘tidy-up’ operation on knee injury - The St Mirren Mercury"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Ayunga fuori per operazione al ginocchio"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna assenza confermata"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "partita regolare"
+},
+"n_titoli": 24
+}
+},
+"7af60e08bd90c16ffca9b6386cad71752f107ea8": {
+"data": "2026-10-28",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione su assenti"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione su assenti"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione su porte chiuse"
+},
+"n_titoli": 13
+}
+},
+"ab11dc405038902cbaf1fe730bb87ef9693a69ca": {
+"data": "2026-10-28",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna assenza segnalata per Venezia"
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Akanji",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "altro",
+"certezza": "probabile",
+"titoli": [
+47
+],
+"fonte": "GUARRO e PACE EP32: Venezia-Inter, riposa Akanji. Esposito non sta benissimo: la probabile formazione - FC Inter 1908"
+}
+],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Possibili assenze per Inter, rotazione difensiva"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita regolare, senza restrizioni"
+},
+"n_titoli": 50
+}
+},
+"ef29f52facb82a90ae390a62725a1724d2591ebd": {
+"data": "2026-10-29",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Pongracic",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+9
+],
+"fonte": "La Fiorentina perde Pongracic: c'è la lesione al bicipite femorale. Quando torna - Corriere dello Sport"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Difensore titolare fuori per lesione"
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Bellanova",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+34
+],
+"fonte": "Atalanta, l'emergenza si aggrava: anche Bellanova e Scamacca si fermano e saltano Fiorentina e Parma - BergamoNews"
+},
+{
+"nome": "Scamacca",
+"ruolo": "attaccante",
+"importanza": "stella",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+42
+],
+"fonte": "Atalanta, brutte notizie per Sarri: problemi muscolari per Scamacca e Bellanova - La Gazzetta dello Sport"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Due assenti per infortuni muscolari"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Entrambe le squadre con assenti importanti"
+},
+"n_titoli": 50
+}
+},
+"8eef38abff689332597626aed2ed6728df5dbf79": {
+"data": "2026-10-29",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Ivan Ilić",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+34
+],
+"fonte": "Ilic, riuscito l’intervento chirurgico alla coscia sinistra. Tempi di recupero lunghi - LeccePrima"
+},
+{
+"nome": "Gaspar",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "squalifica",
+"certezza": "certo",
+"titoli": [
+39
+],
+"fonte": "Serie A: due giornate di squalifica a Gaspar del Lecce - ANSA"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": ""
+},
+"n_titoli": 50
+}
+},
+"d8af4746fa7d81271ff323e1226ab7bdfb9307a9": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione rilevante"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione rilevante"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna informazione rilevante"
+},
+"n_titoli": 3
+}
+},
+"65ca69e8f28c0c14ebd0ee78bdd5f082468b42a5": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenze"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenze"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna informazione su porte chiuse"
+},
+"n_titoli": 16
+}
+},
+"6ebe16dddb3b3b22af8285b27dd64129b1a126c3": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenti"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenti"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna informazione su porte chiuse"
+},
+"n_titoli": 17
+}
+},
+"f5d53c82ef9bf8d729b3ae03cc1cd35a806c3aaf": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna novità rilevante"
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Jonathan Gradit",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "altro",
+"certezza": "certo",
+"titoli": [
+9
+],
+"fonte": "RC Lens – Paris FC : le groupe lensois sans Jonathan Gradit, ni Odsonne Edouard - Lensois.com"
+},
+{
+"nome": "Odsonne Edouard",
+"ruolo": "attaccante",
+"importanza": "stella",
+"motivo": "altro",
+"certezza": "certo",
+"titoli": [
+9
+],
+"fonte": "RC Lens – Paris FC : le groupe lensois sans Jonathan Gradit, ni Odsonne Edouard - Lensois.com"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "due assenti chiave"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "match senza pubblico chiuso"
+},
+"n_titoli": 11
+}
+},
+"df97dafa0c1a5b613672fb8696322b4859d03b15": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": ""
+},
+"n_titoli": 15
+}
+},
+"3c62f1852c4b823774caa9cb2bdcb64c6a0fb23e": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna assenza segnalata"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna assenza segnalata"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "partita regolare"
+},
+"n_titoli": 23
+}
+},
+"b05c95300e8501177865651ea7dba1cc6bab8b62": {
+"data": "2026-10-31",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna assenza segnalata"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione rilevante"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita regolare senza restrizioni"
+},
+"n_titoli": 29
+}
+},
+"95c393f3321735964682d35a9c0d5faef09ef403": {
+"data": "2026-10-31",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Aaron Wan-Bissaka",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+5
+],
+"fonte": "Aston Villa Injury News vs Bournemouth: Wan-Bissaka and Ruggeri Out - The False 9"
+},
+{
+"nome": "Matteo Ruggeri",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+5
+],
+"fonte": "Aston Villa Injury News vs Bournemouth: Wan-Bissaka and Ruggeri Out - The False 9"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Numerosi difensori assenti, impatto negativo"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna assenza segnalata"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita regolare senza restrizioni"
+},
+"n_titoli": 34
+}
+},
+"722b0cb8db3530c572d4cfa926f8f8063e0a43e4": {
+"data": "2026-10-31",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenti"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenti"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna indicazione di chiusura"
+},
+"n_titoli": 40
+}
+},
+"ccd1c4e263aec87d7488d3704d3238317ddbcc60": {
+"data": "2026-10-31",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Disturbi e allarme in città"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione rilevante"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita senza restrizioni"
+},
+"n_titoli": 28
+}
+},
+"bf0f9a05e26ee5d5fae9f837fbc61b03deeac858": {
+"data": "2026-10-31",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "alto",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna assenza segnalata"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna assenza segnalata"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "partita regolare"
+},
+"n_titoli": 18
+}
+},
+"24a6bfae54656c9619f12119c5de9b27bf424cdc": {
+"data": "2026-10-31",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Antony",
+"ruolo": "attaccante",
+"importanza": "stella",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+1,
+2,
+3
+],
+"fonte": "Antony se cae a última hora de la convocatoria del Betis por un proceso vírico - MundoBetis"
+},
+{
+"nome": "Facundo Bernal",
+"ruolo": "difensore",
+"importanza": "riserva",
+"motivo": "squalifica",
+"certezza": "certo",
+"titoli": [
+16
+],
+"fonte": "!Facundo Bernal es sancionado con 4 partidos! ¿qué te parece la sanción? - Comuniate"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Due assenti chiave, Antony e Bernal, influiscono negativamente."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Assenze minori, impatto limitato."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna restrizione di pubblico."
+},
+"n_titoli": 41
+}
+},
+"3878897e7ef44be22bb6ee530b8cadaee2f44eb9": {
+"data": "2026-10-31",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna assenza segnalata"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna assenza segnalata"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "partita regolare senza restrizioni"
+},
+"n_titoli": 50
+}
+},
+"fd452be9350451273018493ffc0596d76461f5b0": {
+"data": "2026-10-31",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna assenza segnalata"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna assenza segnalata"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita senza info su assenze"
+},
+"n_titoli": 14
+}
+},
+"400a123f2f7f3c76420e0fcf09dd4223b22ff2f7": {
+"data": "2026-10-31",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Toth",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+13
+],
+"fonte": "Bournemouth vs Man Utd Lineups: Kroupi Back, Toth Out, Sesko a Doubt - The False 9"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna novità rilevante oltre due assenze"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Diverse stelle in dubbio"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita regolare senza restrizioni"
+},
+"n_titoli": 50
+}
+},
+"bf69fba36459936fd3dcd6367ddbac4ea6912a9c": {
+"data": "2026-10-31",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Andrews",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+11
+],
+"fonte": "Andrews on major injury blow for Brentford - Premier League"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna nota"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna nota"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna nota"
+},
+"n_titoli": 19
+}
+},
+"321340e585270d058234a3036a465c56b2f6a686": {
+"data": "2026-10-31",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenti"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenti"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna informazione su porte chiuse"
+},
+"n_titoli": 26
+}
+},
+"09b4d8346062a765ffc0addd28b063173a55a568": {
+"data": "2026-10-31",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna informazione aggiuntiva"
+},
+"n_titoli": 17
+}
+},
+"691331c616a3491b3c3f2824f50c0260b8577dff": {
+"data": "2026-10-31",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Emi Martinez",
+"ruolo": "portiere",
+"importanza": "stella",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+9
+],
+"fonte": "Emi Martinez Injury Update: Jaw Surgery Done, No Official Return Date - The False 9"
+},
+{
+"nome": "Chavarria",
+"ruolo": "difensore",
+"importanza": "riserva",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+5
+],
+"fonte": "Pedro, Martinez, Chavarria, Emegha - Chelsea injury news and return dates before Liverpool - Football London"
+},
+{
+"nome": "Emegha",
+"ruolo": "attaccante",
+"importanza": "riserva",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+5
+],
+"fonte": "Pedro, Martinez, Chavarria, Emegha - Chelsea injury news and return dates before Liverpool - Football London"
+}
+],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Numerosi assenti per infortuni"
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Mainoo",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+29
+],
+"fonte": "Man Utd Injury News vs Chelsea: Rashford a Doubt, Mainoo and Sesko Out - The False 9"
+},
+{
+"nome": "Sesko",
+"ruolo": "attaccante",
+"importanza": "riserva",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+29
+],
+"fonte": "Man Utd Injury News vs Chelsea: Rashford a Doubt, Mainoo and Sesko Out - The False 9"
+}
+],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Rashford incerto, altri fuori"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita importante, molte assenze"
+},
+"n_titoli": 50
+}
+},
+"14fae0f57d38d06656c5ddffb10d7cedd3f4e2e6": {
+"data": "2026-10-31",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna assenza confermata"
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Cameron Mundle",
+"ruolo": "attaccante",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+15
+],
+"fonte": "Le Bris on Mundle and Diarra injuries - SAFC"
+},
+{
+"nome": "Diarra",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+15
+],
+"fonte": "Le Bris on Mundle and Diarra injuries - SAFC"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "due titolari assenti per infortunio"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "partita regolare senza restrizioni"
+},
+"n_titoli": 39
+}
+},
+"88f1012109d11dea491b31190a93384dc65e669a": {
+"data": "2026-10-31",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": ""
+},
+"n_titoli": 26
+}
+},
+"4a17c95754c6e09029772b8cc3a187fecc0cada9": {
+"data": "2026-10-31",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Bart van Rooij",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+6
+],
+"fonte": "Bart van Rooij viel uit in de wedstrijd tegen AZ - Blessures en schorsingen"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": ""
+},
+"n_titoli": 6
+}
+},
+"f36d6e4e96909afd1091f226f6d86c7964177c8d": {
+"data": "2026-10-31",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna notizia su assenti per Ipswich"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna notizia su assenti per Hull"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Titoli riferiti a partite precedenti"
+},
+"n_titoli": 33
+}
+},
 "_ultima": {
 "Andorra|Burgos|2026-10-26": {
 "data": "2026-10-26",
@@ -9164,22 +10589,22 @@
 "r": {
 "casa": {
 "assenti": [],
-"turnover": "medio",
+"turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "positivo",
-"note": "Nessuna assenza confermata, solo dubbi"
+"clima": "neutro",
+"note": "nessuna assenza segnalata"
 },
 "ospite": {
 "assenti": [],
 "turnover": "medio",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna assenza segnalata"
+"note": "nessuna assenza segnalata"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita regolare, senza restrizioni"
+"note": "partita regolare"
 },
 "n_titoli": 50
 }
@@ -9188,46 +10613,23 @@
 "data": "2026-10-28",
 "r": {
 "casa": {
-"assenti": [
-{
-"nome": "Rabiot",
-"ruolo": "centrocampista",
-"importanza": "titolare",
-"motivo": "infortunio",
-"certezza": "certo",
-"titoli": [
-7
-],
-"fonte": "Milan, Rabiot salta il Bologna: le ultime news - Sky Sport"
-},
-{
-"nome": "Loftus-Cheek",
-"ruolo": "centrocampista",
-"importanza": "riserva",
-"motivo": "infortunio",
-"certezza": "certo",
-"titoli": [
-22
-],
-"fonte": "Amorim allunga il Milan ma l’emergenza continua: anche Loftus-Cheek ko, infortunio muscolare - Tuttosport"
-}
-],
+"assenti": [],
 "turnover": "medio",
 "nuovo_allenatore": false,
-"clima": "positivo",
-"note": "Emergenza infortuni con 8 assenti, Modric a riposo per rotazione"
+"clima": "neutro",
+"note": "Nessuna informazione su squalifiche o infortuni gravi"
 },
 "ospite": {
 "assenti": [],
-"turnover": "nessuno",
+"turnover": "medio",
 "nuovo_allenatore": false,
-"clima": "positivo",
-"note": "Ballottaggio Odgaard-Dovbyk per il ruolo di punta"
+"clima": "neutro",
+"note": "Due big a riposo, ma non specificati"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Milan in emergenza infortuni, Bologna in forma dopo vittoria su Cagliari"
+"note": "Partita di Serie A senza restrizioni"
 },
 "n_titoli": 50
 }
@@ -9240,75 +10642,19 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Juric cerca riscatto, squadra affamata."
+"note": "nessuna assenza segnalata"
 },
 "ospite": {
-"assenti": [
-{
-"nome": "Badiashile",
-"ruolo": "difensore",
-"importanza": "titolare",
-"motivo": "infortunio",
-"certezza": "certo",
-"titoli": [
-49
-],
-"fonte": "INFORTUNIO BADIASHILE, TEGOLA PER IL NAPOLI: ECCO I POSSIBILI TEMPI DI RECUPERO - NapoliCalcioNews.it"
-},
-{
-"nome": "Neres",
-"ruolo": "attaccante",
-"importanza": "titolare",
-"motivo": "infortunio",
-"certezza": "certo",
-"titoli": [
-47
-],
-"fonte": "INFORTUNI NAPOLI: QUANDO RIENTRANO NERES, ALISSON SANTOS, FAVASULI E BUONGIORNO - NapoliCalcioNews.it"
-},
-{
-"nome": "Alisson Santos",
-"ruolo": "difensore",
-"importanza": "titolare",
-"motivo": "infortunio",
-"certezza": "certo",
-"titoli": [
-47
-],
-"fonte": "INFORTUNI NAPOLI: QUANDO RIENTRANO NERES, ALISSON SANTOS, FAVASULI E BUONGIORNO - NapoliCalcioNews.it"
-},
-{
-"nome": "Favasuli",
-"ruolo": "centrocampista",
-"importanza": "riserva",
-"motivo": "infortunio",
-"certezza": "certo",
-"titoli": [
-47
-],
-"fonte": "INFORTUNI NAPOLI: QUANDO RIENTRANO NERES, ALISSON SANTOS, FAVASULI E BUONGIORNO - NapoliCalcioNews.it"
-},
-{
-"nome": "Buongiorno",
-"ruolo": "difensore",
-"importanza": "titolare",
-"motivo": "infortunio",
-"certezza": "certo",
-"titoli": [
-47
-],
-"fonte": "INFORTUNI NAPOLI: QUANDO RIENTRANO NERES, ALISSON SANTOS, FAVASULI E BUONGIORNO - NapoliCalcioNews.it"
-}
-],
-"turnover": "medio",
+"assenti": [],
+"turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "negativo",
-"note": "Allegri squalificato, rinuncia al ricorso. Emergenza difensiva."
+"clima": "neutro",
+"note": "nessuna assenza segnalata"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Nona giornata di Serie A."
+"note": "partita senza info su chiusura"
 },
 "n_titoli": 50
 }
@@ -9320,33 +10666,32 @@
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "negativo",
-"note": "Crisi di risultati, avvii horror, Cherubini difende Gilardino"
+"clima": "neutro",
+"note": "nessuna assenza segnalata"
 },
 "ospite": {
 "assenti": [
 {
 "nome": "Solet",
-"ruolo": "centrocampista",
+"ruolo": "difensore",
 "importanza": "titolare",
-"motivo": "infortunio",
+"motivo": "altro",
 "certezza": "certo",
 "titoli": [
-32,
-35
+36
 ],
-"fonte": "Udinese, l'emergenza continua: ancora out Solet - Fantacalcio"
+"fonte": "Verso Parma-Udinese, Runjaic deve uscire dalla crisi: Solet indisponibile - Messaggero Veneto"
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "negativo",
-"note": "Sei sconfitte consecutive, emergenza infortuni, fiducia a Runjaic"
+"clima": "neutro",
+"note": "Solet indisponibile"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Scontro diretto salvezza, entrambe in crisi"
+"note": "partita di salvezza"
 },
 "n_titoli": 50
 }
@@ -9356,22 +10701,34 @@
 "r": {
 "casa": {
 "assenti": [],
-"turnover": "nessuno",
+"turnover": "medio",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna assenza o turnover rilevato."
+"note": "Nessuna assenza segnalata per Venezia"
 },
 "ospite": {
-"assenti": [],
-"turnover": "nessuno",
+"assenti": [
+{
+"nome": "Akanji",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "altro",
+"certezza": "probabile",
+"titoli": [
+47
+],
+"fonte": "GUARRO e PACE EP32: Venezia-Inter, riposa Akanji. Esposito non sta benissimo: la probabile formazione - FC Inter 1908"
+}
+],
+"turnover": "medio",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna assenza o turnover rilevato."
+"note": "Possibili assenze per Inter, rotazione difensiva"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita in stadio aperto, nessuna informazione di chiusura."
+"note": "Partita regolare, senza restrizioni"
 },
 "n_titoli": 50
 }
@@ -9383,20 +10740,20 @@
 "assenti": [
 {
 "nome": "Pongracic",
-"ruolo": "centrocampista",
+"ruolo": "difensore",
 "importanza": "titolare",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-2
+9
 ],
-"fonte": "Fiorentina, infortunio Pongracic: le condizioni e i tempi di recupero - SNAI sportnews"
+"fonte": "La Fiorentina perde Pongracic: c'è la lesione al bicipite femorale. Quando torna - Corriere dello Sport"
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": "Infortuni chiave, squadra in difficoltà"
+"clima": "negativo",
+"note": "Difensore titolare fuori per lesione"
 },
 "ospite": {
 "assenti": [
@@ -9407,20 +10764,31 @@
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-27
+34
 ],
-"fonte": "Atalanta, le ultime verso la Fiorentina: Bellanova ai box. Scalvini verso il recupero - La Gazzetta dello Sport"
+"fonte": "Atalanta, l'emergenza si aggrava: anche Bellanova e Scamacca si fermano e saltano Fiorentina e Parma - BergamoNews"
+},
+{
+"nome": "Scamacca",
+"ruolo": "attaccante",
+"importanza": "stella",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+42
+],
+"fonte": "Atalanta, brutte notizie per Sarri: problemi muscolari per Scamacca e Bellanova - La Gazzetta dello Sport"
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": "Bellanova out, squadra in attesa"
+"clima": "negativo",
+"note": "Due assenti per infortuni muscolari"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita in giornata, nessuna chiusura"
+"note": "Entrambe le squadre con assenti importanti"
 },
 "n_titoli": 50
 }
@@ -9432,11 +10800,22 @@
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "positivo",
-"note": "Frosinone in forma, attesa per la partita."
+"clima": "neutro",
+"note": ""
 },
 "ospite": {
 "assenti": [
+{
+"nome": "Ivan Ilić",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+34
+],
+"fonte": "Ilic, riuscito l’intervento chirurgico alla coscia sinistra. Tempi di recupero lunghi - LeccePrima"
+},
 {
 "nome": "Gaspar",
 "ruolo": "difensore",
@@ -9444,8 +10823,7 @@
 "motivo": "squalifica",
 "certezza": "certo",
 "titoli": [
-33,
-44
+39
 ],
 "fonte": "Serie A: due giornate di squalifica a Gaspar del Lecce - ANSA"
 }
@@ -9453,12 +10831,12 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Gaspar squalificato, squadra in attesa di recuperare la difesa."
+"note": ""
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita tra Frosinone e Lecce, attesa per la prestazione difensiva."
+"note": ""
 },
 "n_titoli": 50
 }
@@ -9471,21 +10849,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": ""
+"note": "nessuna informazione rilevante"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": ""
+"note": "nessuna informazione rilevante"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": ""
+"note": "nessuna informazione rilevante"
 },
-"n_titoli": 2
+"n_titoli": 3
 }
 },
 "Elversberg|Mainz|2026-10-30": {
@@ -9495,22 +10873,22 @@
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "negativo",
-"note": "Sconfitta 4-0 a Lipsia, un infortunio non specificato"
+"clima": "neutro",
+"note": "nessuna informazione su assenze"
 },
 "ospite": {
 "assenti": [],
-"turnover": "alto",
+"turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Impegnati in Coppa vs Bochum il 27/28 ottobre"
+"note": "nessuna informazione su assenze"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Elversberg reduce da ko pesante; Mainz con turnover per Coppa"
+"note": "nessuna informazione su porte chiuse"
 },
-"n_titoli": 33
+"n_titoli": 16
 }
 },
 "Le Havre|Paris SG|2026-10-30": {
@@ -9521,21 +10899,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna assenza confermata per Le Havre."
+"note": "nessuna informazione su assenti"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna assenza confermata per PSG."
+"note": "nessuna informazione su assenti"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita in stadio aperto, nessuna informazione di chiusura."
+"note": "nessuna informazione su porte chiuse"
 },
-"n_titoli": 16
+"n_titoli": 17
 }
 },
 "Lille|Lens|2026-10-30": {
@@ -9546,18 +10924,18 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna informazione su assenti per Lille"
+"note": "nessuna novità rilevante"
 },
 "ospite": {
 "assenti": [
 {
 "nome": "Jonathan Gradit",
 "ruolo": "difensore",
-"importanza": "stella",
+"importanza": "titolare",
 "motivo": "altro",
 "certezza": "certo",
 "titoli": [
-12
+9
 ],
 "fonte": "RC Lens – Paris FC : le groupe lensois sans Jonathan Gradit, ni Odsonne Edouard - Lensois.com"
 },
@@ -9568,61 +10946,47 @@
 "motivo": "altro",
 "certezza": "certo",
 "titoli": [
-12
+9
 ],
 "fonte": "RC Lens – Paris FC : le groupe lensois sans Jonathan Gradit, ni Odsonne Edouard - Lensois.com"
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": "Jonathan Gradit e Odsonne Edouard assenti"
+"clima": "negativo",
+"note": "due assenti chiave"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Nessuna informazione su porte chiuse"
+"note": "match senza pubblico chiuso"
 },
-"n_titoli": 14
+"n_titoli": 11
 }
 },
 "Sheffield United|Wrexham|2026-10-30": {
 "data": "2026-10-30",
 "r": {
 "casa": {
-"assenti": [
-{
-"nome": "Ryan One",
-"ruolo": "attaccante",
-"importanza": "titolare",
-"motivo": "infortunio",
-"certezza": "probabile",
-"titoli": [
-1,
-2,
-8
-],
-"fonte": "SUFC News: United braced for more bad news over One injury as theory rejected - The Star"
-}
-],
+"assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "negativo",
-"note": "One out, Bamford da valutare"
+"clima": "neutro",
+"note": ""
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "negativo",
-"note": "Reduce da sconfitta Blackburn"
+"clima": "neutro",
+"note": ""
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Match valido per Championship"
+"note": ""
 },
-"n_titoli": 21
+"n_titoli": 15
 }
 },
 "Villarreal|Espanol|2026-10-30": {
@@ -9633,21 +10997,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna informazione su assenze nei titoli."
+"note": "nessuna assenza segnalata"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessun titolo rilevante su assenze dell'Espanyol."
+"note": "nessuna assenza segnalata"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Jornada 11 di La Liga."
+"note": "partita regolare"
 },
-"n_titoli": 22
+"n_titoli": 23
 }
 },
 "Altrincham|Kidderminster|2026-10-27": {
@@ -10319,57 +11683,46 @@
 "casa": {
 "assenti": [
 {
-"nome": "Connor Ronan",
-"ruolo": "centrocampista",
-"importanza": "titolare",
-"motivo": "infortunio",
-"certezza": "probabile",
-"titoli": [
-2
-],
-"fonte": "Aberdeen FC: Update on Connor Ronan and Mats Knoester injuries - Press and Journal"
-},
-{
 "nome": "Mats Knoester",
 "ruolo": "difensore",
 "importanza": "titolare",
 "motivo": "infortunio",
-"certezza": "probabile",
+"certezza": "certo",
 "titoli": [
-2
+1
 ],
-"fonte": "Aberdeen FC: Update on Connor Ronan and Mats Knoester injuries - Press and Journal"
+"fonte": "Aberdeen facing centre-half injury crisis as Dons boss issues Mats Knoester update - Aberdeen Live"
 },
 {
-"nome": "Brad Lyons",
-"ruolo": "difensore",
-"importanza": "stella",
+"nome": "Connor Ronan",
+"ruolo": "centrocampista",
+"importanza": "titolare",
 "motivo": "infortunio",
-"certezza": "in dubbio",
+"certezza": "certo",
 "titoli": [
-7
+4
 ],
-"fonte": "Brad Lyons injury update as Aberdeen star fights for fitness - Daily Record"
+"fonte": "Aberdeen FC: Update on Connor Ronan and Mats Knoester injuries - Press and Journal"
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "negativo",
-"note": "Infortuni limitano la formazione"
+"note": "crisi in difesa per infortuni"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna novità rilevante"
+"note": "nessuna novità rilevante"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita regolare senza restrizioni"
+"note": "partita regolare senza restrizioni"
 },
-"n_titoli": 9
+"n_titoli": 16
 }
 },
 "Carlisle|Harrogate|2026-10-28": {
@@ -10384,40 +11737,40 @@
 "motivo": "infortunio",
 "certezza": "in dubbio",
 "titoli": [
-8
+12
 ],
 "fonte": "Blues boss gives update on Anderson and Ellis injuries - News & Star"
 },
 {
 "nome": "Ellis",
-"ruolo": "difensore",
+"ruolo": "centrocampista",
 "importanza": "titolare",
 "motivo": "infortunio",
 "certezza": "in dubbio",
 "titoli": [
-8
+12
 ],
 "fonte": "Blues boss gives update on Anderson and Ellis injuries - News & Star"
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": "Due difensori in dubbio per infortunio"
+"clima": "negativo",
+"note": ""
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna novità su assenze"
+"note": ""
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita regolare senza restrizioni"
+"note": "Nessuna informazione su porte chiuse"
 },
-"n_titoli": 14
+"n_titoli": 17
 }
 },
 "Carrarese|Arezzo|2026-10-28": {
@@ -10425,22 +11778,22 @@
 "r": {
 "casa": {
 "assenti": [],
-"turnover": "nessuno",
+"turnover": "medio",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": "Nessuna novità su assenze"
+"clima": "positivo",
+"note": "Carrarese cerca conferme nel derby"
 },
 "ospite": {
 "assenti": [],
 "turnover": "medio",
 "nuovo_allenatore": false,
 "clima": "positivo",
-"note": "Turnover in programma, morale positivo"
+"note": "Arezzo vuole ripartire"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Nessuna informazione su chiusura stadio"
+"note": "Derby di Serie B a Carrara"
 },
 "n_titoli": 50
 }
@@ -10449,37 +11802,37 @@
 "data": "2026-10-28",
 "r": {
 "casa": {
+"assenti": [],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Infortuni importanti limitano la squadra"
+},
+"ospite": {
 "assenti": [
 {
-"nome": "Alistair Johnston",
-"ruolo": "difensore",
-"importanza": "stella",
+"nome": "Sam Cleall-Harding",
+"ruolo": "centrocampista",
+"importanza": "titolare",
 "motivo": "infortunio",
-"certezza": "certo",
+"certezza": "probabile",
 "titoli": [
-2
+27
 ],
-"fonte": "Alistair Johnston faces fresh Celtic injury setback as Martin O’Neill issues update - The Scottish Sun"
+"fonte": "Jim Goodwin reveals Dundee United recovery plan for Sam Cleall-Harding after injury woe - The Courier"
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "negativo",
-"note": "Johnston fuori per settimane"
-},
-"ospite": {
-"assenti": [],
-"turnover": "nessuno",
-"nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna assenza confermata"
+"note": "Nessuna altra novità"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
 "note": "Partita regolare senza restrizioni"
 },
-"n_titoli": 37
+"n_titoli": 34
 }
 },
 "Dundee|Kilmarnock|2026-10-28": {
@@ -10490,21 +11843,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna altra novità"
+"note": "nessuna informazione rilevante"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna assenza segnalata"
+"note": "nessuna informazione rilevante"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita regolare"
+"note": "nessuna informazione su chiusura"
 },
-"n_titoli": 11
+"n_titoli": 14
 }
 },
 "Forest Green|Eastleigh|2026-10-28": {
@@ -10544,75 +11897,76 @@
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-1
+2,
+4
 ],
 "fonte": "Milne out for season as Hearts' injury woes continue - BBC"
 }
 ],
-"turnover": "medio",
+"turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "negativo",
-"note": "Infortuni gravissimi, squadra indebolita"
+"note": "Milne fuori per tutta la stagione"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna assenza confermata"
+"note": "Nessun giocatore confermato assente"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita a porte aperte, clima teso"
+"note": "Partita senza restrizioni"
 },
-"n_titoli": 41
+"n_titoli": 44
 }
 },
 "Juve Stabia|Verona|2026-10-28": {
 "data": "2026-10-28",
 "r": {
 "casa": {
+"assenti": [
+{
+"nome": "Magnino",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "altro",
+"certezza": "certo",
+"titoli": [
+5
+],
+"fonte": "Empoli, subito al lavoro. Con la Juve Stabia senza Magnino e Shpendi - Empoli Channel"
+},
+{
+"nome": "Shpendi",
+"ruolo": "attaccante",
+"importanza": "titolare",
+"motivo": "altro",
+"certezza": "certo",
+"titoli": [
+5
+],
+"fonte": "Empoli, subito al lavoro. Con la Juve Stabia senza Magnino e Shpendi - Empoli Channel"
+}
+],
+"turnover": "alto",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Necessario turnover, concentrazione"
+},
+"ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "positivo",
-"note": "Quattro punti di penalizzazione dalla Giustizia Sportiva."
-},
-"ospite": {
-"assenti": [
-{
-"nome": "Davide De Battisti",
-"ruolo": "difensore",
-"importanza": "riserva",
-"motivo": "infortunio",
-"certezza": "in dubbio",
-"titoli": [
-41
-],
-"fonte": "Bollettino medico: Davide De Battisti e Tomas Suslov - Hellas Verona"
-},
-{
-"nome": "Tomas Suslov",
-"ruolo": "centrocampista",
-"importanza": "riserva",
-"motivo": "infortunio",
-"certezza": "in dubbio",
-"titoli": [
-41
-],
-"fonte": "Bollettino medico: Davide De Battisti e Tomas Suslov - Hellas Verona"
-}
-],
-"turnover": "nessuno",
-"nuovo_allenatore": false,
-"clima": "negativo",
-"note": "Senza vittorie in trasferta, squadra smarrita e in difficoltà."
+"clima": "neutro",
+"note": "Nessuna assenza segnalata"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Biglietti non in vendita ai residenti in provincia di Verona."
+"note": "Partita di Serie B senza restrizioni"
 },
 "n_titoli": 50
 }
@@ -10625,31 +11979,19 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna informazione su assenti per la casa."
+"note": "nessuna informazione su assenti"
 },
 "ospite": {
-"assenti": [
-{
-"nome": "Palumbo",
-"ruolo": "attaccante",
-"importanza": "titolare",
-"motivo": "altro",
-"certezza": "certo",
-"titoli": [
-32
-],
-"fonte": "Verso Palermo Pisa, Inzaghi: cambierò diversi giocatori, Palumbo non ci sarà - Giornale di Sicilia"
-}
-],
-"turnover": "nessuno",
+"assenti": [],
+"turnover": "medio",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Tramoni è in dubbio, Palumbo assente."
+"note": "possibili rotazioni di squadra"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita in programma senza chiusura stadio."
+"note": "nessuna informazione su porte chiuse"
 },
 "n_titoli": 50
 }
@@ -10661,22 +12003,22 @@
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": "Nessuna informazione su assenti o clima."
+"clima": "positivo",
+"note": "Nessuna assenza segnalata"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna informazione su assenti o clima."
+"note": "Nessuna assenza segnalata"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Nessuna informazione su porte chiuse o campo neutro."
+"note": "Nessuna informazione su chiusura"
 },
-"n_titoli": 27
+"n_titoli": 20
 }
 },
 "St Mirren|Hibernian|2026-10-28": {
@@ -10687,9 +12029,9 @@
 {
 "nome": "Jonah Ayunga",
 "ruolo": "attaccante",
-"importanza": "stella",
+"importanza": "titolare",
 "motivo": "infortunio",
-"certezza": "probabile",
+"certezza": "certo",
 "titoli": [
 1
 ],
@@ -10698,22 +12040,636 @@
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": "Ayunga out per operazione al ginocchio"
+"clima": "negativo",
+"note": "Ayunga fuori per operazione al ginocchio"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessun assente citato nei titoli per questa gara"
+"note": "nessuna assenza confermata"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Match di Premiership al St Mirren Park"
+"note": "partita regolare"
 },
-"n_titoli": 27
+"n_titoli": 24
+}
+},
+"Sutton|Aldershot|2026-10-28": {
+"data": "2026-10-28",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione su assenti"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione su assenti"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione su porte chiuse"
+},
+"n_titoli": 13
+}
+},
+"Ajax|AZ Alkmaar|2026-10-31": {
+"data": "2026-10-31",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna assenza segnalata"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione rilevante"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita regolare senza restrizioni"
+},
+"n_titoli": 29
+}
+},
+"Aston Villa|Fulham|2026-10-31": {
+"data": "2026-10-31",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Aaron Wan-Bissaka",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+5
+],
+"fonte": "Aston Villa Injury News vs Bournemouth: Wan-Bissaka and Ruggeri Out - The False 9"
+},
+{
+"nome": "Matteo Ruggeri",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+5
+],
+"fonte": "Aston Villa Injury News vs Bournemouth: Wan-Bissaka and Ruggeri Out - The False 9"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Numerosi difensori assenti, impatto negativo"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna assenza segnalata"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita regolare senza restrizioni"
+},
+"n_titoli": 34
+}
+},
+"Augsburg|Freiburg|2026-10-31": {
+"data": "2026-10-31",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenti"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenti"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna indicazione di chiusura"
+},
+"n_titoli": 40
+}
+},
+"Barcelona|Alaves|2026-10-31": {
+"data": "2026-10-31",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Disturbi e allarme in città"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione rilevante"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita senza restrizioni"
+},
+"n_titoli": 28
+}
+},
+"Bayern Munich|Dortmund|2026-10-31": {
+"data": "2026-10-31",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "alto",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna assenza segnalata"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna assenza segnalata"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "partita regolare"
+},
+"n_titoli": 18
+}
+},
+"Betis|Malaga|2026-10-31": {
+"data": "2026-10-31",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Antony",
+"ruolo": "attaccante",
+"importanza": "stella",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+1,
+2,
+3
+],
+"fonte": "Antony se cae a última hora de la convocatoria del Betis por un proceso vírico - MundoBetis"
+},
+{
+"nome": "Facundo Bernal",
+"ruolo": "difensore",
+"importanza": "riserva",
+"motivo": "squalifica",
+"certezza": "certo",
+"titoli": [
+16
+],
+"fonte": "!Facundo Bernal es sancionado con 4 partidos! ¿qué te parece la sanción? - Comuniate"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Due assenti chiave, Antony e Bernal, influiscono negativamente."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Assenze minori, impatto limitato."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna restrizione di pubblico."
+},
+"n_titoli": 41
+}
+},
+"Bologna|Monza|2026-10-31": {
+"data": "2026-10-31",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna assenza segnalata"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna assenza segnalata"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "partita regolare senza restrizioni"
+},
+"n_titoli": 50
+}
+},
+"Bolton|Bristol City|2026-10-31": {
+"data": "2026-10-31",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna assenza segnalata"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna assenza segnalata"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita senza info su assenze"
+},
+"n_titoli": 14
+}
+},
+"Bournemouth|Leeds|2026-10-31": {
+"data": "2026-10-31",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Toth",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+13
+],
+"fonte": "Bournemouth vs Man Utd Lineups: Kroupi Back, Toth Out, Sesko a Doubt - The False 9"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna novità rilevante oltre due assenze"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Diverse stelle in dubbio"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita regolare senza restrizioni"
+},
+"n_titoli": 50
+}
+},
+"Brentford|Nott'm Forest|2026-10-31": {
+"data": "2026-10-31",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Andrews",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+11
+],
+"fonte": "Andrews on major injury blow for Brentford - Premier League"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna nota"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna nota"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna nota"
+},
+"n_titoli": 19
+}
+},
+"Burnley|Portsmouth|2026-10-31": {
+"data": "2026-10-31",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenti"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenti"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna informazione su porte chiuse"
+},
+"n_titoli": 26
+}
+},
+"Cambuur|Go Ahead Eagles|2026-10-31": {
+"data": "2026-10-31",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna informazione aggiuntiva"
+},
+"n_titoli": 17
+}
+},
+"Chelsea|Man United|2026-10-31": {
+"data": "2026-10-31",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Emi Martinez",
+"ruolo": "portiere",
+"importanza": "stella",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+9
+],
+"fonte": "Emi Martinez Injury Update: Jaw Surgery Done, No Official Return Date - The False 9"
+},
+{
+"nome": "Chavarria",
+"ruolo": "difensore",
+"importanza": "riserva",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+5
+],
+"fonte": "Pedro, Martinez, Chavarria, Emegha - Chelsea injury news and return dates before Liverpool - Football London"
+},
+{
+"nome": "Emegha",
+"ruolo": "attaccante",
+"importanza": "riserva",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+5
+],
+"fonte": "Pedro, Martinez, Chavarria, Emegha - Chelsea injury news and return dates before Liverpool - Football London"
+}
+],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Numerosi assenti per infortuni"
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Mainoo",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+29
+],
+"fonte": "Man Utd Injury News vs Chelsea: Rashford a Doubt, Mainoo and Sesko Out - The False 9"
+},
+{
+"nome": "Sesko",
+"ruolo": "attaccante",
+"importanza": "riserva",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+29
+],
+"fonte": "Man Utd Injury News vs Chelsea: Rashford a Doubt, Mainoo and Sesko Out - The False 9"
+}
+],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Rashford incerto, altri fuori"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita importante, molte assenze"
+},
+"n_titoli": 50
+}
+},
+"Coventry|Sunderland|2026-10-31": {
+"data": "2026-10-31",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna assenza confermata"
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Cameron Mundle",
+"ruolo": "attaccante",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+15
+],
+"fonte": "Le Bris on Mundle and Diarra injuries - SAFC"
+},
+{
+"nome": "Diarra",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+15
+],
+"fonte": "Le Bris on Mundle and Diarra injuries - SAFC"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "due titolari assenti per infortunio"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "partita regolare senza restrizioni"
+},
+"n_titoli": 39
+}
+},
+"Feyenoord|For Sittard|2026-10-31": {
+"data": "2026-10-31",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": ""
+},
+"n_titoli": 26
+}
+},
+"Heerenveen|Nijmegen|2026-10-31": {
+"data": "2026-10-31",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Bart van Rooij",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+6
+],
+"fonte": "Bart van Rooij viel uit in de wedstrijd tegen AZ - Blessures en schorsingen"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": ""
+},
+"n_titoli": 6
+}
+},
+"Hull|Ipswich|2026-10-31": {
+"data": "2026-10-31",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna notizia su assenti per Ipswich"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna notizia su assenti per Hull"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Titoli riferiti a partite precedenti"
+},
+"n_titoli": 33
 }
 }
 }
