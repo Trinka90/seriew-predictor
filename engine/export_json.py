@@ -49,7 +49,7 @@ def _news(df):
 def _abs(a):
     return {"nome": a["player"], "motivo": a.get("motivo") or a.get("reason") or "", "fonte_dato": a.get("src"),
             "ruolo": a.get("ruolo"), "importanza": a.get("importanza"), "certezza": a.get("certezza"),
-            "titolo": a.get("fonte"), "effetto": round(a["att"] + a["def"], 3)}
+            "titolo": a.get("fonte"), "effetto": round(a["att"] + a["def"], 3), "memoria": bool(a.get("memoria"))}
 
 
 def _step(status, name, fn, *args):

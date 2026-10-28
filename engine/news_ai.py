@@ -166,26 +166,57 @@ def _load_cache():
 def _save_cache(c):
     limit = (dt.date.today() - dt.timedelta(days=14)).isoformat()
     last = {k: v for k, v in c.pop("_ultima", {}).items() if v.get("data", "9999") >= limit}
+    mem = {k: v for k, v in c.pop("_assenti", {}).items() if v.get("data", "9999") >= limit}
     c = {k: v for k, v in c.items() if v.get("data", "9999") >= limit}
-    c["_ultima"] = last
+    c["_ultima"], c["_assenti"] = last, mem
     CACHE.parent.mkdir(exist_ok=True)
     CACHE.write_text(json.dumps(c, ensure_ascii=False, indent=0), encoding="utf-8")
 
 
+# titoli che non dicono nulla su chi gioca (orari, TV, quote): occupano posto e fanno sparire quelli utili
+NOISE = re.compile(r"dove vedere|in tv\b|streaming|diretta tv|\bdazn\b|\bsky\b|orario|pronostic|\bquote\b|"
+                   r"highlights|\blive\b|risultat|biglietti|where to watch|tv channel|betting|odds", re.I)
+USEFUL_TAGS = ("infortunio", "squalifica", "formazione", "rientro", "allenatore")
+
+
 def _titles(con, team):
+    """Titoli per l'IA: prima quelli su infortuni/squalifiche/formazioni, poi gli altri; niente orari/TV/quote."""
     since = (dt.date.today() - dt.timedelta(days=C.NEWS_DAYS)).isoformat()
-    seen, out = set(), []
-    for pub, title, src in con.execute(
-            "SELECT published, title, source FROM news WHERE team=? AND published>=? ORDER BY published DESC",
+    seen, useful, other = set(), [], []
+    for pub, title, src, tags in con.execute(
+            "SELECT published, title, source, tags FROM news WHERE team=? AND published>=? ORDER BY published DESC",
             (team, since)):
         key = re.sub(r"\W+", "", title.lower())[:80]
-        if key in seen:
+        if key in seen or NOISE.search(title):
             continue
         seen.add(key)
-        out.append((pub, title, src))
-        if len(out) >= MAX_TITLES:
-            break
-    return out
+        (useful if any(t in (tags or "") for t in USEFUL_TAGS) else other).append((pub, title, src))
+    return (useful + other)[:MAX_TITLES]
+
+
+BACK = re.compile(r"recuperat|rientr|torna|disponibil|convocat|in gruppo|ok per|back in|returns|fit again|available", re.I)
+
+
+def _remember(mem, mkey, date, res, th, ta):
+    """Memoria degli assenti della stessa partita: un infortunato trovato ieri non guarisce perché oggi
+    il titolo non è più tra quelli letti. Si toglie solo se un titolo nuovo ne parla come recuperato."""
+    today = dt.date.today().isoformat()
+    old = mem.get(mkey, {})
+    new = {"data": date}
+    for side, titles in (("casa", th), ("ospite", ta)):
+        cur = {a["nome"].lower(): dict(a, visto=today) for a in res[side]["assenti"]}
+        for k, a in (old.get(side) or {}).items():
+            if k in cur:
+                continue
+            surname = k.split()[-1]
+            back = any(surname in _fold(t) and BACK.search(t) for _, t, _ in titles)
+            fresh = a.get("visto", today) >= (dt.date.today() - dt.timedelta(days=4)).isoformat()
+            if not back and fresh:
+                res[side]["assenti"].append({**a, "memoria": True})
+                cur[k] = a
+        new[side] = cur
+    mem[mkey] = new
+    return res
 
 
 def _left():
@@ -364,6 +395,7 @@ def analyze(con, fixtures):
         return {}, {"attivo": False}
     cache = _load_cache()
     last = cache.get("_ultima", {})   # ultima analisi riuscita per partita: riserva se oggi non si può
+    mem = cache.get("_assenti", {})   # assenti già trovati per ogni partita
     results = {}
     for lg, date, home, away in fixtures:
         th, ta = _titles(con, home), _titles(con, away)
@@ -371,11 +403,11 @@ def analyze(con, fixtures):
             continue
         stats["partite"] += 1
         key = hashlib.sha1(json.dumps([PROMPT_VERSION, home, away, date, th, ta]).encode()).hexdigest()
+        mkey = f"{home}|{away}|{date}"
         if key in cache:
-            results[(home, away)] = cache[key]["r"]
+            results[(home, away)] = _remember(mem, mkey, date, json.loads(json.dumps(cache[key]["r"])), th, ta)
             stats["da_cache"] += 1
             continue
-        mkey = f"{home}|{away}|{date}"
         dead = all(_failures.get(p["nome"], 0) >= 3 for p in ACTIVE)
         if stats["chiamate"] >= MAX_CALLS or _left() < 30 or dead:   # il resto al prossimo giro
             stats["rimandate"] += 1
@@ -425,8 +457,11 @@ def analyze(con, fixtures):
                     keep = [a for a in res[side]["assenti"] if not a.pop("_scarta", False)]
                     stats["scartati"] = stats.get("scartati", 0) + len(res[side]["assenti"]) - len(keep)
                     res[side]["assenti"] = keep
+            cache[key] = {"data": date, "r": json.loads(json.dumps(res))}
+            res = _remember(mem, mkey, date, res, th, ta)
+            stats["ricordati"] = stats.get("ricordati", 0) + sum(a.get("memoria", False) for sd in ("casa", "ospite")
+                                                                  for a in res[sd]["assenti"])
             results[(home, away)] = res
-            cache[key] = {"data": date, "r": res}
             last[mkey] = {"data": date, "r": res}
             stats["chiamate"] += 1
         except Exception as e:
@@ -437,6 +472,7 @@ def analyze(con, fixtures):
                 stats["precedenti"] += 1
         time.sleep(0.3)
     cache["_ultima"] = last
+    cache["_assenti"] = mem
     _save_cache(cache)
     stats["attivo"] = True
     stats["fornitore"] = ", ".join(f"{k} ({v})" for k, v in _used.items()) or ACTIVE[0]["nome"]
@@ -466,7 +502,7 @@ def store(con, results):
                 if not a.get("nome"):
                     continue
                 ia, idf = impact_of(a)
-                info = json.dumps({k: a.get(k) for k in ("ruolo", "importanza", "certezza", "motivo", "fonte")},
+                info = json.dumps({k: a.get(k) for k in ("ruolo", "importanza", "certezza", "motivo", "fonte", "memoria")},
                                   ensure_ascii=False)
                 con.execute("INSERT OR REPLACE INTO absences(team, player, reason, source, updated, impact_att, impact_def, "
                             "info, partita) VALUES(?,?,?,?,?,?,?,?,?)",

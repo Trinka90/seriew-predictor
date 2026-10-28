@@ -334,7 +334,7 @@ function newsList(arr) {
   return (arr || []).map(n => `<a href="${esc(n.link)}" target="_blank" rel="noopener">${(n.tag || "").split(",").filter(Boolean).map(t => `<span class="tag">${esc(t)}</span>`).join("")}${esc(n.titolo)} <span class="mut">· ${esc(n.fonte)}</span></a>`).join("") || `<div class="mut small">nessuna notizia recente</div>`;
 }
 const IMP = {stella: "⭐ chiave", titolare: "titolare", riserva: "riserva"};
-const abs = arr => arr.length ? arr.map(a => `<div class="mk"><span><b>${esc(a.nome)}</b> <span class="mut">${esc([a.ruolo, IMP[a.importanza] || a.importanza, a.motivo, a.certezza].filter(Boolean).join(" · "))}</span>${a.titolo ? `<br><span class="mut small">“${esc(a.titolo)}”</span>` : ""}</span><span>${a.effetto ? "−" + Math.round(a.effetto * 100) + "%" : ""}</span></div>`).join("") : `<span class="mut small">nessuno segnalato</span>`;
+const abs = arr => arr.length ? arr.map(a => `<div class="mk"><span><b>${esc(a.nome)}</b> <span class="mut">${esc([a.ruolo, IMP[a.importanza] || a.importanza, a.motivo, a.certezza].filter(Boolean).join(" · "))}</span>${a.titolo ? `<br><span class="mut small">“${esc(a.titolo)}”${a.memoria ? " · segnalato nei giorni scorsi" : ""}</span>` : ""}</span><span>${a.effetto ? "−" + Math.round(a.effetto * 100) + "%" : ""}</span></div>`).join("") : `<span class="mut small">nessuno segnalato</span>`;
 
 
 function autoBuild(cands, f) {
