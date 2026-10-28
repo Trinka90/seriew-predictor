@@ -11639,6 +11639,609 @@
 "n_titoli": 16
 }
 },
+"57de078b13152cf5f6e25e778b0c5837583cdc5e": {
+"data": "2026-10-28",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Connor Ronan",
+"ruolo": "centrocampista",
+"importanza": "stella",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+3
+],
+"fonte": "Connor Ronan Injury: Aberdeen Star Out as Hampden Looms - Dave.Sport"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Infortuni chiave indeboliscono Aberdeen"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna novità su assenze"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita regolare senza restrizioni"
+},
+"n_titoli": 10
+}
+},
+"e0b858bad2062a0e412d325a0e700daf70d055cc": {
+"data": "2026-10-28",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Anderson",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "probabile",
+"titoli": [
+12
+],
+"fonte": "Blues boss gives update on Anderson and Ellis injuries - News & Star"
+},
+{
+"nome": "Ellis",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "probabile",
+"titoli": [
+12
+],
+"fonte": "Blues boss gives update on Anderson and Ellis injuries - News & Star"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": ""
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione su porte chiuse"
+},
+"n_titoli": 15
+}
+},
+"a9610980e25b9745854307b75fe4322e9d13a8c5": {
+"data": "2026-10-28",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "positivo",
+"note": "Cerca conferme dopo la sconfitta con la capolista Palermo"
+},
+"ospite": {
+"assenti": [],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "In crisi, cambia formazione e vuole rialzarsi"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Derby toscano allo Stadio dei Marmi, oltre 600 tifosi amaranto"
+},
+"n_titoli": 50
+}
+},
+"14f77cc9addcba5f8808b1a8a55b70d74a9f3748": {
+"data": "2026-10-28",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Alistair Johnston",
+"ruolo": "difensore",
+"importanza": "stella",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+16
+],
+"fonte": "Johnston’s latest hamstring injury is ‘shorter term’ but right-back is ruled out until after international break - Celtic news now - Celtic FC News"
+}
+],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Infortuni limitati, cambi quattro titolari"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna novità infortuni"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita regolare senza restrizioni"
+},
+"n_titoli": 30
+}
+},
+"9a482d841d23ccf9d9fde7d8795e587714b7f585": {
+"data": "2026-10-28",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione rilevante nei titoli per questa partita."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione rilevante nei titoli per questa partita."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Titoli non pertinenti: riguardano Dundee United o altre partite."
+},
+"n_titoli": 12
+}
+},
+"cc7fb85cf15d4faccc58c93e09ff98c1c2823276": {
+"data": "2026-10-28",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione rilevante sui giocatori nei titoli."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Titoli su Eastleigh riguardano crollo edificio in Kenya, non il club."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione specifica sulla partita nei titoli."
+},
+"n_titoli": 11
+}
+},
+"32c21b88bf979c419a9f5f62579c682f3269ba4f": {
+"data": "2026-10-28",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Ellertsson",
+"ruolo": "attaccante",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+9
+],
+"fonte": "Genoa, si ferma Ellertsson: cambio obbligato nel primo contro la Juventus, cosa è successo e le sue condizioni - SOS Fanta"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Ellertsson out, cambio obbligato in attacco"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Dubbio Alajbegovic-Muani e Sarr-Koopmeiners per Spalletti"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Juventus vuole lanciare un segnale al Ferraris"
+},
+"n_titoli": 50
+}
+},
+"4d9db7592445df0cadb9dd5c5e2431aca09b5415": {
+"data": "2026-10-28",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Harry Milne",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+6,
+7,
+10
+],
+"fonte": "Milne loss compounds Hearts' 'scarcely believable injury record' - AOL.com"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Crisi infortuni enorme: 12-13 assenti, squadra decimata."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": ""
+},
+"n_titoli": 50
+}
+},
+"9a0d4b2e00c4677da2640b7df8bb33176513dcb7": {
+"data": "2026-10-28",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna assenza rilevante nei titoli disponibili."
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Lella",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "squalifica",
+"certezza": "certo",
+"titoli": [
+27
+],
+"fonte": "Juve Stabia-Hellas Verona: Baroni rilancia Mosquera, Lella squalificato e Bradaric out - Bottadiculo"
+},
+{
+"nome": "Bradaric",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+27
+],
+"fonte": "Juve Stabia-Hellas Verona: Baroni rilancia Mosquera, Lella squalificato e Bradaric out - Bottadiculo"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Lunga lista di assenti per Baroni; squadra in difficoltà."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Trasferta cruciale per il Verona allo stadio Menti."
+},
+"n_titoli": 50
+}
+},
+"315d5903f31ef498751303f6a791e70c65374a7d": {
+"data": "2026-10-28",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Sconfitta 2-4, fischi del pubblico, Amorim critica la stanchezza."
+},
+"ospite": {
+"assenti": [
+{
+"nome": "De Silvestri",
+"ruolo": "difensore",
+"importanza": "riserva",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+49
+],
+"fonte": "Bologna, i convocati per il Milan: out De Silvestri ed Enem. Prima chiamata per Lo Monaco - La Gazzetta dello Sport"
+},
+{
+"nome": "Enem",
+"ruolo": "difensore",
+"importanza": "riserva",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+49
+],
+"fonte": "Bologna, i convocati per il Milan: out De Silvestri ed Enem. Prima chiamata per Lo Monaco - La Gazzetta dello Sport"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "positivo",
+"note": "Vittoria 4-2 a San Siro, tripletta di Mbangula."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Sconfitta casalinga del Milan, tripletta di Mbangula per il Bologna."
+},
+"n_titoli": 50
+}
+},
+"6e200096c8a20a108bf7ffc11b12ab0b094c9173": {
+"data": "2026-10-28",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Cercano il riscatto dopo risultati negativi."
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Badiashile",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+47,
+48
+],
+"fonte": "Il Napoli perde altri pezzi in difesa: Badiashile e Spinazzola ko, il comunicato, i tempi di recupero e quante partite saltano - Goal.com"
+},
+{
+"nome": "Spinazzola",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+47,
+48
+],
+"fonte": "Il Napoli perde altri pezzi in difesa: Badiashile e Spinazzola ko, il comunicato, i tempi di recupero e quante partite saltano - Goal.com"
+}
+],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Allegri squalificato 2 giornate, Lobotka ko in campo alla caviglia."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Allegri squalificato, Lobotka infortunato durante la gara."
+},
+"n_titoli": 50
+}
+},
+"ac47afabd3cbcdbe88352271df479a99bb4a762e": {
+"data": "2026-10-28",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Solet",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+8
+],
+"fonte": "Parma-Udinese, le probabili formazioni: non recupera Solet - Tutto Udinese"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nicolussi Caviglia e Almqvist rientro graduale, non convocati."
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Solet",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+50
+],
+"fonte": "Udinese, esami in vista per Solet e Alaba: ma c'è già il verdetto per il Parma - SOS Fanta"
+},
+{
+"nome": "Alaba",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+50
+],
+"fonte": "Udinese, esami in vista per Solet e Alaba: ma c'è già il verdetto per il Parma - SOS Fanta"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Sei sconfitte consecutive, momento difficile, pressione sulla società."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Scontro salvezza, pareggio 0-0, rigore parato da Okoye."
+},
+"n_titoli": 50
+}
+},
+"ddb5d7165d82932b081e669d574ee826c5e1d30f": {
+"data": "2026-10-28",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Tramoni",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+9
+],
+"fonte": "I convocati di mister Bianco per Pisa-Palermo: Tramoni non recupera, la lista - VTrend"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Pisa affronta Palermo con una squadra leggermente infortunata."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Palermo parte senza assenti noti."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita a porte aperte, atmosfera vivace."
+},
+"n_titoli": 50
+}
+},
+"69a5c454116a32ba44716fbbe7de7faeeb989c9d": {
+"data": "2026-10-28",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "positivo",
+"note": "Mikulic torna dopo 20 mesi, pronto a partire titolare"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Stella con problema di fitness ma attesa in campo"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione specifica sui titoli"
+},
+"n_titoli": 9
+}
+},
+"dff081ed9a2342d890b612994b637fef22dabf7a": {
+"data": "2026-10-28",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Jonah Ayunga",
+"ruolo": "attaccante",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+1
+],
+"fonte": "St Mirren striker Jonah Ayunga set for fresh ‘tidy-up’ operation on knee injury - The St Mirren Mercury"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Operazione al ginocchio per Ayunga; 12 assenti totali tra le due squadre."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Infortuni già gestiti nella sfida contro il Celtic."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "12 giocatori assenti totali tra le due squadre secondo Edinburgh News."
+},
+"n_titoli": 28
+}
+},
+"dc66ed662c8dff3315080da9bc9e80afe3c2efcd": {
+"data": "2026-10-28",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione su assenti o clima."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione su assenti o clima."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione su chiusura o campo neutro."
+},
+"n_titoli": 8
+}
+},
 "_ultima": {
 "Andorra|Burgos|2026-10-26": {
 "data": "2026-10-26",
@@ -12017,32 +12620,32 @@
 "assenti": [
 {
 "nome": "Ellertsson",
-"ruolo": "difensore",
+"ruolo": "attaccante",
 "importanza": "titolare",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-8
+9
 ],
 "fonte": "Genoa, si ferma Ellertsson: cambio obbligato nel primo contro la Juventus, cosa è successo e le sue condizioni - SOS Fanta"
 }
 ],
-"turnover": "medio",
+"turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna novità rilevante oltre assenza"
+"note": "Ellertsson out, cambio obbligato in attacco"
 },
 "ospite": {
 "assenti": [],
-"turnover": "medio",
+"turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Assenza di attaccante chiave"
+"note": "Dubbio Alajbegovic-Muani e Sarr-Koopmeiners per Spalletti"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita regolare senza restrizioni"
+"note": "Juventus vuole lanciare un segnale al Ferraris"
 },
 "n_titoli": 50
 }
@@ -12061,16 +12664,40 @@
 "titoli": [
 8
 ],
-"fonte": "Milan, infortunio per Tomori: cambio obbligato col Bologna - Fantacalcio"
+"fonte": "Milan, infortunio per Tomori: cambio obbligato col Bologna - Fantacalcio",
+"visto": "2026-10-28",
+"memoria": true
 }
 ],
-"turnover": "nessuno",
+"turnover": "medio",
 "nuovo_allenatore": false,
 "clima": "negativo",
-"note": "Milan ha subito 4-2, Tomori fuori per infortunio"
+"note": "Sconfitta 2-4, fischi del pubblico, Amorim critica la stanchezza."
 },
 "ospite": {
 "assenti": [
+{
+"nome": "De Silvestri",
+"ruolo": "difensore",
+"importanza": "riserva",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+49
+],
+"fonte": "Bologna, i convocati per il Milan: out De Silvestri ed Enem. Prima chiamata per Lo Monaco - La Gazzetta dello Sport"
+},
+{
+"nome": "Enem",
+"ruolo": "difensore",
+"importanza": "riserva",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+49
+],
+"fonte": "Bologna, i convocati per il Milan: out De Silvestri ed Enem. Prima chiamata per Lo Monaco - La Gazzetta dello Sport"
+},
 {
 "nome": "Loftus-Cheek",
 "ruolo": "attaccante",
@@ -12080,18 +12707,20 @@
 "titoli": [
 32
 ],
-"fonte": "Milan, emergenza infortuni verso il Bologna: con Loftus-Cheek ko, sono 8 gli assenti - La Gazzetta dello Sport"
+"fonte": "Milan, emergenza infortuni verso il Bologna: con Loftus-Cheek ko, sono 8 gli assenti - La Gazzetta dello Sport",
+"visto": "2026-10-28",
+"memoria": true
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "positivo",
-"note": "Bologna ha vinto, ma due titolari assenti per infortuni"
+"note": "Vittoria 4-2 a San Siro, tripletta di Mbangula."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita a porte aperte, risultato 4-2 per Bologna"
+"note": "Sconfitta casalinga del Milan, tripletta di Mbangula per il Bologna."
 },
 "n_titoli": 50
 }
@@ -12104,21 +12733,10 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna novità rilevante per Monza"
+"note": "Cercano il riscatto dopo risultati negativi."
 },
 "ospite": {
 "assenti": [
-{
-"nome": "Lobotka",
-"ruolo": "centrocampista",
-"importanza": "titolare",
-"motivo": "infortunio",
-"certezza": "certo",
-"titoli": [
-26
-],
-"fonte": "Ancora un infortunio nel Napoli: Lobotka esce in barella dopo pochi minuti contro il Monza - NapoliToday"
-},
 {
 "nome": "Badiashile",
 "ruolo": "difensore",
@@ -12126,7 +12744,8 @@
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-43
+47,
+48
 ],
 "fonte": "Il Napoli perde altri pezzi in difesa: Badiashile e Spinazzola ko, il comunicato, i tempi di recupero e quante partite saltano - Goal.com"
 },
@@ -12137,20 +12756,34 @@
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-43
+47,
+48
 ],
 "fonte": "Il Napoli perde altri pezzi in difesa: Badiashile e Spinazzola ko, il comunicato, i tempi di recupero e quante partite saltano - Goal.com"
+},
+{
+"nome": "Lobotka",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+26
+],
+"fonte": "Ancora un infortunio nel Napoli: Lobotka esce in barella dopo pochi minuti contro il Monza - NapoliToday",
+"visto": "2026-10-28",
+"memoria": true
 }
 ],
-"turnover": "nessuno",
+"turnover": "medio",
 "nuovo_allenatore": false,
 "clima": "negativo",
-"note": "Napoli colpito da infortuni importanti"
+"note": "Allegri squalificato 2 giornate, Lobotka ko in campo alla caviglia."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita senza restrizioni di pubblico"
+"note": "Allegri squalificato, Lobotka infortunato durante la gara."
 },
 "n_titoli": 50
 }
@@ -12159,23 +12792,58 @@
 "data": "2026-10-28",
 "r": {
 "casa": {
-"assenti": [],
+"assenti": [
+{
+"nome": "Solet",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+8
+],
+"fonte": "Parma-Udinese, le probabili formazioni: non recupera Solet - Tutto Udinese"
+}
+],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "negativo",
-"note": "partita di salvezza, tono critico"
+"clima": "neutro",
+"note": "Nicolussi Caviglia e Almqvist rientro graduale, non convocati."
 },
 "ospite": {
-"assenti": [],
+"assenti": [
+{
+"nome": "Solet",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+50
+],
+"fonte": "Udinese, esami in vista per Solet e Alaba: ma c'è già il verdetto per il Parma - SOS Fanta"
+},
+{
+"nome": "Alaba",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+50
+],
+"fonte": "Udinese, esami in vista per Solet e Alaba: ma c'è già il verdetto per il Parma - SOS Fanta"
+}
+],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "negativo",
-"note": "partita di salvezza, tono critico"
+"note": "Sei sconfitte consecutive, momento difficile, pressione sulla società."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "0-0, tensione per la classifica"
+"note": "Scontro salvezza, pareggio 0-0, rigore parato da Okoye."
 },
 "n_titoli": 50
 }
@@ -13168,13 +13836,13 @@
 {
 "nome": "Connor Ronan",
 "ruolo": "centrocampista",
-"importanza": "titolare",
+"importanza": "stella",
 "motivo": "infortunio",
-"certezza": "probabile",
+"certezza": "certo",
 "titoli": [
-2
+3
 ],
-"fonte": "Rangers Opponents Aberdeen Await Connor Ronan Knee Injury Verdict - roundtable.io"
+"fonte": "Connor Ronan Injury: Aberdeen Star Out as Hampden Looms - Dave.Sport"
 },
 {
 "nome": "Mats Knoester",
@@ -13185,52 +13853,77 @@
 "titoli": [
 3
 ],
-"fonte": "Aberdeen FC: Update on Connor Ronan and Mats Knoester injuries - Press and Journal"
+"fonte": "Aberdeen FC: Update on Connor Ronan and Mats Knoester injuries - Press and Journal",
+"visto": "2026-10-28",
+"memoria": true
 }
 ],
-"turnover": "medio",
+"turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "negativo",
-"note": "crisi infortuni limita scelte"
+"note": "Infortuni chiave indeboliscono Aberdeen"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna novità"
+"note": "Nessuna novità su assenze"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "partita regolare"
+"note": "Partita regolare senza restrizioni"
 },
-"n_titoli": 8
+"n_titoli": 10
 }
 },
 "Carlisle|Harrogate|2026-10-28": {
 "data": "2026-10-28",
 "r": {
 "casa": {
-"assenti": [],
+"assenti": [
+{
+"nome": "Anderson",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "probabile",
+"titoli": [
+12
+],
+"fonte": "Blues boss gives update on Anderson and Ellis injuries - News & Star"
+},
+{
+"nome": "Ellis",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "probabile",
+"titoli": [
+12
+],
+"fonte": "Blues boss gives update on Anderson and Ellis injuries - News & Star"
+}
+],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": "nessuna informazione su assenti"
+"clima": "negativo",
+"note": ""
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione su assenti"
+"note": ""
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "nessuna informazione su porte chiuse"
+"note": "Nessuna informazione su porte chiuse"
 },
-"n_titoli": 11
+"n_titoli": 15
 }
 },
 "Carrarese|Arezzo|2026-10-28": {
@@ -13240,20 +13933,20 @@
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": "nessuna informazione su assenti"
+"clima": "positivo",
+"note": "Cerca conferme dopo la sconfitta con la capolista Palermo"
 },
 "ospite": {
 "assenti": [],
-"turnover": "nessuno",
+"turnover": "medio",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": "nessuna informazione su assenti"
+"clima": "negativo",
+"note": "In crisi, cambia formazione e vuole rialzarsi"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "partita senza indicazioni di restrizioni"
+"note": "Derby toscano allo Stadio dei Marmi, oltre 600 tifosi amaranto"
 },
 "n_titoli": 50
 }
@@ -13270,15 +13963,15 @@
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-15
+16
 ],
 "fonte": "Johnston’s latest hamstring injury is ‘shorter term’ but right-back is ruled out until after international break - Celtic news now - Celtic FC News"
 }
 ],
 "turnover": "medio",
 "nuovo_allenatore": false,
-"clima": "negativo",
-"note": "Infortuni chiave, ma nessuna squalifica"
+"clima": "neutro",
+"note": "Infortuni limitati, cambi quattro titolari"
 },
 "ospite": {
 "assenti": [],
@@ -13292,7 +13985,7 @@
 "campo_neutro": false,
 "note": "Partita regolare senza restrizioni"
 },
-"n_titoli": 26
+"n_titoli": 30
 }
 },
 "Dundee|Kilmarnock|2026-10-28": {
@@ -13310,27 +14003,29 @@
 2,
 4
 ],
-"fonte": "Jim Goodwin reveals Dundee United recovery plan for Sam Cleall-Harding after injury woe - The Courier"
+"fonte": "Jim Goodwin reveals Dundee United recovery plan for Sam Cleall-Harding after injury woe - The Courier",
+"visto": "2026-10-28",
+"memoria": true
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "negativo",
-"note": "Infortuni limitano la rosa"
+"clima": "neutro",
+"note": "Nessuna informazione rilevante nei titoli per questa partita."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna novità"
+"note": "Nessuna informazione rilevante nei titoli per questa partita."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita regolare"
+"note": "Titoli non pertinenti: riguardano Dundee United o altre partite."
 },
-"n_titoli": 14
+"n_titoli": 12
 }
 },
 "Forest Green|Eastleigh|2026-10-28": {
@@ -13341,19 +14036,19 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": ""
+"note": "Nessuna informazione rilevante sui giocatori nei titoli."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": ""
+"note": "Titoli su Eastleigh riguardano crollo edificio in Kenya, non il club."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": ""
+"note": "Nessuna informazione specifica sulla partita nei titoli."
 },
 "n_titoli": 11
 }
@@ -13365,34 +14060,36 @@
 "assenti": [
 {
 "nome": "Harry Milne",
-"ruolo": "attaccante",
-"importanza": "stella",
+"ruolo": "difensore",
+"importanza": "titolare",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-7
+6,
+7,
+10
 ],
-"fonte": "Milne out for season as Hearts' injury woes continue - BBC"
+"fonte": "Milne loss compounds Hearts' 'scarcely believable injury record' - AOL.com"
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "negativo",
-"note": "Molte assenze per infortuni"
+"note": "Crisi infortuni enorme: 12-13 assenti, squadra decimata."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna novità rilevante"
+"note": ""
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita senza restrizioni"
+"note": ""
 },
-"n_titoli": 49
+"n_titoli": 50
 }
 },
 "Juve Stabia|Verona|2026-10-28": {
@@ -13403,19 +14100,42 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione su assenze"
+"note": "Nessuna assenza rilevante nei titoli disponibili."
 },
 "ospite": {
-"assenti": [],
+"assenti": [
+{
+"nome": "Lella",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "squalifica",
+"certezza": "certo",
+"titoli": [
+27
+],
+"fonte": "Juve Stabia-Hellas Verona: Baroni rilancia Mosquera, Lella squalificato e Bradaric out - Bottadiculo"
+},
+{
+"nome": "Bradaric",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+27
+],
+"fonte": "Juve Stabia-Hellas Verona: Baroni rilancia Mosquera, Lella squalificato e Bradaric out - Bottadiculo"
+}
+],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": "lista assenti menzionata ma senza nomi"
+"clima": "negativo",
+"note": "Lunga lista di assenti per Baroni; squadra in difficoltà."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "nessuna indicazione di chiusura stadio"
+"note": "Trasferta cruciale per il Verona allo stadio Menti."
 },
 "n_titoli": 50
 }
@@ -13427,12 +14147,12 @@
 "assenti": [
 {
 "nome": "Tramoni",
-"ruolo": "attaccante",
+"ruolo": "centrocampista",
 "importanza": "titolare",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-14
+9
 ],
 "fonte": "I convocati di mister Bianco per Pisa-Palermo: Tramoni non recupera, la lista - VTrend"
 }
@@ -13440,19 +14160,19 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna info su assenze oltre Tramoni"
+"note": "Pisa affronta Palermo con una squadra leggermente infortunata."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna assenza segnalata"
+"note": "Palermo parte senza assenti noti."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita finita 3-3"
+"note": "Partita a porte aperte, atmosfera vivace."
 },
 "n_titoli": 50
 }
@@ -13464,22 +14184,22 @@
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": "nessuna informazione su assenti"
+"clima": "positivo",
+"note": "Mikulic torna dopo 20 mesi, pronto a partire titolare"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione su assenti"
+"note": "Stella con problema di fitness ma attesa in campo"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "nessuna informazione su porte chiuse"
+"note": "Nessuna informazione specifica sui titoli"
 },
-"n_titoli": 4
+"n_titoli": 9
 }
 },
 "St Mirren|Hibernian|2026-10-28": {
@@ -13502,7 +14222,7 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "negativo",
-"note": "Striker out, limited options"
+"note": "Operazione al ginocchio per Ayunga; 12 assenti totali tra le due squadre."
 },
 "ospite": {
 "assenti": [
@@ -13515,20 +14235,22 @@
 "titoli": [
 8
 ],
-"fonte": "Two changes to the Hibs starting lineup as injury forces Reedijk's hand - Hibs Observer"
+"fonte": "Two changes to the Hibs starting lineup as injury forces Reedijk's hand - Hibs Observer",
+"visto": "2026-10-28",
+"memoria": true
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "negativo",
-"note": "Defensive injuries heavy"
+"clima": "neutro",
+"note": "Infortuni già gestiti nella sfida contro il Celtic."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Entrambe le squadre con assenti chiave"
+"note": "12 giocatori assenti totali tra le due squadre secondo Edinburgh News."
 },
-"n_titoli": 23
+"n_titoli": 28
 }
 },
 "Sutton|Aldershot|2026-10-28": {
@@ -13539,21 +14261,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": ""
+"note": "Nessuna informazione su assenti o clima."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": ""
+"note": "Nessuna informazione su assenti o clima."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": ""
+"note": "Nessuna informazione su chiusura o campo neutro."
 },
-"n_titoli": 9
+"n_titoli": 8
 }
 },
 "Ajax|AZ Alkmaar|2026-10-31": {
@@ -14107,13 +14829,13 @@
 "connor ronan": {
 "nome": "Connor Ronan",
 "ruolo": "centrocampista",
-"importanza": "titolare",
+"importanza": "stella",
 "motivo": "infortunio",
-"certezza": "probabile",
+"certezza": "certo",
 "titoli": [
-2
+3
 ],
-"fonte": "Rangers Opponents Aberdeen Await Connor Ronan Knee Injury Verdict - roundtable.io",
+"fonte": "Connor Ronan Injury: Aberdeen Star Out as Hampden Looms - Dave.Sport",
 "visto": "2026-10-28"
 },
 "mats knoester": {
@@ -14133,7 +14855,32 @@
 },
 "Carlisle|Harrogate|2026-10-28": {
 "data": "2026-10-28",
-"casa": {},
+"casa": {
+"anderson": {
+"nome": "Anderson",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "probabile",
+"titoli": [
+12
+],
+"fonte": "Blues boss gives update on Anderson and Ellis injuries - News & Star",
+"visto": "2026-10-28"
+},
+"ellis": {
+"nome": "Ellis",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "probabile",
+"titoli": [
+12
+],
+"fonte": "Blues boss gives update on Anderson and Ellis injuries - News & Star",
+"visto": "2026-10-28"
+}
+},
 "ospite": {}
 },
 "Carrarese|Arezzo|2026-10-28": {
@@ -14151,7 +14898,7 @@
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-15
+16
 ],
 "fonte": "Johnston’s latest hamstring injury is ‘shorter term’ but right-back is ruled out until after international break - Celtic news now - Celtic FC News",
 "visto": "2026-10-28"
@@ -14188,12 +14935,12 @@
 "casa": {
 "ellertsson": {
 "nome": "Ellertsson",
-"ruolo": "difensore",
+"ruolo": "attaccante",
 "importanza": "titolare",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-8
+9
 ],
 "fonte": "Genoa, si ferma Ellertsson: cambio obbligato nel primo contro la Juventus, cosa è successo e le sue condizioni - SOS Fanta",
 "visto": "2026-10-28"
@@ -14206,14 +14953,16 @@
 "casa": {
 "harry milne": {
 "nome": "Harry Milne",
-"ruolo": "attaccante",
-"importanza": "stella",
+"ruolo": "difensore",
+"importanza": "titolare",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-7
+6,
+7,
+10
 ],
-"fonte": "Milne out for season as Hearts' injury woes continue - BBC",
+"fonte": "Milne loss compounds Hearts' 'scarcely believable injury record' - AOL.com",
 "visto": "2026-10-28"
 }
 },
@@ -14222,7 +14971,32 @@
 "Juve Stabia|Verona|2026-10-28": {
 "data": "2026-10-28",
 "casa": {},
-"ospite": {}
+"ospite": {
+"lella": {
+"nome": "Lella",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "squalifica",
+"certezza": "certo",
+"titoli": [
+27
+],
+"fonte": "Juve Stabia-Hellas Verona: Baroni rilancia Mosquera, Lella squalificato e Bradaric out - Bottadiculo",
+"visto": "2026-10-28"
+},
+"bradaric": {
+"nome": "Bradaric",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+27
+],
+"fonte": "Juve Stabia-Hellas Verona: Baroni rilancia Mosquera, Lella squalificato e Bradaric out - Bottadiculo",
+"visto": "2026-10-28"
+}
+}
 },
 "Milan|Bologna|2026-10-28": {
 "data": "2026-10-28",
@@ -14241,6 +15015,30 @@
 }
 },
 "ospite": {
+"de silvestri": {
+"nome": "De Silvestri",
+"ruolo": "difensore",
+"importanza": "riserva",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+49
+],
+"fonte": "Bologna, i convocati per il Milan: out De Silvestri ed Enem. Prima chiamata per Lo Monaco - La Gazzetta dello Sport",
+"visto": "2026-10-28"
+},
+"enem": {
+"nome": "Enem",
+"ruolo": "difensore",
+"importanza": "riserva",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+49
+],
+"fonte": "Bologna, i convocati per il Milan: out De Silvestri ed Enem. Prima chiamata per Lo Monaco - La Gazzetta dello Sport",
+"visto": "2026-10-28"
+},
 "loftus-cheek": {
 "nome": "Loftus-Cheek",
 "ruolo": "attaccante",
@@ -14259,18 +15057,6 @@
 "data": "2026-10-28",
 "casa": {},
 "ospite": {
-"lobotka": {
-"nome": "Lobotka",
-"ruolo": "centrocampista",
-"importanza": "titolare",
-"motivo": "infortunio",
-"certezza": "certo",
-"titoli": [
-26
-],
-"fonte": "Ancora un infortunio nel Napoli: Lobotka esce in barella dopo pochi minuti contro il Monza - NapoliToday",
-"visto": "2026-10-28"
-},
 "badiashile": {
 "nome": "Badiashile",
 "ruolo": "difensore",
@@ -14278,7 +15064,8 @@
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-43
+47,
+48
 ],
 "fonte": "Il Napoli perde altri pezzi in difesa: Badiashile e Spinazzola ko, il comunicato, i tempi di recupero e quante partite saltano - Goal.com",
 "visto": "2026-10-28"
@@ -14290,29 +15077,80 @@
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-43
+47,
+48
 ],
 "fonte": "Il Napoli perde altri pezzi in difesa: Badiashile e Spinazzola ko, il comunicato, i tempi di recupero e quante partite saltano - Goal.com",
+"visto": "2026-10-28"
+},
+"lobotka": {
+"nome": "Lobotka",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+26
+],
+"fonte": "Ancora un infortunio nel Napoli: Lobotka esce in barella dopo pochi minuti contro il Monza - NapoliToday",
 "visto": "2026-10-28"
 }
 }
 },
 "Parma|Udinese|2026-10-28": {
 "data": "2026-10-28",
-"casa": {},
-"ospite": {}
+"casa": {
+"solet": {
+"nome": "Solet",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+8
+],
+"fonte": "Parma-Udinese, le probabili formazioni: non recupera Solet - Tutto Udinese",
+"visto": "2026-10-28"
+}
+},
+"ospite": {
+"solet": {
+"nome": "Solet",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+50
+],
+"fonte": "Udinese, esami in vista per Solet e Alaba: ma c'è già il verdetto per il Parma - SOS Fanta",
+"visto": "2026-10-28"
+},
+"alaba": {
+"nome": "Alaba",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+50
+],
+"fonte": "Udinese, esami in vista per Solet e Alaba: ma c'è già il verdetto per il Parma - SOS Fanta",
+"visto": "2026-10-28"
+}
+}
 },
 "Pisa|Palermo|2026-10-28": {
 "data": "2026-10-28",
 "casa": {
 "tramoni": {
 "nome": "Tramoni",
-"ruolo": "attaccante",
+"ruolo": "centrocampista",
 "importanza": "titolare",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-14
+9
 ],
 "fonte": "I convocati di mister Bianco per Pisa-Palermo: Tramoni non recupera, la lista - VTrend",
 "visto": "2026-10-28"
