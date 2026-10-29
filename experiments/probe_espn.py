@@ -12,9 +12,17 @@ SLUGS = ["ita.1", "ita.2", "eng.1", "eng.2", "esp.1", "esp.2", "ger.1", "ger.2",
 out = {"leghe": {}, "esempi": {}}
 today = dt.date.today()
 rng = f"{(today - dt.timedelta(days=3)):%Y%m%d}-{(today + dt.timedelta(days=4)):%Y%m%d}"
+out["varianti"] = {}
+for nm, par in (("range", {"dates": rng}), ("giorno", {"dates": f"{today:%Y%m%d}"}), ("niente", {}),
+                ("range_limit", {"dates": rng, "limit": 100})):
+    try:
+        r = requests.get(f"{E}/soccer/ita.1/scoreboard", params=par, headers=H, timeout=30)
+        out["varianti"][nm] = [r.status_code, len(r.json().get("events", [])) if r.ok else r.text[:200]]
+    except Exception as e:
+        out["varianti"][nm] = str(e)[:200]
 for s in SLUGS:
     try:
-        r = requests.get(f"{E}/soccer/{s}/scoreboard", params={"dates": rng, "limit": 200}, headers=H, timeout=30)
+        r = requests.get(f"{E}/soccer/{s}/scoreboard", params={"dates": rng}, headers=H, timeout=30)
         evs = r.json().get("events", [])
         n_odds = 0
         for ev in evs:
@@ -33,21 +41,28 @@ for s in SLUGS:
                            "es_data": evs[0]["date"] if evs else None}
     except Exception as e:
         out["leghe"][s] = {"errore": str(e)[:200]}
-# NBA: riepilogo di una partita futura
-try:
-    r = requests.get(f"{E}/basketball/nba/scoreboard", params={"dates": f"{(today + dt.timedelta(days=1)):%Y%m%d}"}, headers=H, timeout=30)
-    ev = r.json()["events"][0]
-    s = requests.get(f"{E}/basketball/nba/summary", params={"event": ev["id"]}, headers=H, timeout=30).json()
-    out["nba_futura"] = {"id": ev["id"], "scoreboard_odds": ev["competitions"][0].get("odds"),
-                         "pickcenter": s.get("pickcenter"), "odds": s.get("odds")}
-except Exception as e:
-    out["nba_futura"] = {"errore": str(e)[:300]}
+# NBA: quote nel tabellone e nel riepilogo, oggi e prossimi giorni
+out["nba"] = {}
+for dd in range(0, 4):
+    day = today + dt.timedelta(days=dd)
+    try:
+        r = requests.get(f"{E}/basketball/nba/scoreboard", params={"dates": f"{day:%Y%m%d}"}, headers=H, timeout=30)
+        evs = r.json().get("events", [])
+        rows = []
+        for ev in evs[:4]:
+            s = requests.get(f"{E}/basketball/nba/summary", params={"event": ev["id"]}, headers=H, timeout=30).json()
+            rows.append({"id": ev["id"], "date": ev["date"], "sb_odds": bool(ev["competitions"][0].get("odds")),
+                         "pickcenter": (s.get("pickcenter") or [None])[0], "n_odds": len(s.get("odds") or [])})
+        out["nba"][str(day)] = {"eventi": len(evs), "con_quote_tabellone": sum(bool(e["competitions"][0].get("odds")) for e in evs),
+                                "campione": rows}
+    except Exception as e:
+        out["nba"][str(day)] = {"errore": str(e)[:300]}
 # tennis: quote nel riepilogo?
 try:
     r = requests.get(f"{E}/tennis/atp/scoreboard", headers=H, timeout=30).json()
     ev = r["events"][0]
     c = next(c for g in ev.get("groupings", []) for c in g.get("competitions", []))
-    s = requests.get(f"{E}/tennis/atp/summary", params={"event": c["id"]}, headers=H, timeout=30)
+    s = requests.get(f"{E}/tennis/atp/summary", params={"event": ev["id"], "competition": c["id"]}, headers=H, timeout=30)
     out["tennis"] = {"status": s.status_code, "keys": list(s.json().keys()) if s.ok else None,
                      "odds_comp": c.get("odds"), "pickcenter": s.json().get("pickcenter") if s.ok else None}
 except Exception as e:
