@@ -79,16 +79,99 @@ def _estimated(info, odds, f):
     return {k: round(max(1.01, 1 / (bm[k] * (1 + marg))), 2) for k in EST_KEYS if k in bm and k not in odds and bm[k] > 0}
 
 
+def _semaforo(info, home, away, df, day, drift=None):
+    """Semaforo SOLO informativo: segnala le situazioni particolari, non cambia pronostico né schedina.
+    (Nel backtest 25/26 queste partite non sono uscite meno delle altre: serve a capire, non a scartare.)"""
+    mot = []
+    for side, team in (("h", home), ("a", away)):
+        big = [a for a in info[f"abs_{side}"] if a.get("importanza") in ("stella", "titolare")]
+        if any(a.get("importanza") == "stella" for a in big) or len(big) >= 2:
+            mot.append(f"{team}: {len(big)} assent{'e' if len(big) == 1 else 'i'} importanti "
+                       f"({', '.join(a['player'] for a in big[:3])})")
+    ev = info.get("eventi") or {}
+    for side, team in (("casa", home), ("ospite", away)):
+        to = (ev.get(side) or {}).get("turnover")
+        if to and to != "nessuno":
+            mot.append(f"{team}: previsto turnover {to}")
+        if (ev.get(side) or {}).get("nuovo_allenatore"):
+            mot.append(f"{team}: nuovo allenatore")
+    if ev.get("porte_chiuse"):
+        mot.append("porte chiuse")
+    if ev.get("campo_neutro"):
+        mot.append("campo neutro")
+    mm, bm = info.get("model_markets"), info.get("book_markets")
+    if mm and bm:
+        k = max(("1", "X", "2"), key=lambda x: abs(mm[x] - bm[x]))
+        if abs(mm[k] - bm[k]) >= 0.10:
+            mot.append(f"modello e quote non d'accordo sul segno {k} (modello {mm[k]:.0%}, quote {bm[k]:.0%})")
+    if drift and abs(drift[1]) >= 0.05:
+        mot.append(f"quote cambiate nelle ultime ore sul segno {drift[0]} ({drift[1]:+.0%}): forse c'è una notizia")
+    lo = day - pd.Timedelta(days=365)
+    for team in (home, away):
+        played = df[((df.home == team) | (df.away == team)) & (df.date >= lo)]
+        if len(played) < 15:
+            mot.append(f"{team}: pochi dati in questo campionato (neopromossa?)")
+        elif len(played):
+            gap = (day - played.date.max()).days
+            if 0 < gap <= 3:
+                mot.append(f"{team}: ha giocato {gap} giorn{'o' if gap == 1 else 'i'} fa (calendario fitto)")
+    return {"livello": "giallo" if mot else "verde", "motivi": mot}
+
+
 def update_all(con):
     import news_ai
     status = {}
     _step(status, "storico", D.update_history, C.SEASONS, con)
     _step(status, "calendario", D.update_fixtures, con)
+    _step(status, "espn_calcio", D.update_espn_soccer, con)
     if C.API_FOOTBALL_KEY:
         _step(status, "infortuni", D.update_injuries, con)
     _step(status, "notizie", D.update_news, con)
     _step(status, "ia", news_ai.run, con)
     return status
+
+
+def _espn_rows(con, lg):
+    try:
+        rows = pd.read_sql("SELECT * FROM espn_soccer WHERE league=?", con, params=(lg,))
+    except Exception:
+        return {}
+    out = {}
+    for r in rows.itertuples():
+        out.setdefault((r.home, r.away), []).append(r)
+    return out
+
+
+def _ok(x):
+    return x is not None and not pd.isna(x) and x > 1
+
+
+def _combo_odds(f, e):
+    """Probabilità del mercato: media bookmaker (football-data) e quote ESPN aggiornate a ridosso, insieme.
+    Ritorna quote 'giuste' (senza margine) da passare al modello, la variazione delle quote e la fonte."""
+    from model import market_probs
+    pa = market_probs(f.odd_h, f.odd_d, f.odd_a, f.odd_o25, f.odd_u25) if _ok(f.odd_h) else None
+    pe = market_probs(e.o_h, e.o_d, e.o_a, e.o_o25, e.o_u25) if e is not None and _ok(e.o_h) and _ok(e.o_d) and _ok(e.o_a) else None
+    drift = None
+    if e is not None and pe and all(_ok(x) for x in (e.op_h, e.op_d, e.op_a)):
+        po = market_probs(e.op_h, e.op_d, e.op_a)["1x2"]
+        d = pe["1x2"] - po
+        i = int(abs(d).argmax())
+        drift = (["1", "X", "2"][i], float(d[i]))
+    if not pa and not pe:
+        return (f.odd_h, f.odd_d, f.odd_a, f.odd_o25, f.odd_u25), drift, None
+    if pa and pe:
+        w = C.ESPN_WEIGHT
+        p = (1 - w) * pa["1x2"] + w * pe["1x2"]
+        ov = [x["over"] for x in (pa, pe) if "over" in x]
+        over = sum(ov) / len(ov) if ov else None
+        fonte = "media bookmaker + DraftKings aggiornata"
+    else:
+        x = pa or pe
+        p, over = x["1x2"], x.get("over")
+        fonte = "media bookmaker" if pa else "DraftKings aggiornata"
+    odds = (1 / p[0], 1 / p[1], 1 / p[2], 1 / over if over else None, 1 / (1 - over) if over else None)
+    return odds, drift, fonte
 
 
 def export_league(con, lg, df_all, fx_all, manual, today):
@@ -107,9 +190,13 @@ def export_league(con, lg, df_all, fx_all, manual, today):
         return {"pos": int(r.pos), "pt": int(r.pt), "gf": int(r.gf), "gs": int(r.gs)}
 
     matches = []
+    espn = _espn_rows(con, lg)
     for f in fx.itertuples():
-        info = predict_match(con, df, models, table, manual, f.home, f.away, rounds,
-                             odds=(f.odd_h, f.odd_d, f.odd_a, f.odd_o25, f.odd_u25))
+        e = min((r for r in espn.get((f.home, f.away), [])
+                 if abs((pd.Timestamp(r.date) - f.date).days) <= 1), key=lambda r: r.date, default=None)
+        odds_p, drift, fonte = _combo_odds(f, e)
+        ora = f.time if f.time and f.time != "nan" else (e.time if e is not None else "")
+        info = predict_match(con, df, models, table, manual, f.home, f.away, rounds, odds=odds_p)
         mk = info["markets"]
         mm = info["model_markets"]
         odds = {"1": f.bk_h, "X": f.bk_d, "2": f.bk_a, "Over 2.5": f.bk_o25, "Under 2.5": f.bk_u25}   # Bet365
@@ -122,7 +209,7 @@ def export_league(con, lg, df_all, fx_all, manual, today):
                     value.append({"mercato": k, "prob": mm[k], "quota": o, "edge": edge})
         matches.append({
             "sport": "calcio", "lega": lg,
-            "data": f.date.strftime("%Y-%m-%d"), "ora": f.time if f.time and f.time != "nan" else "",
+            "data": f.date.strftime("%Y-%m-%d"), "ora": ora, "fonte_quote": fonte if info["mercato"] else None,
             "casa": f.home, "ospite": f.away,
             "gol_casa": info["lam"], "gol_ospite": info["mu"],
             "gol_casa_base": info["lam_base"], "gol_ospite_base": info["mu_base"],
@@ -138,6 +225,7 @@ def export_league(con, lg, df_all, fx_all, manual, today):
             "note_casa": [x for x in info["coach_h"] + [info["mot_h"]] if x],
             "note_ospite": [x for x in info["coach_a"] + [info["mot_a"]] if x],
             "news_casa": _news(info["news_h"]), "news_ospite": _news(info["news_a"]),
+            "semaforo": _semaforo(info, f.home, f.away, df, f.date, drift),
         })
 
     known = set(df[df.season == C.CURRENT_SEASON].home)
@@ -201,6 +289,12 @@ def export(con, days=10, status=None):
     matches.sort(key=lambda x: (x["data"], x["ora"] or "99", order.index(x["lega"]) if x["lega"] in order else 99))
     now = dt.datetime.now(dt.timezone.utc).astimezone().isoformat(timespec="minutes")
     _write("predictions.json", {"aggiornato": now, "leghe": leghe, "partite": matches})
+    try:   # pagella: pronostici consigliati e come sono andati (mai bloccante)
+        import pagella
+        _write("pagella.json", pagella.update(matches, con))
+    except Exception as e:
+        traceback.print_exc()
+        errori["pagella"] = str(e)[:200]
     _write("standings.json", {"aggiornato": now, "stagione": C.CURRENT_SEASON, "leghe": standings})
 
     meta_path = C.DOCS_DATA / "meta.json"

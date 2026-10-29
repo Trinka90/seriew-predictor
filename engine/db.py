@@ -24,6 +24,10 @@ CREATE TABLE IF NOT EXISTS absences(
   PRIMARY KEY(team, player, partita));
 CREATE TABLE IF NOT EXISTS match_events(
   home TEXT, away TEXT, data TEXT, PRIMARY KEY(home, away));
+CREATE TABLE IF NOT EXISTS espn_soccer(
+  league TEXT, date TEXT, time TEXT, home TEXT, away TEXT, state TEXT, hs INT, as_ INT,
+  o_h REAL, o_d REAL, o_a REAL, o_o25 REAL, o_u25 REAL, op_h REAL, op_d REAL, op_a REAL, book TEXT, updated TEXT,
+  PRIMARY KEY(league, home, away, date));
 CREATE TABLE IF NOT EXISTS coaches(
   team TEXT PRIMARY KEY, coach TEXT, since TEXT, updated TEXT);
 """

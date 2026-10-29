@@ -100,6 +100,19 @@ def _known(con, lg):
         "SELECT DISTINCT home FROM matches WHERE league=? AND season>=?", (lg, C.SEASONS[-2]))]
 
 
+def _uk_to_rome(df):
+    """football-data.co.uk scrive data e ora in ora inglese: le converte in ora italiana
+    (es. 19:45 a Londra = 20:45 in Italia; a mezzanotte cambia anche il giorno)."""
+    day = pd.to_datetime(df["Date"], dayfirst=True, errors="coerce")
+    tm = df["Time"].astype(str).str.strip() if "Time" in df else pd.Series("", index=df.index)
+    ok = tm.str.match(r"^\d{1,2}:\d{2}$")
+    ts = pd.to_datetime(day.dt.strftime("%Y-%m-%d") + " " + tm.where(ok, "12:00"), errors="coerce")
+    ts = ts.dt.tz_localize("Europe/London", ambiguous="NaT", nonexistent="shift_forward").dt.tz_convert("Europe/Rome")
+    date = ts.dt.strftime("%Y-%m-%d").where(ts.notna(), day.dt.strftime("%Y-%m-%d"))
+    time_ = ts.dt.strftime("%H:%M").where(ok & ts.notna(), "")
+    return date, time_
+
+
 def update_fixtures(con=None, leagues=None):
     con = con or connect()
     leagues = list(leagues or C.LEAGUES)
@@ -111,10 +124,11 @@ def update_fixtures(con=None, leagues=None):
         df["Div"] = df["Div"].astype(str).str.strip()
         df = df[df["Div"].isin(leagues)]
         if not df.empty:
+            date, time_ = _uk_to_rome(df)
             out = pd.DataFrame({
                 "league": df["Div"],
-                "date": pd.to_datetime(df["Date"], dayfirst=True, errors="coerce").dt.strftime("%Y-%m-%d"),
-                "time": df.get("Time", pd.Series("", index=df.index)).astype(str),
+                "date": date,
+                "time": time_,
                 "home": df["HomeTeam"].str.strip(), "away": df["AwayTeam"].str.strip(),
                 **{f"odd_{k}": _odds(df, k) for k in ODDS},
                 **{f"bk_{k}": _odds(df, k, BK) for k in BK},
@@ -148,6 +162,81 @@ def update_fixtures(con=None, leagues=None):
     con.commit()
     print(f"  calendario: {n} partite in programma")
     return n
+
+
+# ----------------------------------------------------------------- ESPN calcio: quote a ridosso e risultati
+def _am(o):
+    """Quota americana (-150, +255) -> decimale."""
+    try:
+        o = float(str(o).replace("+", ""))
+        return round(1 + (o / 100 if o > 0 else 100 / -o), 4) if o else None
+    except Exception:
+        return None
+
+
+def update_espn_soccer(con=None, leagues=None, days=(-2, 5), budget_s=360):
+    """Tabellone ESPN giorno per giorno: quote DraftKings aggiornate (apertura e attuale), risultati finali,
+    e partite che mancano nel calendario. Le quote servono solo alle probabilità."""
+    con = con or connect()
+    stop = time.time() + budget_s
+    today = dt.date.today()
+    now = dt.datetime.now().isoformat(timespec="minutes")
+    n = nq = added = 0
+    for lg in list(leagues or C.LEAGUES):
+        slug = C.LEAGUES[lg].get("espn")
+        known = _known(con, lg)
+        if not slug or not known:
+            continue
+        for dd in range(days[0], days[1] + 1):
+            if time.time() > stop:
+                break
+            day = today + dt.timedelta(days=dd)
+            try:
+                r = requests.get(C.ESPN_SOCCER.format(slug=slug), params={"dates": f"{day:%Y%m%d}"},
+                                 headers=C.HEADERS, timeout=20)
+                evs = r.json().get("events", []) if r.ok else []
+            except Exception as e:
+                print(f"  [!] ESPN {lg} {day}: {e}")
+                continue
+            for ev in evs:
+                try:
+                    c = ev["competitions"][0]
+                    cs = {x.get("homeAway"): x for x in c.get("competitors", [])}
+                    h = canonical(cs["home"]["team"]["displayName"], known)
+                    a = canonical(cs["away"]["team"]["displayName"], known)
+                    if h not in known or a not in known:
+                        continue
+                    ts = pd.Timestamp(c["date"]).tz_convert("Europe/Rome")
+                    st = (c.get("status") or {}).get("type") or {}
+                    o = next((x for x in c.get("odds") or [] if isinstance(x, dict)), {})
+                    ml = o.get("moneyline") or {}
+                    g = lambda side, w="close": _am(((ml.get(side) or {}).get(w) or {}).get("odds"))
+                    tot = o.get("total") or {}
+                    ov, un = (tot.get("over") or {}).get("close") or {}, (tot.get("under") or {}).get("close") or {}
+                    o25 = u25 = None
+                    if str(ov.get("line", "")).endswith("2.5") and str(un.get("line", "")).endswith("2.5"):
+                        o25, u25 = _am(ov.get("odds")), _am(un.get("odds"))
+                    done = bool(st.get("completed"))
+                    sc = lambda x: int(float(x.get("score"))) if done and x.get("score") not in (None, "") else None
+                    row = (lg, ts.strftime("%Y-%m-%d"), ts.strftime("%H:%M"), h, a, st.get("state"),
+                           sc(cs["home"]), sc(cs["away"]), g("home"), g("draw"), g("away"), o25, u25,
+                           g("home", "open"), g("draw", "open"), g("away", "open"),
+                           (o.get("provider") or {}).get("name"), now)
+                    con.execute("INSERT OR REPLACE INTO espn_soccer VALUES(" + ",".join("?" * len(row)) + ")", row)
+                    n += 1
+                    nq += bool(row[8])
+                    # partita che manca nel calendario (campionati senza calendario completo)
+                    if st.get("state") == "pre" and ts.date() >= today and not con.execute(
+                            "SELECT 1 FROM fixtures WHERE home=? AND away=?", (h, a)).fetchone():
+                        con.execute("INSERT OR IGNORE INTO fixtures(league,date,time,home,away) VALUES(?,?,?,?,?)",
+                                    (lg, ts.strftime("%Y-%m-%d"), ts.strftime("%H:%M"), h, a))
+                        added += 1
+                except Exception as e:
+                    print(f"  [!] ESPN {lg} evento: {e}")
+            time.sleep(0.1)
+    con.commit()
+    print(f"  ESPN calcio: {n} partite, {nq} con quote, {added} aggiunte al calendario")
+    return {"partite": n, "con_quote": nq, "aggiunte": added}
 
 
 # ----------------------------------------------------------------- API-Football

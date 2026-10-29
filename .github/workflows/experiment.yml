@@ -2,7 +2,7 @@ name: Esperimento modello
 
 on:
   push:
-    branches: [main]
+    branches: [main, prova]
     paths: ["engine/experiment.py", "engine/probe.py", "engine/ai_test.py", "experiments/*.py", ".github/workflows/experiment.yml"]
 
 permissions:
@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: main
+          ref: ${{ github.ref_name }}
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -72,6 +72,17 @@ jobs:
         if: contains(github.event.head_commit.message, '[espn]')
         run: python experiments/probe_espn.py
         continue-on-error: true
+      - name: Prova completa dell'aggiornamento (ramo di prova, non pubblica)
+        if: contains(github.event.head_commit.message, '[prova]')
+        working-directory: engine
+        env:
+          TZ: Europe/Rome
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+        run: |
+          timeout 45m python export_json.py 2>&1 | tail -150 > ../experiments/prova_log.txt || true
+          mkdir -p ../experiments/prova && cp ../docs/data/*.json ../experiments/prova/ && git checkout -- ../docs/data || true
       - name: Salva risultati
         run: |
           git config user.name "github-actions[bot]"

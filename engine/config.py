@@ -15,32 +15,36 @@ FIXTURES_FALLBACK_URL = "https://fixturedownload.com/feed/json/{slug}-2026"
 
 # Campionati: codice football-data.co.uk -> info. "fd" = slug fixturedownload (calendario completo)
 LEAGUES = {
-    "I1":  {"nome": "Serie A",          "flag": "🇮🇹", "giornate": 38, "fd": "serie-a"},
-    "I2":  {"nome": "Serie B",          "flag": "🇮🇹", "giornate": 38, "fd": "serie-b"},
-    "E0":  {"nome": "Premier League",   "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "giornate": 38, "fd": "epl"},
-    "E1":  {"nome": "Championship",     "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "giornate": 46, "fd": "championship"},
-    "SP1": {"nome": "La Liga",          "flag": "🇪🇸", "giornate": 38, "fd": "la-liga"},
-    "SP2": {"nome": "Segunda División", "flag": "🇪🇸", "giornate": 42, "fd": None},
-    "D1":  {"nome": "Bundesliga",       "flag": "🇩🇪", "giornate": 34, "fd": "bundesliga"},
-    "D2":  {"nome": "2. Bundesliga",    "flag": "🇩🇪", "giornate": 34, "fd": "2-bundesliga"},
-    "F1":  {"nome": "Ligue 1",          "flag": "🇫🇷", "giornate": 34, "fd": "ligue-1"},
-    "F2":  {"nome": "Ligue 2",          "flag": "🇫🇷", "giornate": 34, "fd": None},
-    "N1":  {"nome": "Eredivisie",       "flag": "🇳🇱", "giornate": 34, "fd": "eredivisie"},
-    "P1":  {"nome": "Primeira Liga",    "flag": "🇵🇹", "giornate": 34, "fd": "primeira-liga"},
-    "B1":  {"nome": "Pro League",       "flag": "🇧🇪", "giornate": 30, "fd": None},
-    "T1":  {"nome": "Süper Lig",        "flag": "🇹🇷", "giornate": 38, "fd": None},
-    "SC0": {"nome": "Premiership",      "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿", "giornate": 38, "fd": None},
-    "E2":  {"nome": "League One",       "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "giornate": 46, "fd": None},
-    "E3":  {"nome": "League Two",       "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "giornate": 46, "fd": None},
-    "EC":  {"nome": "National League",  "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "giornate": 46, "fd": None},
-    "SC1": {"nome": "Championship scozzese", "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿", "giornate": 36, "fd": None},
-    "SC2": {"nome": "League One scozzese",  "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿", "giornate": 36, "fd": None},
-    "SC3": {"nome": "League Two scozzese",  "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿", "giornate": 36, "fd": None},
-    "G1":  {"nome": "Super League Grecia",  "flag": "🇬🇷", "giornate": 26, "fd": None},
+    "I1":  {"nome": "Serie A",          "flag": "🇮🇹", "giornate": 38, "fd": "serie-a", "espn": "ita.1"},
+    "I2":  {"nome": "Serie B",          "flag": "🇮🇹", "giornate": 38, "fd": "serie-b", "espn": "ita.2"},
+    "E0":  {"nome": "Premier League",   "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "giornate": 38, "fd": "epl", "espn": "eng.1"},
+    "E1":  {"nome": "Championship",     "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "giornate": 46, "fd": "championship", "espn": "eng.2"},
+    "SP1": {"nome": "La Liga",          "flag": "🇪🇸", "giornate": 38, "fd": "la-liga", "espn": "esp.1"},
+    "SP2": {"nome": "Segunda División", "flag": "🇪🇸", "giornate": 42, "fd": None, "espn": "esp.2"},
+    "D1":  {"nome": "Bundesliga",       "flag": "🇩🇪", "giornate": 34, "fd": "bundesliga", "espn": "ger.1"},
+    "D2":  {"nome": "2. Bundesliga",    "flag": "🇩🇪", "giornate": 34, "fd": "2-bundesliga", "espn": "ger.2"},
+    "F1":  {"nome": "Ligue 1",          "flag": "🇫🇷", "giornate": 34, "fd": "ligue-1", "espn": "fra.1"},
+    "F2":  {"nome": "Ligue 2",          "flag": "🇫🇷", "giornate": 34, "fd": None, "espn": "fra.2"},
+    "N1":  {"nome": "Eredivisie",       "flag": "🇳🇱", "giornate": 34, "fd": "eredivisie", "espn": "ned.1"},
+    "P1":  {"nome": "Primeira Liga",    "flag": "🇵🇹", "giornate": 34, "fd": "primeira-liga", "espn": "por.1"},
+    "B1":  {"nome": "Pro League",       "flag": "🇧🇪", "giornate": 30, "fd": None, "espn": "bel.1"},
+    "T1":  {"nome": "Süper Lig",        "flag": "🇹🇷", "giornate": 38, "fd": None, "espn": "tur.1"},
+    "SC0": {"nome": "Premiership",      "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿", "giornate": 38, "fd": None, "espn": "sco.1"},
+    "E2":  {"nome": "League One",       "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "giornate": 46, "fd": None, "espn": "eng.3"},
+    "E3":  {"nome": "League Two",       "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "giornate": 46, "fd": None, "espn": "eng.4"},
+    "EC":  {"nome": "National League",  "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "giornate": 46, "fd": None, "espn": "eng.5"},
+    "SC1": {"nome": "Championship scozzese", "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿", "giornate": 36, "fd": None, "espn": "sco.2"},
+    "SC2": {"nome": "League One scozzese",  "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿", "giornate": 36, "fd": None, "espn": "sco.3"},
+    "SC3": {"nome": "League Two scozzese",  "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿", "giornate": 36, "fd": None, "espn": "sco.4"},
+    "G1":  {"nome": "Super League Grecia",  "flag": "🇬🇷", "giornate": 26, "fd": None, "espn": "gre.1"},
 }
 # Quote mostrate e usate per schedina/value: un solo bookmaker (la schedina si gioca su uno).
 # La media dei bookmaker resta solo per stimare le probabilità (è il dato più preciso).
 BOOKMAKER = "Bet365"
+# Quote ESPN (DraftKings) aggiornate fino al fischio d'inizio: servono SOLO alle probabilità, insieme alla media
+# dei bookmaker di football-data (le quote vicine alla partita sono più precise: backtest_semaforo.md, punto 4).
+ESPN_SOCCER = "https://site.api.espn.com/apis/site/v2/sports/soccer/{slug}/scoreboard"
+ESPN_WEIGHT = 0.5      # peso delle quote ESPN quando ci sono anche quelle di football-data
 NEWS_HORIZON_DAYS = 4   # notizie solo per squadre che giocano nei prossimi N giorni (Serie A sempre)
 DOCS_DATA = BASE_DIR.parent / "docs" / "data"   # JSON letti dall'app
 

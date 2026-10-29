@@ -54,6 +54,13 @@ h2{font-size:16px;margin:0 0 8px}
 .expl{font-size:13px;color:var(--tx);opacity:.85}
 .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px;vertical-align:middle}
 .d3{background:var(--g)} .d2{background:var(--y)} .d1{background:var(--r)}
+.warn{color:var(--y);font-size:12px;margin-left:3px}
+.sem{background:#2b2612;border:1px solid #6b5a1c;border-radius:10px;padding:10px 12px;margin-top:10px;font-size:13px}
+.sem ul{margin:6px 0 4px;padding-left:18px}
+.ok{color:var(--g)} .ko{color:var(--r)}
+.pg{display:flex;align-items:center;gap:8px;padding:8px 0;border-top:1px solid var(--line);font-size:13px}
+.pg .main{flex:1;min-width:0}
+.pg .who{color:var(--mut);font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 
 /* schedina riassunto */
 .big{font-size:30px;font-weight:700;line-height:1.1}
@@ -139,6 +146,7 @@ td:nth-child(2),th:nth-child(2){text-align:left}
 <nav>
   <button data-v="oggi" class="on"><span>🏠</span>Oggi</button>
   <button data-v="schedina"><span>🎫</span>Schedina</button>
+  <button data-v="pagella"><span>📈</span>Pagella</button>
   <button data-v="classifica"><span>📊</span>Classifiche</button>
   <button data-v="info"><span>ℹ️</span>Guida</button>
 </nav>
@@ -156,17 +164,26 @@ const F0 = {pmin: 0.65, qmin: 1.2, cats: ["esito", "doppia", "gol", "ggng", "mul
             leghe: [], soloQuote: false, n: 4, obiettivo: "prob", target: 3};
 const S = {view: "oggi", pred: null, stand: null, meta: null, err: null, appUpdate: null,
            sport: restore("sport", "tutti"), day: null, allDays: false, f: {...F0, ...restore("filtri2", {})},
-           sel: null, open: {}, showAll: false, lgClass: null};
+           sel: null, open: {}, showAll: false, lgClass: null, pag: null, pagPer: restore("pagPer", "7"), pagOpen: {}};
 S.lega = "ALL";   // usato da alcune funzioni condivise
 const LEGHE = () => S.pred?.leghe || {};
 const lgName = c => LEGHE()[c] ? `${LEGHE()[c].flag} ${LEGHE()[c].nome}` : c;
 const sportOf = m => m.sport || "calcio";
 const SPORTS = {calcio: "⚽ Calcio", tennis: "🎾 Tennis", basket: "🏀 Basket"};
+const giallo = m => m.semaforo?.livello === "giallo";
+const warn = m => giallo(m) ? `<span class="warn" title="Situazione particolare">⚠️</span>` : "";
+function semBox(m) {
+  if (!giallo(m)) return m.semaforo ? `<div class="small mut" style="margin-top:10px">🟢 Nessuna situazione particolare segnalata.</div>` : "";
+  return `<div class="sem"><b>⚠️ Attenzione: situazione particolare</b><ul>${m.semaforo.motivi.map(x => `<li>${esc(x)}</li>`).join("")}</ul>
+    <span class="small mut">Il pronostico non cambia: è un'informazione per decidere tu se giocarla.${sportOf(m) === "calcio" ? " Nei test sulla stagione scorsa queste partite non sono uscite meno delle altre." : ""}</span></div>`;
+}
 const form = f => `<span class="form">${[...(f || "")].map(c => `<i class="${c}">${c}</i>`).join("")}</span>`;
 const pos = c => c ? `${c.pos}° in classifica` : "neopromossa";
-const todayStr = () => new Date().toISOString().slice(0, 10);
+/* date sempre in ora italiana, anche se il telefono è all'estero */
+const itDate = t => new Intl.DateTimeFormat("sv-SE", {timeZone: "Europe/Rome"}).format(t);
+const todayStr = () => itDate(new Date());
 function dayShort(d) {
-  const dd = new Date(d + "T12:00"), tm = new Date(Date.now() + 864e5).toISOString().slice(0, 10);
+  const dd = new Date(d + "T12:00"), tm = itDate(new Date(Date.now() + 864e5));
   return d === todayStr() ? "Oggi" : d === tm ? "Domani" : `${GIORNI[dd.getDay()].slice(0, 3)} ${dd.getDate()}`;
 }
 const dayLabel = s => { const d = new Date(s + "T12:00"); return `${GIORNI[d.getDay()]} ${d.toLocaleDateString("it-IT", {day: "numeric", month: "long"})}`; };
@@ -281,14 +298,14 @@ function storySport(m) {
   out.push(fav[1] >= .75 ? `<b>${esc(fav[0])}</b> nettamente favorito (${pc(fav[1])}).` : fav[1] >= .6 ? `<b>${esc(fav[0])}</b> favorito (${pc(fav[1])}).` : `Partita <b>equilibrata</b>.`);
   if (m.sport === "tennis") {
     out.push(`🎾 ${esc(m.torneo)} · ${esc(m.turno)} · ${esc(m.superficie)}${m.bo5 ? " · al meglio dei 5 set" : ""}.`);
+    if (m.livello === "slam") out.push(`🏆 Slam: qui i favoriti vincono più spesso che negli altri tornei, il pronostico ne tiene conto.`);
     out.push(`Rating Elo: ${esc(m.casa)} ${m.elo_casa} · ${esc(m.ospite)} ${m.elo_ospite}.`);
-    if (m.pochi_dati) out.push(`⚠️ Pochi dati su uno dei due giocatori: pronostico meno affidabile.`);
   }
   if (m.sport === "basket") {
     out.push(`🏀 Punti attesi: ${esc(m.casa)} ${m.punti_casa} · ${esc(m.ospite)} ${m.punti_ospite}.`);
-    if (m.con_mercato) out.push(`📈 Pronostico combinato con le quote dei bookmaker.`);
+    out.push(m.con_mercato ? `📈 Probabilità prese dalle quote ${esc(bkShort(m.bookmaker))}: nei test sull'ultimo anno sono state le più precise.`
+      : `🧮 Quote non ancora uscite (arrivano il giorno della partita): pronostico del modello, corretto perché non sopravvaluti i favoriti.`);
   }
-  if (m.value.length) out.push(`💰 Quota conveniente: <b>${esc(label(m.value[0].mercato, m))}</b> pagata ${m.value[0].quota.toFixed(2)} (giusta ${fair(m.value[0].prob)}).`);
   return out;
 }
 
@@ -314,7 +331,7 @@ function story(m) {
   const d = (m.gol_casa_notizie ?? m.gol_casa_base) + (m.gol_ospite_notizie ?? m.gol_ospite_base) - m.gol_casa_base - m.gol_ospite_base;
   if (Math.abs((m.gol_casa_notizie ?? m.gol_casa_base) - m.gol_casa_base) > .03 || Math.abs((m.gol_ospite_notizie ?? m.gol_ospite_base) - m.gol_ospite_base) > .03)
     out.push(`📰 Le notizie hanno cambiato i gol attesi: ${esc(m.casa)} ${m.gol_casa_base.toFixed(2)}→${m.gol_casa_notizie.toFixed(2)}, ${esc(m.ospite)} ${m.gol_ospite_base.toFixed(2)}→${m.gol_ospite_notizie.toFixed(2)}.`);
-  if (m.con_mercato) out.push(`📈 Pronostico combinato con le quote dei bookmaker.`);
+  if (m.con_mercato) out.push(`📈 Pronostico combinato con le quote${m.fonte_quote ? ` (${esc(m.fonte_quote)})` : " dei bookmaker"}.`);
   if (!ev.n_titoli) {
     const hot = [...m.news_casa, ...m.news_ospite].filter(n => /infortunio|squalifica|allenatore/.test(n.tag || "")).length;
     if (hot) out.push(`⚠️ ${hot} notizie su infortuni/squalifiche/panchina non ancora analizzate: leggile prima di giocare.`);
@@ -378,8 +395,11 @@ function viewInfo() {
   <div class="card"><h2>Come funziona</h2>
     <p class="small">1. Il modello studia le partite degli ultimi 3 anni (le recenti contano di più): gol e tiri in porta, per capire quanto ogni squadra attacca e difende e quanto pesa giocare in casa.<br>
     2. Un'intelligenza artificiale legge i titoli dei giornali dei giorni prima della partita (nella lingua del campionato) e trova assenti, squalificati, turnover, porte chiuse. Ogni assente pesa in base a ruolo e importanza: un attaccante chiave vale circa −10% di gol.<br>
-    3. Quando escono le quote, il pronostico viene combinato con il mercato, che è la fonte più precisa che esista.<br>
-    Da qui si calcola la probabilità di ogni risultato e di ogni pronostico. Tutto si aggiorna da solo 3 volte al giorno.</p></div>
+    3. Quando escono le quote, il pronostico viene combinato con il mercato, che è la fonte più precisa che esista: la media dei bookmaker più le quote aggiornate fino al fischio d'inizio (che nei test sono un po' più precise).<br>
+    Da qui si calcola la probabilità di ogni risultato e di ogni pronostico. Tutto si aggiorna da solo più volte al giorno, di più nei giorni di partita.</p>
+    <p class="small"><b>⚠️ Semaforo.</b> Segnala le partite con situazioni particolari: assenze importanti, turnover, calendario fitto, quote che si muovono, modello e quote in disaccordo, pochi dati, back-to-back NBA, rientri dopo una pausa nel tennis. È solo un'informazione: non cambia il pronostico, perché nei test queste partite non sono uscite meno delle altre.</p>
+    <p class="small"><b>📈 Pagella.</b> Ogni giorno l'app salva il pronostico consigliato di ogni partita prima del fischio d'inizio e poi segna se è uscito, così vedi dal vivo se le percentuali sono affidabili.</p>
+    <p class="small"><b>🕘 Orari.</b> Tutti gli orari e i giorni sono in ora italiana: una partita NBA che negli USA è la sera di giovedì qui compare venerdì notte (es. 01:30).</p></div>
   <div class="card gl"><h2>Glossario</h2><dl>
     <dt>1 · X · 2</dt><dd>Vince la squadra di casa · pareggio · vince la squadra ospite</dd>
     <dt>1X · X2</dt><dd>Doppia chance: la squadra non perde (vince o pareggia)</dd>
@@ -387,9 +407,9 @@ function viewInfo() {
     <dt>GG / NG</dt><dd>Goal-Goal: segnano entrambe / No Goal: almeno una non segna</dd>
     <dt>Multigol 2-4</dt><dd>Il totale dei gol è tra 2 e 4</dd>
     <dt>Quota giusta</dt><dd>1 diviso la probabilità. Se il bookmaker paga di più è una "quota conveniente"</dd>
-    <dt>Quote mostrate</dt><dd>Calcio: Bet365 (uno solo, perché la schedina si gioca su un bookmaker). NBA: DraftKings, solo come riferimento. Le probabilità invece usano la media di tutti i bookmaker, che è il dato più preciso.</dd>
-    <dt>Tennis</dt><dd>Rating Elo per giocatore (generale e per superficie): misura la forza in base a chi hai battuto. Dalla probabilità di vittoria si calcolano anche i set.</dd>
-    <dt>NBA</dt><dd>Rating Elo + punti fatti/subiti, combinati con le quote quando ci sono.</dd>
+    <dt>Quote mostrate</dt><dd>Calcio: Bet365 (uno solo, perché la schedina si gioca su un bookmaker). NBA: DraftKings, solo come riferimento. Le probabilità invece usano la media di tutti i bookmaker più le quote aggiornate a ridosso della partita.</dd>
+    <dt>Tennis</dt><dd>Rating Elo per giocatore (generale e per superficie): misura la forza in base a chi hai battuto. Le vittorie negli Slam e in due set secchi pesano di più, le qualificazioni meno; conta anche chi rientra dopo una pausa. Dalla probabilità di vittoria si calcolano anche i set.</dd>
+    <dt>NBA</dt><dd>Quando ci sono le quote (il giorno della partita) le probabilità sono quelle del bookmaker, nei test le più precise. Prima, rating Elo + punti fatti/subiti, corretto perché non sopravvaluti i favoriti e il fattore campo.</dd>
     <dt>Fiducia</dt><dd>Alta = 80% o più · Media = 70-80% · Bassa = sotto il 70%</dd>
   </dl></div>
   <div class="card"><h2>Dati</h2>
@@ -399,7 +419,7 @@ function viewInfo() {
     <div class="kv"><span>Lettura notizie con IA</span><b>${m.fonti?.ia?.attivo ? `attiva · ${esc(m.fonti.ia.fornitore || "")} · ${m.fonti.ia.partite ?? 0} partite` : "non attiva"}</b></div>
     <div class="kv"><span>Versione app</span><b>${v ?? "web"}</b></div>
     ${S.err ? `<div class="kv"><span>Errore</span><b>${esc(S.err)}</b></div>` : ""}
-    <p class="mut small">Fonti: football-data.co.uk (calcio: risultati, statistiche, quote), fixturedownload.com (calendario), ESPN (tennis ATP/WTA e NBA, con quote NBA), Google News, Gazzetta, Corriere dello Sport (notizie).</p>
+    <p class="mut small">Fonti: football-data.co.uk (calcio: risultati, statistiche, quote), fixturedownload.com (calendario), ESPN (quote aggiornate e risultati del calcio, tennis ATP/WTA e NBA con quote NBA), Google News, Gazzetta, Corriere dello Sport (notizie).</p>
     <p class="mut small">Strumento statistico personale. Nessun pronostico è sicuro. Il gioco è vietato ai minori e può causare dipendenza.</p></div>`;
 }
 
@@ -461,7 +481,7 @@ function pkRow(x, i, right) {
   return `<div class="pk" onclick="openMatch(${x.mi})">
     ${i != null ? `<span class="n">${i + 1}</span>` : ""}
     <div class="main"><div class="what"><span class="code">${esc(codeOf(x.k, x.m))}</span><span class="expl">${esc(label(x.k, x.m))}</span></div>
-      <div class="who"><span class="dot ${dotc(x.p)}"></span>${LEGHE()[x.m.lega]?.flag || ""} ${esc(x.m.casa)} – ${esc(x.m.ospite)} · ${S.allDays ? dayShort(x.m.data) + " " : ""}${esc(x.m.ora || "")}</div></div>
+      <div class="who"><span class="dot ${dotc(x.p)}"></span>${LEGHE()[x.m.lega]?.flag || ""} ${esc(x.m.casa)} – ${esc(x.m.ospite)} · ${S.allDays ? dayShort(x.m.data) + " " : ""}${esc(x.m.ora || "")}${warn(x.m)}</div></div>
     <div class="num"><b>${pc(x.p)}</b><span>${x.q ? esc(bkShort(x.bk)) + " " + (x.est ? "≈" : "") + x.q.toFixed(2) : "giusta " + fair(x.p)}</span></div>
     ${right || ""}</div>`;
 }
@@ -513,7 +533,7 @@ function viewOggi() {
     ${sq.note ? `<div class="small mut" style="margin-top:4px">${esc(sq.note)}</div>` : ""}
     ${slip.map(x => pkRow(x)).join("")}
     <button style="width:100%;margin-top:8px" onclick="go('schedina')">Modificala o costruiscine un'altra →</button></div>` : ""}
-  <h2 style="margin:16px 0 8px">Tutte le partite · ${list.length}</h2>
+  <h2 style="margin:16px 0 8px">Tutte le partite · ${list.length} <span class="small mut" style="font-weight:400">· orari italiani</span></h2>
   ${keys.map(k => {
     const ms = groups[k].sort((a, b) => (a.ora || "").localeCompare(b.ora || ""));
     const open = S.open[k] ?? keys.length <= 2;
@@ -524,7 +544,7 @@ function viewOggi() {
 function matchRow(m) {
   const M = m.mercati, bp = bestPick(m);
   const pr = M.X != null ? `${pc(M["1"])} · ${pc(M.X)} · ${pc(M["2"])}` : `${pc(M["1"])} · ${pc(M["2"])}`;
-  return `<div class="mr" onclick="openMatch(${m._mi})"><div class="t">${esc(m.ora || "")}</div>
+  return `<div class="mr" onclick="openMatch(${m._mi})"><div class="t">${esc(m.ora || "")}${warn(m)}</div>
     <div class="tm"><div>${esc(m.casa)}</div><div>${esc(m.ospite)}</div><div class="pb">${pr}</div></div>
     <div class="bp"><span class="code" style="margin:0">${esc(codeOf(bp.k, m))}</span><div><b>${pc(bp.p)}</b></div></div></div>`;
 }
@@ -566,6 +586,7 @@ function detail(m) {
     <div class="pick"><div><div class="small mut">Pronostico consigliato (il più probabile${S.f.qmin > 1 ? " con quota ≥ " + S.f.qmin.toFixed(2) : ""})</div>
       <span class="code codebig">${esc(codeOf(bp.k, m))}</span><div class="expl">${esc(label(bp.k, m))}</div><span class="conf ${cc}">${ct}</span></div>
       <div class="p"><b>${pc(bp.p)}</b><span class="small mut">${bp.q ? "quota " + esc(bkShort(bp.bk)) + " " + (bp.est ? "≈" : "") + bp.q.toFixed(2) : "quota giusta " + fair(bp.p)}</span></div></div>
+    ${semBox(m)}
     <ul class="says">${says.map(x => `<li>${x}</li>`).join("")}</ul>
     <div class="card" style="margin-top:14px;padding-top:2px;padding-bottom:2px">
       <details class="acc"><summary>Tutti i pronostici</summary>${altri}</details>
@@ -626,6 +647,61 @@ function viewSchedina() {
   <p class="small mut">Le probabilità si moltiplicano: 4 pronostici all'80% danno insieme il 41%. "Quota giusta" = senza guadagno del banco. Ogni pronostico in più aggiunge il margine del bookmaker (circa 5%). Gioca solo cifre che puoi permetterti di perdere.</p>`;
 }
 
+
+/* ---------- 📈 PAGELLA ---------- */
+function pgPct(a) { return a.n ? Math.round(100 * a.vinti / a.n) + "%" : "–"; }
+function pgVerdict(a) {
+  if (!a.n) return "";
+  const d = a.vinti / a.n - a.attesi / a.n;
+  return a.n < 30 ? `<span class="mut">ancora pochi pronostici per giudicare</span>` :
+    d >= -0.03 ? `<span class="ok">in linea con quanto previsto${d > 0.03 ? " (anche meglio)" : ""}</span>` :
+    `<span class="ko">sotto le attese di ${Math.round(-d * 100)} punti</span>`;
+}
+function pgRow(x) {
+  const m = {...x, mercati: {}}, ic = x.esito === "vinto" ? "✅" : x.esito === "perso" ? "❌" : x.esito === "annullata" ? "➖" : "⏳";
+  return `<div class="pg"><span>${ic}</span><div class="main"><div><span class="code" style="font-size:13px">${esc(codeOf(x.k, m))}</span>${esc(label(x.k, m))}</div>
+    <div class="who">${LEGHE()[x.lega]?.flag || ""} ${esc(x.casa)} – ${esc(x.ospite)} · ${dayShort(x.data)} ${esc(x.ora || "")}${x.risultato ? " · finita " + esc(x.risultato) : ""}${x.semaforo === "giallo" ? " ⚠️" : ""}</div></div>
+    <div class="num" style="text-align:right"><b>${pc(x.p)}</b><div class="small mut">${x.q ? (x.est ? "≈" : "") + x.q.toFixed(2) : ""}</div></div></div>`;
+}
+function viewPagella() {
+  const P = S.pag;
+  if (!P) return `<div class="empty">Pagella non ancora disponibile: arriva con il prossimo aggiornamento.</div>`;
+  const per = P.periodi?.[S.pagPer] || {}, t = per.tutti || {n: 0}, sl = per.schedine || {};
+  const lab = {"7": "7 giorni", "30": "30 giorni", "tutto": "da sempre"};
+  const tab = (title, obj, names) => {
+    const rows = Object.entries(obj || {}).filter(([, a]) => a.n);
+    return rows.length ? `<div class="sec">${title}</div><table><tr><th></th><th></th><th>Pronostici</th><th>Indovinati</th><th>Attesi</th></tr>${rows.map(([k, a]) =>
+      `<tr><td></td><td>${names[k] || esc(k)}</td><td>${a.n}</td><td><b>${pgPct(a)}</b></td><td>${Math.round(100 * a.attesi / a.n)}%</td></tr>`).join("")}</table>` : "";
+  };
+  const giorni = (P.giorni || []).filter(g => g.n || g.schedina);
+  return `<div class="card">
+    <div class="seg">${Object.keys(lab).map(k => `<button class="${S.pagPer === k ? "on" : ""}" onclick="S.pagPer='${k}';store('pagPer','${k}');render()">${lab[k]}</button>`).join("")}</div>
+    ${t.n ? `<div class="sum" style="margin-top:12px"><div><div class="small mut">Pronostici consigliati indovinati</div><div class="big">${t.vinti} su ${t.n}</div></div>
+      <div class="r"><div class="small mut">reale · atteso</div><div class="big">${pgPct(t)} <span class="mut" style="font-size:18px">· ${Math.round(100 * t.attesi / t.n)}%</span></div></div></div>
+      <div class="verdict">${pgVerdict(t)}</div>
+      ${t.resa != null && t.n_quote >= 10 ? `<div class="small mut" style="margin-top:4px">Giocando 1 € su ognuno dei ${t.n_quote} con quota reale: ${t.resa >= 0 ? "+" : ""}${(t.resa * 100).toFixed(1)}% (i bookmaker trattengono circa il 5%).</div>` : ""}`
+    : `<div class="empty" style="padding:16px 0">Ancora nessun risultato in questo periodo.<br><span class="small">La pagella parte dal ${P.dal ? dayLabel(P.dal) : "primo aggiornamento"}: ogni giorno segna come sono andati i pronostici consigliati.</span></div>`}
+  </div>
+  ${sl.giocate ? `<div class="card"><h2>🎫 Schedina del giorno</h2>
+    <div class="sum"><div><div class="small mut">Uscite</div><div class="big">${sl.vinte} su ${sl.giocate}</div></div>
+    <div class="r"><div class="small mut">attese</div><div class="big">${sl.attese.toFixed(1)}</div></div></div>
+    <div class="hint" style="margin:6px 0 0">È la schedina consigliata al primo aggiornamento del mattino: i 4 pronostici più sicuri del giorno (almeno 65%, quota almeno 1,20), tutti gli sport.</div></div>` : ""}
+  ${t.n ? `<div class="card">${tab("Per sport", per.sport, {calcio: "⚽ Calcio", tennis: "🎾 Tennis", basket: "🏀 NBA"})}
+    ${tab("Per sicurezza indicata", per.fasce, {})}
+    ${tab("Per semaforo", per.semaforo, {verde: "🟢 normali", giallo: "⚠️ situazione particolare"})}
+    <p class="small mut">"Attesi" è la probabilità media indicata dall'app: se il reale è vicino, le percentuali sono affidabili.</p></div>` : ""}
+  ${giorni.length ? `<h2 style="margin:16px 0 8px">Giorno per giorno</h2><div class="card grp">${giorni.map(g => {
+    const open = S.pagOpen[g.data], s = g.schedina, ic = s ? {vinta: "✅", persa: "❌", "in corso": "⏳", annullata: "➖"}[s.stato] : "";
+    const picks = (P.recenti || []).filter(x => x.data === g.data);
+    return `<div class="lgh" onclick="S.pagOpen['${g.data}']=!S.pagOpen['${g.data}'];render()">${dayShort(g.data)}
+      <span class="c">${g.n ? `${g.vinti}/${g.n} indovinati · attesi ${Math.round(g.attesi)}` : ""}${g.in_attesa ? ` · ${g.in_attesa} in attesa` : ""}</span>
+      <span class="ar">${s ? "🎫" + ic : ""} ${open ? "▴" : "▾"}</span></div>
+      ${open ? `<div style="padding:0 14px 8px">${s ? `<div class="sec">Schedina del giorno · ${pc(s.prob)} · quota ${s.quota.reale ? esc(bkShort(s.quota.bk)) + " " : "giusta "}${s.quota.quota}</div>${s.pronostici.map(pgRow).join("")}` : ""}
+        ${picks.length ? `<div class="sec">Pronostici consigliati</div>${picks.map(pgRow).join("")}` : g.n ? `<div class="small mut">Dettaglio disponibile per gli ultimi 3 giorni.</div>` : ""}</div>` : ""}`;
+  }).join("")}</div>` : ""}
+  <p class="small mut">Per ogni partita conta il pronostico consigliato prima del fischio d'inizio (il più probabile con quota almeno 1,20). Risultati: calcio da ESPN e football-data, tennis e NBA da ESPN. Partite rinviate = annullate.</p>`;
+}
+
 /* ---------- 📊 CLASSIFICHE ---------- */
 function viewClassifica() {
   const L = LEGHE();
@@ -653,20 +729,21 @@ async function load() {
     [S.pred, S.stand, S.meta] = await Promise.all(["predictions.json", "standings.json", "meta.json"].map(getJSON));
     S.err = null;
     store("cache", [S.pred, S.stand, S.meta]);
+    try { S.pag = await getJSON("pagella.json"); store("pag", S.pag); } catch (e) { S.pag = restore("pag", null); }
   } catch (e) {
     S.err = e.message;
     [S.pred, S.stand, S.meta] = restore("cache", []) || [];
   }
   S.sel = null;
   const d = S.meta?.aggiornato ? new Date(S.meta.aggiornato) : null;
-  $("#upd").textContent = d ? `agg. ${d.toLocaleTimeString("it-IT", {hour: "2-digit", minute: "2-digit"})}${S.err ? " · offline" : ""}` : "";
+  $("#upd").textContent = d ? `agg. ${d.toLocaleTimeString("it-IT", {hour: "2-digit", minute: "2-digit", timeZone: "Europe/Rome"})}${S.err ? " · offline" : ""}` : "";
   render();
   checkApp();
 }
 function go(v) { S.view = v; render(); window.scrollTo(0, 0); }
 function render() {
   topBars();
-  $("#main").innerHTML = {oggi: viewOggi, schedina: viewSchedina, classifica: viewClassifica, info: viewInfo}[S.view]();
+  $("#main").innerHTML = {oggi: viewOggi, schedina: viewSchedina, pagella: viewPagella, classifica: viewClassifica, info: viewInfo}[S.view]();
   document.querySelectorAll("nav button").forEach(b => b.classList.toggle("on", b.dataset.v === S.view));
 }
 document.querySelectorAll("nav button").forEach(b => b.onclick = () => go(b.dataset.v));
