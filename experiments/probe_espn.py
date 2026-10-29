@@ -11,36 +11,31 @@ SLUGS = ["ita.1", "ita.2", "eng.1", "eng.2", "esp.1", "esp.2", "ger.1", "ger.2",
          "bel.1", "tur.1", "sco.1", "eng.3", "eng.4", "eng.5", "sco.2", "sco.3", "sco.4", "gre.1"]
 out = {"leghe": {}, "esempi": {}}
 today = dt.date.today()
-rng = f"{(today - dt.timedelta(days=3)):%Y%m%d}-{(today + dt.timedelta(days=4)):%Y%m%d}"
-out["varianti"] = {}
-for nm, par in (("range", {"dates": rng}), ("giorno", {"dates": f"{today:%Y%m%d}"}), ("niente", {}),
-                ("range_limit", {"dates": rng, "limit": 100})):
-    try:
-        r = requests.get(f"{E}/soccer/ita.1/scoreboard", params=par, headers=H, timeout=30)
-        out["varianti"][nm] = [r.status_code, len(r.json().get("events", [])) if r.ok else r.text[:200]]
-    except Exception as e:
-        out["varianti"][nm] = str(e)[:200]
-for s in SLUGS:
-    try:
-        r = requests.get(f"{E}/soccer/{s}/scoreboard", params={"dates": rng}, headers=H, timeout=30)
-        evs = r.json().get("events", [])
-        n_odds = 0
+out["calcio"] = {}
+for sl in SLUGS:
+    tot = {"eventi": 0, "con_quote": 0, "finite": 0}
+    for dd in range(-2, 5):
+        day = today + dt.timedelta(days=dd)
+        try:
+            r = requests.get(f"{E}/soccer/{sl}/scoreboard", params={"dates": f"{day:%Y%m%d}"}, headers=H, timeout=30)
+            evs = r.json().get("events", []) if r.ok else []
+        except Exception as e:
+            evs = []
         for ev in evs:
             c = ev["competitions"][0]
+            tot["eventi"] += 1
+            tot["finite"] += bool(c["status"]["type"].get("completed"))
             if c.get("odds"):
-                n_odds += 1
-                if s not in out["esempi"] and c["status"]["type"]["state"] == "pre":
-                    out["esempi"][s] = {"date": c.get("date"), "competitors": [
-                        {k: x.get(k) for k in ("homeAway", "score")} | {"team": x["team"].get("displayName"),
-                                                                         "short": x["team"].get("shortDisplayName")}
-                        for x in c["competitors"]], "odds": c["odds"]}
-        done = [ev for ev in evs if ev["competitions"][0]["status"]["type"].get("completed")]
-        out["leghe"][s] = {"status": r.status_code, "eventi": len(evs), "con_quote": n_odds, "finite": len(done),
-                           "es_finita": ({x["homeAway"]: [x["team"]["displayName"], x.get("score")]
-                                          for x in done[0]["competitions"][0]["competitors"]} if done else None),
-                           "es_data": evs[0]["date"] if evs else None}
-    except Exception as e:
-        out["leghe"][s] = {"errore": str(e)[:200]}
+                tot["con_quote"] += 1
+                tot.setdefault("giorni_quote", []).append(dd)
+                if sl not in out["esempi"] and c["status"]["type"]["state"] == "pre":
+                    out["esempi"][sl] = {"date": c.get("date"), "status": c["status"]["type"],
+                                         "competitors": [{"homeAway": x.get("homeAway"), "team": x["team"].get("displayName"),
+                                                          "short": x["team"].get("shortDisplayName"), "score": x.get("score")}
+                                                         for x in c["competitors"]], "odds": c["odds"]}
+            if c["status"]["type"].get("completed") and "es_finita" not in tot:
+                tot["es_finita"] = [[x.get("homeAway"), x["team"]["displayName"], x.get("score")] for x in c["competitors"]]
+    out["calcio"][sl] = tot
 # NBA: quote nel tabellone e nel riepilogo, oggi e prossimi giorni
 out["nba"] = {}
 for dd in range(0, 4):
@@ -68,4 +63,4 @@ try:
 except Exception as e:
     out["tennis"] = {"errore": str(e)[:300]}
 Path(__file__).with_name("probe_espn.json").write_text(json.dumps(out, indent=1, ensure_ascii=False))
-print(json.dumps(out["leghe"], indent=1))
+print(json.dumps(out["calcio"], indent=1))
