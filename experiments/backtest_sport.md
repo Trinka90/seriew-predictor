@@ -109,4 +109,26 @@ Coefficienti (logit): fiducia ×0.98, extra Slam ×+0.34, extra qualificazioni �
 
 _tennis-data.co.uk non raggiungibile in questo giro: confronto con Bet365 non fatto._
 
-_Tempo di calcolo: 300 s_
+<details><summary>Diagnostica download</summary>
+
+```
+http://www.tennis-data.co.uk/2025/2025.xlsx -> 403, 4552 byte, text/html; charset=UTF-8
+http://www.tennis-data.co.uk/2025/2025.xls -> 403, 4552 byte, text/html; charset=UTF-8
+https://www.tennis-data.co.uk/2025/2025.xlsx -> 403, 4552 byte, text/html; charset=UTF-8
+https://www.tennis-data.co.uk/2025/2025.xls -> 403, 4552 byte, text/html; charset=UTF-8
+http://www.tennis-data.co.uk/2026/2026.xlsx -> 403, 4552 byte, text/html; charset=UTF-8
+http://www.tennis-data.co.uk/2026/2026.xls -> 403, 4552 byte, text/html; charset=UTF-8
+https://www.tennis-data.co.uk/2026/2026.xlsx -> 403, 4552 byte, text/html; charset=UTF-8
+https://www.tennis-data.co.uk/2026/2026.xls -> 403, 4552 byte, text/html; charset=UTF-8
+http://www.tennis-data.co.uk/2025w/2025.xlsx -> 403, 4552 byte, text/html; charset=UTF-8
+http://www.tennis-data.co.uk/2025w/2025.xls -> 403, 4552 byte, text/html; charset=UTF-8
+https://www.tennis-data.co.uk/2025w/2025.xlsx -> 403, 4552 byte, text/html; charset=UTF-8
+https://www.tennis-data.co.uk/2025w/2025.xls -> 403, 4552 byte, text/html; charset=UTF-8
+http://www.tennis-data.co.uk/2026w/2026.xlsx -> 403, 4552 byte, text/html; charset=UTF-8
+http://www.tennis-data.co.uk/2026w/2026.xls -> 403, 4552 byte, text/html; charset=UTF-8
+https://www.tennis-data.co.uk/2026w/2026.xlsx -> 403, 4552 byte, text/html; charset=UTF-8
+https://www.tennis-data.co.uk/2026w/2026.xls -> 403, 4552 byte, text/html; charset=UTF-8
+```
+</details>
+
+_Tempo di calcolo: 34 s_
