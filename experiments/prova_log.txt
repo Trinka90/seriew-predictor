@@ -1,0 +1,62 @@
+  Serie A: 1608 partite
+  Serie B: 1610 partite
+  Premier League: 1600 partite
+  Championship: 2352 partite
+  La Liga: 1619 partite
+  Segunda División: 1969 partite
+  Bundesliga: 1287 partite
+  2. Bundesliga: 1305 partite
+  Ligue 1: 1370 partite
+  Ligue 2: 1460 partite
+  Eredivisie: 1314 partite
+  Primeira Liga: 1305 partite
+  Pro League: 1321 partite
+  Süper Lig: 1451 partite
+  Premiership: 978 partite
+  League One: 2351 partite
+  League Two: 2359 partite
+  National League: 2385 partite
+  Championship scozzese: 779 partite
+  League One scozzese: 779 partite
+  League Two scozzese: 775 partite
+  Super League Grecia: 1004 partite
+  (storico: 103s)
+  [!] calendario I2: 404 Client Error: Not Found for url: https://fixturedownload.com/feed/json/serie-b-2026
+  [!] calendario D2: 404 Client Error: Not Found for url: https://fixturedownload.com/feed/json/2-bundesliga-2026
+  calendario: 2242 partite in programma
+  (calendario: 8s)
+  ESPN calcio: 235 partite, 176 con quote, 105 aggiunte al calendario
+  (espn_calcio: 36s)
+  [!] API-Football /injuries: {'plan': 'Free plans do not have access to this season, try from 2022 to 2024.'}
+  infortuni/squalifiche: 0
+  (infortuni: 0s)
+  notizie: 2911 titoli analizzati
+  (notizie: 222s)
+  modelli Groq: ['openai/gpt-oss-120b', 'qwen/qwen3.8-27b', 'openai/gpt-oss-20b', 'allam-2-7b']
+  modelli OpenRouter: ['nvidia/nemotron-3-ultra-550b-a55b:free', 'google/gemma-4-31b-it:free', 'nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free', 'xingchen-agi/xing4.0-29b-a4b:free']
+  IA notizie: {'partite': 153, 'chiamate': 17, 'da_cache': 2, 'errori': 0, 'precedenti': 47, 'rimandate': 134, 'verificati': 9, 'scartati': 4, 'ricordati': 7, 'attivo': True, 'fornitore': 'Groq (22), OpenRouter (1)', 'modelli': {'Groq': ['openai/gpt-oss-120b', 'qwen/qwen3.8-27b'], 'OpenRouter': ['nvidia/nemotron-3-ultra-550b-a55b:free', 'google/gemma-4-31b-it:free']}, 'ultimo_errore': 'Groq: Expecting property name enclosed in double quotes: line 1 column 127 (char 126)', 'titoli_mirati': 4721}
+  (ia: 906s)
+  Serie A: 22 partite in programma
+  Serie B: 10 partite in programma
+  Premier League: 20 partite in programma
+  Championship: 36 partite in programma
+  La Liga: 20 partite in programma
+  Segunda División: 9 partite in programma
+  Bundesliga: 18 partite in programma
+  2. Bundesliga: 9 partite in programma
+  Ligue 1: 18 partite in programma
+  Ligue 2: 9 partite in programma
+  Eredivisie: 18 partite in programma
+  Primeira Liga: 18 partite in programma
+  Pro League: 8 partite in programma
+  Süper Lig: 6 partite in programma
+  Premiership: 3 partite in programma
+  League One: 14 partite in programma
+  League Two: 13 partite in programma
+  National League: 12 partite in programma
+  Championship scozzese: 5 partite in programma
+  League One scozzese: 0 partite in programma
+  League Two scozzese: 0 partite in programma
+  Super League Grecia: 7 partite in programma
+  altri sport: {'ATP': {'richieste': 7, 'partite': 7871, 'da_scaricare': 0, 'quote_lette': 0, 'in_programma': 10}, 'WTA': {'richieste': 7, 'partite': 12525, 'da_scaricare': 0, 'quote_lette': 0, 'in_programma': 21}, 'NBA': {'richieste': 6, 'partite': 2853, 'da_scaricare': 0, 'quote_lette': 22, 'in_programma': 22}}
+JSON scritti: 328 partite in programma
