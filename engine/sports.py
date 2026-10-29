@@ -396,7 +396,7 @@ def _tnotes(name, f):
     out = []
     if gap is not None and gap > 21:
         out.append(f"{name} rientra dopo {gap // 7} settimane senza partite (di solito rende meno)")
-    if s3 >= 5:
+    if s3 >= 6:
         out.append(f"{name} ha giocato {s3} set negli ultimi 3 giorni")
     return out
 

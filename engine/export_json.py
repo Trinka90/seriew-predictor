@@ -86,7 +86,7 @@ def _semaforo(info, home, away, df, day, drift=None):
     for side, team in (("h", home), ("a", away)):
         big = [a for a in info[f"abs_{side}"] if a.get("importanza") in ("stella", "titolare")]
         if any(a.get("importanza") == "stella" for a in big) or len(big) >= 2:
-            mot.append(f"{team}: {len(big)} assent{'e' if len(big) == 1 else 'i'} importanti "
+            mot.append(f"{team}: {len(big)} assent{'e importante' if len(big) == 1 else 'i importanti'} "
                        f"({', '.join(a['player'] for a in big[:3])})")
     ev = info.get("eventi") or {}
     for side, team in (("casa", home), ("ospite", away)):
