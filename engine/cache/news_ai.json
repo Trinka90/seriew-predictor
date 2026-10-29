@@ -14135,6 +14135,508 @@
 "n_titoli": 50
 }
 },
+"eaf3c3d04a6b5a70a4466596e8a8ab152bb63cd1": {
+"data": "2026-10-29",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Pongracic",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+2,
+3,
+4
+],
+"fonte": "Fiorentina, brutte notizie per Pongracic: il report medico sull'infortunio del difensore - FirenzeToday"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Peggior avvio di campionato, emergenza difensiva"
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Scamacca",
+"ruolo": "attaccante",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+45,
+47
+],
+"fonte": "Ko Scamacca! Da Scalvini e Rowe a Pellegrino, Njie e Samardzic: le probabili formazioni di Fiorentina-Atalanta - SOS Fanta"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Emergenza totale, otto indisponibili, solo 20 convocati"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Fiorentina in crisi, Atalanta in emergenza"
+},
+"n_titoli": 50
+}
+},
+"61fd6d39379c78ad4bb70f340ea208d8a05e19d5": {
+"data": "2026-10-29",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "positivo",
+"note": "Alvini valuta turnover; Di Francesco torna da ex"
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Ilic",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+31,
+32
+],
+"fonte": "Lecce, Ilic operato con successo in Finlandia a retto femorale - Sportmediaset"
+}
+],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Emergenza assenze, possibile difesa a tre"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Di Francesco torna da ex a Frosinone"
+},
+"n_titoli": 50
+}
+},
+"efad0ed9dd99908fbd57066b681074d0838ffe74": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione rilevante"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione rilevante"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna informazione su chiusura o campo neutro"
+},
+"n_titoli": 3
+}
+},
+"1536656310787be60ec99d98be33219c14d53751": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": ""
+},
+"n_titoli": 3
+}
+},
+"480400b4416b75d77b7b223013ee6be0e876564e": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione rilevante nei titoli."
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Wittek",
+"ruolo": "portiere",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "in dubbio",
+"titoli": [
+7
+],
+"fonte": "DFB-Pokal: Bochum schaltet Erstligist Mainz aus - Sorgen um Wittek - Kicker"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "positivo",
+"note": "Vittoria in DFB-Pokal contro Mainz; dubbi su Wittek."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione particolare."
+},
+"n_titoli": 11
+}
+},
+"283ed84bf28f8855ea278602c37f1166336f4f55": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna assenza confermata per Elversberg."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna assenza confermata per Mainz."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita in stadio aperto, nessuna informazione di chiusura."
+},
+"n_titoli": 10
+}
+},
+"d55ecfba6f9ef9755a3dabfba06b71b3839d1ff9": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Condizioni meteorologiche avverse per Fylde."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione sul clima."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita in condizioni meteorologiche avverse per Fylde."
+},
+"n_titoli": 9
+}
+},
+"a050928bbfaa2e77ec3825ea4791894cde93224e": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione rilevante nei titoli."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessun titolo disponibile."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione rilevante."
+},
+"n_titoli": 2
+}
+},
+"9f33474ea627a1a9ea88b553ca9c7799eefd0b84": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione su assenze per questa partita."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "3 assenze nella convocazione; decisione a sorpresa su un giocatore."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Galatasaray leader; convocazione con 3 assenze e sorpresa."
+},
+"n_titoli": 30
+}
+},
+"b5c8a0d861d8d5033d007e433ef25632e7f0b992": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione rilevante nei titoli."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione rilevante nei titoli."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione disponibile."
+},
+"n_titoli": 2
+}
+},
+"994cc963940d51ce73580c0a2356d152000d45a4": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna assenza confermata per Le Havre."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna assenza confermata per PSG."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita in stadio aperto, nessuna informazione di chiusura."
+},
+"n_titoli": 14
+}
+},
+"981333f13173e09b53c305bbbef88d42e6f1af90": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Tifosi Lens vietati in trasferta dopo incidenti in Champions League"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Tifosi Lens esclusi dalla trasferta per incidenti in Champions League"
+},
+"n_titoli": 8
+}
+},
+"bd9abfa7cbeacaf5bf3121956e978f2c8f63079d": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Allenatore squalificato, tribune chiuse"
+},
+"partita": {
+"porte_chiuse": true,
+"campo_neutro": false,
+"note": "Tribune chiuse per Pau FC"
+},
+"n_titoli": 2
+}
+},
+"115783f5d5704fb24ea04e92bf4f5dfbf5c70798": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione su assenti o turnover."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione su assenti o turnover."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione su porte chiuse o campo neutro."
+},
+"n_titoli": 15
+}
+},
+"00805e5fa1e2610d341ca950903eb3b8f8d3d9b2": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Gwengwe",
+"ruolo": "difensore",
+"importanza": "riserva",
+"motivo": "squalifica",
+"certezza": "certo",
+"titoli": [
+4
+],
+"fonte": "Gwengwe ban explained as Newport players seize chances - BBC"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Infortuni e squalifica per due giocatori chiave"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna infortunio riportata"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita in stadio aperto"
+},
+"n_titoli": 11
+}
+},
+"a3fe8cad05a3a3c23238fa2555fa280ddee643a3": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": ""
+},
+"n_titoli": 2
+}
+},
+"ba7bc3ec513a26a11b274474cde46704c96c939f": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Bamford",
+"ruolo": "attaccante",
+"importanza": "stella",
+"motivo": "infortunio",
+"certezza": "probabile",
+"titoli": [
+2,
+9
+],
+"fonte": "SUFC News: United dealt fresh injury blow pre-Wrexham amid Bamford update - The Star"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Infortunio di Bamford, altri dettagli non specificati."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessun giocatore specificamente assente nei titoli."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita in programma senza indicazioni di chiusura."
+},
+"n_titoli": 20
+}
+},
 "_ultima": {
 "Andorra|Burgos|2026-10-26": {
 "data": "2026-10-26",
@@ -14778,7 +15280,9 @@
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-1
+2,
+3,
+4
 ],
 "fonte": "Fiorentina, brutte notizie per Pongracic: il report medico sull'infortunio del difensore - FirenzeToday"
 }
@@ -14786,22 +15290,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "negativo",
-"note": "Lesione difensore chiave"
+"note": "Peggior avvio di campionato, emergenza difensiva"
 },
 "ospite": {
 "assenti": [
 {
 "nome": "Scamacca",
 "ruolo": "attaccante",
-"importanza": "stella",
+"importanza": "titolare",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-31
+45,
+47
 ],
-"fonte": "Atalanta in piena emergenza: infortunio anche per Scamacca, i tempi di recupero",
-"visto": "2026-10-28",
-"memoria": true
+"fonte": "Ko Scamacca! Da Scalvini e Rowe a Pellegrino, Njie e Samardzic: le probabili formazioni di Fiorentina-Atalanta - SOS Fanta"
 },
 {
 "nome": "Bellanova",
@@ -14820,12 +15323,12 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Assenza attaccante principale"
+"note": "Emergenza totale, otto indisponibili, solo 20 convocati"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita regolare senza restrizioni"
+"note": "Fiorentina in crisi, Atalanta in emergenza"
 },
 "n_titoli": 50
 }
@@ -14838,18 +15341,19 @@
 "turnover": "medio",
 "nuovo_allenatore": false,
 "clima": "positivo",
-"note": "Nessuna assenza segnalata"
+"note": "Alvini valuta turnover; Di Francesco torna da ex"
 },
 "ospite": {
 "assenti": [
 {
 "nome": "Ilic",
-"ruolo": "difensore",
+"ruolo": "centrocampista",
 "importanza": "titolare",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-39
+31,
+32
 ],
 "fonte": "Lecce, Ilic operato con successo in Finlandia a retto femorale - Sportmediaset"
 },
@@ -14880,15 +15384,15 @@
 "memoria": true
 }
 ],
-"turnover": "nessuno",
+"turnover": "medio",
 "nuovo_allenatore": false,
 "clima": "negativo",
-"note": "Emergenza infortuni"
+"note": "Emergenza assenze, possibile difesa a tre"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita regolare"
+"note": "Di Francesco torna da ex a Frosinone"
 },
 "n_titoli": 50
 }
@@ -14915,7 +15419,7 @@
 "campo_neutro": false,
 "note": ""
 },
-"n_titoli": 2
+"n_titoli": 3
 }
 },
 "Elversberg|Mainz|2026-10-30": {
@@ -14926,21 +15430,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione su assenti"
+"note": "Nessuna assenza confermata per Elversberg."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione su assenti"
+"note": "Nessuna assenza confermata per Mainz."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "nessuna indicazione di chiusura"
+"note": "Partita in stadio aperto, nessuna informazione di chiusura."
 },
-"n_titoli": 21
+"n_titoli": 10
 }
 },
 "Le Havre|Paris SG|2026-10-30": {
@@ -14951,21 +15455,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna novità rilevante"
+"note": "Nessuna assenza confermata per Le Havre."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna novità rilevante"
+"note": "Nessuna assenza confermata per PSG."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita regolare senza restrizioni"
+"note": "Partita in stadio aperto, nessuna informazione di chiusura."
 },
-"n_titoli": 11
+"n_titoli": 14
 }
 },
 "Lille|Lens|2026-10-30": {
@@ -14976,7 +15480,7 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione rilevante"
+"note": ""
 },
 "ospite": {
 "assenti": [
@@ -14989,7 +15493,9 @@
 "titoli": [
 9
 ],
-"fonte": "RC Lens – Paris FC : le groupe lensois sans Jonathan Gradit, ni Odsonne Edouard - Lensois.com"
+"fonte": "RC Lens – Paris FC : le groupe lensois sans Jonathan Gradit, ni Odsonne Edouard - Lensois.com",
+"visto": "2026-10-29",
+"memoria": true
 },
 {
 "nome": "Odsonne Edouard",
@@ -15000,20 +15506,22 @@
 "titoli": [
 9
 ],
-"fonte": "RC Lens – Paris FC : le groupe lensois sans Jonathan Gradit, ni Odsonne Edouard - Lensois.com"
+"fonte": "RC Lens – Paris FC : le groupe lensois sans Jonathan Gradit, ni Odsonne Edouard - Lensois.com",
+"visto": "2026-10-29",
+"memoria": true
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "assenze confermate"
+"note": "Tifosi Lens vietati in trasferta dopo incidenti in Champions League"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "nessuna informazione su porte chiuse"
+"note": "Tifosi Lens esclusi dalla trasferta per incidenti in Champions League"
 },
-"n_titoli": 10
+"n_titoli": 8
 }
 },
 "Sheffield United|Wrexham|2026-10-30": {
@@ -15026,31 +15534,32 @@
 "ruolo": "attaccante",
 "importanza": "stella",
 "motivo": "infortunio",
-"certezza": "certo",
+"certezza": "probabile",
 "titoli": [
-2
+2,
+9
 ],
 "fonte": "SUFC News: United dealt fresh injury blow pre-Wrexham amid Bamford update - The Star"
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "negativo",
-"note": ""
+"clima": "neutro",
+"note": "Infortunio di Bamford, altri dettagli non specificati."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": ""
+"note": "Nessun giocatore specificamente assente nei titoli."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Nessuna informazione su porte chiuse"
+"note": "Partita in programma senza indicazioni di chiusura."
 },
-"n_titoli": 16
+"n_titoli": 20
 }
 },
 "Villarreal|Espanol|2026-10-30": {
@@ -17943,6 +18452,280 @@
 },
 "n_titoli": 50
 }
+},
+"Bielefeld|Braunschweig|2026-10-30": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione rilevante"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione rilevante"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna informazione su chiusura o campo neutro"
+},
+"n_titoli": 3
+}
+},
+"Cottbus|Bochum|2026-10-30": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione rilevante nei titoli."
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Wittek",
+"ruolo": "portiere",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "in dubbio",
+"titoli": [
+7
+],
+"fonte": "DFB-Pokal: Bochum schaltet Erstligist Mainz aus - Sorgen um Wittek - Kicker"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "positivo",
+"note": "Vittoria in DFB-Pokal contro Mainz; dubbi su Wittek."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione particolare."
+},
+"n_titoli": 11
+}
+},
+"Fylde|Hornchurch|2026-10-30": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Condizioni meteorologiche avverse per Fylde."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione sul clima."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita in condizioni meteorologiche avverse per Fylde."
+},
+"n_titoli": 9
+}
+},
+"Grenoble|Dijon|2026-10-30": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione rilevante nei titoli."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessun titolo disponibile."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione rilevante."
+},
+"n_titoli": 2
+}
+},
+"Konyaspor|Galatasaray|2026-10-30": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione su assenze per questa partita."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "3 assenze nella convocazione; decisione a sorpresa su un giocatore."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Galatasaray leader; convocazione con 3 assenze e sorpresa."
+},
+"n_titoli": 30
+}
+},
+"Laval|Boulogne|2026-10-30": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione rilevante nei titoli."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione rilevante nei titoli."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione disponibile."
+},
+"n_titoli": 2
+}
+},
+"Metz|Pau FC|2026-10-30": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Allenatore squalificato, tribune chiuse"
+},
+"partita": {
+"porte_chiuse": true,
+"campo_neutro": false,
+"note": "Tribune chiuse per Pau FC"
+},
+"n_titoli": 2
+}
+},
+"Nantes|Clermont|2026-10-30": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione su assenti o turnover."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione su assenti o turnover."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione su porte chiuse o campo neutro."
+},
+"n_titoli": 15
+}
+},
+"Newport County|Chesterfield|2026-10-30": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Gwengwe",
+"ruolo": "difensore",
+"importanza": "riserva",
+"motivo": "squalifica",
+"certezza": "certo",
+"titoli": [
+4
+],
+"fonte": "Gwengwe ban explained as Newport players seize chances - BBC"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Infortuni e squalifica per due giocatori chiave"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna infortunio riportata"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita in stadio aperto"
+},
+"n_titoli": 11
+}
+},
+"Rodez|Dunkerque|2026-10-30": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": ""
+},
+"n_titoli": 2
+}
 }
 },
 "_assenti": {
@@ -18337,7 +19120,9 @@
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-1
+2,
+3,
+4
 ],
 "fonte": "Fiorentina, brutte notizie per Pongracic: il report medico sull'infortunio del difensore - FirenzeToday",
 "visto": "2026-10-29"
@@ -18347,14 +19132,15 @@
 "scamacca": {
 "nome": "Scamacca",
 "ruolo": "attaccante",
-"importanza": "stella",
+"importanza": "titolare",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-31
+45,
+47
 ],
-"fonte": "Atalanta in piena emergenza: infortunio anche per Scamacca, i tempi di recupero",
-"visto": "2026-10-28"
+"fonte": "Ko Scamacca! Da Scalvini e Rowe a Pellegrino, Njie e Samardzic: le probabili formazioni di Fiorentina-Atalanta - SOS Fanta",
+"visto": "2026-10-29"
 },
 "bellanova": {
 "nome": "Bellanova",
@@ -18376,12 +19162,13 @@
 "ospite": {
 "ilic": {
 "nome": "Ilic",
-"ruolo": "difensore",
+"ruolo": "centrocampista",
 "importanza": "titolare",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-39
+31,
+32
 ],
 "fonte": "Lecce, Ilic operato con successo in Finlandia a retto femorale - Sportmediaset",
 "visto": "2026-10-29"
@@ -18465,9 +19252,10 @@
 "ruolo": "attaccante",
 "importanza": "stella",
 "motivo": "infortunio",
-"certezza": "certo",
+"certezza": "probabile",
 "titoli": [
-2
+2,
+9
 ],
 "fonte": "SUFC News: United dealt fresh injury blow pre-Wrexham amid Bamford update - The Star",
 "visto": "2026-10-29"
@@ -19324,6 +20112,82 @@
 },
 "Como|Venezia|2026-11-01": {
 "data": "2026-11-01",
+"casa": {},
+"ospite": {}
+},
+"Bielefeld|Braunschweig|2026-10-30": {
+"data": "2026-10-30",
+"casa": {},
+"ospite": {}
+},
+"Cottbus|Bochum|2026-10-30": {
+"data": "2026-10-30",
+"casa": {},
+"ospite": {
+"wittek": {
+"nome": "Wittek",
+"ruolo": "portiere",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "in dubbio",
+"titoli": [
+7
+],
+"fonte": "DFB-Pokal: Bochum schaltet Erstligist Mainz aus - Sorgen um Wittek - Kicker",
+"visto": "2026-10-29"
+}
+}
+},
+"Fylde|Hornchurch|2026-10-30": {
+"data": "2026-10-30",
+"casa": {},
+"ospite": {}
+},
+"Grenoble|Dijon|2026-10-30": {
+"data": "2026-10-30",
+"casa": {},
+"ospite": {}
+},
+"Konyaspor|Galatasaray|2026-10-30": {
+"data": "2026-10-30",
+"casa": {},
+"ospite": {}
+},
+"Laval|Boulogne|2026-10-30": {
+"data": "2026-10-30",
+"casa": {},
+"ospite": {}
+},
+"Metz|Pau FC|2026-10-30": {
+"data": "2026-10-30",
+"casa": {},
+"ospite": {}
+},
+"Nantes|Clermont|2026-10-30": {
+"data": "2026-10-30",
+"casa": {},
+"ospite": {}
+},
+"Newport County|Chesterfield|2026-10-30": {
+"data": "2026-10-30",
+"casa": {
+"gwengwe": {
+"nome": "Gwengwe",
+"ruolo": "difensore",
+"importanza": "riserva",
+"motivo": "squalifica",
+"certezza": "certo",
+"titoli": [
+4
+],
+"fonte": "Gwengwe ban explained as Newport players seize chances - BBC",
+"visto": "2026-10-29"
+}
+},
+"ospite": {}
+},
+"Rodez|Dunkerque|2026-10-30": {
+"data": "2026-10-30",
 "casa": {},
 "ospite": {}
 }
