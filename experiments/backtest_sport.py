@@ -490,22 +490,27 @@ def espn_keys(name):
     return {("".join(t[i:]), t[0][0]) for i in range(1, len(t))}
 
 
+DIAG = []
+
+
 def tennis_fetch_book(code):
     import pandas as pd
     import requests
     frames = []
-    for y in (2024, 2025, 2026):
-        urls = ([f"http://www.tennis-data.co.uk/{y}/{y}.xlsx", f"http://www.tennis-data.co.uk/{y}/{y}.xls"] if code == "ATP"
-                else [f"http://www.tennis-data.co.uk/{y}w/{y}.xlsx", f"http://www.tennis-data.co.uk/{y}w/{y}.xls"])
+    ua = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36"}
+    for y in (2025, 2026):
+        sub = f"{y}" if code == "ATP" else f"{y}w"
+        urls = [f"{pr}://www.tennis-data.co.uk/{sub}/{y}.{ext}" for pr in ("http", "https") for ext in ("xlsx", "xls")]
         for u in urls:
             try:
-                r = requests.get(u, headers=S.H, timeout=60)
+                r = requests.get(u, headers=ua, timeout=60, allow_redirects=True)
+                DIAG.append(f"{u} -> {r.status_code}, {len(r.content)} byte, {r.headers.get('content-type')}")
                 if r.status_code == 200 and len(r.content) > 5000:
                     frames.append(pd.read_excel(io.BytesIO(r.content)))
-                    print("  ok", u)
+                    DIAG.append(f"  letto: {len(frames[-1])} righe, colonne {list(frames[-1].columns)[:30]}")
                     break
             except Exception as e:
-                print("  [!]", u, e)
+                DIAG.append(f"{u} -> ERRORE {str(e)[:200]}")
     if not frames:
         return None
     df = pd.concat(frames, ignore_index=True)
@@ -620,6 +625,8 @@ def main():
         print(c, "fatto", round(time.time() - t0))
     if NET and not any(books.values()):
         rep += ["_tennis-data.co.uk non raggiungibile in questo giro: confronto con Bet365 non fatto._", ""]
+    if DIAG:
+        rep += ["<details><summary>Diagnostica download</summary>", "", "```"] + DIAG + ["```", "</details>", ""]
     rep += [f"_Tempo di calcolo: {time.time()-t0:.0f} s_"]
     (OUT / "backtest_sport.md").write_text("\n".join(rep), encoding="utf-8")
     (OUT / "backtest_sport.json").write_text(json.dumps(coef, indent=1))
