@@ -38,8 +38,10 @@ from db import connect  # noqa: E402
 from markets import goal_markets  # noqa: E402
 from model import DixonColes, blend, implied_lambdas, market_probs, score_matrix  # noqa: E402
 
-TUNE, TEST = "2425", "2526"
-SEASONS_FEAT = ("2324", TUNE, TEST)     # stagioni con previsioni (2022/23 serve solo a far partire i rating)
+import os  # noqa: E402
+TUNE, TEST = os.environ.get("ARENA_TUNE", "2425"), os.environ.get("ARENA_TEST", "2526")
+_prev = f"{int(TUNE[:2]) - 1:02d}{TUNE[:2]}"
+SEASONS_FEAT = (_prev, TUNE, TEST)     # la stagione prima della taratura serve ad allenare i modelli
 EPS = 1e-6
 
 
@@ -430,7 +432,8 @@ def main():
             P = np.array([[r["mk"]["1"], r["mk"]["X"], r["mk"]["2"]] for r in results[nm][0]])[m]
             return logloss(P / P.sum(1, keepdims=True), ye[m])
         L.append(f"| {C.LEAGUES[lg]['nome']} | {m.sum()} | {ll_of('Mercato'):.4f} | {ll_of('App attuale'):.4f} | {ll_of(best):.4f} |")
-    (ROOT / "experiments" / "arena.md").write_text("\n".join(L), encoding="utf-8")
+    name = "arena.md" if TEST == "2526" else f"arena_{TEST}.md"
+    (ROOT / "experiments" / name).write_text("\n".join(L), encoding="utf-8")
     print("\n".join(L))
 
 
