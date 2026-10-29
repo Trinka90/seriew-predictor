@@ -1,0 +1,193 @@
+{
+ "leghe": {
+  "ita.1": {
+   "status": 400,
+   "eventi": 0,
+   "con_quote": 0,
+   "finite": 0,
+   "es_finita": null,
+   "es_data": null
+  },
+  "ita.2": {
+   "status": 400,
+   "eventi": 0,
+   "con_quote": 0,
+   "finite": 0,
+   "es_finita": null,
+   "es_data": null
+  },
+  "eng.1": {
+   "status": 400,
+   "eventi": 0,
+   "con_quote": 0,
+   "finite": 0,
+   "es_finita": null,
+   "es_data": null
+  },
+  "eng.2": {
+   "status": 400,
+   "eventi": 0,
+   "con_quote": 0,
+   "finite": 0,
+   "es_finita": null,
+   "es_data": null
+  },
+  "esp.1": {
+   "status": 400,
+   "eventi": 0,
+   "con_quote": 0,
+   "finite": 0,
+   "es_finita": null,
+   "es_data": null
+  },
+  "esp.2": {
+   "status": 400,
+   "eventi": 0,
+   "con_quote": 0,
+   "finite": 0,
+   "es_finita": null,
+   "es_data": null
+  },
+  "ger.1": {
+   "status": 400,
+   "eventi": 0,
+   "con_quote": 0,
+   "finite": 0,
+   "es_finita": null,
+   "es_data": null
+  },
+  "ger.2": {
+   "status": 400,
+   "eventi": 0,
+   "con_quote": 0,
+   "finite": 0,
+   "es_finita": null,
+   "es_data": null
+  },
+  "fra.1": {
+   "status": 400,
+   "eventi": 0,
+   "con_quote": 0,
+   "finite": 0,
+   "es_finita": null,
+   "es_data": null
+  },
+  "fra.2": {
+   "status": 400,
+   "eventi": 0,
+   "con_quote": 0,
+   "finite": 0,
+   "es_finita": null,
+   "es_data": null
+  },
+  "ned.1": {
+   "status": 400,
+   "eventi": 0,
+   "con_quote": 0,
+   "finite": 0,
+   "es_finita": null,
+   "es_data": null
+  },
+  "por.1": {
+   "status": 400,
+   "eventi": 0,
+   "con_quote": 0,
+   "finite": 0,
+   "es_finita": null,
+   "es_data": null
+  },
+  "bel.1": {
+   "status": 400,
+   "eventi": 0,
+   "con_quote": 0,
+   "finite": 0,
+   "es_finita": null,
+   "es_data": null
+  },
+  "tur.1": {
+   "status": 400,
+   "eventi": 0,
+   "con_quote": 0,
+   "finite": 0,
+   "es_finita": null,
+   "es_data": null
+  },
+  "sco.1": {
+   "status": 400,
+   "eventi": 0,
+   "con_quote": 0,
+   "finite": 0,
+   "es_finita": null,
+   "es_data": null
+  },
+  "eng.3": {
+   "status": 400,
+   "eventi": 0,
+   "con_quote": 0,
+   "finite": 0,
+   "es_finita": null,
+   "es_data": null
+  },
+  "eng.4": {
+   "status": 400,
+   "eventi": 0,
+   "con_quote": 0,
+   "finite": 0,
+   "es_finita": null,
+   "es_data": null
+  },
+  "eng.5": {
+   "status": 400,
+   "eventi": 0,
+   "con_quote": 0,
+   "finite": 0,
+   "es_finita": null,
+   "es_data": null
+  },
+  "sco.2": {
+   "status": 400,
+   "eventi": 0,
+   "con_quote": 0,
+   "finite": 0,
+   "es_finita": null,
+   "es_data": null
+  },
+  "sco.3": {
+   "status": 400,
+   "eventi": 0,
+   "con_quote": 0,
+   "finite": 0,
+   "es_finita": null,
+   "es_data": null
+  },
+  "sco.4": {
+   "status": 400,
+   "eventi": 0,
+   "con_quote": 0,
+   "finite": 0,
+   "es_finita": null,
+   "es_data": null
+  },
+  "gre.1": {
+   "status": 400,
+   "eventi": 0,
+   "con_quote": 0,
+   "finite": 0,
+   "es_finita": null,
+   "es_data": null
+  }
+ },
+ "esempi": {},
+ "nba_futura": {
+  "id": "401909277",
+  "scoreboard_odds": null,
+  "pickcenter": [],
+  "odds": []
+ },
+ "tennis": {
+  "status": 400,
+  "keys": null,
+  "odds_comp": null,
+  "pickcenter": null
+ }
+}
