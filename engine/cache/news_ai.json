@@ -15809,6 +15809,604 @@
 "n_titoli": 4
 }
 },
+"328166b1445334c1f770314cfce51d9fad1b60fe": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": ""
+},
+"n_titoli": 4
+}
+},
+"9873e3dae381eec75d316b4601b6b2be5adc1e74": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenti"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenti"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna informazione su chiusura"
+},
+"n_titoli": 18
+}
+},
+"093d1a6a1e1b91553ddc5fb3a8794fd7d7e22b9b": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": ""
+},
+"n_titoli": 12
+}
+},
+"9ff7d318caa0caf78ab56f09feb5ee509647f4b4": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenti"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenti"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna informazione su porte chiuse"
+},
+"n_titoli": 10
+}
+},
+"4c88fb40cc3c8a415e832f29520edb75316d5a65": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": ""
+},
+"n_titoli": 1
+}
+},
+"baaa0a2378f899641f78d23269df3aeca11a618b": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Bardakcı fuori, motivo incerto"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna assenza segnalata"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita regolare"
+},
+"n_titoli": 19
+}
+},
+"1a295ce01865098963479cd7da53230ca1075508": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenti"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenti"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna informazione su porte chiuse"
+},
+"n_titoli": 13
+}
+},
+"762bb219587beff8804f3f7ca0cd62813aecf2ed": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Tanguy Nianzou",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "squalifica",
+"certezza": "certo",
+"titoli": [
+2
+],
+"fonte": "Lille – Lens : Tanguy Nianzou suspendu, le reste du groupe lillois est opérationnel - La Voix du Nord"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Nianzou sospeso, resto squadra operativa"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna novità rilevante"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Derby senza pubblico limitato"
+},
+"n_titoli": 8
+}
+},
+"a5a7a5b8fba96a6d4531616286fe48bc5314fff0": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione rilevante"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione rilevante"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna informazione rilevante"
+},
+"n_titoli": 3
+}
+},
+"246b52a772533edf276787c1919ce50a5d431593": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna assenza confermata per entrambe le squadre."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna assenza confermata per entrambe le squadre."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita in stadio normale, nessuna chiusura."
+},
+"n_titoli": 10
+}
+},
+"1c6cb943c20732ed4e362757ae0dc0410fdaaf9b": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Dibley-Dias",
+"ruolo": "difensore",
+"importanza": "riserva",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+1
+],
+"fonte": "Newport County: Fulham loanee Dibley-Dias to miss Chesterfield fixture - BBC"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Lista infortuni preoccupa ma situazione in netto miglioramento."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione rilevante nei titoli."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione particolare."
+},
+"n_titoli": 13
+}
+},
+"0485e0c15b8add0aa3f5404793a67e0b860a7672": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna assenza confermata per Sheffield United."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna assenza confermata per Wrexham."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita senza indicazioni di chiusura stadio."
+},
+"n_titoli": 16
+}
+},
+"952fd0e864934144cd21dccc7df607d2c0f4f91b": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": ""
+},
+"n_titoli": 1
+}
+},
+"5778a69a323eed934bcfab4bf3cd4cdfcad70a65": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Ilias Akhomach",
+"ruolo": "attaccante",
+"importanza": "riserva",
+"motivo": "infortunio",
+"certezza": "in dubbio",
+"titoli": [
+3,
+4
+],
+"fonte": "Pépé entra en la lista de Copa y se quedan fuera Akhomach, Romero y Saliba - FútbolFantasy"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Preoccupazione per Akhomach, escluso dalla lista di Copa."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione rilevante nei titoli."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione particolare."
+},
+"n_titoli": 18
+}
+},
+"7bb8f90c78077f4474ddcfd71254260a1d976ad9": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione disponibile."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Titoli riferiti alla partita contro STVV, non a questa."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione rilevante nei titoli."
+},
+"n_titoli": 2
+}
+},
+"b9f7cffeb09f2e31c350f8799ac5ca8fc5af5840": {
+"data": "2026-10-31",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna assenza segnalata"
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Smith",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+4,
+5
+],
+"fonte": "Saints waiting for scan results after Smith suffers injury - Northampton Chronicle and Echo"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Smith infortunato, fuori"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione su porte chiuse"
+},
+"n_titoli": 6
+}
+},
+"1ff9fee1aedd0cc15023c22149cff5ff22200558": {
+"data": "2026-10-31",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna assenza o cambio di allenatore indicato."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione sull'ospite."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita prevista in stadio aperto."
+},
+"n_titoli": 17
+}
+},
+"25828500e7fe78c0c878e8634169d738283f13fb": {
+"data": "2026-10-31",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione rilevante nei titoli."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione rilevante per questa partita."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione rilevante nei titoli."
+},
+"n_titoli": 4
+}
+},
+"c29d031fd155c8739cf5538dee8215a676d58854": {
+"data": "2026-10-31",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Knowles",
+"ruolo": "difensore",
+"importanza": "riserva",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+1
+],
+"fonte": "Altrincham dealt double injury blow as Knowles and Farrell ruled out - Messenger Newspapers"
+},
+{
+"nome": "Farrell",
+"ruolo": "centrocampista",
+"importanza": "riserva",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+1
+],
+"fonte": "Altrincham dealt double injury blow as Knowles and Farrell ruled out - Messenger Newspapers"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Due giocatori chiave assenti per Altrincham."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione su Carlisle."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita in campo aperto, nessun cambiamento di squadra."
+},
+"n_titoli": 13
+}
+},
+"ce1dc565a19ff7c09649e6966d86b5a0f53fe4ab": {
+"data": "2026-10-31",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "positivo",
+"note": "Nessun giocatore di Anderlecht in assenza per questa partita."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessun giocatore di Westerlo in assenza per questa partita."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessun problema di stadio o chiusura delle porte per questa partita."
+},
+"n_titoli": 3
+}
+},
+"2abe312e2f7d84234294fc12f5c052b500427b71": {
+"data": "2026-10-31",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna notizia su infortuni o squalifiche"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Titoli citano assenti per gara col Red Star, non per questa"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Gara valida per Ligue 2"
+},
+"n_titoli": 7
+}
+},
 "_ultima": {
 "Andorra|Burgos|2026-10-26": {
 "data": "2026-10-26",
@@ -16633,21 +17231,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione su assenti"
+"note": ""
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione su assenti"
+"note": ""
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "nessuna informazione su porte chiuse"
+"note": ""
 },
-"n_titoli": 19
+"n_titoli": 12
 }
 },
 "Le Havre|Paris SG|2026-10-30": {
@@ -16658,21 +17256,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione sugli assenti"
+"note": "nessuna informazione su assenti"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "assenze non specificate"
+"note": "nessuna informazione su assenti"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
 "note": "nessuna informazione su porte chiuse"
 },
-"n_titoli": 10
+"n_titoli": 13
 }
 },
 "Lille|Lens|2026-10-30": {
@@ -16687,7 +17285,7 @@
 "motivo": "squalifica",
 "certezza": "certo",
 "titoli": [
-1
+2
 ],
 "fonte": "Lille – Lens : Tanguy Nianzou suspendu, le reste du groupe lillois est opérationnel - La Voix du Nord"
 }
@@ -16695,7 +17293,7 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "negativo",
-"note": "Nianzou sospeso, squadra operativa"
+"note": "Nianzou sospeso, resto squadra operativa"
 },
 "ospite": {
 "assenti": [
@@ -16729,14 +17327,14 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna novità"
+"note": "Nessuna novità rilevante"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Nessuna restrizione di accesso"
+"note": "Derby senza pubblico limitato"
 },
-"n_titoli": 7
+"n_titoli": 8
 }
 },
 "Sheffield United|Wrexham|2026-10-30": {
@@ -16761,22 +17359,22 @@
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "negativo",
-"note": "Numerosi infortuni limitano le scelte"
+"clima": "neutro",
+"note": "Nessuna assenza confermata per Sheffield United."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna assenza confermata"
+"note": "Nessuna assenza confermata per Wrexham."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita regolare senza restrizioni"
+"note": "Partita senza indicazioni di chiusura stadio."
 },
-"n_titoli": 18
+"n_titoli": 16
 }
 },
 "Villarreal|Espanol|2026-10-30": {
@@ -16784,6 +17382,18 @@
 "r": {
 "casa": {
 "assenti": [
+{
+"nome": "Ilias Akhomach",
+"ruolo": "attaccante",
+"importanza": "riserva",
+"motivo": "infortunio",
+"certezza": "in dubbio",
+"titoli": [
+3,
+4
+],
+"fonte": "Pépé entra en la lista de Copa y se quedan fuera Akhomach, Romero y Saliba - FútbolFantasy"
+},
 {
 "nome": "Pape Gueye",
 "ruolo": "centrocampista",
@@ -16793,27 +17403,29 @@
 "titoli": [
 1
 ],
-"fonte": "La sanción a Pape Gueye, los lesionados y posibles altas del Villarreal para medirse al Espanyol - El Periódico Mediterráneo"
+"fonte": "La sanción a Pape Gueye, los lesionados y posibles altas del Villarreal para medirse al Espanyol - El Periódico Mediterráneo",
+"visto": "2026-10-29",
+"memoria": true
 }
 ],
-"turnover": "medio",
+"turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "negativo",
-"note": "Numerose assenze, rotazione per la Coppa"
+"clima": "neutro",
+"note": "Preoccupazione per Akhomach, escluso dalla lista di Copa."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna informazione su assenze"
+"note": "Nessuna informazione rilevante nei titoli."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita regolare senza restrizioni"
+"note": "Nessuna informazione particolare."
 },
-"n_titoli": 13
+"n_titoli": 18
 }
 },
 "Altrincham|Kidderminster|2026-10-27": {
@@ -17937,21 +18549,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": ""
+"note": "Nessuna assenza o cambio di allenatore indicato."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": ""
+"note": "Nessuna informazione sull'ospite."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": ""
+"note": "Partita prevista in stadio aperto."
 },
-"n_titoli": 14
+"n_titoli": 17
 }
 },
 "Aston Villa|Fulham|2026-10-31": {
@@ -19731,21 +20343,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione su assenti"
+"note": ""
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione su assenti"
+"note": ""
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "nessuna informazione su porte chiuse"
+"note": ""
 },
-"n_titoli": 3
+"n_titoli": 4
 }
 },
 "Cottbus|Bochum|2026-10-30": {
@@ -19756,7 +20368,7 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna novità su assenze"
+"note": "nessuna informazione su assenti"
 },
 "ospite": {
 "assenti": [
@@ -19776,43 +20388,18 @@
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "negativo",
-"note": "Preoccupazione per Wittek"
+"clima": "neutro",
+"note": "nessuna informazione su assenti"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Nessuna informazione aggiuntiva"
+"note": "nessuna informazione su chiusura"
 },
-"n_titoli": 20
+"n_titoli": 18
 }
 },
 "Fylde|Hornchurch|2026-10-30": {
-"data": "2026-10-30",
-"r": {
-"casa": {
-"assenti": [],
-"turnover": "nessuno",
-"nuovo_allenatore": false,
-"clima": "neutro",
-"note": ""
-},
-"ospite": {
-"assenti": [],
-"turnover": "nessuno",
-"nuovo_allenatore": false,
-"clima": "neutro",
-"note": ""
-},
-"partita": {
-"porte_chiuse": false,
-"campo_neutro": false,
-"note": ""
-},
-"n_titoli": 9
-}
-},
-"Grenoble|Dijon|2026-10-30": {
 "data": "2026-10-30",
 "r": {
 "casa": {
@@ -19834,7 +20421,32 @@
 "campo_neutro": false,
 "note": "nessuna informazione su porte chiuse"
 },
-"n_titoli": 3
+"n_titoli": 10
+}
+},
+"Grenoble|Dijon|2026-10-30": {
+"data": "2026-10-30",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": ""
+},
+"n_titoli": 1
 }
 },
 "Konyaspor|Galatasaray|2026-10-30": {
@@ -19844,8 +20456,8 @@
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": "Nessuna altra informazione rilevante"
+"clima": "negativo",
+"note": "Bardakcı fuori, motivo incerto"
 },
 "ospite": {
 "assenti": [],
@@ -19857,9 +20469,9 @@
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Nessuna informazione su porte chiuse"
+"note": "Partita regolare"
 },
-"n_titoli": 23
+"n_titoli": 19
 }
 },
 "Laval|Boulogne|2026-10-30": {
@@ -19895,21 +20507,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": ""
+"note": "nessuna informazione rilevante"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": ""
+"note": "nessuna informazione rilevante"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": ""
+"note": "nessuna informazione rilevante"
 },
-"n_titoli": 2
+"n_titoli": 3
 }
 },
 "Nantes|Clermont|2026-10-30": {
@@ -19920,21 +20532,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna novità rilevante"
+"note": "Nessuna assenza confermata per entrambe le squadre."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna novità rilevante"
+"note": "Nessuna assenza confermata per entrambe le squadre."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "partita regolare"
+"note": "Partita in stadio normale, nessuna chiusura."
 },
-"n_titoli": 14
+"n_titoli": 10
 }
 },
 "Newport County|Chesterfield|2026-10-30": {
@@ -19944,8 +20556,8 @@
 "assenti": [
 {
 "nome": "Dibley-Dias",
-"ruolo": "centrocampista",
-"importanza": "titolare",
+"ruolo": "difensore",
+"importanza": "riserva",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
@@ -19962,27 +20574,29 @@
 "titoli": [
 5
 ],
-"fonte": "Gwengwe ban explained as Newport players seize chances - BBC"
+"fonte": "Gwengwe ban explained as Newport players seize chances - BBC",
+"visto": "2026-10-29",
+"memoria": true
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "negativo",
-"note": "Infortuni e squalifica riducono opzioni"
+"note": "Lista infortuni preoccupa ma situazione in netto miglioramento."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna notizia di assenze"
+"note": "Nessuna informazione rilevante nei titoli."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita regolare senza restrizioni"
+"note": "Nessuna informazione particolare."
 },
-"n_titoli": 12
+"n_titoli": 13
 }
 },
 "Rodez|Dunkerque|2026-10-30": {
@@ -20018,21 +20632,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione rilevante"
+"note": ""
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione rilevante"
+"note": ""
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "nessuna informazione su chiusura"
+"note": ""
 },
-"n_titoli": 4
+"n_titoli": 1
 }
 },
 "Waregem|Club Brugge|2026-10-30": {
@@ -20043,21 +20657,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": ""
+"note": "Nessuna informazione disponibile."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": ""
+"note": "Titoli riferiti alla partita contro STVV, non a questa."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": ""
+"note": "Nessuna informazione rilevante nei titoli."
 },
-"n_titoli": 4
+"n_titoli": 2
 }
 },
 "Accrington|Northampton|2026-10-31": {
@@ -20068,7 +20682,7 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione su assenti"
+"note": "Nessuna assenza segnalata"
 },
 "ospite": {
 "assenti": [
@@ -20077,9 +20691,10 @@
 "ruolo": "centrocampista",
 "importanza": "titolare",
 "motivo": "infortunio",
-"certezza": "in dubbio",
+"certezza": "certo",
 "titoli": [
-6
+4,
+5
 ],
 "fonte": "Saints waiting for scan results after Smith suffers injury - Northampton Chronicle and Echo"
 },
@@ -20092,20 +20707,22 @@
 "titoli": [
 10
 ],
-"fonte": "Danny Cowley gives Beryly Lubala injury update ahead of Northampton - Colchester Gazette"
+"fonte": "Danny Cowley gives Beryly Lubala injury update ahead of Northampton - Colchester Gazette",
+"visto": "2026-10-29",
+"memoria": true
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "due giocatori in dubbio/infortunio"
+"note": "Smith infortunato, fuori"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "partita regolare senza restrizioni"
+"note": "Nessuna informazione su porte chiuse"
 },
-"n_titoli": 10
+"n_titoli": 6
 }
 },
 "Albacete|Sabadell|2026-10-31": {
@@ -20116,21 +20733,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione su assenti"
+"note": "Nessuna informazione rilevante nei titoli."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione su assenti"
+"note": "Nessuna informazione rilevante per questa partita."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "nessuna informazione aggiuntiva"
+"note": "Nessuna informazione rilevante nei titoli."
 },
-"n_titoli": 7
+"n_titoli": 4
 }
 },
 "Aldershot|Gateshead|2026-10-31": {
@@ -20166,7 +20783,7 @@
 {
 "nome": "Knowles",
 "ruolo": "difensore",
-"importanza": "titolare",
+"importanza": "riserva",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
@@ -20177,7 +20794,7 @@
 {
 "nome": "Farrell",
 "ruolo": "centrocampista",
-"importanza": "titolare",
+"importanza": "riserva",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
@@ -20189,21 +20806,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": ""
+"note": "Due giocatori chiave assenti per Altrincham."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": ""
+"note": "Nessuna informazione su Carlisle."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "nessuna informazione aggiuntiva"
+"note": "Partita in campo aperto, nessun cambiamento di squadra."
 },
-"n_titoli": 14
+"n_titoli": 13
 }
 },
 "Anderlecht|Westerlo|2026-10-31": {
@@ -20213,22 +20830,22 @@
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": "nessuna informazione rilevante"
+"clima": "positivo",
+"note": "Nessun giocatore di Anderlecht in assenza per questa partita."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione rilevante"
+"note": "Nessun giocatore di Westerlo in assenza per questa partita."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "nessuna informazione rilevante"
+"note": "Nessun problema di stadio o chiusura delle porte per questa partita."
 },
-"n_titoli": 2
+"n_titoli": 3
 }
 },
 "Annecy|Montpellier|2026-10-31": {
@@ -20239,21 +20856,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": ""
+"note": "Nessuna notizia su infortuni o squalifiche"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": ""
+"note": "Titoli citano assenti per gara col Red Star, non per questa"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": ""
+"note": "Gara valida per Ligue 2"
 },
-"n_titoli": 12
+"n_titoli": 7
 }
 },
 "Ayr|Queens Park|2026-10-31": {
@@ -20887,10 +21504,10 @@
 "motivo": "squalifica",
 "certezza": "certo",
 "titoli": [
-1
+2
 ],
 "fonte": "Lille – Lens : Tanguy Nianzou suspendu, le reste du groupe lillois est opérationnel - La Voix du Nord",
-"visto": "2026-10-29"
+"visto": "2026-10-30"
 }
 },
 "ospite": {
@@ -20942,6 +21559,19 @@
 "Villarreal|Espanol|2026-10-30": {
 "data": "2026-10-30",
 "casa": {
+"ilias akhomach": {
+"nome": "Ilias Akhomach",
+"ruolo": "attaccante",
+"importanza": "riserva",
+"motivo": "infortunio",
+"certezza": "in dubbio",
+"titoli": [
+3,
+4
+],
+"fonte": "Pépé entra en la lista de Copa y se quedan fuera Akhomach, Romero y Saliba - FútbolFantasy",
+"visto": "2026-10-30"
+},
 "pape gueye": {
 "nome": "Pape Gueye",
 "ruolo": "centrocampista",
@@ -21898,15 +22528,15 @@
 "casa": {
 "dibley-dias": {
 "nome": "Dibley-Dias",
-"ruolo": "centrocampista",
-"importanza": "titolare",
+"ruolo": "difensore",
+"importanza": "riserva",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
 1
 ],
 "fonte": "Newport County: Fulham loanee Dibley-Dias to miss Chesterfield fixture - BBC",
-"visto": "2026-10-29"
+"visto": "2026-10-30"
 },
 "gwengwe": {
 "nome": "Gwengwe",
@@ -21947,12 +22577,13 @@
 "ruolo": "centrocampista",
 "importanza": "titolare",
 "motivo": "infortunio",
-"certezza": "in dubbio",
+"certezza": "certo",
 "titoli": [
-6
+4,
+5
 ],
 "fonte": "Saints waiting for scan results after Smith suffers injury - Northampton Chronicle and Echo",
-"visto": "2026-10-29"
+"visto": "2026-10-30"
 },
 "beryly lubala": {
 "nome": "Beryly Lubala",
@@ -21984,26 +22615,26 @@
 "knowles": {
 "nome": "Knowles",
 "ruolo": "difensore",
-"importanza": "titolare",
+"importanza": "riserva",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
 1
 ],
 "fonte": "Altrincham dealt double injury blow as Knowles and Farrell ruled out - Messenger Newspapers",
-"visto": "2026-10-29"
+"visto": "2026-10-30"
 },
 "farrell": {
 "nome": "Farrell",
 "ruolo": "centrocampista",
-"importanza": "titolare",
+"importanza": "riserva",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
 1
 ],
 "fonte": "Altrincham dealt double injury blow as Knowles and Farrell ruled out - Messenger Newspapers",
-"visto": "2026-10-29"
+"visto": "2026-10-30"
 }
 },
 "ospite": {}
