@@ -1,0 +1,288 @@
+{
+ "generato": "2026-10-31",
+ "NFL": {
+  "partite": 321,
+  "richieste": 366,
+  "mesi_con_partite": 7,
+  "ultima_partita": "2026-10-29",
+  "prossimi_30gg": null,
+  "vince_casa": 0.483,
+  "con_quote": 199,
+  "margine_book": 0.043,
+  "fav_vince": 0.568,
+  "fav_detto": 0.65,
+  "quota_fav_ge60": 0.578,
+  "esito_fav_ge60": [
+   0.617,
+   0.718,
+   115
+  ],
+  "quota_fav_ge70": 0.307,
+  "esito_fav_ge70": [
+   0.754,
+   0.785,
+   61
+  ],
+  "quota_fav_ge80": 0.111,
+  "esito_fav_ge80": [
+   0.864,
+   0.851,
+   22
+  ],
+  "fav70_al_mese": 10.2,
+  "prossimi_30gg_campione": 15
+ },
+ "NHL": {
+  "partite": 1503,
+  "richieste": 366,
+  "mesi_con_partite": 11,
+  "ultima_partita": "2026-10-31",
+  "prossimi_30gg": null,
+  "vince_casa": 0.532,
+  "con_quote": 200,
+  "margine_book": 0.043,
+  "fav_vince": 0.545,
+  "fav_detto": 0.578,
+  "quota_fav_ge60": 0.295,
+  "esito_fav_ge60": [
+   0.627,
+   0.647,
+   59
+  ],
+  "quota_fav_ge70": 0.04,
+  "esito_fav_ge70": [
+   0.625,
+   0.735,
+   8
+  ],
+  "quota_fav_ge80": 0.0,
+  "esito_fav_ge80": null,
+  "fav70_al_mese": 0.9,
+  "prossimi_30gg_campione": 76
+ },
+ "MLB": {
+  "partite": 2921,
+  "richieste": 366,
+  "mesi_con_partite": 11,
+  "ultima_partita": "2026-10-28",
+  "prossimi_30gg": null,
+  "vince_casa": 0.529,
+  "con_quote": 220,
+  "margine_book": 0.041,
+  "fav_vince": 0.55,
+  "fav_detto": 0.571,
+  "quota_fav_ge60": 0.245,
+  "esito_fav_ge60": [
+   0.648,
+   0.647,
+   54
+  ],
+  "quota_fav_ge70": 0.032,
+  "esito_fav_ge70": [
+   1.0,
+   0.727,
+   7
+  ],
+  "quota_fav_ge80": 0.0,
+  "esito_fav_ge80": null,
+  "fav70_al_mese": 0.9,
+  "prossimi_30gg_campione": 0
+ },
+ "Champions League": {
+  "partite": 189,
+  "richieste": 366,
+  "mesi_con_partite": 9,
+  "ultima_partita": "2026-10-21",
+  "prossimi_30gg": null,
+  "vince_casa": 0.513,
+  "pareggi": 0.153,
+  "con_quote": 189,
+  "margine_book": 0.052,
+  "fav_vince": 0.598,
+  "fav_detto": 0.578,
+  "quota_fav_ge60": 0.407,
+  "esito_fav_ge60": [
+   0.688,
+   0.733,
+   77
+  ],
+  "quota_fav_ge70": 0.238,
+  "esito_fav_ge70": [
+   0.778,
+   0.791,
+   45
+  ],
+  "quota_fav_ge80": 0.085,
+  "esito_fav_ge80": [
+   0.938,
+   0.869,
+   16
+  ],
+  "fav70_al_mese": 5.0,
+  "prossimi_30gg_campione": 18
+ },
+ "Europa League": {
+  "partite": 189,
+  "richieste": 366,
+  "mesi_con_partite": 9,
+  "ultima_partita": "2026-10-22",
+  "prossimi_30gg": null,
+  "vince_casa": 0.481,
+  "pareggi": 0.18,
+  "con_quote": 189,
+  "margine_book": 0.051,
+  "fav_vince": 0.624,
+  "fav_detto": 0.549,
+  "quota_fav_ge60": 0.333,
+  "esito_fav_ge60": [
+   0.81,
+   0.694,
+   63
+  ],
+  "quota_fav_ge70": 0.132,
+  "esito_fav_ge70": [
+   0.92,
+   0.769,
+   25
+  ],
+  "quota_fav_ge80": 0.037,
+  "esito_fav_ge80": [
+   1.0,
+   0.826,
+   7
+  ],
+  "fav70_al_mese": 2.8,
+  "prossimi_30gg_campione": 0
+ },
+ "Conference League": {
+  "partite": 153,
+  "richieste": 366,
+  "mesi_con_partite": 7,
+  "ultima_partita": "2026-10-22",
+  "prossimi_30gg": null,
+  "vince_casa": 0.49,
+  "pareggi": 0.216,
+  "con_quote": 151,
+  "margine_book": 0.054,
+  "fav_vince": 0.603,
+  "fav_detto": 0.563,
+  "quota_fav_ge60": 0.391,
+  "esito_fav_ge60": [
+   0.712,
+   0.715,
+   59
+  ],
+  "quota_fav_ge70": 0.205,
+  "esito_fav_ge70": [
+   0.774,
+   0.777,
+   31
+  ],
+  "quota_fav_ge80": 0.079,
+  "esito_fav_ge80": [
+   0.833,
+   0.833,
+   12
+  ],
+  "fav70_al_mese": 4.4,
+  "prossimi_30gg_campione": 0
+ },
+ "Coppa Italia": {
+  "partite": 45,
+  "richieste": 366,
+  "mesi_con_partite": 8,
+  "ultima_partita": "2026-09-15",
+  "prossimi_30gg": null,
+  "vince_casa": 0.6,
+  "pareggi": 0.244,
+  "con_quote": 45,
+  "margine_book": 0.061,
+  "fav_vince": 0.6,
+  "fav_detto": 0.555,
+  "quota_fav_ge60": 0.4,
+  "esito_fav_ge60": [
+   0.889,
+   0.673,
+   18
+  ],
+  "quota_fav_ge70": 0.089,
+  "esito_fav_ge70": [
+   0.75,
+   0.761,
+   4
+  ],
+  "quota_fav_ge80": 0.022,
+  "esito_fav_ge80": [
+   1.0,
+   0.837,
+   1
+  ],
+  "fav70_al_mese": 0.5,
+  "prossimi_30gg_campione": 0
+ },
+ "FA Cup": {
+  "partite": 123,
+  "richieste": 366,
+  "mesi_con_partite": 8,
+  "ultima_partita": "2026-05-16",
+  "prossimi_30gg": null,
+  "vince_casa": 0.48,
+  "pareggi": 0.138,
+  "con_quote": 100,
+  "margine_book": 0.07,
+  "fav_vince": 0.64,
+  "fav_detto": 0.565,
+  "quota_fav_ge60": 0.32,
+  "esito_fav_ge60": [
+   0.812,
+   0.737,
+   32
+  ],
+  "quota_fav_ge70": 0.17,
+  "esito_fav_ge70": [
+   1.0,
+   0.813,
+   17
+  ],
+  "quota_fav_ge80": 0.09,
+  "esito_fav_ge80": [
+   1.0,
+   0.874,
+   9
+  ],
+  "fav70_al_mese": 2.4,
+  "prossimi_30gg_campione": 3
+ },
+ "NBA (riferimento)": {
+  "partite": 1403,
+  "richieste": 366,
+  "mesi_con_partite": 10,
+  "ultima_partita": "2026-10-31",
+  "prossimi_30gg": null,
+  "vince_casa": 0.551,
+  "con_quote": 225,
+  "margine_book": 0.043,
+  "fav_vince": 0.68,
+  "fav_detto": 0.682,
+  "quota_fav_ge60": 0.693,
+  "esito_fav_ge60": [
+   0.724,
+   0.739,
+   156
+  ],
+  "quota_fav_ge70": 0.4,
+  "esito_fav_ge70": [
+   0.767,
+   0.799,
+   90
+  ],
+  "quota_fav_ge80": 0.178,
+  "esito_fav_ge80": [
+   0.9,
+   0.865,
+   40
+  ],
+  "fav70_al_mese": 10.0,
+  "prossimi_30gg_campione": 69
+ }
+}
