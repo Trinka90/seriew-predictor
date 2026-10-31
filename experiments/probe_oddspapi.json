@@ -1,0 +1,6193 @@
+{
+ "chiave_presente": true,
+ "account_prima": [
+  200,
+  {
+   "api_key": "184d1dfe-018a-48a6-a007-6d0e79556a04",
+   "created_at": "2026-10-31T22:18:30.572682+00:00",
+   "language_code": "en",
+   "language_name": "English",
+   "email": "nello.trinchese@gmail.com",
+   "email_verified": true,
+   "current_subscription_id": "3a8f13fb-0602-41da-8165-aacd04e9684d",
+   "customer_segment": "user",
+   "subscriptions": [
+    {
+     "subscription_id": "3a8f13fb-0602-41da-8165-aacd04e9684d",
+     "currency": "USD",
+     "price": null,
+     "valid_from": "2026-10-31T22:18:30.572682+00:00",
+     "valid_until": null,
+     "auto_renew": false,
+     "is_active": true,
+     "created_at": "2026-10-31T22:18:30.572682+00:00",
+     "bookmakers": {
+      "fezbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "4casters": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betsafe": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "mystake": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "apuestatotal": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bwin.dk": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "anybet365": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "maxbet.rs": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "midnite": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "paradisewager": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "powbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "esportivabet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "partycasino": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bet3000": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bwin.de": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "estrelabet.bet.br": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "fanatics": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "megapari": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "sharpbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "1red": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "pmu": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "pokerstars.it": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "singbet-c": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "sportaza": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "sportingbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "admiralbet.me": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "kto": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "opticodds": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "tab.com.au": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "casapariurilor.ro": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "unibet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "winbet.bg": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "rabona": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betplay.io": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "justbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betano.de": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betnation.nl": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "spelet.lv": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "sharpxch": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "stake": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "admiralbet.ba": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "estrelabet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "merkurxtip.cz": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "playnow": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "melbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "nordicbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "casumo": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "ivibet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "sharp.ag": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "tiptorro": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "winamax.de": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "888sport.ro": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "prizepicks": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bfb247": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "pokerstars.es": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "allbritishcasino": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "ninecasino": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "sportingbet.co.za": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "1xbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "superbet.pl": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "888sport.de": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "lottomatica.it": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "paf": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "singbet-b": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "pin88": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bet99": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "eurobet.it": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "limitless-ex": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "tonybet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "pinnacle+30": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "sportybet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "winamax.fr": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betonred": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "livescorebet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "blaze.bet.br": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "librabet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "sports411.ag": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "rajbets": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "rooster.bet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betplay": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "aceshigh.ag": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "sunbet.co.za": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "fbsports": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betus": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "velobet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "fun88.co.uk": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "mrbit.ro": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "rolletto": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "pokerstars.ro": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "balkanbet.rs": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "ladbrokes": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "desertdiamond": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bet365.de": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betmgm": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "fair999-ex": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "kalshi": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "netbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "inkabet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "maxbet.ro": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "31bet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "n1bet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betano.ca": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betpawa.cm": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "eplay24.it": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "thescore": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "fourwinds": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bcgame": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betcenter.be": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betano.ro": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betcity.nl": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betfury": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bolsadeaposta-spb": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bpremium": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "punter.io": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "sbobet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "thunderpick.io": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betano.bet.br": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "leovegas.it": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "fliff": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "pagbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "efortuna.ro": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betinia.dk": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "oktagonbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bet365.bet.br": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "cryptoleo": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betway": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "draftkings-predictions": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "snai.it": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "espnbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betsson.it": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "pinnacle": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "prolineplus": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "198bet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "hardrockbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "gemini": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betfair.es": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "soccerbet.rs": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "circasports": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "superbet.ro": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "roobet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "odibets": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "duel": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "winbet.ro": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "sabasports": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bwin.pt": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "sportingbet.bet.br": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betamapola": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betano": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betparx": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "jackbit": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betano.pt": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "admiralbet.rs": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betdsi": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bwin.be": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "oddset": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "fonbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "polymarket.us": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "ladbrokes.de": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "scooore.be": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betwar": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "sportuna": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "vertex": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "wazamba": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "winamax.es": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "superbet.rs": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "goldenpark.es": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "prophetx": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "singbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "jazzsports": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betsson": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "novig.us": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "draftkings": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "20bet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bet365": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bookmaker.eu": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betika": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bodog.eu": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "starcasino.be": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "toto.nl": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bwin": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "rebet.app": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "wettarena": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "svenskaspel": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betwhale.ag": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betrivers": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "williamhill-nj": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "1xbit": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "tigergaming": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "goldenbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "neds.com.au": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "fortunejack": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "mrgreen.dk": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "quickwin": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "razed": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "tabtouch": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "unibet.ie": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "vave": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "atg.se": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "robinhood": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "williamhill": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bet365.gr": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "kto.bet.br": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "napoleonsports.be": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "pokerstars.uk": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "888sport.it": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "mozzartbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "nextbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betfair-ex": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "interwetten": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "leovegas.es": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "piwi247-ex": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betflag.it": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "overtime.io": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "inbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "skybet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "dafabet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "pamestoixima.gr": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "yesplay": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betmgm.bet.br": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "pokerstars.fr": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "partypoker": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "888sport": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "cmd368": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "sportsbetting.ag": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "tipico": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "coolbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bet365.es": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "3et": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "gamdom": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "caesars": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betify": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betwinner": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "superbet.bet.br": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bet365.bet.ar": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "netbet.fr": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "unibet.dk": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "virginbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "pokerstars": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "duelbits": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "codere.es": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "planetwin365.it": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "genybet.fr": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "ps3838": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "grosvenor": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "mrjack.bet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "sx.bet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "500.casino": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betnacional": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "paddypower": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "lowvig.ag": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "fdj": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "buckeye": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "topodds": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "unibet.be": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bet365.nl": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "greatwin": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "brazino777.bet.br": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "pb77": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "solabet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betboo.bet.br": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "orbitx": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "stoiximan": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "feelingbet.fr": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "jacks.nl": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "mybookie.ag": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "18bet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "goldbet.it": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "leovegas.dk": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "cloudbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "22bet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "hth": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "piwi247-spb": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "rainbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "iddaa": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betfair.it": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betfirst.be": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bingoal.be": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betway.es": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "freshbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bwin.fr": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "leovegas.uk": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "blaze": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betonline.ag": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "lottoland": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "netbet.co.uk": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "sportsinteraction": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betdex": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betway.de": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "888sport.es": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "888sport.ca": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bet365.fr": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "expekt.dk": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "coolzino": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "megadice": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "indibet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "mansion88": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betcris": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "fanaticsmarkets": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "kaiyun": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "fanduel": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "pixbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "powerplay": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "ballybet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "myriad": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betuk": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "sugarhouse": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betano.pe": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "7bet.co.uk": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "boylesports": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bet365.it": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "coral": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bovada.lv": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "marathonbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "polymarket": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "888sport.dk": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "rushbet.co": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "stake.bet.br": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "unibet.com.au": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "unibet.nl": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "pointsbet.com.au": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "zebet.fr": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "unibet.fr": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "borgata": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "msport": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betmgm.co.uk": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bwin.es": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betano.cz": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betano.bg": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "rollbit": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "xbet.ag": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bet365-nj": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "leyusports": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "netbet.it": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "quigioco.it": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "sportwetten.de": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "7bet.lt": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "sesamesport.bg": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bet487": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "mrgreen": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "admiralbet.it": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "unibet.se": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "gamebookers": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "asports.bet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "sisal.it": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bluechip": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "crypto.com": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "merkurbets": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "winpot.mx": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "alphawin": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "cashpoint": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betano.dk": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "superbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "cashpoint.dk": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "leovegas": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betfred": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "matchbook": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "fairpari": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "vistabet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "campobet.dk": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "afb88": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betano.mx": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "goldenpalacesports.be": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "expekt.se": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "ole777": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "paf.es": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "efortuna.pl": {
+       "has_live_odds": false,
+       "has_player_props": true
+      }
+     },
+     "sport_ids": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68
+     ],
+     "websocket_access": 0,
+     "request_limit": 250,
+     "plan": "free",
+     "request_count": 0
+    }
+   ]
+  }
+ ],
+ "tornei_status": 200,
+ "n_tornei": 2015,
+ "tornei": [
+  {
+   "tournamentId": 8,
+   "tournamentSlug": "laliga",
+   "tournamentName": "LaLiga",
+   "categorySlug": "spain",
+   "categoryName": "Spain",
+   "futureFixtures": 280,
+   "upcomingFixtures": 0,
+   "liveFixtures": 0
+  },
+  {
+   "tournamentId": 9,
+   "tournamentSlug": "challenger-pro-league",
+   "tournamentName": "Challenger Pro League",
+   "categorySlug": "belgium",
+   "categoryName": "Belgium",
+   "futureFixtures": 156,
+   "upcomingFixtures": 0,
+   "liveFixtures": 0
+  },
+  {
+   "tournamentId": 17,
+   "tournamentSlug": "premier-league",
+   "tournamentName": "Premier League",
+   "categorySlug": "england",
+   "categoryName": "England",
+   "futureFixtures": 300,
+   "upcomingFixtures": 0,
+   "liveFixtures": 0
+  },
+  {
+   "tournamentId": 18,
+   "tournamentSlug": "championship",
+   "tournamentName": "Championship",
+   "categorySlug": "england",
+   "categoryName": "England",
+   "futureFixtures": 408,
+   "upcomingFixtures": 0,
+   "liveFixtures": 0
+  },
+  {
+   "tournamentId": 23,
+   "tournamentSlug": "serie-a",
+   "tournamentName": "Serie A",
+   "categorySlug": "italy",
+   "categoryName": "Italy",
+   "futureFixtures": 292,
+   "upcomingFixtures": 5,
+   "liveFixtures": 0
+  },
+  {
+   "tournamentId": 24,
+   "tournamentSlug": "league-one",
+   "tournamentName": "League One",
+   "categorySlug": "england",
+   "categoryName": "England",
+   "futureFixtures": 404,
+   "upcomingFixtures": 0,
+   "liveFixtures": 0
+  },
+  {
+   "tournamentId": 25,
+   "tournamentSlug": "league-two",
+   "tournamentName": "League Two",
+   "categorySlug": "england",
+   "categoryName": "England",
+   "futureFixtures": 401,
+   "upcomingFixtures": 0,
+   "liveFixtures": 0
+  },
+  {
+   "tournamentId": 34,
+   "tournamentSlug": "ligue-1",
+   "tournamentName": "Ligue 1",
+   "categorySlug": "france",
+   "categoryName": "France",
+   "futureFixtures": 234,
+   "upcomingFixtures": 0,
+   "liveFixtures": 0
+  },
+  {
+   "tournamentId": 35,
+   "tournamentSlug": "bundesliga",
+   "tournamentName": "Bundesliga",
+   "categorySlug": "germany",
+   "categoryName": "Germany",
+   "futureFixtures": 243,
+   "upcomingFixtures": 0,
+   "liveFixtures": 0
+  },
+  {
+   "tournamentId": 36,
+   "tournamentSlug": "premiership",
+   "tournamentName": "Premiership",
+   "categorySlug": "scotland",
+   "categoryName": "Scotland",
+   "futureFixtures": 132,
+   "upcomingFixtures": 6,
+   "liveFixtures": 0
+  },
+  {
+   "tournamentId": 37,
+   "tournamentSlug": "eredivisie",
+   "tournamentName": "Eredivisie",
+   "categorySlug": "netherlands",
+   "categoryName": "Netherlands",
+   "futureFixtures": 216,
+   "upcomingFixtures": 0,
+   "liveFixtures": 0
+  },
+  {
+   "tournamentId": 38,
+   "tournamentSlug": "pro-league",
+   "tournamentName": "Pro League",
+   "categorySlug": "belgium",
+   "categoryName": "Belgium",
+   "futureFixtures": 226,
+   "upcomingFixtures": 0,
+   "liveFixtures": 0
+  },
+  {
+   "tournamentId": 44,
+   "tournamentSlug": "2-bundesliga",
+   "tournamentName": "2. Bundesliga",
+   "categorySlug": "germany",
+   "categoryName": "Germany",
+   "futureFixtures": 225,
+   "upcomingFixtures": 0,
+   "liveFixtures": 0
+  },
+  {
+   "tournamentId": 52,
+   "tournamentSlug": "super-lig",
+   "tournamentName": "Super Lig",
+   "categorySlug": "turkiye",
+   "categoryName": "Turkiye",
+   "futureFixtures": 225,
+   "upcomingFixtures": 0,
+   "liveFixtures": 0
+  },
+  {
+   "tournamentId": 53,
+   "tournamentSlug": "serie-b",
+   "tournamentName": "Serie B",
+   "categorySlug": "italy",
+   "categoryName": "Italy",
+   "futureFixtures": 290,
+   "upcomingFixtures": 3,
+   "liveFixtures": 0
+  },
+  {
+   "tournamentId": 54,
+   "tournamentSlug": "laliga-2",
+   "tournamentName": "LaLiga 2",
+   "categorySlug": "spain",
+   "categoryName": "Spain",
+   "futureFixtures": 341,
+   "upcomingFixtures": 0,
+   "liveFixtures": 0
+  },
+  {
+   "tournamentId": 173,
+   "tournamentSlug": "national-league",
+   "tournamentName": "National League",
+   "categorySlug": "england",
+   "categoryName": "England",
+   "futureFixtures": 374,
+   "upcomingFixtures": 3,
+   "liveFixtures": 0
+  },
+  {
+   "tournamentId": 182,
+   "tournamentSlug": "ligue-2",
+   "tournamentName": "Ligue 2",
+   "categorySlug": "france",
+   "categoryName": "France",
+   "futureFixtures": 216,
+   "upcomingFixtures": 0,
+   "liveFixtures": 0
+  },
+  {
+   "tournamentId": 185,
+   "tournamentSlug": "super-league",
+   "tournamentName": "Super League",
+   "categorySlug": "greece",
+   "categoryName": "Greece",
+   "futureFixtures": 126,
+   "upcomingFixtures": 0,
+   "liveFixtures": 0
+  },
+  {
+   "tournamentId": 186,
+   "tournamentSlug": "super-league-2",
+   "tournamentName": "Super League 2",
+   "categorySlug": "greece",
+   "categoryName": "Greece",
+   "futureFixtures": 176,
+   "upcomingFixtures": 0,
+   "liveFixtures": 0
+  },
+  {
+   "tournamentId": 206,
+   "tournamentSlug": "championship",
+   "tournamentName": "Championship",
+   "categorySlug": "scotland",
+   "categoryName": "Scotland",
+   "futureFixtures": 120,
+   "upcomingFixtures": 0,
+   "liveFixtures": 0
+  },
+  {
+   "tournamentId": 238,
+   "tournamentSlug": "liga-portugal",
+   "tournamentName": "Liga Portugal",
+   "categorySlug": "portugal",
+   "categoryName": "Portugal",
+   "futureFixtures": 225,
+   "upcomingFixtures": 0,
+   "liveFixtures": 0
+  },
+  {
+   "tournamentId": 239,
+   "tournamentSlug": "liga-portugal-2",
+   "tournamentName": "Liga Portugal 2",
+   "categorySlug": "portugal",
+   "categoryName": "Portugal",
+   "futureFixtures": 234,
+   "upcomingFixtures": 0,
+   "liveFixtures": 0
+  },
+  {
+   "tournamentId": 544,
+   "tournamentSlug": "segunda-federacion",
+   "tournamentName": "Segunda Federacion",
+   "categorySlug": "spain",
+   "categoryName": "Spain",
+   "futureFixtures": 1347,
+   "upcomingFixtures": 0,
+   "liveFixtures": 0
+  },
+  {
+   "tournamentId": 1117,
+   "tournamentSlug": "u21-pro-league",
+   "tournamentName": "U21 Pro League",
+   "categorySlug": "belgium",
+   "categoryName": "Belgium",
+   "futureFixtures": 76,
+   "upcomingFixtures": 0,
+   "liveFixtures": 1
+  },
+  {
+   "tournamentId": 2090,
+   "tournamentSlug": "premier-league-women",
+   "tournamentName": "Premier League, Women",
+   "categorySlug": "scotland",
+   "categoryName": "Scotland",
+   "futureFixtures": 40,
+   "upcomingFixtures": 0,
+   "liveFixtures": 0
+  },
+  {
+   "tournamentId": 2268,
+   "tournamentSlug": "super-league-women",
+   "tournamentName": "Super League, Women",
+   "categorySlug": "belgium",
+   "categoryName": "Belgium",
+   "futureFixtures": 56,
+   "upcomingFixtures": 0,
+   "liveFixtures": 0
+  },
+  {
+   "tournamentId": 2270,
+   "tournamentSlug": "eredivisie-women",
+   "tournamentName": "Eredivisie, Women",
+   "categorySlug": "netherlands",
+   "categoryName": "Netherlands",
+   "futureFixtures": 50,
+   "upcomingFixtures": 0,
+   "liveFixtures": 0
+  },
+  {
+   "tournamentId": 20226,
+   "tournamentSlug": "super-league-women",
+   "tournamentName": "Super League, Women",
+   "categorySlug": "greece",
+   "categoryName": "Greece",
+   "futureFixtures": 108,
+   "upcomingFixtures": 0,
+   "liveFixtures": 0
+  },
+  {
+   "tournamentId": 20808,
+   "tournamentSlug": "serie-a-women",
+   "tournamentName": "Serie A, Women",
+   "categorySlug": "italy",
+   "categoryName": "Italy",
+   "futureFixtures": 108,
+   "upcomingFixtures": 0,
+   "liveFixtures": 0
+  },
+  {
+   "tournamentId": 26384,
+   "tournamentSlug": "u19-super-league",
+   "tournamentName": "U19 Super League",
+   "categorySlug": "greece",
+   "categoryName": "Greece",
+   "futureFixtures": 126,
+   "upcomingFixtures": 0,
+   "liveFixtures": 0
+  },
+  {
+   "tournamentId": 30991,
+   "tournamentSlug": "coupe-u21-pro-league",
+   "tournamentName": "Coupe U21 Pro League",
+   "categorySlug": "belgium",
+   "categoryName": "Belgium",
+   "futureFixtures": 0,
+   "upcomingFixtures": 0,
+   "liveFixtures": 0
+  },
+  {
+   "tournamentId": 34900,
+   "tournamentSlug": "liga-portugal-3",
+   "tournamentName": "Liga Portugal 3",
+   "categorySlug": "portugal",
+   "categoryName": "Portugal",
+   "futureFixtures": 110,
+   "upcomingFixtures": 0,
+   "liveFixtures": 0
+  },
+  {
+   "tournamentId": 42193,
+   "tournamentSlug": "scottish-women-league-one",
+   "tournamentName": "Scottish Women League One",
+   "categorySlug": "scotland",
+   "categoryName": "Scotland",
+   "futureFixtures": 0,
+   "upcomingFixtures": 0,
+   "liveFixtures": 0
+  },
+  {
+   "tournamentId": 44425,
+   "tournamentSlug": "premier-league-2-women",
+   "tournamentName": "Premier League 2, Women",
+   "categorySlug": "scotland",
+   "categoryName": "Scotland",
+   "futureFixtures": 45,
+   "upcomingFixtures": 0,
+   "liveFixtures": 0
+  },
+  {
+   "tournamentId": 45083,
+   "tournamentSlug": "national-league-cup",
+   "tournamentName": "National League Cup",
+   "categorySlug": "england",
+   "categoryName": "England",
+   "futureFixtures": 14,
+   "upcomingFixtures": 0,
+   "liveFixtures": 0
+  },
+  {
+   "tournamentId": 46949,
+   "tournamentSlug": "super-league-2-super-cup",
+   "tournamentName": "Super League 2 Super Cup",
+   "categorySlug": "greece",
+   "categoryName": "Greece",
+   "futureFixtures": 0,
+   "upcomingFixtures": 0,
+   "liveFixtures": 0
+  },
+  {
+   "tournamentId": 47660,
+   "tournamentSlug": "serie-a-cup-women",
+   "tournamentName": "Serie A Cup, Women",
+   "categorySlug": "italy",
+   "categoryName": "Italy",
+   "futureFixtures": 0,
+   "upcomingFixtures": 0,
+   "liveFixtures": 0
+  },
+  {
+   "tournamentId": 48215,
+   "tournamentSlug": "serie-b-women",
+   "tournamentName": "Serie B, Women",
+   "categorySlug": "italy",
+   "categoryName": "Italy",
+   "futureFixtures": 158,
+   "upcomingFixtures": 1,
+   "liveFixtures": 0
+  },
+  {
+   "tournamentId": 48613,
+   "tournamentSlug": "premier-league-cup-women",
+   "tournamentName": "Premier League Cup, Women",
+   "categorySlug": "scotland",
+   "categoryName": "Scotland",
+   "futureFixtures": 4,
+   "upcomingFixtures": 0,
+   "liveFixtures": 0
+  },
+  {
+   "tournamentId": 48741,
+   "tournamentSlug": "super-lig-women",
+   "tournamentName": "Super Lig, Women",
+   "categorySlug": "turkiye",
+   "categoryName": "Turkiye",
+   "futureFixtures": 177,
+   "upcomingFixtures": 7,
+   "liveFixtures": 0
+  }
+ ],
+ "odds_sisal.it_status": 200,
+ "odds_sisal.it_n": 19,
+ "odds_sisal.it_con_quote": 19,
+ "odds_sisal.it_esempio": {
+  "fixtureId": "id1000002371945370",
+  "participant1Id": 2704,
+  "participant2Id": 2688,
+  "sportId": 10,
+  "tournamentId": 23,
+  "seasonId": 140782,
+  "statusId": 0,
+  "hasOdds": true,
+  "startTime": "2026-11-01T11:30:00.000Z",
+  "trueStartTime": null,
+  "trueEndTime": null,
+  "updatedAt": "2026-10-29T23:33:26.324Z"
+ },
+ "odds_sisal.it_mercati": {
+  "108": {
+   "109": 6.0,
+   "108": 1.08
+  },
+  "10146": {
+   "10148": 1.33,
+   "10146": 5.25,
+   "10147": 5.25
+  },
+  "10310": {
+   "10310": 33.0,
+   "10311": 1.0
+  },
+  "10222": {
+   "10222": 1.87,
+   "10223": 1.83
+  },
+  "101512": {
+   "101512": 33.0,
+   "101513": 1.0
+  },
+  "1016": {
+   "1017": 1.11,
+   "1016": 5.25
+  },
+  "10764": {
+   "10766": 5.0,
+   "10765": 9.0,
+   "10764": 1.28
+  },
+  "101456": {
+   "101456": 11.0,
+   "101457": 1.01
+  },
+  "10174": {
+   "10174": 1.52,
+   "10175": 2.25
+  },
+  "10318": {
+   "10319": 1.0,
+   "10318": 16.0
+  },
+  "10530": {
+   "10531": 4.5,
+   "10530": 1.14
+  },
+  "101086": {
+   "101087": 1.0,
+   "101086": 1.0
+  },
+  "101030": {
+   "101031": 1.18,
+   "101030": 4.25
+  },
+  "10208": {
+   "10209": 2.9,
+   "10210": 7.0,
+   "10208": 1.67
+  },
+  "10234": {
+   "10235": 1.01,
+   "10234": 11.0
+  },
+  "101062": {
+   "101062": 1.04,
+   "101063": 9.0
+  },
+  "102222": {
+   "102222": 10.0,
+   "102223": 1.03
+  },
+  "101042": {
+   "101042": 1.0,
+   "101043": 1.0
+  },
+  "10911": {
+   "10912": 4.25,
+   "10911": 4.0,
+   "10913": 1.6
+  },
+  "10192": {
+   "10192": 9.5,
+   "10193": 1.02
+  },
+  "102044": {
+   "102046": 2.05,
+   "102044": 3.0,
+   "102045": 3.4
+  },
+  "10787": {
+   "10787": 1.11,
+   "10788": 5.25
+  },
+  "106": {
+   "106": 1.0,
+   "107": 16.0
+  },
+  "10240": {
+   "10240": 1.57,
+   "10241": 2.25
+  },
+  "10262": {
+   "10262": 9.0,
+   "10263": 1.03
+  },
+  "102212": {
+   "102212": 16.0,
+   "102213": 1.0
+  },
+  "10298": {
+   "10298": 6.5,
+   "10299": 1.07
+  },
+  "102116": {
+   "102117": 2.7,
+   "102119": 4.0,
+   "102116": 4.25,
+   "102118": 3.4
+  },
+  "10224": {
+   "10224": 1.03,
+   "10225": 10.0
+  },
+  "10795": {
+   "10796": 3.0,
+   "10795": 1.33
+  },
+  "101": {
+   "101": 1.3,
+   "102": 6.0,
+   "103": 9.0
+  },
+  "101440": {
+   "101440": 2.9,
+   "101441": 1.36
+  },
+  "101074": {
+   "101074": 3.75,
+   "101075": 1.22
+  },
+  "102220": {
+   "102221": 1.45,
+   "102220": 2.6
+  },
+  "101917": {
+   "101918": 1.01,
+   "101917": 8.75
+  },
+  "10914": {
+   "10915": 25.0,
+   "10914": 1.0
+  },
+  "101432": {
+   "101432": 1.62,
+   "101433": 2.1
+  },
+  "101066": {
+   "101066": 1.33,
+   "101067": 3.1
+  },
+  "10219": {
+   "10221": 3.75,
+   "10219": 1.3,
+   "10220": 19.0
+  },
+  "101448": {
+   "101448": 5.5,
+   "101449": 1.1
+  },
+  "10228": {
+   "10229": 1.8,
+   "10228": 1.9
+  },
+  "10807": {
+   "10808": 1.45,
+   "10807": 2.5
+  },
+  "101902": {
+   "101904": 3.6,
+   "101902": 1.06,
+   "101903": 1.13
+  },
+  "10922": {
+   "10923": 3.5,
+   "10922": 1.27
+  },
+  "101034": {
+   "101034": 10.0,
+   "101035": 1.03
+  },
+  "10938": {
+   "10938": 7.0,
+   "10939": 1.07
+  },
+  "10242": {
+   "10243": 1.22,
+   "10242": 3.75
+  },
+  "101520": {
+   "101520": 33.0,
+   "101521": 1.0
+  },
+  "10918": {
+   "10919": 7.0,
+   "10918": 1.07
+  },
+  "101492": {
+   "101492": 6.0,
+   "101493": 1.08
+  },
+  "101915": {
+   "101916": 1.7,
+   "101915": 1.93
+  },
+  "102053": {
+   "102068": 3.15,
+   "102057": 4.6,
+   "102053": 19.0,
+   "102055": 4.75,
+   "102056": 4.1,
+   "102054": 7.75
+  },
+  "10334": {
+   "10334": 2.2,
+   "10335": 1.57
+  },
+  "101532": {
+   "101533": 5.25,
+   "101532": 1.37,
+   "101534": 4.25
+  },
+  "10811": {
+   "10811": 3.25,
+   "10812": 1.27
+  },
+  "101496": {
+   "101497": 1.02,
+   "101496": 10.0
+  },
+  "10284": {
+   "10285": 11.0,
+   "10284": 1.0
+  },
+  "101082": {
+   "101082": 20.0,
+   "101083": 1.0
+  },
+  "10211": {
+   "10213": 6.75,
+   "10212": 3.4,
+   "10211": 1.52
+  },
+  "101905": {
+   "101907": 2.0,
+   "101905": 1.04,
+   "101906": 1.33
+  },
+  "10143": {
+   "10144": 4.0,
+   "10145": 1.9,
+   "10143": 2.9
+  },
+  "10214": {
+   "10214": 1.08,
+   "10215": 7.0
+  },
+  "101046": {
+   "101047": 1.0,
+   "101046": 1.0
+  },
+  "10216": {
+   "10218": 3.75,
+   "10217": 25.0,
+   "10216": 1.3
+  },
+  "10258": {
+   "10259": 1.75,
+   "10258": 1.95
+  },
+  "10292": {
+   "10292": 1.2,
+   "10293": 3.9
+  },
+  "101070": {
+   "101070": 2.1,
+   "101071": 1.65
+  },
+  "10934": {
+   "10934": 4.0,
+   "10935": 1.2
+  },
+  "101078": {
+   "101079": 1.05,
+   "101078": 8.0
+  },
+  "10942": {
+   "10943": 1.0,
+   "10942": 12.0
+  },
+  "102210": {
+   "102210": 6.5,
+   "102211": 1.08
+  },
+  "1018": {
+   "1018": 9.0,
+   "1019": 1.03
+  },
+  "101026": {
+   "101027": 1.65,
+   "101026": 2.1
+  },
+  "10230": {
+   "10230": 3.25,
+   "10231": 1.3
+  },
+  "101500": {
+   "101501": 1.0,
+   "101500": 16.0
+  },
+  "101420": {
+   "101421": 8.0,
+   "101420": 1.04
+  },
+  "102208": {
+   "102209": 1.4,
+   "102208": 2.75
+  },
+  "104": {
+   "105": 2.1,
+   "104": 1.65
+  },
+  "10300": {
+   "10301": 1.25,
+   "10300": 3.5
+  },
+  "101919": {
+   "101924": 19.0,
+   "101922": 4.5,
+   "101927": 15.0,
+   "101926": 20.0,
+   "101919": 1.85,
+   "101923": 10.0,
+   "101925": 19.0,
+   "101920": 19.0,
+   "101921": 40.0
+  },
+  "1020": {
+   "1020": 16.0,
+   "1021": 1.0
+  },
+  "10946": {
+   "10946": 1.0,
+   "10947": 1.0
+  },
+  "101038": {
+   "101039": 1.0,
+   "101038": 1.0
+  },
+  "1014": {
+   "1015": 1.3,
+   "1014": 3.1
+  },
+  "10322": {
+   "10322": 1.11,
+   "10323": 5.25
+  },
+  "10286": {
+   "10286": 1.52,
+   "10287": 2.25
+  },
+  "10168": {
+   "10169": 5.25,
+   "10168": 1.12
+  },
+  "102462": {
+   "102462": 4.15,
+   "102463": 3.5,
+   "102472": 15.0,
+   "102470": 10.5,
+   "102480": 75.0,
+   "102478": 55.0,
+   "102464": 6.0,
+   "102479": 45.0,
+   "102471": 8.75
+  },
+  "102047": {
+   "102048": 1.85,
+   "102047": 4.0,
+   "102049": 3.1
+  },
+  "10232": {
+   "10233": 1.08,
+   "10232": 6.0
+  },
+  "102429": {
+   "102431": 1.19,
+   "102429": 9.0,
+   "102430": 5.5
+  },
+  "101436": {
+   "101436": 2.2,
+   "101437": 1.57
+  },
+  "102206": {
+   "102206": 1.33,
+   "102207": 3.1
+  },
+  "10186": {
+   "10187": 1.14,
+   "10186": 4.75
+  },
+  "1010": {
+   "1010": 1.36,
+   "1011": 2.9
+  },
+  "10815": {
+   "10816": 1.15,
+   "10815": 4.5
+  },
+  "10137": {
+   "10138": 10.0,
+   "10139": 18.0,
+   "10137": 1.05
+  },
+  "10296": {
+   "10297": 1.95,
+   "10296": 1.7
+  },
+  "101508": {
+   "101509": 1.0,
+   "101508": 33.0
+  },
+  "10536": {
+   "10537": 1.62,
+   "10536": 2.05
+  },
+  "10791": {
+   "10792": 4.25,
+   "10791": 1.16
+  },
+  "101488": {
+   "101488": 3.5,
+   "101489": 1.25
+  },
+  "10498": {
+   "10498": 3.15,
+   "10499": 1.28
+  },
+  "102447": {
+   "102449": 21.0,
+   "102447": 1.06,
+   "102448": 7.25
+  },
+  "10542": {
+   "10543": 1.12,
+   "10542": 5.0
+  },
+  "10761": {
+   "10761": 1.28,
+   "10763": 8.0
+  },
+  "101460": {
+   "101461": 1.0,
+   "101460": 16.0
+  },
+  "101913": {
+   "101913": 8.0,
+   "101914": 1.03
+  },
+  "10306": {
+   "10307": 1.2,
+   "10306": 3.8
+  },
+  "102095": {
+   "102097": 5.25,
+   "102095": 2.25,
+   "102108": 12.0,
+   "102096": 2.45
+  },
+  "10930": {
+   "10931": 1.48,
+   "10930": 2.5
+  },
+  "10304": {
+   "10304": 1.12,
+   "10305": 5.0
+  },
+  "10332": {
+   "10333": 1.82,
+   "10332": 1.83
+  },
+  "101484": {
+   "101484": 2.2,
+   "101485": 1.57
+  },
+  "10803": {
+   "10803": 1.9,
+   "10804": 1.75
+  },
+  "101022": {
+   "101023": 3.75,
+   "101022": 1.22
+  },
+  "1012": {
+   "1013": 1.75,
+   "1012": 1.9
+  },
+  "101936": {
+   "101949": 11.0,
+   "101937": 6.0,
+   "101938": 6.5,
+   "101951": 33.0,
+   "101950": 25.0,
+   "101962": 5.5,
+   "101941": 5.75,
+   "101972": 33.0,
+   "101939": 3.75,
+   "101940": 4.25,
+   "101936": 22.0
+  },
+  "10140": {
+   "10141": 3.75,
+   "10140": 1.75,
+   "10142": 3.4
+  },
+  "101424": {
+   "101425": 4.5,
+   "101424": 1.15
+  },
+  "10316": {
+   "10317": 1.48,
+   "10316": 2.4
+  },
+  "102450": {
+   "102451": 3.15,
+   "102452": 2.3,
+   "102450": 2.65
+  },
+  "102526": {
+   "102543": 33.0,
+   "102527": 4.25,
+   "102544": 45.0,
+   "102536": 11.5,
+   "102528": 5.75,
+   "102535": 8.5,
+   "102542": 50.0,
+   "102526": 6.0,
+   "102534": 13.0
+  },
+  "10256": {
+   "10257": 4.0,
+   "10256": 1.18
+  },
+  "102456": {
+   "102457": 10.5,
+   "102456": 14.5,
+   "102458": 1.04
+  },
+  "10336": {
+   "10355": 19.0,
+   "10341": 25.0,
+   "10354": 17.0,
+   "10339": 10.0,
+   "10336": 25.0,
+   "10394": 300.0,
+   "10346": 8.5,
+   "10338": 8.5,
+   "10337": 10.0,
+   "10388": 300.0,
+   "10349": 25.0,
+   "10348": 15.0,
+   "10395": 300.0,
+   "10379": 300.0,
+   "10368": 300.0,
+   "10369": 200.0,
+   "10371": 175.0,
+   "10376": 300.0,
+   "10345": 12.0,
+   "10363": 40.0,
+   "10359": 225.0,
+   "10366": 250.0,
+   "10385": 300.0,
+   "10373": 300.0,
+   "10351": 125.0,
+   "10387": 300.0,
+   "10347": 10.0,
+   "10396": 300.0,
+   "10375": 300.0,
+   "10352": 50.0,
+   "10381": 300.0,
+   "10377": 300.0,
+   "10365": 120.0,
+   "10372": 225.0,
+   "10382": 300.0,
+   "10370": 175.0,
+   "10356": 25.0,
+   "10378": 300.0,
+   "10384": 300.0,
+   "10386": 300.0,
+   "10343": 100.0,
+   "10361": 50.0,
+   "10342": 40.0,
+   "10358": 75.0,
+   "10389": 300.0,
+   "10360": 150.0,
+   "10340": 14.0,
+   "10362": 40.0,
+   "10374": 300.0,
+   "10364": 60.0,
+   "10353": 25.0,
+   "10350": 40.0,
+   "10344": 30.0,
+   "10392": 300.0,
+   "10380": 300.0,
+   "10393": 300.0,
+   "10357": 40.0,
+   "10367": 300.0
+  },
+  "10492": {
+   "10493": 2.85,
+   "10492": 1.33
+  },
+  "102074": {
+   "102075": 4.6,
+   "102076": 3.6,
+   "102087": 1.83,
+   "102074": 11.0
+  },
+  "101908": {
+   "101908": 1.03,
+   "101910": 2.21,
+   "101909": 1.22
+  },
+  "101911": {
+   "101911": 1.95,
+   "101912": 1.7
+  },
+  "10926": {
+   "10926": 1.72,
+   "10927": 2.0
+  },
+  "101504": {
+   "101504": 33.0,
+   "101505": 1.0
+  },
+  "10244": {
+   "10245": 1.03,
+   "10244": 10.0
+  },
+  "102453": {
+   "102453": 6.0,
+   "102455": 1.33,
+   "102454": 4.75
+  },
+  "101452": {
+   "101452": 8.0,
+   "101453": 1.04
+  },
+  "10260": {
+   "10261": 1.2,
+   "10260": 3.75
+  },
+  "10226": {
+   "10227": 3.5,
+   "10226": 1.27
+  },
+  "10264": {
+   "10264": 25.0,
+   "10265": 1.0
+  },
+  "102426": {
+   "102428": 2.0,
+   "102427": 2.9,
+   "102426": 3.4
+  },
+  "101480": {
+   "101481": 2.4,
+   "101480": 1.48
+  },
+  "10294": {
+   "10295": 1.5,
+   "10294": 2.3
+  },
+  "102041": {
+   "102042": 4.0,
+   "102043": 2.0,
+   "102041": 2.9
+  },
+  "101444": {
+   "101445": 1.18,
+   "101444": 4.0
+  },
+  "101428": {
+   "101429": 2.9,
+   "101428": 1.36
+  },
+  "10180": {
+   "10181": 1.42,
+   "10180": 2.55
+  },
+  "10308": {
+   "10309": 1.0,
+   "10308": 2.75
+  },
+  "10320": {
+   "10321": 4.8,
+   "10320": 1.13
+  },
+  "102423": {
+   "102424": 7.0,
+   "102423": 1.06,
+   "102425": 23.0
+  },
+  "10799": {
+   "10800": 2.2,
+   "10799": 1.57
+  },
+  "10730": {
+   "10730": null
+  },
+  "10731": {
+   "10731": null
+  },
+  "102624": {
+   "102625": null,
+   "102624": null
+  },
+  "102616": {
+   "102616": null,
+   "102617": null
+  },
+  "102612": {
+   "102612": null,
+   "102613": null
+  },
+  "102706": {
+   "102707": null,
+   "102706": null
+  },
+  "10738": {
+   "10739": null
+  },
+  "102606": {
+   "102607": null,
+   "102606": null
+  },
+  "10733": {
+   "10735": null,
+   "10736": null
+  },
+  "102626": {
+   "102627": null,
+   "102626": null
+  },
+  "102708": {
+   "102709": null,
+   "102708": null
+  },
+  "102710": {
+   "102710": null,
+   "102711": null
+  },
+  "102628": {
+   "102628": null,
+   "102629": null
+  },
+  "102610": {
+   "102611": null,
+   "102610": null
+  },
+  "102608": {
+   "102608": null,
+   "102609": null
+  },
+  "102630": {
+   "102630": null,
+   "102631": null
+  },
+  "102614": {
+   "102615": null,
+   "102614": null
+  }
+ },
+ "markets_status": 200,
+ "markets_calcio": [
+  {
+   "id": 101,
+   "nome": "Full Time Result",
+   "h": 0.0,
+   "out": [
+    [
+     102,
+     "X"
+    ],
+    [
+     103,
+     "2"
+    ],
+    [
+     101,
+     "1"
+    ]
+   ]
+  },
+  {
+   "id": 104,
+   "nome": "Both Teams To Score",
+   "h": 0.0,
+   "out": [
+    [
+     104,
+     "Yes"
+    ],
+    [
+     105,
+     "No"
+    ]
+   ]
+  },
+  {
+   "id": 106,
+   "nome": "Over Under Full Time",
+   "h": 0.5,
+   "out": [
+    [
+     107,
+     "Under"
+    ],
+    [
+     106,
+     "Over"
+    ]
+   ]
+  },
+  {
+   "id": 108,
+   "nome": "Over Under Full Time",
+   "h": 1.5,
+   "out": [
+    [
+     109,
+     "Under"
+    ],
+    [
+     108,
+     "Over"
+    ]
+   ]
+  },
+  {
+   "id": 1010,
+   "nome": "Over Under Full Time",
+   "h": 2.5,
+   "out": [
+    [
+     1010,
+     "Over"
+    ],
+    [
+     1011,
+     "Under"
+    ]
+   ]
+  },
+  {
+   "id": 1012,
+   "nome": "Over Under Full Time",
+   "h": 3.5,
+   "out": [
+    [
+     1013,
+     "Under"
+    ],
+    [
+     1012,
+     "Over"
+    ]
+   ]
+  },
+  {
+   "id": 1014,
+   "nome": "Over Under Full Time",
+   "h": 4.5,
+   "out": [
+    [
+     1014,
+     "Over"
+    ],
+    [
+     1015,
+     "Under"
+    ]
+   ]
+  },
+  {
+   "id": 1016,
+   "nome": "Over Under Full Time",
+   "h": 5.5,
+   "out": [
+    [
+     1016,
+     "Over"
+    ],
+    [
+     1017,
+     "Under"
+    ]
+   ]
+  },
+  {
+   "id": 1018,
+   "nome": "Over Under Full Time",
+   "h": 6.5,
+   "out": [
+    [
+     1018,
+     "Over"
+    ],
+    [
+     1019,
+     "Under"
+    ]
+   ]
+  },
+  {
+   "id": 1020,
+   "nome": "Over Under Full Time",
+   "h": 7.5,
+   "out": [
+    [
+     1021,
+     "Under"
+    ],
+    [
+     1020,
+     "Over"
+    ]
+   ]
+  },
+  {
+   "id": 1022,
+   "nome": "Over Under Full Time",
+   "h": 8.5,
+   "out": [
+    [
+     1023,
+     "Under"
+    ],
+    [
+     1022,
+     "Over"
+    ]
+   ]
+  },
+  {
+   "id": 1024,
+   "nome": "Asian Handicap",
+   "h": -6.0,
+   "out": [
+    [
+     1025,
+     "2"
+    ],
+    [
+     1024,
+     "1"
+    ]
+   ]
+  },
+  {
+   "id": 1026,
+   "nome": "Asian Handicap",
+   "h": -5.75,
+   "out": [
+    [
+     1027,
+     "2"
+    ],
+    [
+     1026,
+     "1"
+    ]
+   ]
+  },
+  {
+   "id": 1028,
+   "nome": "Asian Handicap",
+   "h": -5.5,
+   "out": [
+    [
+     1029,
+     "2"
+    ],
+    [
+     1028,
+     "1"
+    ]
+   ]
+  },
+  {
+   "id": 1030,
+   "nome": "Asian Handicap",
+   "h": -5.25,
+   "out": [
+    [
+     1030,
+     "1"
+    ],
+    [
+     1031,
+     "2"
+    ]
+   ]
+  },
+  {
+   "id": 1032,
+   "nome": "Asian Handicap",
+   "h": -5.0,
+   "out": [
+    [
+     1032,
+     "1"
+    ],
+    [
+     1033,
+     "2"
+    ]
+   ]
+  },
+  {
+   "id": 1034,
+   "nome": "Asian Handicap",
+   "h": -4.75,
+   "out": [
+    [
+     1034,
+     "1"
+    ],
+    [
+     1035,
+     "2"
+    ]
+   ]
+  },
+  {
+   "id": 1036,
+   "nome": "Asian Handicap",
+   "h": -4.5,
+   "out": [
+    [
+     1037,
+     "2"
+    ],
+    [
+     1036,
+     "1"
+    ]
+   ]
+  },
+  {
+   "id": 1038,
+   "nome": "Asian Handicap",
+   "h": -4.25,
+   "out": [
+    [
+     1038,
+     "1"
+    ],
+    [
+     1039,
+     "2"
+    ]
+   ]
+  },
+  {
+   "id": 1040,
+   "nome": "Asian Handicap",
+   "h": -4.0,
+   "out": [
+    [
+     1040,
+     "1"
+    ],
+    [
+     1041,
+     "2"
+    ]
+   ]
+  },
+  {
+   "id": 1042,
+   "nome": "Asian Handicap",
+   "h": -3.75,
+   "out": [
+    [
+     1042,
+     "1"
+    ],
+    [
+     1043,
+     "2"
+    ]
+   ]
+  },
+  {
+   "id": 1044,
+   "nome": "Asian Handicap",
+   "h": -3.5,
+   "out": [
+    [
+     1045,
+     "2"
+    ],
+    [
+     1044,
+     "1"
+    ]
+   ]
+  },
+  {
+   "id": 1046,
+   "nome": "Asian Handicap",
+   "h": -3.25,
+   "out": [
+    [
+     1046,
+     "1"
+    ],
+    [
+     1047,
+     "2"
+    ]
+   ]
+  },
+  {
+   "id": 1048,
+   "nome": "Asian Handicap",
+   "h": -3.0,
+   "out": [
+    [
+     1049,
+     "2"
+    ],
+    [
+     1048,
+     "1"
+    ]
+   ]
+  },
+  {
+   "id": 1050,
+   "nome": "Asian Handicap",
+   "h": -2.75,
+   "out": [
+    [
+     1051,
+     "2"
+    ],
+    [
+     1050,
+     "1"
+    ]
+   ]
+  },
+  {
+   "id": 1052,
+   "nome": "Asian Handicap",
+   "h": -2.5,
+   "out": [
+    [
+     1052,
+     "1"
+    ],
+    [
+     1053,
+     "2"
+    ]
+   ]
+  },
+  {
+   "id": 1054,
+   "nome": "Asian Handicap",
+   "h": -2.25,
+   "out": [
+    [
+     1054,
+     "1"
+    ],
+    [
+     1055,
+     "2"
+    ]
+   ]
+  },
+  {
+   "id": 1056,
+   "nome": "Asian Handicap",
+   "h": -2.0,
+   "out": [
+    [
+     1057,
+     "2"
+    ],
+    [
+     1056,
+     "1"
+    ]
+   ]
+  },
+  {
+   "id": 1058,
+   "nome": "Asian Handicap",
+   "h": -1.75,
+   "out": [
+    [
+     1059,
+     "2"
+    ],
+    [
+     1058,
+     "1"
+    ]
+   ]
+  },
+  {
+   "id": 1060,
+   "nome": "Asian Handicap",
+   "h": -1.5,
+   "out": [
+    [
+     1061,
+     "2"
+    ],
+    [
+     1060,
+     "1"
+    ]
+   ]
+  },
+  {
+   "id": 1062,
+   "nome": "Asian Handicap",
+   "h": -1.25,
+   "out": [
+    [
+     1062,
+     "1"
+    ],
+    [
+     1063,
+     "2"
+    ]
+   ]
+  },
+  {
+   "id": 1064,
+   "nome": "Asian Handicap",
+   "h": -1.0,
+   "out": [
+    [
+     1065,
+     "2"
+    ],
+    [
+     1064,
+     "1"
+    ]
+   ]
+  },
+  {
+   "id": 1066,
+   "nome": "Asian Handicap",
+   "h": -0.75,
+   "out": [
+    [
+     1067,
+     "2"
+    ],
+    [
+     1066,
+     "1"
+    ]
+   ]
+  },
+  {
+   "id": 1068,
+   "nome": "Asian Handicap",
+   "h": -0.5,
+   "out": [
+    [
+     1069,
+     "2"
+    ],
+    [
+     1068,
+     "1"
+    ]
+   ]
+  },
+  {
+   "id": 1070,
+   "nome": "Asian Handicap",
+   "h": -0.25,
+   "out": [
+    [
+     1071,
+     "2"
+    ],
+    [
+     1070,
+     "1"
+    ]
+   ]
+  },
+  {
+   "id": 1072,
+   "nome": "Asian Handicap",
+   "h": 0.0,
+   "out": [
+    [
+     1073,
+     "2"
+    ],
+    [
+     1072,
+     "1"
+    ]
+   ]
+  },
+  {
+   "id": 1074,
+   "nome": "Asian Handicap",
+   "h": 0.25,
+   "out": [
+    [
+     1074,
+     "1"
+    ],
+    [
+     1075,
+     "2"
+    ]
+   ]
+  },
+  {
+   "id": 1076,
+   "nome": "Asian Handicap",
+   "h": 0.5,
+   "out": [
+    [
+     1076,
+     "1"
+    ],
+    [
+     1077,
+     "2"
+    ]
+   ]
+  },
+  {
+   "id": 1078,
+   "nome": "Asian Handicap",
+   "h": 0.75,
+   "out": [
+    [
+     1078,
+     "1"
+    ],
+    [
+     1079,
+     "2"
+    ]
+   ]
+  },
+  {
+   "id": 1080,
+   "nome": "Asian Handicap",
+   "h": 1.0,
+   "out": [
+    [
+     1080,
+     "1"
+    ],
+    [
+     1081,
+     "2"
+    ]
+   ]
+  },
+  {
+   "id": 1082,
+   "nome": "Asian Handicap",
+   "h": 1.25,
+   "out": [
+    [
+     1082,
+     "1"
+    ],
+    [
+     1083,
+     "2"
+    ]
+   ]
+  },
+  {
+   "id": 1084,
+   "nome": "Asian Handicap",
+   "h": 1.5,
+   "out": [
+    [
+     1084,
+     "1"
+    ],
+    [
+     1085,
+     "2"
+    ]
+   ]
+  },
+  {
+   "id": 1086,
+   "nome": "Asian Handicap",
+   "h": 1.75,
+   "out": [
+    [
+     1086,
+     "1"
+    ],
+    [
+     1087,
+     "2"
+    ]
+   ]
+  },
+  {
+   "id": 1088,
+   "nome": "Asian Handicap",
+   "h": 2.0,
+   "out": [
+    [
+     1089,
+     "2"
+    ],
+    [
+     1088,
+     "1"
+    ]
+   ]
+  },
+  {
+   "id": 1090,
+   "nome": "Asian Handicap",
+   "h": 2.25,
+   "out": [
+    [
+     1091,
+     "2"
+    ],
+    [
+     1090,
+     "1"
+    ]
+   ]
+  },
+  {
+   "id": 1092,
+   "nome": "Asian Handicap",
+   "h": 2.5,
+   "out": [
+    [
+     1093,
+     "2"
+    ],
+    [
+     1092,
+     "1"
+    ]
+   ]
+  },
+  {
+   "id": 1094,
+   "nome": "Asian Handicap",
+   "h": 2.75,
+   "out": [
+    [
+     1094,
+     "1"
+    ],
+    [
+     1095,
+     "2"
+    ]
+   ]
+  },
+  {
+   "id": 1096,
+   "nome": "Asian Handicap",
+   "h": 3.0,
+   "out": [
+    [
+     1096,
+     "1"
+    ],
+    [
+     1097,
+     "2"
+    ]
+   ]
+  },
+  {
+   "id": 1098,
+   "nome": "Asian Handicap",
+   "h": 3.25,
+   "out": [
+    [
+     1098,
+     "1"
+    ],
+    [
+     1099,
+     "2"
+    ]
+   ]
+  },
+  {
+   "id": 10100,
+   "nome": "Asian Handicap",
+   "h": 3.5,
+   "out": [
+    [
+     10101,
+     "2"
+    ],
+    [
+     10100,
+     "1"
+    ]
+   ]
+  },
+  {
+   "id": 10102,
+   "nome": "Asian Handicap",
+   "h": 3.75,
+   "out": [
+    [
+     10102,
+     "1"
+    ],
+    [
+     10103,
+     "2"
+    ]
+   ]
+  },
+  {
+   "id": 10104,
+   "nome": "Asian Handicap",
+   "h": 4.0,
+   "out": [
+    [
+     10105,
+     "2"
+    ],
+    [
+     10104,
+     "1"
+    ]
+   ]
+  },
+  {
+   "id": 10106,
+   "nome": "Asian Handicap",
+   "h": 4.25,
+   "out": [
+    [
+     10107,
+     "2"
+    ],
+    [
+     10106,
+     "1"
+    ]
+   ]
+  },
+  {
+   "id": 10108,
+   "nome": "Asian Handicap",
+   "h": 4.5,
+   "out": [
+    [
+     10108,
+     "1"
+    ],
+    [
+     10109,
+     "2"
+    ]
+   ]
+  },
+  {
+   "id": 10110,
+   "nome": "Asian Handicap",
+   "h": 4.75,
+   "out": [
+    [
+     10111,
+     "2"
+    ],
+    [
+     10110,
+     "1"
+    ]
+   ]
+  },
+  {
+   "id": 10112,
+   "nome": "Asian Handicap",
+   "h": 5.0,
+   "out": [
+    [
+     10113,
+     "2"
+    ],
+    [
+     10112,
+     "1"
+    ]
+   ]
+  },
+  {
+   "id": 10114,
+   "nome": "Asian Handicap",
+   "h": 5.25,
+   "out": [
+    [
+     10114,
+     "1"
+    ],
+    [
+     10115,
+     "2"
+    ]
+   ]
+  },
+  {
+   "id": 10116,
+   "nome": "Asian Handicap",
+   "h": 5.5,
+   "out": [
+    [
+     10117,
+     "2"
+    ],
+    [
+     10116,
+     "1"
+    ]
+   ]
+  },
+  {
+   "id": 10118,
+   "nome": "Asian Handicap",
+   "h": 5.75,
+   "out": [
+    [
+     10119,
+     "2"
+    ],
+    [
+     10118,
+     "1"
+    ]
+   ]
+  },
+  {
+   "id": 10120,
+   "nome": "Asian Handicap",
+   "h": 6.0,
+   "out": [
+    [
+     10120,
+     "1"
+    ],
+    [
+     10121,
+     "2"
+    ]
+   ]
+  },
+  {
+   "id": 10122,
+   "nome": "European Handicap",
+   "h": 6.0,
+   "out": [
+    [
+     10124,
+     "2"
+    ],
+    [
+     10123,
+     "X"
+    ],
+    [
+     10122,
+     "1"
+    ]
+   ]
+  },
+  {
+   "id": 10125,
+   "nome": "European Handicap",
+   "h": 5.0,
+   "out": [
+    [
+     10127,
+     "2"
+    ],
+    [
+     10125,
+     "1"
+    ],
+    [
+     10126,
+     "X"
+    ]
+   ]
+  },
+  {
+   "id": 10128,
+   "nome": "European Handicap",
+   "h": 4.0,
+   "out": [
+    [
+     10129,
+     "X"
+    ],
+    [
+     10130,
+     "2"
+    ],
+    [
+     10128,
+     "1"
+    ]
+   ]
+  },
+  {
+   "id": 10131,
+   "nome": "European Handicap",
+   "h": 3.0,
+   "out": [
+    [
+     10131,
+     "1"
+    ],
+    [
+     10133,
+     "2"
+    ],
+    [
+     10132,
+     "X"
+    ]
+   ]
+  },
+  {
+   "id": 10134,
+   "nome": "European Handicap",
+   "h": 2.0,
+   "out": [
+    [
+     10134,
+     "1"
+    ],
+    [
+     10135,
+     "X"
+    ],
+    [
+     10136,
+     "2"
+    ]
+   ]
+  },
+  {
+   "id": 10137,
+   "nome": "European Handicap",
+   "h": 1.0,
+   "out": [
+    [
+     10138,
+     "X"
+    ],
+    [
+     10139,
+     "2"
+    ],
+    [
+     10137,
+     "1"
+    ]
+   ]
+  },
+  {
+   "id": 10140,
+   "nome": "European Handicap",
+   "h": -1.0,
+   "out": [
+    [
+     10141,
+     "X"
+    ],
+    [
+     10142,
+     "2"
+    ],
+    [
+     10140,
+     "1"
+    ]
+   ]
+  },
+  {
+   "id": 10143,
+   "nome": "European Handicap",
+   "h": -2.0,
+   "out": [
+    [
+     10145,
+     "2"
+    ],
+    [
+     10144,
+     "X"
+    ],
+    [
+     10143,
+     "1"
+    ]
+   ]
+  },
+  {
+   "id": 10146,
+   "nome": "European Handicap",
+   "h": -3.0,
+   "out": [
+    [
+     10146,
+     "1"
+    ],
+    [
+     10147,
+     "X"
+    ],
+    [
+     10148,
+     "2"
+    ]
+   ]
+  },
+  {
+   "id": 10149,
+   "nome": "European Handicap",
+   "h": -4.0,
+   "out": [
+    [
+     10150,
+     "X"
+    ],
+    [
+     10149,
+     "1"
+    ],
+    [
+     10151,
+     "2"
+    ]
+   ]
+  },
+  {
+   "id": 10152,
+   "nome": "European Handicap",
+   "h": -5.0,
+   "out": [
+    [
+     10153,
+     "X"
+    ],
+    [
+     10152,
+     "1"
+    ],
+    [
+     10154,
+     "2"
+    ]
+   ]
+  },
+  {
+   "id": 10155,
+   "nome": "European Handicap",
+   "h": -6.0,
+   "out": [
+    [
+     10155,
+     "1"
+    ],
+    [
+     10157,
+     "2"
+    ],
+    [
+     10156,
+     "X"
+    ]
+   ]
+  },
+  {
+   "id": 10158,
+   "nome": "Over Under Full Time",
+   "h": 0.25,
+   "out": [
+    [
+     10159,
+     "Under"
+    ],
+    [
+     10158,
+     "Over"
+    ]
+   ]
+  },
+  {
+   "id": 10160,
+   "nome": "Over Under Full Time",
+   "h": 0.75,
+   "out": [
+    [
+     10160,
+     "Over"
+    ],
+    [
+     10161,
+     "Under"
+    ]
+   ]
+  },
+  {
+   "id": 10162,
+   "nome": "Over Under Full Time",
+   "h": 1.0,
+   "out": [
+    [
+     10163,
+     "Under"
+    ],
+    [
+     10162,
+     "Over"
+    ]
+   ]
+  },
+  {
+   "id": 10164,
+   "nome": "Over Under Full Time",
+   "h": 1.25,
+   "out": [
+    [
+     10164,
+     "Over"
+    ],
+    [
+     10165,
+     "Under"
+    ]
+   ]
+  },
+  {
+   "id": 10166,
+   "nome": "Over Under Full Time",
+   "h": 1.75,
+   "out": [
+    [
+     10167,
+     "Under"
+    ],
+    [
+     10166,
+     "Over"
+    ]
+   ]
+  },
+  {
+   "id": 10168,
+   "nome": "Over Under Full Time",
+   "h": 2.0,
+   "out": [
+    [
+     10169,
+     "Under"
+    ],
+    [
+     10168,
+     "Over"
+    ]
+   ]
+  },
+  {
+   "id": 10170,
+   "nome": "Over Under Full Time",
+   "h": 2.25,
+   "out": [
+    [
+     10170,
+     "Over"
+    ],
+    [
+     10171,
+     "Under"
+    ]
+   ]
+  },
+  {
+   "id": 10172,
+   "nome": "Over Under Full Time",
+   "h": 2.75,
+   "out": [
+    [
+     10173,
+     "Under"
+    ],
+    [
+     10172,
+     "Over"
+    ]
+   ]
+  },
+  {
+   "id": 10174,
+   "nome": "Over Under Full Time",
+   "h": 3.0,
+   "out": [
+    [
+     10174,
+     "Over"
+    ],
+    [
+     10175,
+     "Under"
+    ]
+   ]
+  },
+  {
+   "id": 10176,
+   "nome": "Over Under Full Time",
+   "h": 3.25,
+   "out": [
+    [
+     10177,
+     "Under"
+    ],
+    [
+     10176,
+     "Over"
+    ]
+   ]
+  },
+  {
+   "id": 10178,
+   "nome": "Over Under Full Time",
+   "h": 3.75,
+   "out": [
+    [
+     10178,
+     "Over"
+    ],
+    [
+     10179,
+     "Under"
+    ]
+   ]
+  },
+  {
+   "id": 10180,
+   "nome": "Over Under Full Time",
+   "h": 4.0,
+   "out": [
+    [
+     10181,
+     "Under"
+    ],
+    [
+     10180,
+     "Over"
+    ]
+   ]
+  },
+  {
+   "id": 10182,
+   "nome": "Over Under Full Time",
+   "h": 4.25,
+   "out": [
+    [
+     10182,
+     "Over"
+    ],
+    [
+     10183,
+     "Under"
+    ]
+   ]
+  },
+  {
+   "id": 10184,
+   "nome": "Over Under Full Time",
+   "h": 4.75,
+   "out": [
+    [
+     10184,
+     "Over"
+    ],
+    [
+     10185,
+     "Under"
+    ]
+   ]
+  },
+  {
+   "id": 10186,
+   "nome": "Over Under Full Time",
+   "h": 5.0,
+   "out": [
+    [
+     10186,
+     "Over"
+    ],
+    [
+     10187,
+     "Under"
+    ]
+   ]
+  },
+  {
+   "id": 10188,
+   "nome": "Over Under Full Time",
+   "h": 5.25,
+   "out": [
+    [
+     10188,
+     "Over"
+    ],
+    [
+     10189,
+     "Under"
+    ]
+   ]
+  },
+  {
+   "id": 10190,
+   "nome": "Over Under Full Time",
+   "h": 5.75,
+   "out": [
+    [
+     10190,
+     "Over"
+    ],
+    [
+     10191,
+     "Under"
+    ]
+   ]
+  },
+  {
+   "id": 10192,
+   "nome": "Over Under Full Time",
+   "h": 6.0,
+   "out": [
+    [
+     10192,
+     "Over"
+    ],
+    [
+     10193,
+     "Under"
+    ]
+   ]
+  },
+  {
+   "id": 10194,
+   "nome": "Over Under Full Time",
+   "h": 6.25,
+   "out": [
+    [
+     10194,
+     "Over"
+    ],
+    [
+     10195,
+     "Under"
+    ]
+   ]
+  },
+  {
+   "id": 10196,
+   "nome": "Over Under Full Time",
+   "h": 6.75,
+   "out": [
+    [
+     10196,
+     "Over"
+    ],
+    [
+     10197,
+     "Under"
+    ]
+   ]
+  },
+  {
+   "id": 10198,
+   "nome": "Over Under Full Time",
+   "h": 7.0,
+   "out": [
+    [
+     10199,
+     "Under"
+    ],
+    [
+     10198,
+     "Over"
+    ]
+   ]
+  },
+  {
+   "id": 10200,
+   "nome": "Over Under Full Time",
+   "h": 7.25,
+   "out": [
+    [
+     10201,
+     "Under"
+    ],
+    [
+     10200,
+     "Over"
+    ]
+   ]
+  },
+  {
+   "id": 10202,
+   "nome": "Over Under Full Time",
+   "h": 7.75,
+   "out": [
+    [
+     10203,
+     "Under"
+    ],
+    [
+     10202,
+     "Over"
+    ]
+   ]
+  },
+  {
+   "id": 10204,
+   "nome": "Over Under Full Time",
+   "h": 8.0,
+   "out": [
+    [
+     10205,
+     "Under"
+    ],
+    [
+     10204,
+     "Over"
+    ]
+   ]
+  },
+  {
+   "id": 10206,
+   "nome": "Over Under Full Time",
+   "h": 8.25,
+   "out": [
+    [
+     10207,
+     "Under"
+    ],
+    [
+     10206,
+     "Over"
+    ]
+   ]
+  },
+  {
+   "id": 10214,
+   "nome": "Draw No Bet",
+   "h": 0.0,
+   "out": [
+    [
+     10215,
+     "2"
+    ],
+    [
+     10214,
+     "1"
+    ]
+   ]
+  },
+  {
+   "id": 10216,
+   "nome": "First Goal Full Time",
+   "h": 0.0,
+   "out": [
+    [
+     10218,
+     "2"
+    ],
+    [
+     10216,
+     "1"
+    ],
+    [
+     10217,
+     "No Goal"
+    ]
+   ]
+  },
+  {
+   "id": 10219,
+   "nome": "Last Goal Full Time",
+   "h": 0.0,
+   "out": [
+    [
+     10219,
+     "1"
+    ],
+    [
+     10221,
+     "2"
+    ],
+    [
+     10220,
+     "No Goal"
+    ]
+   ]
+  },
+  {
+   "id": 10222,
+   "nome": "Odd Even Full Time",
+   "h": 0.0,
+   "out": [
+    [
+     10222,
+     "Odd"
+    ],
+    [
+     10223,
+     "Even"
+    ]
+   ]
+  },
+  {
+   "id": 10224,
+   "nome": "Over Under Team 1",
+   "h": 0.5,
+   "out": [
+    [
+     10224,
+     "Over"
+    ],
+    [
+     10225,
+     "Under"
+    ]
+   ]
+  },
+  {
+   "id": 10226,
+   "nome": "Over Under Team 1",
+   "h": 1.5,
+   "out": [
+    [
+     10226,
+     "Over"
+    ],
+    [
+     10227,
+     "Under"
+    ]
+   ]
+  },
+  {
+   "id": 10228,
+   "nome": "Over Under Team 1",
+   "h": 2.5,
+   "out": [
+    [
+     10228,
+     "Over"
+    ],
+    [
+     10229,
+     "Under"
+    ]
+   ]
+  },
+  {
+   "id": 10230,
+   "nome": "Over Under Team 1",
+   "h": 3.5,
+   "out": [
+    [
+     10230,
+     "Over"
+    ],
+    [
+     10231,
+     "Under"
+    ]
+   ]
+  },
+  {
+   "id": 10232,
+   "nome": "Over Under Team 1",
+   "h": 4.5,
+   "out": [
+    [
+     10232,
+     "Over"
+    ],
+    [
+     10233,
+     "Under"
+    ]
+   ]
+  },
+  {
+   "id": 10234,
+   "nome": "Over Under Team 1",
+   "h": 5.5,
+   "out": [
+    [
+     10234,
+     "Over"
+    ],
+    [
+     10235,
+     "Under"
+    ]
+   ]
+  },
+  {
+   "id": 10236,
+   "nome": "Over Under Team 1",
+   "h": 6.5,
+   "out": [
+    [
+     10237,
+     "Under"
+    ],
+    [
+     10236,
+     "Over"
+    ]
+   ]
+  },
+  {
+   "id": 10238,
+   "nome": "Over Under Team 1",
+   "h": 7.5,
+   "out": [
+    [
+     10239,
+     "Under"
+    ],
+    [
+     10238,
+     "Over"
+    ]
+   ]
+  },
+  {
+   "id": 10240,
+   "nome": "Over Under Team 2",
+   "h": 0.5,
+   "out": [
+    [
+     10240,
+     "Over"
+    ],
+    [
+     10241,
+     "Under"
+    ]
+   ]
+  },
+  {
+   "id": 10242,
+   "nome": "Over Under Team 2",
+   "h": 1.5,
+   "out": [
+    [
+     10243,
+     "Under"
+    ],
+    [
+     10242,
+     "Over"
+    ]
+   ]
+  },
+  {
+   "id": 10244,
+   "nome": "Over Under Team 2",
+   "h": 2.5,
+   "out": [
+    [
+     10245,
+     "Under"
+    ],
+    [
+     10244,
+     "Over"
+    ]
+   ]
+  },
+  {
+   "id": 10246,
+   "nome": "Over Under Team 2",
+   "h": 3.5,
+   "out": [
+    [
+     10246,
+     "Over"
+    ],
+    [
+     10247,
+     "Under"
+    ]
+   ]
+  },
+  {
+   "id": 10248,
+   "nome": "Over Under Team 2",
+   "h": 4.5,
+   "out": [
+    [
+     10249,
+     "Under"
+    ],
+    [
+     10248,
+     "Over"
+    ]
+   ]
+  },
+  {
+   "id": 10250,
+   "nome": "Over Under Team 2",
+   "h": 5.5,
+   "out": [
+    [
+     10250,
+     "Over"
+    ],
+    [
+     10251,
+     "Under"
+    ]
+   ]
+  },
+  {
+   "id": 10252,
+   "nome": "Over Under Team 2",
+   "h": 6.5,
+   "out": [
+    [
+     10253,
+     "Under"
+    ],
+    [
+     10252,
+     "Over"
+    ]
+   ]
+  },
+  {
+   "id": 10254,
+   "nome": "Over Under Team 2",
+   "h": 7.5,
+   "out": [
+    [
+     10254,
+     "Over"
+    ],
+    [
+     10255,
+     "Under"
+    ]
+   ]
+  },
+  {
+   "id": 10284,
+   "nome": "Team 1 To Score",
+   "h": 0.0,
+   "out": [
+    [
+     10285,
+     "No"
+    ],
+    [
+     10284,
+     "Yes"
+    ]
+   ]
+  },
+  {
+   "id": 10286,
+   "nome": "Team 2 To Score",
+   "h": 0.0,
+   "out": [
+    [
+     10287,
+     "No"
+    ],
+    [
+     10286,
+     "Yes"
+    ]
+   ]
+  },
+  {
+   "id": 10296,
+   "nome": "Team 1 To Score in Both Halves",
+   "h": 0.0,
+   "out": [
+    [
+     10296,
+     "Yes"
+    ],
+    [
+     10297,
+     "No"
+    ]
+   ]
+  }
+ ],
+ "account_dopo": [
+  200,
+  {
+   "api_key": "184d1dfe-018a-48a6-a007-6d0e79556a04",
+   "created_at": "2026-10-31T22:18:30.572682+00:00",
+   "language_code": "en",
+   "language_name": "English",
+   "email": "nello.trinchese@gmail.com",
+   "email_verified": true,
+   "current_subscription_id": "3a8f13fb-0602-41da-8165-aacd04e9684d",
+   "customer_segment": "user",
+   "subscriptions": [
+    {
+     "subscription_id": "3a8f13fb-0602-41da-8165-aacd04e9684d",
+     "currency": "USD",
+     "price": null,
+     "valid_from": "2026-10-31T22:18:30.572682+00:00",
+     "valid_until": null,
+     "auto_renew": false,
+     "is_active": true,
+     "created_at": "2026-10-31T22:18:30.572682+00:00",
+     "bookmakers": {
+      "fezbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "4casters": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betsafe": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "mystake": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "apuestatotal": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bwin.dk": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "anybet365": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "maxbet.rs": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "midnite": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "paradisewager": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "powbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "esportivabet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "partycasino": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bet3000": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bwin.de": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "estrelabet.bet.br": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "fanatics": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "megapari": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "sharpbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "1red": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "pmu": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "pokerstars.it": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "singbet-c": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "sportaza": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "sportingbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "admiralbet.me": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "kto": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "opticodds": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "tab.com.au": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "casapariurilor.ro": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "unibet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "winbet.bg": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "rabona": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betplay.io": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "justbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betano.de": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betnation.nl": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "spelet.lv": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "sharpxch": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "stake": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "admiralbet.ba": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "estrelabet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "merkurxtip.cz": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "playnow": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "melbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "nordicbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "casumo": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "ivibet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "sharp.ag": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "tiptorro": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "winamax.de": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "888sport.ro": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "prizepicks": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bfb247": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "pokerstars.es": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "allbritishcasino": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "ninecasino": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "sportingbet.co.za": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "1xbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "superbet.pl": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "888sport.de": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "lottomatica.it": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "paf": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "singbet-b": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "pin88": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bet99": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "eurobet.it": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "limitless-ex": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "tonybet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "pinnacle+30": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "sportybet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "winamax.fr": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betonred": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "livescorebet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "blaze.bet.br": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "librabet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "sports411.ag": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "rajbets": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "rooster.bet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betplay": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "aceshigh.ag": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "sunbet.co.za": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "fbsports": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betus": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "velobet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "fun88.co.uk": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "mrbit.ro": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "rolletto": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "pokerstars.ro": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "balkanbet.rs": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "ladbrokes": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "desertdiamond": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bet365.de": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betmgm": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "fair999-ex": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "kalshi": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "netbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "inkabet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "maxbet.ro": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "31bet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "n1bet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betano.ca": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betpawa.cm": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "eplay24.it": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "thescore": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "fourwinds": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bcgame": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betcenter.be": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betano.ro": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betcity.nl": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betfury": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bolsadeaposta-spb": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bpremium": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "punter.io": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "sbobet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "thunderpick.io": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betano.bet.br": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "leovegas.it": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "fliff": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "pagbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "efortuna.ro": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betinia.dk": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "oktagonbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bet365.bet.br": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "cryptoleo": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betway": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "draftkings-predictions": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "snai.it": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "espnbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betsson.it": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "pinnacle": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "prolineplus": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "198bet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "hardrockbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "gemini": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betfair.es": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "soccerbet.rs": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "circasports": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "superbet.ro": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "roobet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "odibets": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "duel": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "winbet.ro": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "sabasports": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bwin.pt": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "sportingbet.bet.br": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betamapola": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betano": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betparx": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "jackbit": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betano.pt": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "admiralbet.rs": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betdsi": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bwin.be": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "oddset": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "fonbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "polymarket.us": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "ladbrokes.de": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "scooore.be": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betwar": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "sportuna": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "vertex": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "wazamba": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "winamax.es": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "superbet.rs": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "goldenpark.es": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "prophetx": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "singbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "jazzsports": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betsson": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "novig.us": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "draftkings": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "20bet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bet365": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bookmaker.eu": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betika": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bodog.eu": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "starcasino.be": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "toto.nl": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bwin": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "rebet.app": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "wettarena": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "svenskaspel": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betwhale.ag": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betrivers": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "williamhill-nj": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "1xbit": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "tigergaming": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "goldenbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "neds.com.au": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "fortunejack": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "mrgreen.dk": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "quickwin": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "razed": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "tabtouch": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "unibet.ie": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "vave": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "atg.se": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "robinhood": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "williamhill": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bet365.gr": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "kto.bet.br": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "napoleonsports.be": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "pokerstars.uk": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "888sport.it": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "mozzartbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "nextbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betfair-ex": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "interwetten": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "leovegas.es": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "piwi247-ex": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betflag.it": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "overtime.io": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "inbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "skybet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "dafabet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "pamestoixima.gr": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "yesplay": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betmgm.bet.br": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "pokerstars.fr": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "partypoker": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "888sport": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "cmd368": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "sportsbetting.ag": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "tipico": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "coolbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bet365.es": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "3et": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "gamdom": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "caesars": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betify": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betwinner": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "superbet.bet.br": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bet365.bet.ar": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "netbet.fr": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "unibet.dk": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "virginbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "pokerstars": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "duelbits": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "codere.es": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "planetwin365.it": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "genybet.fr": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "ps3838": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "grosvenor": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "mrjack.bet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "sx.bet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "500.casino": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betnacional": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "paddypower": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "lowvig.ag": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "fdj": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "buckeye": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "topodds": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "unibet.be": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bet365.nl": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "greatwin": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "brazino777.bet.br": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "pb77": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "solabet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betboo.bet.br": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "orbitx": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "stoiximan": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "feelingbet.fr": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "jacks.nl": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "mybookie.ag": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "18bet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "goldbet.it": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "leovegas.dk": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "cloudbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "22bet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "hth": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "piwi247-spb": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "rainbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "iddaa": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betfair.it": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betfirst.be": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bingoal.be": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betway.es": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "freshbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bwin.fr": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "leovegas.uk": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "blaze": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betonline.ag": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "lottoland": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "netbet.co.uk": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "sportsinteraction": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betdex": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betway.de": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "888sport.es": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "888sport.ca": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bet365.fr": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "expekt.dk": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "coolzino": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "megadice": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "indibet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "mansion88": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betcris": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "fanaticsmarkets": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "kaiyun": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "fanduel": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "pixbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "powerplay": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "ballybet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "myriad": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betuk": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "sugarhouse": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betano.pe": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "7bet.co.uk": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "boylesports": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bet365.it": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "coral": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bovada.lv": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "marathonbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "polymarket": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "888sport.dk": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "rushbet.co": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "stake.bet.br": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "unibet.com.au": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "unibet.nl": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "pointsbet.com.au": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "zebet.fr": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "unibet.fr": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "borgata": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "msport": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betmgm.co.uk": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bwin.es": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betano.cz": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betano.bg": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "rollbit": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "xbet.ag": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bet365-nj": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "leyusports": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "netbet.it": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "quigioco.it": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "sportwetten.de": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "7bet.lt": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "sesamesport.bg": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bet487": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "mrgreen": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "admiralbet.it": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "unibet.se": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "gamebookers": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "asports.bet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "sisal.it": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "bluechip": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "crypto.com": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "merkurbets": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "winpot.mx": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "alphawin": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "cashpoint": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betano.dk": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "superbet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "cashpoint.dk": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "leovegas": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betfred": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "matchbook": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "fairpari": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "vistabet": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "campobet.dk": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "afb88": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "betano.mx": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "goldenpalacesports.be": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "expekt.se": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "ole777": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "paf.es": {
+       "has_live_odds": false,
+       "has_player_props": true
+      },
+      "efortuna.pl": {
+       "has_live_odds": false,
+       "has_player_props": true
+      }
+     },
+     "sport_ids": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68
+     ],
+     "websocket_access": 0,
+     "request_limit": 250,
+     "plan": "free",
+     "request_count": 3
+    }
+   ]
+  }
+ ]
+}
