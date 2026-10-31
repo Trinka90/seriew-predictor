@@ -116,7 +116,8 @@ def _parse_tennis(ev, c, cfg):
             "p1": p[0], "p2": p[1], "state": st.get("state"), "done": bool(st.get("completed")),
             "w": 0 if win[0] else 1 if win[1] else None,
             "sets": [sum(1 for a, b in zip(sets[0], sets[1]) if a > b), sum(1 for a, b in zip(sets[0], sets[1]) if b > a)],
-            "wo": bool(st.get("completed")) and not any(sets[0] + sets[1])}
+            "wo": bool(st.get("completed")) and not any(sets[0] + sets[1]),
+            "tv": c.get("timeValid")}
 
 
 def _parse_nba(ev, c):
@@ -483,11 +484,20 @@ def tennis(code):
 
     today = dt.date.today()
     horizon = (today + dt.timedelta(days=3)).isoformat()
+    # orario non ancora deciso: ESPN mette un'ora fittizia (es. 05:00 UTC) a tutto il tabellone del giorno
+    same = {}
+    for m in ms:
+        if m["state"] == "pre":
+            k = (m["torneo"], m["date"], m.get("ora"))
+            same[k] = same.get(k, 0) + 1
     out = []
     for m in ms:
         if m["done"] or m["state"] != "pre":
             continue
         d_it, ora_it = it_time(m["date"], m.get("ora", ""))
+        if m.get("tv") is False or (m.get("tv") is None and m.get("ora") in ("04:00", "05:00")
+                                    and same.get((m["torneo"], m["date"], m.get("ora")), 0) >= 6):
+            ora_it = ""
         if not (today.isoformat() <= d_it <= horizon):
             continue
         if "TBD" in (m["p1"] + m["p2"]) or "/" in m["p1"]:

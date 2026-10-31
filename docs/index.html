@@ -485,7 +485,7 @@ function pkRow(x, i, right) {
   return `<div class="pk" onclick="openMatch(${x.mi})">
     ${i != null ? `<span class="n">${i + 1}</span>` : ""}
     <div class="main"><div class="what"><span class="code">${esc(codeOf(x.k, x.m))}</span><span class="expl">${esc(label(x.k, x.m))}</span></div>
-      <div class="who"><span class="dot ${dotc(x.p)}"></span>${LEGHE()[x.m.lega]?.flag || ""} ${esc(x.m.casa)} – ${esc(x.m.ospite)} · ${S.allDays ? dayShort(x.m.data) + " " : ""}${esc(x.m.ora || "")}${warn(x.m)}</div></div>
+      <div class="who"><span class="dot ${dotc(x.p)}"></span>${LEGHE()[x.m.lega]?.flag || ""} ${esc(x.m.casa)} – ${esc(x.m.ospite)} · ${S.allDays ? dayShort(x.m.data) + " " : ""}${x.m.ora ? esc(x.m.ora) : "ora da definire"}${warn(x.m)}</div></div>
     <div class="num"><b>${pc(x.p)}</b><span>${x.q ? esc(bkShort(x.bk)) + " " + (x.est ? "≈" : "") + x.q.toFixed(2) : "giusta " + fair(x.p)}</span></div>
     ${right || ""}</div>`;
 }
@@ -548,7 +548,7 @@ function viewOggi() {
 function matchRow(m) {
   const M = m.mercati, bp = bestPick(m);
   const pr = M.X != null ? `${pc(M["1"])} · ${pc(M.X)} · ${pc(M["2"])}` : `${pc(M["1"])} · ${pc(M["2"])}`;
-  return `<div class="mr" onclick="openMatch(${m._mi})"><div class="t">${esc(m.ora || "")}${warn(m)}</div>
+  return `<div class="mr" onclick="openMatch(${m._mi})"><div class="t">${m.ora ? esc(m.ora) : `<span class="small">ora da<br>definire</span>`}${warn(m)}</div>
     <div class="tm"><div>${esc(m.casa)}</div><div>${esc(m.ospite)}</div><div class="pb">${pr}</div></div>
     <div class="bp"><span class="code" style="margin:0">${esc(codeOf(bp.k, m))}</span><div><b>${pc(bp.p)}</b></div></div></div>`;
 }
@@ -581,7 +581,7 @@ function detail(m) {
       <div class="sec">Risultato esatto</div>${(m.risultati || []).map(r => `<div class="mk"><span>${esc(r.r)}</span><span>${pc(r.p)}</span></div>`).join("")}
       ${M["Angoli attesi"] != null ? sec(`Angoli (attesi ${M["Angoli attesi"].toFixed(1)}) e cartellini (attesi ${M["Cartellini attesi"].toFixed(1)})`, ["Angoli Over 8.5", "Angoli Over 9.5", "Angoli Over 10.5", "Cartellini Over 3.5", "Cartellini Over 4.5"]) : ""}`
     : rows(m, Object.keys(M));
-  return `<div class="dh"><button onclick="closeMatch()">← Indietro</button><span class="small mut">${lgName(m.lega)} · ${dayShort(m.data)} ${esc(m.ora || "")}</span></div>
+  return `<div class="dh"><button onclick="closeMatch()">← Indietro</button><span class="small mut">${lgName(m.lega)} · ${dayShort(m.data)} ${m.ora ? "ore " + esc(m.ora) + " (ora italiana)" : "· ora da definire"}</span></div>
   <main>
     <div class="teams">${esc(m.casa)} – ${esc(m.ospite)}</div>
     <div class="sub">${calcio ? `${pos(m.classifica_casa)} ${form(m.forma_casa)} · ${pos(m.classifica_ospite)} ${form(m.forma_ospite)}` : `${form(m.forma_casa)} · ${form(m.forma_ospite)}`}</div>
