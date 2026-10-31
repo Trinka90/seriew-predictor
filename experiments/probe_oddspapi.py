@@ -27,7 +27,17 @@ def cut(x, n=3, d=0):
     return x
 
 
-out["account_prima"] = get("account")
+def quota():
+    """Solo il consumo: mai salvare chiave o email."""
+    st, a = get("account")
+    try:
+        s = a["subscriptions"][0]
+        return {"limite": s.get("request_limit"), "usate": s.get("request_count"), "sisal": "sisal.it" in (s.get("bookmakers") or {})}
+    except Exception:
+        return {"status": st}
+
+
+out["account_prima"] = quota()
 st, tours = get("tournaments", sportId=10)
 out["tornei_status"] = st
 if isinstance(tours, list):
@@ -63,6 +73,6 @@ if isinstance(mk, list):
     out["markets_calcio"] = [{"id": m["marketId"], "nome": m.get("marketName"), "h": m.get("handicap"),
                               "out": [(o["outcomeId"], o.get("outcomeName")) for o in m.get("outcomes", [])]}
                              for m in mk if m.get("sportId") == 10 and m.get("period") in (None, "result", "fulltime", "FT")][:120]
-out["account_dopo"] = get("account")
+out["account_dopo"] = quota()
 Path(__file__).with_name("probe_oddspapi.json").write_text(json.dumps(out, indent=1, ensure_ascii=False, default=str))
 print(json.dumps({k: v for k, v in out.items() if k != "markets_calcio"}, indent=1, ensure_ascii=False, default=str)[:4000])
