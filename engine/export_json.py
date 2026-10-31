@@ -80,41 +80,29 @@ def _estimated(info, odds, f):
 
 
 def _semaforo(info, home, away, df, day, drift=None):
-    """Semaforo SOLO informativo: segnala le situazioni particolari, non cambia pronostico né schedina.
-    (Nel backtest 25/26 queste partite non sono uscite meno delle altre: serve a capire, non a scartare.)"""
+    """Semaforo SOLO informativo: non cambia pronostico né schedina. Solo segnali forti
+    (con quelli deboli era giallo più di metà delle partite e l'avviso non serviva più)."""
     mot = []
     for side, team in (("h", home), ("a", away)):
-        big = [a for a in info[f"abs_{side}"] if a.get("importanza") in ("stella", "titolare")]
-        if any(a.get("importanza") == "stella" for a in big) or len(big) >= 2:
-            mot.append(f"{team}: {len(big)} assent{'e importante' if len(big) == 1 else 'i importanti'} "
-                       f"({', '.join(a['player'] for a in big[:3])})")
+        ab = info[f"abs_{side}"]
+        stars = [a for a in ab if a.get("importanza") == "stella"]
+        big = [a for a in ab if a.get("importanza") in ("stella", "titolare")]
+        if stars:
+            mot.append(f"{team}: assente {', '.join(a['player'] for a in stars[:3])} (giocatore chiave)")
+        elif len(big) >= 3:
+            mot.append(f"{team}: {len(big)} titolari assenti ({', '.join(a['player'] for a in big[:3])})")
     ev = info.get("eventi") or {}
     for side, team in (("casa", home), ("ospite", away)):
-        to = (ev.get(side) or {}).get("turnover")
-        if to and to != "nessuno":
-            mot.append(f"{team}: previsto turnover {to}")
+        if (ev.get(side) or {}).get("turnover") == "alto":
+            mot.append(f"{team}: previsto turnover alto")
         if (ev.get(side) or {}).get("nuovo_allenatore"):
             mot.append(f"{team}: nuovo allenatore")
     if ev.get("porte_chiuse"):
         mot.append("porte chiuse")
     if ev.get("campo_neutro"):
         mot.append("campo neutro")
-    mm, bm = info.get("model_markets"), info.get("book_markets")
-    if mm and bm:
-        k = max(("1", "X", "2"), key=lambda x: abs(mm[x] - bm[x]))
-        if abs(mm[k] - bm[k]) >= 0.10:
-            mot.append(f"modello e quote non d'accordo sul segno {k} (modello {mm[k]:.0%}, quote {bm[k]:.0%})")
-    if drift and abs(drift[1]) >= 0.05:
-        mot.append(f"quote cambiate nelle ultime ore sul segno {drift[0]} ({drift[1]:+.0%}): forse c'è una notizia")
-    lo = day - pd.Timedelta(days=365)
-    for team in (home, away):
-        played = df[((df.home == team) | (df.away == team)) & (df.date >= lo)]
-        if len(played) < 15:
-            mot.append(f"{team}: pochi dati in questo campionato (neopromossa?)")
-        elif len(played):
-            gap = (day - played.date.max()).days
-            if 0 < gap <= 3:
-                mot.append(f"{team}: ha giocato {gap} giorn{'o' if gap == 1 else 'i'} fa (calendario fitto)")
+    if drift and abs(drift[1]) >= 0.07:
+        mot.append(f"quote cambiate molto nelle ultime ore sul segno {drift[0]} ({drift[1]:+.0%}): forse c'è una notizia")
     return {"livello": "giallo" if mot else "verde", "motivi": mot}
 
 

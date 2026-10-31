@@ -298,11 +298,15 @@ function storySport(m) {
   out.push(fav[1] >= .75 ? `<b>${esc(fav[0])}</b> nettamente favorito (${pc(fav[1])}).` : fav[1] >= .6 ? `<b>${esc(fav[0])}</b> favorito (${pc(fav[1])}).` : `Partita <b>equilibrata</b>.`);
   if (m.sport === "tennis") {
     out.push(`🎾 ${esc(m.torneo)} · ${esc(m.turno)} · ${esc(m.superficie)}${m.bo5 ? " · al meglio dei 5 set" : ""}.`);
+    if (m.pochi_dati) out.push(`ℹ️ Pochi dati su uno dei due giocatori: pronostico meno affidabile.`);
+    if (m.livello === "quali") out.push(`ℹ️ Qualificazioni: qui i pronostici escono un po' meno spesso che nei tabelloni principali.`);
     if (m.livello === "slam") out.push(`🏆 Slam: qui i favoriti vincono più spesso che negli altri tornei, il pronostico ne tiene conto.`);
     out.push(`Rating Elo: ${esc(m.casa)} ${m.elo_casa} · ${esc(m.ospite)} ${m.elo_ospite}.`);
   }
   if (m.sport === "basket") {
     out.push(`🏀 Punti attesi: ${esc(m.casa)} ${m.punti_casa} · ${esc(m.ospite)} ${m.punti_ospite}.`);
+    const keyOut = [...(m.assenti_casa || []).map(a => [a, m.casa]), ...(m.assenti_ospite || []).map(a => [a, m.ospite])].filter(([a]) => a.importanza === "stella");
+    if (keyOut.length) out.push(`🚑 ${keyOut.map(([a, t]) => `<b>${esc(a.nome)}</b> (${esc(t)}) ${esc(a.certezza)}`).join(", ")}.`);
     out.push(m.con_mercato ? `📈 Probabilità prese dalle quote ${esc(bkShort(m.bookmaker))}: nei test sull'ultimo anno sono state le più precise.`
       : `🧮 Quote non ancora uscite (arrivano il giorno della partita): pronostico del modello, corretto perché non sopravvaluti i favoriti.`);
   }
@@ -590,6 +594,10 @@ function detail(m) {
     <ul class="says">${says.map(x => `<li>${x}</li>`).join("")}</ul>
     <div class="card" style="margin-top:14px;padding-top:2px;padding-bottom:2px">
       <details class="acc"><summary>Tutti i pronostici</summary>${altri}</details>
+      ${sportOf(m) === "basket" && (m.assenti_casa?.length || m.assenti_ospite?.length) ? `<details class="acc"><summary>Infortunati</summary>
+        <div class="sec">${esc(m.casa)}</div>${abs(m.assenti_casa || [])}
+        <div class="sec">${esc(m.ospite)}</div>${abs(m.assenti_ospite || [])}
+        <div class="small mut" style="padding:6px 0">Fonte: elenco infortuni ESPN. Con le quote del bookmaker gli assenti sono già considerati.</div></details>` : ""}
       ${calcio ? `<details class="acc"><summary>Assenti e notizie</summary>
         <div class="sec">Assenti ${esc(m.casa)}</div>${abs(m.assenti_casa || [])}
         <div class="sec">Assenti ${esc(m.ospite)}</div>${abs(m.assenti_ospite || [])}

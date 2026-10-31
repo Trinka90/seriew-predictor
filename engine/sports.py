@@ -138,10 +138,43 @@ def _parse_nba(ev, c):
     return m
 
 
-def _pickcenter(gid):
+STATO = {"Out": "fuori", "Doubtful": "in forte dubbio", "Questionable": "in dubbio", "Day-To-Day": "in dubbio"}
+
+
+def _injuries(d):
+    """Infortunati per squadra dal riepilogo ESPN; 'leader' = miglior giocatore della squadra in punti/assist/rimbalzi."""
+    leaders = {}
+    for t in d.get("leaders") or []:
+        tn = (t.get("team") or {}).get("displayName")
+        for cat in t.get("leaders") or []:
+            for x in (cat.get("leaders") or [])[:1]:
+                nm = (x.get("athlete") or {}).get("displayName")
+                if tn and nm:
+                    leaders.setdefault(tn, {}).setdefault(nm, []).append(
+                        {"pointsPerGame": "punti", "assistsPerGame": "assist", "reboundsPerGame": "rimbalzi"}.get(cat.get("name"), cat.get("displayName", "")))
+    out = {}
+    for t in d.get("injuries") or []:
+        tn = (t.get("team") or {}).get("displayName")
+        for x in t.get("injuries") or []:
+            st = STATO.get(x.get("status"))
+            nm = (x.get("athlete") or {}).get("displayName")
+            if not (tn and nm and st):
+                continue
+            det = x.get("details") or {}
+            out.setdefault(tn, []).append({"nome": nm, "stato": st, "tipo": det.get("type") or "",
+                                           "rientro": det.get("returnDate") or "",
+                                           "leader": leaders.get(tn, {}).get(nm, [])})
+    return out
+
+
+def _summary(gid):
     r = requests.get(f"{ESPN}/basketball/nba/summary", params={"event": gid}, headers=H, timeout=20)
     r.raise_for_status()
-    d = r.json()
+    return r.json()
+
+
+def _pickcenter(gid, d=None):
+    d = d or _summary(gid)
     for pc in (d.get("pickcenter") or []) + (d.get("odds") or []):
         if not isinstance(pc, dict):
             continue
@@ -167,7 +200,10 @@ def update_nba_odds(db, stop, max_old=80):
         if time.time() > stop:
             break
         try:
-            o = _pickcenter(m["id"])
+            d = _summary(m["id"])
+            if not m["done"]:
+                m["inj"] = _injuries(d)
+            o = _pickcenter(m["id"], d)
             if o:
                 m["odds"] = o
             elif m["done"]:
@@ -396,8 +432,6 @@ def _tnotes(name, f):
     out = []
     if gap is not None and gap > 21:
         out.append(f"{name} rientra dopo {gap // 7} settimane senza partite (di solito rende meno)")
-    if s3 >= 6:
-        out.append(f"{name} ha giocato {s3} set negli ultimi 3 giorni")
     return out
 
 
@@ -465,10 +499,6 @@ def tennis(code):
         p = float(_sig(np.array(_tfeat(pc, lev, fa, fb)) @ b_now))
         conf = min(elo.n.get(m["p1"], 0), elo.n.get(m["p2"], 0))
         motivi = _tnotes(m["p1"], fa) + _tnotes(m["p2"], fb)
-        if conf < 15:
-            motivi.append("pochi dati su uno dei due giocatori")
-        if lev == "quali":
-            motivi.append("qualificazioni: i pronostici escono meno spesso (58-61% contro 62-64%)")
         out.append({"sport": "tennis", "lega": code, "id": m["id"], "data": d_it, "ora": ora_it,
                     "casa": m["p1"], "ospite": m["p2"], "torneo": m["torneo"], "turno": m["turno"],
                     "superficie": m["superficie"], "bo5": m["bo5"], "livello": lev,
@@ -518,6 +548,24 @@ def _book_p(o):
         qh, qa = 1 / o["h"], 1 / o["a"]
         return qh / (qh + qa)
     return None
+
+
+TIPO = {"Knee": "ginocchio", "Ankle": "caviglia", "Foot": "piede", "Hamstring": "flessore", "Back": "schiena",
+        "Hip": "anca", "Shoulder": "spalla", "Illness": "malattia", "Rest": "riposo", "Groin": "inguine",
+        "Calf": "polpaccio", "Wrist": "polso", "Hand": "mano", "Achilles": "tendine d'Achille", "Concussion": "trauma cranico",
+        "Thumb": "pollice", "Finger": "dito", "Elbow": "gomito", "Quadriceps": "quadricipite", "Toe": "dito del piede",
+        "Personal": "motivi personali", "Suspension": "squalifica", "Leg": "gamba", "Neck": "collo", "Abdomen": "addome"}
+
+
+def _abs_nba(lst):
+    """Stesso formato degli assenti del calcio, letto dall'app."""
+    order = {"fuori": 0, "in forte dubbio": 1, "in dubbio": 2}
+    return [{"nome": x["nome"], "certezza": x["stato"], "importanza": "stella" if x["leader"] else None,
+             "motivo": " · ".join(filter(None, [TIPO.get(x["tipo"], x["tipo"]),
+                                                f"rientro previsto {x['rientro'][8:10]}/{x['rientro'][5:7]}" if x["rientro"] else "",
+                                                f"il migliore per {', '.join(x['leader'])}" if x["leader"] else ""])),
+             "titolo": "", "effetto": 0, "memoria": False}
+            for x in sorted(lst, key=lambda x: (not x["leader"], order.get(x["stato"], 3)))]
 
 
 def nba(code="NBA"):
@@ -617,8 +665,11 @@ def nba(code="NBA"):
         for t in (m["home"], m["away"]):
             if t in last and (day - dt.date.fromisoformat(last[t])).days == 1:
                 motivi.append(f"{t} gioca la seconda partita in due sere (back-to-back)")
-        if not con_m:
-            motivi.append("quote non ancora disponibili: pronostico del solo modello, meno preciso")
+        inj = m.get("inj") or {}
+        for t in (m["home"], m["away"]):
+            for x in inj.get(t, []):
+                if x["leader"]:
+                    motivi.append(f"{t}: {x['nome']} {x['stato']} (miglior giocatore per {', '.join(x['leader'])})")
         out.append({"sport": "basket", "lega": code, "id": m["id"], "data": d_it, "ora": ora_it,
                     "casa": m["home"], "ospite": m["away"], "punti_casa": round(diff / 2 + tot / 2, 1),
                     "punti_ospite": round(tot / 2 - diff / 2, 1),
@@ -626,7 +677,8 @@ def nba(code="NBA"):
                     "mercati": mk, "quote": quote, "bookmaker": f"{o.get('book') or 'DraftKings'} (USA)" if quote else None,
                     "value": [], "risultati": [], "prob_modello": p_model,
                     "semaforo": {"livello": "giallo" if motivi else "verde", "motivi": motivi},
-                    "assenti_casa": [], "assenti_ospite": [], "note_casa": [], "note_ospite": [],
+                    "assenti_casa": _abs_nba(inj.get(m["home"], [])), "assenti_ospite": _abs_nba(inj.get(m["away"], [])),
+                    "note_casa": [], "note_ospite": [],
                     "news_casa": [], "news_ospite": [], "eventi": {}, "effetti": [], "con_mercato": con_m})
     rows = [{"squadra": t, "pos": i + 1, "pt": round(e), "pg": len(hist.get(t, [])),
              "gf": hist.get(t, []).count("V"), "gs": hist.get(t, []).count("P"), "dr": 0,
