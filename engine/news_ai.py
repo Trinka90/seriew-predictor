@@ -127,13 +127,17 @@ Rispondi SOLO con un JSON valido, senza testo prima o dopo, con questa struttura
 
 # ----------------------------------------------------------------- notizie mirate
 def fetch_targeted(con, teams_by_league):
-    """Scarica titoli mirati (infortuni/formazione) per le squadre che giocano a breve."""
+    """Scarica titoli mirati (infortuni/formazione) per le squadre che giocano a breve.
+    teams_by_league: lista di (campionato, squadra) già in ordine di calcio d'inizio (prima le più vicine),
+    così se il tempo finisce restano fuori solo le partite più lontane."""
     n = 0
     cutoff = dt.date.today() - dt.timedelta(days=C.NEWS_DAYS)
     stop = time.time() + FETCH_BUDGET_MIN * 60
-    for lg, teams in teams_by_league.items():
+    pairs = ([(lg, t) for lg, ts in teams_by_league.items() for t in ts] if isinstance(teams_by_league, dict)
+             else teams_by_league)
+    for lg, team in pairs:
         hl, gl, ceid, queries = LANG[LEAGUE_LANG.get(lg, "en")]
-        for team in teams:
+        if True:
             for q in queries:
                 if time.time() > stop:
                     break
@@ -522,11 +526,21 @@ def run(con):
     """Pipeline completa, chiamata da export_json.update_all."""
     horizon = (dt.date.today() + dt.timedelta(days=DAYS_AHEAD)).isoformat()
     today = dt.date.today().isoformat()
-    fx = con.execute("SELECT league, date, home, away FROM fixtures WHERE date>=? AND date<=? ORDER BY date",
+    # sempre prima le partite più vicine (data e ora): se il tempo o le richieste gratuite finiscono,
+    # restano indietro solo le più lontane, che si analizzano ai giri successivi
+    fx = con.execute("SELECT league, date, home, away FROM fixtures WHERE date>=? AND date<=? "
+                     "ORDER BY date, CASE WHEN IFNULL(time,'') IN ('','nan') THEN '99:99' ELSE time END",
                      (today, horizon)).fetchall()
-    by_lg = {}
+    by_lg, seen = [], set()
     for lg, _, h, a in fx:
-        by_lg.setdefault(lg, set()).update((h, a))
+        for t in (h, a):
+            if t not in seen:
+                seen.add(t)
+                if lg in getattr(C, "COPPE", {}):   # squadra in coppa: notizie nella lingua del suo campionato
+                    r = con.execute("SELECT league FROM matches WHERE home=? ORDER BY date DESC LIMIT 1", (t,)).fetchone()
+                    by_lg.append((r[0] if r else lg, t))
+                else:
+                    by_lg.append((lg, t))
     if not ACTIVE:
         print("  IA notizie: nessuna chiave (GROQ_API_KEY / OPENROUTER_API_KEY / ANTHROPIC_API_KEY)")
         return {"attivo": False}

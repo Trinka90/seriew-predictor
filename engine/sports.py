@@ -228,7 +228,9 @@ def update(code, stop):
     if not tennis:
         dates = [d for d in dates if d.month not in (7, 8, 9)]   # NBA ferma in estate
     fresh = {(today + dt.timedelta(days=d)) for d in range(-3 if tennis else -2, 4)}
-    todo = [d for d in sorted(fresh)] + [d for d in dates if d.isoformat() not in db["fetched"] and d not in fresh]
+    # prima oggi e i prossimi giorni, poi i risultati recenti, poi lo storico mancante
+    near = sorted(fresh, key=lambda d: (d < today, abs((d - today).days)))
+    todo = near + [d for d in dates if d.isoformat() not in db["fetched"] and d not in fresh]
     n = 0
     for d in todo:
         if time.time() > stop:
