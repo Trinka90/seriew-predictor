@@ -30068,6 +30068,770 @@
 "n_titoli": 50
 }
 },
+"795bbab605ee7f9272fd5d993af1fa973cfadbf8": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione su assenze avversarie"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione su assenze"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna indicazione di partita a porte chiuse"
+},
+"n_titoli": 29
+}
+},
+"b7c2d0c1d714441cc853029b7c42352125b6dcde": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione rilevante"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione rilevante"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna informazione rilevante"
+},
+"n_titoli": 6
+}
+},
+"f99d15f89652222826cb21d236d5c5ea138bd868": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna assenza segnalata"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna assenza segnalata"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita regolare senza restrizioni"
+},
+"n_titoli": 50
+}
+},
+"77889c016edf8b3d59b76e46de8636a9eac3755f": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione rilevante"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione rilevante"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna informazione rilevante"
+},
+"n_titoli": 10
+}
+},
+"99d1f37f400be60bb9a0b3a0c0aa9593be866695": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": ""
+},
+"n_titoli": 13
+}
+},
+"071cf04553d8397e7c8ac2e73c69bd3be3751f42": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": ""
+},
+"n_titoli": 17
+}
+},
+"cf793bccee2dfb645ddfee207e5eeca9b82dc97d": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Baïla Diallo",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+1
+],
+"fonte": "Baïla Diallo causa baja de última hora para visitar al Eldense - Ideal"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "assenza ultima ora"
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Pau Casadesús",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+4
+],
+"fonte": "Pau Casadesús y Diallo se caen de la convocatoria - Granada en Juego"
+},
+{
+"nome": "Diallo",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+4
+],
+"fonte": "Pau Casadesús y Diallo se caen de la convocatoria - Granada en Juego"
+},
+{
+"nome": "Sergio Ruiz",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+11
+],
+"fonte": "Sergio Ruiz, única ausencia en la convocatoria rojiblanca - Granada en Juego"
+},
+{
+"nome": "José Arnaiz",
+"ruolo": "attaccante",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+12
+],
+"fonte": "La baja de José Arnaiz, única novedad en Cieza - Ideal"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "diverse assenze in rosa"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "partita regolare senza restrizioni"
+},
+"n_titoli": 15
+}
+},
+"c8ed744cd71fd3ba89e23126ed0d9f952fa19812": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna novità su assenti per Falkirk"
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Alistair Johnston",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "in dubbio",
+"titoli": [
+13
+],
+"fonte": "Celtic boss Martin O'Neill offers fresh Alistair Johnston injury update - LiveScore"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Celtic colpiti da infortuni a difensori chiave"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita senza restrizioni di pubblico"
+},
+"n_titoli": 33
+}
+},
+"ecc903a57a199cff3fdda4a3551ffead74e77a01": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione su assenze di Sevilla"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna assenza segnalata"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita regolare senza restrizioni"
+},
+"n_titoli": 30
+}
+},
+"eaf6d8207c30eeae3ef37b157568dd9152e3d570": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": ""
+},
+"n_titoli": 32
+}
+},
+"f4f9f16e0bed81f2c4c8f584e4e98aa3d6d587e6": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenti"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Weidmann sospeso"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna informazione aggiuntiva"
+},
+"n_titoli": 11
+}
+},
+"99acb48e58039dbd2ef190d5faf0e756996c0892": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenti"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenti"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna informazione su porte chiuse"
+},
+"n_titoli": 13
+}
+},
+"3533cdc0d036785d7a89f9f83aacd4cc5e71142e": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Pari che dà fiducia, Bucchi elogia compattezza e carattere del gruppo"
+},
+"ospite": {
+"assenti": [],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "positivo",
+"note": "Terza gara in sette giorni, Tomei chiede massimo rispetto e concentrazione"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Ascoli terzo in classifica, Arezzo cerca punti per risalire"
+},
+"n_titoli": 50
+}
+},
+"b528a108f099e2ae7438bf10f3c4e69cdc49ba34": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "positivo",
+"note": "Vittoria 2-0, Di Maggio e Russo marcatori. Prossimo derby col Benevento."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Sconfitta 2-0, cade striscia di imbattibilità di cinque turni."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Giocata al Partenio-Lombardi, Avellino vince 2-0."
+},
+"n_titoli": 50
+}
+},
+"2f20df4566f11cec617701a505898b323c719a06": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Cauz",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+8
+],
+"fonte": "SERIE B - 10a Giornata | Piove sul bagnato per l'Empoli: perde Cauz a poche ore dal match, va sotto e ribalta tutto mentre si abbatte la bufera sul Castellani, ma nella ripresa sfuma la vittoria. Azzurri penultimi, e il calendario ora fa paura. - Radio Bruno"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Penultimi in classifica, non vincono da tempo, calendario fa paura"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Vogliono riscatto dopo ko col Verona, De Giorgio chiede equilibrio"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita spettacolare con 4 gol, Empoli rimonta ma Juve Stabia pareggia"
+},
+"n_titoli": 50
+}
+},
+"1ec951e1c16c643e6eefe221166b91c96943f5ce": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "positivo",
+"note": "Raimondo infortunato in partita, Alvini preoccupato per la sua condizione."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Altra sconfitta per Abate, granata in cerca di riscatto con vista Europa."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Frosinone 2-0, decidono Ghedjemis e Calò. Alvini sesto in classifica."
+},
+"n_titoli": 50
+}
+},
+"dac3037fecbb900dc300057b548ce8ce933259e5": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "positivo",
+"note": "Lazio in forma, vittoria 2-1 contro Cagliari"
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Zaccagni",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+27,
+28,
+29
+],
+"fonte": "Zaccagni e l’infortunio contro il Cagliari: problema alla coscia, ecco come sta - Corriere dello Sport"
+},
+{
+"nome": "Fadera",
+"ruolo": "attaccante",
+"importanza": "riserva",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+31,
+32
+],
+"fonte": "Cagliari, problemi per Fadera: esce per infortunio contro la Lazio, il motivo - SOS Fanta"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "positivo",
+"note": "Cagliari infortunati, Lazio in vantaggio"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita a porte aperte, Lazio in vantaggio"
+},
+"n_titoli": 50
+}
+},
+"5089a2523faea4685c2c318837ae79ef37cf7759": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Mitchell",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+1
+],
+"fonte": "SWFC: Owls injury prognosis on Mitchell, James and Al-Hamadi as absences mount - The Star"
+},
+{
+"nome": "James",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+1
+],
+"fonte": "SWFC: Owls injury prognosis on Mitchell, James and Al-Hamadi as absences mount - The Star"
+},
+{
+"nome": "Al-Hamadi",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+1
+],
+"fonte": "SWFC: Owls injury prognosis on Mitchell, James and Al-Hamadi as absences mount - The Star"
+},
+{
+"nome": "Jordi Liongola",
+"ruolo": "attaccante",
+"importanza": "riserva",
+"motivo": "infortunio",
+"certezza": "probabile",
+"titoli": [
+6
+],
+"fonte": "SWFC News: Jordi Liongola injury update as Owls summer signing closes in on return - The Star"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": true,
+"clima": "neutro",
+"note": "Molteplici infortuni difensivi, nuovo allenatore, Liongola in via di rientro."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Difensore con recidiva dopo rientro infrasettimanale, Taylor recuperato."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Sheffield Weds con diversi assenti difensivi, Blackpool con un difensore in dubbio."
+},
+"n_titoli": 11
+}
+},
+"b358f31038d4e6fcb4e43a6e2d54edfc66282c42": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione rilevante nei titoli."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione rilevante nei titoli."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione specifica sulla partita."
+},
+"n_titoli": 4
+}
+},
+"17225ae0422a02afedf917b7094116882529d579": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna notizia rilevante su assenze per questa partita."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Squadra in cerca di continuità in trasferta."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione particolare sui titoli."
+},
+"n_titoli": 34
+}
+},
+"b6ecc25d5228de0d78818f910ec33d6906a095e3": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione su giocatori."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione su giocatori."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione su chiusura porte."
+},
+"n_titoli": 9
+}
+},
+"a6fe939beb65f9d600e62f33bc59b92003f4199c": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Andrés Martín assente per infortunio"
+},
+"ospite": {
+"assenti": [],
+"turnover": "medio",
+"nuovo_allenatore": true,
+"clima": "neutro",
+"note": "Valverde escluso per precauzione prima della sosta"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Mourinho guida il Real Madrid a Santander"
+},
+"n_titoli": 45
+}
+},
+"404937f438af42ee70c673b9e7597bcf5587f500": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna assenza rilevante nei titoli."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna assenza rilevante nei titoli."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione specifica nei titoli."
+},
+"n_titoli": 20
+}
+},
+"1555c4b089a6f37228265ee1cafb0688ff9e9a17": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Dallinga",
+"ruolo": "attaccante",
+"importanza": "stella",
+"motivo": "infortunio",
+"certezza": "in dubbio",
+"titoli": [
+2
+],
+"fonte": "Dallinga reageert op slepende blessure: \"Daarom revalideer ik hier\" - Drimble"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Dallinga in riabilitazione, Van Bergen in dubbio per il tecnico."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna notizia rilevante sugli assenti."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione particolare sulla partita."
+},
+"n_titoli": 19
+}
+},
 "_ultima": {
 "Andorra|Burgos|2026-10-26": {
 "data": "2026-10-26",
@@ -34688,21 +35452,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna informazione rilevante nei titoli."
+"note": "Nessuna assenza rilevante nei titoli."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Titoli non pertinenti al club Nacional."
+"note": "Nessuna assenza rilevante nei titoli."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Nessuna informazione specifica sulla partita."
+"note": "Nessuna informazione specifica nei titoli."
 },
-"n_titoli": 23
+"n_titoli": 20
 }
 },
 "Ath Bilbao|Sociedad|2026-11-01": {
@@ -34765,17 +35529,17 @@
 "memoria": true
 }
 ],
-"turnover": "medio",
+"turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessun assente segnalato"
+"note": "Nessuna assenza segnalata"
 },
 "ospite": {
 "assenti": [],
-"turnover": "medio",
+"turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessun assente segnalato"
+"note": "Nessuna assenza segnalata"
 },
 "partita": {
 "porte_chiuse": false,
@@ -36439,21 +37203,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna informazione su turnover"
+"note": "Nessuna informazione su assenze avversarie"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna informazione su assenti"
+"note": "Nessuna informazione su assenze"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
 "note": "Nessuna indicazione di partita a porte chiuse"
 },
-"n_titoli": 25
+"n_titoli": 29
 }
 },
 "Arezzo|Ascoli|2026-11-01": {
@@ -36464,21 +37228,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna assenza segnalata"
+"note": "Pari che dà fiducia, Bucchi elogia compattezza e carattere del gruppo"
 },
 "ospite": {
 "assenti": [],
-"turnover": "nessuno",
+"turnover": "medio",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": "Nessuna assenza segnalata"
+"clima": "positivo",
+"note": "Terza gara in sette giorni, Tomei chiede massimo rispetto e concentrazione"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita senza info su assenze"
+"note": "Ascoli terzo in classifica, Arezzo cerca punti per risalire"
 },
-"n_titoli": 48
+"n_titoli": 50
 }
 },
 "Avellino|Pisa|2026-11-01": {
@@ -36488,8 +37252,8 @@
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": "Nessuna assenza segnalata"
+"clima": "positivo",
+"note": "Vittoria 2-0, Di Maggio e Russo marcatori. Prossimo derby col Benevento."
 },
 "ospite": {
 "assenti": [
@@ -36509,13 +37273,13 @@
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": "Nessuna assenza segnalata"
+"clima": "negativo",
+"note": "Sconfitta 2-0, cade striscia di imbattibilità di cinque turni."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita regolare senza restrizioni"
+"note": "Giocata al Partenio-Lombardi, Avellino vince 2-0."
 },
 "n_titoli": 50
 }
@@ -36553,21 +37317,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione rilevante"
+"note": ""
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione su assenti"
+"note": ""
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "nessuna informazione su porte chiuse"
+"note": ""
 },
-"n_titoli": 11
+"n_titoli": 17
 }
 },
 "Cercle Brugge|Antwerp|2026-11-01": {
@@ -36603,19 +37367,19 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna notizia rilevante sulla squadra"
+"note": "Nessuna informazione su giocatori."
 },
 "ospite": {
 "assenti": [],
-"turnover": "medio",
+"turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "6 assenze non specificate, 5 giovani in convocazione"
+"note": "Nessuna informazione su giocatori."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Sp Gijon viaggia con 6 assenze e 5 giovani"
+"note": "Nessuna informazione su chiusura porte."
 },
 "n_titoli": 9
 }
@@ -36702,25 +37466,56 @@
 "assenti": [
 {
 "nome": "Baïla Diallo",
-"ruolo": "attaccante",
+"ruolo": "centrocampista",
 "importanza": "titolare",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
 1
 ],
-"fonte": "Baïla Diallo causa baja de última hora para visitar al Eldense - Ideal",
-"visto": "2026-11-01",
-"memoria": true
+"fonte": "Baïla Diallo causa baja de última hora para visitar al Eldense - Ideal"
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": ""
+"note": "assenza ultima ora"
 },
 "ospite": {
 "assenti": [
+{
+"nome": "Pau Casadesús",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+4
+],
+"fonte": "Pau Casadesús y Diallo se caen de la convocatoria - Granada en Juego"
+},
+{
+"nome": "Diallo",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+4
+],
+"fonte": "Pau Casadesús y Diallo se caen de la convocatoria - Granada en Juego"
+},
+{
+"nome": "Sergio Ruiz",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+11
+],
+"fonte": "Sergio Ruiz, única ausencia en la convocatoria rojiblanca - Granada en Juego"
+},
 {
 "nome": "José Arnaiz",
 "ruolo": "attaccante",
@@ -36728,24 +37523,22 @@
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-7
+12
 ],
-"fonte": "La baja de José Arnaiz, única novedad en Cieza - Ideal",
-"visto": "2026-11-01",
-"memoria": true
+"fonte": "La baja de José Arnaiz, única novedad en Cieza - Ideal"
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": ""
+"note": "diverse assenze in rosa"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": ""
+"note": "partita regolare senza restrizioni"
 },
-"n_titoli": 16
+"n_titoli": 15
 }
 },
 "Empoli|Juve Stabia|2026-11-01": {
@@ -36753,6 +37546,17 @@
 "r": {
 "casa": {
 "assenti": [
+{
+"nome": "Cauz",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+8
+],
+"fonte": "SERIE B - 10a Giornata | Piove sul bagnato per l'Empoli: perde Cauz a poche ore dal match, va sotto e ribalta tutto mentre si abbatte la bufera sul Castellani, ma nella ripresa sfuma la vittoria. Azzurri penultimi, e il calendario ora fa paura. - Radio Bruno"
+},
 {
 "nome": "Magnino",
 "ruolo": "difensore",
@@ -36762,7 +37566,9 @@
 "titoli": [
 2
 ],
-"fonte": "Un turno di squalifica per Magnino e Shpendi - Empoli FC"
+"fonte": "Un turno di squalifica per Magnino e Shpendi - Empoli FC",
+"visto": "2026-11-01",
+"memoria": true
 },
 {
 "nome": "Shpendi",
@@ -36773,25 +37579,27 @@
 "titoli": [
 2
 ],
-"fonte": "Un turno di squalifica per Magnino e Shpendi - Empoli FC"
+"fonte": "Un turno di squalifica per Magnino e Shpendi - Empoli FC",
+"visto": "2026-11-01",
+"memoria": true
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": "Nessuna novità rilevante"
+"clima": "negativo",
+"note": "Penultimi in classifica, non vincono da tempo, calendario fa paura"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna assenza segnalata"
+"note": "Vogliono riscatto dopo ko col Verona, De Giorgio chiede equilibrio"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita regolare senza restrizioni"
+"note": "Partita spettacolare con 4 gol, Empoli rimonta ma Juve Stabia pareggia"
 },
 "n_titoli": 50
 }
@@ -36804,21 +37612,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna novità su assenze"
+"note": "nessuna informazione su assenti"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "positivo",
-"note": "Weidmann squalificato, Van den Belt lo sostituisce"
+"clima": "neutro",
+"note": "Weidmann sospeso"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita regolare senza restrizioni"
+"note": "nessuna informazione aggiuntiva"
 },
-"n_titoli": 13
+"n_titoli": 11
 }
 },
 "Falkirk|Celtic|2026-11-01": {
@@ -36829,7 +37637,7 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione su assenti"
+"note": "Nessuna novità su assenti per Falkirk"
 },
 "ospite": {
 "assenti": [
@@ -36838,11 +37646,11 @@
 "ruolo": "difensore",
 "importanza": "titolare",
 "motivo": "infortunio",
-"certezza": "certo",
+"certezza": "in dubbio",
 "titoli": [
-22
+13
 ],
-"fonte": "Celtic provide Alistair Johnston injury update as timeline for latest hamstring blow revealed - The Scotsman"
+"fonte": "Celtic boss Martin O'Neill offers fresh Alistair Johnston injury update - LiveScore"
 },
 {
 "nome": "Yang Hyun-jun",
@@ -36860,38 +37668,26 @@
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": "due assenti confermati"
+"clima": "negativo",
+"note": "Celtic colpiti da infortuni a difensori chiave"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "partita regolare"
+"note": "Partita senza restrizioni di pubblico"
 },
-"n_titoli": 36
+"n_titoli": 33
 }
 },
 "Frosinone|Torino|2026-11-01": {
 "data": "2026-11-01",
 "r": {
 "casa": {
-"assenti": [
-{
-"nome": "Raimondo",
-"ruolo": "attaccante",
-"importanza": "titolare",
-"motivo": "infortunio",
-"certezza": "certo",
-"titoli": [
-1
-],
-"fonte": "Infortunio Raimondo, le condizioni dell'attaccante del Frosinone: quando torna e quante partite salta - Goal.com"
-}
-],
+"assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": ""
+"clima": "positivo",
+"note": "Raimondo infortunato in partita, Alvini preoccupato per la sua condizione."
 },
 "ospite": {
 "assenti": [
@@ -36926,13 +37722,13 @@
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": ""
+"clima": "negativo",
+"note": "Altra sconfitta per Abate, granata in cerca di riscatto con vista Europa."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "nessuna informazione su porte chiuse"
+"note": "Frosinone 2-0, decidono Ghedjemis e Calò. Alvini sesto in classifica."
 },
 "n_titoli": 50
 }
@@ -36945,7 +37741,7 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna assenza segnalata"
+"note": "Nessuna informazione su assenze di Sevilla"
 },
 "ospite": {
 "assenti": [],
@@ -36957,9 +37753,9 @@
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita senza info su assenze"
+"note": "Partita regolare senza restrizioni"
 },
-"n_titoli": 31
+"n_titoli": 30
 }
 },
 "Greuther Furth|Holstein Kiel|2026-11-01": {
@@ -36970,21 +37766,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione su assenze"
+"note": "nessuna informazione rilevante"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione su assenze"
+"note": "nessuna informazione rilevante"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "nessuna informazione su porte chiuse"
+"note": "nessuna informazione rilevante"
 },
-"n_titoli": 16
+"n_titoli": 10
 }
 },
 "Groningen|Sparta Rotterdam|2026-11-01": {
@@ -37007,21 +37803,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Dubbio su Dallinga in riabilitazione; Van Bergen da valutare."
+"note": "Dallinga in riabilitazione, Van Bergen in dubbio per il tecnico."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna informazione rilevante nei titoli."
+"note": "Nessuna notizia rilevante sugli assenti."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Nessuna informazione particolare."
+"note": "Nessuna informazione particolare sulla partita."
 },
-"n_titoli": 15
+"n_titoli": 19
 }
 },
 "Hannover|Dresden|2026-11-01": {
@@ -37119,31 +37915,45 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "positivo",
-"note": "Nessun assente segnalato"
+"note": "Lazio in forma, vittoria 2-1 contro Cagliari"
 },
 "ospite": {
 "assenti": [
 {
-"nome": "Fadera",
+"nome": "Zaccagni",
 "ruolo": "difensore",
 "importanza": "titolare",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-33
+27,
+28,
+29
+],
+"fonte": "Zaccagni e l’infortunio contro il Cagliari: problema alla coscia, ecco come sta - Corriere dello Sport"
+},
+{
+"nome": "Fadera",
+"ruolo": "attaccante",
+"importanza": "riserva",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+31,
+32
 ],
 "fonte": "Cagliari, problemi per Fadera: esce per infortunio contro la Lazio, il motivo - SOS Fanta"
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "negativo",
-"note": "Fadera fuori per infortunio"
+"clima": "positivo",
+"note": "Cagliari infortunati, Lazio in vantaggio"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita regolare senza restrizioni"
+"note": "Partita a porte aperte, Lazio in vantaggio"
 },
 "n_titoli": 50
 }
@@ -37573,7 +38383,7 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Andrés Martín out per infortunio"
+"note": "Andrés Martín assente per infortunio"
 },
 "ospite": {
 "assenti": [
@@ -37593,17 +38403,17 @@
 "memoria": true
 }
 ],
-"turnover": "nessuno",
-"nuovo_allenatore": false,
+"turnover": "medio",
+"nuovo_allenatore": true,
 "clima": "neutro",
-"note": ""
+"note": "Valverde escluso per precauzione prima della sosta"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": ""
+"note": "Mourinho guida il Real Madrid a Santander"
 },
-"n_titoli": 44
+"n_titoli": 45
 }
 },
 "Sheffield Weds|Blackpool|2026-11-01": {
@@ -37612,35 +38422,68 @@
 "casa": {
 "assenti": [
 {
-"nome": "Jordi Liongola",
+"nome": "Mitchell",
 "ruolo": "difensore",
-"importanza": "riserva",
+"importanza": "titolare",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-7
+1
+],
+"fonte": "SWFC: Owls injury prognosis on Mitchell, James and Al-Hamadi as absences mount - The Star"
+},
+{
+"nome": "James",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+1
+],
+"fonte": "SWFC: Owls injury prognosis on Mitchell, James and Al-Hamadi as absences mount - The Star"
+},
+{
+"nome": "Al-Hamadi",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+1
+],
+"fonte": "SWFC: Owls injury prognosis on Mitchell, James and Al-Hamadi as absences mount - The Star"
+},
+{
+"nome": "Jordi Liongola",
+"ruolo": "attaccante",
+"importanza": "riserva",
+"motivo": "infortunio",
+"certezza": "probabile",
+"titoli": [
+6
 ],
 "fonte": "SWFC News: Jordi Liongola injury update as Owls summer signing closes in on return - The Star"
 }
 ],
-"turnover": "medio",
+"turnover": "nessuno",
 "nuovo_allenatore": true,
 "clima": "neutro",
-"note": "Infortuni difensivi, nuovo manager"
+"note": "Molteplici infortuni difensivi, nuovo allenatore, Liongola in via di rientro."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "negativo",
-"note": "Difensore in setback"
+"clima": "neutro",
+"note": "Difensore con recidiva dopo rientro infrasettimanale, Taylor recuperato."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Nessuna restrizione"
+"note": "Sheffield Weds con diversi assenti difensivi, Blackpool con un difensore in dubbio."
 },
-"n_titoli": 13
+"n_titoli": 11
 }
 },
 "Sp Braga|Famalicao|2026-11-01": {
@@ -37690,7 +38533,7 @@
 "campo_neutro": false,
 "note": ""
 },
-"n_titoli": 10
+"n_titoli": 13
 }
 },
 "Strasbourg|Auxerre|2026-11-01": {
@@ -37701,21 +38544,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione su assenti"
+"note": "Nessuna informazione rilevante nei titoli."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione su assenti"
+"note": "Nessuna informazione rilevante nei titoli."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "nessuna informazione su porte chiuse"
+"note": "Nessuna informazione specifica sulla partita."
 },
-"n_titoli": 8
+"n_titoli": 4
 }
 },
 "Telstar|Utrecht|2026-11-01": {
@@ -37740,7 +38583,7 @@
 "campo_neutro": false,
 "note": "nessuna informazione su porte chiuse"
 },
-"n_titoli": 10
+"n_titoli": 13
 }
 },
 "Zwolle|Den Haag|2026-11-01": {
@@ -37800,10 +38643,10 @@
 "memoria": true
 }
 ],
-"turnover": "medio",
+"turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna assenza segnalata"
+"note": ""
 },
 "ospite": {
 "assenti": [
@@ -37816,20 +38659,22 @@
 "titoli": [
 10
 ],
-"fonte": "Thomas Reis'tan sakatlık ve kadro açıklaması - Manşet Haber"
+"fonte": "Thomas Reis'tan sakatlık ve kadro açıklaması - Manşet Haber",
+"visto": "2026-11-01",
+"memoria": true
 }
 ],
-"turnover": "medio",
+"turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "positivo",
-"note": "Portiere infortunato"
+"clima": "neutro",
+"note": ""
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita regolare"
+"note": ""
 },
-"n_titoli": 16
+"n_titoli": 32
 }
 },
 "Union Berlin|FC Koln|2026-11-01": {
@@ -37846,27 +38691,29 @@
 "titoli": [
 22
 ],
-"fonte": "Urteil da: Uduokhai für zwei Spiele gesperrt - LigaInsider"
+"fonte": "Urteil da: Uduokhai für zwei Spiele gesperrt - LigaInsider",
+"visto": "2026-11-01",
+"memoria": true
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Uduokhai squalificato due partite dopo il DFB-Pokal."
+"note": "Nessuna notizia rilevante su assenze per questa partita."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Vogliono migliorare il rendimento in trasferta."
+"note": "Squadra in cerca di continuità in trasferta."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Nessuna informazione particolare nei titoli."
+"note": "Nessuna informazione particolare sui titoli."
 },
-"n_titoli": 29
+"n_titoli": 34
 }
 },
 "St Truiden|Oud-Heverlee Leuven|2026-11-01": {
@@ -40909,7 +41756,7 @@
 "casa": {
 "baïla diallo": {
 "nome": "Baïla Diallo",
-"ruolo": "attaccante",
+"ruolo": "centrocampista",
 "importanza": "titolare",
 "motivo": "infortunio",
 "certezza": "certo",
@@ -40921,6 +41768,42 @@
 }
 },
 "ospite": {
+"pau casadesús": {
+"nome": "Pau Casadesús",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+4
+],
+"fonte": "Pau Casadesús y Diallo se caen de la convocatoria - Granada en Juego",
+"visto": "2026-11-01"
+},
+"diallo": {
+"nome": "Diallo",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+4
+],
+"fonte": "Pau Casadesús y Diallo se caen de la convocatoria - Granada en Juego",
+"visto": "2026-11-01"
+},
+"sergio ruiz": {
+"nome": "Sergio Ruiz",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+11
+],
+"fonte": "Sergio Ruiz, única ausencia en la convocatoria rojiblanca - Granada en Juego",
+"visto": "2026-11-01"
+},
 "josé arnaiz": {
 "nome": "José Arnaiz",
 "ruolo": "attaccante",
@@ -40928,7 +41811,7 @@
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-7
+12
 ],
 "fonte": "La baja de José Arnaiz, única novedad en Cieza - Ideal",
 "visto": "2026-11-01"
@@ -40938,6 +41821,18 @@
 "Empoli|Juve Stabia|2026-11-01": {
 "data": "2026-11-01",
 "casa": {
+"cauz": {
+"nome": "Cauz",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+8
+],
+"fonte": "SERIE B - 10a Giornata | Piove sul bagnato per l'Empoli: perde Cauz a poche ore dal match, va sotto e ribalta tutto mentre si abbatte la bufera sul Castellani, ma nella ripresa sfuma la vittoria. Azzurri penultimi, e il calendario ora fa paura. - Radio Bruno",
+"visto": "2026-11-01"
+},
 "magnino": {
 "nome": "Magnino",
 "ruolo": "difensore",
@@ -40979,11 +41874,11 @@
 "ruolo": "difensore",
 "importanza": "titolare",
 "motivo": "infortunio",
-"certezza": "certo",
+"certezza": "in dubbio",
 "titoli": [
-22
+13
 ],
-"fonte": "Celtic provide Alistair Johnston injury update as timeline for latest hamstring blow revealed - The Scotsman",
+"fonte": "Celtic boss Martin O'Neill offers fresh Alistair Johnston injury update - LiveScore",
 "visto": "2026-11-01"
 },
 "yang hyun-jun": {
@@ -41002,20 +41897,7 @@
 },
 "Frosinone|Torino|2026-11-01": {
 "data": "2026-11-01",
-"casa": {
-"raimondo": {
-"nome": "Raimondo",
-"ruolo": "attaccante",
-"importanza": "titolare",
-"motivo": "infortunio",
-"certezza": "certo",
-"titoli": [
-1
-],
-"fonte": "Infortunio Raimondo, le condizioni dell'attaccante del Frosinone: quando torna e quante partite salta - Goal.com",
-"visto": "2026-11-01"
-}
-},
+"casa": {},
 "ospite": {
 "cacciamani": {
 "nome": "Cacciamani",
@@ -41105,14 +41987,29 @@
 "data": "2026-11-01",
 "casa": {},
 "ospite": {
-"fadera": {
-"nome": "Fadera",
+"zaccagni": {
+"nome": "Zaccagni",
 "ruolo": "difensore",
 "importanza": "titolare",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-33
+27,
+28,
+29
+],
+"fonte": "Zaccagni e l’infortunio contro il Cagliari: problema alla coscia, ecco come sta - Corriere dello Sport",
+"visto": "2026-11-01"
+},
+"fadera": {
+"nome": "Fadera",
+"ruolo": "attaccante",
+"importanza": "riserva",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+31,
+32
 ],
 "fonte": "Cagliari, problemi per Fadera: esce per infortunio contro la Lazio, il motivo - SOS Fanta",
 "visto": "2026-11-01"
@@ -41329,14 +42226,50 @@
 "Sheffield Weds|Blackpool|2026-11-01": {
 "data": "2026-11-01",
 "casa": {
-"jordi liongola": {
-"nome": "Jordi Liongola",
+"mitchell": {
+"nome": "Mitchell",
 "ruolo": "difensore",
-"importanza": "riserva",
+"importanza": "titolare",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-7
+1
+],
+"fonte": "SWFC: Owls injury prognosis on Mitchell, James and Al-Hamadi as absences mount - The Star",
+"visto": "2026-11-01"
+},
+"james": {
+"nome": "James",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+1
+],
+"fonte": "SWFC: Owls injury prognosis on Mitchell, James and Al-Hamadi as absences mount - The Star",
+"visto": "2026-11-01"
+},
+"al-hamadi": {
+"nome": "Al-Hamadi",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+1
+],
+"fonte": "SWFC: Owls injury prognosis on Mitchell, James and Al-Hamadi as absences mount - The Star",
+"visto": "2026-11-01"
+},
+"jordi liongola": {
+"nome": "Jordi Liongola",
+"ruolo": "attaccante",
+"importanza": "riserva",
+"motivo": "infortunio",
+"certezza": "probabile",
+"titoli": [
+6
 ],
 "fonte": "SWFC News: Jordi Liongola injury update as Owls summer signing closes in on return - The Star",
 "visto": "2026-11-01"
