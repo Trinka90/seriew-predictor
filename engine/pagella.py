@@ -142,6 +142,9 @@ def _settle(p, res):
     if sport == "calcio":
         for d, h, a in res["calcio"].get((p["lega"], p["casa"], p["ospite"]), []):
             if abs((dt.date.fromisoformat(d) - dt.date.fromisoformat(p["data"])).days) <= 2:
+                if h < 0:     # coppa decisa ai supplementari/rigori: il risultato dei 90' non si conosce
+                    p["risultato"] = "supplementari"
+                    return None
                 p["risultato"] = f"{h}-{a}"
                 return _calcio_ok(p["k"], h, a)
         return "attesa"

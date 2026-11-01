@@ -38,6 +38,14 @@ LEAGUES = {
     "SC3": {"nome": "League Two scozzese",  "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿", "giornate": 36, "fd": None, "espn": "sco.4"},
     "G1":  {"nome": "Super League Grecia",  "flag": "🇬🇷", "giornate": 26, "fd": None, "espn": "gre.1"},
 }
+# Coppe (vedi coppe.py): probabilità dalle quote ESPN, perché il modello non confronta squadre di campionati diversi
+COPPE = {
+    "UCL":  {"nome": "Champions League",  "flag": "🏆", "espn": "uefa.champions"},
+    "UEL":  {"nome": "Europa League",     "flag": "🏆", "espn": "uefa.europa"},
+    "UECL": {"nome": "Conference League", "flag": "🏆", "espn": "uefa.europa.conf"},
+    "CI":   {"nome": "Coppa Italia",      "flag": "🇮🇹", "espn": "ita.coppa_italia"},
+    "FAC":  {"nome": "FA Cup",            "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "espn": "eng.fa"},
+}
 # Quote mostrate e usate per schedina/value: un solo bookmaker (la schedina si gioca su uno).
 # La media dei bookmaker resta solo per stimare le probabilità (è il dato più preciso).
 BOOKMAKER = "Bet365"

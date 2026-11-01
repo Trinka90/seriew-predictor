@@ -92,7 +92,7 @@ LANG = {
     "pt": ("pt-PT", "PT", "PT:pt-150", ["{t} lesionados castigados", "{t} convocados"]),
     "tr": ("tr", "TR", "TR:tr", ["{t} sakat cezalı", "{t} kadro"]),
 }
-LEAGUE_LANG = {"I1": "it", "I2": "it", "E0": "en", "E1": "en", "SC0": "en", "SP1": "es", "SP2": "es",
+LEAGUE_LANG = {"CI": "it", "FAC": "en", "I1": "it", "I2": "it", "E0": "en", "E1": "en", "SC0": "en", "SP1": "es", "SP2": "es",
                "D1": "de", "D2": "de", "F1": "fr", "F2": "fr", "N1": "nl", "P1": "pt", "B1": "nl", "T1": "tr",
                "E2": "en", "E3": "en", "EC": "en", "SC1": "en", "SC2": "en", "SC3": "en", "G1": "en"}
 
@@ -415,7 +415,7 @@ def analyze(con, fixtures):
                 results[(home, away)] = last[mkey]["r"]
                 stats["precedenti"] += 1
             continue
-        lines = [f"Partita: {home} (casa) - {away} (ospite), {C.LEAGUES[lg]['nome']}, data {date}. Oggi è {dt.date.today()}.", ""]
+        lines = [f"Partita: {home} (casa) - {away} (ospite), {(C.LEAGUES.get(lg) or C.COPPE.get(lg) or {}).get('nome', lg)}, data {date}. Oggi è {dt.date.today()}.", ""]
         k = 1
         allt = th + ta
         for label, tl in ((f"TITOLI SU {home}", th), (f"TITOLI SU {away}", ta)):

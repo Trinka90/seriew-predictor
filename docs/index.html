@@ -335,7 +335,8 @@ function story(m) {
   const d = (m.gol_casa_notizie ?? m.gol_casa_base) + (m.gol_ospite_notizie ?? m.gol_ospite_base) - m.gol_casa_base - m.gol_ospite_base;
   if (Math.abs((m.gol_casa_notizie ?? m.gol_casa_base) - m.gol_casa_base) > .03 || Math.abs((m.gol_ospite_notizie ?? m.gol_ospite_base) - m.gol_ospite_base) > .03)
     out.push(`📰 Le notizie hanno cambiato i gol attesi: ${esc(m.casa)} ${m.gol_casa_base.toFixed(2)}→${m.gol_casa_notizie.toFixed(2)}, ${esc(m.ospite)} ${m.gol_ospite_base.toFixed(2)}→${m.gol_ospite_notizie.toFixed(2)}.`);
-  if (m.con_mercato) out.push(`📈 Pronostico combinato con le quote${m.fonte_quote ? ` (${esc(m.fonte_quote)})` : " dei bookmaker"}.`);
+  if (m.coppa) out.push(`🏆 Coppa: le probabilità vengono dalle quote del bookmaker (il modello non confronta squadre di campionati diversi), corrette con assenti e turnover. Le partite compaiono quando escono le quote, di solito 2-4 giorni prima.`);
+  else if (m.con_mercato) out.push(`📈 Pronostico combinato con le quote${m.fonte_quote ? ` (${esc(m.fonte_quote)})` : " dei bookmaker"}.`);
   if (!ev.n_titoli) {
     const hot = [...m.news_casa, ...m.news_ospite].filter(n => /infortunio|squalifica|allenatore/.test(n.tag || "")).length;
     if (hot) out.push(`⚠️ ${hot} notizie su infortuni/squalifiche/panchina non ancora analizzate: leggile prima di giocare.`);
@@ -584,7 +585,7 @@ function detail(m) {
   return `<div class="dh"><button onclick="closeMatch()">← Indietro</button><span class="small mut">${lgName(m.lega)} · ${dayShort(m.data)} ${m.ora ? "ore " + esc(m.ora) + " (ora italiana)" : "· ora da definire"}</span></div>
   <main>
     <div class="teams">${esc(m.casa)} – ${esc(m.ospite)}</div>
-    <div class="sub">${calcio ? `${pos(m.classifica_casa)} ${form(m.forma_casa)} · ${pos(m.classifica_ospite)} ${form(m.forma_ospite)}` : `${form(m.forma_casa)} · ${form(m.forma_ospite)}`}</div>
+    <div class="sub">${calcio && !m.coppa ? `${pos(m.classifica_casa)} ${form(m.forma_casa)} · ${pos(m.classifica_ospite)} ${form(m.forma_ospite)}` : `${form(m.forma_casa)} · ${form(m.forma_ospite)}`}</div>
     <div class="bar">${bar}</div>
     <div class="barlab"><span>vince ${esc(m.casa)}</span>${calcio ? "<span>pareggio</span>" : ""}<span>vince ${esc(m.ospite)}</span></div>
     <div class="pick"><div><div class="small mut">Pronostico consigliato (il più probabile${S.f.qmin > 1 ? " con quota ≥ " + S.f.qmin.toFixed(2) : ""})</div>

@@ -112,6 +112,8 @@ def update_all(con):
     _step(status, "storico", D.update_history, C.SEASONS, con)
     _step(status, "calendario", D.update_fixtures, con)
     _step(status, "espn_calcio", D.update_espn_soccer, con)
+    import coppe
+    _step(status, "coppe", coppe.update, con)
     if C.API_FOOTBALL_KEY:
         _step(status, "infortuni", D.update_injuries, con)
     _step(status, "notizie", D.update_news, con)
@@ -259,6 +261,17 @@ def export(con, days=10, status=None):
     leghe = {k: {"nome": v["nome"], "flag": v["flag"], "sport": "calcio"} for k, v in C.LEAGUES.items()
              if per_lega[k]["partite_storico"] >= 200}
 
+    # coppe (Champions, Europa, Conference, Coppa Italia, FA Cup): mai bloccanti
+    try:
+        import coppe
+        cm = coppe.export(con, df_all, days)
+        matches += [_clean(m) for m in cm]
+        leghe = {**{k: {"nome": v["nome"], "flag": v["flag"], "sport": "calcio", "coppa": True} for k, v in C.COPPE.items()},
+                 **leghe}
+        print(f"  coppe: {len(cm)} partite in programma")
+    except Exception as e:
+        traceback.print_exc()
+        errori["coppe"] = str(e)[:200]
     # altri sport (tennis, NBA): mai bloccanti
     sport_bt = {}
     try:
@@ -273,7 +286,7 @@ def export(con, days=10, status=None):
     except Exception as e:
         traceback.print_exc()
         errori["altri_sport"] = str(e)[:200]
-    order = list(C.LEAGUES) + ["ATP", "WTA", "NBA"]
+    order = list(C.COPPE) + list(C.LEAGUES) + ["ATP", "WTA", "NBA"]
     matches.sort(key=lambda x: (x["data"], x["ora"] or "99", order.index(x["lega"]) if x["lega"] in order else 99))
     now = dt.datetime.now(dt.timezone.utc).astimezone().isoformat(timespec="minutes")
     _write("predictions.json", {"aggiornato": now, "leghe": leghe, "partite": matches})
