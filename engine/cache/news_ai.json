@@ -27616,6 +27616,482 @@
 "n_titoli": 12
 }
 },
+"370543bf23496a5b5105e8349ebf37821b72ae88": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna assenza segnalata"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna assenza segnalata"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "partita regolare"
+},
+"n_titoli": 19
+}
+},
+"15ccd24c6d4c40c5026716ddc29fda18c76799ee": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Meraş non squalificato: smentita. 4 giocatori a rischio giallo per la prossima."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna notizia rilevante sugli assenti."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione particolare sulla partita."
+},
+"n_titoli": 22
+}
+},
+"25e07bb9fc0d1336b9faa2fcbc10bb80be761e5b": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Nessuna vittoria casalinga in B dal 1968, squadra in forte difficoltà"
+},
+"ospite": {
+"assenti": [],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "positivo",
+"note": "In gran forma, terza gara in sette giorni, obiettivo secondo posto"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Arezzo mai vinto in casa in B dal 1968, Ascoli in grande forma"
+},
+"n_titoli": 50
+}
+},
+"7d2b64109858e1655e4448291174fe9f5d9473ae": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": ""
+},
+"n_titoli": 21
+}
+},
+"e44b632935183d03a44b39dc7e737d65be4c8cc0": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Nessuna assenza confermata, ma clima di incertezza."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Nessuna assenza confermata, ma clima di incertezza."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Match in Bilbao, potenziali disturbi, ma non chiuso."
+},
+"n_titoli": 26
+}
+},
+"7ce9be485ef3343e7df9baf60b72450ac369623e": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Squadra pronta, nessun assente, attesa di una buona prestazione."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Leone fuori per infortunio, squadra si affida a rotazioni."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita in stadio normale, nessuna chiusura."
+},
+"n_titoli": 50
+}
+},
+"a6464bb374c006c7927102670a1b608b7340625c": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenze"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenze"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna informazione su porte chiuse"
+},
+"n_titoli": 13
+}
+},
+"a16effb18beb4af8cee6200bcb36f81316eaafa6": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": ""
+},
+"n_titoli": 1
+}
+},
+"2a367a2de863721f088ffe2da2d76e3695cc444a": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione rilevante nei titoli."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessun titolo disponibile sulla squadra."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione particolare."
+},
+"n_titoli": 12
+}
+},
+"78d0c7278d2278a69162f64152cc7deb6649c930": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Kean",
+"ruolo": "attaccante",
+"importanza": "stella",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+1,
+5,
+11
+],
+"fonte": "Como, Fabregas: \"Rientra Liberali, Kean out 5 settimane. Non torniamo sul mercato\" - Calciomercato"
+}
+],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "positivo",
+"note": "Kean out 5 settimane, turnover ragionato di Fabregas"
+},
+"ospite": {
+"assenti": [],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nicola valuta rotazioni, cerca più efficacia sotto porta"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Como in cerca del quarto successo consecutivo in Serie A"
+},
+"n_titoli": 50
+}
+},
+"ea1140cbe83deceda3166729a0d7edf11800a788": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione specifica sugli assenti nei titoli."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Titolo [6] menziona preoccupazioni infortuni ma senza nomi specifici."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione rilevante nei titoli per questa partita."
+},
+"n_titoli": 19
+}
+},
+"7cd0e62cae5c63445ad131c408fe5c991c8ed8a6": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna assenza di giocatori per l'Elche."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna assenza di giocatori per il Valencia."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna indicazione di porte chiuse."
+},
+"n_titoli": 33
+}
+},
+"807666db2564e0c8ce897219e413d2fa649930a7": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione su infortuni o squalifiche."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione su infortuni o squalifiche."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione su chiusura porte."
+},
+"n_titoli": 18
+}
+},
+"f542247b9db75f053365943ad93df269d2ff6207": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Magnino",
+"ruolo": "difensore",
+"importanza": "riserva",
+"motivo": "squalifica",
+"certezza": "certo",
+"titoli": [
+1
+],
+"fonte": "Un turno di squalifica per Magnino e Shpendi - Empoli FC"
+},
+{
+"nome": "Shpendi",
+"ruolo": "difensore",
+"importanza": "riserva",
+"motivo": "squalifica",
+"certezza": "certo",
+"titoli": [
+1
+],
+"fonte": "Un turno di squalifica per Magnino e Shpendi - Empoli FC"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Rosa corta, tre infortunati non nominati, serve vincere per invertire la rotta."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Sconfitta con Verona, lotta salvezza, voglia di riscatto."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Empoli in difficoltà, Juve Stabia in zona salvezza."
+},
+"n_titoli": 50
+}
+},
+"b7a60e07b6dae17c8eb43d913a58f6624ad9483b": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"ospite": {
+"assenti": [],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": ""
+},
+"n_titoli": 11
+}
+},
+"2cc5723f8d5d0d6f2c9f817c4268914f4c645f58": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna assenza per Falkirk."
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Alistair Johnston",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+18,
+32,
+33
+],
+"fonte": "Celtic boss Martin O'Neill offers fresh Alistair Johnston injury update - LiveScore"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Alistair Johnston e Yang Hyun-jun indisponibili."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita regolare senza chiusura."
+},
+"n_titoli": 34
+}
+},
+"3cdf4e322e5b0a64513f36059836ddd128306135": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "positivo",
+"note": "Ambiente positivo, serie positiva, obiettivo pokerissimo"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Obiettivo Europa, ballottaggi in attacco"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Sfida per l'Europa, entrambe in forma"
+},
+"n_titoli": 50
+}
+},
 "_ultima": {
 "Andorra|Burgos|2026-10-26": {
 "data": "2026-10-26",
@@ -32211,21 +32687,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione su assenti"
+"note": "nessuna assenza segnalata"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione su assenti"
+"note": "nessuna assenza segnalata"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "nessuna informazione su porte chiuse"
+"note": "partita regolare"
 },
-"n_titoli": 17
+"n_titoli": 19
 }
 },
 "Arouca|Nacional|2026-11-01": {
@@ -32250,7 +32726,7 @@
 "campo_neutro": false,
 "note": ""
 },
-"n_titoli": 17
+"n_titoli": 21
 }
 },
 "Ath Bilbao|Sociedad|2026-11-01": {
@@ -32260,8 +32736,8 @@
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": "nessuna novità rilevante"
+"clima": "negativo",
+"note": "Nessuna assenza confermata, ma clima di incertezza."
 },
 "ospite": {
 "assenti": [
@@ -32274,20 +32750,22 @@
 "titoli": [
 21
 ],
-"fonte": "Zakharyan se queda fuera de la convocatoria de la Real Sociedad para el derbi - Athletic Club Info"
+"fonte": "Zakharyan se queda fuera de la convocatoria de la Real Sociedad para el derbi - Athletic Club Info",
+"visto": "2026-11-01",
+"memoria": true
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": "assenza confermata"
+"clima": "negativo",
+"note": "Nessuna assenza confermata, ma clima di incertezza."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "partita regolare"
+"note": "Match in Bilbao, potenziali disturbi, ma non chiuso."
 },
-"n_titoli": 24
+"n_titoli": 26
 }
 },
 "Como|Venezia|2026-11-01": {
@@ -32302,27 +32780,29 @@
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-1
+1,
+5,
+11
 ],
 "fonte": "Como, Fabregas: \"Rientra Liberali, Kean out 5 settimane. Non torniamo sul mercato\" - Calciomercato"
 }
 ],
-"turnover": "nessuno",
+"turnover": "medio",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": ""
+"clima": "positivo",
+"note": "Kean out 5 settimane, turnover ragionato di Fabregas"
 },
 "ospite": {
 "assenti": [],
-"turnover": "nessuno",
+"turnover": "medio",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": ""
+"note": "Nicola valuta rotazioni, cerca più efficacia sotto porta"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Nessuna informazione su porte chiuse"
+"note": "Como in cerca del quarto successo consecutivo in Serie A"
 },
 "n_titoli": 50
 }
@@ -33978,24 +34458,24 @@
 "r": {
 "casa": {
 "assenti": [],
-"turnover": "nessuno",
+"turnover": "medio",
 "nuovo_allenatore": false,
-"clima": "negativo",
-"note": "Controversia su Meraş, possibile assenza"
+"clima": "neutro",
+"note": "Meraş non squalificato: smentita. 4 giocatori a rischio giallo per la prossima."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna informazione su assenze"
+"note": "Nessuna notizia rilevante sugli assenti."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Nessuna restrizione di pubblico"
+"note": "Nessuna informazione particolare sulla partita."
 },
-"n_titoli": 23
+"n_titoli": 22
 }
 },
 "Arezzo|Ascoli|2026-11-01": {
@@ -34006,19 +34486,19 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "negativo",
-"note": "Nessuna assenza segnalata"
+"note": "Nessuna vittoria casalinga in B dal 1968, squadra in forte difficoltà"
 },
 "ospite": {
 "assenti": [],
-"turnover": "nessuno",
+"turnover": "medio",
 "nuovo_allenatore": false,
 "clima": "positivo",
-"note": "Nessuna assenza segnalata"
+"note": "In gran forma, terza gara in sette giorni, obiettivo secondo posto"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita senza info su assenze"
+"note": "Arezzo mai vinto in casa in B dal 1968, Ascoli in grande forma"
 },
 "n_titoli": 50
 }
@@ -34030,20 +34510,20 @@
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "positivo",
-"note": "Avellino motivata, nessuna assenza nota"
+"clima": "neutro",
+"note": "Squadra pronta, nessun assente, attesa di una buona prestazione."
 },
 "ospite": {
 "assenti": [],
-"turnover": "medio",
+"turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "positivo",
-"note": "Pisa prevede rotazioni, ma senza assenze specifiche"
+"clima": "neutro",
+"note": "Leone fuori per infortunio, squadra si affida a rotazioni."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita regolare, senza restrizioni"
+"note": "Partita in stadio normale, nessuna chiusura."
 },
 "n_titoli": 50
 }
@@ -34056,21 +34536,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna informazione su assenti"
+"note": "nessuna informazione su assenze"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna informazione su assenti"
+"note": "nessuna informazione su assenze"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Nessun dato su chiusura o campo neutro"
+"note": "nessuna informazione su porte chiuse"
 },
-"n_titoli": 14
+"n_titoli": 13
 }
 },
 "Buyuksehyr|Samsunspor|2026-11-01": {
@@ -34120,7 +34600,7 @@
 "campo_neutro": false,
 "note": ""
 },
-"n_titoli": 2
+"n_titoli": 1
 }
 },
 "Ceuta|Sp Gijon|2026-11-01": {
@@ -34131,21 +34611,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione rilevante"
+"note": "Nessuna informazione rilevante nei titoli."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione rilevante"
+"note": "Nessun titolo disponibile sulla squadra."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "nessuna informazione rilevante"
+"note": "Nessuna informazione particolare."
 },
-"n_titoli": 10
+"n_titoli": 12
 }
 },
 "Charleroi|RAAL La Louviere|2026-11-01": {
@@ -34181,21 +34661,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": ""
+"note": "Nessuna informazione specifica sugli assenti nei titoli."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": ""
+"note": "Titolo [6] menziona preoccupazioni infortuni ma senza nomi specifici."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": ""
+"note": "Nessuna informazione rilevante nei titoli per questa partita."
 },
-"n_titoli": 22
+"n_titoli": 19
 }
 },
 "Elche|Valencia|2026-11-01": {
@@ -34206,21 +34686,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna informazione su assenti"
+"note": "Nessuna assenza di giocatori per l'Elche."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna informazione su assenti"
+"note": "Nessuna assenza di giocatori per il Valencia."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita senza restrizioni"
+"note": "Nessuna indicazione di porte chiuse."
 },
-"n_titoli": 32
+"n_titoli": 33
 }
 },
 "Eldense|Granada|2026-11-01": {
@@ -34231,19 +34711,19 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna novità rilevante"
+"note": "Nessuna informazione su infortuni o squalifiche."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "assenza confermata"
+"note": "Nessuna informazione su infortuni o squalifiche."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "partita regolare"
+"note": "Nessuna informazione su chiusura porte."
 },
 "n_titoli": 18
 }
@@ -34256,22 +34736,22 @@
 {
 "nome": "Magnino",
 "ruolo": "difensore",
-"importanza": "titolare",
+"importanza": "riserva",
 "motivo": "squalifica",
 "certezza": "certo",
 "titoli": [
-3
+1
 ],
 "fonte": "Un turno di squalifica per Magnino e Shpendi - Empoli FC"
 },
 {
 "nome": "Shpendi",
-"ruolo": "centrocampista",
-"importanza": "titolare",
+"ruolo": "difensore",
+"importanza": "riserva",
 "motivo": "squalifica",
 "certezza": "certo",
 "titoli": [
-3
+1
 ],
 "fonte": "Un turno di squalifica per Magnino e Shpendi - Empoli FC"
 }
@@ -34279,21 +34759,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "negativo",
-"note": "Empoli cerca soluzioni, pressione per punti"
+"note": "Rosa corta, tre infortunati non nominati, serve vincere per invertire la rotta."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "positivo",
-"note": "Juve Stabia motivata, voglia di riscatto"
+"clima": "negativo",
+"note": "Sconfitta con Verona, lotta salvezza, voglia di riscatto."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita regolare, senza restrizioni"
+"note": "Empoli in difficoltà, Juve Stabia in zona salvezza."
 },
-"n_titoli": 45
+"n_titoli": 50
 }
 },
 "Excelsior|Twente|2026-11-01": {
@@ -34304,21 +34784,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione su assenti"
+"note": ""
 },
 "ospite": {
 "assenti": [],
-"turnover": "nessuno",
+"turnover": "medio",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "mancano dettagli su assenze specifiche"
+"note": ""
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "nessuna informazione su porte chiuse"
+"note": ""
 },
-"n_titoli": 15
+"n_titoli": 11
 }
 },
 "Falkirk|Celtic|2026-11-01": {
@@ -34329,7 +34809,7 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna assenza confermata"
+"note": "Nessuna assenza per Falkirk."
 },
 "ospite": {
 "assenti": [
@@ -34338,9 +34818,11 @@
 "ruolo": "difensore",
 "importanza": "titolare",
 "motivo": "infortunio",
-"certezza": "in dubbio",
+"certezza": "certo",
 "titoli": [
-19
+18,
+32,
+33
 ],
 "fonte": "Celtic boss Martin O'Neill offers fresh Alistair Johnston injury update - LiveScore"
 },
@@ -34353,20 +34835,22 @@
 "titoli": [
 20
 ],
-"fonte": "Martin O'Neill finally issues clear Yang Hyun-jun injury update - LiveScore"
+"fonte": "Martin O'Neill finally issues clear Yang Hyun-jun injury update - LiveScore",
+"visto": "2026-11-01",
+"memoria": true
 }
 ],
-"turnover": "medio",
+"turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "alcune incertezze su infortuni"
+"note": "Alistair Johnston e Yang Hyun-jun indisponibili."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "partita regolare senza restrizioni"
+"note": "Partita regolare senza chiusura."
 },
-"n_titoli": 33
+"n_titoli": 34
 }
 },
 "Frosinone|Torino|2026-11-01": {
@@ -34374,22 +34858,22 @@
 "r": {
 "casa": {
 "assenti": [],
-"turnover": "medio",
+"turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "positivo",
-"note": "Frosinone concentrato e positivo"
+"note": "Ambiente positivo, serie positiva, obiettivo pokerissimo"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Torino senza notizie di assenze"
+"note": "Obiettivo Europa, ballottaggi in attacco"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita regolare senza restrizioni"
+"note": "Sfida per l'Europa, entrambe in forma"
 },
 "n_titoli": 50
 }
@@ -37380,7 +37864,9 @@
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-1
+1,
+5,
+11
 ],
 "fonte": "Como, Fabregas: \"Rientra Liberali, Kean out 5 settimane. Non torniamo sul mercato\" - Calciomercato",
 "visto": "2026-11-01"
@@ -38143,23 +38629,23 @@
 "magnino": {
 "nome": "Magnino",
 "ruolo": "difensore",
-"importanza": "titolare",
+"importanza": "riserva",
 "motivo": "squalifica",
 "certezza": "certo",
 "titoli": [
-3
+1
 ],
 "fonte": "Un turno di squalifica per Magnino e Shpendi - Empoli FC",
 "visto": "2026-11-01"
 },
 "shpendi": {
 "nome": "Shpendi",
-"ruolo": "centrocampista",
-"importanza": "titolare",
+"ruolo": "difensore",
+"importanza": "riserva",
 "motivo": "squalifica",
 "certezza": "certo",
 "titoli": [
-3
+1
 ],
 "fonte": "Un turno di squalifica per Magnino e Shpendi - Empoli FC",
 "visto": "2026-11-01"
@@ -38181,9 +38667,11 @@
 "ruolo": "difensore",
 "importanza": "titolare",
 "motivo": "infortunio",
-"certezza": "in dubbio",
+"certezza": "certo",
 "titoli": [
-19
+18,
+32,
+33
 ],
 "fonte": "Celtic boss Martin O'Neill offers fresh Alistair Johnston injury update - LiveScore",
 "visto": "2026-11-01"
