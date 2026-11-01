@@ -17,18 +17,61 @@ import context as X
 from data_sources import _am, _known
 from markets import goal_markets, top_scores
 from model import ht_ft, implied_lambdas, market_probs, score_matrix
-from teams import canonical
+from teams import SYNONYMS, _norm, canonical
 
 RHO = -0.08          # correzione Dixon-Coles tipica (risultati bassi)
 HT = 0.44            # quota di gol nel primo tempo (media dei campionati)
 DAYS = (-3, 9)       # giorni scaricati: indietro (risultati per la pagella) e avanti (in programma)
 
 
+GENERIC = {"club", "de", "cp", "sk", "bk", "fk", "if", "aif", "cd", "ud", "sd", "rb", "kv", "krc", "sporting"}
+
+
+def _same_team(espn, dom):
+    """Stessa squadra solo se OGNI parola di un nome corrisponde (anche abbreviata) a una dell'altro.
+    'Internazionale' = 'Inter', 'Manchester United' = 'Man United'; ma 'Inter Club d'Escaldes' != 'Inter',
+    'Lincoln Red Imps' != 'Lincoln' (omonimi di altri paesi)."""
+    a = [t for t in _norm(espn).split() if t not in GENERIC]
+    b = [t for t in _norm(dom).split() if t not in GENERIC]
+    if not a or not b:
+        return False
+    rel = lambda x, y: x.startswith(y) or y.startswith(x)
+    return all(any(rel(x, y) for y in b) for x in a) and all(any(rel(y, x) for x in a) for y in b)
+
+
+# nomi ESPN dei club da coppa -> nome nei campionati (football-data). Usato solo se quel nome esiste nei dati.
+ALIAS = {
+    "psv eindhoven": "PSV", "union st gilloise": "St. Gilloise", "heart of midlothian": "Hearts",
+    "borussia dortmund": "Dortmund", "nec nijmegen": "Nijmegen", "tsg hoffenheim": "Hoffenheim",
+    "borussia monchengladbach": "M'gladbach", "bayer leverkusen": "Leverkusen", "eintracht frankfurt": "Ein Frankfurt",
+    "vfb stuttgart": "Stuttgart", "sc freiburg": "Freiburg", "fc twente": "Twente", "twente": "Twente",
+    "olympique lyonnais": "Lyon", "olympique de marseille": "Marseille", "marseille": "Marseille",
+    "paris saint germain": "Paris SG", "as monaco": "Monaco", "monaco": "Monaco", "ogc nice": "Nice", "nice": "Nice",
+    "rc lens": "Lens", "stade rennais": "Rennes", "rennes": "Rennes", "lille": "Lille", "strasbourg": "Strasbourg",
+    "athletic club": "Ath Bilbao", "real betis": "Betis", "rayo vallecano": "Vallecano", "celta vigo": "Celta",
+    "sporting braga": "Sp Braga", "vitoria guimaraes": "Guimaraes", "rangers": "Rangers", "aberdeen": "Aberdeen",
+    "hibernian": "Hibernian", "royal antwerp": "Antwerp", "kaa gent": "Gent", "gent": "Gent", "racing genk": "Genk",
+    "genk": "Genk", "istanbul basaksehir": "Buyuksehyr", "olympiacos": "Olympiakos", "paok salonika": "PAOK",
+    "paok": "PAOK", "panathinaikos": "Panathinaikos", "aek athens": "AEK", "go ahead eagles": "Go Ahead Eagles",
+    "feyenoord rotterdam": "Feyenoord", "ajax amsterdam": "Ajax", "ajax": "Ajax", "az": "AZ Alkmaar",
+    "fc utrecht": "Utrecht", "utrecht": "Utrecht", "fc porto": "Porto", "sl benfica": "Benfica",
+    "nottingham forest": "Nott'm Forest", "tottenham hotspur": "Tottenham", "newcastle united": "Newcastle",
+    "west ham united": "West Ham", "wolverhampton wanderers": "Wolves", "brighton hove albion": "Brighton",
+    "fiorentina": "Fiorentina", "lazio": "Lazio", "bologna": "Bologna", "atalanta": "Atalanta",
+    "real sociedad": "Sociedad", "villarreal": "Villarreal", "sevilla": "Sevilla", "real madrid": "Real Madrid",
+    "rb leipzig": "RB Leipzig", "mainz": "Mainz", "fsv mainz 05": "Mainz", "werder bremen": "Werder Bremen",
+}
+
+
 def _domestic(name, known_by_lg):
     """Nome ESPN -> nome usato nei campionati (serve per notizie, assenti e forma). Altrimenti il nome ESPN."""
+    n = _norm(name)
+    for lg, known in known_by_lg.items():
+        if ALIAS.get(n) in known:
+            return ALIAS[n], lg
     for lg, known in known_by_lg.items():
         c = canonical(name, known)
-        if c in known:
+        if c in known and (SYNONYMS.get(n) == _norm(c) or _same_team(name, c)):
             return c, lg
     return name, None
 
