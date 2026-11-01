@@ -28492,6 +28492,638 @@
 "n_titoli": 50
 }
 },
+"6a2c775b1462015bcdf17d5c33bdd1560310c83d": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna informazione su chiusura o campo neutro"
+},
+"n_titoli": 27
+}
+},
+"19581d6204799e94abf2785fff275fe905f0bee7": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna assenza segnalata"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna assenza segnalata"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "partita regolare"
+},
+"n_titoli": 50
+}
+},
+"6e216f0e857a48b18085f98ba00b8e76d13bb512": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione su assenti"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione su assenti"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessun dato su chiusura o campo neutro"
+},
+"n_titoli": 8
+}
+},
+"6a7de97d301772a7343994235af99783a8ad110e": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenze"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenze"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna informazione su porte chiuse"
+},
+"n_titoli": 21
+}
+},
+"0a1d24547768632938d2045e086393cfc5ddfc8c": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": ""
+},
+"n_titoli": 8
+}
+},
+"b1742a7e8e52bafa078bd6a5414979907af11e56": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione sugli assenti"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione sugli assenti"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna indicazione di chiusura stadio"
+},
+"n_titoli": 11
+}
+},
+"272e6af397fa3677bde56457300c973a269352c4": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Baïla Diallo",
+"ruolo": "attaccante",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+1
+],
+"fonte": "Baïla Diallo causa baja de última hora para visitar al Eldense - Ideal"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"ospite": {
+"assenti": [
+{
+"nome": "José Arnaiz",
+"ruolo": "attaccante",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+7
+],
+"fonte": "La baja de José Arnaiz, única novedad en Cieza - Ideal"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": ""
+},
+"n_titoli": 9
+}
+},
+"be879045fe1fcdadd38d653073763769cf3e24bb": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna assenza segnalata"
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Alistair Johnston",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+26
+],
+"fonte": "Major Alistair Johnston Celtic injury update as Martin O’Neill reveals how long star will be sidelined - Celtic news now - Celtic FC News"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Johnston fuori per infortunio"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "match di campionato regolare"
+},
+"n_titoli": 36
+}
+},
+"4671daf24de59d06a568727664b564ac112bcf0c": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenti"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenti"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna informazione su porte chiuse"
+},
+"n_titoli": 32
+}
+},
+"a222be22b3cdc5c9039ec7b7258e5ab4a83409db": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Kerem Aktürkoğlu",
+"ruolo": "attaccante",
+"importanza": "stella",
+"motivo": "squalifica",
+"certezza": "certo",
+"titoli": [
+9
+],
+"fonte": "Kerem Aktürkoğlu ve İrfan Can Kahveci kadro dışı: Gelecek hafta açıklanacak - Fotospor"
+},
+{
+"nome": "İrfan Can Kahveci",
+"ruolo": "attaccante",
+"importanza": "stella",
+"motivo": "squalifica",
+"certezza": "certo",
+"titoli": [
+9
+],
+"fonte": "Kerem Aktürkoğlu ve İrfan Can Kahveci kadro dışı: Gelecek hafta açıklanacak - Fotospor"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna novità rilevante"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Assenze non specificate"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione su porte chiuse"
+},
+"n_titoli": 35
+}
+},
+"9030598cdae020831f48b1537d93b46628e8ef25": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenti"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenti"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna informazione su porte chiuse"
+},
+"n_titoli": 8
+}
+},
+"e8e5819ab394370ac82a7fd660fe13eb83030026": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna assenza segnalata"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna assenza segnalata"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "partita senza info su assenze"
+},
+"n_titoli": 50
+}
+},
+"c19716e0b635165460642c4bae9686ae4b288d39": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Assenza di un difensore non nominato; Nesta chiede orgoglio dopo periodo difficile."
+},
+"ospite": {
+"assenti": [],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "positivo",
+"note": "Tre assenti non specificati; Bianco parla di rotazioni e squadra in crescita."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Match tra due pretendenti alla promozione; Nesta imbattuto contro il Pisa."
+},
+"n_titoli": 50
+}
+},
+"492f6c461fab6f9bb3cb55d12f2a5bf057bf9459": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Magnino",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "squalifica",
+"certezza": "certo",
+"titoli": [
+4
+],
+"fonte": "Un turno di squalifica per Magnino e Shpendi - Empoli FC"
+},
+{
+"nome": "Shpendi",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "squalifica",
+"certezza": "certo",
+"titoli": [
+4
+],
+"fonte": "Un turno di squalifica per Magnino e Shpendi - Empoli FC"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Due squalificati e tre infortunati, assenze pesanti per Andreoletti"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Voglia di riscatto dopo la beffa di Verona, chiudono il tour de force"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Empoli cerca riscatto, Juve Stabia vuole punti per consolidarsi"
+},
+"n_titoli": 48
+}
+},
+"6e429100a365cb0899b968d25505eaf5be3a9607": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "positivo",
+"note": "Serie positiva, ballottaggi in difesa"
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Cacciamani",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+31,
+42,
+49
+],
+"fonte": "Torino: Cacciamani non ce la fa, salta il Frosinone - Sportmediaset"
+},
+{
+"nome": "Biraghi",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "altro",
+"certezza": "certo",
+"titoli": [
+37
+],
+"fonte": "Torino, Biraghi non è partito per Frosinone: ecco perché - Toro.it"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Emergenza sulle fasce, Simeone chiave per l'Europa"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": ""
+},
+"n_titoli": 50
+}
+},
+"deaec7a1f645d05d1fac9c72f021f7641e4df237": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "positivo",
+"note": "Entusiasmo per 9 vittorie in 10 gare, Gattuso carica l'ambiente"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna notizia rilevante su assenze o clima particolare"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Si gioca all'Olimpico, Lazio favorita per classifica"
+},
+"n_titoli": 50
+}
+},
+"cb1e3faf994cbe3105946a476d4f9a9955d97336": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": true,
+"clima": "positivo",
+"note": "Nuovo allenatore, infortuni difensivi in via di risoluzione."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Un difensore ha subito un nuovo infortunio dopo il rientro."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Debutto del nuovo tecnico dei Wednesday."
+},
+"n_titoli": 9
+}
+},
+"08878f273dceb32bb684d7963af7f17a9abe2c97": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessun titolo rilevante su Strasbourg."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "positivo",
+"note": "Due ritorni e gli incerti convocati per la partita."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione particolare sulla partita."
+},
+"n_titoli": 6
+}
+},
+"73ae8909ccf1471aa9173881c1ce1dc735eec79d": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Uduokhai e Brackelmann sospesi."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione su assenti per l'ospite."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita in stadio aperto."
+},
+"n_titoli": 25
+}
+},
+"57d7c42344a8dd46ba18738ab15db0d30a51c272": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": ""
+},
+"n_titoli": 1
+}
+},
+"d766e79369e02e417d2ea37bdda8ca4af3378399": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": ""
+},
+"n_titoli": 12
+}
+},
 "_ultima": {
 "Andorra|Burgos|2026-10-26": {
 "data": "2026-10-26",
@@ -33184,25 +33816,27 @@
 6,
 7
 ],
-"fonte": "Como, Fabregas: \"Rientra Liberali, Kean out 5 settimane. Non torniamo sul mercato\" - Calciomercato"
+"fonte": "Como, Fabregas: \"Rientra Liberali, Kean out 5 settimane. Non torniamo sul mercato\" - Calciomercato",
+"visto": "2026-11-01",
+"memoria": true
 }
 ],
 "turnover": "medio",
 "nuovo_allenatore": false,
-"clima": "positivo",
-"note": "Kean out 5 settimane, emergenza in attacco"
+"clima": "neutro",
+"note": "nessuna assenza segnalata"
 },
 "ospite": {
 "assenti": [],
-"turnover": "medio",
+"turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nicola valuta rotazioni, serve più efficacia sotto porta"
+"note": "nessuna assenza segnalata"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "10ª giornata di Serie A"
+"note": "partita regolare"
 },
 "n_titoli": 50
 }
@@ -34861,7 +35495,7 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "assenza per decisione disciplinare"
+"note": ""
 },
 "ospite": {
 "assenti": [],
@@ -34873,9 +35507,9 @@
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "nessuna informazione aggiuntiva"
+"note": "nessuna informazione su chiusura o campo neutro"
 },
-"n_titoli": 19
+"n_titoli": 27
 }
 },
 "Arezzo|Ascoli|2026-11-01": {
@@ -34885,20 +35519,20 @@
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "negativo",
-"note": "Squadra in crisi, nessuna vittoria casalinga in B dal 1968"
+"clima": "neutro",
+"note": "nessuna assenza segnalata"
 },
 "ospite": {
 "assenti": [],
-"turnover": "medio",
+"turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "positivo",
-"note": "Terza gara in sette giorni, possibile rotazione"
+"clima": "neutro",
+"note": "nessuna assenza segnalata"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Arezzo mai vinto in casa in B dal 1968"
+"note": "partita senza info su assenze"
 },
 "n_titoli": 50
 }
@@ -34911,7 +35545,7 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "negativo",
-"note": "Nesta chiede orgoglio, squadra sotto pressione dopo risultati deludenti"
+"note": "Assenza di un difensore non nominato; Nesta chiede orgoglio dopo periodo difficile."
 },
 "ospite": {
 "assenti": [
@@ -34924,18 +35558,20 @@
 "titoli": [
 36
 ],
-"fonte": "Bianco prima di Avellino-Pisa: \"Sarà fuori solo Esteves. Vogliamo continuare su questa strada\" - VTrend"
+"fonte": "Bianco prima di Avellino-Pisa: \"Sarà fuori solo Esteves. Vogliamo continuare su questa strada\" - VTrend",
+"visto": "2026-11-01",
+"memoria": true
 }
 ],
 "turnover": "medio",
 "nuovo_allenatore": false,
 "clima": "positivo",
-"note": "Bianco annuncia rotazioni, squadra in crescita dopo il 3-3 col Palermo"
+"note": "Tre assenti non specificati; Bianco parla di rotazioni e squadra in crescita."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Nesta imbattuto contro il Pisa; arbitro Bonacina"
+"note": "Match tra due pretendenti alla promozione; Nesta imbattuto contro il Pisa."
 },
 "n_titoli": 50
 }
@@ -34973,21 +35609,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna informazione disponibile nei titoli."
+"note": "nessuna informazione sugli assenti"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "negativo",
-"note": "Kötü seri in corso, assenze preoccupano ma non nominate nei titoli."
+"clima": "neutro",
+"note": "nessuna informazione sugli assenti"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Samsunspor cerca di interrompere una serie negativa in trasferta."
+"note": "nessuna indicazione di chiusura stadio"
 },
-"n_titoli": 16
+"n_titoli": 11
 }
 },
 "Cercle Brugge|Antwerp|2026-11-01": {
@@ -35023,19 +35659,19 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna informazione rilevante nei titoli."
+"note": ""
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessun titolo disponibile sulla squadra."
+"note": ""
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Nessuna informazione particolare."
+"note": ""
 },
 "n_titoli": 12
 }
@@ -35119,25 +35755,49 @@
 "data": "2026-11-01",
 "r": {
 "casa": {
-"assenti": [],
+"assenti": [
+{
+"nome": "Baïla Diallo",
+"ruolo": "attaccante",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+1
+],
+"fonte": "Baïla Diallo causa baja de última hora para visitar al Eldense - Ideal"
+}
+],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna informazione rilevante nei titoli."
+"note": ""
 },
 "ospite": {
-"assenti": [],
+"assenti": [
+{
+"nome": "José Arnaiz",
+"ruolo": "attaccante",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+7
+],
+"fonte": "La baja de José Arnaiz, única novedad en Cieza - Ideal"
+}
+],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna informazione rilevante nei titoli."
+"note": ""
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Nessuna informazione specifica sulla partita."
+"note": ""
 },
-"n_titoli": 8
+"n_titoli": 9
 }
 },
 "Empoli|Juve Stabia|2026-11-01": {
@@ -35147,23 +35807,23 @@
 "assenti": [
 {
 "nome": "Magnino",
-"ruolo": "difensore",
-"importanza": "riserva",
+"ruolo": "centrocampista",
+"importanza": "titolare",
 "motivo": "squalifica",
 "certezza": "certo",
 "titoli": [
-1
+4
 ],
 "fonte": "Un turno di squalifica per Magnino e Shpendi - Empoli FC"
 },
 {
 "nome": "Shpendi",
 "ruolo": "difensore",
-"importanza": "riserva",
+"importanza": "titolare",
 "motivo": "squalifica",
 "certezza": "certo",
 "titoli": [
-1
+4
 ],
 "fonte": "Un turno di squalifica per Magnino e Shpendi - Empoli FC"
 }
@@ -35171,21 +35831,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "negativo",
-"note": "Rosa corta, tre infortunati non nominati, serve vincere per invertire la rotta."
+"note": "Due squalificati e tre infortunati, assenze pesanti per Andreoletti"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "negativo",
-"note": "Sconfitta con Verona, lotta salvezza, voglia di riscatto."
+"clima": "neutro",
+"note": "Voglia di riscatto dopo la beffa di Verona, chiudono il tour de force"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Empoli in difficoltà, Juve Stabia in zona salvezza."
+"note": "Empoli cerca riscatto, Juve Stabia vuole punti per consolidarsi"
 },
-"n_titoli": 50
+"n_titoli": 48
 }
 },
 "Excelsior|Twente|2026-11-01": {
@@ -35221,7 +35881,7 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna informazione specifica sugli assenti nei titoli."
+"note": "nessuna assenza segnalata"
 },
 "ospite": {
 "assenti": [
@@ -35232,10 +35892,9 @@
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-36,
-37
+26
 ],
-"fonte": "O'Neill in update on Alistair Johnston injury after shortlived Celtic comeback - The Herald"
+"fonte": "Major Alistair Johnston Celtic injury update as Martin O’Neill reveals how long star will be sidelined - Celtic news now - Celtic FC News"
 },
 {
 "nome": "Yang Hyun-jun",
@@ -35246,20 +35905,22 @@
 "titoli": [
 21
 ],
-"fonte": "Martin O'Neill finally issues clear Yang Hyun-jun injury update - LiveScore"
+"fonte": "Martin O'Neill finally issues clear Yang Hyun-jun injury update - LiveScore",
+"visto": "2026-11-01",
+"memoria": true
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Johnston out per hamstring, Yang Hyun-jun in dubbio."
+"note": "Johnston fuori per infortunio"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": ""
+"note": "match di campionato regolare"
 },
-"n_titoli": 37
+"n_titoli": 36
 }
 },
 "Frosinone|Torino|2026-11-01": {
@@ -35270,19 +35931,44 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "positivo",
-"note": "Ambiente positivo, serie positiva, obiettivo pokerissimo"
+"note": "Serie positiva, ballottaggi in difesa"
 },
 "ospite": {
-"assenti": [],
+"assenti": [
+{
+"nome": "Cacciamani",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+31,
+42,
+49
+],
+"fonte": "Torino: Cacciamani non ce la fa, salta il Frosinone - Sportmediaset"
+},
+{
+"nome": "Biraghi",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "altro",
+"certezza": "certo",
+"titoli": [
+37
+],
+"fonte": "Torino, Biraghi non è partito per Frosinone: ecco perché - Toro.it"
+}
+],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Obiettivo Europa, ballottaggi in attacco"
+"note": "Emergenza sulle fasce, Simeone chiave per l'Europa"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Sfida per l'Europa, entrambe in forma"
+"note": ""
 },
 "n_titoli": 50
 }
@@ -35295,21 +35981,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Assenze chiave per Getafe"
+"note": "nessuna informazione su assenti"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna assenza segnalata"
+"note": "nessuna informazione su assenti"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita regolare senza restrizioni"
+"note": "nessuna informazione su porte chiuse"
 },
-"n_titoli": 35
+"n_titoli": 32
 }
 },
 "Greuther Furth|Holstein Kiel|2026-11-01": {
@@ -35320,21 +36006,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna informazione rilevante nei titoli."
+"note": "Nessuna informazione su assenti"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Giocato DFB-Pokal contro Hoffenheim due giorni prima."
+"note": "Nessuna informazione su assenti"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Nessuna informazione particolare nei titoli."
+"note": "Nessun dato su chiusura o campo neutro"
 },
-"n_titoli": 16
+"n_titoli": 8
 }
 },
 "Groningen|Sparta Rotterdam|2026-11-01": {
@@ -35381,22 +36067,22 @@
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "negativo",
-"note": "Due sconfitte consecutive, eliminazione in Coppa"
+"clima": "neutro",
+"note": "nessuna informazione su assenze"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "positivo",
-"note": "Vittoria in Coppa contro lo Schalke"
+"clima": "neutro",
+"note": "nessuna informazione su assenze"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Traditionsduell tra le due squadre"
+"note": "nessuna informazione su porte chiuse"
 },
-"n_titoli": 16
+"n_titoli": 21
 }
 },
 "Juventus|Napoli|2026-11-01": {
@@ -35468,20 +36154,20 @@
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": ""
+"clima": "positivo",
+"note": "Entusiasmo per 9 vittorie in 10 gare, Gattuso carica l'ambiente"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": ""
+"note": "Nessuna notizia rilevante su assenze o clima particolare"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": ""
+"note": "Si gioca all'Olimpico, Lazio favorita per classifica"
 },
 "n_titoli": 50
 }
@@ -35531,21 +36217,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna novità"
+"note": ""
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna novità"
+"note": ""
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "nessuna informazione rilevante"
+"note": ""
 },
-"n_titoli": 3
+"n_titoli": 1
 }
 },
 "Liverpool|Arsenal|2026-11-01": {
@@ -35936,23 +36622,23 @@
 "casa": {
 "assenti": [],
 "turnover": "nessuno",
-"nuovo_allenatore": false,
-"clima": "neutro",
-"note": "Nessuna assenza confermata per Sheffield Wednesday."
+"nuovo_allenatore": true,
+"clima": "positivo",
+"note": "Nuovo allenatore, infortuni difensivi in via di risoluzione."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna assenza confermata per Blackpool."
+"note": "Un difensore ha subito un nuovo infortunio dopo il rientro."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita prevista in stadio aperto."
+"note": "Debutto del nuovo tecnico dei Wednesday."
 },
-"n_titoli": 15
+"n_titoli": 9
 }
 },
 "Sp Braga|Famalicao|2026-11-01": {
@@ -35995,14 +36681,14 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessun titolo disponibile su Nurnberg"
+"note": ""
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Nurnberg è secondo in classifica"
+"note": ""
 },
-"n_titoli": 7
+"n_titoli": 8
 }
 },
 "Strasbourg|Auxerre|2026-11-01": {
@@ -36010,24 +36696,24 @@
 "r": {
 "casa": {
 "assenti": [],
-"turnover": "medio",
+"turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "positivo",
-"note": "Aggiornamenti sulle squadre e squadra di partenza per la partita tra RC Strasbourg e AJ Auxerre, con alcune sorprese nel"
+"clima": "neutro",
+"note": "Nessun titolo rilevante su Strasbourg."
 },
 "ospite": {
 "assenti": [],
-"turnover": "medio",
+"turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": "Aggiornamenti sulle squadre e squadra di partenza per la partita tra Le Havre e PSG, con alcune sorprese nella squadra d"
+"clima": "positivo",
+"note": "Due ritorni e gli incerti convocati per la partita."
 },
 "partita": {
 "porte_chiuse": false,
-"campo_neutro": true,
-"note": "Partita tra RC Strasbourg e AJ Auxerre, con alcune sorprese nella squadra di Luis Enrique per la partita contro Le Havre"
+"campo_neutro": false,
+"note": "Nessuna informazione particolare sulla partita."
 },
-"n_titoli": 4
+"n_titoli": 6
 }
 },
 "Telstar|Utrecht|2026-11-01": {
@@ -36038,19 +36724,19 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna informazione rilevante nei titoli."
+"note": "nessuna informazione su assenti"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Tifosi squalificati dopo invasione campo in coppa."
+"note": "nessuna informazione su assenti"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Nessuna informazione specifica sulla partita."
+"note": "nessuna informazione su porte chiuse"
 },
 "n_titoli": 8
 }
@@ -36084,25 +36770,73 @@
 "data": "2026-11-01",
 "r": {
 "casa": {
-"assenti": [],
+"assenti": [
+{
+"nome": "Kerem Aktürkoğlu",
+"ruolo": "attaccante",
+"importanza": "stella",
+"motivo": "squalifica",
+"certezza": "certo",
+"titoli": [
+9
+],
+"fonte": "Kerem Aktürkoğlu ve İrfan Can Kahveci kadro dışı: Gelecek hafta açıklanacak - Fotospor"
+},
+{
+"nome": "İrfan Can Kahveci",
+"ruolo": "attaccante",
+"importanza": "stella",
+"motivo": "squalifica",
+"certezza": "certo",
+"titoli": [
+9
+],
+"fonte": "Kerem Aktürkoğlu ve İrfan Can Kahveci kadro dışı: Gelecek hafta açıklanacak - Fotospor"
+}
+],
 "turnover": "nessuno",
-"nuovo_allenatore": true,
-"clima": "positivo",
-"note": "Nuovo allenatore Mandıralı, prima volta con rosa al completo."
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna novità rilevante"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Rientro in infermeria prima della sfida, nessun nome specifico."
+"note": "Assenze non specificate"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Trabzonspor in grande forma, Gaziantep con problemi fisici."
+"note": "Nessuna informazione su porte chiuse"
 },
-"n_titoli": 16
+"n_titoli": 35
+}
+},
+"Union Berlin|FC Koln|2026-11-01": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Uduokhai e Brackelmann sospesi."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione su assenti per l'ospite."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita in stadio aperto."
+},
+"n_titoli": 25
 }
 }
 },
@@ -39092,20 +39826,46 @@
 },
 "Eldense|Granada|2026-11-01": {
 "data": "2026-11-01",
-"casa": {},
-"ospite": {}
+"casa": {
+"baïla diallo": {
+"nome": "Baïla Diallo",
+"ruolo": "attaccante",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+1
+],
+"fonte": "Baïla Diallo causa baja de última hora para visitar al Eldense - Ideal",
+"visto": "2026-11-01"
+}
+},
+"ospite": {
+"josé arnaiz": {
+"nome": "José Arnaiz",
+"ruolo": "attaccante",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+7
+],
+"fonte": "La baja de José Arnaiz, única novedad en Cieza - Ideal",
+"visto": "2026-11-01"
+}
+}
 },
 "Empoli|Juve Stabia|2026-11-01": {
 "data": "2026-11-01",
 "casa": {
 "magnino": {
 "nome": "Magnino",
-"ruolo": "difensore",
-"importanza": "riserva",
+"ruolo": "centrocampista",
+"importanza": "titolare",
 "motivo": "squalifica",
 "certezza": "certo",
 "titoli": [
-1
+4
 ],
 "fonte": "Un turno di squalifica per Magnino e Shpendi - Empoli FC",
 "visto": "2026-11-01"
@@ -39113,11 +39873,11 @@
 "shpendi": {
 "nome": "Shpendi",
 "ruolo": "difensore",
-"importanza": "riserva",
+"importanza": "titolare",
 "motivo": "squalifica",
 "certezza": "certo",
 "titoli": [
-1
+4
 ],
 "fonte": "Un turno di squalifica per Magnino e Shpendi - Empoli FC",
 "visto": "2026-11-01"
@@ -39141,10 +39901,9 @@
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-36,
-37
+26
 ],
-"fonte": "O'Neill in update on Alistair Johnston injury after shortlived Celtic comeback - The Herald",
+"fonte": "Major Alistair Johnston Celtic injury update as Martin O’Neill reveals how long star will be sidelined - Celtic news now - Celtic FC News",
 "visto": "2026-11-01"
 },
 "yang hyun-jun": {
@@ -39164,7 +39923,34 @@
 "Frosinone|Torino|2026-11-01": {
 "data": "2026-11-01",
 "casa": {},
-"ospite": {}
+"ospite": {
+"cacciamani": {
+"nome": "Cacciamani",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+31,
+42,
+49
+],
+"fonte": "Torino: Cacciamani non ce la fa, salta il Frosinone - Sportmediaset",
+"visto": "2026-11-01"
+},
+"biraghi": {
+"nome": "Biraghi",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "altro",
+"certezza": "certo",
+"titoli": [
+37
+],
+"fonte": "Torino, Biraghi non è partito per Frosinone: ecco perché - Toro.it",
+"visto": "2026-11-01"
+}
+}
 },
 "Getafe|Sevilla|2026-11-01": {
 "data": "2026-11-01",
@@ -39452,6 +40238,36 @@
 "ospite": {}
 },
 "Trabzonspor|Gaziantep|2026-11-01": {
+"data": "2026-11-01",
+"casa": {
+"kerem aktürkoğlu": {
+"nome": "Kerem Aktürkoğlu",
+"ruolo": "attaccante",
+"importanza": "stella",
+"motivo": "squalifica",
+"certezza": "certo",
+"titoli": [
+9
+],
+"fonte": "Kerem Aktürkoğlu ve İrfan Can Kahveci kadro dışı: Gelecek hafta açıklanacak - Fotospor",
+"visto": "2026-11-01"
+},
+"i̇rfan can kahveci": {
+"nome": "İrfan Can Kahveci",
+"ruolo": "attaccante",
+"importanza": "stella",
+"motivo": "squalifica",
+"certezza": "certo",
+"titoli": [
+9
+],
+"fonte": "Kerem Aktürkoğlu ve İrfan Can Kahveci kadro dışı: Gelecek hafta açıklanacak - Fotospor",
+"visto": "2026-11-01"
+}
+},
+"ospite": {}
+},
+"Union Berlin|FC Koln|2026-11-01": {
 "data": "2026-11-01",
 "casa": {},
 "ospite": {}
