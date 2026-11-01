@@ -28092,6 +28092,406 @@
 "n_titoli": 50
 }
 },
+"3bb7844a60b9e2565eeca2e0a2a0d60d15b21466": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "assenza per decisione disciplinare"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna informazione aggiuntiva"
+},
+"n_titoli": 19
+}
+},
+"9f55931d140a1266e8ef96ef7220849440d6ffd9": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Eliminati in coppa da TOP Oss, focus sulla liga."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Eliminati in coppa ai rigori da Excelsior '31."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Entrambe eliminate in coppa, partita di liga senza vincoli."
+},
+"n_titoli": 7
+}
+},
+"3779a0eb71b35c95245dd69fc61e1b29fa84ce70": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Kean",
+"ruolo": "attaccante",
+"importanza": "stella",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+1,
+6,
+7
+],
+"fonte": "Como, Fabregas: \"Rientra Liberali, Kean out 5 settimane. Non torniamo sul mercato\" - Calciomercato"
+}
+],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "positivo",
+"note": "Kean out 5 settimane, emergenza in attacco"
+},
+"ospite": {
+"assenti": [],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nicola valuta rotazioni, serve più efficacia sotto porta"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "10ª giornata di Serie A"
+},
+"n_titoli": 50
+}
+},
+"67c4fee084e32107eb8ef7cd1883421b4956df45": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione rilevante nei titoli."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Giocato DFB-Pokal contro Hoffenheim due giorni prima."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione particolare nei titoli."
+},
+"n_titoli": 16
+}
+},
+"4c8c16f48efa23f6db1fd3791a71e50d490d28a8": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Due sconfitte consecutive, eliminazione in Coppa"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "positivo",
+"note": "Vittoria in Coppa contro lo Schalke"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Traditionsduell tra le due squadre"
+},
+"n_titoli": 16
+}
+},
+"461f1200af951918e39dfdaaaec3c89691e16ece": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessun titolo disponibile su Nurnberg"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nurnberg è secondo in classifica"
+},
+"n_titoli": 7
+}
+},
+"c2055e07824fb73e12088076bd5a930ec8c45484": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione disponibile nei titoli."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Kötü seri in corso, assenze preoccupano ma non nominate nei titoli."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Samsunspor cerca di interrompere una serie negativa in trasferta."
+},
+"n_titoli": 16
+}
+},
+"530a48b425ffab0107b043141d51898170d9e8f3": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione rilevante nei titoli."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione rilevante nei titoli."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione specifica sulla partita."
+},
+"n_titoli": 8
+}
+},
+"2c2445ce63f5a903261c470fd09a5f96509c3190": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione specifica sugli assenti nei titoli."
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Alistair Johnston",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+36,
+37
+],
+"fonte": "O'Neill in update on Alistair Johnston injury after shortlived Celtic comeback - The Herald"
+},
+{
+"nome": "Yang Hyun-jun",
+"ruolo": "centrocampista",
+"importanza": "stella",
+"motivo": "infortunio",
+"certezza": "in dubbio",
+"titoli": [
+21
+],
+"fonte": "Martin O'Neill finally issues clear Yang Hyun-jun injury update - LiveScore"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Johnston out per hamstring, Yang Hyun-jun in dubbio."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": ""
+},
+"n_titoli": 37
+}
+},
+"ce9c383f0fcda5b53c7ec498e0fca5097e249b36": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": true,
+"clima": "positivo",
+"note": "Nuovo allenatore Mandıralı, prima volta con rosa al completo."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Rientro in infermeria prima della sfida, nessun nome specifico."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Trabzonspor in grande forma, Gaziantep con problemi fisici."
+},
+"n_titoli": 16
+}
+},
+"953bb70a58a208ff66433dabdba6241622d4f4ae": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna notizia specifica sugli assenti nei titoli."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Cinque assenti citati nel titolo 6, nomi non specificati."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione rilevante nei titoli."
+},
+"n_titoli": 16
+}
+},
+"c78d49d495db7f27a19e0396b02ecc33fd58e156": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione rilevante nei titoli."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Tifosi squalificati dopo invasione campo in coppa."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione specifica sulla partita."
+},
+"n_titoli": 8
+}
+},
+"81d936426fe093e3cabcb2bede8cc58cd43607d5": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Squadra in crisi, nessuna vittoria casalinga in B dal 1968"
+},
+"ospite": {
+"assenti": [],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "positivo",
+"note": "Terza gara in sette giorni, possibile rotazione"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Arezzo mai vinto in casa in B dal 1968"
+},
+"n_titoli": 50
+}
+},
+"46c9aab38b33049385dedd8bad85ec56b9462b9b": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Nesta chiede orgoglio, squadra sotto pressione dopo risultati deludenti"
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Esteves",
+"ruolo": "difensore",
+"importanza": "riserva",
+"motivo": "altro",
+"certezza": "certo",
+"titoli": [
+36
+],
+"fonte": "Bianco prima di Avellino-Pisa: \"Sarà fuori solo Esteves. Vogliamo continuare su questa strada\" - VTrend"
+}
+],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "positivo",
+"note": "Bianco annuncia rotazioni, squadra in crescita dopo il 3-3 col Palermo"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nesta imbattuto contro il Pisa; arbitro Bonacina"
+},
+"n_titoli": 50
+}
+},
 "_ultima": {
 "Andorra|Burgos|2026-10-26": {
 "data": "2026-10-26",
@@ -32781,8 +33181,8 @@
 "certezza": "certo",
 "titoli": [
 1,
-5,
-11
+6,
+7
 ],
 "fonte": "Como, Fabregas: \"Rientra Liberali, Kean out 5 settimane. Non torniamo sul mercato\" - Calciomercato"
 }
@@ -32790,19 +33190,19 @@
 "turnover": "medio",
 "nuovo_allenatore": false,
 "clima": "positivo",
-"note": "Kean out 5 settimane, turnover ragionato di Fabregas"
+"note": "Kean out 5 settimane, emergenza in attacco"
 },
 "ospite": {
 "assenti": [],
 "turnover": "medio",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nicola valuta rotazioni, cerca più efficacia sotto porta"
+"note": "Nicola valuta rotazioni, serve più efficacia sotto porta"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Como in cerca del quarto successo consecutivo in Serie A"
+"note": "10ª giornata di Serie A"
 },
 "n_titoli": 50
 }
@@ -34458,24 +34858,24 @@
 "r": {
 "casa": {
 "assenti": [],
-"turnover": "medio",
+"turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Meraş non squalificato: smentita. 4 giocatori a rischio giallo per la prossima."
+"note": "assenza per decisione disciplinare"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna notizia rilevante sugli assenti."
+"note": ""
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Nessuna informazione particolare sulla partita."
+"note": "nessuna informazione aggiuntiva"
 },
-"n_titoli": 22
+"n_titoli": 19
 }
 },
 "Arezzo|Ascoli|2026-11-01": {
@@ -34486,19 +34886,19 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "negativo",
-"note": "Nessuna vittoria casalinga in B dal 1968, squadra in forte difficoltà"
+"note": "Squadra in crisi, nessuna vittoria casalinga in B dal 1968"
 },
 "ospite": {
 "assenti": [],
 "turnover": "medio",
 "nuovo_allenatore": false,
 "clima": "positivo",
-"note": "In gran forma, terza gara in sette giorni, obiettivo secondo posto"
+"note": "Terza gara in sette giorni, possibile rotazione"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Arezzo mai vinto in casa in B dal 1968, Ascoli in grande forma"
+"note": "Arezzo mai vinto in casa in B dal 1968"
 },
 "n_titoli": 50
 }
@@ -34510,20 +34910,32 @@
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": "Squadra pronta, nessun assente, attesa di una buona prestazione."
+"clima": "negativo",
+"note": "Nesta chiede orgoglio, squadra sotto pressione dopo risultati deludenti"
 },
 "ospite": {
-"assenti": [],
-"turnover": "nessuno",
+"assenti": [
+{
+"nome": "Esteves",
+"ruolo": "difensore",
+"importanza": "riserva",
+"motivo": "altro",
+"certezza": "certo",
+"titoli": [
+36
+],
+"fonte": "Bianco prima di Avellino-Pisa: \"Sarà fuori solo Esteves. Vogliamo continuare su questa strada\" - VTrend"
+}
+],
+"turnover": "medio",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": "Leone fuori per infortunio, squadra si affida a rotazioni."
+"clima": "positivo",
+"note": "Bianco annuncia rotazioni, squadra in crescita dopo il 3-3 col Palermo"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita in stadio normale, nessuna chiusura."
+"note": "Nesta imbattuto contro il Pisa; arbitro Bonacina"
 },
 "n_titoli": 50
 }
@@ -34561,19 +34973,19 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione sugli assenti"
+"note": "Nessuna informazione disponibile nei titoli."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": "nessuna informazione sugli assenti"
+"clima": "negativo",
+"note": "Kötü seri in corso, assenze preoccupano ma non nominate nei titoli."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "nessuna indicazione di porte chiuse"
+"note": "Samsunspor cerca di interrompere una serie negativa in trasferta."
 },
 "n_titoli": 16
 }
@@ -34711,21 +35123,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna informazione su infortuni o squalifiche."
+"note": "Nessuna informazione rilevante nei titoli."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna informazione su infortuni o squalifiche."
+"note": "Nessuna informazione rilevante nei titoli."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Nessuna informazione su chiusura porte."
+"note": "Nessuna informazione specifica sulla partita."
 },
-"n_titoli": 18
+"n_titoli": 8
 }
 },
 "Empoli|Juve Stabia|2026-11-01": {
@@ -34784,21 +35196,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": ""
+"note": "Nessuna notizia specifica sugli assenti nei titoli."
 },
 "ospite": {
 "assenti": [],
-"turnover": "medio",
+"turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": ""
+"note": "Cinque assenti citati nel titolo 6, nomi non specificati."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": ""
+"note": "Nessuna informazione rilevante nei titoli."
 },
-"n_titoli": 11
+"n_titoli": 16
 }
 },
 "Falkirk|Celtic|2026-11-01": {
@@ -34809,7 +35221,7 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna assenza per Falkirk."
+"note": "Nessuna informazione specifica sugli assenti nei titoli."
 },
 "ospite": {
 "assenti": [
@@ -34820,37 +35232,34 @@
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-18,
-32,
-33
+36,
+37
 ],
-"fonte": "Celtic boss Martin O'Neill offers fresh Alistair Johnston injury update - LiveScore"
+"fonte": "O'Neill in update on Alistair Johnston injury after shortlived Celtic comeback - The Herald"
 },
 {
 "nome": "Yang Hyun-jun",
 "ruolo": "centrocampista",
-"importanza": "titolare",
+"importanza": "stella",
 "motivo": "infortunio",
 "certezza": "in dubbio",
 "titoli": [
-20
+21
 ],
-"fonte": "Martin O'Neill finally issues clear Yang Hyun-jun injury update - LiveScore",
-"visto": "2026-11-01",
-"memoria": true
+"fonte": "Martin O'Neill finally issues clear Yang Hyun-jun injury update - LiveScore"
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Alistair Johnston e Yang Hyun-jun indisponibili."
+"note": "Johnston out per hamstring, Yang Hyun-jun in dubbio."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita regolare senza chiusura."
+"note": ""
 },
-"n_titoli": 34
+"n_titoli": 37
 }
 },
 "Frosinone|Torino|2026-11-01": {
@@ -34911,21 +35320,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione su assenze"
+"note": "Nessuna informazione rilevante nei titoli."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione su assenze"
+"note": "Giocato DFB-Pokal contro Hoffenheim due giorni prima."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "nessuna informazione su porte chiuse"
+"note": "Nessuna informazione particolare nei titoli."
 },
-"n_titoli": 12
+"n_titoli": 16
 }
 },
 "Groningen|Sparta Rotterdam|2026-11-01": {
@@ -34972,22 +35381,22 @@
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": ""
+"clima": "negativo",
+"note": "Due sconfitte consecutive, eliminazione in Coppa"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": ""
+"clima": "positivo",
+"note": "Vittoria in Coppa contro lo Schalke"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": ""
+"note": "Traditionsduell tra le due squadre"
 },
-"n_titoli": 15
+"n_titoli": 16
 }
 },
 "Juventus|Napoli|2026-11-01": {
@@ -35586,14 +35995,14 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": ""
+"note": "Nessun titolo disponibile su Nurnberg"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": ""
+"note": "Nurnberg è secondo in classifica"
 },
-"n_titoli": 8
+"n_titoli": 7
 }
 },
 "Strasbourg|Auxerre|2026-11-01": {
@@ -35629,21 +36038,71 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna notizia su infortuni o squalifiche"
+"note": "Nessuna informazione rilevante nei titoli."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "negativo",
-"note": "Tifosi Utrecht non seguono la squadra per disordini in coppa"
+"clima": "neutro",
+"note": "Tifosi squalificati dopo invasione campo in coppa."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Settore ospiti chiuso per decisione Utrecht"
+"note": "Nessuna informazione specifica sulla partita."
 },
-"n_titoli": 12
+"n_titoli": 8
+}
+},
+"Zwolle|Den Haag|2026-11-01": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Eliminati in coppa da TOP Oss, focus sulla liga."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Eliminati in coppa ai rigori da Excelsior '31."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Entrambe eliminate in coppa, partita di liga senza vincoli."
+},
+"n_titoli": 7
+}
+},
+"Trabzonspor|Gaziantep|2026-11-01": {
+"data": "2026-11-01",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": true,
+"clima": "positivo",
+"note": "Nuovo allenatore Mandıralı, prima volta con rosa al completo."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Rientro in infermeria prima della sfida, nessun nome specifico."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Trabzonspor in grande forma, Gaziantep con problemi fisici."
+},
+"n_titoli": 16
 }
 }
 },
@@ -37865,8 +38324,8 @@
 "certezza": "certo",
 "titoli": [
 1,
-5,
-11
+6,
+7
 ],
 "fonte": "Como, Fabregas: \"Rientra Liberali, Kean out 5 settimane. Non torniamo sul mercato\" - Calciomercato",
 "visto": "2026-11-01"
@@ -38581,7 +39040,20 @@
 "Avellino|Pisa|2026-11-01": {
 "data": "2026-11-01",
 "casa": {},
-"ospite": {}
+"ospite": {
+"esteves": {
+"nome": "Esteves",
+"ruolo": "difensore",
+"importanza": "riserva",
+"motivo": "altro",
+"certezza": "certo",
+"titoli": [
+36
+],
+"fonte": "Bianco prima di Avellino-Pisa: \"Sarà fuori solo Esteves. Vogliamo continuare su questa strada\" - VTrend",
+"visto": "2026-11-01"
+}
+}
 },
 "Burgos|Castellon|2026-11-01": {
 "data": "2026-11-01",
@@ -38669,21 +39141,20 @@
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-18,
-32,
-33
+36,
+37
 ],
-"fonte": "Celtic boss Martin O'Neill offers fresh Alistair Johnston injury update - LiveScore",
+"fonte": "O'Neill in update on Alistair Johnston injury after shortlived Celtic comeback - The Herald",
 "visto": "2026-11-01"
 },
 "yang hyun-jun": {
 "nome": "Yang Hyun-jun",
 "ruolo": "centrocampista",
-"importanza": "titolare",
+"importanza": "stella",
 "motivo": "infortunio",
 "certezza": "in dubbio",
 "titoli": [
-20
+21
 ],
 "fonte": "Martin O'Neill finally issues clear Yang Hyun-jun injury update - LiveScore",
 "visto": "2026-11-01"
@@ -38971,6 +39442,16 @@
 "ospite": {}
 },
 "Telstar|Utrecht|2026-11-01": {
+"data": "2026-11-01",
+"casa": {},
+"ospite": {}
+},
+"Zwolle|Den Haag|2026-11-01": {
+"data": "2026-11-01",
+"casa": {},
+"ospite": {}
+},
+"Trabzonspor|Gaziantep|2026-11-01": {
 "data": "2026-11-01",
 "casa": {},
 "ospite": {}
