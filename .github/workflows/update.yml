@@ -5,6 +5,7 @@ on:
     - cron: "17 5,10,16 * * *"     # 3 volte al giorno (~6:17, 11:17, 17:17 ora italiana)
     - cron: "47 11,13,17,19 * * 0,6"  # sabato e domenica anche a ridosso delle partite (~12:47, 14:47, 18:47, 20:47)
     - cron: "47 13,18 * * 1-5"         # giorni feriali: anche ~14:47 e ~19:47 (partite serali, quote a ridosso)
+    - cron: "37 * * * *"               # recupero: ogni ora controlla se un giro previsto è saltato (GitHub a volte li salta)
   workflow_dispatch:
   push:
     branches: [main]
@@ -23,7 +24,45 @@ env:
   TZ: Europe/Rome
 
 jobs:
+  # GitHub a volte salta o ritarda di molto i giri programmati. Ogni ora un controllo: se l'ultimo giro previsto
+  # non c'è stato (dati più vecchi dell'orario previsto) lo recupera, altrimenti non fa niente.
+  check:
+    runs-on: ubuntu-latest
+    outputs:
+      go: ${{ steps.c.outputs.go }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: docs/data/meta.json
+          sparse-checkout-cone-mode: false
+      - id: c
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import datetime as dt, json, os
+          ev = os.environ.get("EV")
+          if ev != "schedule":
+              print("go=true"); raise SystemExit
+          now = dt.datetime.now(dt.timezone.utc)
+          # orari previsti in UTC (gli stessi delle righe cron qui sopra)
+          slots = []
+          for d in (now.date() - dt.timedelta(days=1), now.date()):
+              wd = d.weekday()   # 0 = lunedì
+              hm = [(5, 17), (10, 17), (16, 17)] + ([(11, 47), (13, 47), (17, 47), (19, 47)] if wd >= 5 else [(13, 47), (18, 47)])
+              slots += [dt.datetime(d.year, d.month, d.day, h, m, tzinfo=dt.timezone.utc) for h, m in hm]
+          due = max(s for s in slots if s <= now)
+          try:
+              last = dt.datetime.fromisoformat(json.load(open("docs/data/meta.json"))["aggiornato"])
+          except Exception:
+              last = dt.datetime(2000, 1, 1, tzinfo=dt.timezone.utc)
+          print("go=" + ("true" if last < due else "false"))
+          PY
+        env:
+          EV: ${{ github.event_name }}
+
   update:
+    needs: check
+    if: needs.check.outputs.go == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 55
     environment:
