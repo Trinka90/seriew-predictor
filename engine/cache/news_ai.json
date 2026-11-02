@@ -32960,6 +32960,559 @@
 "n_titoli": 36
 }
 },
+"6b9802b7723d09461e98e62605d92a7bd7edfa4d": {
+"data": "2026-11-02",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": ""
+},
+"n_titoli": 30
+}
+},
+"8c2c887a507b449ecfe6a9a2bda4b57e606e8f95": {
+"data": "2026-11-02",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "5 assenti per la partita, nomi non specificati nei titoli."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Preparazioni completate, nessuna assenza segnalata."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione specifica su porte chiuse o campo neutro."
+},
+"n_titoli": 13
+}
+},
+"c0461f0ee5a4dade936cec79b395cfce21588d1f": {
+"data": "2026-11-02",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Squadra in crisi, Aquilani punta su Idzes e Matic per il rilancio."
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Pedro",
+"ruolo": "attaccante",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+29
+],
+"fonte": "La probabile formazione della Fiorentina: Vanoli va di continuità e può sacrificare ancora Oulai. Niente Pedro e Valdepenas - FiorentinaNews.com"
+},
+{
+"nome": "Valdepenas",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+29
+],
+"fonte": "La probabile formazione della Fiorentina: Vanoli va di continuità e può sacrificare ancora Oulai. Niente Pedro e Valdepenas - FiorentinaNews.com"
+}
+],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Vanoli cerca continuità, possibile sacrificio di Oulai a favore di Fagioli."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Scontro diretto per allontanarsi dalla zona rossa."
+},
+"n_titoli": 50
+}
+},
+"9287a284317918144b5aad09c76f11c12a55aa89": {
+"data": "2026-11-02",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Kristensen",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+14
+],
+"fonte": "Atalanta: Kristensen e Gaetano out per il Parma, rientro dopo la sosta - Sportmediaset"
+},
+{
+"nome": "Gaetano",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+14
+],
+"fonte": "Atalanta: Kristensen e Gaetano out per il Parma, rientro dopo la sosta - Sportmediaset"
+}
+],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Emergenza infortuni grave, dieci ai box, mezza squadra assente"
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Bernabè",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+26
+],
+"fonte": "I convocati del Gila per il match di Bergamo. Non c'è Bernabè (risentimento muscolare) - Gazzetta di Parma"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Gilardino punta su Troilo in difesa, Daffara in porta"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Atalanta in piena emergenza, Parma con Bernabè assente"
+},
+"n_titoli": 50
+}
+},
+"e34d1755477cc7dbab6ab2fefd72c20c94d05bbb": {
+"data": "2026-11-02",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione disponibile nei titoli."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione rilevante nei titoli."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione particolare disponibile."
+},
+"n_titoli": 5
+}
+},
+"912e29293986b24ad311ed2c32319b4c7beb3c7c": {
+"data": "2026-11-02",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione rilevante nei titoli."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione rilevante nei titoli."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione rilevante nei titoli."
+},
+"n_titoli": 3
+}
+},
+"9ad9d70bfe73f3864c6be7d7a23f79f34e33187b": {
+"data": "2026-11-02",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione rilevante nei titoli."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione rilevante nei titoli."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione specifica sulla partita."
+},
+"n_titoli": 3
+}
+},
+"dc4b65e660e0998f63cba9ca534e036702833a7b": {
+"data": "2026-11-02",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Tensioni politiche in città per eventi Vox e proteste Blocus"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Possibili tensioni in città per proteste politiche"
+},
+"n_titoli": 15
+}
+},
+"962b358c652ade29fe218e0f03f23286ec396e1e": {
+"data": "2026-11-02",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione su giocatori assenti."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione su giocatori assenti."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna indicazione di porte chiuse."
+},
+"n_titoli": 34
+}
+},
+"e398e0b75bb3f7a8c42973ce40b4928b491db4b7": {
+"data": "2026-11-02",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Matias Fernandez-Pardo",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+11,
+37
+],
+"fonte": "Will Osula, Matias Fernandez-Pardo & Lewis Miley: Newcastle United injury return dates - Shields Gazette"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Wissa torna disponibile dopo l'infortunio."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Grealish squalificato per violazione disciplinare."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Match di Premier League tra Newcastle ed Everton."
+},
+"n_titoli": 37
+}
+},
+"7b0b29404573020afc1f9e8345cc501411642939": {
+"data": "2026-11-02",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessun assente specifico nei titoli."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Julián Martínez disponibile per la partita."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione rilevante nei titoli."
+},
+"n_titoli": 15
+}
+},
+"5d17442961f8e60ba56a06093d285a88794f4fd6": {
+"data": "2026-11-03",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "positivo",
+"note": "Titolo [2] prevede vittoria 3-0, fiducia nella rosa."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "positivo",
+"note": "Vittoria 4-2 a Leverkusen nell'ultima di Bundesliga."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Champions League, nessuna info specifica su assenze nei titoli."
+},
+"n_titoli": 46
+}
+},
+"bac2d8ff7b31b9dfc9569afa40fc1f8ffb334fb6": {
+"data": "2026-11-03",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Pedrinho",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+4
+],
+"fonte": "Shakhtar Donetsk Adjusts Champions League Roster After Pedrinho’s Injury, Introducing Prosper Oba - 112.ua"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Roster Champions League già modificato per l'infortunio di Pedrinho."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione disponibile."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione rilevante."
+},
+"n_titoli": 4
+}
+},
+"19298867bc3bde8d08a2d22ded06692af02a433a": {
+"data": "2026-11-03",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Attaccante con nuovo infortunio ma non nominato nei titoli"
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Lamine Cisse",
+"ruolo": "attaccante",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+15,
+16
+],
+"fonte": "Huge Stoke City injury blow confirmed as Lamine Cisse set for period on sidelines - The Sentinel"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Grave infortunio a Cisse, uomo chiave della squadra"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": ""
+},
+"n_titoli": 20
+}
+},
+"96386b70b99b54f9710a981815a5176b89dce3c6": {
+"data": "2026-11-03",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Cinque cambi per Oxford, nessun dettaglio specifico per Bolton."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Diverse assenze per infortunio, McAtee non ancora disponibile."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione specifica sulla partita."
+},
+"n_titoli": 18
+}
+},
+"dd27a5576b29133bcbc557b36cf213d3dbb10ca5": {
+"data": "2026-11-03",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Cisse",
+"ruolo": "difensore",
+"importanza": "stella",
+"motivo": "altro",
+"certezza": "probabile",
+"titoli": [
+4
+],
+"fonte": "Diawara titolare e non Bartesaghi, Cisse fuori: lo strano Milan di Amorim per il derby - La Gazzetta dello Sport"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Milan si prepara senza Cisse per il derby."
+},
+"ospite": {
+"assenti": [
+{
+"nome": "McLean",
+"ruolo": "portiere",
+"importanza": "stella",
+"motivo": "altro",
+"certezza": "probabile",
+"titoli": [
+29
+],
+"fonte": "STARTING XIs: McLean, Mattsson and Schwartau missing - The Pink Un"
+},
+{
+"nome": "Mattsson",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "altro",
+"certezza": "probabile",
+"titoli": [
+29
+],
+"fonte": "STARTING XIs: McLean, Mattsson and Schwartau missing - The Pink Un"
+},
+{
+"nome": "Schwartau",
+"ruolo": "centrocampista",
+"importanza": "riserva",
+"motivo": "altro",
+"certezza": "probabile",
+"titoli": [
+29
+],
+"fonte": "STARTING XIs: McLean, Mattsson and Schwartau missing - The Pink Un"
+},
+{
+"nome": "Antonio",
+"ruolo": "attaccante",
+"importanza": "stella",
+"motivo": "altro",
+"certezza": "probabile",
+"titoli": [
+32
+],
+"fonte": "Norwich tormentor Antonio ruled out of Carrow Road clash - The Pink Un"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Norwich manca McLean, Mattsson, Schwartau e Antonio."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita a porte aperte, campo neutro."
+},
+"n_titoli": 36
+}
+},
 "_ultima": {
 "Andorra|Burgos|2026-10-26": {
 "data": "2026-10-26",
@@ -40905,21 +41458,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione su assenti"
+"note": ""
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione su assenti"
+"note": ""
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "nessuna informazione su porte chiuse"
+"note": ""
 },
-"n_titoli": 31
+"n_titoli": 30
 }
 },
 "Atromitos|Volos NFC|2026-11-02": {
@@ -40954,22 +41507,22 @@
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": "nessuna informazione su assenti"
+"clima": "negativo",
+"note": "5 assenti per la partita, nomi non specificati nei titoli."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "negativo",
-"note": "partita con 5 assenti indicati"
+"clima": "neutro",
+"note": "Preparazioni completate, nessuna assenza segnalata."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "nessuna indicazione di chiusura"
+"note": "Nessuna informazione specifica su porte chiuse o campo neutro."
 },
-"n_titoli": 12
+"n_titoli": 13
 }
 },
 "Kalamata|Iraklis|2026-11-02": {
@@ -41004,11 +41557,33 @@
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": "Nessuna assenza segnalata"
+"clima": "negativo",
+"note": "Squadra in crisi, Aquilani punta su Idzes e Matic per il rilancio."
 },
 "ospite": {
 "assenti": [
+{
+"nome": "Pedro",
+"ruolo": "attaccante",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+29
+],
+"fonte": "La probabile formazione della Fiorentina: Vanoli va di continuità e può sacrificare ancora Oulai. Niente Pedro e Valdepenas - FiorentinaNews.com"
+},
+{
+"nome": "Valdepenas",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+29
+],
+"fonte": "La probabile formazione della Fiorentina: Vanoli va di continuità e può sacrificare ancora Oulai. Niente Pedro e Valdepenas - FiorentinaNews.com"
+},
 {
 "nome": "Atta",
 "ruolo": "attaccante",
@@ -41018,18 +41593,9 @@
 "titoli": [
 48
 ],
-"fonte": "Fiorentina, i convocati per il Sassuolo: out Atta, Pongracic e Ranieri - La Gazzetta dello Sport"
-},
-{
-"nome": "Pongracic",
-"ruolo": "difensore",
-"importanza": "titolare",
-"motivo": "infortunio",
-"certezza": "certo",
-"titoli": [
-48
-],
-"fonte": "Fiorentina, i convocati per il Sassuolo: out Atta, Pongracic e Ranieri - La Gazzetta dello Sport"
+"fonte": "Fiorentina, i convocati per il Sassuolo: out Atta, Pongracic e Ranieri - La Gazzetta dello Sport",
+"visto": "2026-11-02",
+"memoria": true
 },
 {
 "nome": "Ranieri",
@@ -41040,18 +41606,20 @@
 "titoli": [
 48
 ],
-"fonte": "Fiorentina, i convocati per il Sassuolo: out Atta, Pongracic e Ranieri - La Gazzetta dello Sport"
+"fonte": "Fiorentina, i convocati per il Sassuolo: out Atta, Pongracic e Ranieri - La Gazzetta dello Sport",
+"visto": "2026-11-02",
+"memoria": true
 }
 ],
-"turnover": "nessuno",
+"turnover": "medio",
 "nuovo_allenatore": false,
-"clima": "negativo",
-"note": "Assenze per infortunio"
+"clima": "neutro",
+"note": "Vanoli cerca continuità, possibile sacrificio di Oulai a favore di Fagioli."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita importante per entrambe le squadre"
+"note": "Scontro diretto per allontanarsi dalla zona rossa."
 },
 "n_titoli": 50
 }
@@ -41085,35 +41653,58 @@
 "data": "2026-11-02",
 "r": {
 "casa": {
-"assenti": [],
-"turnover": "nessuno",
+"assenti": [
+{
+"nome": "Kristensen",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+14
+],
+"fonte": "Atalanta: Kristensen e Gaetano out per il Parma, rientro dopo la sosta - Sportmediaset"
+},
+{
+"nome": "Gaetano",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+14
+],
+"fonte": "Atalanta: Kristensen e Gaetano out per il Parma, rientro dopo la sosta - Sportmediaset"
+}
+],
+"turnover": "medio",
 "nuovo_allenatore": false,
 "clima": "negativo",
-"note": "emergenza infortuni, pressione per punti"
+"note": "Emergenza infortuni grave, dieci ai box, mezza squadra assente"
 },
 "ospite": {
 "assenti": [
 {
 "nome": "Bernabè",
-"ruolo": "attaccante",
+"ruolo": "difensore",
 "importanza": "titolare",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-27
+26
 ],
 "fonte": "I convocati del Gila per il match di Bergamo. Non c'è Bernabè (risentimento muscolare) - Gazzetta di Parma"
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "positivo",
-"note": "assenza per infortunio muscolare"
+"clima": "negativo",
+"note": "Gilardino punta su Troilo in difesa, Daffara in porta"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "partita decisiva per classifica"
+"note": "Atalanta in piena emergenza, Parma con Bernabè assente"
 },
 "n_titoli": 50
 }
@@ -41126,21 +41717,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": ""
+"note": "Nessuna informazione disponibile nei titoli."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": ""
+"note": "Nessuna informazione rilevante nei titoli."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": ""
+"note": "Nessuna informazione particolare disponibile."
 },
-"n_titoli": 4
+"n_titoli": 5
 }
 },
 "Red Star|Nancy|2026-11-02": {
@@ -41151,21 +41742,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione sugli assenti"
+"note": "Nessuna informazione rilevante nei titoli."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione sugli assenti"
+"note": "Nessuna informazione rilevante nei titoli."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "nessuna informazione su porte chiuse"
+"note": "Nessuna informazione rilevante nei titoli."
 },
-"n_titoli": 7
+"n_titoli": 3
 }
 },
 "Reims|Sochaux|2026-11-02": {
@@ -41176,21 +41767,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione rilevante"
+"note": "Nessuna informazione rilevante nei titoli."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione rilevante"
+"note": "Nessuna informazione rilevante nei titoli."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "nessuna informazione rilevante"
+"note": "Nessuna informazione specifica sulla partita."
 },
-"n_titoli": 4
+"n_titoli": 3
 }
 },
 "La Coruna|Osasuna|2026-11-02": {
@@ -41207,7 +41798,9 @@
 "titoli": [
 1
 ],
-"fonte": "Arrasate confirma cambios ante el Deportivo y actualiza las lesiones de Oroz, Herrando y Del Castillo - Comuniate"
+"fonte": "Arrasate confirma cambios ante el Deportivo y actualiza las lesiones de Oroz, Herrando y Del Castillo - Comuniate",
+"visto": "2026-11-02",
+"memoria": true
 },
 {
 "nome": "Herrando",
@@ -41218,7 +41811,9 @@
 "titoli": [
 1
 ],
-"fonte": "Arrasate confirma cambios ante el Deportivo y actualiza las lesiones de Oroz, Herrando y Del Castillo - Comuniate"
+"fonte": "Arrasate confirma cambios ante el Deportivo y actualiza las lesiones de Oroz, Herrando y Del Castillo - Comuniate",
+"visto": "2026-11-02",
+"memoria": true
 },
 {
 "nome": "Del Castillo",
@@ -41229,27 +41824,29 @@
 "titoli": [
 1
 ],
-"fonte": "Arrasate confirma cambios ante el Deportivo y actualiza las lesiones de Oroz, Herrando y Del Castillo - Comuniate"
+"fonte": "Arrasate confirma cambios ante el Deportivo y actualiza las lesiones de Oroz, Herrando y Del Castillo - Comuniate",
+"visto": "2026-11-02",
+"memoria": true
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "assenze per infortuni"
+"note": "Tensioni politiche in città per eventi Vox e proteste Blocus"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna assenza segnalata"
+"note": ""
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "partita regolare"
+"note": "Possibili tensioni in città per proteste politiche"
 },
-"n_titoli": 19
+"n_titoli": 15
 }
 },
 "Mallorca|Cadiz|2026-11-02": {
@@ -41260,21 +41857,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": ""
+"note": "Nessuna informazione su giocatori assenti."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": ""
+"note": "Nessuna informazione su giocatori assenti."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": ""
+"note": "Nessuna indicazione di porte chiuse."
 },
-"n_titoli": 31
+"n_titoli": 34
 }
 },
 "Newcastle|Everton|2026-11-02": {
@@ -41282,6 +41879,18 @@
 "r": {
 "casa": {
 "assenti": [
+{
+"nome": "Matias Fernandez-Pardo",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+11,
+37
+],
+"fonte": "Will Osula, Matias Fernandez-Pardo & Lewis Miley: Newcastle United injury return dates - Shields Gazette"
+},
 {
 "nome": "Branthwaite",
 "ruolo": "difensore",
@@ -41291,13 +41900,15 @@
 "titoli": [
 7
 ],
-"fonte": "Branthwaite Injury Update: Concussion Doubt for Newcastle, Moyes Confident - The False 9"
+"fonte": "Branthwaite Injury Update: Concussion Doubt for Newcastle, Moyes Confident - The False 9",
+"visto": "2026-11-02",
+"memoria": true
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "negativo",
-"note": "Numerosi dubbi per titolari chiave"
+"clima": "neutro",
+"note": "Wissa torna disponibile dopo l'infortunio."
 },
 "ospite": {
 "assenti": [
@@ -41310,7 +41921,9 @@
 "titoli": [
 26
 ],
-"fonte": "James Garner makes honest Everton injury admission as fresh Thierno Barry verdict delivered - Liverpool Echo"
+"fonte": "James Garner makes honest Everton injury admission as fresh Thierno Barry verdict delivered - Liverpool Echo",
+"visto": "2026-11-02",
+"memoria": true
 },
 {
 "nome": "Thierno Barry",
@@ -41321,20 +41934,22 @@
 "titoli": [
 26
 ],
-"fonte": "James Garner makes honest Everton injury admission as fresh Thierno Barry verdict delivered - Liverpool Echo"
+"fonte": "James Garner makes honest Everton injury admission as fresh Thierno Barry verdict delivered - Liverpool Echo",
+"visto": "2026-11-02",
+"memoria": true
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "negativo",
-"note": "Assenze importanti per infortuni e squalifica"
+"note": "Grealish squalificato per violazione disciplinare."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Entrambe le squadre con assenti chiave"
+"note": "Match di Premier League tra Newcastle ed Everton."
 },
-"n_titoli": 38
+"n_titoli": 37
 }
 },
 "Benfica|Alverca|2026-11-02": {
@@ -41345,21 +41960,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione su assenti"
+"note": "Nessun assente specifico nei titoli."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione su assenti"
+"note": "Julián Martínez disponibile per la partita."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "nessuna informazione su porte chiuse"
+"note": "Nessuna informazione rilevante nei titoli."
 },
-"n_titoli": 11
+"n_titoli": 15
 }
 },
 "Gil Vicente|Guimaraes|2026-11-02": {
@@ -41394,22 +42009,22 @@
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": "nessuna informazione su assenti"
+"clima": "positivo",
+"note": "Titolo [2] prevede vittoria 3-0, fiducia nella rosa."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": "nessuna informazione su assenti"
+"clima": "positivo",
+"note": "Vittoria 4-2 a Leverkusen nell'ultima di Bundesliga."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "nessuna informazione su porte chiuse"
+"note": "Champions League, nessuna info specifica su assenze nei titoli."
 },
-"n_titoli": 48
+"n_titoli": 46
 }
 },
 "Shakhtar Donetsk|Sp Lisbon|2026-11-03": {
@@ -41419,12 +42034,12 @@
 "assenti": [
 {
 "nome": "Pedrinho",
-"ruolo": "attaccante",
+"ruolo": "centrocampista",
 "importanza": "titolare",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-6
+4
 ],
 "fonte": "Shakhtar Donetsk Adjusts Champions League Roster After Pedrinho’s Injury, Introducing Prosper Oba - 112.ua"
 }
@@ -41432,21 +42047,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna novità rilevante"
+"note": "Roster Champions League già modificato per l'infortunio di Pedrinho."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna novità"
+"note": "Nessuna informazione disponibile."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "partita di Champions League"
+"note": "Nessuna informazione rilevante."
 },
-"n_titoli": 6
+"n_titoli": 4
 }
 },
 "Blackburn|Stoke|2026-11-03": {
@@ -41457,21 +42072,34 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna assenza segnalata nei titoli recenti"
+"note": "Attaccante con nuovo infortunio ma non nominato nei titoli"
 },
 "ospite": {
-"assenti": [],
+"assenti": [
+{
+"nome": "Lamine Cisse",
+"ruolo": "attaccante",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+15,
+16
+],
+"fonte": "Huge Stoke City injury blow confirmed as Lamine Cisse set for period on sidelines - The Sentinel"
+}
+],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": "Nessuna assenza segnalata nei titoli recenti"
+"clima": "negativo",
+"note": "Grave infortunio a Cisse, uomo chiave della squadra"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Nessuna informazione su partita a porte chiuse"
+"note": ""
 },
-"n_titoli": 16
+"n_titoli": 20
 }
 },
 "Charlton|Bolton|2026-11-03": {
@@ -41482,7 +42110,7 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna novità rilevante"
+"note": "Cinque cambi per Oxford, nessun dettaglio specifico per Bolton."
 },
 "ospite": {
 "assenti": [
@@ -41495,7 +42123,9 @@
 "titoli": [
 10
 ],
-"fonte": "Wanderers boss insists the 'door is still open' for injured striker John McAtee - The Bolton News"
+"fonte": "Wanderers boss insists the 'door is still open' for injured striker John McAtee - The Bolton News",
+"visto": "2026-11-02",
+"memoria": true
 },
 {
 "nome": "Ryan Hardie",
@@ -41506,40 +42136,54 @@
 "titoli": [
 11
 ],
-"fonte": "'Bad timing' - Injury denies Ryan Hardie first Bolton start against Bristol City - The Bolton News"
+"fonte": "'Bad timing' - Injury denies Ryan Hardie first Bolton start against Bristol City - The Bolton News",
+"visto": "2026-11-02",
+"memoria": true
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "negativo",
-"note": "due attaccanti chiave fuori"
+"note": "Diverse assenze per infortunio, McAtee non ancora disponibile."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "partita regolare senza restrizioni"
+"note": "Nessuna informazione specifica sulla partita."
 },
-"n_titoli": 23
+"n_titoli": 18
 }
 },
 "Derby|Norwich|2026-11-03": {
 "data": "2026-11-03",
 "r": {
 "casa": {
-"assenti": [],
+"assenti": [
+{
+"nome": "Cisse",
+"ruolo": "difensore",
+"importanza": "stella",
+"motivo": "altro",
+"certezza": "probabile",
+"titoli": [
+4
+],
+"fonte": "Diawara titolare e non Bartesaghi, Cisse fuori: lo strano Milan di Amorim per il derby - La Gazzetta dello Sport"
+}
+],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione su assenze"
+"note": "Milan si prepara senza Cisse per il derby."
 },
 "ospite": {
 "assenti": [
 {
 "nome": "McLean",
-"ruolo": "attaccante",
-"importanza": "titolare",
+"ruolo": "portiere",
+"importanza": "stella",
 "motivo": "altro",
-"certezza": "certo",
+"certezza": "probabile",
 "titoli": [
 29
 ],
@@ -41547,10 +42191,10 @@
 },
 {
 "nome": "Mattsson",
-"ruolo": "portiere",
+"ruolo": "difensore",
 "importanza": "titolare",
 "motivo": "altro",
-"certezza": "certo",
+"certezza": "probabile",
 "titoli": [
 29
 ],
@@ -41558,10 +42202,10 @@
 },
 {
 "nome": "Schwartau",
-"ruolo": "difensore",
-"importanza": "titolare",
+"ruolo": "centrocampista",
+"importanza": "riserva",
 "motivo": "altro",
-"certezza": "certo",
+"certezza": "probabile",
 "titoli": [
 29
 ],
@@ -41569,10 +42213,10 @@
 },
 {
 "nome": "Antonio",
-"ruolo": "centrocampista",
-"importanza": "titolare",
+"ruolo": "attaccante",
+"importanza": "stella",
 "motivo": "altro",
-"certezza": "certo",
+"certezza": "probabile",
 "titoli": [
 32
 ],
@@ -41581,13 +42225,13 @@
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "negativo",
-"note": "tre titolari e un centrocampista assenti"
+"clima": "neutro",
+"note": "Norwich manca McLean, Mattsson, Schwartau e Antonio."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "nessuna restrizione di pubblico"
+"note": "Partita a porte aperte, campo neutro."
 },
 "n_titoli": 36
 }
@@ -46159,21 +46803,33 @@
 "data": "2026-11-02",
 "casa": {},
 "ospite": {
-"atta": {
-"nome": "Atta",
+"pedro": {
+"nome": "Pedro",
 "ruolo": "attaccante",
 "importanza": "titolare",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-48
+29
 ],
-"fonte": "Fiorentina, i convocati per il Sassuolo: out Atta, Pongracic e Ranieri - La Gazzetta dello Sport",
+"fonte": "La probabile formazione della Fiorentina: Vanoli va di continuità e può sacrificare ancora Oulai. Niente Pedro e Valdepenas - FiorentinaNews.com",
 "visto": "2026-11-02"
 },
-"pongracic": {
-"nome": "Pongracic",
+"valdepenas": {
+"nome": "Valdepenas",
 "ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+29
+],
+"fonte": "La probabile formazione della Fiorentina: Vanoli va di continuità e può sacrificare ancora Oulai. Niente Pedro e Valdepenas - FiorentinaNews.com",
+"visto": "2026-11-02"
+},
+"atta": {
+"nome": "Atta",
+"ruolo": "attaccante",
 "importanza": "titolare",
 "motivo": "infortunio",
 "certezza": "certo",
@@ -46204,16 +46860,41 @@
 },
 "Atalanta|Parma|2026-11-02": {
 "data": "2026-11-02",
-"casa": {},
-"ospite": {
-"bernabè": {
-"nome": "Bernabè",
-"ruolo": "attaccante",
+"casa": {
+"kristensen": {
+"nome": "Kristensen",
+"ruolo": "difensore",
 "importanza": "titolare",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-27
+14
+],
+"fonte": "Atalanta: Kristensen e Gaetano out per il Parma, rientro dopo la sosta - Sportmediaset",
+"visto": "2026-11-02"
+},
+"gaetano": {
+"nome": "Gaetano",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+14
+],
+"fonte": "Atalanta: Kristensen e Gaetano out per il Parma, rientro dopo la sosta - Sportmediaset",
+"visto": "2026-11-02"
+}
+},
+"ospite": {
+"bernabè": {
+"nome": "Bernabè",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+26
 ],
 "fonte": "I convocati del Gila per il match di Bergamo. Non c'è Bernabè (risentimento muscolare) - Gazzetta di Parma",
 "visto": "2026-11-02"
@@ -46285,6 +46966,19 @@
 "Newcastle|Everton|2026-11-02": {
 "data": "2026-11-02",
 "casa": {
+"matias fernandez-pardo": {
+"nome": "Matias Fernandez-Pardo",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+11,
+37
+],
+"fonte": "Will Osula, Matias Fernandez-Pardo & Lewis Miley: Newcastle United injury return dates - Shields Gazette",
+"visto": "2026-11-02"
+},
 "branthwaite": {
 "nome": "Branthwaite",
 "ruolo": "difensore",
@@ -46345,12 +47039,12 @@
 "casa": {
 "pedrinho": {
 "nome": "Pedrinho",
-"ruolo": "attaccante",
+"ruolo": "centrocampista",
 "importanza": "titolare",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-6
+4
 ],
 "fonte": "Shakhtar Donetsk Adjusts Champions League Roster After Pedrinho’s Injury, Introducing Prosper Oba - 112.ua",
 "visto": "2026-11-02"
@@ -46361,7 +47055,21 @@
 "Blackburn|Stoke|2026-11-03": {
 "data": "2026-11-03",
 "casa": {},
-"ospite": {}
+"ospite": {
+"lamine cisse": {
+"nome": "Lamine Cisse",
+"ruolo": "attaccante",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+15,
+16
+],
+"fonte": "Huge Stoke City injury blow confirmed as Lamine Cisse set for period on sidelines - The Sentinel",
+"visto": "2026-11-02"
+}
+}
 },
 "Charlton|Bolton|2026-11-03": {
 "data": "2026-11-03",
@@ -46395,14 +47103,27 @@
 },
 "Derby|Norwich|2026-11-03": {
 "data": "2026-11-03",
-"casa": {},
+"casa": {
+"cisse": {
+"nome": "Cisse",
+"ruolo": "difensore",
+"importanza": "stella",
+"motivo": "altro",
+"certezza": "probabile",
+"titoli": [
+4
+],
+"fonte": "Diawara titolare e non Bartesaghi, Cisse fuori: lo strano Milan di Amorim per il derby - La Gazzetta dello Sport",
+"visto": "2026-11-02"
+}
+},
 "ospite": {
 "mclean": {
 "nome": "McLean",
-"ruolo": "attaccante",
-"importanza": "titolare",
+"ruolo": "portiere",
+"importanza": "stella",
 "motivo": "altro",
-"certezza": "certo",
+"certezza": "probabile",
 "titoli": [
 29
 ],
@@ -46411,10 +47132,10 @@
 },
 "mattsson": {
 "nome": "Mattsson",
-"ruolo": "portiere",
+"ruolo": "difensore",
 "importanza": "titolare",
 "motivo": "altro",
-"certezza": "certo",
+"certezza": "probabile",
 "titoli": [
 29
 ],
@@ -46423,10 +47144,10 @@
 },
 "schwartau": {
 "nome": "Schwartau",
-"ruolo": "difensore",
-"importanza": "titolare",
+"ruolo": "centrocampista",
+"importanza": "riserva",
 "motivo": "altro",
-"certezza": "certo",
+"certezza": "probabile",
 "titoli": [
 29
 ],
@@ -46435,10 +47156,10 @@
 },
 "antonio": {
 "nome": "Antonio",
-"ruolo": "centrocampista",
-"importanza": "titolare",
+"ruolo": "attaccante",
+"importanza": "stella",
 "motivo": "altro",
-"certezza": "certo",
+"certezza": "probabile",
 "titoli": [
 32
 ],
