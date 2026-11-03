@@ -39060,6 +39060,858 @@
 "n_titoli": 34
 }
 },
+"1cbce2ccf508c47f4c76c2fc192c6cea3e697e9d": {
+"data": "2026-11-03",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna novità rilevante"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna novità rilevante"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "partita regolare"
+},
+"n_titoli": 20
+}
+},
+"1747fbe37abfd9b325e26618f74b6b656c5f03a2": {
+"data": "2026-11-03",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna novità rilevante"
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Jack Nicholls",
+"ruolo": "portiere",
+"importanza": "titolare",
+"motivo": "squalifica",
+"certezza": "certo",
+"titoli": [
+15
+],
+"fonte": "Jack Nicholls receives hefty suspension - The Bolton News"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "sospensione confermata"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "partita regolare senza restrizioni"
+},
+"n_titoli": 23
+}
+},
+"1485ca29b8a46982366c925c035e795eaf38b060": {
+"data": "2026-11-03",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione sugli assenti"
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Antonio",
+"ruolo": "attaccante",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+31
+],
+"fonte": "Norwich tormentor Antonio ruled out of Carrow Road clash - Eastern Daily Press"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "assenze confermate"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna restrizione di pubblico"
+},
+"n_titoli": 32
+}
+},
+"a34590e423725440c2a2cf2b4bff46465bdc8210": {
+"data": "2026-11-03",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": ""
+},
+"n_titoli": 7
+}
+},
+"93a96a4a4b9d92040c57faab3abb7449cd60e944": {
+"data": "2026-11-03",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Infortuni chiave colpiscono la squadra"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Sospensione di un titolare"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita importante di League Two"
+},
+"n_titoli": 13
+}
+},
+"8a5c8e9b46fb836c1d3a444523139766b5981fb9": {
+"data": "2026-11-03",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenti"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Eustaquio dubbio per infortunio"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna informazione su porte chiuse"
+},
+"n_titoli": 23
+}
+},
+"2cb6beff40f5b574997c325f3e10c7461e4214cd": {
+"data": "2026-11-03",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "positivo",
+"note": "Nessun assente rilevante nei titoli disponibili."
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Liam Kitching",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "squalifica",
+"certezza": "certo",
+"titoli": [
+14
+],
+"fonte": "Sheffield United's Liam Kitching Banned for Preston Trip After Booking v Wrexham - 懂球帝"
+},
+{
+"nome": "Bamford",
+"ruolo": "centrocampista",
+"importanza": "stella",
+"motivo": "infortunio",
+"certezza": "in dubbio",
+"titoli": [
+1,
+3,
+19
+],
+"fonte": "SUFC News: United dealt fresh injury blow pre-Wrexham amid Bamford update - The Star"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Kitching squalificato, Bamford e Phillips in dubbio per infortunio."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Sheffield United con diverse assenze per squalifica e infortuni."
+},
+"n_titoli": 20
+}
+},
+"ed516bc9c028dd20cdc301f7ead67b69856141c6": {
+"data": "2026-11-03",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna novità rilevante"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "due giocatori chiave in dubbio"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "partita regolare senza restrizioni"
+},
+"n_titoli": 14
+}
+},
+"dfe82dcc569a0a040f3fe9c175e22d68a62391ff": {
+"data": "2026-11-03",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Alfie Lloyd",
+"ruolo": "attaccante",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+3,
+4
+],
+"fonte": "QPR forward Lloyd facing lengthy spell out - West London Sport"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Diverse assenze in attacco, Lloyd out fino a fine 2026"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Satpayev infortunato, Amdouni in recupero"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "QPR in difficoltà per infortuni in attacco"
+},
+"n_titoli": 17
+}
+},
+"668efb456590e809909179d2d13a271a11b01a34": {
+"data": "2026-11-03",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Jack Nicholls",
+"ruolo": "portiere",
+"importanza": "riserva",
+"motivo": "squalifica",
+"certezza": "certo",
+"titoli": [
+3
+],
+"fonte": "Jack Nicholls receives hefty suspension - Watford Observer"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "sospensione pesante"
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Conor McGrandles",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "probabile",
+"titoli": [
+7
+],
+"fonte": "Lincoln City Injury Latest: Conor McGrandles And Ben House Updates - The Stacey West"
+},
+{
+"nome": "Ben House",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "probabile",
+"titoli": [
+7
+],
+"fonte": "Lincoln City Injury Latest: Conor McGrandles And Ben House Updates - The Stacey West"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "assenze per infortuni"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna informazione su porte chiuse"
+},
+"n_titoli": 12
+}
+},
+"63df19b735a53e7a384633987646919ab30d7409": {
+"data": "2026-11-03",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Power",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+3
+],
+"fonte": "Caldwell provides Latics injury update, including Power and Trevitt - Wigan Today"
+},
+{
+"nome": "Trevitt",
+"ruolo": "portiere",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+3
+],
+"fonte": "Caldwell provides Latics injury update, including Power and Trevitt - Wigan Today"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Infortuni chiave per Wigan"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna novità su Mansfield"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita regolare senza restrizioni"
+},
+"n_titoli": 4
+}
+},
+"e59747a792a6838bfcfd15c0c38b101cf4f161ec": {
+"data": "2026-11-03",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Dubbio infortuni, nessun altro problema"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Aggiornamento infortuni positivo, nessuna assenza confermata"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita regolare, nessuna restrizione"
+},
+"n_titoli": 15
+}
+},
+"dd8c58be989cecfae3a2971774cbe02bbc822714": {
+"data": "2026-11-03",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Jarrod Bowen",
+"ruolo": "attaccante",
+"importanza": "stella",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+1
+],
+"fonte": "Jarrod Bowen injury revelation: Nuno confirms latest ahead of West Ham vs West Brom - Yahoo"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Numerosi infortuni, morale basso"
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Eckert",
+"ruolo": "attaccante",
+"importanza": "stella",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+9
+],
+"fonte": "Eckert issues latest update on injured Southampton striker - Hayters"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Assenza attaccante chiave"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Entrambe le squadre con assenze importanti"
+},
+"n_titoli": 12
+}
+},
+"21a4dc1b0e4057f9a6c2819f78a9b20deb656661": {
+"data": "2026-11-04",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Samba con fastidio alla coscia, assente contro Nice 5 giorni fa"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessun titolo rilevante sul calcio"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione specifica nei titoli"
+},
+"n_titoli": 9
+}
+},
+"2a57b10e2205d2e94397e3538ea3ae6b3b1db4b8": {
+"data": "2026-11-04",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessun assente specifico menzionato nei titoli."
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Tchouaméni",
+"ruolo": "centrocampista",
+"importanza": "stella",
+"motivo": "altro",
+"certezza": "certo",
+"titoli": [
+23,
+27,
+28
+],
+"fonte": "Dos grandes sorpresas en la convocatoria del Real Madrid para Atenas: se caen Tchouaméni y Arda Güler - Libertad Digital"
+},
+{
+"nome": "Arda Güler",
+"ruolo": "attaccante",
+"importanza": "titolare",
+"motivo": "altro",
+"certezza": "certo",
+"titoli": [
+23,
+27,
+28
+],
+"fonte": "Dos grandes sorpresas en la convocatoria del Real Madrid para Atenas: se caen Tchouaméni y Arda Güler - Libertad Digital"
+},
+{
+"nome": "Molero",
+"ruolo": "centrocampista",
+"importanza": "riserva",
+"motivo": "altro",
+"certezza": "certo",
+"titoli": [
+33
+],
+"fonte": "Molero y Tchouaméni, descartados: Mourinho anuncia la lista del Real Madrid para enfrentar al AEK Atenas - Goal.com"
+}
+],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Mourinho prepara rotazione; Valverde e Vinicius tornano disponibili."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Champions League, giornata 4."
+},
+"n_titoli": 36
+}
+},
+"ec0d66eb24dbf30a6032df7b4cb6840e6ed6966b": {
+"data": "2026-11-04",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Tensione interna dopo sconfitta, decisioni di esclusione dalla rosa."
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Ryan Gravenberch",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+32,
+33,
+50
+],
+"fonte": "Liverpool news: Injured Ryan Gravenberch misses Fenerbahce trip - BBC"
+},
+{
+"nome": "Jeremie Frimpong",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+31
+],
+"fonte": "Gravenberch, Frimpong, Ekitike, Leoni - Liverpool injury news and return dates ahead of Fenerbahce - Liverpool Echo"
+},
+{
+"nome": "Hugo Ekitike",
+"ruolo": "attaccante",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+31
+],
+"fonte": "Gravenberch, Frimpong, Ekitike, Leoni - Liverpool injury news and return dates ahead of Fenerbahce - Liverpool Echo"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Rosa ridotta a 22 per la trasferta, diversi infortuni."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Sfida di Champions League a Istanbul."
+},
+"n_titoli": 50
+}
+},
+"7f44c69d9b45a4e796d282a4c895b69ab9ead26c": {
+"data": "2026-11-04",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione rilevante nei titoli forniti."
+},
+"n_titoli": 2
+}
+},
+"212890f036ce3134acbbeba339bb29268a29eabe": {
+"data": "2026-11-04",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Isaak Davies",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+1,
+2,
+3
+],
+"fonte": "Isaak Davies hamstring issue adds to Cardiff City injury crisis - BBC"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Crisi infortuni grave, fino a 12 giocatori a rischio"
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Kyle Walker-Peters",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "in dubbio",
+"titoli": [
+20
+],
+"fonte": "West Ham daily round-up: Nuno replacement shortlist, Kyle Walker-Peters injury update - Yahoo Sports"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": true,
+"clima": "negativo",
+"note": "Nuno esonerato, Scott Parker in arrivo come nuovo tecnico"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Cardiff decimato dagli infortuni, West Ham in piena crisi"
+},
+"n_titoli": 23
+}
+},
+"7a98ef5a456bfb2199e2e3b8da6ac5a7dfc51279": {
+"data": "2026-11-04",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Tre infortuni segnalati ma nessun nome specifico nei titoli."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "positivo",
+"note": "Grande boost per Reading secondo i titoli."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione specifica sulla partita nei titoli."
+},
+"n_titoli": 11
+}
+},
+"964a66ba811c2dad456e6953da448fe32e797927": {
+"data": "2026-11-04",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Jack Nicholls",
+"ruolo": "difensore",
+"importanza": "stella",
+"motivo": "squalifica",
+"certezza": "certo",
+"titoli": [
+3
+],
+"fonte": "Jack Nicholls receives hefty suspension - Oxford Mail"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nicholls sospeso, squadra in attesa di sostituzione"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna assenza confermata"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita in stadio normale"
+},
+"n_titoli": 10
+}
+},
+"5dc72ebf1253651f2c992dd9777639390234b2d8": {
+"data": "2026-11-04",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Sam Smith",
+"ruolo": "attaccante",
+"importanza": "stella",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+1
+],
+"fonte": "Wrexham suffer 'significant' Smith injury blow - BBC"
+},
+{
+"nome": "Callum O'Hare",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "probabile",
+"titoli": [
+7
+],
+"fonte": "Wrexham face anxious wait over Callum O'Hare injury ahead of Middlesbrough clash - Wrexham and Flintshire News, Sport, Events | The Leader"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Infortuni chiave per Wrexham, ma squadra pronta."
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Jack Nicholls",
+"ruolo": "attaccante",
+"importanza": "stella",
+"motivo": "squalifica",
+"certezza": "certo",
+"titoli": [
+17
+],
+"fonte": "Jack Nicholls receives hefty suspension - The Northern Echo"
+},
+{
+"nome": "Rokas Pukstas",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+14
+],
+"fonte": "Rokas Pukstas injury latest and Kim Hellberg's Middlesbrough team selection plan - The Northern Echo"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Middlesbrough affronta assenze, ma con forza difensiva."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita in campo aperto, nessuna chiusura."
+},
+"n_titoli": 23
+}
+},
+"03163108759d6f268f4e6a8ab3a974499d29fb39": {
+"data": "2026-11-04",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Allenatore parla di fitness di un attaccante e rientri da infortunio."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Allenatore attribuisce infortuni alla fisicità del Championship."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessun assente specifico identificabile dai titoli."
+},
+"n_titoli": 17
+}
+},
 "_ultima": {
 "Andorra|Burgos|2026-10-26": {
 "data": "2026-10-26",
@@ -47710,14 +48562,14 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "sospeso per la partita"
+"note": "nessuna novità rilevante"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
 "note": "partita regolare"
 },
-"n_titoli": 12
+"n_titoli": 20
 }
 },
 "Charlton|Bolton|2026-11-03": {
@@ -47734,12 +48586,12 @@
 "assenti": [
 {
 "nome": "Jack Nicholls",
-"ruolo": "difensore",
+"ruolo": "portiere",
 "importanza": "titolare",
 "motivo": "squalifica",
 "certezza": "certo",
 "titoli": [
-9
+15
 ],
 "fonte": "Jack Nicholls receives hefty suspension - The Bolton News"
 },
@@ -47773,14 +48625,14 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "sospeso per sanzione"
+"note": "sospensione confermata"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "partita regolare"
+"note": "partita regolare senza restrizioni"
 },
-"n_titoli": 19
+"n_titoli": 23
 }
 },
 "Derby|Norwich|2026-11-03": {
@@ -47805,10 +48657,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione rilevante"
+"note": "nessuna informazione sugli assenti"
 },
 "ospite": {
 "assenti": [
+{
+"nome": "Antonio",
+"ruolo": "attaccante",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+31
+],
+"fonte": "Norwich tormentor Antonio ruled out of Carrow Road clash - Eastern Daily Press"
+},
 {
 "nome": "Jack Nicholls",
 "ruolo": "difensore",
@@ -47818,18 +48681,9 @@
 "titoli": [
 27
 ],
-"fonte": "Jack Nicholls receives hefty suspension - Norwich Evening News"
-},
-{
-"nome": "Antonio",
-"ruolo": "centrocampista",
-"importanza": "titolare",
-"motivo": "altro",
-"certezza": "certo",
-"titoli": [
-33
-],
-"fonte": "Norwich tormentor Antonio ruled out of Carrow Road clash - Norwich Evening News"
+"fonte": "Jack Nicholls receives hefty suspension - Norwich Evening News",
+"visto": "2026-11-03",
+"memoria": true
 },
 {
 "nome": "McLean",
@@ -47874,14 +48728,14 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "due assenti confermati"
+"note": "assenze confermate"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "nessuna informazione su porte chiuse"
+"note": "nessuna restrizione di pubblico"
 },
-"n_titoli": 37
+"n_titoli": 32
 }
 },
 "Huddersfield|Luton|2026-11-03": {
@@ -47892,19 +48746,19 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione su assenti"
+"note": ""
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione su assenti"
+"note": ""
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "nessuna informazione su porte chiuse"
+"note": ""
 },
 "n_titoli": 7
 }
@@ -47916,8 +48770,8 @@
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": ""
+"clima": "negativo",
+"note": "Infortuni chiave colpiscono la squadra"
 },
 "ospite": {
 "assenti": [
@@ -47930,20 +48784,22 @@
 "titoli": [
 16
 ],
-"fonte": "Jack Nicholls receives hefty suspension - Oldham Times"
+"fonte": "Jack Nicholls receives hefty suspension - Oldham Times",
+"visto": "2026-11-03",
+"memoria": true
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": ""
+"note": "Sospensione di un titolare"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": ""
+"note": "Partita importante di League Two"
 },
-"n_titoli": 16
+"n_titoli": 13
 }
 },
 "Portsmouth|Swansea|2026-11-03": {
@@ -47953,22 +48809,22 @@
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "negativo",
-"note": "molti infortuni ma senza nomi specifici"
+"clima": "neutro",
+"note": "nessuna informazione su assenti"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Eustaquio dubbio per la partita"
+"note": "Eustaquio dubbio per infortunio"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "partita regolare senza restrizioni"
+"note": "nessuna informazione su porte chiuse"
 },
-"n_titoli": 27
+"n_titoli": 23
 }
 },
 "Preston|Sheffield United|2026-11-03": {
@@ -47978,8 +48834,8 @@
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": ""
+"clima": "positivo",
+"note": "Nessun assente rilevante nei titoli disponibili."
 },
 "ospite": {
 "assenti": [
@@ -47990,22 +48846,35 @@
 "motivo": "squalifica",
 "certezza": "certo",
 "titoli": [
-16
+14
 ],
 "fonte": "Sheffield United's Liam Kitching Banned for Preston Trip After Booking v Wrexham - 懂球帝"
+},
+{
+"nome": "Bamford",
+"ruolo": "centrocampista",
+"importanza": "stella",
+"motivo": "infortunio",
+"certezza": "in dubbio",
+"titoli": [
+1,
+3,
+19
+],
+"fonte": "SUFC News: United dealt fresh injury blow pre-Wrexham amid Bamford update - The Star"
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": ""
+"clima": "negativo",
+"note": "Kitching squalificato, Bamford e Phillips in dubbio per infortunio."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": ""
+"note": "Sheffield United con diverse assenze per squalifica e infortuni."
 },
-"n_titoli": 19
+"n_titoli": 20
 }
 },
 "QPR|Burnley|2026-11-03": {
@@ -48016,19 +48885,20 @@
 {
 "nome": "Alfie Lloyd",
 "ruolo": "attaccante",
-"importanza": "stella",
+"importanza": "titolare",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
+3,
 4
 ],
-"fonte": "Alfie Lloyd: QPR striker set to miss rest of 2026 with hamstring injury - BBC"
+"fonte": "QPR forward Lloyd facing lengthy spell out - West London Sport"
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "negativo",
-"note": "Numerosi infortuni colpiscono gli attaccanti"
+"note": "Diverse assenze in attacco, Lloyd out fino a fine 2026"
 },
 "ospite": {
 "assenti": [
@@ -48050,12 +48920,12 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Infortunio di Satpayev, ma resto in forma"
+"note": "Satpayev infortunato, Amdouni in recupero"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita senza restrizioni di pubblico"
+"note": "QPR in difficoltà per infortuni in attacco"
 },
 "n_titoli": 17
 }
@@ -48067,8 +48937,8 @@
 "assenti": [
 {
 "nome": "Jack Nicholls",
-"ruolo": "difensore",
-"importanza": "titolare",
+"ruolo": "portiere",
+"importanza": "riserva",
 "motivo": "squalifica",
 "certezza": "certo",
 "titoli": [
@@ -48079,8 +48949,8 @@
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": ""
+"clima": "negativo",
+"note": "sospensione pesante"
 },
 "ospite": {
 "assenti": [
@@ -48089,39 +48959,35 @@
 "ruolo": "centrocampista",
 "importanza": "titolare",
 "motivo": "infortunio",
-"certezza": "certo",
+"certezza": "probabile",
 "titoli": [
-10
+7
 ],
-"fonte": "Lincoln City Injury Latest: Conor McGrandles And Ben House Updates - The Stacey West",
-"visto": "2026-11-03",
-"memoria": true
+"fonte": "Lincoln City Injury Latest: Conor McGrandles And Ben House Updates - The Stacey West"
 },
 {
 "nome": "Ben House",
 "ruolo": "difensore",
 "importanza": "titolare",
 "motivo": "infortunio",
-"certezza": "certo",
+"certezza": "probabile",
 "titoli": [
-10
+7
 ],
-"fonte": "Lincoln City Injury Latest: Conor McGrandles And Ben House Updates - The Stacey West",
-"visto": "2026-11-03",
-"memoria": true
+"fonte": "Lincoln City Injury Latest: Conor McGrandles And Ben House Updates - The Stacey West"
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": ""
+"clima": "negativo",
+"note": "assenze per infortuni"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": ""
+"note": "nessuna informazione su porte chiuse"
 },
-"n_titoli": 14
+"n_titoli": 12
 }
 },
 "Wigan|Mansfield|2026-11-03": {
@@ -48136,18 +49002,18 @@
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-2
+3
 ],
 "fonte": "Caldwell provides Latics injury update, including Power and Trevitt - Wigan Today"
 },
 {
 "nome": "Trevitt",
-"ruolo": "difensore",
+"ruolo": "portiere",
 "importanza": "titolare",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-2
+3
 ],
 "fonte": "Caldwell provides Latics injury update, including Power and Trevitt - Wigan Today"
 }
@@ -48155,19 +49021,19 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "negativo",
-"note": "Assenze per infortunio"
+"note": "Infortuni chiave per Wigan"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna novità"
+"note": "Nessuna novità su Mansfield"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita regolare"
+"note": "Partita regolare senza restrizioni"
 },
 "n_titoli": 4
 }
@@ -48324,22 +49190,22 @@
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": "nessuna informazione rilevante"
+"clima": "negativo",
+"note": "Dubbio infortuni, nessun altro problema"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione rilevante"
+"note": "Aggiornamento infortuni positivo, nessuna assenza confermata"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "nessuna informazione su porte chiuse"
+"note": "Partita regolare, nessuna restrizione"
 },
-"n_titoli": 13
+"n_titoli": 15
 }
 },
 "Bodo/Glimt|Lille|2026-11-03": {
@@ -48752,37 +49618,49 @@
 "data": "2026-11-03",
 "r": {
 "casa": {
-"assenti": [],
+"assenti": [
+{
+"nome": "Jarrod Bowen",
+"ruolo": "attaccante",
+"importanza": "stella",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+1
+],
+"fonte": "Jarrod Bowen injury revelation: Nuno confirms latest ahead of West Ham vs West Brom - Yahoo"
+}
+],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": "Nessuna novità rilevante oltre gli infortuni"
+"clima": "negativo",
+"note": "Numerosi infortuni, morale basso"
 },
 "ospite": {
 "assenti": [
 {
 "nome": "Eckert",
 "ruolo": "attaccante",
-"importanza": "titolare",
+"importanza": "stella",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-14
+9
 ],
 "fonte": "Eckert issues latest update on injured Southampton striker - Hayters"
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": "Assenza dell'attaccante principale"
+"clima": "negativo",
+"note": "Assenza attaccante chiave"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita senza restrizioni di pubblico"
+"note": "Entrambe le squadre con assenze importanti"
 },
-"n_titoli": 17
+"n_titoli": 12
 }
 },
 "Rennes|Olympiakos|2026-11-04": {
@@ -48800,27 +49678,29 @@
 2,
 3
 ],
-"fonte": "OGC Nice - Stade Rennais. Brice Samba absent du groupe des Rouge et Noir - Ouest-France"
+"fonte": "OGC Nice - Stade Rennais. Brice Samba absent du groupe des Rouge et Noir - Ouest-France",
+"visto": "2026-11-03",
+"memoria": true
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "negativo",
-"note": "Manca il portiere titolare, impatto negativo"
+"clima": "neutro",
+"note": "Samba con fastidio alla coscia, assente contro Nice 5 giorni fa"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna novità rilevante"
+"note": "Nessun titolo rilevante sul calcio"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Rennes senza Samba, Olympiakos senza problemi"
+"note": "Nessuna informazione specifica nei titoli"
 },
-"n_titoli": 8
+"n_titoli": 9
 }
 },
 "AEK|Real Madrid|2026-11-04": {
@@ -48831,21 +49711,59 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna novità rilevante"
+"note": "Nessun assente specifico menzionato nei titoli."
 },
 "ospite": {
-"assenti": [],
-"turnover": "nessuno",
+"assenti": [
+{
+"nome": "Tchouaméni",
+"ruolo": "centrocampista",
+"importanza": "stella",
+"motivo": "altro",
+"certezza": "certo",
+"titoli": [
+23,
+27,
+28
+],
+"fonte": "Dos grandes sorpresas en la convocatoria del Real Madrid para Atenas: se caen Tchouaméni y Arda Güler - Libertad Digital"
+},
+{
+"nome": "Arda Güler",
+"ruolo": "attaccante",
+"importanza": "titolare",
+"motivo": "altro",
+"certezza": "certo",
+"titoli": [
+23,
+27,
+28
+],
+"fonte": "Dos grandes sorpresas en la convocatoria del Real Madrid para Atenas: se caen Tchouaméni y Arda Güler - Libertad Digital"
+},
+{
+"nome": "Molero",
+"ruolo": "centrocampista",
+"importanza": "riserva",
+"motivo": "altro",
+"certezza": "certo",
+"titoli": [
+33
+],
+"fonte": "Molero y Tchouaméni, descartados: Mourinho anuncia la lista del Real Madrid para enfrentar al AEK Atenas - Goal.com"
+}
+],
+"turnover": "medio",
 "nuovo_allenatore": false,
-"clima": "negativo",
-"note": "due assenze importanti"
+"clima": "neutro",
+"note": "Mourinho prepara rotazione; Valverde e Vinicius tornano disponibili."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "sfida con assenze per il Real"
+"note": "Champions League, giornata 4."
 },
-"n_titoli": 32
+"n_titoli": 36
 }
 },
 "Fenerbahce|Liverpool|2026-11-04": {
@@ -48856,33 +49774,44 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "negativo",
-"note": "Fenerbahçe con possibile assenza di Kerem Aktürkoğlu"
+"note": "Tensione interna dopo sconfitta, decisioni di esclusione dalla rosa."
 },
 "ospite": {
 "assenti": [
 {
 "nome": "Ryan Gravenberch",
 "ruolo": "centrocampista",
-"importanza": "stella",
+"importanza": "titolare",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-42
+32,
+33,
+50
 ],
-"fonte": "Ryan Gravenberch ruled out of Fenerbahce match through injury - This Is Anfield"
+"fonte": "Liverpool news: Injured Ryan Gravenberch misses Fenerbahce trip - BBC"
 },
 {
 "nome": "Jeremie Frimpong",
 "ruolo": "difensore",
 "importanza": "titolare",
 "motivo": "infortunio",
-"certezza": "probabile",
+"certezza": "certo",
 "titoli": [
-20
+31
 ],
-"fonte": "Liverpool injury latest and return dates for Fenerbahce clash including Jeremie Frimpong - Liverpool.com",
-"visto": "2026-11-03",
-"memoria": true
+"fonte": "Gravenberch, Frimpong, Ekitike, Leoni - Liverpool injury news and return dates ahead of Fenerbahce - Liverpool Echo"
+},
+{
+"nome": "Hugo Ekitike",
+"ruolo": "attaccante",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+31
+],
+"fonte": "Gravenberch, Frimpong, Ekitike, Leoni - Liverpool injury news and return dates ahead of Fenerbahce - Liverpool Echo"
 },
 {
 "nome": "Dominik Szoboszlai",
@@ -48895,19 +49824,6 @@
 ],
 "fonte": "Dominik Szoboszlai provides injury update ahead of Fenerbahce vs Liverpool - Yahoo Sports",
 "visto": "2026-11-03",
-"memoria": true
-},
-{
-"nome": "Hugo Ekitike",
-"ruolo": "attaccante",
-"importanza": "titolare",
-"motivo": "infortunio",
-"certezza": "probabile",
-"titoli": [
-26
-],
-"fonte": "Liverpool injury update: Jeremie Frimpong, Hugo Ekitike, Giovanni Leoni latest news and return dates - Yahoo",
-"visto": "2026-11-02",
 "memoria": true
 },
 {
@@ -48927,12 +49843,12 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Liverpool senza Gravenberch per infortunio"
+"note": "Rosa ridotta a 22 per la trasferta, diversi infortuni."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Entrambe le squadre con assenti chiave"
+"note": "Sfida di Champions League a Istanbul."
 },
 "n_titoli": 50
 }
@@ -48945,21 +49861,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna informazione disponibile"
+"note": ""
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna informazione disponibile"
+"note": ""
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Nessuna informazione disponibile"
+"note": "Nessuna informazione rilevante nei titoli forniti."
 },
-"n_titoli": 4
+"n_titoli": 2
 }
 },
 "Cardiff|West Ham|2026-11-04": {
@@ -48969,25 +49885,36 @@
 "assenti": [
 {
 "nome": "Isaak Davies",
-"ruolo": "attaccante",
+"ruolo": "difensore",
 "importanza": "titolare",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
 1,
 2,
-4
+3
 ],
 "fonte": "Isaak Davies hamstring issue adds to Cardiff City injury crisis - BBC"
 }
 ],
-"turnover": "alto",
+"turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "negativo",
-"note": "crisi infortuni, molti assenti"
+"note": "Crisi infortuni grave, fino a 12 giocatori a rischio"
 },
 "ospite": {
 "assenti": [
+{
+"nome": "Kyle Walker-Peters",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "in dubbio",
+"titoli": [
+20
+],
+"fonte": "West Ham daily round-up: Nuno replacement shortlist, Kyle Walker-Peters injury update - Yahoo Sports"
+},
 {
 "nome": "Konstantinos Mavropanos",
 "ruolo": "difensore",
@@ -48998,19 +49925,6 @@
 17
 ],
 "fonte": "West Ham hopeful Konstantinos Mavropanos knee injury absence is short term - The Athletic - The New York Times",
-"visto": "2026-11-03",
-"memoria": true
-},
-{
-"nome": "Kyle Walker-Peters",
-"ruolo": "difensore",
-"importanza": "titolare",
-"motivo": "infortunio",
-"certezza": "in dubbio",
-"titoli": [
-13
-],
-"fonte": "West Ham daily round-up: Nuno replacement shortlist, Kyle Walker-Peters injury update - Yahoo",
 "visto": "2026-11-03",
 "memoria": true
 },
@@ -49029,16 +49943,16 @@
 }
 ],
 "turnover": "nessuno",
-"nuovo_allenatore": false,
+"nuovo_allenatore": true,
 "clima": "negativo",
-"note": "situazione manageriale incerta"
+"note": "Nuno esonerato, Scott Parker in arrivo come nuovo tecnico"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "nessuna restrizione di stadio"
+"note": "Cardiff decimato dagli infortuni, West Ham in piena crisi"
 },
-"n_titoli": 29
+"n_titoli": 23
 }
 },
 "Oxford|Reading|2026-11-04": {
@@ -49049,7 +49963,7 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "negativo",
-"note": "Infortuni multipli segnalati per Oxford"
+"note": "Tre infortuni segnalati ma nessun nome specifico nei titoli."
 },
 "ospite": {
 "assenti": [
@@ -49070,14 +49984,14 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "positivo",
-"note": "Aggiornamento infortuni positivo per Reading"
+"note": "Grande boost per Reading secondo i titoli."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Nessuna informazione su porte chiuse"
+"note": "Nessuna informazione specifica sulla partita nei titoli."
 },
-"n_titoli": 13
+"n_titoli": 11
 }
 },
 "Wrexham|Middlesbrough|2026-11-04": {
@@ -49088,22 +50002,20 @@
 {
 "nome": "Sam Smith",
 "ruolo": "attaccante",
-"importanza": "titolare",
+"importanza": "stella",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-1,
-2,
-4
+1
 ],
 "fonte": "Wrexham suffer 'significant' Smith injury blow - BBC"
 },
 {
 "nome": "Callum O'Hare",
-"ruolo": "attaccante",
+"ruolo": "centrocampista",
 "importanza": "titolare",
 "motivo": "infortunio",
-"certezza": "in dubbio",
+"certezza": "probabile",
 "titoli": [
 7
 ],
@@ -49125,30 +50037,30 @@
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "negativo",
-"note": "Infortuni chiave, attacco indebolito"
+"clima": "neutro",
+"note": "Infortuni chiave per Wrexham, ma squadra pronta."
 },
 "ospite": {
 "assenti": [
 {
 "nome": "Jack Nicholls",
-"ruolo": "difensore",
-"importanza": "titolare",
+"ruolo": "attaccante",
+"importanza": "stella",
 "motivo": "squalifica",
 "certezza": "certo",
 "titoli": [
-15
+17
 ],
 "fonte": "Jack Nicholls receives hefty suspension - The Northern Echo"
 },
 {
 "nome": "Rokas Pukstas",
-"ruolo": "centrocampista",
-"importanza": "riserva",
+"ruolo": "difensore",
+"importanza": "titolare",
 "motivo": "infortunio",
-"certezza": "probabile",
+"certezza": "certo",
 "titoli": [
-13
+14
 ],
 "fonte": "Rokas Pukstas injury latest and Kim Hellberg's Middlesbrough team selection plan - The Northern Echo"
 },
@@ -49161,18 +50073,20 @@
 "titoli": [
 18
 ],
-"fonte": "Alfie Jones Middlesbrough situation explained as injury frustrations continue - Yahoo"
+"fonte": "Alfie Jones Middlesbrough situation explained as injury frustrations continue - Yahoo",
+"visto": "2026-11-03",
+"memoria": true
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "negativo",
-"note": "Assenze difensive e squalifica, squadra indebolita"
+"clima": "neutro",
+"note": "Middlesbrough affronta assenze, ma con forza difensiva."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita importante, nessuna restrizione"
+"note": "Partita in campo aperto, nessuna chiusura."
 },
 "n_titoli": 23
 }
@@ -49185,21 +50099,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione su assenti"
+"note": "Allenatore parla di fitness di un attaccante e rientri da infortunio."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione su assenti"
+"note": "Allenatore attribuisce infortuni alla fisicità del Championship."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "nessuna informazione su porte chiuse"
+"note": "Nessun assente specifico identificabile dai titoli."
 },
-"n_titoli": 21
+"n_titoli": 17
 }
 },
 "Dortmund|Betis|2026-11-04": {
@@ -50021,21 +50935,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": ""
+"note": "nessuna novità rilevante"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": ""
+"clima": "negativo",
+"note": "due giocatori chiave in dubbio"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": ""
+"note": "partita regolare senza restrizioni"
 },
-"n_titoli": 12
+"n_titoli": 14
 }
 },
 "Kortrijk|KV Mechelen|2026-11-04": {
@@ -50071,11 +50985,11 @@
 {
 "nome": "Jack Nicholls",
 "ruolo": "difensore",
-"importanza": "titolare",
+"importanza": "stella",
 "motivo": "squalifica",
 "certezza": "certo",
 "titoli": [
-1
+3
 ],
 "fonte": "Jack Nicholls receives hefty suspension - Oxford Mail"
 }
@@ -50083,21 +50997,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna novità rilevante"
+"note": "Nicholls sospeso, squadra in attesa di sostituzione"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna novità rilevante"
+"note": "Nessuna assenza confermata"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita regolare senza restrizioni"
+"note": "Partita in stadio normale"
 },
-"n_titoli": 6
+"n_titoli": 10
 }
 }
 },
@@ -54066,12 +54980,12 @@
 "ospite": {
 "jack nicholls": {
 "nome": "Jack Nicholls",
-"ruolo": "difensore",
+"ruolo": "portiere",
 "importanza": "titolare",
 "motivo": "squalifica",
 "certezza": "certo",
 "titoli": [
-9
+15
 ],
 "fonte": "Jack Nicholls receives hefty suspension - The Bolton News",
 "visto": "2026-11-03"
@@ -54119,6 +55033,18 @@
 }
 },
 "ospite": {
+"antonio": {
+"nome": "Antonio",
+"ruolo": "attaccante",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+31
+],
+"fonte": "Norwich tormentor Antonio ruled out of Carrow Road clash - Eastern Daily Press",
+"visto": "2026-11-03"
+},
 "jack nicholls": {
 "nome": "Jack Nicholls",
 "ruolo": "difensore",
@@ -54129,18 +55055,6 @@
 27
 ],
 "fonte": "Jack Nicholls receives hefty suspension - Norwich Evening News",
-"visto": "2026-11-03"
-},
-"antonio": {
-"nome": "Antonio",
-"ruolo": "centrocampista",
-"importanza": "titolare",
-"motivo": "altro",
-"certezza": "certo",
-"titoli": [
-33
-],
-"fonte": "Norwich tormentor Antonio ruled out of Carrow Road clash - Norwich Evening News",
 "visto": "2026-11-03"
 },
 "mclean": {
@@ -54220,9 +55134,23 @@
 "motivo": "squalifica",
 "certezza": "certo",
 "titoli": [
-16
+14
 ],
 "fonte": "Sheffield United's Liam Kitching Banned for Preston Trip After Booking v Wrexham - 懂球帝",
+"visto": "2026-11-03"
+},
+"bamford": {
+"nome": "Bamford",
+"ruolo": "centrocampista",
+"importanza": "stella",
+"motivo": "infortunio",
+"certezza": "in dubbio",
+"titoli": [
+1,
+3,
+19
+],
+"fonte": "SUFC News: United dealt fresh injury blow pre-Wrexham amid Bamford update - The Star",
 "visto": "2026-11-03"
 }
 }
@@ -54233,13 +55161,14 @@
 "alfie lloyd": {
 "nome": "Alfie Lloyd",
 "ruolo": "attaccante",
-"importanza": "stella",
+"importanza": "titolare",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
+3,
 4
 ],
-"fonte": "Alfie Lloyd: QPR striker set to miss rest of 2026 with hamstring injury - BBC",
+"fonte": "QPR forward Lloyd facing lengthy spell out - West London Sport",
 "visto": "2026-11-03"
 }
 },
@@ -54264,8 +55193,8 @@
 "casa": {
 "jack nicholls": {
 "nome": "Jack Nicholls",
-"ruolo": "difensore",
-"importanza": "titolare",
+"ruolo": "portiere",
+"importanza": "riserva",
 "motivo": "squalifica",
 "certezza": "certo",
 "titoli": [
@@ -54281,9 +55210,9 @@
 "ruolo": "centrocampista",
 "importanza": "titolare",
 "motivo": "infortunio",
-"certezza": "certo",
+"certezza": "probabile",
 "titoli": [
-10
+7
 ],
 "fonte": "Lincoln City Injury Latest: Conor McGrandles And Ben House Updates - The Stacey West",
 "visto": "2026-11-03"
@@ -54293,9 +55222,9 @@
 "ruolo": "difensore",
 "importanza": "titolare",
 "motivo": "infortunio",
-"certezza": "certo",
+"certezza": "probabile",
 "titoli": [
-10
+7
 ],
 "fonte": "Lincoln City Injury Latest: Conor McGrandles And Ben House Updates - The Stacey West",
 "visto": "2026-11-03"
@@ -54312,19 +55241,19 @@
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-2
+3
 ],
 "fonte": "Caldwell provides Latics injury update, including Power and Trevitt - Wigan Today",
 "visto": "2026-11-03"
 },
 "trevitt": {
 "nome": "Trevitt",
-"ruolo": "difensore",
+"ruolo": "portiere",
 "importanza": "titolare",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-2
+3
 ],
 "fonte": "Caldwell provides Latics injury update, including Power and Trevitt - Wigan Today",
 "visto": "2026-11-03"
@@ -54754,16 +55683,29 @@
 },
 "West Brom|Southampton|2026-11-03": {
 "data": "2026-11-03",
-"casa": {},
+"casa": {
+"jarrod bowen": {
+"nome": "Jarrod Bowen",
+"ruolo": "attaccante",
+"importanza": "stella",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+1
+],
+"fonte": "Jarrod Bowen injury revelation: Nuno confirms latest ahead of West Ham vs West Brom - Yahoo",
+"visto": "2026-11-03"
+}
+},
 "ospite": {
 "eckert": {
 "nome": "Eckert",
 "ruolo": "attaccante",
-"importanza": "titolare",
+"importanza": "stella",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-14
+9
 ],
 "fonte": "Eckert issues latest update on injured Southampton striker - Hayters",
 "visto": "2026-11-03"
@@ -54792,7 +55734,48 @@
 "AEK|Real Madrid|2026-11-04": {
 "data": "2026-11-04",
 "casa": {},
-"ospite": {}
+"ospite": {
+"tchouaméni": {
+"nome": "Tchouaméni",
+"ruolo": "centrocampista",
+"importanza": "stella",
+"motivo": "altro",
+"certezza": "certo",
+"titoli": [
+23,
+27,
+28
+],
+"fonte": "Dos grandes sorpresas en la convocatoria del Real Madrid para Atenas: se caen Tchouaméni y Arda Güler - Libertad Digital",
+"visto": "2026-11-03"
+},
+"arda güler": {
+"nome": "Arda Güler",
+"ruolo": "attaccante",
+"importanza": "titolare",
+"motivo": "altro",
+"certezza": "certo",
+"titoli": [
+23,
+27,
+28
+],
+"fonte": "Dos grandes sorpresas en la convocatoria del Real Madrid para Atenas: se caen Tchouaméni y Arda Güler - Libertad Digital",
+"visto": "2026-11-03"
+},
+"molero": {
+"nome": "Molero",
+"ruolo": "centrocampista",
+"importanza": "riserva",
+"motivo": "altro",
+"certezza": "certo",
+"titoli": [
+33
+],
+"fonte": "Molero y Tchouaméni, descartados: Mourinho anuncia la lista del Real Madrid para enfrentar al AEK Atenas - Goal.com",
+"visto": "2026-11-03"
+}
+}
 },
 "Fenerbahce|Liverpool|2026-11-04": {
 "data": "2026-11-04",
@@ -54801,13 +55784,15 @@
 "ryan gravenberch": {
 "nome": "Ryan Gravenberch",
 "ruolo": "centrocampista",
-"importanza": "stella",
+"importanza": "titolare",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-42
+32,
+33,
+50
 ],
-"fonte": "Ryan Gravenberch ruled out of Fenerbahce match through injury - This Is Anfield",
+"fonte": "Liverpool news: Injured Ryan Gravenberch misses Fenerbahce trip - BBC",
 "visto": "2026-11-03"
 },
 "jeremie frimpong": {
@@ -54815,11 +55800,23 @@
 "ruolo": "difensore",
 "importanza": "titolare",
 "motivo": "infortunio",
-"certezza": "probabile",
+"certezza": "certo",
 "titoli": [
-20
+31
 ],
-"fonte": "Liverpool injury latest and return dates for Fenerbahce clash including Jeremie Frimpong - Liverpool.com",
+"fonte": "Gravenberch, Frimpong, Ekitike, Leoni - Liverpool injury news and return dates ahead of Fenerbahce - Liverpool Echo",
+"visto": "2026-11-03"
+},
+"hugo ekitike": {
+"nome": "Hugo Ekitike",
+"ruolo": "attaccante",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+31
+],
+"fonte": "Gravenberch, Frimpong, Ekitike, Leoni - Liverpool injury news and return dates ahead of Fenerbahce - Liverpool Echo",
 "visto": "2026-11-03"
 },
 "dominik szoboszlai": {
@@ -54833,18 +55830,6 @@
 ],
 "fonte": "Dominik Szoboszlai provides injury update ahead of Fenerbahce vs Liverpool - Yahoo Sports",
 "visto": "2026-11-03"
-},
-"hugo ekitike": {
-"nome": "Hugo Ekitike",
-"ruolo": "attaccante",
-"importanza": "titolare",
-"motivo": "infortunio",
-"certezza": "probabile",
-"titoli": [
-26
-],
-"fonte": "Liverpool injury update: Jeremie Frimpong, Hugo Ekitike, Giovanni Leoni latest news and return dates - Yahoo",
-"visto": "2026-11-02"
 },
 "giovanni leoni": {
 "nome": "Giovanni Leoni",
@@ -54870,20 +55855,32 @@
 "casa": {
 "isaak davies": {
 "nome": "Isaak Davies",
-"ruolo": "attaccante",
+"ruolo": "difensore",
 "importanza": "titolare",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
 1,
 2,
-4
+3
 ],
 "fonte": "Isaak Davies hamstring issue adds to Cardiff City injury crisis - BBC",
 "visto": "2026-11-03"
 }
 },
 "ospite": {
+"kyle walker-peters": {
+"nome": "Kyle Walker-Peters",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "in dubbio",
+"titoli": [
+20
+],
+"fonte": "West Ham daily round-up: Nuno replacement shortlist, Kyle Walker-Peters injury update - Yahoo Sports",
+"visto": "2026-11-03"
+},
 "konstantinos mavropanos": {
 "nome": "Konstantinos Mavropanos",
 "ruolo": "difensore",
@@ -54894,18 +55891,6 @@
 17
 ],
 "fonte": "West Ham hopeful Konstantinos Mavropanos knee injury absence is short term - The Athletic - The New York Times",
-"visto": "2026-11-03"
-},
-"kyle walker-peters": {
-"nome": "Kyle Walker-Peters",
-"ruolo": "difensore",
-"importanza": "titolare",
-"motivo": "infortunio",
-"certezza": "in dubbio",
-"titoli": [
-13
-],
-"fonte": "West Ham daily round-up: Nuno replacement shortlist, Kyle Walker-Peters injury update - Yahoo",
 "visto": "2026-11-03"
 },
 "jarrod bowen": {
@@ -54946,23 +55931,21 @@
 "sam smith": {
 "nome": "Sam Smith",
 "ruolo": "attaccante",
-"importanza": "titolare",
+"importanza": "stella",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-1,
-2,
-4
+1
 ],
 "fonte": "Wrexham suffer 'significant' Smith injury blow - BBC",
 "visto": "2026-11-03"
 },
 "callum o'hare": {
 "nome": "Callum O'Hare",
-"ruolo": "attaccante",
+"ruolo": "centrocampista",
 "importanza": "titolare",
 "motivo": "infortunio",
-"certezza": "in dubbio",
+"certezza": "probabile",
 "titoli": [
 7
 ],
@@ -54985,24 +55968,24 @@
 "ospite": {
 "jack nicholls": {
 "nome": "Jack Nicholls",
-"ruolo": "difensore",
-"importanza": "titolare",
+"ruolo": "attaccante",
+"importanza": "stella",
 "motivo": "squalifica",
 "certezza": "certo",
 "titoli": [
-15
+17
 ],
 "fonte": "Jack Nicholls receives hefty suspension - The Northern Echo",
 "visto": "2026-11-03"
 },
 "rokas pukstas": {
 "nome": "Rokas Pukstas",
-"ruolo": "centrocampista",
-"importanza": "riserva",
+"ruolo": "difensore",
+"importanza": "titolare",
 "motivo": "infortunio",
-"certezza": "probabile",
+"certezza": "certo",
 "titoli": [
-13
+14
 ],
 "fonte": "Rokas Pukstas injury latest and Kim Hellberg's Middlesbrough team selection plan - The Northern Echo",
 "visto": "2026-11-03"
@@ -55384,11 +56367,11 @@
 "jack nicholls": {
 "nome": "Jack Nicholls",
 "ruolo": "difensore",
-"importanza": "titolare",
+"importanza": "stella",
 "motivo": "squalifica",
 "certezza": "certo",
 "titoli": [
-1
+3
 ],
 "fonte": "Jack Nicholls receives hefty suspension - Oxford Mail",
 "visto": "2026-11-03"
