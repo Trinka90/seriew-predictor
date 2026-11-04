@@ -1,0 +1,81 @@
+{
+  "tune": "2425",
+  "test": "2526",
+  "train_n": 760,
+  "theta": [
+    -0.13545212056001568,
+    0.01060464428487586,
+    -0.07568972777424614
+  ],
+  "results": {
+    "market": {
+      "n": 760,
+      "logloss_1x2": 0.9977045566365869,
+      "brier_1x2": 0.5968620771220208,
+      "logloss_over25": 0.692467175996088,
+      "real_odds_picks": 760,
+      "coverage": 1.0,
+      "pick_hit_rate": 0.5671052631578948,
+      "pick_expected": 0.5932327991273448,
+      "roi_real_odds": -0.09073684210526314
+    },
+    "model": {
+      "n": 760,
+      "logloss_1x2": 1.0093531165830094,
+      "brier_1x2": 0.6042058619967003,
+      "logloss_over25": 0.6965998625572261,
+      "real_odds_picks": 760,
+      "coverage": 1.0,
+      "pick_hit_rate": 0.5631578947368421,
+      "pick_expected": 0.584651105902497,
+      "roi_real_odds": -0.06639473684210527
+    },
+    "base90": {
+      "n": 760,
+      "logloss_1x2": 0.9986819471731179,
+      "brier_1x2": 0.5973140442863294,
+      "logloss_over25": 0.6924293806564669,
+      "real_odds_picks": 760,
+      "coverage": 1.0,
+      "pick_hit_rate": 0.5618421052631579,
+      "pick_expected": 0.5922733927148207,
+      "roi_real_odds": -0.09982894736842106
+    },
+    "calibrated90": {
+      "n": 760,
+      "logloss_1x2": 0.9979521843531302,
+      "brier_1x2": 0.5971480646826601,
+      "logloss_over25": 0.6941781834872301,
+      "real_odds_picks": 760,
+      "coverage": 1.0,
+      "pick_hit_rate": 0.5802631578947368,
+      "pick_expected": 0.5883745144866751,
+      "roi_real_odds": -0.06251315789473683
+    }
+  },
+  "calibrated_minus_baseline": {
+    "base90": {
+      "delta_logloss": -0.0007297628199875966,
+      "day_bootstrap_95": [
+        -0.005931304254090561,
+        0.004270693880458236
+      ]
+    },
+    "market": {
+      "delta_logloss": 0.00024762771654323414,
+      "day_bootstrap_95": [
+        -0.005311652879184526,
+        0.005699976349074703
+      ]
+    }
+  },
+  "limits": [
+    "No historical news or injury snapshots; those effects are not tested.",
+    "Historical odds have no verified execution timestamp.",
+    "Only 1X2 and O/U2.5 selections with actual stored bookmaker odds; no estimated payouts.",
+    "No automatic promotion; inspect untouched future data and coverage.",
+    "Calibration is a new joint-score variant, not the old independent-market calibration."
+  ],
+  "skipped": [],
+  "db_sha256": "2dec6f830166f9339ff975b589c7ae5fc4f620fa2ab74cade852de0256c33798"
+}
