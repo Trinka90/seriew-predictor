@@ -1,0 +1,49 @@
+name: Isolated calibration trial
+on:
+  push:
+    branches: [experiment/coherent-calibration]
+    paths:
+      - experiments/calibration_trial.py
+      - experiments/tests/**
+      - .github/workflows/calibration-trial.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  trial:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r engine/requirements.txt
+      - run: python -m unittest discover -s experiments/tests -v
+      - name: Download historical results only (Serie A and Premier League)
+        run: |
+          python - <<'PY'
+          import sys
+          from pathlib import Path
+          sys.path.insert(0, 'engine')
+          import config as C
+          C.DB_PATH = Path('trial.db').resolve()
+          from db import connect
+          from data_sources import update_history
+          con = connect()
+          update_history(['2223','2324','2425','2526'], con, leagues=['I1','E0'])
+          con.close()
+          PY
+      - name: Previous-season calibration, later-season evaluation
+        run: |
+          python experiments/calibration_trial.py --db trial.db --tune 2324 --test 2425 --out experiments/trial_results/2425.json
+          python experiments/calibration_trial.py --db trial.db --tune 2425 --test 2526 --out experiments/trial_results/2526.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: calibration-trial-results
+          path: experiments/trial_results/
+          if-no-files-found: warn

@@ -259,15 +259,21 @@ def fit_weights(preds, names, idx, y):
 
 
 # ----------------------------------------------------------------- pronostici come nell'app
+def recalibrate_markets(markets, recal):
+    """Legacy independent calibration; not a coherent joint distribution."""
+    if not recal:
+        return dict(markets)
+    from scipy.special import expit
+    return {k: float(expit(recal[k][0] * np.log(v / (1 - v)) + recal[k][1]))
+            if k in recal and 0 < v < 1 else v for k, v in markets.items()}
+
+
 def picks_for(args):
     """Per ogni partita: mercati completi dal modello, pronostico consigliato, candidato schedina."""
     rows, recal = args
     out = []
     for r in rows:
-        mk = r["mk"]
-        if recal:
-            mk = {k: (1 / (1 + np.exp(-(recal[k][0] * np.log(v / (1 - v)) + recal[k][1])))
-                      if k in recal and 0 < v < 1 else v) for k, v in mk.items()}
+        mk = recalibrate_markets(r["mk"], recal)
         book, marg, real = r["book"], r["marg"], r["real"]
         h, a = r["gh"], r["ga"]
 
@@ -334,6 +340,8 @@ def evaluate(pool, df, name, probs_list, recal=None):
         j += len(p)
     rows = [x for lst in pool.map(build_market_rows, list(zip(parts, pr_parts))) for x in lst]
     res = [x for lst in pool.map(picks_for, [(rows[j:j + 500], recal) for j in range(0, len(rows), 500)]) for x in lst]
+    # Metrics and selections must use the SAME transformed probabilities.
+    rows = [{**r, "mk": recalibrate_markets(r["mk"], recal)} for r in rows]
     return rows, res
 
 
@@ -399,7 +407,9 @@ def main():
          f"Pesi ensemble: " + ", ".join(f"{n} {w:.2f}" for n, w in zip(stat, w_stat)) +
          " · con quote: " + ", ".join(f"{n} {w:.2f}" for n, w in zip(stat + ['Mercato'], w_all)), "",
          "**Precisione** (LogLoss: più basso = meglio) · **Pronostico** = il consigliato come nell'app (più probabile con quota "
-         "Bet365 ≥ 1,20) · **Schedina** = le 4 più sicure del giorno, quote Bet365", "",
+         "Bet365 ≥ 1,20) · **Schedina** = le 4 più sicure del giorno. Quote reali o stimate, non tutte eseguibili.", "",
+          "La ritaratura legacy corregge i mercati separatamente: il LogLoss 1X2 rinormalizza le tre probabilità. "
+          "Può violare le identità tra mercati; per una variante coerente usare calibration_trial.py.", "",
          "| Modello | LogLoss 1X2 | Esito 1X2 indovinato | LogLoss Over 2.5 | Pronostico uscito | Indicato | Resa singoli | Schedina 4 uscita | Resa schedina |",
          "|---|---|---|---|---|---|---|---|---|"]
     order = ["Mercato", "App attuale", "App + ritaratura", "Dixon-Coles", "Elo", "Pi-rating", "ML", "ML + quote",
@@ -439,3 +449,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
