@@ -42653,6 +42653,575 @@
 "n_titoli": 2
 }
 },
+"433d1fa291e07199c147cb7ce63a5d2cd63d0a1f": {
+"data": "2026-11-04",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna assenza segnalata"
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Arda Güler",
+"ruolo": "attaccante",
+"importanza": "titolare",
+"motivo": "squalifica",
+"certezza": "certo",
+"titoli": [
+31
+],
+"fonte": "Dos grandes sorpresas en la convocatoria del Real Madrid para Atenas: se caen Tchouaméni y Arda Güler - Libertad Digital"
+},
+{
+"nome": "Aurélien Tchouaméni",
+"ruolo": "centrocampista",
+"importanza": "stella",
+"motivo": "squalifica",
+"certezza": "certo",
+"titoli": [
+31
+],
+"fonte": "Dos grandes sorpresas en la convocatoria del Real Madrid para Atenas: se caen Tchouaméni y Arda Güler - Libertad Digital"
+}
+],
+"turnover": "alto",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "due assenze importanti"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "match di Champions League"
+},
+"n_titoli": 43
+}
+},
+"7a3113845b0cec6e7e84dc4f36d2d731d144f475": {
+"data": "2026-11-04",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "mancano informazioni su assenti specifici"
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Ryan Gravenberch",
+"ruolo": "centrocampista",
+"importanza": "stella",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+38
+],
+"fonte": "Ryan Gravenberch out of Liverpool's clash with Fenerbahce with heel injury - ESPN"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "solo Gravenberch fuori"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna informazione su chiusura stadio"
+},
+"n_titoli": 50
+}
+},
+"01110dceed403d18b1da3472c18d5be0e0afad95": {
+"data": "2026-11-04",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Isaak Davies",
+"ruolo": "attaccante",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "in dubbio",
+"titoli": [
+4
+],
+"fonte": "Isaak Davies hamstring issue adds to Cardiff City injury crisis - BBC"
+}
+],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Infortuni limitano la rosa"
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Kyle Walker-Peters",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "in dubbio",
+"titoli": [
+25
+],
+"fonte": "West Ham daily round-up: Nuno replacement shortlist, Kyle Walker-Peters injury update - Yahoo Sports"
+}
+],
+"turnover": "medio",
+"nuovo_allenatore": true,
+"clima": "positivo",
+"note": "Cambio tecnico, inizio nuova era"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita decisiva non a porte chiuse"
+},
+"n_titoli": 28
+}
+},
+"0ae1fb7f9b8f3654b17ceb9535d20f02ead06224": {
+"data": "2026-11-04",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Infortuni recenti ma senza nomi specifici"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna assenza confermata"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione su chiusura stadio"
+},
+"n_titoli": 13
+}
+},
+"c01f681e81f8bf81e301cb19cf309c19415895d0": {
+"data": "2026-11-04",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Jack Nicholls",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "squalifica",
+"certezza": "certo",
+"titoli": [
+3
+],
+"fonte": "Jack Nicholls receives hefty suspension - Oxford Mail"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Nessuna altra novità"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna assenza segnalata"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita regolare senza restrizioni"
+},
+"n_titoli": 10
+}
+},
+"77470533c070bb1a26aa5f79264d8c3ff00aa1ed": {
+"data": "2026-11-04",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Sam Smith",
+"ruolo": "attaccante",
+"importanza": "stella",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+4,
+6
+],
+"fonte": "Wrexham suffer 'significant' Smith injury blow - BBC"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Numerosi assenti per infortuni"
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Rokas Pukstas",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "probabile",
+"titoli": [
+15
+],
+"fonte": "Rokas Pukstas injury latest and Kim Hellberg's Middlesbrough team selection plan - The Northern Echo"
+},
+{
+"nome": "Jack Nicholls",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "squalifica",
+"certezza": "certo",
+"titoli": [
+17
+],
+"fonte": "Jack Nicholls receives hefty suspension - The Northern Echo"
+},
+{
+"nome": "Alfie Jones",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "probabile",
+"titoli": [
+20
+],
+"fonte": "Alfie Jones Middlesbrough situation explained as injury frustrations continue - Yahoo"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Assenti per infortuni e squalifica"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita con molte assenze"
+},
+"n_titoli": 21
+}
+},
+"4eedd00264bb5a4a90b0aabeb652979caf16e9a4": {
+"data": "2026-11-04",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione sugli assenti"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione sugli assenti"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna informazione su porte chiuse"
+},
+"n_titoli": 25
+}
+},
+"5225ab90c30bd6777027d18cc0565e5e449d00a9": {
+"data": "2026-11-04",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "positivo",
+"note": "Nessuna assenza segnalata"
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Álvaro Fidalgo",
+"ruolo": "attaccante",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+25,
+28,
+29
+],
+"fonte": "Álvaro Fidalgo fuera del Real Betis vs Borussia Dortmund de la Champions League - Bolavip México"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Fidalgo fuori per infortunio"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Champions League, partita regolare"
+},
+"n_titoli": 48
+}
+},
+"3b5fbb42f72be254817adafa34366a65f7475f25": {
+"data": "2026-11-04",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Quattro assenti nel gruppo per la LDC, nomi non specificati nei titoli."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "positivo",
+"note": "Vittoria può valere qualificazione playoff; Fabregas cambia poco, torna Perrone."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Champions League, 4ª giornata; Como cerca salto tra le big."
+},
+"n_titoli": 34
+}
+},
+"bd936e38fc638bd207e65c1a3f7be9a76bcccd00": {
+"data": "2026-11-04",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "positivo",
+"note": "Bosz privo di sei giocatori; una sola modifica rispetto all'ultima formazione."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "positivo",
+"note": "Leko non vede motivo di cambiare; formazione attesa stabile."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Club Brugge in campo con maglie speciali 'No Heart, No Glory'."
+},
+"n_titoli": 19
+}
+},
+"489bfb85ad5002b6bcc2acee3789949eed3e6e33": {
+"data": "2026-11-04",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Farioli elogia Allegri, squadra motivata."
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Olivera",
+"ruolo": "difensore",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+42
+],
+"fonte": "Napoli, è un'ecatombe! Anche Di Lorenzo e Olivera infortunati, Allegri pensa a lanciare dei Primavera - La Gazzetta dello Sport"
+},
+{
+"nome": "Marianucci",
+"ruolo": "difensore",
+"importanza": "riserva",
+"motivo": "squalifica",
+"certezza": "certo",
+"titoli": [
+40
+],
+"fonte": "Ufficiale – marianucci fermato per un turno dopo l espulsione contro la juve la nota del giudice sportivo - NapoliCalcioNews.it"
+}
+],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Emergenza infortuni, Allegri in difficoltà."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Sfida tra Farioli e Allegri."
+},
+"n_titoli": 43
+}
+},
+"5b614b0c5760fe9cdd4135527460610b1598484d": {
+"data": "2026-11-04",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "positivo",
+"note": "Nkunku e Baumgartner in panchina contro Schalke, non assenti."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Foden e Cherki in lizza per la titolarità."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Champions League, giornata 4."
+},
+"n_titoli": 40
+}
+},
+"df4e09868883d673e35b50ee5b0e817f6fc25769": {
+"data": "2026-11-04",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Sette assenti citati ma non nominati nei titoli."
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Bukayo Saka",
+"ruolo": "attaccante",
+"importanza": "stella",
+"motivo": "infortunio",
+"certezza": "certo",
+"titoli": [
+23,
+24,
+27
+],
+"fonte": "Arsenal injury mystery is finally answered and Bukayo Saka absence cause becomes clearer - Football London"
+}
+],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Saka out, Saliba torna disponibile, sei cambi previsti."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Champions League, Arsenal senza Saka ma con Saliba in panchina."
+},
+"n_titoli": 50
+}
+},
+"520caaf45f85cd422fd770a763a19e783f85f2b0": {
+"data": "2026-11-04",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione rilevante nei titoli."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione rilevante nei titoli."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione specifica nei titoli."
+},
+"n_titoli": 3
+}
+},
+"69f2dc15f598738df63c4d008fb374ca8d9d84bc": {
+"data": "2026-11-05",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessun assente specifico nei titoli."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Baixa di ultima ora per la trasferta in Danimarca, giocatore non specificato."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione specifica nei titoli."
+},
+"n_titoli": 4
+}
+},
+"535df04e4671335a7ea9e2f24a36b3d933e1d510": {
+"data": "2026-11-05",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Attesa per la formazione, nessuna assenza confermata."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna assenza, tutti i giocatori disponibili."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Match in Conference League, nessuna informazione su porte chiuse."
+},
+"n_titoli": 32
+}
+},
 "_ultima": {
 "Andorra|Burgos|2026-10-26": {
 "data": "2026-10-26",
@@ -52457,13 +53026,11 @@
 {
 "nome": "Arda Güler",
 "ruolo": "attaccante",
-"importanza": "stella",
+"importanza": "titolare",
 "motivo": "squalifica",
 "certezza": "certo",
 "titoli": [
-26,
-28,
-29
+31
 ],
 "fonte": "Dos grandes sorpresas en la convocatoria del Real Madrid para Atenas: se caen Tchouaméni y Arda Güler - Libertad Digital"
 },
@@ -52474,9 +53041,7 @@
 "motivo": "squalifica",
 "certezza": "certo",
 "titoli": [
-26,
-28,
-29
+31
 ],
 "fonte": "Dos grandes sorpresas en la convocatoria del Real Madrid para Atenas: se caen Tchouaméni y Arda Güler - Libertad Digital"
 },
@@ -52509,9 +53074,9 @@
 "memoria": true
 }
 ],
-"turnover": "medio",
+"turnover": "alto",
 "nuovo_allenatore": false,
-"clima": "negativo",
+"clima": "neutro",
 "note": "due assenze importanti"
 },
 "partita": {
@@ -52519,7 +53084,7 @@
 "campo_neutro": false,
 "note": "match di Champions League"
 },
-"n_titoli": 41
+"n_titoli": 43
 }
 },
 "Fenerbahce|Liverpool|2026-11-04": {
@@ -52529,8 +53094,8 @@
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": "Nessuna assenza confermata nei titoli"
+"clima": "negativo",
+"note": "mancano informazioni su assenti specifici"
 },
 "ospite": {
 "assenti": [
@@ -52541,7 +53106,7 @@
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-39
+38
 ],
 "fonte": "Ryan Gravenberch out of Liverpool's clash with Fenerbahce with heel injury - ESPN"
 },
@@ -52601,12 +53166,12 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Gravenberch fuori per infortunio"
+"note": "solo Gravenberch fuori"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Champions League, partita importante"
+"note": "nessuna informazione su chiusura stadio"
 },
 "n_titoli": 50
 }
@@ -52648,7 +53213,7 @@
 "motivo": "infortunio",
 "certezza": "in dubbio",
 "titoli": [
-3
+4
 ],
 "fonte": "Isaak Davies hamstring issue adds to Cardiff City injury crisis - BBC"
 }
@@ -52656,7 +53221,7 @@
 "turnover": "medio",
 "nuovo_allenatore": false,
 "clima": "negativo",
-"note": "Infortuni numerosi, molte assenze"
+"note": "Infortuni limitano la rosa"
 },
 "ospite": {
 "assenti": [
@@ -52667,11 +53232,9 @@
 "motivo": "infortunio",
 "certezza": "in dubbio",
 "titoli": [
-20
+25
 ],
-"fonte": "West Ham daily round-up: Nuno replacement shortlist, Kyle Walker-Peters injury update - Yahoo Sports",
-"visto": "2026-11-03",
-"memoria": true
+"fonte": "West Ham daily round-up: Nuno replacement shortlist, Kyle Walker-Peters injury update - Yahoo Sports"
 },
 {
 "nome": "Konstantinos Mavropanos",
@@ -52700,17 +53263,17 @@
 "memoria": true
 }
 ],
-"turnover": "nessuno",
-"nuovo_allenatore": false,
-"clima": "neutro",
-"note": "Nessuna notizia assenze"
+"turnover": "medio",
+"nuovo_allenatore": true,
+"clima": "positivo",
+"note": "Cambio tecnico, inizio nuova era"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita regolare"
+"note": "Partita decisiva non a porte chiuse"
 },
-"n_titoli": 36
+"n_titoli": 28
 }
 },
 "Oxford|Reading|2026-11-04": {
@@ -52720,8 +53283,8 @@
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": "Nessuna assenza segnalata"
+"clima": "negativo",
+"note": "Infortuni recenti ma senza nomi specifici"
 },
 "ospite": {
 "assenti": [
@@ -52742,14 +53305,14 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna assenza segnalata"
+"note": "Nessuna assenza confermata"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Nessuna informazione su porte chiuse"
+"note": "Nessuna informazione su chiusura stadio"
 },
-"n_titoli": 11
+"n_titoli": 13
 }
 },
 "Wrexham|Middlesbrough|2026-11-04": {
@@ -52764,9 +53327,10 @@
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-5
+4,
+6
 ],
-"fonte": "Wrexham striker Sam Smith faces 'significant period' out with knee injury - Border Counties Advertizer"
+"fonte": "Wrexham suffer 'significant' Smith injury blow - BBC"
 },
 {
 "nome": "Josh Windass",
@@ -52816,9 +53380,20 @@
 "ospite": {
 "assenti": [
 {
+"nome": "Rokas Pukstas",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "probabile",
+"titoli": [
+15
+],
+"fonte": "Rokas Pukstas injury latest and Kim Hellberg's Middlesbrough team selection plan - The Northern Echo"
+},
+{
 "nome": "Jack Nicholls",
-"ruolo": "difensore",
-"importanza": "riserva",
+"ruolo": "centrocampista",
+"importanza": "titolare",
 "motivo": "squalifica",
 "certezza": "certo",
 "titoli": [
@@ -52827,43 +53402,28 @@
 "fonte": "Jack Nicholls receives hefty suspension - The Northern Echo"
 },
 {
-"nome": "Rokas Pukstas",
-"ruolo": "difensore",
-"importanza": "titolare",
-"motivo": "infortunio",
-"certezza": "certo",
-"titoli": [
-14
-],
-"fonte": "Rokas Pukstas injury latest and Kim Hellberg's Middlesbrough team selection plan - The Northern Echo",
-"visto": "2026-11-03",
-"memoria": true
-},
-{
 "nome": "Alfie Jones",
 "ruolo": "difensore",
 "importanza": "titolare",
 "motivo": "infortunio",
 "certezza": "probabile",
 "titoli": [
-18
+20
 ],
-"fonte": "Alfie Jones Middlesbrough situation explained as injury frustrations continue - Yahoo",
-"visto": "2026-11-03",
-"memoria": true
+"fonte": "Alfie Jones Middlesbrough situation explained as injury frustrations continue - Yahoo"
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "negativo",
-"note": "Assenti per infortunio e squalifica"
+"note": "Assenti per infortuni e squalifica"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita importante, entrambe le squadre indebolite"
+"note": "Partita con molte assenze"
 },
-"n_titoli": 25
+"n_titoli": 21
 }
 },
 "Bristol City|Wolves|2026-11-04": {
@@ -52874,21 +53434,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna assenza segnalata"
+"note": "nessuna informazione sugli assenti"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna assenza segnalata"
+"note": "nessuna informazione sugli assenti"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "nessuna informazione su chiusura"
+"note": "nessuna informazione su porte chiuse"
 },
-"n_titoli": 28
+"n_titoli": 25
 }
 },
 "Dortmund|Betis|2026-11-04": {
@@ -52898,21 +53458,21 @@
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
+"clima": "positivo",
 "note": "Nessuna assenza segnalata"
 },
 "ospite": {
 "assenti": [
 {
 "nome": "Álvaro Fidalgo",
-"ruolo": "centrocampista",
+"ruolo": "attaccante",
 "importanza": "titolare",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-19,
-22,
-23
+25,
+28,
+29
 ],
 "fonte": "Álvaro Fidalgo fuera del Real Betis vs Borussia Dortmund de la Champions League - Bolavip México"
 }
@@ -52920,14 +53480,14 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "negativo",
-"note": "Due importanti assenze per infortunio"
+"note": "Fidalgo fuori per infortunio"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Nessuna informazione su porte chiuse"
+"note": "Champions League, partita regolare"
 },
-"n_titoli": 42
+"n_titoli": 48
 }
 },
 "Lens|Como|2026-11-04": {
@@ -52938,7 +53498,7 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna assenza segnalata"
+"note": "Quattro assenti nel gruppo per la LDC, nomi non specificati nei titoli."
 },
 "ospite": {
 "assenti": [
@@ -52958,15 +53518,15 @@
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": "nessuna assenza segnalata"
+"clima": "positivo",
+"note": "Vittoria può valere qualificazione playoff; Fabregas cambia poco, torna Perrone."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "nessuna informazione su chiusura"
+"note": "Champions League, 4ª giornata; Como cerca salto tra le big."
 },
-"n_titoli": 32
+"n_titoli": 34
 }
 },
 "PSV Eindhoven|Club Brugge|2026-11-04": {
@@ -52974,24 +53534,24 @@
 "r": {
 "casa": {
 "assenti": [],
-"turnover": "medio",
+"turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": "nessuna assenza segnalata"
+"clima": "positivo",
+"note": "Bosz privo di sei giocatori; una sola modifica rispetto all'ultima formazione."
 },
 "ospite": {
 "assenti": [],
-"turnover": "medio",
+"turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": "nessuna assenza segnalata"
+"clima": "positivo",
+"note": "Leko non vede motivo di cambiare; formazione attesa stabile."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "partita di Champions League"
+"note": "Club Brugge in campo con maglie speciali 'No Heart, No Glory'."
 },
-"n_titoli": 24
+"n_titoli": 19
 }
 },
 "Porto|Napoli|2026-11-04": {
@@ -53008,26 +53568,39 @@
 "titoli": [
 19
 ],
-"fonte": "FC Porto-Académico de Viseu: Francisco Moura substituído por Zaidu nos convocados por doença - SAPO"
+"fonte": "FC Porto-Académico de Viseu: Francisco Moura substituído por Zaidu nos convocados por doença - SAPO",
+"visto": "2026-11-04",
+"memoria": true
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "assenze difensivi, nessun turnover"
+"note": "Farioli elogia Allegri, squadra motivata."
 },
 "ospite": {
 "assenti": [
 {
-"nome": "Giovanni Di Lorenzo",
+"nome": "Olivera",
 "ruolo": "difensore",
 "importanza": "titolare",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-46
+42
 ],
 "fonte": "Napoli, è un'ecatombe! Anche Di Lorenzo e Olivera infortunati, Allegri pensa a lanciare dei Primavera - La Gazzetta dello Sport"
+},
+{
+"nome": "Marianucci",
+"ruolo": "difensore",
+"importanza": "riserva",
+"motivo": "squalifica",
+"certezza": "certo",
+"titoli": [
+40
+],
+"fonte": "Ufficiale – marianucci fermato per un turno dopo l espulsione contro la juve la nota del giudice sportivo - NapoliCalcioNews.it"
 },
 {
 "nome": "Victor Olivera",
@@ -53038,45 +53611,7 @@
 "titoli": [
 46
 ],
-"fonte": "Napoli, è un'ecatombe! Anche Di Lorenzo e Olivera infortunati, Allegri pensa a lanciare dei Primavera - La Gazzetta dello Sport"
-},
-{
-"nome": "Di Lorenzo",
-"ruolo": "difensore",
-"importanza": "titolare",
-"motivo": "infortunio",
-"certezza": "certo",
-"titoli": [
-29
-],
 "fonte": "Napoli, è un'ecatombe! Anche Di Lorenzo e Olivera infortunati, Allegri pensa a lanciare dei Primavera - La Gazzetta dello Sport",
-"visto": "2026-11-04",
-"memoria": true
-},
-{
-"nome": "Olivera",
-"ruolo": "difensore",
-"importanza": "titolare",
-"motivo": "infortunio",
-"certezza": "certo",
-"titoli": [
-29
-],
-"fonte": "Napoli, è un'ecatombe! Anche Di Lorenzo e Olivera infortunati, Allegri pensa a lanciare dei Primavera - La Gazzetta dello Sport",
-"visto": "2026-11-04",
-"memoria": true
-},
-{
-"nome": "Marianucci",
-"ruolo": "difensore",
-"importanza": "titolare",
-"motivo": "squalifica",
-"certezza": "certo",
-"titoli": [
-22,
-31
-],
-"fonte": "Squalifica Marianucci, la decisione del Giudice Sportivo! Multa per la SSC Napoli: svelato il motivo - CalcioNapoli24",
 "visto": "2026-11-04",
 "memoria": true
 },
@@ -53094,17 +53629,17 @@
 "memoria": true
 }
 ],
-"turnover": "nessuno",
+"turnover": "medio",
 "nuovo_allenatore": false,
 "clima": "negativo",
-"note": "grave emergenza infortuni"
+"note": "Emergenza infortuni, Allegri in difficoltà."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "sfida con molte assenze"
+"note": "Sfida tra Farioli e Allegri."
 },
-"n_titoli": 47
+"n_titoli": 43
 }
 },
 "RB Leipzig|Man City|2026-11-04": {
@@ -53114,8 +53649,8 @@
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": "nessuna assenza segnalata"
+"clima": "positivo",
+"note": "Nkunku e Baumgartner in panchina contro Schalke, non assenti."
 },
 "ospite": {
 "assenti": [
@@ -53129,20 +53664,22 @@
 26,
 27
 ],
-"fonte": "Semenyo Injury Update and Return Date: Up to Eight Weeks Out - The False 9"
+"fonte": "Semenyo Injury Update and Return Date: Up to Eight Weeks Out - The False 9",
+"visto": "2026-11-04",
+"memoria": true
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Semenyo fuori per infortunio"
+"note": "Foden e Cherki in lizza per la titolarità."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "match di Champions League"
+"note": "Champions League, giornata 4."
 },
-"n_titoli": 41
+"n_titoli": 40
 }
 },
 "Slavia Prague|Arsenal|2026-11-04": {
@@ -53153,7 +53690,7 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna informazione specifica sugli assenti nei titoli."
+"note": "Sette assenti citati ma non nominati nei titoli."
 },
 "ospite": {
 "assenti": [
@@ -53164,8 +53701,8 @@
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-19,
-20,
+23,
+24,
 27
 ],
 "fonte": "Arsenal injury mystery is finally answered and Bukayo Saka absence cause becomes clearer - Football London"
@@ -53173,13 +53710,13 @@
 ],
 "turnover": "medio",
 "nuovo_allenatore": false,
-"clima": "positivo",
-"note": "Saka out, Saliba rientra in rosa, sei cambi previsti da Arteta."
+"clima": "neutro",
+"note": "Saka out, Saliba torna disponibile, sei cambi previsti."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Champions League, Arsenal con ampio turnover e Saka assente."
+"note": "Champions League, Arsenal senza Saka ma con Saliba in panchina."
 },
 "n_titoli": 50
 }
@@ -53192,19 +53729,19 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna informazione sugli assenti"
+"note": "Nessuna informazione rilevante nei titoli."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna informazione sugli assenti"
+"note": "Nessuna informazione rilevante nei titoli."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Nessuna informazione su porte chiuse"
+"note": "Nessuna informazione specifica nei titoli."
 },
 "n_titoli": 3
 }
@@ -53217,21 +53754,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna informazione su assenti"
+"note": "Nessun assente specifico nei titoli."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna informazione su assenti"
+"note": "Baixa di ultima ora per la trasferta in Danimarca, giocatore non specificato."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Nessuna informazione su porte chiuse"
+"note": "Nessuna informazione specifica nei titoli."
 },
-"n_titoli": 2
+"n_titoli": 4
 }
 },
 "Anderlecht|RB Salzburg|2026-11-05": {
@@ -53263,46 +53800,23 @@
 "data": "2026-11-05",
 "r": {
 "casa": {
-"assenti": [
-{
-"nome": "Gaetano",
-"ruolo": "centrocampista",
-"importanza": "titolare",
-"motivo": "infortunio",
-"certezza": "certo",
-"titoli": [
-11
-],
-"fonte": "Atalanta, lesioni per Gaetano e Kristensen. Tante assenze tra i convocati - La Gazzetta dello Sport"
-},
-{
-"nome": "Kristensen",
-"ruolo": "difensore",
-"importanza": "titolare",
-"motivo": "infortunio",
-"certezza": "certo",
-"titoli": [
-11
-],
-"fonte": "Atalanta, lesioni per Gaetano e Kristensen. Tante assenze tra i convocati - La Gazzetta dello Sport"
-}
-],
+"assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "negativo",
-"note": "crisi e molte assenze"
+"clima": "neutro",
+"note": "Attesa per la formazione, nessuna assenza confermata."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione su assenze"
+"note": "Nessuna assenza, tutti i giocatori disponibili."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "partita di Conference League"
+"note": "Match in Conference League, nessuna informazione su porte chiuse."
 },
 "n_titoli": 32
 }
@@ -53888,36 +54402,34 @@
 "assenti": [
 {
 "nome": "Jack Nicholls",
-"ruolo": "portiere",
+"ruolo": "difensore",
 "importanza": "titolare",
 "motivo": "squalifica",
 "certezza": "certo",
 "titoli": [
 3
 ],
-"fonte": "Jack Nicholls receives hefty suspension - Oxford Mail",
-"visto": "2026-11-04",
-"memoria": true
+"fonte": "Jack Nicholls receives hefty suspension - Oxford Mail"
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "neutro",
-"note": ""
+"clima": "negativo",
+"note": "Nessuna altra novità"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": ""
+"note": "Nessuna assenza segnalata"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": ""
+"note": "Partita regolare senza restrizioni"
 },
-"n_titoli": 9
+"n_titoli": 10
 }
 },
 "Levski Sofia|Jagiellonia Bialystok|2026-11-05": {
@@ -59133,13 +59645,11 @@
 "arda güler": {
 "nome": "Arda Güler",
 "ruolo": "attaccante",
-"importanza": "stella",
+"importanza": "titolare",
 "motivo": "squalifica",
 "certezza": "certo",
 "titoli": [
-26,
-28,
-29
+31
 ],
 "fonte": "Dos grandes sorpresas en la convocatoria del Real Madrid para Atenas: se caen Tchouaméni y Arda Güler - Libertad Digital",
 "visto": "2026-11-04"
@@ -59151,9 +59661,7 @@
 "motivo": "squalifica",
 "certezza": "certo",
 "titoli": [
-26,
-28,
-29
+31
 ],
 "fonte": "Dos grandes sorpresas en la convocatoria del Real Madrid para Atenas: se caen Tchouaméni y Arda Güler - Libertad Digital",
 "visto": "2026-11-04"
@@ -59197,7 +59705,7 @@
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-39
+38
 ],
 "fonte": "Ryan Gravenberch out of Liverpool's clash with Fenerbahce with heel injury - ESPN",
 "visto": "2026-11-04"
@@ -59267,7 +59775,7 @@
 "motivo": "infortunio",
 "certezza": "in dubbio",
 "titoli": [
-3
+4
 ],
 "fonte": "Isaak Davies hamstring issue adds to Cardiff City injury crisis - BBC",
 "visto": "2026-11-04"
@@ -59281,10 +59789,10 @@
 "motivo": "infortunio",
 "certezza": "in dubbio",
 "titoli": [
-20
+25
 ],
 "fonte": "West Ham daily round-up: Nuno replacement shortlist, Kyle Walker-Peters injury update - Yahoo Sports",
-"visto": "2026-11-03"
+"visto": "2026-11-04"
 },
 "konstantinos mavropanos": {
 "nome": "Konstantinos Mavropanos",
@@ -59340,9 +59848,10 @@
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-5
+4,
+6
 ],
-"fonte": "Wrexham striker Sam Smith faces 'significant period' out with knee injury - Border Counties Advertizer",
+"fonte": "Wrexham suffer 'significant' Smith injury blow - BBC",
 "visto": "2026-11-04"
 },
 "josh windass": {
@@ -59383,10 +59892,22 @@
 }
 },
 "ospite": {
+"rokas pukstas": {
+"nome": "Rokas Pukstas",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "probabile",
+"titoli": [
+15
+],
+"fonte": "Rokas Pukstas injury latest and Kim Hellberg's Middlesbrough team selection plan - The Northern Echo",
+"visto": "2026-11-04"
+},
 "jack nicholls": {
 "nome": "Jack Nicholls",
-"ruolo": "difensore",
-"importanza": "riserva",
+"ruolo": "centrocampista",
+"importanza": "titolare",
 "motivo": "squalifica",
 "certezza": "certo",
 "titoli": [
@@ -59395,18 +59916,6 @@
 "fonte": "Jack Nicholls receives hefty suspension - The Northern Echo",
 "visto": "2026-11-04"
 },
-"rokas pukstas": {
-"nome": "Rokas Pukstas",
-"ruolo": "difensore",
-"importanza": "titolare",
-"motivo": "infortunio",
-"certezza": "certo",
-"titoli": [
-14
-],
-"fonte": "Rokas Pukstas injury latest and Kim Hellberg's Middlesbrough team selection plan - The Northern Echo",
-"visto": "2026-11-03"
-},
 "alfie jones": {
 "nome": "Alfie Jones",
 "ruolo": "difensore",
@@ -59414,10 +59923,10 @@
 "motivo": "infortunio",
 "certezza": "probabile",
 "titoli": [
-18
+20
 ],
 "fonte": "Alfie Jones Middlesbrough situation explained as injury frustrations continue - Yahoo",
-"visto": "2026-11-03"
+"visto": "2026-11-04"
 }
 }
 },
@@ -59432,14 +59941,14 @@
 "ospite": {
 "álvaro fidalgo": {
 "nome": "Álvaro Fidalgo",
-"ruolo": "centrocampista",
+"ruolo": "attaccante",
 "importanza": "titolare",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-19,
-22,
-23
+25,
+28,
+29
 ],
 "fonte": "Álvaro Fidalgo fuera del Real Betis vs Borussia Dortmund de la Champions League - Bolavip México",
 "visto": "2026-11-04"
@@ -59486,16 +59995,28 @@
 }
 },
 "ospite": {
-"giovanni di lorenzo": {
-"nome": "Giovanni Di Lorenzo",
+"olivera": {
+"nome": "Olivera",
 "ruolo": "difensore",
 "importanza": "titolare",
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-46
+42
 ],
 "fonte": "Napoli, è un'ecatombe! Anche Di Lorenzo e Olivera infortunati, Allegri pensa a lanciare dei Primavera - La Gazzetta dello Sport",
+"visto": "2026-11-04"
+},
+"marianucci": {
+"nome": "Marianucci",
+"ruolo": "difensore",
+"importanza": "riserva",
+"motivo": "squalifica",
+"certezza": "certo",
+"titoli": [
+40
+],
+"fonte": "Ufficiale – marianucci fermato per un turno dopo l espulsione contro la juve la nota del giudice sportivo - NapoliCalcioNews.it",
 "visto": "2026-11-04"
 },
 "victor olivera": {
@@ -59508,43 +60029,6 @@
 46
 ],
 "fonte": "Napoli, è un'ecatombe! Anche Di Lorenzo e Olivera infortunati, Allegri pensa a lanciare dei Primavera - La Gazzetta dello Sport",
-"visto": "2026-11-04"
-},
-"di lorenzo": {
-"nome": "Di Lorenzo",
-"ruolo": "difensore",
-"importanza": "titolare",
-"motivo": "infortunio",
-"certezza": "certo",
-"titoli": [
-29
-],
-"fonte": "Napoli, è un'ecatombe! Anche Di Lorenzo e Olivera infortunati, Allegri pensa a lanciare dei Primavera - La Gazzetta dello Sport",
-"visto": "2026-11-04"
-},
-"olivera": {
-"nome": "Olivera",
-"ruolo": "difensore",
-"importanza": "titolare",
-"motivo": "infortunio",
-"certezza": "certo",
-"titoli": [
-29
-],
-"fonte": "Napoli, è un'ecatombe! Anche Di Lorenzo e Olivera infortunati, Allegri pensa a lanciare dei Primavera - La Gazzetta dello Sport",
-"visto": "2026-11-04"
-},
-"marianucci": {
-"nome": "Marianucci",
-"ruolo": "difensore",
-"importanza": "titolare",
-"motivo": "squalifica",
-"certezza": "certo",
-"titoli": [
-22,
-31
-],
-"fonte": "Squalifica Marianucci, la decisione del Giudice Sportivo! Multa per la SSC Napoli: svelato il motivo - CalcioNapoli24",
 "visto": "2026-11-04"
 },
 "alexis olivera": {
@@ -59591,8 +60075,8 @@
 "motivo": "infortunio",
 "certezza": "certo",
 "titoli": [
-19,
-20,
+23,
+24,
 27
 ],
 "fonte": "Arsenal injury mystery is finally answered and Bukayo Saka absence cause becomes clearer - Football London",
@@ -59617,32 +60101,7 @@
 },
 "Atalanta|Kairat Almaty|2026-11-05": {
 "data": "2026-11-05",
-"casa": {
-"gaetano": {
-"nome": "Gaetano",
-"ruolo": "centrocampista",
-"importanza": "titolare",
-"motivo": "infortunio",
-"certezza": "certo",
-"titoli": [
-11
-],
-"fonte": "Atalanta, lesioni per Gaetano e Kristensen. Tante assenze tra i convocati - La Gazzetta dello Sport",
-"visto": "2026-11-04"
-},
-"kristensen": {
-"nome": "Kristensen",
-"ruolo": "difensore",
-"importanza": "titolare",
-"motivo": "infortunio",
-"certezza": "certo",
-"titoli": [
-11
-],
-"fonte": "Atalanta, lesioni per Gaetano e Kristensen. Tante assenze tra i convocati - La Gazzetta dello Sport",
-"visto": "2026-11-04"
-}
-},
+"casa": {},
 "ospite": {}
 },
 "Crystal Palace|Hoffenheim|2026-11-05": {
@@ -59901,7 +60360,7 @@
 "casa": {
 "jack nicholls": {
 "nome": "Jack Nicholls",
-"ruolo": "portiere",
+"ruolo": "difensore",
 "importanza": "titolare",
 "motivo": "squalifica",
 "certezza": "certo",
