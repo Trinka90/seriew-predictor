@@ -1,0 +1,32 @@
+name: Esperimento quote italiane vs Pinnacle
+
+on:
+  push:
+    branches: [esperimento-sisal]
+    paths: ["experiments/sisal_clv.py", ".github/workflows/esperimento-sisal.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - run: python experiments/sisal_clv.py
+        env:
+          ODDSPAPI_KEY: ${{ secrets.ODDSPAPI_KEY }}
+      - name: Salva risultati
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add experiments/sisal_clv.md experiments/sisal_clv.json 2>/dev/null || true
+          git commit -m "Risultati quote italiane vs Pinnacle [skip ci]" || exit 0
+          git push origin HEAD:esperimento-sisal
