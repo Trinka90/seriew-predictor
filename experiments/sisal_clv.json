@@ -1,0 +1,69 @@
+{
+ "richieste_libere_inizio": 250,
+ "bookmaker_italiani_disponibili": [
+  "888sport.it",
+  "admiralbet.it",
+  "bet365.it",
+  "betfair.it",
+  "betflag.it",
+  "betsson.it",
+  "eplay24.it",
+  "eurobet.it",
+  "goldbet.it",
+  "leovegas.it",
+  "lottomatica.it",
+  "netbet.it",
+  "planetwin365.it",
+  "pokerstars.it",
+  "quigioco.it",
+  "sisal.it",
+  "snai.it"
+ ],
+ "bookmaker_usati": [
+  "sisal.it",
+  "snai.it"
+ ],
+ "partite_trovate": 698,
+ "partite_analizzate": 150,
+ "richieste_libere_fine": 243,
+ "chiamate": 157,
+ "errori": [],
+ "esempio_struttura": {
+  "pinnacle": [
+   "101",
+   "1010",
+   "101026",
+   "101066",
+   "1012",
+   "10131",
+   "10134",
+   "10137",
+   "1014",
+   "10140"
+  ],
+  "sisal.it": [
+   "101",
+   "1010",
+   "101022",
+   "101026",
+   "101030",
+   "101034",
+   "101038",
+   "101042",
+   "101046",
+   "101062"
+  ],
+  "snai.it": [
+   "101",
+   "1010",
+   "101022",
+   "101026",
+   "101030",
+   "101034",
+   "101038",
+   "101042",
+   "101046",
+   "101062"
+  ]
+ }
+}
