@@ -48183,6 +48183,468 @@
 "n_titoli": 31
 }
 },
+"c8527295dc612bc4856c960cd9f9d786fa79252c": {
+"data": "2026-11-06",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": ""
+},
+"n_titoli": 32
+}
+},
+"0ea3e4702a1195dde6f9cf3914f8ab0c77b9924b": {
+"data": "2026-11-06",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": ""
+},
+"n_titoli": 5
+}
+},
+"bf770dfbd3188e66dc0708792c7ac31dff9ef328": {
+"data": "2026-11-06",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": ""
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": ""
+},
+"n_titoli": 3
+}
+},
+"37e23162a3fc751a98b78067bc19b2c5fc1ca3aa": {
+"data": "2026-11-06",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione rilevante"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione rilevante"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna informazione su chiusura"
+},
+"n_titoli": 12
+}
+},
+"e3223e9de3ef6ca710951d95dd527f820e234dc3": {
+"data": "2026-11-06",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenti"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna informazione su assenti"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "nessuna informazione su porte chiuse"
+},
+"n_titoli": 17
+}
+},
+"3e052fc24df2d10d67125326ddfecfd2039d6203": {
+"data": "2026-11-06",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna assenza segnalata"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna assenza segnalata"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "partita senza info su assenze"
+},
+"n_titoli": 50
+}
+},
+"57968f5edec55485b66a4b99c268665528ef39af": {
+"data": "2026-11-06",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Rovers in crisi"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Striker assente"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "FA Cup tie"
+},
+"n_titoli": 9
+}
+},
+"348a2038a15e6b27bace6ba5c81a0266ac5f79ae": {
+"data": "2026-11-06",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Matías Orozco",
+"ruolo": "centrocampista",
+"importanza": "riserva",
+"motivo": "squalifica",
+"certezza": "probabile",
+"titoli": [
+5
+],
+"fonte": "CD Castellón apelará la expulsión que sufrió el colombiano Matías Orozco ante Burgos: “La he visto 10 veces y no sé si es falta” - Infobae"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna altra novità"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "nessuna assenza segnalata"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "partita regolare"
+},
+"n_titoli": 11
+}
+},
+"3d34a6c7808c5a0094c23b846ecfc61f0f769ade": {
+"data": "2026-11-06",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione rilevante nei titoli."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione rilevante nei titoli."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione specifica sulla partita."
+},
+"n_titoli": 5
+}
+},
+"533ab1a7a29f989095f45691f652e99f01c38919": {
+"data": "2026-11-06",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione disponibile"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione disponibile"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione rilevante"
+},
+"n_titoli": 1
+}
+},
+"87228834a78a2f96ec8001c8bb5518d5ae2bae3e": {
+"data": "2026-11-06",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Cumming",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "squalifica",
+"certezza": "certo",
+"titoli": [
+6
+],
+"fonte": "Oxford United boss Ramsey issues update on Cumming suspension and Helik injury - Yahoo News UK"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "positivo",
+"note": "Allenatore Ramsey aggiorna su squalifica e infortunio; fiducia per l'impresa."
+},
+"ospite": {
+"assenti": [],
+"turnover": "medio",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Martin accenna a cambi; Joseph in via di rientro."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "FA Cup; Oxford si sente in grado di fare l'impresa."
+},
+"n_titoli": 7
+}
+},
+"22186f34a1811e083d7342adf2f5fa1412b882e2": {
+"data": "2026-11-06",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Squadra motivata per una partita chiave"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna informazione disponibile"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione rilevante"
+},
+"n_titoli": 4
+}
+},
+"d643bc53a12987bf8de8306b5ece1f9f8c4b5ac7": {
+"data": "2026-11-06",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna assenza nota nei titoli."
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessuna assenza nota nei titoli."
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Partita in stadio normale."
+},
+"n_titoli": 10
+}
+},
+"f63578b9eb716824d2aff3ef5b4014bed03ff871": {
+"data": "2026-11-06",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Salvezza in gioco, Nicola chiede coraggio ed efficacia"
+},
+"ospite": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": true,
+"clima": "neutro",
+"note": "Zanetti debutta dopo esonero di Runjaic, sfida salvezza"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Sfida salvezza, Zanetti debutta da ex al Penzo"
+},
+"n_titoli": 50
+}
+},
+"1eca87eb7f47c0adf78a6157f3cb30f72be5c0a0": {
+"data": "2026-11-06",
+"r": {
+"casa": {
+"assenti": [],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Nessun titolo rilevante su Derby County"
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Eoin Toal",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "in dubbio",
+"titoli": [
+30
+],
+"fonte": "TEAM NEWS | Bolton Wanderers captain Eoin Toal facing scan on injured ankle - The Bolton News"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Capitano Toal con caviglia infortunata, in attesa di esami"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione specifica sulla sfida"
+},
+"n_titoli": 32
+}
+},
+"1f15346af8ca21c03fc477940ca1940751fff9cb": {
+"data": "2026-11-06",
+"r": {
+"casa": {
+"assenti": [
+{
+"nome": "Jack Grealish",
+"ruolo": "centrocampista",
+"importanza": "stella",
+"motivo": "squalifica",
+"certezza": "certo",
+"titoli": [
+4,
+5,
+6
+],
+"fonte": "Everton News Today: Grealish Out, Branthwaite Fitness and Moyes Record (6 November) - The False 9"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "negativo",
+"note": "Grealish escluso per sanzione disciplinare dopo feste; Branthwaite in dubbio per crampi"
+},
+"ospite": {
+"assenti": [
+{
+"nome": "Haji Wright",
+"ruolo": "attaccante",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "probabile",
+"titoli": [
+24
+],
+"fonte": "When will Haji Wright return for Coventry City? USMNT forward’s injury update - Diario AS"
+}
+],
+"turnover": "nessuno",
+"nuovo_allenatore": false,
+"clima": "neutro",
+"note": "Haji Wright infortunato, tempi di rientro ancora incerti"
+},
+"partita": {
+"porte_chiuse": false,
+"campo_neutro": false,
+"note": "Nessuna informazione su porte chiuse o campo neutro"
+},
+"n_titoli": 31
+}
+},
 "_ultima": {
 "Andorra|Burgos|2026-10-26": {
 "data": "2026-10-26",
@@ -60124,21 +60586,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione su assenti"
+"note": ""
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione su assenti"
+"note": ""
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "nessuna indicazione di chiusura"
+"note": ""
 },
-"n_titoli": 33
+"n_titoli": 32
 }
 },
 "Braunschweig|Cottbus|2026-11-06": {
@@ -60174,19 +60636,19 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna informazione su assenti"
+"note": ""
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna informazione su assenti"
+"note": ""
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Nessun dato su chiusura stadio"
+"note": ""
 },
 "n_titoli": 5
 }
@@ -60199,21 +60661,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione rilevante"
+"note": ""
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione rilevante"
+"note": ""
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "nessuna informazione sui titoli"
+"note": ""
 },
-"n_titoli": 1
+"n_titoli": 3
 }
 },
 "Dijon|Red Star|2026-11-06": {
@@ -60313,21 +60775,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": ""
+"note": "nessuna informazione rilevante"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": ""
+"note": "nessuna informazione rilevante"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": ""
+"note": "nessuna informazione su chiusura"
 },
-"n_titoli": 14
+"n_titoli": 12
 }
 },
 "Nancy|Sochaux|2026-11-06": {
@@ -60363,14 +60825,14 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione sugli assenti"
+"note": "nessuna informazione su assenti"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione sugli assenti"
+"note": "nessuna informazione su assenti"
 },
 "partita": {
 "porte_chiuse": false,
@@ -60401,7 +60863,9 @@
 "titoli": [
 29
 ],
-"fonte": "Serie B, Palermo: infortuni per Bani e Pierozzi - CalcioTime"
+"fonte": "Serie B, Palermo: infortuni per Bani e Pierozzi - CalcioTime",
+"visto": "2026-11-06",
+"memoria": true
 },
 {
 "nome": "Pierozzi",
@@ -60412,18 +60876,20 @@
 "titoli": [
 29
 ],
-"fonte": "Serie B, Palermo: infortuni per Bani e Pierozzi - CalcioTime"
+"fonte": "Serie B, Palermo: infortuni per Bani e Pierozzi - CalcioTime",
+"visto": "2026-11-06",
+"memoria": true
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "due titolari fuori per infortunio"
+"note": "nessuna assenza segnalata"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "partita regolare"
+"note": "partita senza info su assenze"
 },
 "n_titoli": 50
 }
@@ -60436,7 +60902,7 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "negativo",
-"note": "Rovers in crisi, ma senza assenze confermate"
+"note": "Rovers in crisi"
 },
 "ospite": {
 "assenti": [
@@ -60456,40 +60922,52 @@
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "negativo",
-"note": "U’s striker out, indebolisce United"
+"clima": "neutro",
+"note": "Striker assente"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "FA Cup, tensione per entrambe le squadre"
+"note": "FA Cup tie"
 },
-"n_titoli": 8
+"n_titoli": 9
 }
 },
 "Castellon|Eibar|2026-11-06": {
 "data": "2026-11-06",
 "r": {
 "casa": {
-"assenti": [],
+"assenti": [
+{
+"nome": "Matías Orozco",
+"ruolo": "centrocampista",
+"importanza": "riserva",
+"motivo": "squalifica",
+"certezza": "probabile",
+"titoli": [
+5
+],
+"fonte": "CD Castellón apelará la expulsión que sufrió el colombiano Matías Orozco ante Burgos: “La he visto 10 veces y no sé si es falta” - Infobae"
+}
+],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": ""
+"note": "nessuna altra novità"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": ""
+"note": "nessuna assenza segnalata"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": ""
+"note": "partita regolare"
 },
-"n_titoli": 9
+"n_titoli": 11
 }
 },
 "Hamburg|M'gladbach|2026-11-06": {
@@ -60500,21 +60978,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna informazione su assenti"
+"note": "Nessuna informazione rilevante nei titoli."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna informazione su assenti"
+"note": "Nessuna informazione rilevante nei titoli."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Nessun dato su chiusura stadio"
+"note": "Nessuna informazione specifica sulla partita."
 },
-"n_titoli": 6
+"n_titoli": 5
 }
 },
 "Raith Rvs|Dunfermline|2026-11-06": {
@@ -60525,21 +61003,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": ""
+"note": "Nessuna informazione disponibile"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": ""
+"note": "Nessuna informazione disponibile"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": ""
+"note": "Nessuna informazione rilevante"
 },
-"n_titoli": 2
+"n_titoli": 1
 }
 },
 "Oxford City|Leicester City|2026-11-06": {
@@ -60547,6 +61025,17 @@
 "r": {
 "casa": {
 "assenti": [
+{
+"nome": "Cumming",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "squalifica",
+"certezza": "certo",
+"titoli": [
+6
+],
+"fonte": "Oxford United boss Ramsey issues update on Cumming suspension and Helik injury - Yahoo News UK"
+},
 {
 "nome": "Jack Nicholls",
 "ruolo": "centrocampista",
@@ -60564,19 +61053,19 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "positivo",
-"note": ""
+"note": "Allenatore Ramsey aggiorna su squalifica e infortunio; fiducia per l'impresa."
 },
 "ospite": {
 "assenti": [],
-"turnover": "nessuno",
+"turnover": "medio",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": ""
+"note": "Martin accenna a cambi; Joseph in via di rientro."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": ""
+"note": "FA Cup; Oxford si sente in grado di fare l'impresa."
 },
 "n_titoli": 7
 }
@@ -60589,19 +61078,19 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": ""
+"note": "Squadra motivata per una partita chiave"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": ""
+"note": "Nessuna informazione disponibile"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": ""
+"note": "Nessuna informazione rilevante"
 },
 "n_titoli": 4
 }
@@ -60614,21 +61103,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "nessuna informazione su assenze"
+"note": "Nessuna assenza nota nei titoli."
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "un assente confermato"
+"note": "Nessuna assenza nota nei titoli."
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "nessuna informazione su porte chiuse"
+"note": "Partita in stadio normale."
 },
-"n_titoli": 9
+"n_titoli": 10
 }
 },
 "Venezia|Udinese|2026-11-06": {
@@ -60638,20 +61127,20 @@
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "positivo",
-"note": "Adorante ancora non convocato, possibile riserva"
+"clima": "neutro",
+"note": "Salvezza in gioco, Nicola chiede coraggio ed efficacia"
 },
 "ospite": {
 "assenti": [],
 "turnover": "nessuno",
 "nuovo_allenatore": true,
 "clima": "neutro",
-"note": "Davis dubbio, incerto per l'attacco"
+"note": "Zanetti debutta dopo esonero di Runjaic, sfida salvezza"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita importante per entrambe le squadre"
+"note": "Sfida salvezza, Zanetti debutta da ex al Penzo"
 },
 "n_titoli": 50
 }
@@ -60670,25 +61159,39 @@
 "titoli": [
 21
 ],
-"fonte": "Szmodics out for six weeks with knee injury - BBC"
+"fonte": "Szmodics out for six weeks with knee injury - BBC",
+"visto": "2026-11-06",
+"memoria": true
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
-"clima": "negativo",
-"note": "Infortuni recenti, nessuna novità positiva"
+"clima": "neutro",
+"note": "Nessun titolo rilevante su Derby County"
 },
 "ospite": {
-"assenti": [],
+"assenti": [
+{
+"nome": "Eoin Toal",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "in dubbio",
+"titoli": [
+30
+],
+"fonte": "TEAM NEWS | Bolton Wanderers captain Eoin Toal facing scan on injured ankle - The Bolton News"
+}
+],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna assenza segnalata"
+"note": "Capitano Toal con caviglia infortunata, in attesa di esami"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Derby di Championship"
+"note": "Nessuna informazione specifica sulla sfida"
 },
 "n_titoli": 32
 }
@@ -60700,14 +61203,14 @@
 "assenti": [
 {
 "nome": "Jack Grealish",
-"ruolo": "attaccante",
+"ruolo": "centrocampista",
 "importanza": "stella",
-"motivo": "infortunio",
+"motivo": "squalifica",
 "certezza": "certo",
 "titoli": [
-1,
-2,
-5
+4,
+5,
+6
 ],
 "fonte": "Everton News Today: Grealish Out, Branthwaite Fitness and Moyes Record (6 November) - The False 9"
 }
@@ -60715,10 +61218,21 @@
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "negativo",
-"note": "Grealish fuori, impatto negativo"
+"note": "Grealish escluso per sanzione disciplinare dopo feste; Branthwaite in dubbio per crampi"
 },
 "ospite": {
 "assenti": [
+{
+"nome": "Haji Wright",
+"ruolo": "attaccante",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "probabile",
+"titoli": [
+24
+],
+"fonte": "When will Haji Wright return for Coventry City? USMNT forward’s injury update - Diario AS"
+},
 {
 "nome": "Frank Onyeka",
 "ruolo": "difensore",
@@ -60728,20 +61242,22 @@
 "titoli": [
 28
 ],
-"fonte": "Frank Lampard issues Coventry City injury update as Frank Onyeka joins casualty list - Coventry Telegraph"
+"fonte": "Frank Lampard issues Coventry City injury update as Frank Onyeka joins casualty list - Coventry Telegraph",
+"visto": "2026-11-06",
+"memoria": true
 }
 ],
 "turnover": "nessuno",
 "nuovo_allenatore": false,
 "clima": "neutro",
-"note": "Nessuna info su altri assenti"
+"note": "Haji Wright infortunato, tempi di rientro ancora incerti"
 },
 "partita": {
 "porte_chiuse": false,
 "campo_neutro": false,
-"note": "Partita regolare senza restrizioni"
+"note": "Nessuna informazione su porte chiuse o campo neutro"
 },
-"n_titoli": 33
+"n_titoli": 31
 }
 },
 "Sevilla|Alaves|2026-11-06": {
@@ -67345,7 +67861,20 @@
 },
 "Castellon|Eibar|2026-11-06": {
 "data": "2026-11-06",
-"casa": {},
+"casa": {
+"matías orozco": {
+"nome": "Matías Orozco",
+"ruolo": "centrocampista",
+"importanza": "riserva",
+"motivo": "squalifica",
+"certezza": "probabile",
+"titoli": [
+5
+],
+"fonte": "CD Castellón apelará la expulsión que sufrió el colombiano Matías Orozco ante Burgos: “La he visto 10 veces y no sé si es falta” - Infobae",
+"visto": "2026-11-06"
+}
+},
 "ospite": {}
 },
 "Hamburg|M'gladbach|2026-11-06": {
@@ -67361,6 +67890,18 @@
 "Oxford City|Leicester City|2026-11-06": {
 "data": "2026-11-06",
 "casa": {
+"cumming": {
+"nome": "Cumming",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "squalifica",
+"certezza": "certo",
+"titoli": [
+6
+],
+"fonte": "Oxford United boss Ramsey issues update on Cumming suspension and Helik injury - Yahoo News UK",
+"visto": "2026-11-06"
+},
 "jack nicholls": {
 "nome": "Jack Nicholls",
 "ruolo": "centrocampista",
@@ -67407,27 +67948,52 @@
 "visto": "2026-11-06"
 }
 },
-"ospite": {}
+"ospite": {
+"eoin toal": {
+"nome": "Eoin Toal",
+"ruolo": "centrocampista",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "in dubbio",
+"titoli": [
+30
+],
+"fonte": "TEAM NEWS | Bolton Wanderers captain Eoin Toal facing scan on injured ankle - The Bolton News",
+"visto": "2026-11-06"
+}
+}
 },
 "Everton|Coventry|2026-11-06": {
 "data": "2026-11-06",
 "casa": {
 "jack grealish": {
 "nome": "Jack Grealish",
-"ruolo": "attaccante",
+"ruolo": "centrocampista",
 "importanza": "stella",
-"motivo": "infortunio",
+"motivo": "squalifica",
 "certezza": "certo",
 "titoli": [
-1,
-2,
-5
+4,
+5,
+6
 ],
 "fonte": "Everton News Today: Grealish Out, Branthwaite Fitness and Moyes Record (6 November) - The False 9",
 "visto": "2026-11-06"
 }
 },
 "ospite": {
+"haji wright": {
+"nome": "Haji Wright",
+"ruolo": "attaccante",
+"importanza": "titolare",
+"motivo": "infortunio",
+"certezza": "probabile",
+"titoli": [
+24
+],
+"fonte": "When will Haji Wright return for Coventry City? USMNT forward’s injury update - Diario AS",
+"visto": "2026-11-06"
+},
 "frank onyeka": {
 "nome": "Frank Onyeka",
 "ruolo": "difensore",
